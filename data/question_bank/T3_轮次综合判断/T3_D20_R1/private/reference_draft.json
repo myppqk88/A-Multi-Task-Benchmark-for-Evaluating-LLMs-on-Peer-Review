@@ -1,0 +1,152 @@
+{
+  "question_id": "T3_D20_R1",
+  "gold_label": null,
+  "expert_annotations": null,
+  "status": "AI材料核查与候选评分要点，不是专家金标准",
+  "candidate_checks": [
+    "回复声称新加局限/数据链接/流程图，需检查v1实体正文",
+    "测试施测方式与分析流程新增实质",
+    "四人前后测不能自动证明因果效果"
+  ],
+  "AI_demonstrations": [
+    {
+      "question_id": "T3_D20_R1",
+      "example_id": "T3_DEMO_01",
+      "status": "AI演示，不是专家金标准；仅评分前后稿核验这一局部能力",
+      "gold_label": null,
+      "focus": "原已存在不等于本轮新增；回应不是实际改稿证据",
+      "evidence": [
+        {
+          "input_field": "responses.R2",
+          "exact_quote": "A dedicated Limitations section has been included after the conclusion, explicitly\ndiscussing the sample size, research context, topic scope, and design constraints of\nthe study.\n4. The manuscript has been carefully reviewed to en",
+          "input_char_span": [
+            837,
+            1067
+          ],
+          "source_id": "S008",
+          "source_pdf_page": 16,
+          "source_extracted_char_span": [
+            56475,
+            56705
+          ],
+          "source_span_note": "字符跨度按实际源句重新定位；跨换行差异时以source_exact_quote为准",
+          "source_exact_quote": "A dedicated Limitations section has been included after the conclusion, explicitly\ndiscussing the sample size, research context, topic scope, and design constraints of\nthe study.\n4. The manuscript has been carefully reviewed to en",
+          "source_file": "data/originals/f1000/social_sciences/171534_Learning_Science_Beyond_Sight__Conceptual_Engagement_of_Elementary_Sch/v1_manuscript.pdf",
+          "source_sha256": "334ae9b00d130ac9d73483ea1f5ff7ca1f74649e00e89b5f2aa6f814349610bd",
+          "source_extracted_text_relative": "private/source_text/S008.txt"
+        },
+        {
+          "input_field": "manuscript_before.text",
+          "exact_quote": "Limitations\nThe study involved a small number of participants (four students and two teachers) from a single special needs school,\nwhich limits the generalizability of the results. The focus on a single science topic—magnetism—means that further\nresearch is required to examine whether similar approaches are effective for other abstract science concepts. In addition,\nthe evaluative case study design provided in-depth insights but did not allow for comparison with a control group. Future\nresearch should consider larger samples, diverse school contexts, and comparative designs to strengthen the external\nvalidity of these findings.",
+          "input_char_span": [
+            37230,
+            37865
+          ],
+          "source_id": "S008",
+          "source_pdf_page": 11,
+          "source_extracted_char_span": [
+            40660,
+            41295
+          ],
+          "source_span_note": "字符跨度按实际源句重新定位；跨换行差异时以source_exact_quote为准",
+          "source_exact_quote": "Limitations\nThe study involved a small number of participants (four students and two teachers) from a single special needs school,\nwhich limits the generalizability of the results. The focus on a single science topic—magnetism—means that further\nresearch is required to examine whether similar approaches are effective for other abstract science concepts. In addition,\nthe evaluative case study design provided in-depth insights but did not allow for comparison with a control group. Future\nresearch should consider larger samples, diverse school contexts, and comparative designs to strengthen the external\nvalidity of these findings.",
+          "source_file": "data/originals/f1000/social_sciences/171534_Learning_Science_Beyond_Sight__Conceptual_Engagement_of_Elementary_Sch/v1_manuscript.pdf",
+          "source_sha256": "334ae9b00d130ac9d73483ea1f5ff7ca1f74649e00e89b5f2aa6f814349610bd",
+          "source_extracted_text_relative": "private/source_text/S008.txt"
+        },
+        {
+          "input_field": "manuscript_after.text",
+          "exact_quote": "Limitations\nThe study involved a small number of participants (four students and two teachers) from a single special needs school,\nwhich limits the generalizability of the results. The focus on a single science topic—magnetism—means that further\nresearch is required to examine whether similar approaches are effective for other abstract science concepts. In addition,\nthe evaluative case study design provided in-depth insights but did not allow for comparison with a control group. Future\nresearch should consider larger samples, diverse school contexts, and comparative designs to strengthen the external\nvalidity of these findings.",
+          "input_char_span": [
+            42113,
+            42748
+          ],
+          "source_id": "S009",
+          "source_pdf_page": 13,
+          "source_extracted_char_span": [
+            46509,
+            47144
+          ],
+          "source_span_note": "字符跨度按实际源句重新定位；跨换行差异时以source_exact_quote为准",
+          "source_exact_quote": "Limitations\nThe study involved a small number of participants (four students and two teachers) from a single special needs school,\nwhich limits the generalizability of the results. The focus on a single science topic—magnetism—means that further\nresearch is required to examine whether similar approaches are effective for other abstract science concepts. In addition,\nthe evaluative case study design provided in-depth insights but did not allow for comparison with a control group. Future\nresearch should consider larger samples, diverse school contexts, and comparative designs to strengthen the external\nvalidity of these findings.",
+          "source_file": "data/originals/f1000/social_sciences/171534_Learning_Science_Beyond_Sight__Conceptual_Engagement_of_Elementary_Sch/v2_manuscript.pdf",
+          "source_sha256": "cb71b835446133d5ff1c787cd05e57037915ae88dfc2822ed3e6b5a6f8577e77",
+          "source_extracted_text_relative": "private/source_text/S009.txt"
+        },
+        {
+          "input_field": "manuscript_before.text",
+          "exact_quote": "Data availability\n• Figshare. Instrument and data from Observation and Interview. DOI: http://doi.org/10.6084/m9.figshare.30231700 (Yektyastuti, 2025a)\n\n• Figshare. Instrument and data from expert judgment. DOI: http://doi.org/10.6084/m9.figshare.30163915\n(Yektyastuti, 2025b)\n• Figshare. Instrument and data from test of conceptual understanding. DOI: http://doi.org/10.6084/m9.figshare.30254701 (Yektyastuti, 2025c)\nData are available und",
+          "input_char_span": [
+            37866,
+            38306
+          ],
+          "source_id": "S008",
+          "source_pdf_page": 11,
+          "source_extracted_char_span": [
+            41296,
+            41807
+          ],
+          "source_span_note": "字符跨度按实际源句重新定位；跨换行差异时以source_exact_quote为准",
+          "source_exact_quote": "Data availability\n• Figshare. Instrument and data from Observation and Interview. DOI: http://doi.org/10.6084/m9.figshare.30231700 (Yektyastuti, 2025a)\n\nPage 11 of 17\n\n\fF1000Research 2025, 14:1271 Last updated: 22 JAN 2026\n\n• Figshare. Instrument and data from expert judgment. DOI: http://doi.org/10.6084/m9.figshare.30163915\n(Yektyastuti, 2025b)\n• Figshare. Instrument and data from test of conceptual understanding. DOI: http://doi.org/10.6084/m9.figshare.30254701 (Yektyastuti, 2025c)\nData are available und",
+          "source_file": "data/originals/f1000/social_sciences/171534_Learning_Science_Beyond_Sight__Conceptual_Engagement_of_Elementary_Sch/v1_manuscript.pdf",
+          "source_sha256": "334ae9b00d130ac9d73483ea1f5ff7ca1f74649e00e89b5f2aa6f814349610bd",
+          "source_extracted_text_relative": "private/source_text/S008.txt"
+        },
+        {
+          "input_field": "manuscript_after.text",
+          "exact_quote": "The pre- and post-tests consisted of short-answer and oral\nresponse items designed to assess students’ understanding of magnetism concepts, including magnetic properties, forces,\nand polarity. Quantitative data from the pre- and post-tests were analyzed using descriptive statistics to examine changes\nin students’ conceptual understanding. Learning gains were calculated by comparing individual pre-test and post-test\nscores. Classroom observations and performance tasks were used to document student engagement and learning\nbehaviors duri",
+          "input_char_span": [
+            16257,
+            16797
+          ],
+          "source_id": "S009",
+          "source_pdf_page": 6,
+          "source_extracted_char_span": [
+            20164,
+            20704
+          ],
+          "source_span_note": "字符跨度按实际源句重新定位；跨换行差异时以source_exact_quote为准",
+          "source_exact_quote": "The pre- and post-tests consisted of short-answer and oral\nresponse items designed to assess students’ understanding of magnetism concepts, including magnetic properties, forces,\nand polarity. Quantitative data from the pre- and post-tests were analyzed using descriptive statistics to examine changes\nin students’ conceptual understanding. Learning gains were calculated by comparing individual pre-test and post-test\nscores. Classroom observations and performance tasks were used to document student engagement and learning\nbehaviors duri",
+          "source_file": "data/originals/f1000/social_sciences/171534_Learning_Science_Beyond_Sight__Conceptual_Engagement_of_Elementary_Sch/v2_manuscript.pdf",
+          "source_sha256": "cb71b835446133d5ff1c787cd05e57037915ae88dfc2822ed3e6b5a6f8577e77",
+          "source_extracted_text_relative": "private/source_text/S009.txt"
+        }
+      ],
+      "good_answer_excerpt": "作者回复称加入Limitations，但给定原稿正文已包含四名学生、单校、单主题和无对照组的局限段；后稿相同段落仍在。因此能确认后稿具有该段，不能把这件事计作本轮新增。另一方面，后稿新增了短答/口头作答测试与描述性学习增益分析细节，需独立评价这些补充是否足够。本例不推断作者动机，也不据此直接决定稿件总体标签。",
+      "bad_answer_excerpt": "作者表示已添加局限段、数据和流程图，所以全部问题已彻底解决，稿件可以接受。",
+      "demonstration_scoring": {
+        "dimension": "前后稿核验（0–2）",
+        "good_excerpt_score": 2,
+        "bad_excerpt_score": 0,
+        "reason": "好例核对前后稿且区分文本存在、变化及充分性；坏例仅复述作者主张。其他维度及总体标签不评分。"
+      },
+      "historical_version_boundary": "已核本地出版方版本化v1 PDF正文实体第11页（非附录、非修订摘要）；其首面标version 1及DOI后缀.1。v2对应第13页标version 2/.2，方法段存在实质差异，非两个相同正文复制件。当前源PDF下载的Last updated晚于首发；没有首发当天的历史快照，因此只陈述给定版本化原稿已存在，不推断首发时作者行为或欺骗。"
+    }
+  ],
+  "caution": "不能用平台通过状态赋标签；需要独立人标。",
+  "question_eligibility": "held_not_a_complete_T3_question",
+  "demonstration_scope": "仅局部教学例，不能给整篇标签，不能计完整T3题",
+  "restoration_checks": [
+    "正式前后测工具包含口头/触觉施测说明、逐题预期答案与0/1评分规则；按此核对正文测量描述与总分解释，不能把“新增数据链接”等同于已验证方法。",
+    "正式访谈问题栏和观察记录结构已附，未将逐人回答列为必读工具。阶段一的全班观察与阶段三四名五年级参与者须区分，不能直接把观察记录出现更多学生编码判成四人样本虚构。",
+    "专家判断附件有13项评分及Aiken V参考表；材料存在不等于四人前后测可以识别因果。核对回复声称新加的图、局限和步骤是否原稿已经存在。"
+  ],
+  "current_status": "当前会话6.1-sol参考要点，非专家金标准；未运行模型",
+  "supplement_evidence": [
+    {
+      "input_field": "materials.supplements.A01.text",
+      "exact_quote": "\n[Source attachment page 1]\nTranslated Version\nLEARNING OBSERVATION RESULTS NOTES\nObservation Date : 16 April 2025\nObservation No Description of Observation Results\n1 The teacher greets the students and asks how they are",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A02.text",
+      "exact_quote": "\n[Source attachment page 1]\nVALIDATION SHEET\nScience Kit for Visual Impairment in Elementary Schools\nA. Validator Identity\nFull name and title :\nDepartment :\nInstitution :\nField of Expertise :\nB. Guidelines for Filling i",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A03.text",
+      "exact_quote": "\n[Source attachment page 1]\nPre/Post-Test Instrument\nSubject : Natural science\nLeve : 5th grade of Elementary School\nTopic : Magnetism\nLearning Outcome:\nStudents understand that force can affect the motion of objects, as",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    }
+  ]
+}

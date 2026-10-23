@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F144_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "抽样与响应率",
+    "测量效度",
+    "质性证据与建议"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对450份发放、386份回收及85.8%回应率是否在前后稿一致，并区分新增透明说明和新产生数据。",
+    "核对量化问卷因子分析、质性工具和引文支持，效度/可靠性程序的作者陈述不能自动当独立核验结果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article presents relevant findings on performance monitoring in Ugandan private universities.\nHowever, to be scientifically sound, it must address methodological clarity (sampling procedure,\nresponse rate), improve theoretical integration, and present more robust qualitative evidence.\nGreater detail on instrument validity, ethical safeguards, and alignment between findings and\nrecommendations ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nLetter to Reviewer\nDear reviewer, \nWe would like to sincerely thank you for your thorough review and constructive comments\non our article, “Establishing the Perception of Academic Staff on Performance Monitoring in\nPrivate Chartered Universities in Western Uganda.” Your feedback has been invaluable in\nstrengthening the methodological clarity, theoretical integration, and overall scientific rigor\nof our work.\nIn response to your comments, we have",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "However, Ugandan universities have generally neglected the importance of PMS for managing academic staff performance (Karuhanga, 2015; Atwebembeire and Malunda, 2018). Their study investigated academic staff perceptions of\nPMS in teaching and research across public and private universities in Uganda. Grounded in performance management\ntheories, the research used a quantitative approach with a structured questionnaire for data collection. Academics from\nfour public and three private universities, selected through non-probability convenience sampling, participated in the\nstudy. The results revealed that the average perception of PMS among academic staff was 53.53%, indicating a moderate\nattitude. Positive attitudes towards PMS were statistically significant in public universities (p = 0.034), while in private\nuniversities, the results were statistically insignificant (p = 0.244), reflecting a lack of support for PMS among staff. The\nstudy highlights the importance of PMS in universities ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "interviews, the research revealed that although Tartu University employed a performance-based system linking appraisal\nresults to salary, and Tallinn University of Technology used a position-based system where initial salary conditions were\nkey, staff expectations were largely similar across both institutions. University leaders preferred performance-based\nsystems with clear metrics, while most staff members favored more flexible and stable approaches. The study explores the\nimplications of these findings for designing appraisal and reward systems for academic staff.\nMethods\nA convergent parallel mixed-methods design was employed to collect and analyze both quantitative and qualitative data\nsimultaneously. The study involved:\nParticipants: 386 academic staff surveyed using structured questionnaires and 10 deans of faculties interviewed through\nsemi-structured guides. Academic staff were selected from two private chartered universities using a stratified random\nsampling procedure. First",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "performance monitoring mechanisms were in place, their actual use for developmental feedback and coaching was\nlimited. As one dean remarked, “There are appraisals, but no one really sits with staff to reflect on how to improve. It’s like\nticking boxes” (Dean 6, DU PT1-31).\nMoreover, the perception that staff should be involved in setting their performance targets and evaluation indicators\nemerged in the qualitative findings. One respondent stated, “We are assessed, but we don’t set our goals. Sometimes we\nare judged on what we were not told to prioritize” (Dean 9, DU PT1-31). This need for participatory appraisal design is\nechoed by Turk and Killumets (2014), whose study on Estonian universities indicated that top-down performance\nevaluation frameworks led to dissatisfaction, while participatory systems enhanced buy-in and effectiveness.\nFurthermore, the present findings suggest that performance monitoring is often linked to administrative control rather\nthan professional development. ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The qualitative results reinforced these findings. Deans reported that while mechanisms for performance monitoring\nexist, they are often inconsistently applied and lack actionable follow-up. As one respondent highlighted, “We do\nmonitor performance, but the process is sometimes reactive instead of proactive” (Dean 3, DU PT1-31). Another dean\nadded, “There is a lot of paperwork, but follow-up is minimal. The staff would appreciate meaningful feedback”\n(Dean 7, DU PT1-31). These comments underline the need for a more systematic and continuous approach to\nperformance monitoring.\nThese results are supported by Molefe (2012), who found that academic staff across institutions in the USA, UK,\nAustralia, Nigeria, and South Africa positively perceived performance monitoring, particularly when aligned with\nteaching quality and student engagement. Molefe emphasized that appraisal systems focusing on meaningful criteria such\nas student-teacher interaction and subject clarity are more likely to be ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

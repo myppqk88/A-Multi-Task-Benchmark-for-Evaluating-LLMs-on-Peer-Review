@@ -1,0 +1,1878 @@
+Open Research Europe
+
+O
+
+DATA NOTE
+
+Euclide, the crow, the wolf and t
+metrics for linguistic typology
+
+[version 2; peer review: 1 approved, 2 approved with reservation
+
+Matías Guzmán Naranjo
+
+1, Gerhard Jäger
+
+2
+
+1Linguistics, Albert-Ludwigs-Universitat Freiburg, Freiburg, Baden-Württemberg
+
+2Seminar für Sprachwissenschaft, Eberhard Karls Universitat Tubingen, Tübinge
+
+v2 First published: 21 Jun 2023, 3:104
+
+https://doi.org/10.12688/openreseurope.16141.1
+Latest published: 02 Jul 2024, 3:104
+https://doi.org/10.12688/openreseurope.16141.2
+
+Abstract
+It is common for people working on linguistic geography, language
+contact and typology to make use of some type of distance metric
+between lects. However, most work so far has either used Euclidean
+distances, or geodesic distance, both of which do not represent the
+real separation between communities very accurately.
+This paper presents two datasets: one on walking distances and one
+on topographic distances between over 8700 lects across all macroareas. We calculated walking distances using Open Street Maps data,
+and topographic distances using digital elevation data. We evaluate
+these distance metrics on three case studies and show that from the
+four distances, the topographic and geodesic distances showed the
+most consistent performance across datasets, and would be likely to
+be reasonable first choices. At the same time, in most cases, the
+Euclidean distances were not much worse than the other distances,
+and might be a good enough approximation in cases for which
+performance is critical, or the dataset cover very large areas, and the
+point-location information is not very precise.
+Keywords
+Typology, distance metrics, topographic distance, walking distance,
+linguistic geography
+
+This article is included in the European
+Research Council (ERC) gateway.
+
+Open Research Europe
+
+O
+
+This article is included in the Horizon 2020
+gateway.
+
+This article is included in the Linguistic Diversity
+collection.
+
+Corresponding author: Matías Guzmán Naranjo (mguzmann89@gmail.com)
+
+Author roles: Guzmán Naranjo M: Conceptualization, Data Curation, Formal Analy
+Visualization, Writing – Original Draft Preparation; Jäger G: Conceptualization, Fund
+Software, Writing – Review & Editing
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the European Research
+2020 research and innovation programme (Grant agreement No. [834050](Cross-Li
+Bayesian models [CrossLingference]). , assigned to Gerhard Jäger; and the Emmy N
+typology', Grant number: (project number 504155622), assigned to Matías Guzmán
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2024 Guzmán Naranjo M and Jäger G. This is an open access article d
+Attribution License, which permits unrestricted use, distribution, and reproduction
+cited.
+
+How to cite this article: Guzmán Naranjo M and Jäger G. Euclide, the crow, the w
+linguistic typology [version 2; peer review: 1 approved, 2 approved with reserv
+https://doi.org/10.12688/openreseurope.16141.2
+
+First published: 21 Jun 2023, 3:104 https://doi.org/10.12688/openreseurope.16141
+
+O
+
+REVISED
+
+Amendments from Version 1
+
+In this new version we have addressed most suggestions
+mentioned by the reviewers, these mostly boil down to: 1) we
+have rephrased and improved the text in several places. This
+should make the conclusions reported more in line with the
+results. We also better explain the models and the reasoning
+behind them. 2) we have corrected several formulae which were
+formatted wrongly in the first version. 3) we have improved
+the plots and made them easier to read as well as color-blind
+friendly. None of the results or calculated distances have
+changed since the previous version.
+Any further responses from the reviewers can be found at
+the end of the article
+
+1 Introduction
+
+Studying language contact, spatial diffusion, and typology
+(among others) requires having reliable distances measurements between linguistic communities. However, most work so
+far has used either Euclidean or geodesic distances (see Guzmán
+Naranjo & Becker, 2021; Guzmán Naranjo & Mertner, 2022;
+Ranacher et al., 2021, for an example). Both these approaches,
+however, make some relatively simplified and unrealistic
+assumptions about the spatial separation of human populations. Euclidean distances assume that the earth is flat and
+distorted, and geodesic distances assume that the surface of the
+earth is a smooth sphere. While these assumptions can be warranted in some situations (e.g. communities which are very close
+together, or in individual islands), using these metrics leads to
+biased estimates of the separation of speech communities.
+As a way of addressing these issues, a method for calculating approximate walking distances was recently proposed by
+Wichmann & Hammarström (2020), who propose a computationally efficient technique. This method, however, is not
+exact because it does not attempt to actually follow known
+walking pathways, but rather, uses population centres to route
+the paths. Another recent alternative for a computationally
+efficient approximation is proposed by Kaiping (2021), who
+calculates exact walking distances between the centre of geographic nodes (hexagons). Each node has an area of roughly
+78 square km. Distances between languages are then calculated as the distance between the centres of these hexagons.
+While impressive, this method is also not exact, and we are not
+aware of evaluations of how good the resulting distances are for
+linguistic purposes.
+In this paper we do several things. Our main aim is to provide
+a resource in the form of distance matrices, that can be used by
+typologists and linguists in general to study contact, areal pattern and other spatial phenomena in language. Second, we
+explore the question of how different distance metrics compare to each other. While there are several conceptual problems
+with using Euclidean and geodesic distances, there has been no
+attempt at quantifying how much better more realistic distance
+metrics are.
+
+The structu
+brief mathe
+distance m
+distances, g
+ing distanc
+used for c
+Sections 4
+potential c
+calculated d
+
+2 Distanc
+2.1 Euclide
+
+The simple
+Euclidean d
+two points
+(xa, ya) an
+given by the
+
+This type o
+& Becker,
+also implic
+a statistica
+reason for
+the simples
+two points,
+information
+also presen
+Bayesian s
+solutions th
+for spatial m
+
+Despite the
+sides. This
+lie on a pla
+on the earth
+Equator, thi
+not expect
+ure the dis
+far away f
+results whic
+surface of th
+
+2.2 Geode
+The geodes
+distance be
+
+1
+
+Particularly
+functions to
+information u
+covariance fun
+2
+
+Also referred
+
+3
+
+The exact fo
+and we will no
+
+O
+
+that the geodesic distance takes into account the curvature of
+the earth, it is a likely better representation of the separation
+of two populations. Nonetheless, it also makes several simplified assumptions about the topography of the space between
+two points. Most importantly, the geodesic distance assumes a
+smooth surface, without hills, valleys or any other topographic
+barrier. While this assumption may be justified for cases like
+the steppe or island archipelagos, it is likely overly optimistic in
+places with very rugged terrains, mountain ranges, and similar
+geographic features.
+Computationally, this distance is unproblematic, and we
+will not discuss the technical aspects any further. We calculated the geodesic distance between all lects in Glottolog with
+the geodist package (Padgham & Sumner, 2021) in R.4
+
+2.3 Topographic distance
+The topographic distance (or how the wolf runs) is the shortest distance between two points, considering the elevation
+changes in between both points. This is the distance along an
+uneven, rugged surface. To calculate topographic distances
+we used the gdistance package (van Etten, 2017) in R.
+Given its computational challenges, some words on the matter
+are necessary at this point.
+Calculating topographic distances requires building an incidence matrix (a graph of connections between all points) with
+a digital elevation model (DEM) raster of the region containing the points of interest. Thus, the first step is to assemble
+a DEM for the region of interest, which, in our case, is the
+whole world. There are many sources for elevation data freely
+available, but not all datasets cover the whole planet (the northernmost and southernmost areas are often missing). For this
+we used the Global Multi-resolution Terrain Elevation Data
+2010 (Danielson & Gesch, 2011), which does cover the whole
+globe, and is available at different resolutions (30-, 15-, and
+7.5-arc-seconds). While ideally one would use the highest
+resolution possible, this is not computationally feasible for
+large areas. We have access to a High Performance Computing
+server with about 800 GB of RAM, but found this was not
+sufficient to build the incidence matrix for any macro area at
+the 7.5- or 15-arc-second resolution. For this reason, we used
+the 30-arc-second resolution of the data,5 which roughly
+corresponds to about 1 square km per pixel (i.e. we cannot
+consider elevation changes that cover less that 1 km).
+Given a DEM, we can calculate a graph of distances between
+adjacent points in the map (incidence matrices). The distance between two adjacepoints is given by √(h2 + v2) where
+
+h is the h
+We can th
+est path be
+other simila
+nodes in a
+tion). It is
+ods to cal
+Our approa
+is equally co
+
+However,
+topographic
+these comp
+between la
+for North A
+the inciden
+divide thes
+calculate th
+After havin
+we propaga
+the overlapp
+
+A recent p
+which mak
+the authors
+calculate th
+ing times, i
+study, the a
+spoken in
+represent th
+
+2.4 Walkin
+For the pu
+two points
+paths that c
+works are
+between po
+for commu
+assumes th
+communica
+assumption
+not be war
+have happen
+
+For this p
+(OpenStreet
+tion on roa
+For the ro
+Machine) ro
+
+4
+
+There are,
+tances with
+of connecti
+nectivity ar
+
+5
+
+6
+
+A middle way between Euclidean and geodesic distances is to use a UTM
+(Universal Transverse Mercator) projection for the data. Using a UTM
+projection splits the globe into 60 zones, and flattens each zone in a way
+ensures that calculating Euclidean distances on the coordinates produces
+near correct distances. We will not explore this approach in this paper.
+We used the breakline emphasis compression. This approach tries to maintain
+better sharp changes in terrain elevation (Gesch, 1999).
+
+We use the
+the 22.02.2022
+
+O
+
+mainland by ferry,7 and some locations without roads or
+other transitable pathways. The later situation was especially
+present for languages in the Amazon.
+Currently, we do not have any good way to solve this issue.
+A workaround one can take is to fill in the gaps by using
+geodesic distances when there are no roads. This approach
+should provide reasonable results for islands (given that communication between islands and the mainland would have
+been mostly as direct routes on ship), but it is only a rough
+approximation for unconnected points in the jungle.
+We provide two datasets for the walking distances. One
+dataset has missing connections for these cases, and the
+other dataset tries to fill in these missing connections with
+a simple algorithm which sequentially connects the whole
+network to the nearest (by geodesic distance) off-network point.
+Regarding computational issues, two observations are important. First, OSRM cannot build a graph (the data structure needed
+for the routing) for the whole world, which meant we had to
+work on each macro-area individually. Second, in computational terms, we found that the preprocessing steps to prepare
+the Open Street Maps data took a couple of weeks, but having
+built the OSRM graphs, calculating the actual distances is
+extremely efficient. Generally speaking, walking distances are
+easier to calculate than topographic distances on a moderately
+powerful server.
+
+2.5 Taking stock
+So far we have discussed four possible ways of calculating
+the distance between two points. It is useful to compare what
+
+7
+
+While OSM contains ferry information for many places, it is unclear how much
+information is missing.
+
+the actual
+Figure 1 pr
+(the locatio
+next section
+topographic
+similar to
+straight tha
+different fr
+route.
+
+In computa
+challenging
+of resource
+area. Both
+efficient, a
+middle.
+
+The next t
+we use the
+of language
+tic insight,
+different m
+ple as poss
+spatial term
+
+3 Evaluat
+3.1 Datase
+
+We evaluat
+Hindu-Kush
+et al., 2018
+of datasets
+theoretical
+detailed ov
+of these d
+binary featu
+ourselves
+
+Figure 1. Example of distances’ comparison for three Hindu-Kush languages
+
+O
+
+equal.8 Second, we chose three areas for which there are both
+interesting topographic features, and at least some note in
+the literature about contact effects. It is important to clarify
+that we do not expect that the features should be comparable
+across datasets, or that we expect the different types of features to behave similarly in terms of their spatial distribution,
+and correlation with the different distance metrics. On the
+contrary, we want to explore whether one of the distance
+metrics systematically shows higher correlation with different
+linguistic features in the different datasets.
+
+each featur
+natives to
+preferable
+& Mertner,
+
+The model d
+
+In terms of types of linguistic features, the Hindu-Kush data
+combines phonology, lexical and syntactic features; the South
+America data exclusively comprises word order features; and
+the European data is made up of phoneme inventories. It is
+not our aim with this paper to explore any of these areas or
+datasets in depth. Our aim is simply to demonstrate how
+different distance metrics can lead to very different results when
+modelling contact.
+
+3.2 The model
+There are many different alternatives to model spatial relations from estimating simple correlations (van Gijn et al., 2017)
+via autoregressive models (Murawaki & Yamauchi, 2018) to
+Gaussian Processes (GP) (Guzmán Naranjo & Becker, 2021;
+Guzmán Naranjo & Mertner, 2022). In this paper we use the
+latter for two reasons. First, GPs can be implemented fairly
+easily with Stan (Carpenter et al., 2017), and second, they
+can use a distance matrix directly.9 GPs are built around a
+kernel function which transforms the distance matrix into a
+covariance matrix. There are many alternatives for kernels, but
+we use a simple exponential kernel (see Duvenaud, 2014, for an
+in-depth discussion of different kernels).
+While we focus here on it, these methods can also be used to
+estimate linguistic areas and contact areas (Guzmán Naranjo &
+Mertner, 2022).
+In this paper we will model each feature independently from
+the other features. That is, we will predict each feature fi with
+a logistic regression with a GP as the predictor.10 We predict
+8
+
+This does not mean that either the distances we propose, or the method we
+describe in the next section only work in logistic regression. In fact, any type of
+likelihood would work.
+9
+
+With models like those proposed by Murawaki and Yamauchi (2018), one
+first has to decide on how to build an incidence matrix of neighbours from
+the distance matrix. This process is not completely straightforward. However,
+the distance matrices we provide could also be used in those types of models.
+10
+
+There is an important caveat to our modelling. Because of how the
+routing works, the walking distances do not necessarily satisfy the triangle
+inequality (in most cases by a couple of meters). This can happen, for
+example, because a street is one direction only, which means that the
+distance from A to B is different than the distance from B to A, because the
+routing algorithm needs to find a different paths. The consequence of this
+is that the estimation of the parameters in the models is biased. The problem
+arises because under some values of the length-scale, the resulting covariance
+matrix needs to be symmetric and positive definite. The effect on the
+sampler is that there are values of the length-scale which cannot be sampled
+and the posterior of the length-scale will not be correct. Other parameters
+will also be biased and should not be interpreted. Since for this paper
+we are only looking at predictive performance, this does not matter for
+our results. However, a researcher interested in understanding the actual
+spatial structures in the data should take extra care in fixing the distances.
+
+                                                                                             
+
+Where α
+the GP, δ
+distance m
+the distance
+controls the
+each other
+distance), a
+strong the s
+
+To evalua
+cross-valida
+model usin
+We then re
+binary feat
+performanc
+means that
+thus we ca
+tern to the
+0.5, indica
+used. A ba
+some spati
+the model
+of the left-o
+
+4 Case stu
+4.1 Materi
+
+This sectio
+Hindu-Kush
+contains 59
+the location
+
+The origina
+from phon
+these featu
+we remove
+positive va
+
+O
+
+Figure 2. Hindu-Kush languages.
+
+that for each feature, at least 10 languages have a different
+value than the majority value. This left us with a total of
+48 features.11 Some features have missing values for some
+languages. The model simply ignores those languages in the
+case of missing values.
+Looking at the Hindu-Kush region is particularly interesting
+for two reasons. First, contact effects have been extensively
+documented for this area (Liljegren, 2019; Liljegren, 2020;
+Liljegren, 2022, and references therein),12 which leads us to
+expect positive results at least to a certain extent. Second, and
+perhaps more importantly, the region is extremely mountainous
+as can be seen in Figure 2, which means that simple Euclidean
+and geodesic distances are likely biased estimates of the actual
+separation between communities (see also Figure 1).
+
+4.2 Results
+Figure 3 shows the balanced accuracy of each model for
+each grammatical feature.
+
+11
+
+These resul
+there is no
+metrics. Ev
+to be the l
+for some o
+Object Wo
+distances p
+Fricatives a
+is that it
+better than t
+
+Table 1 sh
+all features
+each distanc
+
+Going by
+in terms o
+the 48 fea
+geodesic di
+considerabl
+walking di
+the others.
+
+See the supplementary materials.
+
+12
+
+See also the “Language contact and relatedness in the Hindu-Kush region”
+project: https://hindukush.ling.su.se/.
+
+We can vis
+conditional
+
+O
+
+Figure 3. Balanced accuracy by feature and distance metric for the Hindu-Ku
+
+effects of a spatial model are predictions of a grid of points
+on the area in question (from 69 to 77.5 degrees longitude,
+and from 33.2 to 38.5 latitude, with steps of 0.05, for a total
+of 18297 points). To build these predictions, we need to
+calculate the distance from each point in the grid to each of the
+languages in the dataset. Because walking distances are sensitive to the existence of an accessible road from the point
+in question, it is not possible to build the required matrix for
+the conditional effects of walking distances, at least not for
+
+this area o
+conditional
+distances.
+13
+
+A (computa
+and walking
+which there a
+not obvious h
+open for futur
+
+O
+
+Table 1. Aggregated accuracy by distance metric
+Hindu-Kush.
+distance
+
+mean
+accuracy
+
+sd
+accuracy
+
+n. times be
+accuracy
+
+euclidean
+
+0.62
+
+0.14
+
+6
+
+geodesic
+
+0.67
+
+0.13
+
+15
+
+topographic
+
+0.66
+
+0.13
+
+16
+
+walking
+
+0.68
+
+0.13
+
+17
+
+For illustration we select the Unique S Case and Zero
+Copula for Predicate Adjectives, since these two
+seem to show large differences in the predictive power of the
+Euclidean distances. These are shown in Figure 4 and Figure 5.
+In both cases, the difference is that the Euclidean distances
+produce a much stronger areal effect structure, with more
+extreme probabilities at the peaks. In contrast, both the areal
+patterns of the topographic and geodesic distances are
+smoother, and less extreme. This arises because Euclidean
+distances are overall shorter than either geodesic or topographic distances, which makes the model infer stronger spatial
+dependencies. However, in this case, inferring stronger spatial
+relations leads to overgeneralization and incorrect predictions.
+One thing which this modelling approach fails to capture is
+the fact that a higher accuracy might not reflect the real contact
+situation. That is, the fact that in some cases the Euclidean
+distances produced better predictions, does not necessarily
+mean that the model reflects the actual contact scenario, and
+it is only finding spurious spatial correlations. A thorugh
+exploration of this scenario is outside the aim of this paper, but
+we further mention some considerations in the discussion.
+
+5 Case study: European phoneme inventories
+5.1 Materials
+
+We now turn to European phoneme inventories. For this case
+study, we limit ourselves to languages found in the upper left
+quadrant for Eurasia (Western Eurasia), between -19.0212
+and 82.3004 longitude, and 38.6147 and 68.8326 latitude.
+This area contains 118 languages in Phoible 2.0.14,15 Because
+Phoible lists multiple phoneme inventories for various languages,
+we randomly chose only one phoneme inventory for each
+language. We then removed phonemes which were either too
+rare (present in fewer than 20 languages), or too common
+(present in more than 88 languages). This left us with a total of
+55 phonemes.
+
+Figure 6 s
+together wit
+
+5.2 Result
+Figure 7
+Table 2 sh
+of times e
+best accura
+features are
+patterns. H
+patterns, b
+distances o
+distance me
+
+6 Case stu
+6.1 Materi
+
+We are usi
+in DIACL
+for 70 lan
+like whethe
+we remove
+in 55 or m
+languages).
+shows the sp
+
+6.2 Result
+Figure 9 s
+feature and
+of times e
+best accura
+of areal pa
+the order A
+distances h
+chance. It
+are not relia
+
+7 Conclud
+
+We have p
+typological
+
+14
+
+https://zenodo.org/badge/latestdoi/19120525 (Moran & McCloy, 2019)
+
+15
+
+An alternative database one could look at is Nikolaev (2018), but we chose
+Phoible because it seems to be more popular among typologists.
+
+16
+
+Like for th
+for some fea
+omitted the la
+
+O
+
+Figure 4. Conditional effects for Unique S Case for the Hindu-Kush.
+
+before on a large scale. We show that it is in fact possible to
+compute topographic and walking distances for the world’s
+languages. The resource we provide should be interesting to linguists working on topics related to the geography of languages
+and dialects, as well as researchers interested in language contact
+or other spatial phenomena.
+
+as example
+illustrations
+different re
+not necessa
+of language
+structures w
+
+We have presented one possible way of using these distances,
+namely with a Gaussian Process. Our modeling is not meant
+as an exhaustive exploration of the linguistic areas we use
+
+The result
+completely
+walking di
+
+O
+
+Figure 5. Conditional effects for Zero Copula for Predicate Adjectives
+
+Figure 6. European languages.
+
+O
+
+Figure 7. Balanced accuracy by feature and distance metric for Europe.
+
+O
+
+Table 2. Aggregated accuracy by distance metr
+distance
+
+mean
+accuracy
+
+sd
+accuracy
+
+n. times
+accuracy
+
+euclidean
+
+0.54
+
+0.09
+
+18
+
+geodesic
+
+0.57
+
+0.1
+
+34
+
+topographic
+
+0.54
+
+0.09
+
+20
+
+walking
+
+0.53
+
+0.08
+
+18
+
+Figure 8. South American languages.
+
+other distance metrics, and the topographic distance performed
+more or less at the same level as the geodesic distance, and
+the Euclidean distance performed worse of the four. However,
+for the European dataset, these results are reversed. Both the
+geodesic distances performed best, and topographic and
+Euclidean distances performed slightly better than the walking
+distance. Given the fact that the mapping system for Europe
+in OSM is more developed than for the Hindu-Kush area,
+we expected the results to be the other way around.
+One possible explanation for our results is that walking
+distances are not very accurate representations of the
+spatial separation of populations very far apart. Additionally, the
+Hindu-Kush data has relatively good point accuracy of the
+location of the languages in questions, while the European data
+uses very rough approximations. These two factors could be
+causing the walking distances to perform poorly.
+
+It is worth
+While it is
+locations, w
+real territo
+tion might
+speakers, la
+Mandarin, e
+in space,
+capture the
+South Ame
+to interpret
+poor repres
+the languag
+that our rou
+
+Overall, we
+metric can
+
+O
+
+Figure 9. Balanced accuracy by feature and distance metric for South Ameri
+
+Table 3. Aggregated accuracy by distance metr
+America.
+distance
+
+mean
+accuracy
+
+sd
+accuracy
+
+n. times b
+accuracy
+
+euclidean
+
+0.54
+
+0.06
+
+4
+
+geodesic
+
+0.54
+
+0.07
+
+5
+
+topographic
+
+0.55
+
+0.07
+
+7
+
+walking
+
+0.48
+
+0.05
+
+4
+
+features, we saw upwards of 10% difference between the best
+and worse distance metric (e.g. Zero Copula for Predicate
+Nominals in the Hindu-Kush dataset). However, we cannot
+know a-priori which distance metric will better capture
+spatial patterns in any one case. From the four distances, the
+topographic and geodesic distances showed the most consistent performance across datasets, and would be likely to
+be reasonable first choices. At the same time, in most cases,
+the Euclidean distances were not much worse than the other
+distances, and might be a good enough approximation in
+cases for which performance is critical, or the dataset cover
+very large areas, and the point-location information is not very
+precise.
+
+8 Data and software availability
+
+All distance matrices for both walking and topographic
+distances are freely available and archived with Zenodo under
+CC-BY license: 10.5281/zenodo.7973820. The code for building
+
+the topogra
+for running
+which shou
+Jäger (2023
+
+All Open
+calculations
+geofabrik.de
+
+9 Author c
+Matías Gu
+Software, V
+Preparation
+
+Gerhard J
+Funding Ac
+
+10 Acknow
+We thank
+their helpfu
+
+O
+
+References
+Carling G, Larsson F, Cathcart CA, et al.: Diachronic Atlas of Comparative
+Linguistics (DiACL)—a database for ancient language typology. PLoS One.
+2018; 13(10): e0205313.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Carpenter B, Gelman A, Hoffman MD, et al.: Stan: a probabilistic
+programming language. J Stat Softw. 2017; 76(1): 1.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Danielson JJ, Gesch DB: Global Multi-Resolution Terrain Elevation Data
+2010 (GMTED2010). US Department of the Interior, US Geological Survey
+Washington, DC, USA, 2011.
+Reference Source
+Duvenaud D: Automatic model construction with Gaussian processes. PhD
+thesis. University of Cambridge, 2014.
+Reference Source
+Gesch DB: The Effects of DEM Generalization Methods on Derived
+Hydrologic Features. In: Spatial Accuracy Assessment: Land Information
+Uncertainty in Natural Resources. Ed. by Kim Lowell and Annick Jaton. New York:
+Routledge, 1999; 255–261.
+Reference Source
+Guzmán Naranjo M, Becker L: Statistical Bias Control in Typology. In:
+Linguistic Typology. 2021.
+Publisher Full Text
+Guzmán Naranjo M, Jäger G: Euclide, the crow, the wolf and the pedestrian:
+distance metrics for linguistic typology - Dataset. Version 1. Also supported
+by the Emmy Noether project ’Bayesian modelling of spatial typology’, Grant
+number: (project number 504155622). Zenodo. 2023.
+http://www.doi.org/10.5281/zenodo.7973820
+Guzmán Naranjo M, Mertner M: Estimating areal effects in typology: a case
+study of African phoneme inventories. In: Linguistic Typology. ahead of press.
+2022.
+Publisher Full Text
+Kaiping G: A network for simulating pre-colonial migration in the Americas.
+In: Santa Barbara: UC Santa Barbara: Center for Spatial Studies. 2021.
+Publisher Full Text
+Koile E, Chechuro I, Moroz G, et al.: Geography and language divergence: the
+case of Andic languages. PLoS One. 2022; 17(5): e0265460.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Liljegren H: Gender typology and gender (in) stability in Hindu Kush
+Indo-Aryan languages. In: Grammatical Gender and Linguistic Complexity. Ed.
+by Francesca Di Garbo, Bruno Olsson, and Bernhard Wälchli. Vol. 1 General
+issues and specific studies. Studies in Diversity Linguistics 26. Berlin: Language
+Science Press, 2019; 1: 279–328.
+Reference Source
+Liljegren H: The Hindu Kush-Karakorum and linguistic areality. J South Asian
+Lang Linguist. 2020; 7(2): 187–233.
+Publisher Full Text
+Liljegren H: Kinship terminologies reveal ancient contact zone in the Hindu
+Kush. Linguist Typol. 2022; 26(2): 211–245.
+Publisher Full Text
+
+Liljegren
+v1.0 [Dat
+Publishe
+
+Luxen D,
+Proceedin
+Geograph
+513–516.
+Publishe
+
+Moran S,
+Human H
+Referenc
+
+Murawak
+vertical s
+Evol. 2018
+Publishe
+
+Nikolaev
+tool for d
+Publishe
+
+OpenStre
+Referenc
+
+Padgham
+Calculat
+Referenc
+
+Ranacher
+evolutio
+languag
+PubMed
+
+van Etten
+grids. J S
+Publishe
+
+Van Gijn
+converge
+Handboo
+in Langu
+964–996.
+Referenc
+
+Verkerk A
+Northwe
+12: 155–2
+Referenc
+
+Wang IJ:
+connecti
+package
+Publishe
+
+Wichman
+Phys A Sta
+Publishe
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 09 July 2024
+
+https://doi.org/10.21956/openreseurope.18965.r41849
+
+© 2024 Di Garbo F. This is an open access peer review report distribu
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Francesca Di Garbo
+Department of Language Sciences; CNRS Laboratory Par
+Aix-Marseille, Aix-en-Provence, France
+
+I am satisfied with the revisions implemented by the Auth
+article.
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Linguistic diversity, linguistic typolog
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+
+Version 1
+Reviewer Report 05 October 2023
+
+https://doi.org/10.21956/openreseurope.17425.r33111
+© 2023 Koile E. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Ezequiel Koile
+
+1 Department of Linguistic and Cultural Evolution, Max P
+
+Anthropology, Leipzig, Germany
+2 Department of Linguistic and Cultural Evolution, Max P
+
+Open Research Europe
+
+O
+
+Anthropology, Leipzig, Germany
+
+This paper explores different methods measuring geogra
+for all pairs of languages at a global scale, and tests their
+provides a valuable resource for the researchers in lingu
+which of these definitions are more suitable for studying
+features.
+
+I think this is an interesting study which should be indexe
+comments.
+Major comments
+1 - Euclidean distance
+
+I do not understand why Euclidean distance is considered
+I would understand Euclidean distance as a rectangular d
+coordinates (x,y) are defined in the same units. On a sphe
+Euclidean would be geodesic/great-circle distance. Calcu
+squared sum of latitude and longitude in degrees, treatin
+understand that this calculation is computationally non-in
+much more exact.
+
+Euclidean distance as defined here can be useful at relati
+equator (and it is used in this way inside each area studie
+Northern Europe), but there should be at least some app
+formula, or UTM projection, as mentioned in Footnote 4.
+
+I disagree with the first statement in the sentence “Euclid
+flat, and geodesic distances assume that the surface of th
+Euclidean distance as defined in Eq. (1) does not (only?) a
+deformed one, where the E-W extension of Greenland at
+lat = +78° ) to Danmarkshavn (long = -18°, lat = +77°) is la
+South America, from Piura in Peru (long = -80°, lat = -5°) t
+while the first is 1,300km (54°) and the second one 5,000k
+
+The authors acknowledge this factː “However, for larger d
+Equator, Euclidean distance can produce results which ar
+along the surface of the Earth.”, but still use these metric
+
+The authors mention 4 references, two using either Eucli
+more using Euclidean distances either explicitly or implic
+distance as far as I understand. Murawaki and Yamauchi
+
+“Languages were found to be associated with single-point ge
+latitude), as shown in Fig. 1. We constructed a spatial neighb
+were located within a distance of R km.”
+
+Open Research Europe
+
+O
+
+Which I understand as geodesic distances, since these ar
+In Ranacher et al (2021):
+
+“Distance is modelled as a cost function C, which assigns a n
+locations i and j. Costs can be expressed by the Euclidean dis
+travel times, or any other meaningful property quantifying t
+
+It is not clear to me what they mean by Euclidean distanc
+Eq.(1) in the further calculation of costs.
+
+As for the other references, it is true that Guzmán Naran
+pointing out that this is a simplification:
+
+“For simplicity, we use Euclidean distances between languag
+would be fairly easy to use other distance metrics with a GP,
+(Wichmann and Hammarström 2020).”
+
+Finally, in Verkerk and Di Garbo (2022), I do not see this s
+as independent predictors (one would expect that latitud
+directly related with temperature differences), e.g.ː
+
+“The languages with the four different types of gender system
+nonlinguistic variables, with the differences between types b
+overlap, and smaller for number of L1 speakers and latitude
+
+In addition, these measures are used in the African conti
+equator.
+2 - Cross-comparison of case-studies
+
+I understand that the data available is not completely ho
+it confusing that different linguistic measures are used in
+
+“In terms of types of linguistic features, the Hindu-Kush data
+features; the South America data exclusively comprises word
+made up of phoneme inventories.”
+
+I do not see why these different features would be expec
+are divergences from the expected correlations with geo
+topography of the region or because the features studied
+by language contact? It would be interesting to test at lea
+geographic scenarios, or split the features in a comparab
+phonological, lexical and syntactic, to check which ones a
+
+More generally, the use of vocabulary like “...topographic
+distance metrics…” gives the idea of one distance being “
+be clear in the writing that this outperformance is always
+
+Open Research Europe
+
+O
+
+assuming that shorter geographic distances (in any of its
+similarity among these features among languages.
+3 - Report of main results
+I do not agree with statements such as (Abstract)ː
+
+“We evaluate these distance metrics on three case studies an
+outperform the other distance metrics, but geodesic distance
+approximation in some cases.”
+Or, more specific outputs for each case study such asː
+
+“For the Hindu-Kush dataset, the walking distances showed a
+metrics…”
+
+This is not so clear to me from Table 1. It seems to have p
+geodesic distances.
+
+“However, for the European dataset, these results are revers
+distances performed considerably better than the walking di
+
+This is also not clear from Table 2. Geodesic distances pe
+which perform approximately equally in all 3 metrics.
+
+Minor comments
+General:
+
+Numbering of sections: this is a little confusing along the
+5: 5.1, 5.2,... Unless this is the fifth chapter of a collection
+Sections 6-8 appear for Data and Software availability, Au
+Acknowledgments respectively.
+
+As for the subsections (sections after the 5.), it seems tha
+For example, at the end of the Introduction, Sections 5.2,
+should be referred: 5.3 is Materials and methods, and I b
+the same section (Case studies 1, 2, and 3).
+Abstract:
+
+Delete the first instance of “We evaluate these distances.
+Page 3, left column (in the following, P3L):
+
+Last paragraph Introduction: Rephrase according to new
+
+Open Research Europe
+
+O
+
+First paragraph Section 5.2:
+
+(x1,y1) and (x2,y2) : replace 1 → a, 2 → b for consistency w
+
+Eq.(1): missing exponent 2 in the second term on the righ
+
+P3R:
+Footnote 3: why is the formula for computing the geodes
+reference to its definition.
+Last line: “but we include” → “considering”
+P4L:
+First paragraph:
+
+“northern most” → “northernmost” (same for southernm
+“ram” → “RAM”
+Second paragraph:
+
+Is this formula correct, symmetric for horizontal and vert
+to add a factor, v → a.v (a >1), and probably test the case
+compared to a = 1?
+
+Complete the symbol for square root inline (if typograph
+Last paragraph:
+
+“... but it attempts to calculate the travel time using a fun
+instead of taking the actual distance directly”. Related to
+dimensional factor between time and distance, the latter
+vertically.
+
+“77 languages in the Americas” → “languages spoken in 7
+P4R:
+1st paragraph:
+
+“For the purposes of this paper, the walking distance bet
+mapped roads, walkways and paths that connect those tw
+are a close representation of the spatial separation betw
+actual pathways used for communication between comm
+
+This might be reasonable for current language contacts,
+historic changes, even recent ones, these mapped pathw
+
+Open Research Europe
+
+O
+
+2nd paragraph:
+Open Stree Maps → Open Street Maps
+OSRM = Open Street Routing Machine. Define this when
+Footnote 4ː Explain the meaning of UTM.
+P5:
+Figure 1:
+
+It should have a different caption, such as “Example of di
+languages”
+Figure 2ː
+The caption should be “Hindu-Kush languages”.
+Figures 1 and 2 (and probably 4 and 5):
+
+Add an inset map, it is not very clear what part of the wor
+long values.
+Add units for elevation (meters?)
+P5L:
+
+Last paragraph: “The choice of dataset was…”: dataset →
+P6L:
+First paragraph:
+
+“...a logistic regression with a GP as predictor.” → as a/the
+Footnote 10:
+
+“...the walking distances do not necessarily satisfy the tria
+
+Could you please expand on this? If d(A,C) < d(A,B) + d(B,C
+instead, reducing the magnitude of d(A,C) and satisfying
+P6R:
+
+“from phonology to syntax” → “from phonology and synt
+
+Open Research Europe
+
+O
+
+P7L:
+Top: feature → features
+Figures 3, 7, and 9:
+Add a dashed vertical line at balanced accuracy = 0.5 (all
+would help comparability as well).
+Rename the x axis as “balanced accuracy”.
+
+The coloured dots are not easily readable in the current f
+features in the y-axis, the jittering applied does not help
+feature. I suggest trying a different visualization, e.g. hor
+feature, and different icon shapes for these 4 dots (the co
+Also, reordering the y-axis by their value in the x-axis (see
+7, with a great proportion of dots on the x=0.5 line.
+
+Features in each case are ordered in (inverse) alphabetica
+were ordered differently, either by (average? minimum?)
+grouping (e.g. phoneme types in Fig 7).
+Tables 1-3:
+
+The row order seems arbitrary. Reorder either from simp
+geodesic, topographic, walking) or by some of the values
+P8L:
+Last paragraph:
+
+“from 69 to 77.5 longitude…” add “degrees” or the degree
+
+“Because walking distances are sensitive to there being a
+question,” → “Because walking distances are sensitive to
+the point in question,”
+P8R:
+
+“These are shown in Figure 4 and Figure 5”: I think this se
+paragraph.
+
+“...Euclidean distance build…” → “...Euclidean distances b
+Figures 4 and 5:
+
+It is not very straightforward to understand these figures
+predictions on presence or absence of a feature? Shouldn
+
+Open Research Europe
+
+O
+
+closer locations? If they are based on the distances to eac
+
+Also, why is the value “Indeterminate” present in Fig 5 bu
+included in Fig 4 as well (unless there are no NA’s in this v
+not a binary feature? Also, please be consistent in the cho
+present in Fig 4 and indeterminate in Fig 5).
+P8R:
+
+“...in the upper left quadrant for Eurasia…” Do you mean
+If so, according to Fig 6, this looks more like Western Eur
+Footnote 15: Phoibl → Phoible
+
+“It is clear in this case that most features are hard to pred
+patterns.” Do you mean areal patterns?
+P9R:
+“...for the worlds languages.” → world’s.
+
+Is the rationale for creating the dataset(s) clearly des
+Yes
+
+Are the protocols appropriate and is the work technic
+Yes
+
+Are sufficient details of methods and materials provid
+Yes
+
+Are the datasets clearly presented in a useable and ac
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Linguistic diversity, quantitative met
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 05 Apr 2024
+
+Matías Guzmán Naranjo
+
+We have carried out most of the corrections the revie
+miss-formatted, and several descriptions of the result
+
+Open Research Europe
+
+O
+
+pointed out. We have fixed these. We have also impro
+reviewer's suggestions. There is one major point the r
+not in agreement. Below some specifics: * Regarding
+distances: -> There are two things important here. Firs
+Ranacher et al. do use in practice euclidean distance c
+projection (personal communication with Gereon Kaip
+Garbo, using the linear latitude and longitude indepen
+euclidean distances as linear predictors on each dime
+studies that came out recently that use linear distance
+(2022), we have added this reference. The Second poi
+issues we see. First, because brms is gaining populari
+becoming more and more common for researchers to
+function can only compute euclidean distances. There
+types of distances the researcher needs to write stan
+widespread. The second factor that plays a role are w
+Processes, which are used for efficiency purposes. Wh
+points is slow but feasible, it is not possible to fit an ex
+not in normal research times and consumer hardware
+comes very close to estimating the parameters of an e
+exactness. However, approx GPs require covariance fu
+Euclidean distances (there are also some covariance f
+that’s something else). Until someone defines an appr
+hard), Euclidean distances are the only real alternative
+Euclidean distances are still used, and we do not reall
+them in the study. We do not see that comparison as
+even find that they are an ok approximation in some c
+-> We do not expect these different features to behav
+to compare these features across areas. We only wan
+uses for the calculated distances, and one of several w
+to how well they capture the geographic distribution o
+clarified. * Regarding the formula for horizontal and v
+possible to use different formulas, but the distances t
+process feasible, at least for us. Additionally, you wou
+because steepness is the key factor influencing speed
+topographic-style distance is an ongoing project. * Re
+calculated on modern pathways may not be valid for p
+in the paper, we believe this might be one of the reas
+poorly for Europe. We have added a note at this point
+OSRM: -> We have expanded a bit. The problem is ver
+OSRM works internally. The routing algorithm in OSRM
+direction of travel as well as vehicular type allowed on
+combination of factors which result in non-triangular
+very often going from A to B requires following a sing
+sidewalk, and thus, the direction of the road must be
+B->A cannot be done on that same route. This sort of
+matrices with well understood algorithms, but these d
+What seems to be happening is that there are too ma
+
+Open Research Europe
+
+O
+
+C, some new issue arises for A-B-D and A-B-E, etc. Th
+Triangle fixing algorithm - implementation of algorith
+Brickell, J., Dhillon, I., Sra, S., and * Tropp, J. (2008). Th
+Matrix * Anal. & Appl. 30, 375-396. * * (c) Toni Giorgi
+with NO WARRANTY. * * $Id: triangleFixing.c 424 201
+Regarding or ME plots: -> The model uses the GP to p
+at some point, given the distance of that point to the p
+the same thing with the CV, the difference is that for t
+languages we left out of the training, and for the ME w
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 02 October 2023
+
+https://doi.org/10.21956/openreseurope.17425.r33110
+
+© 2023 Di Garbo F. This is an open access peer review report distribu
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Francesca Di Garbo
+1 Department of Language Sciences; CNRS Laboratory Pa
+Aix-Marseille, Aix-en-Provence, France
+2 Department of Language Sciences; CNRS Laboratory Pa
+Aix-Marseille, Aix-en-Provence, France
+Summary and general comments
+
+This paper introduces two novel techniques for computin
+distance metrics created through these techniques are a
+one of walking distance between language communities.
+implementation of the two measures and shows how the
+and contact effects from a typological perspective. The ac
+against two distance metrics previously used in typologic
+distance and geodesic distance. The four metrics are app
+databases, each focusing on linguistic features of three e
+Kush, Europe, and South America. The studies show that
+significantly affect the type of generalizations that be dra
+establish a priori which measure would work best to capt
+The results presented in the paper suggest that, in gener
+perform most consistently across the three datasets.
+
+The paper makes an important methodological contribut
+distribution of linguistic diversity. Firstly, because it enric
+use to control for areal biases in the distribution of struct
+
+Open Research Europe
+
+O
+
+because the method offers a promising new way to acco
+especially crucial not only for the purpose of bias control
+and/or areality effects in an exploratory fashion, for insta
+areal spread of given linguistic phenomena independent
+
+I would encourage the authors to develop a bit more on
+so neatly from the current version of the text, but, which
+linguistic typology. Have the authors thought, for instanc
+the newly published Grambank dataset? This newly relea
+typological database to date, could offer an important te
+the two distance metrics and, more generally, to detect a
+In addition to the above-mentioned suggestion, I have a
+suggestions of revision, which are highlighted below.
+Minor comments and suggestions
+Abstract
+
+"We evaluate these distance metrics on three case studies an
+outperform the other distance metrics, but geodesic distance
+pproximation in some cases."
+
+This passage can be a bit misleading (when compared to
+that topographic distance is consistently better than the
+depending on the model and the phenomena at stake, th
+authors to rephrase this passage by framing things in lin
+section (cf. From the four distances, the topographic and ge
+consistent performance across datasets, and would be likely
+time, in most cases, the Euclidean distances were not much w
+be a good enough approximation in cases for which perform
+large areas, and the point-location information is not very p
+Page 3
+"Section 5.4 describes a case study on
+modelling potential contact with the different datasets."
+
+In the abstract, and in the rest of the paper, the modellin
+independent case studies. Please rephrase in order to ma
+Page 6
+Figure 2. European languages > Hindu-Kush languages
+
+Page 8, about the interpretation of Table 2 and of the
+
+Open Research Europe
+
+O
+
+"However, for those features that do show areal patterns, bo
+outperform the geodesic and walking distance metrics."
+
+Is this really the case? Unless I interpret things wrongly, j
+the topographic and geodesic distances that outperform
+Could you please clarify?
+
+Is the rationale for creating the dataset(s) clearly des
+Yes
+
+Are the protocols appropriate and is the work technic
+Yes
+
+Are sufficient details of methods and materials provid
+Yes
+
+Are the datasets clearly presented in a useable and ac
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Linguistic diversity, linguistic typolog
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 05 Apr 2024
+
+Matías Guzmán Naranjo
+
+We have implemented most of the reviewer's suggest
+Regarding the specific point on exploring areality with
+currently work in progress. Since it is a bit off-topic we
+now make a brief mention of it.
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 29 June 2023
+
+https://doi.org/10.21956/openreseurope.17425.r33113
+
+© 2023 Dediu D. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Open Research Europe
+
+O
+
+Dan Dediu
+
+1 Catalan Institute for Research and Advanced Studies (IC
+
+2 Department of Catalan Philology and General Linguistic
+
+Catalonia, Spain
+3 Catalan Institute for Research and Advanced Studies (IC
+4 Department of Catalan Philology and General Linguistic
+Catalonia, Spain
+
+This paper introduces two new ways of computing betwe
+directly usable datasets for these (plus two “older” metho
+ways of quantifying space in many cross-linguistic (and, m
+think this is an important addition to the literature, espec
+resources needed to compute one of these new distance
+to the “average” language scientist.
+
+However, I do have a few suggestions and questions tha
+(approximate) order of appearance in the paper:
+
+Abstract:
+Remove 1st “We evaluate these distances.” (and, in
+a careful reading).
+○
+
+After having read the paper, I think the last senten
+clear to me (and to the authors themselves, in fact
+outperform the other[s]” in a meaningful and gene
+down as the paper is not about results but about t
+IMHO.
+English language:
+Please check prepositions, spelling, plural, etc in: "
+bias estimates"; "used for typologists and linguists
+metric"; "Open Stree Maps"; "show real patterns";
+scale"; "for the worlds languages"; "The simplest ty
+are Euclidean distances" -> “is”?; "the northern mos
+connected (“northernmost”)?; "distances, faulting t
+distance build" -> “distances build” or “distance bu
+P3:
+missing ^2 after (y1-y2) in d_e formula.
+○
+
+○
+
+○
+
+P4:
+○
+
+○
+
+Para “Given a DEM…” -> please reformulate to mak
+first time one reads this. My suggestion would be t
+between all points in the DEM and then you use th
+between the points one is actually interested in.
+
+Same para: please justify why sqrt{h^2 + v^2} as it
+v dimensions should be treated (a) separately and
+have expected something more like sqrt(x^2 + y^2
+weight qualifying the relative “costs” of vertical vs h
+
+Open Research Europe
+
+○
+
+P5:
+○
+
+O
+
+Para “However, even at a …“ -> I was wondering if t
+in that maybe one can consider overlapping neigh
+course defining these neighborhoods brings in ass
+vertical vs horizontal displacements (see above), bu
+discussing in the paper (if not testing)?
+“PGs are built” -> GPs?
+
+Figure 1 (and figures in general):
+The color palette is atrocious for people with abno
+distinguish the first 3 distances on the map. Please
+equivalent.
+Footnote 10:
+Please explain why the triangle inequality is impor
+violation is (to footnote hints but I think this needs
+Eq 9:
+The “()” after “GP” are meaningful?
+○
+
+○
+
+○
+
+Figure 2:
+That dark red (I guess) for the dots is very hard to
+elevation.
+○
+
+○
+
+“European” -> “Hindu-Kush”.
+
+P7 (and elsewhere):
+please justify these cut-off points (here, <10 and >4
+○
+
+2nd sentence and following of 1st para of section 5
+repeating stuff that was already mentioned -> plea
+Figure 3:
+could you also use symbols as well as colors? High
+features in a meaningful way? Connect the same-c
+easier-to-follow “profile” but make it clear this doe
+features). For the vertical jitter, either use the sam
+alternating colored bands by feature to make it cle
+(now it is pretty hard to see, especially combined w
+P8
+“What this shows is that it is not instantly clear tha
+others in all cases.” -> I think the message is less o
+to depend on the feature considered, which is inte
+○
+
+○
+
+○
+
+○
+
+○
+
+Table 1 (and the others): the mean accuracy is hard
+variation (IQR, stddev…) – maybe better show the a
+(also, they look very similar to my eye – some statis
+best accuracy is not very informative without know
+
+Para “One thing which…” I think this is *very* impo
+Discussion, together with the idea that languages
+
+Open Research Europe
+
+○
+
+O
+
+“languages, we randomly chose only one phoneme
+this is sometimes done, but it does not mean it is a
+the question, different inventories for the same lan
+answers…
+
+Again, justify the cut-off points, but here this migh
+argued for SegBo (see, e.g. Eisen, E. (2019)1) when
+segments with around 50% frequency that might c
+Footnote 16:
+I am confused as I think you mention that for H-K l
+data?
+P9:
+“For the Hindu-Kush dataset, the walking distances
+other distance metrics” -> I am not sure this is the
+Figure 6:
+add elevation legend (also make it clear that the le
+○
+
+○
+
+○
+
+○
+
+Finally, two general comments:
+1. Language are not points: I clearly agree with the a
+myself) but I think this point should at least be disc
+wrt the two new distances mentioned (if any)?
+
+2. The right benchmark for these distances: I agree w
+of this paper, but still choosing the right benchma
+these two new distances being actively embraced b
+literature… Given that *most* actual uses of distan
+contact, maybe this would be a more appropriate b
+might not be the best (or, at least, the only) quanti
+sort of formal model comparison as well? And, fina
+the Balkans, which has non-trivial topography) mig
+digested at that), of course, but I think the authors
+given the amount of work (and computational pow
+
+References
+1. Eisen E: The Typology of Phonological Segment Borrow
+University of Jerusalem. 2019. Publisher Full Text
+
+Is the rationale for creating the dataset(s) clearly des
+Yes
+
+Are the protocols appropriate and is the work technic
+Yes
+
+Are sufficient details of methods and materials provid
+Yes
+
+Are the datasets clearly presented in a useable and ac
+
+Open Research Europe
+
+O
+
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Linguistic diversity, cross-linguistic st
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 05 Apr 2024
+
+Matías Guzmán Naranjo
+
+We have corrected most issues the reviewer highlight
+where things were not clear, as well as reformulated c
+in line with the results. We have also redone the plots
+friendly. There are a couple of things where we do no
+suggestions, or consider it to be for future work. Here
+ways of calculating travel times/distances: -> There ar
+methods to calculate travel costs over a surface with e
+use is just Pythagoras theorem, it assumes that to go
+to travel in a straight line between them (the hypoten
+surface to a surface made up of triangles. The result i
+total distance traveled. The quality of the approximati
+DEM. There are alternatives using formulas that appro
+similar to what you propose. We chose this solution b
+value for w, which will inevitably change depending o
+unevenness, steepness, flora, etc.. Testing travel time
+idea we do plan to pursue in the future. * Regarding t
+neighbors: -> Our guess is that the reviewer means so
+Americas? It’s an alternative method, but then you los
+the neighbors. Depending on the purpose of the dista
+faster, but we already did most of the heavy lifting he
+approach would help with higher resolution DEMs. In
+arcseconds makes the data unmanageably large. * Re
+tables: -> We’ve added sd to the tables but we’re not s
+make much sense. We could add some credible interv
+clutter and, we believe, send the wrong message on w
+Proper, exhaustive comparisons of how these distanc
+paper with a lot more tests. * Regarding randomly ch
+reviewer is correct. If one is interested in exploring so
+randomly choosing inventories might not be the best
+these datasets as illustration of what can be done with
+it is worth it to try to find the best dataset choices with
+cutoff points: -> That’s precisely what we chose, phon
+present nor too frequently absent. * Regarding polyg
+Languages are not points. Dealing with polygons is pa
+
+Open Research Europe
+
+O
+
+author, and it is still unclear how distances should be
+centroid? on average? what about overlaps? etc.). But
+question, the technical question of how to then measu
+methods we suggest here. * REgarding benchmarks a
+technically, “controlling for” and “estimating” are the s
+when comparing model performance, if a distance pr
+ours, it means it will ‘control for’ contact better, in the
+amount of variance due to spatial correlations. -> In o
+in feature F for some group of languages. You have tw
+topographic distances. If you test the distance metric
+achieve an accuracy of 0.8 while geodesic distances an
+topographic distances capture more information abou
+relations in your data. -> What we present *is* formal
+acc as a metric. We could also use something like ELP
+these types of models. The downside of ELPD is that it
+given the issues with walking distances and model sam
+think accuracy is a better choice in our case.
+
+Competing Interests: No competing interests were di
+
+

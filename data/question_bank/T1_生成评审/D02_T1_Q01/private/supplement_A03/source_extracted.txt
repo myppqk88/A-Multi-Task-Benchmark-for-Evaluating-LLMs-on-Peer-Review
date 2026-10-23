@@ -1,0 +1,1188 @@
+GRRIP WP5
+Researcher Survey Documentation
+This file includes detailed information about the survey dataset and survey design. The data is
+available in multiple formats in the Zenodo GRRIP Community.
+This project has received funding from the European Union’s Horizon 2020 research and
+innovation programme under Grant Agreement No. 820283.
+
+TABLE OF CONTENTS
+DATA FILES .................................................................................................................................. 2
+Raw Survey Data ........................................................................................................................ 2
+Variable Naming Convention ..................................................................................................... 4
+Variable Types ............................................................................................................................ 4
+SURVEY SPECIFICATION .......................................................................................................... 5
+Researcher Survey ...................................................................................................................... 5
+Email Messages ........................................................................................................................ 31
+
+GRRIP WP5 – Researcher Survey Documentation
+
+DATA FILES
+RAW SURVEY DATA
+The survey data is either available as a ‘.sav’ file, compatible with SPSS and other statistical tools,
+or as ‘.csv’ for maximum compatibility. The .csv file format was chosen to make the data as openly
+accessible as possible, since both XLSX (Excel) as well as SAV (SPSS) files are not standard open
+data formats and require specialised or paid software to open and process. Both versions hold the
+same data.
+While the SAV version can simply be opened in compatible software, the CSV variant is made up
+of two files:
+•
+•
+
+GRRIP_researcher_survey_data_CSV.csv
+from heron referred to as the “survey data”
+GRRIP_researcher_survey_structure.csv
+from heron referred to as the “survey coding structure”
+
+The survey data file contains all questions and data of the survey, including qualitative data. Each
+column has a unique variable name header that is reflected in the survey coding structure. The
+properties of each file are as follows:
+•
+•
+•
+•
+•
+•
+
+Short but descriptive column names
+Initial column providing Unique IDs for each survey entry
+Survey responses coded as numeric values (except for open ended responses)
+Includes all survey questions, including open ended and “other” responses
+Only includes valid responses, i.e., test responses and responses with extremely low
+completion rates have been removed
+Fully anonymised
+
+The accompanying survey coding structure file lists all variables of the survey data file and how
+the numerical values are coded (e.g., “1” = “Yes”). The survey coding structure file lists 3 layers
+of variable grouping depth:
+•
+
+•
+
+Variable Group
+o Variables referring to the same question are grouped through a shared variable
+group name. For example, multiple choice questions have a unique column
+(variable) within the survey data file for each option, since an arbitrary number
+and combination may be presented. All columns of a given multiple choice
+question share the same variable group.
+Variable
+o The variable name used in the survey data file to uniquely identify each data
+column. Variable names may repeat to group all response options to a single
+question. For example, the different options of a radio (single choice) question are
+
+2
+
+GRRIP WP5 – Researcher Survey Documentation
+
+•
+
+coded starting from 1. Each numerical value is matched to its label by repeating
+the variable the required number of times within the survey coding structure file.
+Variable Options
+o Each Variable may have an arbitrary number of options, such as the different
+numerical values of a single choice question, or the “Prefer not to say” checkbox
+of an open-ended question. Variable options cascade from variables and are
+unique across the entire survey coding structure file.
+
+highest_education_G
+What is the highest level of formal education you
+have completed?
+
+Variable Group
+
+highest_education
+Single Choice
+
+Variable
+
+highest
+education_O1
+
+highest
+education_O2
+
+highest
+education_O2
+
+Bachelor’s (or
+equivalent) level
+
+Master’s (or
+equivalent) level
+
+Doctoral (or
+equivalent) level
+
+highest_education_other
+Text (Other please specify)
+
+highest
+education_O2
+Prefer not to say
+
+highest
+education_O2
+
+Other (please
+specify)
+
+Text
+
+Variable Options
+
+The above graphic illustrates the hierarchical structure, cascading down from “Variable Group”
+to “Variable” to “Variable Options”. This structure can be easily converted to a dictionary type
+object, like a JSON file, while maintaining readability and ease of use of a standard tabular
+format. Further columns within the survey data structure file are:
+• Question
+o Simply lists the question relating to each response option, down to the variable
+options level.
+• Type
+o Identifies the type of each question, such as “radio” (single choice), “multiple
+choice”, “text”, “integer”, etc.
+• Label and Values
+o Label and values are directly related, where label is the text value of the
+numerical value (values), e.g., “-97” -> “Prefer not to say”
+
+3
+
+GRRIP WP5 – Researcher Survey Documentation
+
+VARIABLE NAMING CONVENTION
+All variable groups, variables and variable options follow a common naming convention. Variable
+groups are always suffixed with a “_G”. Variable options are always identical to their
+corresponding variable name, suffixed with “_OX”, where X is an incrementing number counting
+the number of options for each variable. In some cases, variable options may seem redundant
+where a variable might only have a single option. However, the naming convention was strictly
+followed to avoid inconsistencies across the survey coding structure file.
+•
+
+Example:
+o Variable Group: education_G
+o Variable: education_arts_and_humanities
+o Variable Option: education_arts_and_humanities_O1
+
+VARIABLE TYPES
+The “Type” column of the survey coding structure file specifies the type of each variable as
+follows:
+•
+•
+•
+•
+•
+•
+•
+•
+
+Text: Simple text string for open ended questions or “other” responses. This is also used
+for nationality or country, where the number of possible items is extremely large. These
+are instead encoded as text (e.g., using ISO format for countries such as IE for Ireland).
+Radio: Single choice responses.
+Multiple Choice: Multiple choice responses.
+Checkbox: Checkbox style items, reserved for “Prefer not to say” (-97) toggles of openended text and number fields.
+Integer: Whole number responses
+Likert Scale: Likert scale responses. These are virtually identical to radio, or single choice
+responses.
+Likert Scale (Reverse): Reverse coded Likert scale responses, where the high value (e.g.,
+7 – “Strongly Agree”) would indicate a difference to the desired or “good” response.
+Example: “Not every human needs to eat” -> “Strongly Agree”
+Semantic Differential: Semantic differential questions are answered on a scale (in this
+case 7 points: -3 to 3). At each end of the scale an adjective is shown, and the respondent
+selects the point on the scale closest to how they feel/think. Contrary to traditional Likert
+Scales, only the outer most values have a label (i.e., -3 and 3). This variable type is therefore
+similar to the integer type, as any value from -3 to 3 may be found, where -3 always refers
+to the left (usually negative) and 3 to the right (usually positive) end of the scale. Example:
+For the scale [Unimportant - Important] -3 would mean “Unimportant” and 3 “Important”.
+Responses from -2 to 2 would gradually represent a higher/lower perceived level of
+importance.
+
+4
+
+GRRIP WP5 – Researcher Survey Documentation
+
+SURVEY SPECIFICATION
+RESEARCHER SURVEY
+Informed Consent
+
+Participation in this survey
+You have been invited to participate in this survey because you work in a research performing or research
+funding organisation in the marine and maritime sector which is taking part in the GRRIP (Grounding RRI
+Practices in research performing organisations) project. We are conducting this survey as part of auditing
+the policies and practices of the five marine & maritime organisations involved in GRRIP. We want to hear
+your perspectives on these policies and practices.
+
+About the GRRIP project
+GRRIP is an EU-funded project (grrip.eu) that aims to embed sustainable RRI (responsible research and
+innovation) practices in the marine & maritime sector through institutional and cultural change. GRRIP will
+embed sustainable RRI practices in these five marine & maritime organisations: The Centre for Marine and
+Renewable Energy (MaREI), University College Cork, Ireland Plataforma Oceánica de Canarias (Plocan),
+Gran Canaria WavEC Offshore Renewables, Lisbon, Portugal Institut Universitaire Mer Littoral U.Nantes
+(IUML), France Swansea University, Wales.
+
+How much time is needed to participate?
+This survey takes about 20 minutes to complete. We will ask you a set of demographic questions to
+understand your background. We will then ask you to tell us the extent to which you agree with various
+behaviours related to RRI, and how far you see these reflected in your marine & maritime sector
+organisation.
+
+Who are we?
+We are a consortium of researchers working on the GRRIP project (see grrip.eu/about-theproject/partners). If you have any questions regarding the overall project, please email grrip.eu@gmail.com.
+This survey is designed and administered by one of GRRIP’s partners, ICoRSA. If you have questions
+about this survey, you can contact survey@qualiaanalytics.org or Dr Eric Jensen at e.jensen@icorsa.org.
+
+What happens to the information you provide?
+Please be assured that your responses will be kept confidential. The information you provide will be used
+for progressing tasks in GRRIP and will be shared with GRRIP partners. We will not publish these survey
+data with information which identifies you personally. You have the right to withdraw from this survey at any
+point during your completion of responses. Furthermore, you have the right to skip any survey question for
+any reason. However, once you have submitted the survey, you can no longer withdraw your responses.
+This project has received funding from the European Union’s Horizon 2020 research and innovation
+program under grant agreement No 820283.
+
+Agreement to Participate
+Please read the following statements: I confirm I am 18 years of age or older. I understand that my
+responses to the following survey will be securely and confidentially stored. I understand the information I
+provide about myself is confidential. I understand that my participation is voluntary, and I can withdraw at
+any time. I agree I have received adequate information about my participation in this research and
+understand what will happen to the information I provide.
+
+5
+
+GRRIP WP5 – Researcher Survey Documentation
+1.1. Please indicate whether you understand the information provided above,
+agree with the statements above, and are willing to participate in this evaluation:
+[Checkbox]
+Yes, I understand, agree, and am willing to participate in this survey
+Shown if Yes, I understand, agree, and am willing to participate in this survey is NOT selected in 1.1.
+[Applies to text below]
+Agreement to Participate If you do not agree with any of the statements above, you will not be able to
+proceed with the survey. Thanks for your consideration.
+This research is using the digital platform and support provided by Qualia Analytics (qualiaanalytics.org),
+a data processor registered with UK's Information Commissioners Office (ICO) and fully compliant with the
+EU General Data Protection Regulation (GDPR). You may view the privacy policy here.
+Shown if Yes, I understand, agree, and am willing to participate in this survey selected in 1.1. [Applies to
+text below]
+When you are ready, please click on Next to begin this survey.
+
+[PAGE BREAK]
+
+6
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Personal Background
+We would like to start by asking you a few questions to help us understand your personal background.
+Please answer as accurately as possible and remember that your personal information will remain
+confidential.
+
+2.1. In what year were you born? [Integer]
+Prefer not to say
+
+2.2. Please indicate if you are... [Dropdown]
+(We are asking to compare with the Census)
+Female
+Male
+Non-binary
+Other
+Prefer not to say
+
+2.3. What is your nationality? [Nationality]
+If more than one, select the one you most identify with.
+Other (please specify)
+Prefer not to say
+
+2.4. What do you consider your native language? [Language]
+If you have more than one, please select the one that you most identify with.
+Other (please specify)
+
+2.5. Are you currently a student at school, college or university? [Radio box]
+Yes
+No
+Unsure
+Prefer not to say
+
+2.6. What is the highest level of formal education you have completed?
+[Dropdown]
+Bachelor’s (or equivalent) level
+Master’s (or equivalent) level
+Doctoral (or equivalent) level
+Prefer not to say
+Other (please specify)
+Shown if Doctoral (or equivalent) level selected in 2.6. [Applies to 2.7.]
+
+2.7. Where did you complete your doctoral degree? [Country]
+2.8. Which general subject area(s) do you hold degrees in (at or above the
+bachelor’s level)? [Checkbox (Button)]
+Please select all that apply.
+Education
+Arts and humanities
+Social sciences, journalism and information
+Business, administration and law
+Natural sciences, mathematics and statistics
+Information and Communication Technologies (ICTs)
+Engineering, manufacturing and construction
+
+7
+
+GRRIP WP5 – Researcher Survey Documentation
+Agriculture, forestry, fisheries and veterinary
+Health and welfare
+Services
+Prefer not to say
+Other (please specify)
+
+To contact you about the GRRIP project in the future, please provide us with
+your name and email address.
+Remember, that your data will be securely stored and kept confidentially.
+First name
+Last name
+2.10. Email [Email]
+Prefer not to say
+Please click Next to continue.
+
+[PAGE BREAK]
+
+8
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Employment
+3.1. In what type of organisation do you work (or have you most recently
+worked)? [Dropdown]
+Industry (large)
+Small and medium-size enterprise [less than 250 employees]
+Civil society/non-governmental organisation
+Policy
+National governmental organisation (including research/innovation funders)
+International governmental organisation (including research/innovation funders)
+University or similar research performing organisation
+Education (other than university)
+Prefer not to say
+Other (please specify)
+
+3.2. What is your current employment status? [Dropdown]
+Employed full-time
+Employed part-time
+Unemployed (currently looking for work)
+Unemployed (not currently looking for work)
+Student only
+Retired
+Self-employed
+Prefer not to say
+Other (please specify)
+Please click Next to continue.
+
+[PAGE BREAK]
+
+9
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Experiences and Perspectives
+We would now like to ask you a few questions about your own experiences and perspectives on research.
+Please specify your level of agreement with the following statements:
+
+Somewhat Agree
+
+Agree
+
+Strongly Agree
+
+Not applicable / No opinion
+
+Neutral
+
+Agree
+
+Strongly Agree
+
+Not applicable / No opinion
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+[Randomizer: All questions in random order]
+
+4.1. 'Gender is irrelevant to my work.' [Likert Scale (7-point: Agree Disagree)]
+4.2. ‘I have included gender as a focus in my research.’ [Likert Scale (7point: Agree - Disagree)]
+
+Disagree
+
+Strongly Disagree
+
+4.3. ‘I am worried about having enough money for essential living costs
+in the future.’ [Likert Scale (7-point: Agree - Disagree)]
+
+4.4. ‘My current employment situation feels insecure.’ [Likert Scale (5-point: Agree Disagree)]
+
+How many hours did you spend on the following activities in the last 7 days? If you do not and have not
+spent time with the following activities, please enter 0. Otherwise, please enter a value greater than 0.
+Shown if Prefer not to Say is NOT selected in 4.11. [Applies to text below, to 4.10.]
+
+4.5. Research or innovation work [Integer]
+4.6. Seeking or managing research/innovation funding [Integer]
+
+10
+
+GRRIP WP5 – Researcher Survey Documentation
+4.7. Teaching or capacity building (including training) [Integer]
+4.8. Public engagement (all types) [Integer]
+4.9. Administration unrelated to research/innovation [Integer]
+4.10. Management or supervision of staff/students [Integer]
+Shown if all questions (4.5., 4.6., 4.7., 4.8., 4.9.) are empty [Applies to text below, to 4.11.]
+
+4.11. Prefer not say [Checkbox]
+4.12. How many years were you (or have you been) in your current role? [Integer]
+(As a number, e.g., 3)
+Prefer not to say
+
+4.13. How many years, in total, have you worked in the research or innovation
+field (including management or support roles)? [Integer]
+If you do not and have not worked as a researcher or innovator, please enter 0. Otherwise, please enter a
+value greater than 0.
+Prefer not to say
+
+4.14. In which of the five marine and maritime sector organisations below are you
+a staff member? [Dropdown]
+Centre for Marine and Renewable Energy (Ireland)
+Institut Universitaire Mer Littoral U.Nantes (IUML), France
+Plataforma Oceánica de Canarias (Gran Canaria)
+Swansea University (Wales)
+WavEC Offshore Renewables (Portugal)
+Prefer not to say
+Please click Next to continue.
+
+[PAGE BREAK]
+
+11
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Diverse Perspectives
+In this section and the following sections of the survey, we want to understand your views about different
+aspects of research and innovation policy and practice. We also want to understand your view of the marine
+& maritime organisation where you work.
+
+5.1. In your view, has your marine & maritime sector organisation involved
+individuals/organisations with a diverse range of perspectives and expertise
+when planning its research and innovation work in the last 12 months? [Radio
+box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 5.1. [Applies to 5.2. to 5.3.]
+
+5.2. What steps, if any, are you aware of that your organisation has taken to
+involve individuals/organisations with a diverse range of perspectives and
+expertise in planning its research and innovation work in the last 12 months?
+[Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+5.3. [Checkbox (Inline)]
+Unsure
+Please click Next to continue.
+
+[PAGE BREAK]
+
+12
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Gender Equality
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+6.1. 'Research organisations in the marine and maritime sector should
+promote gender equality in their work.' [Likert Scale (7-point: Agree Disagree)]
+
+6.2. In your view, does your marine & maritime organisation take steps to
+promote gender equality in its work? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 6.2. [Applies to 6.3. to 6.4.]
+
+6.3. What steps, if any, are you aware of that your organisation has taken to
+promote gender equality in its work in the last 12 months? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+6.4. [Checkbox (Inline)]
+Unsure
+Shown if No OR Unsure selected in 6.2. [Applies to 6.8.]
+
+6.5. Are you aware of any barriers the organisation faces in promoting gender
+equality? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 6.5. [Applies to 6.6.]
+
+6.6. What barriers does your organisation face in promoting gender equality?
+[Textarea]
+Shown if Yes selected in 6.5. [Applies to 6.7. to 6.8.]
+
+6.7. Are you aware of any steps your organisation could take to overcome
+barriers to promoting gender equality? [Radio box]
+13
+
+GRRIP WP5 – Researcher Survey Documentation
+Yes
+No
+Unsure
+Shown if Yes selected in 6.7. [Applies to 6.8.]
+
+6.8. What steps could your organisation take to overcome barriers to promoting
+gender equality? [Textarea]
+Please click Next to continue.
+
+[PAGE BREAK]
+
+14
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Ethnic Minorities
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+7.1. 'Research organisations in the marine and maritime sector should
+include ethnic minorities in their work.' [Likert Scale (7-point: Agree Disagree)]
+
+7.2. In your view, does your marine & maritime organisation take steps to include
+ethnic minorities in its work? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 7.2. [Applies to 7.3. to 7.4.]
+
+7.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to include ethnic minorities in its work? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+7.4. [Checkbox (Inline)]
+Unsure
+Shown if No OR Unsure selected in 7.2. [Applies to 7.8.]
+
+7.5. Are you aware of any barriers the organisation faces in including ethnic
+minorities? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 7.5. [Applies to 7.6.]
+
+7.6. What barriers does your organisation face in including ethnic minorities?
+[Textarea]
+Shown if Yes selected in 7.5. [Applies to 7.7. to 7.8.]
+
+7.7. Are you aware of any steps your organisation could take to overcome
+barriers in including ethnic minorities? [Radio box]
+15
+
+GRRIP WP5 – Researcher Survey Documentation
+Yes
+No
+Unsure
+Shown if Yes selected in 7.7. [Applies to 7.8.]
+
+7.8. What steps could be taken to overcome these barriers? [Textarea]
+Please click Next to continue.
+
+[PAGE BREAK]
+
+16
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Societal Benefit
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+8.1. 'Research organisations in the marine and maritime sector should
+ensure that the way their work is conducted does not cause concerns for
+society.' [Likert Scale (7-point: Agree - Disagree)]
+
+8.2. In your view, does your marine & maritime organisation take steps to ensure
+that the way it conducts its work does not cause concerns for society? [Radio
+box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 8.2. [Applies to 8.3. to 8.4.]
+
+8.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to ensure that the way it conducts its work does not cause
+concerns for society? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+8.4. [Checkbox (Inline)]
+Unsure
+Shown if No OR Unsure selected in 8.2. [Applies to 8.8.]
+
+8.5. Are you aware of any barriers the organisation faces for ensuring that the
+way it conducts its work does not cause concerns for society? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 8.5. [Applies to 8.6.]
+
+8.6. What barriers does your organisation face in ensuring that the way it
+conducts its work does not cause concerns for society? [Textarea]
+Shown if Yes selected in 8.5. [Applies to 8.7. to 8.8.]
+
+17
+
+GRRIP WP5 – Researcher Survey Documentation
+8.7. Are you aware of any steps your organisation could take to overcome
+barriers to ensuring that the way it conducts its work does not cause concerns
+for society? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 8.7. [Applies to 8.8.]
+
+8.8. What steps could be taken to overcome these barriers? [Textarea]
+Please click Next to continue.
+
+[PAGE BREAK]
+
+18
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Methods and Processes
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+9.1. 'Research organisations in the marine and maritime sector should
+make their research methods/processes open and transparent.' [Likert
+Scale (7-point: Agree - Disagree)]
+
+9.2. In your view, does your marine & maritime organisation take steps to ensure
+its research methods/processes are open and transparent? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 9.2. [Applies to 9.3. to 9.4.]
+
+9.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to ensure its research methods/processes are open and
+transparent? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+9.4. [Checkbox (Inline)]
+Unsure
+Please click Next to continue.
+
+[PAGE BREAK]
+
+19
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Publicly Accessible
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+10.1. 'Research organisations in the marine and maritime sector should
+make their research results accessible to as wide a public as possible.'
+[Likert Scale (7-point: Agree - Disagree)]
+
+10.2. In your view, does your marine & maritime organisation take steps to make
+the results of its work accessible to as wide a public as possible? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 10.2. [Applies to 10.3. to 10.4.]
+
+10.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to make the results of its work accessible to as wide a public as
+possible? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+10.4. [Checkbox (Inline)]
+Unsure
+Shown if No OR Unsure selected in 10.2. [Applies to 10.8.]
+
+10.5. Are you aware of any barriers the organisation faces in ensuring that its
+work is accessible to the wider public? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 10.5. [Applies to 10.6.]
+
+10.6. What barriers does your organisation face in ensuring that its work is
+accessible to the wider public? [Textarea]
+Shown if Yes selected in 10.5. [Applies to 10.7. to 10.8.]
+
+20
+
+GRRIP WP5 – Researcher Survey Documentation
+10.7. Are you aware of any steps your organisation could take to overcome
+barriers to ensuring that its work is accessible to the wider public? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 10.7. [Applies to 10.8.]
+
+10.8. In your view, what steps could be taken to overcome these barriers?
+[Textarea]
+Please click Next to continue.
+
+[PAGE BREAK]
+
+21
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Societal Needs
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+11.1. 'Research organisations in the marine and maritime sector should
+focus on addressing societal needs.' [Likert Scale (7-point: Agree Disagree)]
+
+11.2. In your view, does your marine & maritime organisation take steps to ensure
+its work addresses societal needs? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 11.2. [Applies to 11.3. to 11.4.]
+
+11.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to ensure its work addresses societal needs? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+11.4. [Checkbox (Inline)]
+Unsure
+Please click Next to continue.
+
+[PAGE BREAK]
+
+22
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Policies and Contexts
+12.1. In the last 12 months, have government policies and regulations directly
+affected your organisation’s research and innovation work? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 12.1. [Applies to 12.2. to 12.3.]
+
+12.2. What government policies and regulations are you aware of that have
+directly affected its research and innovation work? [Textarea]
+(Please list any policies or regulations that come to mind)
+Prefer not to say
+
+12.3. [Checkbox (Inline)]
+Unsure
+
+12.4. In the last 12 months, have institutional or organisational policies and
+regulations directly affected your organisation’s research and innovation work?
+[Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 12.4. [Applies to 12.5. to 12.6.]
+
+12.5. What institutional or organisational policies and regulations are you aware
+of that have directly affected its research and innovation work? [Textarea]
+(Please list any policies or regulations that come to mind)
+Prefer not to say
+
+12.6. [Checkbox (Inline)]
+Unsure
+Please click Next to continue.
+
+[PAGE BREAK]
+
+23
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Ethical Principles
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+Please specify your level of agreement with the following statement:
+
+13.1. 'Research organisations in the marine and maritime sector should
+be guided by ethical principles.’ [Likert Scale (7-point: Agree - Disagree)]
+
+13.2. In your view, does your marine & maritime organisation take steps to ensure
+that ethical principles guide its work? [Radio box]
+Yes
+No
+Unsure
+Not applicable / No opinion
+Prefer not to say
+Shown if Yes, No OR Unsure selected in 13.2. [Applies to 13.3. to 13.4.]
+
+13.3. What steps, if any, are you aware of that your organisation has taken in the
+last 12 months to ensure that ethical principles guide its work? [Textarea]
+(It is completely fine to simply tick ‘unsure’ if you don’t know about anything specific)
+Prefer not to say
+
+13.4. [Checkbox (Inline)]
+Unsure
+Please click Next to continue.
+
+[PAGE BREAK]
+
+24
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Recent Interactions
+How many hours did you spend interacting with the following types of
+people or organisations in the last 7 days?
+If you do not and have not interacted with the following types, please enter 0.
+Otherwise, please enter a value greater than 0.
+Shown if Prefer not to Say is NOT selected in 14.7. [Applies to text below, to 14.6.]
+
+14.1. Research Performing Organisations / Academics / Researchers [Integer]
+14.2. Research Funding Organisations [Integer]
+14.3. Industry / small or medium sized enterprise [Integer]
+14.4. Civil society / citizens [Integer]
+14.5. Policy makers [Integer]
+14.6. NGOs / international organisations [Integer]
+Shown if all questions (14.1., 14.2., 14.3., 14.4., 14.5.) are empty [Applies to text below, to 14.7.]
+
+14.7. Prefer not say [Checkbox]
+Please click Next to continue.
+
+[PAGE BREAK]
+
+25
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Engagement with External Stakeholders
+We would like to understand your engagement with external stakeholders in a bit more detail at this point.
+
+15.1. In the last 24 months, have you had any research collaborations with
+external stakeholders? [Radio box]
+Yes
+No
+Unsure
+Shown if Yes selected in 15.1. [Applies to 15.2.]
+
+15.2. Please select the sectors associated with the external stakeholders you
+have collaborated with [Checkbox (Button)]
+(tick all that apply)
+Universities
+Education community
+NGOs
+Citizens
+Policymakers
+Industry partners
+Media
+Other (please specify)
+Shown if Yes selected in 15.1. [Applies to 15.3.]
+
+15.3. Select all of the stages of the research process where you involved
+stakeholders: [Checkbox (Button)]
+(tick all that apply)
+Research ideas generation
+Research project scoping
+Research design/planning
+Research proposal development
+Data collection
+Data management
+Knowledge transfer / dissemination
+Commercialisation
+Assessing impact of the project
+Other (please specify)
+Please click Next to continue.
+
+[PAGE BREAK]
+
+26
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Continuation
+Before we finish, we would like to ask you a few more questions in order to fully benefit from your experience
+to date as a staff member in one of our participating marine & maritime organisations. Your responses to
+these questions help to ensure we are getting a complete picture. We understand if you do not have the
+time to proceed further at this point (in which case you can select ’no, I do not want to continue’). But we
+would be very appreciative if you would consider spending another five minutes giving us a bit more detail.
+
+16.1. Are you willing to continue with this survey? [Radio box]
+Yes, I can answer a few more questions
+No, I do not want to continue
+Shown if No, I do not want to continue selected in 16.1. [Applies to text below]
+Thank you for participating in this survey!
+Click Submit below to finish this survey.
+Shown if Yes, I can answer a few more questions selected in 16.1. [Applies to text below]
+Thank you again for continuing with the survey!
+Please click Next to continue.
+Shown if Yes, I can answer a few more questions selected in 16.1. [Applies to Views, text below, to
+17.13.]
+
+[PAGE BREAK]
+
+27
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Views
+On this page, we are asking for your views about a set of statements. Please specify your level of
+agreement:
+
+Not applicable / No opinion
+
+Strongly Agree
+
+Agree
+
+Somewhat Agree
+
+Neutral
+
+Somewhat Disagree
+
+Disagree
+
+Strongly Disagree
+
+[Randomizer: All questions in random order]
+
+17.1. 'Research organisations in the marine & maritime sector should
+maintain an equal number of men and women in research and innovation
+teams.' [Likert Scale (7-point: Agree - Disagree)]
+17.2. 'Research organisations in the marine & maritime sector have a
+professional responsibility to communicate findings from their research or
+innovation work to public audiences.' [Likert Scale (7-point: Agree Disagree)]
+17.3. 'The marine & maritime organisation where I work should avoid
+communicating the results of its work to public audiences.' [Likert Scale
+(7-point: Agree - Disagree)]
+17.4. 'The best time for marine & maritime research organisations to talk
+to public audiences about their work is at the very end of the process
+after all the work has been completed.' [Likert Scale (7-point: Agree Disagree)]
+17.5. 'The marine & maritime organisation where I work enthusiastically
+communicates findings from its work to public audiences.' [Likert Scale
+(7-point: Agree - Disagree)]
+17.6. 'The marine & maritime organisation where I work should take
+gender into account when developing its work.' [Likert Scale (7-point:
+Agree - Disagree)]
+17.7. 'The marine & maritime organisation where I work should take
+ethnic diversity into account when developing its work.' [Likert Scale (7point: Agree - Disagree)]
+17.8. 'Communicating about my work with public audiences is important
+for my successful career progression.' [Likert Scale (7-point: Agree Disagree)]
+17.9. 'Gender is irrelevant to the work of my marine & maritime
+organisation.' [Likert Scale (7-point: Agree - Disagree)]
+17.10. 'Ethnic differences are irrelevant to the work of my marine &
+maritime organisation.' [Likert Scale (7-point: Agree - Disagree)]
+17.11. 'I have a stable long-term job role at my organisation.' [Likert
+Scale (7-point: Agree - Disagree)]
+
+28
+
+GRRIP WP5 – Researcher Survey Documentation
+17.12. 'My job contract is insecure.' [Likert Scale (7-point: Agree Disagree)]
+17.13. 'Research publications are what really matter for my career.'
+[Likert Scale (7-point: Agree - Disagree)]
+
+Please click Next to continue.
+Shown if Yes, I can answer a few more questions selected in 16.1. [Applies to Final Thoughts, text below,
+to 18.3.]
+
+[PAGE BREAK]
+
+29
+
+GRRIP WP5 – Researcher Survey Documentation
+
+Final Thoughts
+18.1. What comes to mind when you think of ‘responsible research and
+innovation’ as it relates to your marine & maritime organisation? [Textarea]
+Prefer not to say
+
+18.2. [Checkbox (Inline)]
+Unsure
+
+18.3. What else, if anything, would you like to add relating to the topics covered in
+this survey? [Textarea]
+Thanks again for taking the time to complete this survey in full! Our next steps will include careful analysis
+of your responses, along with others from across Europe. These responses will be used to inform and
+evaluate changes taking place at marine & maritime sector research organisations across Europe. At a
+later date, anonymised results from this survey will be used for research purposes and, where feasible,
+made fully, publicly and freely available on the GRRIP project website: grrip.eu.
+Click Submit below to finish this survey.
+
+30
+
+GRRIP WP5 – Researcher Survey Documentation
+
+EMAIL MESSAGES
+Researcher Survey Email
+Subject: Invitation to contribute your perspective on research and innovation
+Body: Dear participant, This is an invitation to contribute your views about the practices and policies of
+the marine and maritime organisation where you work. This survey should take you about 20 minutes to
+complete. By participating in this survey, you are contributing to an audit of participating marine and
+maritime organisations in the GRRIP project (grrip.eu). This study is funded by the European Union’s
+Horizon 2020 research and innovation program under grant agreement No 820283. You may access the
+survey by using the following link: BEGIN SURVEY
+Alternatively, you may copy and paste the following link into your browser: LINK
+Researcher Survey Reminder Email
+Subject: Reminder: Invitation to contribute your perspective on research and innovation
+Body: Dear participant, This is a reminder to contribute your views about the practices and policies of the
+marine and maritime organisation where you work. This survey should take you about 20 minutes to
+complete. By participating in this survey, you are contributing to an audit of participating marine and
+maritime organisations in the GRRIP project (grrip.eu). This study is funded by the European Union’s
+Horizon 2020 research and innovation program under grant agreement No 820283. You may access the
+survey by using the following link: BEGIN SURVEY
+Alternatively, you may copy and paste the following link into your browser: LINK
+
+General Email Signature (footer):
+Your responses will be kept confidential and will be used only for analysis in GRRIP (grrip.eu). This
+research is being coordinated on behalf of University College Cork and is enabled by the digital platform
+and support provided by Qualia Analytics (qualiaanalytics.org), a data processor registered with UK's
+Information Commissioners Office (ICO) and fully compliant with the EU General Data Protection
+Regulation (GDPR). You may view the privacy policy here. If you have any questions about this survey,
+please contact survey@qualiaanalytics.org or Dr Eric Jensen at e.jensen@icorsa.org.
+
+31
+
+

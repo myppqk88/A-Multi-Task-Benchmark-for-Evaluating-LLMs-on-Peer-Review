@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F074_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "创新主张",
+    "评价标准",
+    "教育适用性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审指出建构主义/maker并非新概念，作者把新范式限定于商业机器人课程现状；核对后稿是否清楚限定创新对象。",
+    "核对八项包容性标准与平台比较的依据；提供教材案例不等于证实对所有学生的实际教育效果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The paper presents an evaluation of popular robotics tools available for educators to use in the\nclassroom as part of a larger project called \"INBOTS: Inclusive Robotics for a Better Society\". The\nevaluation focused on how the tool can promote learning opportunities for all students inclusively.\nThe author came up with a set of eight criteria to assess the inclusiveness of those tools evaluated.\nT",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThanks for your time to review this paper and for your constructive comments and\nsuggestions. Below are my responses to your comments/suggestions and the revisions\nmade in the paper.\n\n\n\n\nRegarding the term \"new paradigm\": I agree with you that constructionism and maker\nmovement have already been used in educational contexts, however the dominant\nframework seems to be different when it comes to the several curricula provided by the\nproducers of p",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "More than ever before, educators are using robotics kits and\neducational robots to teach and inspire students of all ages,\nfrom pre-school to secondary school, preparing them for a\nsociety in which robotics are used more and more often in\neveryday life. Robotics education is usually conceived as a\ntwo-fold mission: education in robotics and education with\nrobotics. The in case promotes knowledge and understanding of the design, analysis, application, and operation of robots;\nthe with concept is broader and entails the use of robotics as\na tool for teaching and learning science, technology, engineering, arts and math (STEAM) subjects and developing\n21st-century skills: creativity, problem-solving, critical thinking\nand teamwork, for example 1,2.\nThis distinction between the two branches of robotics education\nis important because it affects the inclusiveness of the project.\nLearners in school education are still shaping their interests\nin and attitudes to different school disciplines, in",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Learners in school education are still shaping their interests\nin and attitudes to different school disciplines, including engineering, technology, and robotics. Only a few of them will\npursue university studies or professional careers in robotics or\nengineering or become software developers. However, education\nwith robotics promises benefits for all children, no matter\ntheir future educational or professional orientation1. Is this\ngreat promise and potential of robotics education considered\nand respected in the design of new curricula and technologies\nbefore they are brought into classrooms?\nThe H2020 project “INBOTS: Inclusive Robotics for a Better\nSociety” brings together experts from different disciplines\ninvolved in the acceptance and uptake of interactive robotics,\nincluding the promotion of accessible and multidisciplinary\neducation programs. In INBOTS, educational robotics is considered as a learning tool that can bring robotics into school\nclassrooms and benefit all children r",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The major differences between this version and the previously\npublished version:\nThe concept of inclusiveness in the framework of robotics\neducation is clarified as clearly distinct to accessibility for children\nwith disabilities.\nMore references are added to help readers know the provenance\nof all the questions discussed in section “Establishing criteria”\nIn Table 1, an ordinal scale consisting of a spectrum of qualitative\nvalues is used for comparing the performance of platforms.\nA new paragraph is added in section “Reviewing programming\nlanguages and tools” addressing the issue that efforts to provide\na low floor in programming should not undermine a high ceiling\n(which is important for learners to reach).\nA summary of the reviews to argue how they collectively answer\nthe second research question is added in the end of the section\n“Reviewing more technologies that can serve the inclusive\nparadigm”\nIn section “Introduction: a new paradigm in educational robotics”\n2 new paragraphs are",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

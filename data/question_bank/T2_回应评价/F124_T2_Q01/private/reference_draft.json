@@ -1,0 +1,28 @@
+{
+  "task_id": "F124_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原Word回信的核对；AI候选参考，不是人类金标准",
+  "review_dimensions_AI_candidates": [
+    "统计诊断与分析处理"
+  ],
+  "dimension_status": "候选主题，未冻结为专家标签或权重",
+  "atomic_requirements_scope": "一个完整关切及其全部给定答复；多段联合答复时保留全部关联段落",
+  "ai_checks": [
+    "核对回答是否分别覆盖偏度、峰度、异常值以及相应分析处理；声称移除一名异常值与独立核验其合理性是两回事。",
+    "答复给出Table1、Spearman及Mahalanobis距离的具体说法，但本题不能用后稿或原始数据验证已修改。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "- Reviewer 1: #5, line 203-208. Did you analyze the statistical properties of all the investigated variables including skewness, kurtosis, and outlier. Skipped these basic examinations before main analyses may cause systematic errors.",
+      "role": "原始回信中的评议引文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "-According to reviewer 1, we have included skewness and kurtosis in the Table 1. Only depersonalization showed high kurtosis, therefore, for despersonalization, Spearman correlation (which are more appropriate dealing with non-normally distributed data) were computed to specify the relationship between depersonalisation and the rest of variables. Also Mahalanobis distance was computed to determine if multivariate outliers occurred in the dataset. One participant was found to be outlier (p<.001), being removed from the dataset. (see lines from 217-230).",
+      "role": "作者的完整对应文字回答"
+    }
+  ],
+  "revision_verification": "not_assessed"
+}

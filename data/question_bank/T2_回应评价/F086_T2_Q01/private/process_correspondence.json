@@ -1,0 +1,76 @@
+{
+  "task_id": "F086_T2_Q01",
+  "paper_id": "ORE:5-288",
+  "parent_task": "T3_F086_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F086_R1/input.json",
+  "parent_input_sha256": "a8a5adcf2da1f40bd9f00342061c8bcc9344526c49dd7d2a92925f39c5051eec",
+  "review_dimension_AI_candidate": "小样本分析与替代模型",
+  "selection_scope": "作者分两帖统一回复，整段均保留；只评价N=39模型/表5的这一项要求，不把其他回复主张当作该项证据。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-288_The_internal_democracy_of_the_crisis_parties_in_Western_Europe__a_quan/v1_manuscript.pdf",
+      "original_sha256": "238a628f4dd7f0b9b7c3ea2ad7a334c7520e738ca2a77af23fc438237282d9bf",
+      "raw_text_file": "data/question_bank/T2_回应评价/F086_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        84561,
+        85167
+      ],
+      "report_id": "61260",
+      "date": "2025-11-10",
+      "raw_page_numbers": [
+        20
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-288_The_internal_democracy_of_the_crisis_parties_in_Western_Europe__a_quan/v1_manuscript.pdf",
+      "original_sha256": "238a628f4dd7f0b9b7c3ea2ad7a334c7520e738ca2a77af23fc438237282d9bf",
+      "raw_text_file": "data/question_bank/T2_回应评价/F086_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        86343,
+        86636
+      ],
+      "report_id": null,
+      "date": "2025-11-28",
+      "raw_page_numbers": [
+        21
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-288_The_internal_democracy_of_the_crisis_parties_in_Western_Europe__a_quan/v1_manuscript.pdf",
+      "original_sha256": "238a628f4dd7f0b9b7c3ea2ad7a334c7520e738ca2a77af23fc438237282d9bf",
+      "raw_text_file": "data/question_bank/T2_回应评价/F086_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        86756,
+        87860
+      ],
+      "report_id": null,
+      "date": "2025-12-06",
+      "raw_page_numbers": [
+        21
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 55206,
+    "end": 55733,
+    "exact_quote": "tic. When we only examined\nthe crisis parties, both correlations (ideology and populism)\npersisted (Table 5).\nOverall, we can confirm H2, that is, by being more populist, left-wing crisis parties are less democratic than older leftwing parties, although they are more democratic than the crisis\nright ones.\n\nDiscussion and conclusions\n\nOur empirical analysis, based on a considerable number of\npolitical parties22, sheds more light on the debate around how\nthe internal democracy of Western European young parties is by\ncontras",
+    "anchor_matches": 2,
+    "anchor": "Table 5"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "anchor": "Table 5",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "原稿存在表5及其引用，后稿科学文字未再出现Table 5；是否连同相关推论妥善收回仍需专家判断。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

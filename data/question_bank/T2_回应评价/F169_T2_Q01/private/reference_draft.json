@@ -1,0 +1,28 @@
+{
+  "task_id": "F169_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "文献编码与饱和度"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The coding process and theme generation should be clearly explained. Furthermore, the approach\nto data saturation remains ambiguous. The study should clarify the following:\nHow was data saturation determined?\n○\n\nWere the themes inductively generated from the data, or were they deductively derived\nbased on predefined categories?",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Dear reviewer, \nI appreciate your prompt response in reviewing our manuscript. My colleagues and I found\nyour comments to be constructive, and we have accepted them. We are currently working\nto improve the manuscript based on your feedback and will provide an updated version\nonce we receive comments from the other reviewers. Thank you for your time and\nexpertise.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者完整总回复仍属未来承诺；保留全答复并在来源清单保留署名原件，公开字段按既有净化规则隐藏尾部署名。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

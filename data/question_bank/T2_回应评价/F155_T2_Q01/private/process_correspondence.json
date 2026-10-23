@@ -1,0 +1,63 @@
+{
+  "task_id": "F155_T2_Q01",
+  "paper_id": "F1000:171420",
+  "parent_task": "T3_F155_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F155_R1/input.json",
+  "parent_input_sha256": "149828402a40b153e7ae0b7176027ef482a2b441c61bb731a05e6c7833661ab4",
+  "review_dimension_AI_candidate": "研究缺口与文献对话",
+  "selection_scope": "比较研究的缺口与必要性，答复给出具体地区与理论实践连接。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/171420_Inclusive_Education_Implementation_in_Oman_and_Indonesia__A_Comparativ/v1_manuscript.pdf",
+      "original_sha256": "77f327303e27ff3e61a21698dca3b069540f3ea6788bff4d899ffbe0e64ecff7",
+      "raw_text_file": "data/question_bank/T2_回应评价/F155_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        43003,
+        43186
+      ],
+      "report_id": "439556",
+      "date": "2025-12-16",
+      "raw_page_numbers": [
+        10
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/171420_Inclusive_Education_Implementation_in_Oman_and_Indonesia__A_Comparativ/v1_manuscript.pdf",
+      "original_sha256": "77f327303e27ff3e61a21698dca3b069540f3ea6788bff4d899ffbe0e64ecff7",
+      "raw_text_file": "data/question_bank/T2_回应评价/F155_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        45321,
+        45797
+      ],
+      "report_id": null,
+      "date": "2025-12-20",
+      "raw_page_numbers": [
+        11
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 5056,
+    "end": 5602,
+    "exact_quote": "both Eastern culture and moderate Islam is important to enrich a more\ndiverse global perspective.18\nTherefore, this study aims to analyze the implementation of inclusive education in Oman and Indonesia using a\ncomparative approach. The focus is on uncovering the similarities and differences in the practice of inclusive education\nin the field. Hence, this research is expected not only to enrich the academic discourse on inclusive education but also to\nprovide practical contributions for policymakers, educational leaders, and practitioners.\nL",
+    "anchor_matches": 1,
+    "anchor": "Therefore, this study aims"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 5056,
+    "end": 5602,
+    "exact_quote": "both Eastern culture and moderate Islam is important to enrich a more\ndiverse global perspective.18\nThus, the above discussion demonstrates that although inclusive education research has progressed substantially, critical\ngaps remain in comparative understanding across non-Western contexts. In particular, limited attention has been paid to\nhow global inclusive education frameworks, such as Universal Learning Design (UDL) and Individualized Education\nPrograms (IEPs), are implemented in practice across different governance and cultural settin",
+    "anchor_matches": 1,
+    "anchor": "Thus, the above discussion"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿引言末尾改写非西方比较与全球框架落实的缺口，前稿已提出类似问题；属于定位表述重写，不是新增研究证据。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

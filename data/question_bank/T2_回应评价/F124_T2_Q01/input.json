@@ -1,0 +1,80 @@
+{
+  "task_id": "F124_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_author_letter",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。",
+  "input": {
+    "comment_text": "- Reviewer 1: #5, line 203-208. Did you analyze the statistical properties of all the investigated variables including skewness, kurtosis, and outlier. Skipped these basic examinations before main analyses may cause systematic errors.",
+    "response_text": "-According to reviewer 1, we have included skewness and kurtosis in the Table 1. Only depersonalization showed high kurtosis, therefore, for despersonalization, Spearman correlation (which are more appropriate dealing with non-normally distributed data) were computed to specify the relationship between depersonalisation and the rest of variables. Also Mahalanobis distance was computed to determine if multivariate outliers occurred in the dataset. One participant was found to be outlier (p<.001), being removed from the dataset. (see lines from 217-230).",
+    "necessary_context": "西班牙教师情绪能力、感知压力与职业倦怠的问卷研究。 原关切为作者原始回信中的评审引文，答复为完整对应段落；不声称拥有独立完整原评审报告。只评价给定问答，不据后稿或附件承诺判断实际修改。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

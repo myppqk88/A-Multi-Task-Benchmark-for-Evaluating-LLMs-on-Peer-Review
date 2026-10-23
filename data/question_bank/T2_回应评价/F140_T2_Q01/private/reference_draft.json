@@ -1,0 +1,28 @@
+{
+  "task_id": "F140_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "数据库覆盖与选择偏差"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "With regard to the analysis of the already represented sufficiency policies, it would be interesting\nto discuss in more detail why certain types of instruments in certain sectors are dominant in the\ndatabase. Is this due to limited options for other sectors/instruments, or can this be explained\nwith a bias in the underlying research?",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Dear reviewer, thank you for your review! It is very valuable to us for the next versions of our\ndatabase. We thought about possible explanations why some instrument types are\n\n\n\ndominant in sectors. A possible reason is that price instruments are easiest to model, so\nthat we need to consider a certain bias due to the methods of the underlying research. This\nwill help to consider limitations when drawing conclusions from analysis of our database.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者具体解释模型方法偏差，同时不独立确认这一解释。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

@@ -1,0 +1,83 @@
+F028_T2_Q02
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+{
+  "task_id": "F028_T2_Q02",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "input": {
+    "comment_text": "However,\nto avoid creating the impression that all authors’ editors are suitably trained, optimally competent\nin all the editing they undertake, involved members of appropriate associations and proactive in\nundertaking CPD, Matarese and Shashok should acknowledge that there are no CC for authors’\neditors, nor are authors’ editors required to have certain academic or professional qualifications.\nMatarese and Shashok are currently among the most respected and high-profile biomedical\nauthors’ editors; their plea to involve authors’ editors in developing CC for journal editors should\nbe placed in that context.",
+    "response_text": "We appreciate Dr. Burrough-Boenisch’s cautionary note on the variations in authors’ editors’\nskills, practices and commitment to continuing education, which are to be expected for any\nprofession that does not have defined entry qualifications or agreed-upon CC.\nThe author editing literature contains several proposals for key skills and tasks (see, for\nexample, Lang 1999; Burrough-Boenisch 2013; Chapter 7 in Matarese 2016), but although\nthey overlap to some extent, they also tend to reflect the particular circumstances of\ndifferent authors’ editors’ professional settings, clients and disciplinary focus. Although\nseveral professional associations offer formal certification, these programs do not cover all\nfacets of author editing, such as the interpersonal aspects of working with researchers and\nthe value of multilingualism. Like journal editors, authors’ editors with different skills,\nstrengths and specialist knowledge can provide valuable services in some areas, but may\nhave shortcomings in other areas. Our impression is that authors’ editors are likely to be\ntransparent about their strengths and limitations, in order to help researchers decide\nwhether they are able to provide the right types of support.\nWe have noted the lack of universally agreed-upon professional qualifications for authors’\neditors in version 2.\nBurrough-Boenisch J: Editing non-native English: reflections from a Netherlands-based\neditor on those who do it and the skills they should have. The 21st Century Text. July 30,\n2013.\nLang TA: A curriculum for biomedical writing and editing: a second volley. CBE Views. 1999;\n22(1): 3–5.\nMatarese V: Editing research: the author editing approach to providing effective support to\nwriters of research papers. Medford: Information Today; 2016.",
+    "necessary_context": "作者编辑与期刊编辑核心能力、EAL学者写作和生物医学出版制度的元研究讨论。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

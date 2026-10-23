@@ -1,0 +1,128 @@
+{
+  "task_id": "F122_T2_Q03",
+  "paper_id": "F1000:157354",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F122_T2_Q03/input.json",
+  "input_sha256": "a0b0493a3e07345ddaa59b6585465bd39eb84aa53a4458f0b84ba487e6ef86bd",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F122_T2_Q03/input.json",
+      "source_sha256": "a0b0493a3e07345ddaa59b6585465bd39eb84aa53a4458f0b84ba487e6ef86bd",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "c) While confirmatory factor analysis (CFA) is mentioned, there is insufficient detail on how the\nmodel's fit indices were computed and interpreted.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F122_T2_Q03/input.json",
+      "source_sha256": "a0b0493a3e07345ddaa59b6585465bd39eb84aa53a4458f0b84ba487e6ef86bd",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "3. Additional information on CFA fit indices, specifying thresholds for CFI, GFI, TLI, and\nRMSEA (Bentler, 1990).",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "关切有计算与解释两部分；回复列出CFI/GFI/TLI/RMSEA阈值及文献，但未给任何实际阈值、计算方法或拟合结果解释。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient或insufficient可支持，但不得判计算/解释问题解决。"
+    },
+    {
+      "id": "J2",
+      "judgment": "提到指标名称不等于说明如何计算和判断；不能凭Bentler引用认定全部指标处理正确。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient或insufficient可支持，但不得判计算/解释问题解决。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。关切有计算与解释两部分；回复列出CFI/GFI/TLI/RMSEA阈值及文献，但未给任何实际阈值、计算方法或拟合结果解释。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：拆开计算与解释要求，不把列出四指标当实质方法。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：关切有计算与解释两部分；回复列出CFI/GFI/TLI/RMSEA阈值及文献，但未给任何实际阈值、计算方法或拟合结果解释。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：拆开计算与解释要求，不把列出四指标当实质方法。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。提到指标名称不等于说明如何计算和判断；不能凭Bentler引用认定全部指标处理正确。",
+      "high_score_conditions": [
+        "区分指标/文献定位信息与实际阈值、估计与解释缺口，不延伸为已证实CFA错误。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：提到指标名称不等于说明如何计算和判断；不能凭Bentler引用认定全部指标处理正确。"
+      ],
+      "boundary_2_3": "拆开计算与解释要求，不把列出四指标当实质方法。",
+      "boundary_3_4": "区分指标/文献定位信息与实际阈值、估计与解释缺口，不延伸为已证实CFA错误。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient或insufficient可支持，但不得判计算/解释问题解决。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分指标/文献定位信息与实际阈值、估计与解释缺口，不延伸为已证实CFA错误。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：提到指标名称不等于说明如何计算和判断；不能凭Bentler引用认定全部指标处理正确。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分指标/文献定位信息与实际阈值、估计与解释缺口，不延伸为已证实CFA错误。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient或insufficient可支持，但不得判计算/解释问题解决。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "拆开计算与解释要求，不把列出四指标当实质方法。",
+    "3_to_4": "区分指标/文献定位信息与实际阈值、估计与解释缺口，不延伸为已证实CFA错误。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

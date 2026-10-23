@@ -1,0 +1,28 @@
+{
+  "task_id": "F087_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "概念命题与经验证据区分"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Factual statements are generally accurate and supported by relevant and\nup-to-date citations; however, some higher-level interpretive claims and model-specific\npropositions rely primarily on authorial synthesis and would benefit from clearer signaling as\nconceptual in nature or from the addition of supporting references where available.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Furthermore, Reviewer #1 (Dr. Carlit Casey) states that the manuscript could benefit from\nclearer signaling as conceptual in nature or from additional references where available. This\nis because of a couple of ungrounded statements. So, we agree and have implemented two\ncomplementary improvements (a) and (b):\n(a) Clearer signaling of epistemic status\nEpistemic-status paragraph for the model: We added an explicit statement\nclarifying that the relational links within the model are conceptual propositions\n○\n\n○\n\n○\n\n○\n\n\n\n\nderived from comparative synthesis, intended as testable hypotheses rather than\nempirically established causal claims.\n(b) Additional supporting references where feasible\nFor claims about the integration of disciplinary, didactic, and contextual\nknowledge—and the role of situated cognitive skills in practice—we reinforced\ncitation support with widely recognized international and Spanish scholarship.\nWe also reviewed several interpretive passages and refined the language to avoid\nover-strong generalizations (e.g., replacing categorical formulations with\nappropriately modalized phrasing where the claim is interpretive).\nThese changes maintain the manuscript’s theoretical contribution while aligning the\npresentation of claims with standard scholarly expectations: statements are supported with\ncitations, and conceptual claims are transparently framed as propositions emerging from\nsynthesis.\n○\n\n○\n\n4. About the assessment of the support on citations\nSome statements were not supported by citations. We addressed this by (i) strengthening\ncitation support for selected high-level claims (particularly those concerning integrated\nprofessional profiles and situated cognitive skills), and (ii) explicitly labeling model links as\nconceptual propositions where the claim is interpretive. We also revised language in a small\nnumber of passages to avoid any unintended implication of empirically established\ncausality.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者(a)(b)两项改进及限定完整保留；另有第4项重复概述，合并时保留为补充答复，非独立新题。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

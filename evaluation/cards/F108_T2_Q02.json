@@ -1,0 +1,128 @@
+{
+  "task_id": "F108_T2_Q02",
+  "paper_id": "F1000:158087",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F108_T2_Q02/input.json",
+  "input_sha256": "2adb087a40fcde85da20dade8cde2ed1b76cf7f18473a6902a570de755e91581",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q02/input.json",
+      "source_sha256": "2adb087a40fcde85da20dade8cde2ed1b76cf7f18473a6902a570de755e91581",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "A brief discussion on why previous reviews failed to consider adverse effects\nwould also be beneficial. Is it possible that primary research included in these systematic reviews\noverlooked these factors?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q02/input.json",
+      "source_sha256": "2adb087a40fcde85da20dade8cde2ed1b76cf7f18473a6902a570de755e91581",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "I am not sure I understand this comment. It is common practice to extract these from SRs in\na systematic review of reviews (OoO). We do not contend that previous SRs have failed to\nconsider these factors, but rather are adhering to best practice in a systematic review of\nreviews. Risk of bias is unlikely to have been assessed by the primary study, subgroup\neffects may also not be reported in all studies, but may have only been possible to calculate\nin a SR. It is not always clear whether primary studies report adverse effects, and any\ndiscussion of why previous reviews failed to consider adverse effects would be speculation,\nas we have no clues as to why.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者明确拒绝无依据猜测既有综述为何未讨论不良影响，并指出并不主张先前综述全部忽略这些因素。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可成立，因为有理由拒绝推测；partially_sufficient可指出未归纳已知报告状况，但不能强迫提供未知原因。"
+    },
+    {
+      "id": "J2",
+      "judgment": "原研究是否报告不良影响不清楚；答复给出认识边界，符合不凭空猜测原则。风险偏倚和亚组分析的旁述不能替代不良影响报告的实证核查。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可成立，因为有理由拒绝推测；partially_sufficient可指出未归纳已知报告状况，但不能强迫提供未知原因。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者明确拒绝无依据猜测既有综述为何未讨论不良影响，并指出并不主张先前综述全部忽略这些因素。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别拒绝理由而非把未接受建议直接扣为不充分。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者明确拒绝无依据猜测既有综述为何未讨论不良影响，并指出并不主张先前综述全部忽略这些因素。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别拒绝理由而非把未接受建议直接扣为不充分。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。原研究是否报告不良影响不清楚；答复给出认识边界，符合不凭空猜测原则。风险偏倚和亚组分析的旁述不能替代不良影响报告的实证核查。",
+      "high_score_conditions": [
+        "同时承认无法知道不良影响报告原因和旁述不构成直接证据，评价拒绝的边界。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：原研究是否报告不良影响不清楚；答复给出认识边界，符合不凭空猜测原则。风险偏倚和亚组分析的旁述不能替代不良影响报告的实证核查。"
+      ],
+      "boundary_2_3": "识别拒绝理由而非把未接受建议直接扣为不充分。",
+      "boundary_3_4": "同时承认无法知道不良影响报告原因和旁述不构成直接证据，评价拒绝的边界。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient可成立，因为有理由拒绝推测；partially_sufficient可指出未归纳已知报告状况，但不能强迫提供未知原因。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：同时承认无法知道不良影响报告原因和旁述不构成直接证据，评价拒绝的边界。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：原研究是否报告不良影响不清楚；答复给出认识边界，符合不凭空猜测原则。风险偏倚和亚组分析的旁述不能替代不良影响报告的实证核查。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：同时承认无法知道不良影响报告原因和旁述不构成直接证据，评价拒绝的边界。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient可成立，因为有理由拒绝推测；partially_sufficient可指出未归纳已知报告状况，但不能强迫提供未知原因。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "识别拒绝理由而非把未接受建议直接扣为不充分。",
+    "3_to_4": "同时承认无法知道不良影响报告原因和旁述不构成直接证据，评价拒绝的边界。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

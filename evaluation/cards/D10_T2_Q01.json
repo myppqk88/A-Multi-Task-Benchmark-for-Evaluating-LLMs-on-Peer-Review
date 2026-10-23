@@ -1,0 +1,140 @@
+{
+  "task_id": "D10_T2_Q01",
+  "paper_id": "PeerJ:3082",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D10_T2_Q01/input.json",
+  "input_sha256": "245bc38e8d3455e705e4d99e5f6490d6de57cc4b3893b620068f5f42f81ad177",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D10_T2_Q01/input.json",
+      "source_sha256": "245bc38e8d3455e705e4d99e5f6490d6de57cc4b3893b620068f5f42f81ad177",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The sample size is relative small in this study. There is a need to provide a priori power analysis for three experiments, separately.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D10_T2_Q01/input.json",
+      "source_sha256": "245bc38e8d3455e705e4d99e5f6490d6de57cc4b3893b620068f5f42f81ad177",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We have calculated the power analysis. We used the Cohen’s approach:\nCohen, Jacob. 1988. Statistical power analysis for the behavioral sciences. 2nd ed. Hillsdale, N.J: L. Erlbaum Associates.\nWe use contingency table in experiment 1. Therefore, we used the approach for Chi-square tests: Cohen’s w (effect size). In experiments 2 and 3 we use anova, therefore we apply the Cohen’s f for measuring the effect size. Cohen suggests that effect size index values of 0.1, 0.3, and 0.5 represent small, medium, and large effect sizes respectively.\nExperiment 1: Considering w=0.5, with N=12 observations the power is 0.3. The power is not high. Power of 0.8 would need 38 observations.\nExperiment 2: The power of test is 0.8 for the left direction, and 0.9 for the right direction. This levels of power can be considered as good.\nExperiment 3: The power of test is 0.5. Power of 0.8 would need 14 subjects, instead of 8.\nRegarding differences between blind and sighted people, the results are not conclusive and more research is needed with more subjects",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复分别给三实验功效：实验1在w=.5,N=12时.3，实验2左右.8/.9，实验3 .5并建议14人；承认实验1与3功效不足及组别差异结论不确定。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；可认可逐实验报告和结论收缩，但不判原先验功效要求完全满足。"
+    },
+    {
+      "id": "J2",
+      "judgment": "未交代实验2/3效应量设定、alpha、自由度/设计或事前假设来源；事后补算不能冒充a priori样本计划。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；可认可逐实验报告和结论收缩，但不判原先验功效要求完全满足。"
+    },
+    {
+      "id": "J3",
+      "judgment": "w与f应区分，回复把.1/.3/.5统一称小中大未明确适用指标，不能据此认可所有ANOVA参数；未复算不得宣称数值错误或正确。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；可认可逐实验报告和结论收缩，但不判原先验功效要求完全满足。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复分别给三实验功效：实验1在w=.5,N=12时.3，实验2左右.8/.9，实验3 .5并建议14人；承认实验1与3功效不足及组别差异结论不确定。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别逐实验信息，同时指出事后功效与事前样本设计不同。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复分别给三实验功效：实验1在w=.5,N=12时.3，实验2左右.8/.9，实验3 .5并建议14人；承认实验1与3功效不足及组别差异结论不确定。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别逐实验信息，同时指出事后功效与事前样本设计不同。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。w与f应区分，回复把.1/.3/.5统一称小中大未明确适用指标，不能据此认可所有ANOVA参数；未复算不得宣称数值错误或正确。",
+      "high_score_conditions": [
+        "将已知低功效的限制、效应量/设计未明确、未复算数值分别陈述，不以功效高断言结果可靠。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：w与f应区分，回复把.1/.3/.5统一称小中大未明确适用指标，不能据此认可所有ANOVA参数；未复算不得宣称数值错误或正确。"
+      ],
+      "boundary_2_3": "识别逐实验信息，同时指出事后功效与事前样本设计不同。",
+      "boundary_3_4": "将已知低功效的限制、效应量/设计未明确、未复算数值分别陈述，不以功效高断言结果可靠。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient；可认可逐实验报告和结论收缩，但不判原先验功效要求完全满足。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：将已知低功效的限制、效应量/设计未明确、未复算数值分别陈述，不以功效高断言结果可靠。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：w与f应区分，回复把.1/.3/.5统一称小中大未明确适用指标，不能据此认可所有ANOVA参数；未复算不得宣称数值错误或正确。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：将已知低功效的限制、效应量/设计未明确、未复算数值分别陈述，不以功效高断言结果可靠。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient；可认可逐实验报告和结论收缩，但不判原先验功效要求完全满足。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "识别逐实验信息，同时指出事后功效与事前样本设计不同。",
+    "3_to_4": "将已知低功效的限制、效应量/设计未明确、未复算数值分别陈述，不以功效高断言结果可靠。"
+  },
+  "source_unit": "T2_response_only"
+}

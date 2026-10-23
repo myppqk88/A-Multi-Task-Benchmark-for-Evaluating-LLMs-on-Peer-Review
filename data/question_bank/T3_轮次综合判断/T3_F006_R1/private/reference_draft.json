@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F006_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "权衡概念",
+    "主张强度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑试点分析方法不明、三项权衡选择和项目宣传倾向；作者声称补充分析基础及更谨慎结论。核对具体方法与未解决张力，不能把中性措辞替换当成实证支持增加。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Trade-off hacking: Have the cake and eat it too? Turning competing interests into win-wins\nin data-driven food technology\n\nGeneral comments:\nThe work addresses a real and highly topical problem. It is highly relevant to policy design.\nHowever, there are some areas that need improvement.\n○\n\nAbstract\nIt is not specified how the pilot projects were explicitly analyzed.\n○\n\nIntroduction\nThis section co",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for the constructive feedback. The manuscript has been revised to improve\nclarity, balance, and critical reflection. Abstract\nThe description of how pilot material was analysed has been clarified by stating the overall\napproach, data basis, and main analytical process more directly. Introduction\nThe tone has been revised to be more neutral and analytical, with less project-affirming\nlanguage. Background (trade-off hacking and trade-off",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Digital technology is increasingly reshaping not only the global food system but also the relationship towards the food\nsector. Innovations ranging from AI-driven personalised nutrition applications to blockchain-based traceability systems offer\nthe potential for promoting public health, empowering consumers, and promoting sustainability (see Ellahi et al., 2023;\nWu et al., 2025). However, the integration of data-driven technologies into this critical sector also introduces important ethical and practical conflicts. An application that personalises\nmeal plans based on sensitive health data must simultaneously\nprotect user privacy; an algorithm that predicts the carbon footprint of food products with great precision may not be trusted\nby retailers and regulators if its calculations are not transparent. These tensions are not merely technical hurdles but represent value conflicts at the core of responsible innovation\n(Detopoulou et al., 2023; Donovan et al., 2025; Reis et al.,\n2021).\nAdd",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nDigital technology is increasingly reshaping not only the global food system but also the relationship towards the food\nsector. Innovations ranging from AI-driven personalised nutrition applications to blockchain-based traceability systems\noffer the potential for promoting public health, empowering consumers, and promoting sustainability (see Ellahi et al.,\n2023; Wu et al., 2025). However, the integration of data-driven technologies into this critical sector also introduces\nimportant ethical and practical conflicts. An application that personalises meal plans based on sensitive health data must\nsimultaneously protect user privacy; an algorithm that predicts the carbon footprint of food products with great precision\nmay not be trusted by retailers and regulators if its calculations are not transparent. These tensions are not merely technical\nhurdles but represent value conflicts at the core of responsible innovation (Detopoulou et al., 2023; Donovan et al., 2025;\nReis et al",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Identity Valley: Digital responsibility goals. 2025; Accessed September 10, 2025.\nReference Source\nJacobs D, McDaniel T: A survey of user experience in usable security\nand privacy research. In: Lecture notes in computer science. 2022; 154–172.\nPublisher Full Text\nLennartsson M, Kävrestad J, Nohlberg M: Exploring the meaning of usable\nsecurity - a literature review. Inf Comput Secur. 2021; 29(4): 647–663.\nPublisher Full Text\nLoftus TJ, Ruppert MM, Shickel B, et al.: Federated learning for preserving\ndata privacy in collaborative healthcare research. Digit Health. 2022; 8:\n205520762211344.\nPubMed Abstract | Publisher Full Text | Free Full Text\nMeier JJ, Hermsen K, Bauer J, et al.: Digital responsibility goals – A framework\nfor a human-centered sustainable digital economy with a focus on trusted\ndigital solutions. Stud Health Technol Inform. 2022; 293: 250–259.\nPubMed Abstract | Publisher Full Text\nReis AA, Malpani R, Vayena E, et al.: Ethics and governance of Artificial\nIntelligence for ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "by co-designing the system with its stakeholders. By making the design process itself a “negotiation”, the final\ntechnology is shaped with the trust of its stakeholders.\nLimitations\nTechnology-driven patterns are strongest when risks can be technically specified and teams have advanced engineering\ncapacity. However, they often require higher investment, specialised skills, and longer integration cycles. Governancedriven patterns can be faster to implement and improve legitimacy, but their effectiveness depends on participation\nquality, competence, and institutional trust. In practice, the most robust cases might be hybrid: governance to define\nacceptable constraints, followed by targeted technical enforcement.\nDiscussion\nA central limitation is the “incubator effect”: pilots operated under funding, coaching, and responsibility-oriented\nselection criteria that are not typical of many commercial environments. Without these supports, teams may prioritise\nspeed-to-market and short-term rev",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,56 @@
+Article: In poetry, if meter has to help memory, it takes its time
+DOI: 10.12688/openreseurope.13663.1
+Version: 1
+Reviewer: Mara Breen
+Status: not approved
+Date: 2022-03-14
+Report ID: 28462
+============================================================
+
+The authors’ major question is whether poetic meter serves as a cognitive schema that supports verbal memory. To assess this claim, they manipulated Italian poems by Dante and Ariosto to have a) consistent meter and rhyme, b) consistent meter but missing rhyme, c) conserved rhyme but incorrect accent pattern, or d) the incorrect # of syllables. These variations were assessed for metric plausibility, and this factor was the predictor in the behavioral assessments. Participants were trained with the poems, then tested on their ability to remember final words. The authors report that metric plausibility predicted reaction time, but only in the manipulations of the Ariosto poems. Greater metric plausibility led to more correct memory of the missing target words, but also led to increased reaction time.
+I can’t recommend this paper pass peer review. I have many questions about the method and results, including how the experiment was run, and the choice of statistical analysis models. In addition, I’m not sure that results are interpretable given the variability in the experimental materials across authors, verses, and manipulations.
+Detailed Comments:
+Introduction
+I don’t find that the Introduction as written effectively introduces the research question; nor does it effectively review the relevant literature.
+At the end of the introduction, it’s not clear what is being measured and what is being hypothesized. The authors say that they will “aim at measuring the strength of some metric devices.” but it’s not clear which devices they’re specifically talking about, and, moreover, what specific predictions they’re making about the devices. It would be helpful to see explicit predictions about the pattern of results.
+Methods
+I don’t understand how the manipulation was implemented in the memory experiment. How were conditions assigned to participants? Was it a Latin Square design? Did each participant encounter the same number of verses from each condition? How many ill-formed versions were participants presented with in total? Were there well-formed fillers included? I worry that if participants heard equal numbers of items from each condition that means that 75% of the items they heard were ill-formed, meaning they would not have a reason to expect well-formed items. If well-formed items were rare (25% of the time), then it’s hard to interpret the reaction time differences as being a result of the manipulation and not a result of metacognitive processes on the part of the participants.
+Test phase
+How are the participants choosing the muted word? Is it free response or do they choose from a set of alternatives?
+How is reaction time measured? That is, when does the clock start? Are any trials thrown away for having reaction times that are too long? Relatedly, I am quite surprised by the variation in reaction times and how generally long they are. Was there any instruction to the participants to answer as quickly as they could? What do the authors think participants are doing in these very long delays of six or more seconds?
+I also don’t understand how the authors are accounting for the fact that the targets across verses are different, both in terms of what the actual words are and the way they were produced across conditions. Speaking as someone who studies the role of prosody in cognitive processing, we know a considerable amount about how the acoustic realization of words contributes to how they are remembered. The fact that the production of the target words is not standardized across conditions (i.e., participants heard different acoustic renditions of the targets across conditions), how can the authors be sure that the differences in memory are due to poetic features?
+I don’t believe the analyses are appropriate here. As I see it, the memory experiment has two outcome variables – accuracy and reaction time. First, for accuracy, I expect to see a mixed-effects logistic regression, where the authors are analyzing outcomes on a trial-by-trials basis, modeling the probability of an accurate response based a set of fixed and random effects. Fixed effects include the experimental condition (NPR, NPA, NPS, ONP), the author (Dante or Ariosto), the metric plausibility as assessed in the pre-test, and any other variables that might influence the result (e.g., lexical frequency or entropy). The random effects should be participant and item (verse). The fixed effects should also include any interactions the authors want to test – for example, the interaction between condition and author.
+For reaction time, the authors should be computing a mixed effects linear regression, modeling the reaction time on a trial-by-trials basis with a response based a set of fixed and random effects. Fixed effects include the experimental condition (NPR, NPA, NPS, ONP), the author (Dante or Ariosto) the metric plausibility as assessed in the pre-test, and any other variables that might influence the result (e.g., lexical frequency, entropy, direction boas). The random effects should be participant and item (verse).
+Data analysis
+“The outcome of interest is essentially the presence of a significant correlation between the dependent variables measured in the ranking (the plausibility index, see Figure 2) and in the memory experiment (correct responses, and reaction times, see Figure 4), that would indicate a joint dependence on the type of passage manipulation.”
+Note that there can’t be a correlation between a continuous variable (plausibility index) and a binary variable (correct vs. incorrect).
+Entropy in the accent distribution
+.
+It’s not clear why this is being measured. There needs to be some explanation in advance. I am expecting this measure to be included in the analysis somehow, perhaps as a fixed effect in the regression.
+Results
+This section is not well-written. The authors are mixing results with interpretation, but they should be separated. In addition, as stated above, I don’t believe the analyses are appropriately used here. For example, it’s hard to figure out what is being shown in Figure 4. It appears that the authors have averaged reaction times within conditions, then plotted those averages against the metric plausibility scores. But again, I don’t believe this is the most appropriate analysis as the authors should be determining the simultaneous effect of all predictors on the outcomes using a regression fit over all trials.
+Discussion
+The first four paragraphs belong in the Introduction as these papers are framing the motivation for the current study. There is also a lot missing here. I would expect for the authors to restate the research question, the hypothesis, and the results. And then attempt to interpret the results in the theoretical framework established in the Intro. Ultimately, it’s not clear what these data are adding to our understanding of how metric structure is processed.
+
+
+--- Structured Questions ---
+
+Q: Is the work original in terms of material and argument?
+A: Yes
+
+Q: Does it sufficiently engage with relevant methodologies and secondary literature on the topic?
+A: No
+
+Q: Is the work clearly and cogently presented?
+A: No
+
+Q: Is the argument persuasive and supported by evidence?
+A: No
+
+Q: If any, are all the source data and materials underlying the results available?
+A: Yes
+
+Q: Does the research article contribute to the cultural, historical, social understanding of the field?
+A: No
+
+Areas of research: Psycholinguistics, statistical modeling, metric processing

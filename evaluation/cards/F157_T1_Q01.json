@@ -1,0 +1,213 @@
+{
+  "task_id": "F157_T1_Q01",
+  "paper_id": "F1000:128167",
+  "task": "T1",
+  "split": "provisional_formal",
+  "unit": "original_manuscript",
+  "input_path": "data/question_bank/T1_生成评审/F157_T1_Q01/input.json",
+  "input_sha256": "48c87d447f478d661819c8eaf2a793a805871cf4565cfbc26b66c8dc310b83dd",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T1_生成评审/F157_T1_Q01/input.json",
+      "source_sha256": "48c87d447f478d661819c8eaf2a793a805871cf4565cfbc26b66c8dc310b83dd",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          3471,
+          3562
+        ]
+      },
+      "quote": "Research project\n\nCar\n\nCutting edge research project\n\nExpensive car\n\nProject\n\nTrip, journey",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T1_生成评审/F157_T1_Q01/input.json",
+      "source_sha256": "48c87d447f478d661819c8eaf2a793a805871cf4565cfbc26b66c8dc310b83dd",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          7218,
+          7296
+        ]
+      },
+      "quote": "Asking top scientists to review proposals for research\ninfrastructure funding.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E3",
+      "source_path": "data/question_bank/T1_生成评审/F157_T1_Q01/input.json",
+      "source_sha256": "48c87d447f478d661819c8eaf2a793a805871cf4565cfbc26b66c8dc310b83dd",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          8947,
+          9041
+        ]
+      },
+      "quote": "Economists and evaluation specialists are very well placed and qualified\n(and likely unbiased)",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E4",
+      "source_path": "data/question_bank/T1_生成评审/F157_T1_Q01/input.json",
+      "source_sha256": "48c87d447f478d661819c8eaf2a793a805871cf4565cfbc26b66c8dc310b83dd",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          9396,
+          9575
+        ]
+      },
+      "quote": "Recommendation 2: Consider informing policies and funding decisions relating to existing and future research\ninfrastructure with support from economists and specialist evaluators.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E5",
+      "source_path": "data/question_bank/T1_生成评审/F157_T1_Q01/assets/manuscript_before_p003.png",
+      "source_sha256": "636dceaf9a71bdb1c8a3c0740b533fe767f86ec567be752efeb583afdb080845",
+      "locator": {
+        "image_path": "assets/manuscript_before_p003.png"
+      },
+      "observation": "表1确有Research project→Car和Project→Trip, journey两行。",
+      "role": "题内页图",
+      "model_visible": true,
+      "reference_only": false,
+      "evidence_type": "image"
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "原稿类比把Research project对应Car、Project对应Trip，概念层级混用；应解释或重组，不能仅因类比直观认为一一对应有效。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持作为启发性政策简报而仅需澄清，也可认为政策桥接是重要修改；须以具体推理缺口而非审稿人结论为据。"
+    },
+    {
+      "id": "J2",
+      "judgment": "道路类比可启发对基础服务、维护及共同投入的理解，但不能由科学家拥有自建服务推出其不适合评估基础设施；专家利益和能力需分别论证。",
+      "evidence_ids": [
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持作为启发性政策简报而仅需澄清，也可认为政策桥接是重要修改；须以具体推理缺口而非审稿人结论为据。"
+    },
+    {
+      "id": "J3",
+      "judgment": "经济学家和评估专家可能提供补充，但likely unbiased未有该文内独立证明；建议可作为条件性治理方案，不能被当已验证优于科学评审。",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持作为启发性政策简报而仅需澄清，也可认为政策桥接是重要修改；须以具体推理缺口而非审稿人结论为据。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "表格映射与政策措辞",
+      "boundary_2_3": "准确发现Project两种映射而非声称类比全错。",
+      "boundary_3_4": "辨别文中recommendation是建议，并忠实引用likely unbiased而不改写为必然中立。",
+      "high_score_conditions": [
+        "辨别文中recommendation是建议，并忠实引用likely unbiased而不改写为必然中立。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：准确发现Project两种映射而非声称类比全错。"
+      ]
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "类比到政策的推理",
+      "boundary_2_3": "解释映射混用和评审人能力推论为何需要桥接。",
+      "boundary_3_4": "既承认启发用途，也识别从道路服务到资助评价机制的非必然推论。",
+      "high_score_conditions": [
+        "既承认启发用途，也识别从道路服务到资助评价机制的非必然推论。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：解释映射混用和评审人能力推论为何需要桥接。"
+      ]
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "政策简报的结论边界",
+      "boundary_2_3": "不以没有实验数据为由直接否定政策简报。",
+      "boundary_3_4": "提出比例适当的解释/范围修订，而非要求把类比文章变成完整因果效果评估。",
+      "high_score_conditions": [
+        "提出比例适当的解释/范围修订，而非要求把类比文章变成完整因果效果评估。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：不以没有实验数据为由直接否定政策简报。"
+      ]
+    }
+  },
+  "severe_error_checks": [
+    "将作者声称修改与可见修改混同",
+    "将评审认可、批准、后续沉默当作科学真值",
+    "忽略证据边界作超出材料的强结论"
+  ],
+  "read_scope": {
+    "read": [
+      "完整前稿提取文本（摘要、正文、表格文本、建议、参考书目）；T3材料中的当轮两份真人报告仅用于定位；目视相同前稿p003表1。"
+    ],
+    "not_read": [
+      "其余前稿图像未逐页目视；外部引文未打开"
+    ],
+    "verification_limits": [
+      "类比有效性是论证判断；无实证效应验证。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "coverage_limit": "非穷尽参考；新有效意见及证据充分的不同结论可高分。",
+  "concern_coverage": [
+    {
+      "concern": "R1 类比层级与叙事解释",
+      "status": "已核",
+      "reference_point_ids": [
+        "J1"
+      ]
+    },
+    {
+      "concern": "R1 特征到政策含义衔接",
+      "status": "已核",
+      "reference_point_ids": [
+        "J2",
+        "J3"
+      ]
+    },
+    {
+      "concern": "R1 扩展水/污水服务",
+      "status": "次要",
+      "reference_point_ids": []
+    },
+    {
+      "concern": "R2 肯定清晰性与及时性",
+      "status": "已核",
+      "reference_point_ids": [
+        "J2"
+      ]
+    }
+  ],
+  "source_unit": "full_original_manuscript"
+}

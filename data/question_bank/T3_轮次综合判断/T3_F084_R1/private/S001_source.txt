@@ -1,0 +1,1680 @@
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+RESEARCH ARTICLE
+
+Open Science Practices in Integrated Assessment Models
+[version 1; peer review: 2 approved with reservations]
+
+Clàudia Rodés-Bachs 1, Jon Sampedro
+Francesco Gardumi3, Camilla Lo Giudice
+
+1, Natasha Frilingou2,
+3
+
+1Basque Center for Climate Change, Leioa, Basque Country, Spain
+
+2Energy Policy Unit, School of Electrical and Computer Engineering, National Technical University of Athens, Iroon Politechniou 9,
+
+157 80 Athens, Greece
+3KTH Royal Institute of Technology, Brinellvägen 68, 114 28 Stockholm, Stockholm County, Sweden
+
+v1 First published: 20 Jan 2025, 5:12
+
+https://doi.org/10.12688/openreseurope.18824.1
+Latest published: 16 Jun 2025, 5:12
+https://doi.org/10.12688/openreseurope.18824.2
+
+Abstract
+Background
+Open science emphasizes the free and accessible dissemination of
+scholarly outputs to a wide audience, including scientists,
+stakeholders, and the general public. Its core principle is the open
+sharing of knowledge to enable reuse, replication, and uphold
+research integrity.
+Methods
+Using insights from a survey designed to explore the open science
+practices within integrated assessment modeling (IAM) teams, as well
+as the challenges and barriers they face, we propose an open science
+protocol tailored specifically to the needs of IAMs.
+Results
+
+Open Peer Review
+Approval Status
+1
+
+2
+
+3
+
+view
+
+view
+
+view
+
+view
+
+view
+
+version 2
+(revision)
+16 Jun 2025
+
+version 1
+20 Jan 2025
+
+1. Marc-André Simard
+
+, Université de
+
+Montréal, Québec,, Canada
+2. Anne Fouilloux
+
+, Simula Research
+
+Laboratory, Oslo, Norway
+3. David Resnik,
+Any reports and responses or comments on the
+article can be found at the end of the article.
+
+The proposed protocol improves the transparency, accessibility,
+reliability, reusability, and interoperability of IAM models and results.
+Grounded in the findability, accessibility, interoperability, and
+reusability (FAIR) and transparency, responsibility, user focus,
+sustainability, and technology (TRUST) principles, it supports the
+transformation of models’ outputs into real-world applications.
+Conclusions
+By fostering enhanced trust and engagement from policymakers, this
+protocol supports the broader adoption of open science in IAMs. It is
+
+Page 1 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+complemented by a checklist and includes recommendations for
+open-source platforms and tools, simplifying workflows and
+minimizing the need for specialized expertise.
+Plain language summary
+Open science encourages the free sharing of research and data with
+scientists, policymakers, and the general public, aiming to make
+knowledge accessible for reuse and further development. To improve
+the reliability and widespread adoption of these practices, many
+scientific communities have developed tailored protocols and
+standardized methods. Integrated assessment models (IAMs), which
+provide quantitative insights for global environmental change and
+sustainable development, and feed into major scientific assessments,
+must be transparent and open to support informed decision-making.
+Based on a survey of open science practices carried out by different
+IAM teams, we developed a protocol to address key challenges and
+overcome existing barriers in the use of open science practices in
+integrated assessment modelling. This protocol enhances the
+transparency, accessibility, and reliability of IAMs and their results,
+fostering greater trust among policymakers and helping to transform
+model results into real-world applications.
+Keywords
+open science, integrated assessment models, protocol, transparency,
+FAIR, TRUST, open-source, open data
+
+This article is included in the Horizon Europe
+gateway.
+
+This article is included in the Marie-SklodowskaCurie Actions (MSCA) gateway.
+
+Page 2 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Corresponding author: Clàudia Rodés-Bachs (claudia.rodes@bc3research.org)
+Author roles: Rodés-Bachs C: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Software, Validation,
+Visualization, Writing – Original Draft Preparation, Writing – Review & Editing; Sampedro J: Conceptualization, Funding Acquisition,
+Methodology, Resources, Supervision, Validation, Writing – Review & Editing; Frilingou N: Conceptualization, Funding Acquisition,
+Project Administration, Resources, Validation, Writing – Review & Editing; Gardumi F: Writing – Review & Editing; Lo Giudice C: Writing –
+Review & Editing
+Competing interests: No competing interests were disclosed.
+Grant information: C.R., N.F., F.B., and C.G. acknowledge financial support from the European Union’s Horizon research program under
+grant agreements 101056306 (IAM COMPACT project) and 101081179 (DIAMOND project). J.S. acknowledges financial support from the
+Marie Curie grant agreement 101060679 (GRAPHICS project).
+The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+Copyright: © 2025 Rodés-Bachs C et al. This is an open access article distributed under the terms of the Creative Commons Attribution
+License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+How to cite this article: Rodés-Bachs C, Sampedro J, Frilingou N et al. Open Science Practices in Integrated Assessment Models
+[version 1; peer review: 2 approved with reservations] Open Research Europe 2025, 5:12
+https://doi.org/10.12688/openreseurope.18824.1
+First published: 20 Jan 2025, 5:12 https://doi.org/10.12688/openreseurope.18824.1
+
+Page 3 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+State of the art in open science practices
+
+Open science is a concept that aims to make scientific research
+and data available to scientists, stakeholders, and the general
+public. The main principle of open science is based on the idea
+that scientific knowledge should be freely available to everyone
+and should be easily accessible for reuse, replication, and further development1. It rests on a set of core values2,3, including
+transparency, reproducibility, accessibility, and interdisciplinarity,
+to ensure that scientific research is conducted in an open and
+transparent manner, and that the resulting data, methodologies,
+and findings are made available to the broader scientific
+community and non-expert audiences4. By making scientific
+research and data available to everyone, open science can
+help to promote scientific progress and drive innovation5.
+The concept of open science has gained momentum in recent
+years, with a significant number of researchers, policymakers,
+and funding agencies recognizing the importance of openness
+in scientific research6–8. Researchers from a diverse range of
+fields strive to remove barriers to information exchange and
+encourage the academic community to embrace open science
+procedures5. Numerous initiatives and policies also drive the
+adoption of open science, such as the European Union’s
+Horizon 2020 program and the US National Institutes of
+Health, which have implemented open-access mandates9,10.
+Meanwhile, the European Commission created the EU’s Open
+Science Policy Platform to provide high-level guidance on the
+development of its Open Science Policy11.
+There is an increasing number of resources and platforms available to support open science, including open-access journals,
+indexed and browsable in the Directory of Open Access
+Journals1; open data repositories, such as the World Bank open
+data2 or the World Health Organisation data3; software for
+open-source computing and development, for instance, Unix4
+and Git5; and projects to promote open data-driven science, such
+as the European Open Science Cloud6 and the Open Energy
+Modelling Initiative7; all of which can help to ensure that clear
+and accessible research methods are used.
+As open data gains prominence, the FAIR principles have
+emerged as a measurable guideline for assessing the Findability,
+Accessibility, Interoperability, and Reusability of scientific
+data2. These principles, adopted by institutions like the European
+Commission, promote data exchange and usage, enabling
+researchers to build upon existing knowledge. However, the
+FAIR principles face limitations, including a focus on individual
+practices and short-term data management12,13. To address
+
+1
+
+https://doaj.org/
+
+2
+
+https://data.worldbank.org/
+
+3
+
+https://www.who.int/data/gho/
+
+4
+
+https://unix.org/
+
+5
+
+https://git-scm.com/
+
+these potential barriers, the TRUST principles, based on the
+pillars of Transparency, Responsibility, User focus, Sustainability, and Technology, were introduced in 2020, ensuring digital
+repository trustworthiness and long-term data preservation3.
+The benefits of open science are wide-ranging. First, it improves
+research efficiency and reduces total costs through multiple
+factors such as labor cost savings, productivity improvements,
+access cost savings, or duplication avoidance14. Importantly,
+it facilitates interdisciplinarity by using new products,
+services, companies, and collaborations, which would have
+been less likely to occur in closed environments14,15. Likewise,
+open science practices increase public engagement by making
+research more accessible and understandable to non-experts,
+which expands reliability and funding opportunities14,16,17.
+A representative example of the benefits of open science
+practices is the scientific research during the COVID-19
+pandemic. In order to boost scientific collaboration to fight the
+pandemic, several publishers and researchers sped up their
+adoption of open science practices18,19. Reviewing processes
+were accelerated and preprints were shorter and more quickly
+available20. In the same way, data —especially COVID-19
+related— were shared among different institutions and countries, which enhanced the transparency and cooperation
+between scientists. While this new research paradigm and the
+new sharing and publication rhythm raised concerns about
+the potential impact on the quality of research output18, it also
+encouraged the development of additional guidelines and
+specific protocols to guarantee the successful deployment of
+open science practices, which have been maintained in the
+post-pandemic era.
+
+Open science practices in IAMs
+
+Open science is gaining momentum across various scientific
+disciplines21–24. The integrated assessment modeling community
+has been applying its principles, with the aim to improve
+the transparency, accessibility, and understanding of
+integrated assessment models (IAMs) generated scenarios25,26.
+IAMs are essential tools for global scenario analysis and for
+exploring the systemwide impacts of climate policies27. For
+instance, their outcomes and results have been used in the latest
+Intergovernmental Panel on Climate Change (IPCC) report
+(AR6;28), which required all contributors to homogenize their
+data to enable comparisons and ensure full transparency29.
+Several well-established IAMs are freely available as opensource projects in their respective repositories, such as GCAM8,
+MESSAGEix9, MUSE10, REMIND11, and WITCH12. Moreover,
+efforts are underway to transition models to open access
+formats, such as OMNIA and OPEN-PROM, which were
+previously not fully open-source30. Notably, emerging IAMs such
+
+8
+
+https://github.com/JGCRI/gcam-core
+
+9
+
+https://github.com/iiasa/message_ix
+
+10
+
+https://research-and-innovation.ec.europa.eu/strategy/strategy-2020-2024/ourdigital-future/open-science/european-open-science-cloud-eosc_en
+
+https://github.com/EnergySystemsModellingLab/MUSE_OS
+
+11
+
+https://github.com/remindmodel/remind
+
+7
+
+12
+
+https://github.com/witch-team/witchmodel
+
+6
+
+https://openmod-initiative.org/
+
+Page 4 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+as FRIDA13, GCAM-Europe14, NEMESIS-World, and WILIAM15
+have been, or are expected to be, released under open-source
+licenses.
+Apart from the open-source licensing of IAMs and related
+models, modeling teams have recently started to produce standardized reporting procedures to harmonize model outputs, a
+critical step for facilitating effective result comparisons and
+enabling robust multi-model studies31–33. In parallel, to communicate effectively the model results, several user-friendly
+visualization platforms have emerged, standing out to stakeholders and policymakers. Key tools in this domain include
+the 1.5◦ C Scenario Explorer34, the Global Hotspots Explorer16,
+and the Sixth Assessment Report (AR6) Scenario Explorer35.
+Moreover, various platforms, packages, and libraries have been
+developed to streamline the analysis, visualization, validation,
+and comparison of model outputs. Tools like pyam36 assist
+in data analysis and figure creation, while others, such as
+nomenclature31 and common-definitions37 hold
+definitions and mappings to facilitate validation and processing
+of scenario data. Platforms like IAM2PARIS Validation Tool17
+vet the models’ outputs, while R packages like iamc38 and
+gcamreport32 standardize model outputs, enabling seamless
+multi-model comparisons. For visualizing model results,
+tools like witch-plot39 offer specialized features tailored
+for modelers.
+The development of all these tools facilitates multi-model comparison studies, which are crucial for improving the consistency
+and robustness of policy recommendations26,40. Open science
+strengthens the understanding and integration of models, while
+also streamlining data analysis by providing comprehensive documentation of model linkages25. However, the implementation
+of open science practices varies widely across modeling teams
+and is often hindered by various factors, which can slow
+scientific progress, limit the reporting and reuse of research
+findings, and hamper the reliability of the representation of
+real-world complex systems8,41–45.
+To gain direct insights into the open science practices employed
+by IAMs’ modeling teams and the challenges they face, we
+surveyed nine modeling teams from the IAM COMPACT
+consortium46. This Horizon Europe research project aims to support the assessment of global climate goals and the design of
+the next round of Nationally Determined Contributions and
+policy planning beyond 2030. With diverse multi-model analyses at its core, the project emphasizes the importance of using
+and standardizing open science practices among the modeling teams to ensure that model outputs are reliable, accessible,
+transparent, and reusable.
+
+13
+
+https://github.com/metno/WorldTransFRIDA
+
+14
+
+https://github.com/bc3LC-GCAMEurope/gcam-core
+
+15
+
+https://github.com/LOCOMOTION-h2020
+
+16
+
+https://www.hotspots-explorer.org/
+
+17
+
+https://validation.i2am-paris.eu/
+
+Survey results
+
+To identify the open science practices employed by various
+modeling teams, as well as the main challenges and barriers
+they face, we designed a survey47. The survey was structured
+into three sections aligned with the traditional IAM modeling
+steps: model(s) development, calibration, and interconnection;
+model(s) output analysis and dissemination; and tools used
+throughout the process. Specifically, the first section focused
+on the documentation process, including model documentation,
+input harmonization, and potential multi-model connectivity.
+The second section examined the management of project
+outcomes, addressing output standardization, the vetting process, output storage, and results communication. Finally, the third
+section investigated the tools used or developed to support open
+science principles.
+As Figure 1 depicts, the consulted modeling teams document
+their models not only to ensure transparency and facilitate
+external use but also as a reliable internal reference when uncertainties arise. When models are interconnected, either through
+soft- or hard-linking, teams typically document the process,
+along with harmonization procedures, in the Methodology or
+Supplementary Information section of their papers. However,
+time constraints often prevent consistent documentation across
+teams (Figure 1).
+In terms of model output, not all teams adhere to the
+standardized reporting formats. IAM models generally recognize
+the advantages of using the IAMC time-series reporting
+template48, which standardizes model outputs, facilitating
+comparisons across different models. However, sector-specific
+(e.g., energy) models, often linked to IAMs, tend to follow
+other reporting methods due to their more specialized
+and disaggregated results. Furthermore, not all modeling teams
+employ vetting procedures to validate their output. These
+procedures, designed to assess the accuracy of results, typically
+compare the first model period to observed data or check
+that key outputs, such as demand and supply, align correctly.
+However, these methods are unfamiliar to some teams and can
+be time-consuming, particularly when done manually rather
+than using automated tools (Figure 1).
+Lastly, modeling teams increasingly publish models’ raw
+output or relevant datasets on platforms like Zenodo18, and more
+papers are now accompanied by the analysis code used in the
+study. However, due to heavy data weight, limited knowledge,
+or time constraints, this information is not always uploaded
+to a secure long-term location. To improve the communication of the results, many models are incorporating user-friendly
+interfaces, which, albeit requiring time to build and set up,
+make them more accessible and understandable for non-expert
+audiences (Figure 1).
+
+Open Science Protocol
+
+Based on the collected results, we propose an Open Science
+Protocol for the IAM community to encourage and support
+the adoption of open science practices (Figure 2). The protocol
+18
+
+https://zenodo.org/
+Page 5 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Figure 1. Summary statistics of responses to the primary survey questions.
+Page 6 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Figure 2. Scheme of the Open Science Protocol for the IAM community.
+
+structure aligns with the survey sections, with each stage
+designed to adhere to the FAIR and TRUST principles. It
+focuses on the key steps of IAM studies, offering detailed guidance and practical strategies to address the challenges identified through the survey. This protocol aims to ensure full
+transparency and thorough documentation of models, while
+making outcomes accessible, interoperable, reusable, reproducible, and reliable for a wide range of audiences, including both scientific and non-expert communities, serving as a
+dependable resource for informed decision-making.
+The first stage of the protocol emphasizes the documentation
+and harmonization of models and data. It is crucial to ensure
+transparency in model assumptions, inputs, and outputs so
+that models developed by different teams can be interoperable
+and their results comparable. To achieve this, we recommend
+creating a dedicated platform for thorough documentation of
+each model with specific details about its versions. It is advisable
+to assign a Digital Object Identifier (DOI) to each model
+version release, ensuring that it is findable, accessible, reusable,
+and citable for everyone.
+It is difficult to have a rule to report model interconnections
+since each case is unique. Thus, these details can be clearly
+outlined in the corresponding paper or case study, detailing
+how models interact, as well as the assumptions, inputs, outputs, and model versions used in the integration. If applicable,
+models’ inputs must be homogenized to have comparable
+results, a task that should be documented thoroughly in the
+corresponding paper. Additionally, publications should reference
+and cite the specific model versions used, including any
+modification details (if applicable), with links to the version
+repository if models are open-source. Modeling teams can
+
+leverage open-source platforms such as GitHub19 for code hosting and version control, and Zenodo20 for distributing model
+releases and, when needed, associated data.
+The second stage of the protocol focuses on ensuring the
+quality and transparency of the outcomes. The first step is to
+standardize the outputs using the IAMC time-series data
+template48, which facilitates cross-comparison of results between
+modeling teams and enables automated validation. While
+this procedure is specific to each model, it must be traceable,
+transparent, and reproducible. Automating this process is
+recommended, as it allows for the detection of errors or bugs
+over time32.
+To ensure consistency in the outputs, we suggest implementing
+a vetting procedure, ideally automated, using modelindependent platforms like the IAM2PARIS Validation tool49
+or model-specifictools such as gcamreport32. Through this
+process, the accuracy of the outcomes is assessed by verifying
+that paired outputs, such as supply and demand, are properly
+aligned, and by comparing the initial model period with
+observed data. With the automation of these processes, modeling
+teams can save time and effort, as well as ensure the clarity
+and replicability of the workflows.
+To guarantee full transparency, accessibility, and reusability
+of results, it is advisable to upload the outputs to a platform
+under a DOI, such as Zenodo. However, as the survey indicates,
+
+19
+
+https://github.com/
+
+20
+
+https://zenodo.org/
+
+Page 7 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+it may not always be feasible to upload raw outputs due to their
+size. In such cases, the relevant study results and/or lighter
+standardized datasets should be made available. The shared outputs must be accompanied by detailed metadata documenting
+the data origin and the specific step-by-step data handling
+processes used to develop and reuse it. Assigning a DOI and
+detailing tailor-made metadata helps ensure that data is easily
+located and preserved over time, and facilitates its use in future
+research projects.
+
+Environmental Data Initiative25), which help promote open
+science and ensure transparency. Similarly, projects like the
+Reproducibility Project Cancer Biology26 and the Reproducibility Project Psychology55 work to verify research reproducibility, thereby enhancing the credibility and reliability of
+scientific findings. While the IAM community has developed
+output standardization guidelines31 and user-friendly visualization
+interfaces34,35, it still lacks a comprehensive protocol to guide
+the development of modeling studies.
+
+Finally, in order to efficiently share the findings with both the
+scientific community and the general public, the protocol suggests the dissemination of results through visualization tools
+that transform complex data outputs into comprehensible formats. Although creating these tools can be time-consuming,
+user-friendly visualizations enable clear exploration of the results
+and significantly enhance transparency, engaging policymakers
+and other stakeholders. Programming tools and platforms,
+such as dedicated websites, R Shiny apps21, and visualization
+packages like pyam50, can leverage the development of these
+interactive interfaces.
+
+To address this gap, this paper introduces a protocol for the
+entire IAM community that offers a structured framework for
+modeling teams and related projects. While it is built on the
+challenges faced by the IAM COMPACT modeling teams, the
+protocol aims to serve as a valuable resource for the broader
+community. It outlines best practices and recommended platforms and tools to streamline labor intensive tasks. By adopting
+this protocol, modeling teams can optimize time and resources
+while improving the transparency, accessibility, reliability,
+interpretability, and reusability of their results. With collective effort, the protocol can be continually updated and refined
+to better meet the evolving needs of modelers, ultimately
+advancing climate science and supporting the development of
+evidence-based policies.
+
+To facilitate the protocol application and boost the implementation of open science principles, we provide a checklist to
+modeling teams47, available at Zenodo22. This comprehensive
+list, structured in the same blocks as the protocol, serves as a
+useful tool to ensure that no steps are overlooked and acts as
+a reminder of best practices in open science.
+
+Discussion
+
+Open science has developed into a major area of policy interest for academic institutions and a common approach for many
+researchers. The IAM community is rapidly adhering to these
+principles since IAM results hold particular significance for
+a wide range of stakeholders and policymakers. IAM models
+have traditionally faced criticism for their lack of transparency and the difficulty in fully testing their assumptions
+due to the complexity of the underlying code51. This has led to
+perceptions of IAMs as “black box” models, diminishing their
+reliability in the eyes of some decision-makers41. Embracing
+open science practices would greatly benefit the IAM community
+by demystifying these models and making their methods
+and procedures far more transparent and accessible. This is a
+crucial step in translating model insights into real-world policy
+actions.
+As in other scientific communities, the adoption of open
+science principles faces several challenges, such as limited
+awareness, knowledge gaps, time constraints, limited financial
+resources, intellectual property concerns, and various cultural
+and social factors52–54. However, several scientific disciplines
+have established protocols, data repositories, and best practices (e.g., Nature Protocols23, BioModels Database24, and the
+
+Ethics and consent
+
+All survey respondents were members of the IAM COMPACT
+consortium and provided informed consent for the use of
+the information shared in this study. They were informed
+that their responses would be utilized for research purposes
+and included in this paper. The data were collected under the
+assurance of anonymity and were used exclusively to support
+the development of open science practices and protocols for
+integrated assessment models. This process was conducted in
+compliance with ethical approval from the Basque Centre for
+Climate Change (BC3) Management Committee. Respondents
+also retained the right to withdraw their participation at any
+point.
+
+Data availability
+
+The checklist and survey results are available in Zenodo
+(https://zenodo.org/records/13970492) DOI: 10.5281/zenodo.
+1397049247
+Data available under the terms of the Creative Commons
+Attribution 4.0 International license (CC-BY 4.0) (https://creativecommons.org/licenses/by/4.0/).
+
+Software availability
+
+Source code available from GitHub (https://github.com/klau506/
+open_science_iams).
+Archived
+software
+records/13970492).
+
+available
+
+21
+
+https://shiny.posit.co/
+
+22
+
+https://doi.org/10.5281/zenodo.13970492
+
+23
+
+https://www.nature.com/nprot/
+
+25
+
+https://portal.edirepository.org/nis/home.jsp
+
+24
+
+https://www.ebi.ac.uk/biomodels/
+
+26
+
+https://www.cos.io/rpcb
+
+from
+
+(https://zenodo.org/
+
+Page 8 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Data and archived software available under the terms of
+the Creative Commons Attribution 4.0 International license
+(CC-BY 4.0) (https://creativecommons.org/licenses/by/4.0/).
+Source code available under the terms of the Apache 2.0
+license (https://www.apache.org/licenses/).
+
+Authors contributions
+C.R. participated in the Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Software, Validation,
+Visualization, Writing - Original Draft Preparation, and
+
+Writing – Review & Editing; J.S. participated in the Conceptualization, Funding Acquisition, Methodology, Resources,
+Supervision, Validation, and Writing – Review & Editing;
+N.F. participated in the Conceptualization, Funding Acquisition, Project Administration, Resources, Validation, and Writing – Review & Editing; F.B. participated in the Validation
+and Writing – Review & Editing; and C.G. participated in the
+Validation and Writing – Review & Editing.
+
+Acknowledgments
+The authors acknowledge the survey respondents for their
+time and diligence in thoroughly responding to the survey.
+
+References
+17.
+
+Grand A, Wilkinson C, Bultitude K, et al.: On open science and public
+engagement with engineering. 2010; 09.
+Reference Source
+
+18.
+
+Lin D, Crabtree J, Dillo I, et al.: The TRUST principles for digital repositories.
+Sci Data. Publisher: Nature Publishing Group UK London, 2020; 7(1): 144.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Besançon L, Peiffer-Smadja N, Segalas C, et al.: Open science saves lives:
+lessons from the COVID-19 pandemic. BMC Med Res Methodol. 2021; 21(1):
+117.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+19.
+
+4.
+
+Munafò MR, Nosek BA, Bishop DVM, et al.: A manifesto for reproducible
+science. Nat Hum Behav. 2017; 1(1): 0021.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Hayashi K: How could COVID-19 change scholarly communication to a new
+normal in the open science paradigm? Patterns (N Y). 2021; 2(1): 100191.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+20.
+
+Fraser N, Brierley L, Dey G, et al.: Preprinting a pandemic: the role of
+preprints in the COVID-19 pandemic. 2020.
+
+5.
+
+Fecher B, Friesike S, Hebing M: What drives academic data sharing? PLoS
+One. 2015; 10(2): e0118053
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+21.
+
+6.
+
+Burgelman JC, Pascu C, Szkuta K, et al.: Open science, open data, and open
+scholarship: european policies to make science fit for the twenty-first
+century. Front Big Data. 2019; 2: 43.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Nielsen AF, Michelmann J, Akac A, et al.: Using the future wheel methodology
+to assess the impact of open science in the transport sector. Sci Rep. 2023;
+13(1): 6000.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+22.
+
+Branney P, Brooks J, Kilby L, et al.: Three steps to open science for qualitative
+research in psychology. 2022.
+Publisher Full Text
+
+7.
+
+Piwowar HA, Vision TJ: Data reuse and the open data citation advantage.
+PeerJ. Publisher: PeerJ Inc, 2013; 1: e175.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+23.
+
+8.
+
+Tenopir C, Dalton ED, Allard S, et al.: Changes in data sharing and data reuse
+practices and perceptions among scientists worldwide. PLoS One. Publisher:
+Public Library of Science San Francisco, CA USA, 2015; 10(8): e0134826.
+PubMed Abstract |Publisher Full Text | Free Full Text
+
+Chin JM, Pickett JT, Vazire S, Holcombe AO��, et al.: Questionable research
+practices and open science in quantitative criminology. J Quant Criminol.
+Publisher: Springer, 2023; 39: 21–51.
+Publisher Full Text
+
+24.
+
+9.
+
+European Commission: H2020 guidelines on open access to scientific
+publications and research data in Horizon 2020. 2017.
+
+Brinkhaus HO, Rajan K, Schaub J, et al.: Open data and algorithms for open
+science in AI-driven molecular informatics. Curr Opin Struct Biol. 2023;
+79: 102542.
+PubMed Abstract | Publisher Full Text
+
+25.
+
+IAMC: IAMC Documentation Wiki. 2022.
+
+10.
+
+National Institutes of Health: NIH Grants Policy Statement. 2021.
+Reference Source
+
+26.
+
+11.
+
+Mendez E, Lawrence R, MacCallum CJ, et al.: Progress on open science:
+towards a shared research knowledge system. Final report of the Open
+Science Policy Platform. Publisher: European commission, 2020.
+Reference Source
+
+Nikas A, Gambhir A, Trutnevyte E, et al.: Perspective of comprehensive and
+comprehensible multi-model energy and climate science in Europe. Energy.
+Publisher: Elsevier, 2021; 215: 119153.
+Publisher Full Text
+
+27.
+
+Van Beek L, Hajer M, Pelzer P, et al.: Anticipating futures through models:
+the rise of integrated assessment modelling in the climate science-policy
+interface since 1970. Global Environ Chang. 2020; 65: 102191.
+Publisher Full Text
+
+28.
+
+Shukla PR, Skea J, Slade R, et al.: Climate change 2022 mitigation of climate
+change. Cambridge University Press, Cambridge, UK and New York, NY, USA,
+2022.
+Reference Source
+
+29.
+
+Krey V, Masera O, Blanford G, et al.: Annex ii: metrics & methodology.
+In: O. Edenhofer, R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K.
+Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen,
+S. Schlömer, C. von Stechow, T. Zwickel, and J. C. Minx, editors, Climate change
+2014: mitigation of climate change. Contribution of working group iii to the fifth
+assessment report of the intergovernmental panel on climate change. Cambridge
+University Press, 2014.
+Reference Source
+
+30.
+
+Climate-Diamond: Upgrading models. 2023; Accessed: 2024-09-13.
+Reference Source
+
+31.
+
+Huppmann D, Wienpahl L, Hackstock P, et al.: nomenclature. 2024.
+Publisher Full Text
+
+1.
+
+European Commission: The European Union’s Research and Innovation
+Performance - Facts and Figures 2019. 2019.
+
+2.
+
+Wilkinson MD, Dumontier M, Aalbersberg IJJ, et al.: The FAIR guiding
+principles for scientific data management and stewardship. Sci Data.
+Publisher: Nature Publishing Group, 2016; 3(1): 160018.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+3.
+
+12.
+
+Boeckhout M, Zielhuis GA, Bredenoord AL: The FAIR guiding principles
+for data stewardship: fair enough? Eur J Hum Genet. 2018; 26(7): 931–936.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+13.
+
+Peng G, Gross WS, Edmunds R: Crosswalks among stewardship maturity
+assessment approaches promoting trustworthy FAIR data and
+repositories. Sci Data. 2022; 9(1): 576.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+14.
+
+Fell MJ: The economic impacts of open science: a rapid evidence
+assessment. Publications. Publisher: MDPI, 2019; 7(3): 46.
+Publisher Full Text
+
+15.
+
+Mons B, Neylon C, Velterop J, et al.: Cloudy, increasingly FAIR; revisiting
+the FAIR Data guiding principles for the european open science cloud.
+Information Services & Use. 2017; 37(1): 49–56.
+Publisher Full Text
+
+16.
+
+Wehn U, Ajates R, Mandeville C, et al.: Opening science to society: how to
+progress societal engagement into (open) science policies. R Soc Open Sci.
+2024; 11(5): 231309.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Page 9 of 25
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+32.
+
+Rodés-Bachs C, Sampedro J, Horowitz R, et al.: gcamreport: an R tool to
+process and standardize GCAM outputs. J Open Source Softw. Publisher: The
+Open Journal, 2024; 9(96): 5975.
+Publisher Full Text
+
+44.
+
+Skea J, Shukla P, Al Khourdajie A, et al.: Intergovernmental Panel on Climate
+Change: transparency and integrated assessment modeling. WIREs Climate
+Change. 2021; 12(5): e727.
+Publisher Full Text
+
+33.
+
+Usher W, Pietzcker R, Dekker M: Ecemf: model comparison protocol. 2022.
+Publisher Full Text
+
+45.
+
+34.
+
+Huppmann D, Rogelj J, Kriegler E, et al.: A new scenario resource for
+integrated 1.5 °C research. Nat Clim Change. 2018; 8(12): 1027–1030.
+Publisher Full Text
+
+Melero R, Boté-Vericad JJ, López-Borrull A: Perceptions regarding open
+science appraised by editors of scholarly publications published in Spain.
+Learn Publ. 2023; 36(2): 178–193.
+Publisher Full Text
+
+46.
+
+35.
+
+Byers E, Krey V, Kriegler E, et al.: Ar6 scenarios database. 05, 2022.
+Publisher Full Text
+
+36.
+
+Gidden MJ, Fujimori S, Van Den Berg M, et al.: A methodology and
+implementation of automated emissions harmonization for use in
+Integrated Assessment Models. Environ Modell Softw. 2018; 105: 187–200.
+Publisher Full Text
+
+IAM COMPACT: Iam compact: expanding integrated assessment modelling:
+comprehensive and comprehensible science for sustainable, co-created
+climate action. 2024; Accessed: 2024-09-18.
+Publisher Full Text
+
+47.
+
+Rodés Bachs C, Sampedro J, Natasha F, et al.: open_science_iams_dataset
+(si_material_v1). Zenodo. 2024.
+http://www.doi.org/10.5281/zenodo.13970492
+
+37.
+
+IAM Consortium: Common definitions. 2024; Accessed: 2024-09-18.
+Reference Source
+
+48.
+
+IAMC: IAMC time-series data template. 2009; Accessed: 2024-09-13.
+Reference Source
+
+38.
+
+Dietrich JP, Auer C, Giannousakis A, et al.: iamc: Iamc tools. R package version
+0.29.8, 2023
+����
+Reference Source
+
+49.
+
+DIAMOND: Iam2paris validation tool. 2009; Accessed: 2024-09-13.
+
+50.
+
+39.
+
+WITCH Team: Witch plot: Visualization tool for witch model outputs. 2024;
+Accessed: 2024-09-18.
+Reference Source
+
+Gidden MJ, Huppmann D: pyam: a Python package for the analysis
+and visualization of models of the interaction of climate, human, and
+environmental systems. J Open Source Softw. 2019; 4(33): 1095.
+Publisher Full Text
+
+51.
+
+Guivarch C, Le Gallic T, Bauer N, et al.: Using large ensembles of climate
+change mitigation scenarios for robust insights. Nat Clim Change. 2022;
+12(5): 428–435.
+Publisher Full Text
+
+Strachan N, Fais B, Daly H: Reinventing the energy modelling–policy
+interface. Nat Energy. 2016; 1(3): 1–3, 16012.
+Publisher Full Text
+
+52.
+
+Enke N, Thessen A, Bach K, et al.: The user’s view on biodiversity data
+sharing — investigating facts of acceptance and requirements to realize a
+sustainable use of research data—. Ecol Inform. Publisher: Elsevier, 2012; 11:
+25–33.
+Publisher Full Text
+
+53.
+
+Tenopir C, Allard S, Douglass K, et al.: Data sharing by scientists: practices
+and perceptions. PLoS One. 2011; 6(6): e21101.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+54.
+
+Bertram MG, Sundin J, Roche DG, et al.: Open science. Curr Biol. Publisher:
+Elsevier, 2023; 33(15): R792–R797.
+PubMed Abstract | Publisher Full Text
+
+55.
+
+Open Science Collaboration: PSYCHOLOGY. Estimating the reproducibility of
+psychological science. Science. 2015; 349(6251): aac4716.
+PubMed Abstract | Publisher Full Text
+
+40.
+
+41.
+
+Wilson C, Guivarch C, Kriegler E, et al.: Evaluating process-based integrated
+assessment models of climate change mitigation. Climatic Change. 2021;
+166(1–2): 3.
+Publisher Full Text
+
+42.
+
+Pirani A, Fuglestvedt JS, Byers E, et al.: Scenarios in IPCC assessments: lessons
+from AR6 and opportunities for AR7. npj Clim Action. 2024; 3(1): 1.
+Publisher Full Text
+
+43.
+
+Robertson S: Transparency, trust, and integrated assessment models: an
+ethical consideration for the Intergovernmental Panel on Climate Change.
+WIREs Climate Change. 2021; 12(1): e679.
+Publisher Full Text
+
+Page 10 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 26 April 2025
+
+https://doi.org/10.21956/openreseurope.20371.r53079
+© 2025 Fouilloux A. This is an open access peer review report distributed under the terms of the Creative
+Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,
+provided the original work is properly cited.
+
+Anne Fouilloux
+Simula Research Laboratory, Oslo, Norway
+Summary of the article:
+This paper presents an Open Science Protocol specifically tailored for the Integrated
+Assessment Modeling (IAM)community, based on a survey of IAM teams. The protocol is
+designed to improve the transparency, accessibility, and reusability of IAM models and outputs
+by aligning with the FAIR (Findable, Accessible, Interoperable, Reusable) and TRUST
+(Transparency, Responsibility, User focus, Sustainability, Technology) principles. The study
+highlights current challenges in implementing open science within IAMs—such as inconsistent
+documentation, limited vetting of outputs, and barriers to sharing data—and offers practical
+guidance to overcome these. By fostering better communication and usability of models,
+especially for policymakers, the protocol aims to enhance the credibility and impact of IAMbased climate assessments.
+Details related to the questions above (where I answered partly):
+The paper acknowledges the importance of the FAIR (Findability, Accessibility, Interoperability, and
+Reusability) and TRUST (Transparency, Responsibility, User focus, Sustainability, and Technology)
+principles but does not fully explore their practical implementation within Integrated Assessment
+Models (IAMs). A deeper engagement with recent literature and case studies specific to IAMs and
+these principles would strengthen both the theoretical foundation and practical relevance.
+While the survey design is appropriate for gathering qualitative insights, the methodology section
+lacks sufficient detail. Key elements such as the full survey instrument, sample size, and selection
+process are missing, which limits transparency and hampers replicability. Providing this
+information, along with a clearer description of how responses were analyzed, would enhance the
+robustness of the conclusions.
+The protocol presented is promising, with clearly outlined steps. However, it would benefit from
+further elaboration, particularly regarding practical challenges encountered, strategies for
+adaptation across IAM contexts, and concrete examples of successful implementation. Additional
+data—such as more detailed documentation, case studies, or checklists—would improve the
+transparency and reusability of the work.
+
+Page 11 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Although the interpretation of survey results is reasonable, it relies heavily on qualitative insights.
+Incorporating statistical analysis or quantitative data could provide stronger support for the
+findings. The conclusions align with the presented results but could be made more compelling
+through the inclusion of real-world applications that demonstrate the protocol’s effectiveness and
+impact.
+Other information related to data/code availability and figure:
+- The GitHub repository: https://github.com/klau506/open_science_iams does not detail how to
+use the R code and with which data.
+- The data is deposited in Zenodo as xlsx file which is not an open format. csv file (text file) would
+be better for reuse.
+- Figure 1 is unreadable on my laptop (too small).
+- The survey results file (available at https://zenodo.org/records/13970492) contains 9 entries,
+suggesting that fewer than 10 individuals responded to the survey.
+Recommendation:
+There are a few areas where additional details and refinement could help to strengthen the
+scientific rigor of your paper. Below are some specific suggestions:
+1. Strengthen the Theoretical Framework
+It would be beneficial to gain a deeper understanding of how the FAIR and TRUST principles can
+be practically applied to IAMs (in detail because in the paper, the 15 FAIR principles are not
+addressed with sufficient details). This will help better align the theoretical foundation of your
+protocol with current best practices in Open Science and ensure its relevance to the IAM
+community.
+2. Enhance Methodological Transparency
+The methodology section could be improved by providing more detailed information about the
+survey design. For instance, explain why the sample size and the selection process of survey
+participants were sufficient for this work.
+3. Improve the GitHub Repository
+The GitHub repository could be enhanced by providing clear documentation on how to use the
+R code and apply it to the provided data. Additionally, I suggest switching the data format from
+XLSX to an open format like CSV to facilitate easier reuse and interoperability with other tools.
+4. Enhance Visual Accessibility
+Figure 1 is not easily readable on standard devices. I recommend increasing the resolution and
+size of the figures to improve accessibility, ensuring that they are clearly visible to a broader
+audience.
+5. Increase Survey Sample Size
+Given that the survey currently includes fewer than 10 responses, I suggest reaching out to more
+IAM teams to increase the sample size. A larger sample would improve the representativeness
+of the findings. It would also be helpful to acknowledge the potential limitations posed by the
+small sample size and how these might affect the interpretation of your results.
+Is the work clearly and accurately presented and does it engage with the current literature?
+
+Page 12 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Partly
+Is the study design appropriate and is the work technically sound?
+Partly
+Are sufficient details of methods and analysis provided to allow replication by others?
+Partly
+Are all the source data and materials underlying the results available?
+Yes
+If applicable, is the statistical analysis and its interpretation appropriate?
+Yes
+Are the conclusions drawn adequately supported by the results?
+Partly
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: FAIR and Open Science with a focus on Climate Science and more recently
+Climate Change Adaptation.
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard, however I have
+significant reservations, as outlined above.
+Author Response 06 Jun 2025
+
+Clàudia Rodés-Bachs
+Dear Anne Fouilloux, Thank you so much for the time devoted to the manuscript and your
+insightful comments. They have been a key resource in improving the manuscript and
+study. Detailed responses below:
+Summary of the article: This paper presents an Open Science Protocol specifically tailored
+for the Integrated Assessment Modeling (IAM)community, based on a survey of IAM teams.
+The protocol is designed to improve the transparency, accessibility, and reusability of IAM
+models and outputs by aligning with the FAIR (Findable, Accessible, Interoperable,
+Reusable) and TRUST (Transparency, Responsibility, User focus, Sustainability, Technology)
+principles. The study highlights current challenges in implementing open science within
+IAMs—such as inconsistent documentation, limited vetting of outputs, and barriers to
+sharing data—and offers practical guidance to overcome these. By fostering better
+communication and usability of models, especially for policymakers, the protocol aims to
+enhance the credibility and impact of IAM-based climate assessments. Details related to the
+questions above (where I answered partly): The paper acknowledges the importance of the
+FAIR (Findability, Accessibility, Interoperability, and Reusability) and TRUST (Transparency,
+Responsibility, User focus, Sustainability, and Technology) principles but does not fully
+
+Page 13 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+explore their practical implementation within Integrated Assessment Models (IAMs). A
+deeper engagement with recent literature and case studies specific to IAMs and these
+principles would strengthen both the theoretical foundation and practical relevance. Thank
+you for your comment. We agree that providing additional context will help further
+motivate the study. In response, we have expanded the Introduction by incorporating
+specific examples to better illustrate recent developments in the field and in other modeling
+communities, and to more clearly highlight the existing gaps our work aims to address.
+Updated paragraph: “The development of all these tools facilitates multi-model comparison
+studies, which are crucial for improving the consistency and robustness of policy
+recommendations 26, 40 . Open science strengthens the understanding and integration of
+models, while also streamlining data analysis by providing comprehensive documentation
+of model linkages 25 . Recently, several reports examining methodologies used in largescale initiatives, such as the IPCC AR6, have highlighted valuable lessons and opportunities
+for future research 42,63,64. In parallel, several research teams are making substantial
+efforts to openly share their workflows, methodologies, data, and code 65– 67, crucial steps
+to prevent models from being perceived as “black boxes”. However, the implementation of
+open science practices varies widely across modeling teams and is often hindered by
+various factors, which can slow scientific progress, limit the reporting and reuse of research
+findings, and hamper the reliability of the representation of real-world complex systems 8,
+41– 45 . To fill this gap, this study proposes a protocol for the IAM community, grounded in
+the current state of open science efforts and obstacles encountered by modeling teams.”
+Updated paragraph: “Open science is rapidly transforming research practices across
+disciplines 21– 24 , including the energy and climate modeling communities. In recent years,
+Energy System Optimization Models (ESOMs) like OSeMOSYS30 and Power System Models
+(PSMs) like PyPSA75 have embraced transparency by releasing their model code under
+open-source licenses. Some PSMs go a step further by providing fully reproducible
+workflows and interactive examples through Jupyter notebooks, making them not only
+more accessible but also valuable tools for education and capacity building. At the same
+time, the integrated assessment modeling (IAM) community is increasingly adopting open
+science principles to improve the transparency, accessibility, and understanding of the
+scenarios they generate 25, 26 .”
+While the survey design is appropriate for gathering qualitative insights, the methodology
+section lacks sufficient detail. Key elements such as the full survey instrument, sample size,
+and selection process are missing, which limits transparency and hampers replicability.
+Providing this information, along with a clearer description of how responses were
+analyzed, would enhance the robustness of the conclusions. Thank you for raising this
+important point. A new Methods section has been created to provide a comprehensive
+account of the survey design and implementation. This includes the full survey instrument,
+the sampling strategy, the number and background of participants, and the approach used
+for analyzing the responses. These additions aim to improve both the transparency and
+reproducibility of our study. We have addressed it in detail below.
+The protocol presented is promising, with clearly outlined steps. However, it would benefit
+from further elaboration, particularly regarding practical challenges encountered,
+strategies for adaptation across IAM contexts, and concrete examples of successful
+implementation. Additional data—such as more detailed documentation, case studies, or
+checklists—would improve the transparency and reusability of the work. Thank you for your
+thoughtful suggestions. In response, we have introduced concrete examples of successful
+
+Page 14 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+implementation of the protocol steps in the newly added Table 1, which illustrates how the
+protocol has been applied in practice. Additionally, practical challenges encountered during
+implementation are now discussed in greater detail in the Survey Results section, as they
+were directly derived from participant responses. To further support reusability, we also
+provide a checklist to guide implementation of the protocol. This checklist is openly
+available through our GitHub repository. Due to journal constraints, we are unable to
+include it as part of the Supplementary Material, but we have clearly referenced the link
+within the manuscript.
+
+Although the interpretation of survey results is reasonable, it relies heavily on qualitative
+insights. Incorporating statistical analysis or quantitative data could provide stronger
+support for the findings. The conclusions align with the presented results but could be
+made more compelling through the inclusion of real-world applications that demonstrate
+the protocol’s effectiveness and impact. Thank you for this valuable comment. Our analysis
+was designed to incorporate both qualitative and quantitative elements. While the survey
+primarily gathered qualitative insights, we complemented this with a quantitative overview
+
+Page 15 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+of community practices, as shown in Figure 1 and discussed in the accompanying analysis.
+Importantly, the protocol is not static as it is currently being implemented and tested in
+practice. It forms part of the IAM COMPACT project and will be adopted in the latest
+modeling round, which will provide further opportunities for refinement and evaluation.
+These ongoing efforts will allow us to assess the protocol’s practical effectiveness and
+impact in real-world settings. We consider this an iterative and collaborative process and
+look forward to engaging with the broader community to further discuss, validate, and
+improve the protocol over time. Other information related to data/code availability and
+figure: - The GitHub repository: https://github.com/klau506/open_science_iams does not
+detail how to use the R code and with which data. Thank you for your comment. The
+README file has been updated to better detail how to use the R code and on which data it
+relies. More details below. - The data is deposited in Zenodo as xlsx file which is not an open
+format. csv file (text file) would be better for reuse. Thank you for your comment. The data
+format has been changed to CSV to allow interoperability and reusability. The metadata is
+also available as TXT. More details below. - Figure 1 is unreadable on my laptop (too small).
+Thank you for your comment. We agree that Figure 1 was slightly too small. Thus, we have
+increased the text size and the pie charts dimensions. We have also reduced some pie
+chart’s text to better fit the space. More details below. - The survey results file (available at
+https://zenodo.org/records/13970492) contains 9 entries, suggesting that fewer than 10
+individuals responded to the survey. Thank you for your comment. We have extended the
+survey invitation to the partners from the DIAMOND project, reaching a total of 13 answers.
+More details below.
+Recommendation: There are a few areas where additional details and refinement could
+help to strengthen the scientific rigor of your paper. Below are some specific suggestions:
+1. Strengthen the Theoretical Framework
+It would be beneficial to gain a deeper understanding of how the FAIR and TRUST principles
+can be practically applied to IAMs (in detail because in the paper, the 15 FAIR principles are
+not addressed with sufficient details). This will help better align the theoretical foundation
+of your protocol with current best practices in Open Science and ensure its relevance to the
+IAM community. Thank you for your comment. We agree that this aspect could benefit from
+further detail. While the provided checklist already adheres to both the FAIR (Findable,
+Accessible, Interoperable, and Reusable) and TRUST (Transparency, Responsibility, User
+focus, Sustainability, and Technology) principles, we recognize the importance of making
+these connections more explicit for the reader. To address this, we have revised the
+manuscript to clearly state how the checklist operationalizes these principles. Specifically,
+we now provide concrete guidance on how both data and metadata should be uploaded,
+curated, and shared. This includes direct references to the 15 FAIR guiding principles,
+outlining expectations for persistent identifiers, rich metadata, usage of standard
+vocabularies, and protocols for accessibility and long-term preservation. Furthermore, the
+checklist has been designed as a living tool, hosted on GitHub, where it can be refined and
+expanded as best practices evolve. We have also emphasized that the checklist is intended
+to support practical implementation across different IAM contexts by offering a structured,
+step-by-step framework that complements the protocol. Although the journal’s policy limits
+our ability to include the full checklist as Supplementary Material, we have clearly
+referenced its location in the manuscript and encourage the community to use and
+contribute to its ongoing development. Updated paragraph: To facilitate the protocol
+
+Page 16 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+application and boost the implementation of open science principles, we provide a checklist
+to modeling teams 47, available at Zenodo 22. This comprehensive list, structured in the
+same blocks as the protocol, serves as a useful tool to ensure that no steps are overlooked
+and acts as a reminder of best practices in open science. In the same line, to ensure that
+uploaded data and metadata follow the FAIR principles, we recommend ensuring that it is
+rich, retrievable through an open protocol, uses a broadly applicable language and
+assigned to a unique persistent identifier 34.
+2. Enhance Methodological Transparency
+The methodology section could be improved by providing more detailed information about
+the survey design. For instance, explain why the sample size and the selection process of
+survey participants were sufficient for this work. Thank you for your comment. We agree
+that the provided methodological information could be improved. Therefore, we have
+created a dedicated Methodological section, where the survey design, structure,
+distribution, and analysis are detailed. Besides, we detail why the sample size and selected
+modeling teams offer a broad overview of the IAM community, as well as detail that this
+might be a possible limitation in the Discussion section. New section (Methods): “Methods
+To identify the open science practices employed by various modeling teams, as well as the
+main challenges and barriers they face, we designed a survey 47 . The survey was structured
+into three sections aligned with the traditional IAM modeling steps: (1) model(s)
+development, calibration, and interconnection; (2) model(s) output analysis and
+dissemination; and (3) tools used throughout the process. Specifically, the first section
+focused on the documentation process, including model documentation, input
+harmonization, and potential multi-model connectivities. The second section examined the
+management of project outcomes, addressing output standardization, the vetting process,
+output storage, and results presentation. Finally, the third section investigated the tools
+used or developed to support open science principles. This survey was sent to all modeling
+teams from the IAM COMPACT 46 and DIAMOND 56 consortia, gathering a total of 13
+responses. IAM COMPACT, a Horizon Europe research project, aims to support the
+assessment of global climate goals and the design of the next round of Nationally
+Determined Contributions and policy planning beyond 2030. At its core are diverse multimodel analyses that emphasize the adoption and standardization of open science practices
+to ensure that model outputs are reliable, accessible, transparent, and reusable. On the
+other hand, the Horizon Europe DIAMOND project focuses on developing open-source
+IAMs, which stand to benefit significantly from open science principles by enhancing
+usability and broadening access across modeling teams. With this broad representation of
+models, institutions, and project scopes, our survey captures a robust and representative
+sample of the IAM community. The quantitative and qualitative survey results were
+analyzed both individually and collectively to identify patterns within specific modeling
+teams and to highlight common practices shared across the broader community. This dual
+approach allowed us to capture both the diversity of experiences and the overarching
+trends in how open science principles are being implemented.” Updated Discussion: “... To
+address this gap, this paper introduces a protocol for the entire IAM community that offers
+a structured framework for modeling teams and related projects. While it is built on the
+challenges faced by specific modeling teams and may not capture all perspectives, the
+protocol aims to serve as a valuable resource for the broader community.…”
+
+Page 17 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+3. Improve the GitHub Repository
+The GitHub repository could be enhanced by providing clear documentation on how to use
+the R code and apply it to the provided data. Additionally, I suggest switching the data
+format from XLSX to an open format like CSV to facilitate easier reuse and interoperability
+with other tools. Thank you for your comment. The responses file extension has been
+switched to CSV to improve reusability and interoperability for other tools. The metadata
+that was provided in the previous XLSX file, is now a standalone TXT.
+4. Enhance Visual Accessibility
+Figure 1 is not easily readable on standard devices. I recommend increasing the resolution
+and size of the figures to improve accessibility, ensuring that they are clearly visible to a
+broader audience. Thank you for comment. We have improved the figure’s readability by
+increasing the font size, the pie charts’ size, and shortening some names.
+5. Increase Survey Sample Size
+Given that the survey currently includes fewer than 10 responses, I suggest reaching out to
+more IAM teams to increase the sample size. A larger sample would improve the
+representativeness of the findings. It would also be helpful to acknowledge the potential
+limitations posed by the small sample size and how these might affect the interpretation of
+your results. Thank you for your comment. We acknowledge that the number of survey
+responses was relatively limited. To broaden the perspective, we incorporated responses
+from an additional Horizon Europe consortium, DIAMOND, bringing the total to 13
+responses. This project focuses on upgrading open-source versions of six IAMs, serving as
+an ideal complement to the initial group of responses, which were related to the use of
+IAMs for informing climate policy design. Together, these responses offer a well-rounded
+overview of the IAM community. Nevertheless, as noted in the discussion, we recognize that
+the sample could be further expanded to capture an even wider range of perspectives.
+Updated Discussion: “... To address this gap, this paper introduces a protocol for the entire
+IAM community that offers a structured framework for modeling teams and related
+projects. While it is built on the challenges faced by specific modeling teams and may not
+capture all perspectives, the protocol aims to serve as a valuable resource for the broader
+community. …”
+Competing Interests: No competing interests were disclosed.
+
+Reviewer Report 26 February 2025
+
+https://doi.org/10.21956/openreseurope.20371.r50728
+© 2025 Simard M. This is an open access peer review report distributed under the terms of the Creative
+Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,
+provided the original work is properly cited.
+
+Marc-André Simard
+
+Page 18 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Université de Montréal, Québec,, Canada
+Overall:
+Using survey data, this manuscript investigates open science practices (including barriers and
+challenges) in integrated assessment modeling (IAM) teams. Furthermore, this manuscript
+proposes an open science protocol to address some key challenges and barriers (such as data
+weight, lack of time, awareness or knowledge, etc.) in the use of open science within integrated
+assessment modeling. The protocol is built around validated principles such as FAIR and TRUST.
+The authors provide sufficient context and information (e.g. packages, checklist, softwares,
+plaforms, etc.) for their model to be adaptable and usable in a wide range of contexts.
+I do believe that this manuscript would make a great addition to the body of literature on open
+science, but I believe that there are some things that could be addressed before it is ready to be
+indexed.
+While I understand that the intention of the authors is most likely to keep the introduction/review
+of literature brief while attempting to cover the massive landscape of OS, it can sometimes feel
+like some of these issues are tackled in a slightly superficial manner. For instance, a few of the
+paragraphs could be more fleshed out and expanded into proper sections (e.g. open data,
+benefits of OS) which could cover some recent empirical research results/literature on these
+topics.
+Further, while I also greatly appreciate the transparency and the sharing of the data, codes,
+protocols, etc., I think the manuscript would also benefit to have a dedicated methodology
+section; most of the information is already available in the “Survey Results” section. I would just
+separate it into two sections and flesh it out a little bit more if/when needed with some descriptive
+information about the methods, participants, etc.
+Some more specific comments:
+Introduction/review of literature:
+Regarding OS initiatives in the second paragraph: I would clarify a couple of things
+regarding the US’ policies. Many US OS policies (including the NIH’s) are normally called
+“public access policies” because they have slightly different criteria from OA policies. The
+Nelson Memo (Refer 1) has also sparked a new generation of OS policies in the US; the NIH’s
+latest policy was recently released. In short, I would cover the Nelson Memo and then would
+give some of the newest policies as examples instead of the NIH’s previous 2021 policy.
+In the third paragraph (resources) I would also mention an OA repository, given how
+important they have been. OpenAIRE/CERN’s Zenodo or PubMed Central would be a good
+example.
+○
+
+○
+
+OS practices in IAMs:
+As someone who is not too familiar with IAMs, I would have appreciated a sentence or two
+on their background. A Google search helped me catch up quickly, but the additional
+information wouldn’t hurt.
+○
+
+Results:
+
+Page 19 of 25
+
+Open Research Europe
+
+○
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+The figures are beautifully done, but the text in the pie charts (Figure 1) is tiny and can be
+hard to read on a laptop. I am also not sure if the colours are on par with accessibility
+standards (e.g. colours, black and white for print, etc.). I would verify that if it hasn’t already
+been done.
+
+References
+1. Alondra Nelson: MEMORANDUM FOR THE HEADS OF EXECUTIVE DEPARTMENTS AND AGENCIES.
+2022 https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/08/08-2022-OSTP-PublicAccess-Memo.pdf.
+Is the work clearly and accurately presented and does it engage with the current literature?
+Partly
+Is the study design appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and analysis provided to allow replication by others?
+Partly
+Are all the source data and materials underlying the results available?
+Yes
+If applicable, is the statistical analysis and its interpretation appropriate?
+Yes
+Are the conclusions drawn adequately supported by the results?
+Yes
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: Information science, bibliometrics, science of science, open access, science
+policy
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard, however I have
+significant reservations, as outlined above.
+Author Response 06 Jun 2025
+
+Clàudia Rodés-Bachs
+Dear Marc-André Simard,
+Thank you so much for the time devoted to the manuscript and your insightful comments.
+They have been a key resource in improving the manuscript and study. Detailed responses
+below: Overall: Using survey data, this manuscript investigates open science practices
+
+Page 20 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+(including barriers and challenges) in integrated assessment modeling (IAM) teams.
+Furthermore, this manuscript proposes an open science protocol to address some key
+challenges and barriers (such as data weight, lack of time, awareness or knowledge, etc.) in
+the use of open science within integrated assessment modeling. The protocol is built
+around validated principles such as FAIR and TRUST. The authors provide sufficient context
+and information (e.g. packages, checklist, softwares, platforms, etc.) for their model to be
+adaptable and usable in a wide range of contexts. I do believe that this manuscript would
+make a great addition to the body of literature on open science, but I believe that there are
+some things that could be addressed before it is ready to be indexed. While I understand
+that the intention of the authors is most likely to keep the introduction/review of literature
+brief while attempting to cover the massive landscape of OS, it can sometimes feel like
+some of these issues are tackled in a slightly superficial manner. For instance, a few of the
+paragraphs could be more fleshed out and expanded into proper sections (e.g. open data,
+benefits of OS) which could cover some recent empirical research results/literature on these
+topics.
+Response: Thank you for your thoughtful comment. We appreciate your interest in the
+literature review at the beginning of the introduction. While having a broader scope, our
+intention is to keep the general overview concise in order to maintain focus on open science
+practices within the IAMs community. For this reason, we prefer not to introduce
+subdivisions in this section. That said, the topics of open data, associated benefits, and
+relevant tools are presented as standalone paragraphs to improve clarity. Additionally, we
+have included further examples from other scientific disciplines and modeling communities
+to strengthen the contextual background, while extending the open science practices in the
+IAMs context review. Updated lines: “While this new research paradigm and the new
+sharing and publication rhythm raised concerns about the potential impact on the quality of
+research output 18, it also encouraged the development of additional guidelines and
+specific protocols to guarantee the successful deployment of open science practices, which
+have been maintained in the post-pandemic era in a wide range of scientific disciplines (e.g.,
+sustainable transport 60, criminology 61, and artificial intelligence 62). Updated paragraph:
+“The development of all these tools facilitates multi-model comparison studies, which are
+crucial for improving the consistency and robustness of policy recommendations 26, 40 .
+Open science strengthens the understanding and integration of models, while also
+streamlining data analysis by providing comprehensive documentation of model linkages 25
+. Recently, several reports examining methodologies used in large-scale initiatives, such as
+the IPCC AR6, have highlighted valuable lessons and opportunities for future research
+42,63,64. In parallel, several research teams are making substantial efforts to openly share
+their workflows, methodologies, data, and code 65– 67, crucial steps to prevent models from
+being perceived as “black boxes”. However, the implementation of open science practices
+varies widely across modeling teams and is often hindered by various factors, which can
+slow scientific progress, limit the reporting and reuse of research findings, and hamper the
+reliability of the representation of real-world complex systems 8, 41– 45 . To fill this gap, this
+study proposes a protocol for the IAM community, grounded in the current state of open
+science efforts and obstacles encountered by modeling teams.” Updated paragraph: “Open
+science is rapidly transforming research practices across disciplines 21– 24 , including the
+energy and climate modeling communities. In recent years, Energy System Optimization
+Models (ESOMs) like OSeMOSYS30 and Power System Models (PSMs) like PyPSA75 have
+
+Page 21 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+embraced transparency by releasing their model code under open-source licenses. Some
+PSMs go a step further by providing fully reproducible workflows and interactive examples
+through Jupyter notebooks, making them not only more accessible but also valuable tools
+for education and capacity building. At the same time, the integrated assessment modeling
+(IAM) community is increasingly adopting open science principles to improve the
+transparency, accessibility, and understanding of the scenarios they generate 25, 26 .” 8
+Tenopir C, Dalton ED, Allard S, et al.: Changes in data sharing and data reuse practices and
+perceptions among scientists worldwide. PLoS One, Publisher: Public Library of Science San
+Francisco, CA USA,2015;10(8):e0134826. 26308551 10.1371/journal.pone.0134826 4550246
+18 Besançon L, Peiffer-Smadja N, Segalas C, et al.: Open science saves lives: lessons from
+the COVID-19 pandemic. BMC Med Res Methodol. 2021;21(1): 117. 34090351
+10.1186/s12874-021-01304-y 8179078 21 Nielsen AF, Michelmann J, Akac A, et al.: Using the
+future wheel methodology to assess the impact of open science in the transport sector. Sci
+Rep. 2023;13(1): 6000. 37046066 10.1038/s41598-023-33102-5 10097618. 22 Branney P,
+Brooks J, Kilby L, et al.: Three steps to open science for qualitative research in psychology.
+2022. 10.1111/spc3.12728 23 Chin JM, Pickett JT, Vazire S, Holcombe AO, et al.: Questionable
+research practices and open science in quantitative criminology. J Quant Criminol. Publisher:
+Springer,2023;39:21–51. 10.1007/s10940-021-09525-6 24 Brinkhaus HO, Rajan K, Schaub J, et
+al.: Open data and algorithms for open science in AI-driven molecular informatics. Curr Opin
+Struct Biol. 2023;79:102542. 36805192 10.1016/j.sbi.2023.102542 25 IAMC: IAMC
+Documentation Wiki. 2022. 26 Nikas A, Gambhir A, Trutnevyte E, et al.: Perspective of
+comprehensive and comprehensible multi-model energy and climate science in Europe.
+Energy. Publisher: Elsevier,2021;215: 119153. 10.1016/j.energy.2020.119153 40 Guivarch C,
+Le Gallic T, Bauer N, et al.: Using large ensembles of climate change mitigation scenarios for
+robust insights. Nat Clim Change. 2022;12(5):428–435. 10.1038/s41558-022-01349-x 41
+Wilson C, Guivarch C, Kriegler E, et al.: Evaluating process-based integrated assessment
+models of climate change mitigation. Climatic Change. 2021;166(1–2):3. 10.1007/s10584021-03099-9 42 Pirani A, Fuglestvedt JS, Byers E, et al.: Scenarios in IPCC assessments:
+lessons from AR6 and opportunities for AR7. npj Clim Action. 2024;3(1):1. 10.1038/s44168023-00082-1 43 Robertson S: Transparency, trust, and integrated assessment models: an
+ethical consideration for the Intergovernmental Panel on Climate Change. WIREs Climate
+Change. 2021;12(1):e679. 10.1002/wcc.679 44 Skea J, Shukla P, Al Khourdajie A, et al.:
+Intergovernmental Panel on Climate Change: transparency and integrated assessment
+modeling. WIREs Climate Change. 2021;12(5):e727. 10.1002/wcc.727 45 Melero R, BotéVericad JJ, López-Borrull A: Perceptions regarding open science appraised by editors of
+scholarly publications published in Spain. Learn Publ. 2023;36(2):178–193.
+10.1002/leap.1511 60 Nielsen, A. F., Michelmann, J., Akac, A., Palts, K., Zilles, A.,
+Anagnostopoulou, A., & Langeland, O. (2023). Using the future wheel methodology to
+assess the impact of open science in the transport sector. Scientific Reports, 13(1), 6000.
+https://doi.org/10.1038/s41598-023-33102-5 61 Branney, P., Brooks, J., Kilby, L., Newman, K.,
+Norris, E., Pownall, M., Talbot, C. V., Treharne, G. J., & Whitaker, C. (2022). Three Steps to
+Open Science for Qualitative Research in Psychology. 62 Brinkhaus, H. O., Rajan, K., Schaub,
+J., Zielesny, A., & Steinbeck, C. (2023). Open data and algorithms for open science in AIdriven molecular informatics. Current Opinion in Structural Biology, 79.
+https://doi.org/10.1016/j.sbi.2023.102542 65 Byers, E. et al. Scenarios Processing, Vetting
+and Feasibility Assessment for the European Scientific Advisory Board on Climate Change.
+Technical Report (International Institute for Applied Systems Analysis and Potsdam Institute
+
+Page 22 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+for Climate Imact research, 2023). 66 Rinaldi, L., Ghezzi, D., Colombo, E., & Rocco, M. V.
+(2024). Assessing environmental and market implications of steel decarbonisation
+strategies: A hybrid input-output model for the European union. Environmental Research
+Letters, 19(7), 074059. https://doi.org/10.1088/1748-9326/ad5bf1 67 Sampedro, J., Van De
+Ven, D.-J., Horowitz, R., Rodés-Bachs, C., Frilingou, N., Nikas, A., Binsted, M., Iyer, G., &
+Yarlagadda, B. (2024). Energy system analysis of cutting off Russian gas supply to the
+European Union. Energy Strategy Reviews, 54, 101450.
+https://doi.org/10.1016/j.esr.2024.101450 75 Brown, T., Hörsch, J., & Schlachtberger, D.
+(2017). PyPSA: Python for power system analysis. arXiv preprint arXiv:1707.09913.
+Further, while I also greatly appreciate the transparency and the sharing of the data, codes,
+protocols, etc., I think the manuscript would also benefit to have a dedicated methodology
+section; most of the information is already available in the “Survey Results” section. I would
+just separate it into two sections and flesh it out a little bit more if/when needed with some
+descriptive information about the methods, participants, etc.
+Response: Thank you for your comment. Sure, we agree that the manuscript will become
+clearer since this information is key. We have created a new section called “Methods” right
+before “Survey results”, with the details of the survey structure and the surveyed modeling
+teams. New section (Methods): “Methods To identify the open science practices employed
+by various modeling teams, as well as the main challenges and barriers they face, we
+designed a survey 47 . The survey was structured into three sections aligned with the
+traditional IAM modeling steps: (1) model(s) development, calibration, and interconnection;
+(2) model(s) output analysis and dissemination; and (3) tools used throughout the process.
+Specifically, the first section focused on the documentation process, including model
+documentation, input harmonization, and potential multi-model connectivities. The second
+section examined the management of project outcomes, addressing output
+standardization, the vetting process, output storage, and results presentation. Finally, the
+third section investigated the tools used or developed to support open science principles.
+This survey was sent to all modeling teams from the IAM COMPACT 46 and DIAMOND 56
+consortia, gathering a total of 13 responses. IAM COMPACT, a Horizon Europe research
+project, aims to support the assessment of global climate goals and the design of the next
+round of Nationally Determined Contributions and policy planning beyond 2030. At its core
+are diverse multi-model analyses that emphasize the adoption and standardization of open
+science practices to ensure that model outputs are reliable, accessible, transparent, and
+reusable. On the other hand, the Horizon Europe DIAMOND project focuses on developing
+open-source IAMs, which stand to benefit significantly from open science principles by
+enhancing usability and broadening access across modeling teams. With this broad
+representation of models, institutions, and project scopes, our survey captures a robust and
+representative sample of the IAM community. The quantitative and qualitative survey
+results were analyzed both individually and collectively to identify patterns within specific
+modeling teams and to highlight common practices shared across the broader community.
+This dual approach allowed us to capture both the diversity of experiences and the
+overarching trends in how open science principles are being implemented.”
+Some more specific comments:
+Introduction/review of literature:
+
+Page 23 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+1. Regarding OS initiatives in the second paragraph: I would clarify a couple of things
+regarding the US’ policies. Many US OS policies (including the NIH’s) are normally called
+“public access policies” because they have slightly different criteria from OA policies. The
+Nelson Memo (Refer 1) has also sparked a new generation of OS policies in the US; the NIH’s
+latest policy was recently released. In short, I would cover the Nelson Memo and then would
+give some of the newest policies as examples instead of the NIH’s previous 2021 policy.
+Response: Thank you very much for your comment and detailed explanation. We have
+revised the paragraph accordingly to more accurately reflect the recent developments in
+Open Science and Open Access policies in the United States. Updated paragraph: “...
+Numerous initiatives and policies also drive the adoption of open science, such as the
+European Union’s Horizon 2020 program, which have implemented open-access mandates 9
+. Meanwhile, the European Commission created the EU’s Open Science Policy Platform to
+provide high-level guidance on the development of its Open Science Policy 11. Similarly, in
+the United States, a Memorandum 58 was issued to the Heads of Departments and
+Agencies, promoting the adoption of open science and public access policies across a broad
+range of institutions, such as the National Institutes of Health 59.”
+2. In the third paragraph (resources) I would also mention an OA repository, given how
+important they have been. OpenAIRE/CERN’s Zenodo or PubMed Central would be a good
+example.
+Response: Thank you for the suggestion. We agree that these items were missing and have
+added them accordingly! We have also included computational collaborative platforms that
+allow data to be uploaded and work as standalone environments. Updated paragraph: “...
+open data repositories, such as the World Bank open data 2 or the World Health
+Organisation data 3 ; open access repositories, such as Zenodo 22 and PubMed Central 27 ;
+software for open-source computing and development, for instance, Unix 4 and Git 5;
+collaborative data and computational platforms, such as MSD-Live 35; …”
+OS practices in IAMs:
+As someone who is not too familiar with IAMs, I would have appreciated a sentence or two
+on their background. A Google search helped me catch up quickly, but the additional
+information wouldn’t hurt.
+Response: Sure! Thank you for your point. We have added some words about IAMs and a
+citation to provide further information. Updated paragraph: “IAMs are essential tools for
+global scenario analysis and for exploring the systemwide impacts of climate policies 27.
+These models represent the world energy, land, water, climate, and socio-economic
+systems and estimate plausible scenarios 57. For instance, their outcomes and results have
+been used in the latest Intergovernmental Panel on Climate Change (IPCC) report (AR6; 28 ),
+which required all contributors to homogenize their data to enable comparisons and ensure
+full transparency 29 .” 27. Van Beek L, Hajer M, Pelzer P, et al.: Anticipating futures through
+models: the rise of integrated assessment modelling in the climate science-policy interface
+since 1970. Global Environ Chang. 2020;65: 102191. 10.1016/j.gloenvcha.2020.102191 28.
+Shukla PR, Skea J, Slade R, et al.: Climate change 2022 mitigation of climate change.
+Cambridge University Press, Cambridge, UK and New York, NY, USA,2022. Reference Source
+29. Krey V, Masera O, Blanford G, et al.: Annex ii: metrics & methodology. In: O. Edenhofer,
+R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S.
+
+Page 24 of 25
+
+Open Research Europe
+
+Open Research Europe 2025, 5:12 Last updated: 23 FEB 2026
+
+Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel,
+and J. C. Minx, editors, Climate change 2014: mitigation of climate change. Contribution of
+working group iii to the fifth assessment report of the intergovernmental panel on climate
+change. Cambridge University Press,2014. Reference Source 57. Weyant J. Some
+contributions of integrated assessment models of global climate change. Review of
+Environmental Economics and Policy. 2017; vol. 11(1), pages 115-137
+Results:
+The figures are beautifully done, but the text in the pie charts (Figure 1) is tiny and can be
+hard to read on a laptop. I am also not sure if the colours are on par with accessibility
+standards (e.g. colours, black and white for print, etc.). I would verify that if it hasn’t already
+been done.
+Response: Thank you for your comment. We have increased the font size in Figure 1 to
+enhance readability and ensure clarity. Regarding the color palette, we are fully open to the
+Editor’s preference and will be happy to adjust it if suggested.
+Competing Interests: No competing interests were disclosed.
+
+Page 25 of 25
+
+

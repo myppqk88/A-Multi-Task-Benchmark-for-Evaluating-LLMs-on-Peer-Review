@@ -1,0 +1,128 @@
+{
+  "task_id": "F001_T2_Q01",
+  "paper_id": "PeerJ:19554",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F001_T2_Q01/input.json",
+  "input_sha256": "f172c626ee0d565cb5336f1a4a89e26b52e0fa27e6f622292c5c0b89a2c607d1",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F001_T2_Q01/input.json",
+      "source_sha256": "f172c626ee0d565cb5336f1a4a89e26b52e0fa27e6f622292c5c0b89a2c607d1",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The use of convenience sampling needs more justification (The source of participants, data collection settings, and method are unclear, and the duration and frequency of assessment need to be stated.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F001_T2_Q01/input.json",
+      "source_sha256": "f172c626ee0d565cb5336f1a4a89e26b52e0fa27e6f622292c5c0b89a2c607d1",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We have provided a stronger justification for using convenience sampling, and clarified the recruitment process, specifying the participant source, data collection method, and setting. We also stated the duration and frequency of the assessment.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "原关切要求便利抽样理由、来源、场景、方法、时长和频次；回复逐项声称已补，但没有任何具体理由或数值/场景信息。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient为主；允许对完整承接要求给极有限部分回应信用。"
+    },
+    {
+      "id": "J2",
+      "judgment": "对每个名词复述不等于回答其内容；不足仅指本题文字，不能断言作者实际未改或抽样必然无效。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient为主；允许对完整承接要求给极有限部分回应信用。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。原关切要求便利抽样理由、来源、场景、方法、时长和频次；回复逐项声称已补，但没有任何具体理由或数值/场景信息。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：至少区分抽样理由与五项实施信息，而非笼统说不具体。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：原关切要求便利抽样理由、来源、场景、方法、时长和频次；回复逐项声称已补，但没有任何具体理由或数值/场景信息。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：至少区分抽样理由与五项实施信息，而非笼统说不具体。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。对每个名词复述不等于回答其内容；不足仅指本题文字，不能断言作者实际未改或抽样必然无效。",
+      "high_score_conditions": [
+        "精确限定未回答内容，避免自行假设参与者来源或收集频率。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：对每个名词复述不等于回答其内容；不足仅指本题文字，不能断言作者实际未改或抽样必然无效。"
+      ],
+      "boundary_2_3": "至少区分抽样理由与五项实施信息，而非笼统说不具体。",
+      "boundary_3_4": "精确限定未回答内容，避免自行假设参与者来源或收集频率。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。insufficient为主；允许对完整承接要求给极有限部分回应信用。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：精确限定未回答内容，避免自行假设参与者来源或收集频率。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：对每个名词复述不等于回答其内容；不足仅指本题文字，不能断言作者实际未改或抽样必然无效。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：精确限定未回答内容，避免自行假设参与者来源或收集频率。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "insufficient为主；允许对完整承接要求给极有限部分回应信用。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "至少区分抽样理由与五项实施信息，而非笼统说不具体。",
+    "3_to_4": "精确限定未回答内容，避免自行假设参与者来源或收集频率。"
+  },
+  "source_unit": "focal_concern_response_author_letter"
+}

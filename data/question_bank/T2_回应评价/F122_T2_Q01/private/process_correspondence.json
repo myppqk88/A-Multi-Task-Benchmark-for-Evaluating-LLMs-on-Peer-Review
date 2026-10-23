@@ -1,0 +1,61 @@
+{
+  "task_id": "F122_T2_Q01",
+  "paper_id": "F1000:157354",
+  "parent_task": "T3_F122_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F122_R1/input.json",
+  "parent_input_sha256": "bb70755fcf2175e328ac9477c5ef6c125c3af72d6fa4f40551ccc8173b31dd64",
+  "review_dimension_AI_candidate": "伦理与数据保护",
+  "selection_scope": "从第二组第三项到下一组前，完整数据安全回答。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/157354_Assessing_the_students__evaluations_of_educational_quality__SEEQ__ques/v1_manuscript.pdf",
+      "original_sha256": "f72cc1d50bffa39fb381417f4e477b51dcffac1d8024c30473398bc1cb77cfba",
+      "raw_text_file": "data/question_bank/T2_回应评价/F122_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        21507,
+        21679
+      ],
+      "report_id": "347907",
+      "date": "2025-01-02",
+      "raw_page_numbers": [
+        7
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/157354_Assessing_the_students__evaluations_of_educational_quality__SEEQ__ques/v1_manuscript.pdf",
+      "original_sha256": "f72cc1d50bffa39fb381417f4e477b51dcffac1d8024c30473398bc1cb77cfba",
+      "raw_text_file": "data/question_bank/T2_回应评价/F122_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        26335,
+        26481
+      ],
+      "report_id": null,
+      "date": "2025-01-15",
+      "raw_page_numbers": [
+        9
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "identifiable information",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 8567,
+    "end": 9111,
+    "exact_quote": "d by signed\ninformed permission forms.\nTo maintain anonymity, all data were securely stored, and no identifiable information was recorded. The study followed\nthe college’s ethical guidelines, with informed consent obtained from all participants. Data collection occurred from\nJanuary to March 2024.\n2.6 Measures\nThe Students’ Evaluations of Educational Quality (SEEQ) questionnaire was the tool used (Marsh, 1982). The SEEQ\nconsists of thirty items that measure eight dimensions under consideration, one of which measures the subject’s overall\n",
+    "anchor_matches": 1,
+    "anchor": "identifiable information"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增安全存储、不记可识别信息的措施，未凭文字验证实际执行。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

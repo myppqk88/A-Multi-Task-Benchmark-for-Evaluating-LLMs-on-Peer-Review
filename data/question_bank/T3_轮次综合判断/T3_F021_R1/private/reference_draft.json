@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F021_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "调查设计",
+    "结论外推"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认小样本与匿名调查限制并主张受访角色多样；多样性不能单独证明代表性。问卷完整内容需附入；文字解释充分性与后稿是否准确限缩建议应分开。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Summary of the article\nThe article explores the challenges faced by Passenger Information Units (PIUs) regarding the\ncollection, handling and use of Passenger Name Record (PNR) data following the implementation\nof the EU PNR Directive (EU) 2016/681. According to the authors, it employs a combination of\nresearch and survey methodologies to gather data from PIUs.\nThe study identifies two main obstac",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n\n\n\nChristiana Aposkiti\nThank you for your feedback.\n1. In response to your comments regarding the limitations of the methodology, we\nhave revised the article to more explicitly acknowledge the constraints of our\nresearch, particularly regarding the sample size and the anonymous nature of the\nsurvey. We now provide a detailed explanation of the representativeness of the\nsample, highlighting the diverse roles of the respondents and how this divers",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Standardisation of transfers of data from non-carrier\neconomic operators\nThe operational value of the collection of the information from\nnon-carrier economic operators, like tour operators and travel\nagencies was highlighted in the review of the implementation of\nthe Directive (European Commission, 2020a). A recommendation for the standardisation of transfers of data from non-carrier\neconomic operators is to establish clear and uniform protocols and guidelines for data transfer processes. This entails\ndeveloping standardised formats, protocols, and encryption\nmethods to ensure secure and efficient transmission of data\nbetween non-carrier economic operators and PIUs. Additionally,\nproviding comprehensive training and support to non-carrier\neconomic operators on data protection regulations, privacy\nsafeguards, and compliance requirements will be crucial to\nensure adherence to established standards, EU, and national\nlegislation. By promoting consistency and coherence in data\ntransfer proc",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Automation of data quality controls\nContrary to the previous recommendation which refers to\nthe quality control prior their transmission to the PIUs, this\nrecommendation refers to the validation of the data quality\nupon their collection by the PIUs. Some survey participants\nmentioned some tools that conduct data quality controls, but\nthey are insufficient. This lack of automated data quality controls to check for possible errors, misspellings, invalid data\nposes a huge workload to the PIUs which they have to check\nmanually the data transmitted by the air carriers. The development and deployment of tools that can automatically validate the data quality and detect mistakes or fields that have\nnot been filled correctly could minimise the heavy workload\nof the under-staffed PIUs. In a subsequent step, the detected\nerrors could be used to generate error reports per air carrier\nso as to inform the latter respectively.\nThe development of automated tools that will generate\nrule suggestions bas",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "whose role within their PIU varied from analysts, shift leaders,\ncarrier connectivity experts, operators to officers, heads of the\nPIUs, and directors. Unclear or missing information were not\ntaken into consideration. Due to the ‘anonymous’ nature of the\nsurvey, the researchers were not able to contact the respondents\nfor any clarification needed. The limited access to participants\nis a common hurdle when the research targets security actors\n(Glouftsios & Leese, 2023). While the findings presented\nherein reflect the opinions of the surveyed PIUs, it is noteworthy to stress that, yet upon identifying challenges, the\nparticipating PIUs within the TENACITy project affirmed the\npresence of similar issues among their counterparts in other\nnations. Furthermore, the survey results broadly align with the\nreport on the review of PNR Directive (European Commission,\n2020b), which takes into consideration all EU PIUs.\nInclusion criteria for the review encompass research studies,\nreports, and evalu",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "In the context of the TENACITy project, it was considered necessary to deliver an in-depth analysis of the current state of\nplay of the processing of PNR data in European countries.\nTo do so, the Centre for Security Studies (KEMEA) provided\nan analysis - as presented in this article - based on a survey\nthat took the form of a questionnaire and was circulated,\nfrom early December 2023 to early February 2024, through\nthe EU Survey platform, to all PIUs participating in the\nTENACITy consortium and the EU PIUs. Fourteen PIUs replied\nto the survey5. The participation to the survey was anonymous in order to protect the privacy and personal data of\nthe respondent, whose role within their PIU varied from analysts, shift leaders, carrier connectivity experts, operators\nto officers, heads of the PIUs, and directors. Unclear or missing information were not taken into consideration. Due to the\n‘anonymous’ nature of the survey, the researchers were not\nable to contact the respondents for any clarif",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

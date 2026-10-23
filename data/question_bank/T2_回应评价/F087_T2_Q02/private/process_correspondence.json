@@ -1,0 +1,79 @@
+{
+  "task_id": "F087_T2_Q02",
+  "paper_id": "ORE:5-246",
+  "parent_task": "T3_F087_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F087_R1/input.json",
+  "parent_input_sha256": "363528219330ca93d436ee041939aab947820b2f621d0b9c760ae47d1a2b1647",
+  "review_dimension_AI_candidate": "综述方法定位",
+  "selection_scope": "摘取完整方法定位分句，保留非穷尽性与PRISMA区别的所有说明；第3项重复澄清另关联。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-246_Teacher_knowledge_and_teacher_identity_in_mathematics_education__An_in/v1_manuscript.pdf",
+      "original_sha256": "04650fba11638ad34de925239062e3ae7da7ce3e169ac28033692f8b891f1a03",
+      "raw_text_file": "data/question_bank/T2_回应评价/F087_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        69769,
+        69894
+      ],
+      "report_id": "66613",
+      "date": "2026-01-21",
+      "raw_page_numbers": [
+        15
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-246_Teacher_knowledge_and_teacher_identity_in_mathematics_education__An_in/v1_manuscript.pdf",
+      "original_sha256": "04650fba11638ad34de925239062e3ae7da7ce3e169ac28033692f8b891f1a03",
+      "raw_text_file": "data/question_bank/T2_回应评价/F087_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        71616,
+        73011
+      ],
+      "report_id": null,
+      "date": "2026-01-28",
+      "raw_page_numbers": [
+        16
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-246_Teacher_knowledge_and_teacher_identity_in_mathematics_education__An_in/v1_manuscript.pdf",
+      "original_sha256": "04650fba11638ad34de925239062e3ae7da7ce3e169ac28033692f8b891f1a03",
+      "raw_text_file": "data/question_bank/T2_回应评价/F087_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        76486,
+        77168
+      ],
+      "report_id": null,
+      "date": "2026-01-28",
+      "raw_page_numbers": [
+        17,
+        18
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 79,
+    "end": 627,
+    "exact_quote": "s\nthe interdependence between teacher professional knowledge and\nidentity in mathematics education. Based on a systematic review of\nnational and international approaches, it distinguishes the\nprofessional profile—defined by observable competencies and\nknowledge—from identity, which is constructed in a situated,\ndynamic, and reflective manner. The study draws on the MTSK model,\nWenger’s theory of communities of practice, and the identity\nframework by Van Zoest and Bohl. It incorporates recent\ncontributions on professional noticing, teacher bel",
+    "anchor_matches": 1,
+    "anchor": "Based on a systematic review"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 79,
+    "end": 635,
+    "exact_quote": "s\nthe interdependence between teacher professional knowledge and\nidentity in mathematics education. An integrative theoretical synthesis\nof national and international approaches, it distinguishes the\nprofessional profile—defined by observable competencies and\nknowledge—from identity, which is constructed in a situated,\ndynamic, and reflective manner. The study draws on the MTSK model,\nWenger’s theory of communities of practice, and the identity\nframework by Van Zoest and Bohl. It incorporates recent\ncontributions on professional noticing, teacher bel",
+    "anchor_matches": 3,
+    "anchor": "An integrative theoretical synthesis"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "摘要由systematic review改为integrative theoretical synthesis，属于研究定位改变，不是经验验证。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F058_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "主张强度",
+    "评价者与可靠性",
+    "可复核性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对“不再主要担心幻觉”的表述是否收窄；作者解释曾做技术改进不等于证明幻觉风险消失。",
+    "核对评价人员数量、背景和一致性过程是否补充。公开提示词/回答数据与主文是否重复呈现须区别，不要求为本题重新调用任何模型。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This manuscript makes a significant and timely contribution to the ongoing discourse on utilizing\nlarge language models (LLMs) for preventing and countering violent extremism (P/CVE). Through\nthe qualitative analysis of its responses to 50 pre-designed prompts, this study evaluates Copilot\nas a recommender system, providing valuable insights into its potential to enhance evidencebased policy and p",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you very much for your review; it was very helpful.\nBelow please find our responses to your points, where we have done our best to address\neach one.\n1. “The authors assert that \"limitations such as ‘bullshitting’ and hallucinations in early\nAI developments (Zhao et al., 2023) are no longer a primary concern.\" However,\nrecent research (e.g., Steyvers et al., 2025) continues to demonstrate that\nhallucinations remain a signific",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "In recent years, particularly since the release of Open AI’s\nopenly available ChatGPT in November 2022, the potential\nuses of Large Language Model (LLM)-based chatbots1 – part of\nbroader generative AI – have been explored extensively across\nvarious sectors. This trend includes the field of preventing\nand countering violent extremism (P/CVE). So far, discussions in this field have focused primarily on two areas: how\nthese chatbots can be, or are already being, used by individuals or groups that support violent extremism, and how they can\nbe useful for detecting and moderating violent extremist content\nonline.\nThis article introduces a new, yet unexplored, perspective on\nusing chatbots to advance evidence-based policy and practice\nin P/CVE. Specifically, it examines the possibility of employing\nchatbots to assist policymakers and practitioners in building or enhancing their professional capacity and knowledge\nabout P/CVE. Although chatbots have been used for educational\npurposes in other",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "diverse sources for generating human-like output (Routray et al.,\n2023).\nSince the release of Open AI’s openly available ChatGPT in\nNovember 2022, the potential uses of LLM-based chatbots1\n– part of broader generative AI – have been explored extensively in various diciplines. This trend includes the field of\npreventing and countering violent extremism (P/CVE). So\nfar, discussions in this field have focused primarily on two areas:\nhow these chatbots can be, or are already being, used by individuals or groups that support violent extremism, and how\nthey can be useful for detecting and moderating violent\nextremist content online.\nThis article introduces a new, yet unexplored, perspective on\nusing chatbots to advance evidence-based policy and practice\nin P/CVE. Specifically, it examines the possibility of employing\nchatbots to assist policymakers and practitioners in building or enhancing their professional capacity and knowledge\nabout P/CVE. Although chatbots have been used for educationa",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Dermatol. 2025; 192(2): 306–315.\nPubMed Abstract | Publisher Full Text\nKaramolegkou A, Li J, Zhou L, et al.: Copyright violations and large language\nmodels. 2023.\nPublisher Full Text\nLakomy M: Artificial Intelligence as a terrorism enabler? Understanding\nthe potential impact of chatbots and image generators on online terrorist\nactivities. Stud Confl Terror. 2023; 1–21.\nPublisher Full Text\nLi L, Fan L, Atreja S, et al.: “HOT” ChATGPT: the promise of ChATGPT in\ndetecting and discriminating hateful, offensive, and toxic comments on\nsocial media. ACM Trans Web. 2024; 18(2): 1–36.\nPublisher Full Text\nLin TC, Li YM: Recommender system powered by large language models.\n16th IIAI international congress on Advanced Applied Informatics (IIAI-AAI).\nTakamatsu, Japan, 2024; 476–481.\nPublisher Full Text\nLloyd D: What is it like to be a bot?: The world according to GPT-4. Trinity\nCollege Faculty Scholarship. Trinity College Digital Repository, 2023.\nReference Source\nMalkki L, van der Vet I, Prokic M:",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Rich E: User modeling via stereotypes. Cognitive Sci. 1979; 3(4): 329–354.\nPublisher Full Text\nRoutray SK, Javali A, Sharmila KP, et al.: Large Language Models (LLMs): hypes\nand realities. 2023 International Conference on Computer Science and Emerging\nTechnologies (CSET). 2023; 1–6.\nPublisher Full Text\nRoy D, Dutta M: A systematic review and research perspective on\nrecommender systems. J Big Data. 2022; 9(1): 59.\nPublisher Full Text\nRudolph J, Tan S, Tan S: ChatGPT: bullshit spewer or the end of traditional\nassessments in higher education? J Appl learn Teach. 2023; 6(1).\nPublisher Full Text\nSegura EA: Artificial Intelligence and accounting. In: Holistic approach to new\ntechnologies for secure accounting management. Dykinson, S.L. 2023; 69–82.\nPublisher Full Text\nShah MSS, Abuaieta AM, Almazrouei SS: Safeguarding online\ncommunications using DistilRoBERTa for detection of terrorism and\noffensive chats. J Inform Secur Cybercrim Res. 2024; 7(1): 93–107.\nPublisher Full Text\nSilva TC, Kordac",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

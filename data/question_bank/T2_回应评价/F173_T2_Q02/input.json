@@ -1,0 +1,80 @@
+{
+  "task_id": "F173_T2_Q02",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。",
+  "input": {
+    "comment_text": "2. Lack of Bayesian Formalization\nAlthough the paper discusses rationality as a form of optimization, it does not address the wellestablished Bayesian brain hypothesis or the free-energy principle (Friston). These models\nformalize rationality as probabilistic inference under uncertainty—a process that is dynamic,\n\n\n\nadaptive, and not tied to any fixed cognitive trait. This approach aligns with the idea of rationality\nas a “method” but provides a stronger computational and neuroscientific foundation.\nSuggestion: At minimum, include a discussion of Bayesian rationality to contextualize the relatoroperator distinction within ongoing models of brain function.",
+    "response_text": "I appreciate the comment. I added the following text in the last Section of the paper:\nWho’s afraid of the Organismus Oeconomicus hypothesis?\n…\n\n\n\n6. Many neuroscientists model the brain as an optimization mechanism (OM) that\nmust formulate models (beliefs) about the world in the face of uncertainty. This effort,\ngenerally called the “Bayesian brain hypothesis”, assumes that the brain uses new\ninformation à la Bayes’ rule—namely, to update its priors (ex ante beliefs) to\nformulate more accurate posteriors (ex post beliefs) (e.g., Knill & Pouget (2004; Rao &\nBallard, 1999)). Friston (2010) generalizes such OM, calling it “the free-energy\nprinciple”, highlighting that the organism wants to minimize the surprise, i.e., the gap\nbetween what to expect on the basis of ex ante available information and what it\nactually finds ex post, i.e., after executing the pertinent action. The minimization of\nsurprise amounts to learning and adopting more accurate beliefs. The higher the\naccuracy of the belief is, the higher the probability of successful action. These\nBayesian brain models are about the rationality of belief formation, which somewhat\ndiffers from models regarding the rationality of action, the focus of this paper.\nNevertheless, they are models of rationality that do not portray rationality as a\ncognitive mechanism but rather are propelled by the desire of the organism to\npossess accurate beliefs or minimize free energy. Such models of rationality are\ngeneralizable to any organism—i.e., not restricted to upper primates or, worse, to\nhumans.",
+    "necessary_context": "理性是否为认知能力的哲学与认知理论论证。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

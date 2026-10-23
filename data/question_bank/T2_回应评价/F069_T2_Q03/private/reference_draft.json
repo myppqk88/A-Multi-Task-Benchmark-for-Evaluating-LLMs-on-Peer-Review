@@ -1,0 +1,28 @@
+{
+  "task_id": "F069_T2_Q03",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "测量工具与分类操作化"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "1. Clarify the MFIA Categories Used: Provide a list of the 10 behavioral categories adapted in\nthe study, explaining any modifications from the original FIACS.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Instrument\nThe study employed the MFIA instrument ([external resource identifier omitted] to\nsystematically capture teacher–student interaction patterns during mathematics\ninstruction. This allows for categorising and analysing verbal and non-verbal\ncommunication in teaching-learning environments. The observational instrument, the\nclassroom activity sheet, was used to gather data on classroom interactions at one-minute\nintervals during live mathematics lessons. The MFIA was adapted from the classic FIACS but\nmodified to better reflect the realities of Nigerian mathematics classrooms, where teacherdominated instruction, board work, and limited student-initiated talk are common. The\nMFIA used in this study retained the ten original FIACS behavioural categories but\nintroduced contextual modifications. The categories are: (1) Praise and Encouragement –\nTeacher statements or gestures showing approval, motivation, or positive reinforcement.\n(2) Content-Related Questioning – Teacher questions directly related to mathematics\nconcepts, procedures, or problem solving. (3) Direct Teaching/Lecturing – Explanations,\ndemonstrations, worked examples, definitions, and conceptual exposition. (4) Giving\nDirections – Instructions relating to tasks, class activities, behaviour, or note-taking. (5)\nTeacher Response to Students – Clarifying, expanding, or giving feedback on student\nresponses. (6) Criticism and Authority Cues – Statements reflecting correction of behaviour\nor implicit assertion of authority. (7) Teacher Non-Verbal Behaviour – Writing on the board,\ngesturing, using teaching aids, or other physical demonstrations. (8) Students non-verbal\nbehaviour – Students answering teachers’ questions or giving short non-verbal responses.\n(9) Student-Initiated Talk – Questions, explanations, or ideas introduced spontaneously by\nstudents. (10) Confusion and Noise – Pauses, classroom noise, disruptions, or uncertainty\n\n\n\nduring instruction.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "十项类别及适应性修改完整保留；不据名称就认定与FIACS一致。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

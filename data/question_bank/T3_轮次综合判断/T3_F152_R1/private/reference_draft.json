@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F152_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "数据覆盖与纳入规则",
+    "合理拒绝扩展",
+    "推论边界"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者以资源限制暂不纳入今天民主但战间期非民主国家，须按已声明战间期民主范围判断这一拒绝，不能默认需无限扩样。",
+    "核对243次选举、34个国家及不同民主定义的说明是否一致；一份报告主张的扩展不是自动必须修改的科学缺陷。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article „Introducing the Democratic Electoral Systems data, 1919-1945“, presents the most\nrecent addition to the Democratic Electoral Systems around the world data. As the authors\npointed out it encompasses the period from 1919 to 1945 and consists of 243 legislative lower\nhouse and presidential elections in 34 interwar democracies. The structure of the article is\nstandard, consisting of an in",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDr. Daniela Pastarmadzhieva suggested to extend the DES 1919-1945 to countries which are\ndemocracies today but have not been democracies during the interwar period.\nResponse: We agree with Dr. Daniela Pastarmadzhieva that this would be interesting and\nrelevant. Unfortunately, we do not have the resources and time to extend the DES as of now\nbut will keep this suggestion in mind for future extensions.\n",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "We are introducing an update to the widely-used Democratic\nElectoral Systems (DES) data that encompasses the period\nfrom 1919 to 1945. The data include 243 legislative and presidential elections in 34 interwar democracies. Information on\nthese elections falls into four categories: first and foremost,\nthe DES data contains variables that capture the institutional\nrules that define how elections are organized. Second, the data\ncaptures the consequences of electoral rules in the form of summary statistics of electoral outcomes. Third, we include democracy classifications for four major democracy datasets so that\nusers can easily choose their preferred democracy definition\nwhen working with the data. Finally, the DES dataset contains multiple identification variables that allow linking the\nDES data to a wide variety of other datasets.\nThis release of historical DES data is fully compatible with\nprior releases for the post-war period1–3. These DES versions\nhave been used to analyse a broad ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "We are introducing an update to the widely-used Democratic\nElectoral Systems (DES) data that encompasses the period\nfrom 1919 to 1945. The data include 243 legislative and presidential elections in 34 interwar democracies. Information on\nthese elections falls into four categories: first and foremost,\nthe DES data contains variables that capture the institutional\nrules that define how elections are organized. Second, the data\ncaptures the consequences of electoral rules in the form of summary statistics of electoral outcomes. Third, we include democracy classifications for four major democracy datasets so that\nusers can easily choose their preferred democracy definition\nwhen working with the data. Finally, the DES dataset contains multiple identification variables that allow linking the\nDES data to a wide variety of other datasets.\nIn addition to a new variable on the constitutionally prescribed\nlength of time between elections, this release of the historical\nDES data contains all varia",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "more complex V-Dem and Polity5 indices categorize 185\nand 173 elections respectively as democratic. Users of our\ndata thus have the choice to pick their preferred definition\nof democracy and the associated sample of elections, or to take\nan inclusive approach by picking all elections that have been\nclassified as democratic by at least one democracy indicator.\nIn the following, we present descriptive statistics based on\nthe inclusive sample that categorizes any election as democratic that is recognized by at least one of the four democracy\nindicators.\nOur data includes information on 213 legislative, lowerhouse and 30 presidential elections in 34 democracies\nbetween January 1st, 1919 and December 31st, 1945. Figure 1\nshows the distribution of regime types across the globe. 26\nstates featured a parliamentary regime (light grey), two a\nsemi-presidential form of government (black), and four were\npresidential (dark grey).4 Geographically, the majority of\ndemocratic states were situated in E",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "as democratic, nor three elections in San Marino24.3 The\nmore complex V-Dem and Polity5 indices categorize 185 and\n173 elections respectively as democratic. Users of our data\nthus have the choice to pick their preferred definition of democracy and the associated sample of elections, or to take an\ninclusive approach by picking all elections that have been\nclassified as democratic by at least one democracy indicator. In the following, we present descriptive statistics for all\nelection recognized as democratic by at least one of the four\ndemocracy indicators.\nOur data includes information on 213 legislative, lower-house\nand 30 presidential elections in 34 democracies between\nJanuary 1st, 1919 and December 31st, 1945. Figure 1\nshows the distribution of regime types across the globe. 26\nstates featured a parliamentary regime (light grey), two a\nsemi-presidential form of government (black), and four were\npresidential (dark grey).4 Geographically, the majority of\ndemocratic states were situat",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

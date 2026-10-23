@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F140_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "数据库覆盖偏差",
+    "分类与解释",
+    "外推边界"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者用价格工具更易建模解释数据库政策类别不均衡，核对后稿是否注明底层研究方法造成的选择偏差。",
+    "约300项政策的数据库覆盖与各类政策真实效力是不同问题，不能据收录频率评判政策效果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The authors present a database for sufficiency policies, including and categorising almost 300\npolicy instruments, with a focus on Germany and Europe.\nSufficiency measures are currently underrepresented in the discussion of transformation\npathways towards a climate neutral energy system. In particular, this applies to energy system\nmodelling for scenario development and analysis. Often the focus i",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, thank you for your review! It is very valuable to us for the next versions of our\ndatabase. We thought about possible explanations why some instrument types are\n\n\n\ndominant in sectors. A possible reason is that price instruments are easiest to model, so\nthat we need to consider a certain bias due to the methods of the underlying research. This\nwill help to consider limitations when drawing conclusions from analysis of our database",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Build-up of database - structuring the data\nTo allow for the analysis of policy instruments, we structured the database along several key categories:\nSector includes information on the covered sector: agri-food, buildings, industry/production, transport, LULUCF\n(land use, land-use change and forestry), energy and cross-sectoral (for overarching policies targeting various sectors).\nGoal/policy strategy describes what the respective policy aims at, while\nMeasure/action explains the more concrete changes envisaged to achieve the policy goals and the mitigation target.\nIndicator lists quantifiable units to be used to estimate the effect of the policy instrument/policy.\nSufficiency type categorises instruments according to the strategies avoid, shift or generally supporting.\nPolicy instrument lists the specific policy instrument from the respective source that is intended to lead to change and the\ndescription gives more details on the specifications of the instrument.\nInstrument type catego",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "including information on sectors, goals, target indicators, policy instruments and sufficiency types. Moreover, we outline\nour internal review and harmonisation process and the technical setup of the database.\nData sources\nPolicy instruments are mainly extracted from existing literature and databases using the classifying parameters outlined\nbelow. Two key sources are first an extensive and detailed report describing policy measures for a “German Zero”\nemissions scenario until 203517 and second a list of policy measures extracted from all European National Energy and\nClimate Plans (NECPs) published by Zell-Ziegler et al.2 and condensed to merge instruments described by various\nNECPs. This is complemented by databases such as the Sustainable Prosperity Database16 and by further literature18–30 as\nwell as exchange with experts (advisory board meeting of the research group EnSu in September 2020). For a full list of\nreferences, see the respective tab in the database (please see underlying",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nSufficiency is a potentially low-cost, fast and socially just mean of global greenhouse gas (GHG) mitigation. It is linked to\nmultiple benefits for human well-being.1 The understanding of sufficiency varies across disciplines and discursive\nspheres; in relation to energy, sufficiency is the strategy that aims at achieving absolute reductions in the use of energybased services.2 Energy sufficiency, renewable energies and energy efficiency are all methods to reduce emissions\nassociated with energy use. Renewables substitute fossil fuels, efficiency means finding ways to reduce losses by\nimproving the input/output relation, and sufficiency equals avoiding/shifting energy services altogether.\nJust as renewable energy and efficiency technologies, energy sufficiency is enabled and promoted by policy action. It is a\ngenuine field of policy making, a case for regulatory frameworks and infrastructures, much beyond micro-level\nindividual behaviour changes.1,3–6 We differentiate thre",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nSufficiency is a potentially low-cost, fast and socially just mean of global greenhouse gas (GHG) mitigation. It is linked to\nmultiple benefits for human well-being.1 The understanding of sufficiency varies across disciplines and discursive\nspheres; in relation to energy, sufficiency is the strategy that aims at achieving absolute reductions in the use of energybased services.2 Energy sufficiency, renewable energies and energy efficiency are all methods to reduce emissions\nassociated with energy use. Renewables substitute fossil fuels, efficiency means finding ways to reduce losses by\nimproving the input/output relation, and sufficiency equals avoiding/shifting energy services altogether.\nJust as renewable energy and efficiency technologies, energy sufficiency is enabled and promoted by policy action. It is a\ngenuine field of policy making, a case for regulatory frameworks and infrastructures, much beyond micro-level\nindividual behaviour changes.1,3–6 We differentiate thre",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "F086_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "小样本分析与替代模型"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Regarding Table 5: I recommend reconsidering the presentation of regression results based on a\nvery small sample (N=39). With such limited observations, the statistical power is questionable and\nresults may be unstable. As an alternative, you might consider adding an interaction term\nbetween 'crisis parties' and populism to the main analysis, which would allow you to test the\nconditional relationship while maintaining adequate sample size. If you retain the separate\nanalysis, please discuss the limitations explicitly and consider reporting measures of model fit and\ndiagnostics to assess reliability.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Dear reviewer, \nThank you for your thoughtful review and helpful comments. They are greatly appreciated.\nWe have reviewed your points, alongside the feedback from the other reviewers. We are\ncurrently preparing the revised manuscript and will incorporate your input as we work\ntoward the final resubmission.\n[closing signature omitted]\n\n[Next author response post]\n\n\nDear reviewer, \nWe are pleased to submit the revised version of our manuscript, following the valuable\nfeedback provided by the reviewers.\nWe have comprehensively addressed all comments and suggestions. We have incorporated\nnumerous editorial and stylistic changes throughout the text to enhance clarity and\nanalytical rigor, as you recommended. Crucially, we have reorganized the literature review\naround thematic topics, as suggested. Furthermore, we have integrated our theoretical\nframework with the reformulated hypotheses (which have been decomposed for greater\nspecificity) to provide a stronger justification for our approach. We have also refined the\noperationalization of \"crisis parties\" and eliminated the Table 5. Finally, we have enhanced\nthe concluding section by more explicitly discussing our findings in relation to previous\nresearch and clearly delineating their contribution, ensuring the entire text adheres to a\nconsistently formal and appropriate academic tone.\nWe believe that these revisions have resulted in a significantly more robust and consistent\nversion of the manuscript. We [closing signature omitted]",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者分两帖统一回复，整段均保留；只评价N=39模型/表5的这一项要求，不把其他回复主张当作该项证据。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

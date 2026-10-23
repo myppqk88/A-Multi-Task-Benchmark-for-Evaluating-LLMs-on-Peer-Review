@@ -1,0 +1,128 @@
+{
+  "task_id": "D07_T2_Q01",
+  "paper_id": "ORE:4-67",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D07_T2_Q01/input.json",
+  "input_sha256": "c1fd65e5e9d5cabf019c515142787c2b37ef0dbabb15c2405f5a20f7117dc145",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D07_T2_Q01/input.json",
+      "source_sha256": "c1fd65e5e9d5cabf019c515142787c2b37ef0dbabb15c2405f5a20f7117dc145",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The balance between the two case studies needs improving. There is more detail about the Bulgarian context and this weakens the comparison between Italy and Bulgaria and the conclusions drawn from this comparison. More information about the role played by self-help organizations in Italy would be very helpful since the person interviewed appears to have relied more on her personal transnational networks, especially her partner in Sweden with whom she shares a child.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D07_T2_Q01/input.json",
+      "source_sha256": "c1fd65e5e9d5cabf019c515142787c2b37ef0dbabb15c2405f5a20f7117dc145",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Partnership brought far away emotional support, but concrete help came from the mentioned “sisterhood” in the local shelter. Unfortunately, we could not explore further the shelter and related refugees’ women dynamics for lack of time and resources.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复澄清瑞典伴侣主要情感支持，具体帮助来自当地庇护所姐妹网络，纠正将支持全归跨国私人关系的理解。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不能要求补造访谈，也不能以承认缺口认定比较推断已充分。"
+    },
+    {
+      "id": "J2",
+      "judgment": "承认因时间资源未进一步调查庇护所女性动态，合理解释资料缺口，但未改善意大利与保加利亚案例深度不平衡或说明比较结论如何收缩。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不能要求补造访谈，也不能以承认缺口认定比较推断已充分。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复澄清瑞典伴侣主要情感支持，具体帮助来自当地庇护所姐妹网络，纠正将支持全归跨国私人关系的理解。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：同时识别支持来源澄清和比较证据不足两层。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复澄清瑞典伴侣主要情感支持，具体帮助来自当地庇护所姐妹网络，纠正将支持全归跨国私人关系的理解。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：同时识别支持来源澄清和比较证据不足两层。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。承认因时间资源未进一步调查庇护所女性动态，合理解释资料缺口，但未改善意大利与保加利亚案例深度不平衡或说明比较结论如何收缩。",
+      "high_score_conditions": [
+        "区分情感与具体援助及案例不对称对比较结论的影响，不以资源理由消除推理限制。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：承认因时间资源未进一步调查庇护所女性动态，合理解释资料缺口，但未改善意大利与保加利亚案例深度不平衡或说明比较结论如何收缩。"
+      ],
+      "boundary_2_3": "同时识别支持来源澄清和比较证据不足两层。",
+      "boundary_3_4": "区分情感与具体援助及案例不对称对比较结论的影响，不以资源理由消除推理限制。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient；不能要求补造访谈，也不能以承认缺口认定比较推断已充分。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分情感与具体援助及案例不对称对比较结论的影响，不以资源理由消除推理限制。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：承认因时间资源未进一步调查庇护所女性动态，合理解释资料缺口，但未改善意大利与保加利亚案例深度不平衡或说明比较结论如何收缩。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分情感与具体援助及案例不对称对比较结论的影响，不以资源理由消除推理限制。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient；不能要求补造访谈，也不能以承认缺口认定比较推断已充分。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "同时识别支持来源澄清和比较证据不足两层。",
+    "3_to_4": "区分情感与具体援助及案例不对称对比较结论的影响，不以资源理由消除推理限制。"
+  },
+  "source_unit": "T2_response_only"
+}

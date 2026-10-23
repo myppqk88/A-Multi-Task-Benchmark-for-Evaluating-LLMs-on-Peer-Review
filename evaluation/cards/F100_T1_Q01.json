@@ -1,0 +1,410 @@
+{
+  "schema_version": "1.0",
+  "task_id": "F100_T1_Q01",
+  "paper_id": "ORE:4-268",
+  "task": "T1",
+  "split": "provisional_formal",
+  "unit": "original_manuscript",
+  "input_path": "data/question_bank/T1_生成评审/F100_T1_Q01/input.json",
+  "input_sha256": "ebd3e3416127a445d566e1c01a3fd59c0d3eb0f6a6f9d93ca13985e0bd3fdd56",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T1_生成评审/F100_T1_Q01/input.json",
+      "source_sha256": "ebd3e3416127a445d566e1c01a3fd59c0d3eb0f6a6f9d93ca13985e0bd3fdd56",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          284,
+          810
+        ]
+      },
+      "quote": "pants, funding details, and results of Horizon projects is\navailable through the open access portal CORDIS (Community\nResearch and Development Information Service). This paper\nintroduces a novel methodology for utilizing CORDIS data to reveal\ncollaborations, leadership roles, and their evolution over time. The\ncase study focuses on the “hydrogen energy” sector, and specifically\non the North Adriatic Hydrogen Valley project.\nMethods\nThe methodology is based on network analysis. Data is downloaded\nfrom the CORDIS portal, e",
+      "role": "manuscript_before",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F100_T2_Q01/input.json",
+      "source_sha256": "79ad21591d02554ad7b97c4e3438463aac09e76a0d1e9cdb90882ee6376da52d",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          768
+        ]
+      },
+      "quote": "The study's reliance on the CORDIS dataset, while robust, restricts its scope by excluding data\nfrom other funding sources such as local Member State calls, the Connecting Europe Facility (CEF),\nor the Interregional Innovation Investment (I3) instrument. To address this limitation the\nmethodology could be enhanced by integrating data from these additional funding sources.\nIncluding insights from diverse datasets would expand the applicability of the findings, offering\nmore actionable recommendations for policymakers and stakeholders, while capturing the full\nspectrum of hydrogen-related projects within and beyond EU programs. Please include details on\nthe methodologies and techniques for integrating different datasets to encompass additional\nfunding sources.",
+      "role": "reviewer_concern",
+      "model_visible": false,
+      "reference_only": true
+    },
+    {
+      "id": "E3",
+      "source_path": "data/question_bank/T2_回应评价/F100_T2_Q02/input.json",
+      "source_sha256": "dd24f2d0e74dfb1fb48bf4b0bfd0d6f9d5799d39aad2c3117f85570d926833d7",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          434
+        ]
+      },
+      "quote": "The article's current title does not fully reflect its focus on hydrogen projects, and its abstract lacks\nemphasis on the hydrogen sector. A revised title, such as “Mapping Leadership and\nCommunities in EU-funded Hydrogen Research Through Network Analysis”, will better align\nwith the paper's subject matter and objectives. Additionally, the abstract should be refined to\nhighlight the centrality of hydrogen research in the analysis.",
+      "role": "reviewer_concern",
+      "model_visible": false,
+      "reference_only": true
+    },
+    {
+      "id": "E4",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F100_R1/input.json",
+      "source_sha256": "6bf22dd3ffde860e82812ddf9e29d5c7a27f22f2983dd504616aa99fe665d2f3",
+      "locator": {
+        "json_pointer": "/materials/reviews/R1",
+        "text_span": [
+          0,
+          3579
+        ]
+      },
+      "quote": "This paper develops a methodology to analyse collaborations over time among participants in\nHorizon 2020 and Horizon Europe, using the hydrogen energy sector as a case study. I would like\nto thank the authors for their interesting work, and provide my comments regarding the strengths\nand areas for improvement:\nThe introduction begins clearly but a more comprehensive review of the literature is\nneeded. It would be useful to include an in-depth analysis of previously used methods and\ntheir limitations before discussing the novel contributions of this specific paper.\nWhile hydrogen is identified as a case study, the introduction focuses almost entirely on this\nspecific topic, which creates a disconnect. If hydrogen is just the case study, the discussion\nin the introduction should be broader, emphasising the general methodology rather than\nthe specific application.\nAlgorithm 1 is presented in a mixed format, combining textual descriptions and\npseudocode. This could be improved by separating the process description into a table and\npresenting the pseudocode independently for clarity.\nThe data acquisition strategy appears logical and well-thought-out.\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\nCaptions for all figures should be detailed enough to make the figures self-explanatory.\nSome captions, such as for Figure 3, lack sufficient detail.\nFigure 3 requires further explanation, and the image quality appears compressed, making\nthe text difficult to read.\nThe font sizes used in figures are inconsistent. For example, compare the y-axis labels in\nFigures 4 and 5.\nFigure 4 timeline begins in 2015, but the caption states 2016.\nThe downward trend from 2025–2029 in Figure 4 is unclear. The paper mentions a decrease\nin partners and collaborations but does not explain why. If the decline is due to incomplete\ndata (e.g., new projects not yet appearing), the figure may be misleading and should be\nclarified to avoid confusion.\nThe classification of projects into market-oriented and technology-oriented categories\nreveals interesting trends. However, the notable increase in market-oriented projects in\n\n\n\n\n2023 is not discussed in detail, leaving a gap in interpretation.\nFigure 6 is interesting, but the small font size makes the organization names difficult to\nread. It would be good to increase the size or restructure the figure for clarity.\nFor Figure 8, the paper mentions that one-third of the solutions are invalid according to the\nliterature, but the supporting references or discussion are missing at this point.\nFigures 9 and 10 lack legends and are challenging to interpret. Adding legends or\nannotations that correspond to the organizations or data points would make them\ninformative.\nThe professionalism of the paper could be improved by ensuring consistency in figure\ndesign, font sizes, and formatting.\nOverall, the paper introduces a methodology that can provide insights into collaborations in the\nhydrogen energy sector, but there are some areas for improvement, particularly in terms of\nliterature review, presentation of figures, and depth of analysis.\n○\n\n○\n\n○\n\n○\n\nIs the work clearly and accurately presented and does it engage with the current literature?\nPartly\nIs the study design appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nYes\nAre all the source data and materials underlying the results available?\nYes\nIf applicable, is the statistical analysis and its interpretation appropriate?\nYes\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+      "role": "reviews",
+      "model_visible": false,
+      "reference_only": true
+    },
+    {
+      "id": "E5",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F100_R1/input.json",
+      "source_sha256": "6bf22dd3ffde860e82812ddf9e29d5c7a27f22f2983dd504616aa99fe665d2f3",
+      "locator": {
+        "json_pointer": "/materials/reviews/R2",
+        "text_span": [
+          0,
+          5527
+        ]
+      },
+      "quote": "The research article \"Mapping leadership and communities in EU-funded research through\nnetwork analysis\" by Fabio Morea, Alberto Soraci, and Domenico De Stefano introduces a novel\nmethodology for analysing collaborations and leadership roles in EU-funded research projects\nusing network analysis. The study focuses on the hydrogen energy sector, particularly the North\nAdriatic Hydrogen Valley (NAHV) project, and utilizes data from the CORDIS portal, which provides\ncomprehensive information on Horizon 2020 and Horizon Europe projects. The methodology\ninvolves downloading and enriching data from CORDIS, segmenting it by year, and transforming it\ninto weighted networks representing collaborations between organizations. Centrality measures\nare used to assess the influence of individual organizations, while community detection\nalgorithms identify stable collaborations. Temporal analysis tracks the evolution of these roles and\ncommunities over time. The results demonstrate the emergence of key leaders and stable\ncommunities within the hydrogen energy sector, highlighting significant collaboration. The\ninsights gained are valuable for policymakers and organizations seeking to foster innovation\nthrough sustained partnerships. The approach can be extended to other sectors, offering a\nframework for understanding the impact of EU research funding on collaboration and leadership\ndynamics. The article also discusses the concept of hydrogen valleys, which are integrated\necosystems that produce, exchange, and consume hydrogen, covering the entire hydrogen value\nchain. The NAHV project, involving 37 partners from Croatia, Slovenia, and the Italian region of\nFriuli Venezia Giulia, aims to develop a long-lasting hydrogen economy through a systemic and\nholistic approach. The study's findings reveal that Horizon grants in the hydrogen sector have led\nto the formation of stable, long-term partnerships, particularly in the domain of hydrogen valleys.\nThe methodology presented can improve visualizations in the Horizon Dashboard and provide\nvaluable insights for both policymakers and project coordinators. Future work will focus on\nmonitoring the centrality measures of NAHV partners and applying the methodology to other case\n\n\n\n\nstudies.\nThe paper presents an excellent framework for analysing collaborative networks within the\nhydrogen sector. The paper employs advanced centrality measures and community detection\nalgorithms to identify influential organizations and analyse the stability of collaborations over\ntime. By focusing on the North Adriatic Hydrogen Valley (NAHV) project, the study demonstrates\nhow EU-funded initiatives effectively foster collaboration among industry, academia, and\ngovernment, while addressing critical sustainability challenges. The methodology for analysing\ncollaborative dynamics and the entire hydrogen value chain is both innovative and meticulously\ndetailed. It skillfully integrates technical approaches, such as network analysis, with practical\napplications, including policy impact evaluation. The robust data acquisition process and thorough\nanalysis of collaboration patterns further strengthen the paper's contribution to the field.\nThe article's current title does not fully reflect its focus on hydrogen projects, and its abstract lacks\nemphasis on the hydrogen sector. A revised title, such as “Mapping Leadership and\nCommunities in EU-funded Hydrogen Research Through Network Analysis”, will better align\nwith the paper's subject matter and objectives. Additionally, the abstract should be refined to\nhighlight the centrality of hydrogen research in the analysis.\nSection 1.1 limits its scope by primarily discussing the NAHV project. Expanding this section to\ninclude a broader examination of existing, planned, and proposed hydrogen valleys across the EU\nwould significantly enhance the article's value. Incorporating insights from sources like the Clean\nHydrogen Partnership’s database (e.g., [external resource identifier omitted] will provide a more\ncomprehensive overview of the hydrogen valleys landscape. This expanded approach will\nhighlight regional variations, common challenges, and synergies, contributing to the research\nobjectives and aligning with the EU's broader hydrogen strategy.\nThe study's reliance on the CORDIS dataset, while robust, restricts its scope by excluding data\nfrom other funding sources such as local Member State calls, the Connecting Europe Facility (CEF),\nor the Interregional Innovation Investment (I3) instrument. To address this limitation the\nmethodology could be enhanced by integrating data from these additional funding sources.\nIncluding insights from diverse datasets would expand the applicability of the findings, offering\nmore actionable recommendations for policymakers and stakeholders, while capturing the full\nspectrum of hydrogen-related projects within and beyond EU programs. Please include details on\nthe methodologies and techniques for integrating different datasets to encompass additional\nfunding sources.\nIs the work clearly and accurately presented and does it engage with the current literature?\nYes\nIs the study design appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nYes\nAre all the source data and materials underlying the results available?\n\n\n\n\nPartly\nIf applicable, is the statistical analysis and its interpretation appropriate?\nPartly\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+      "role": "reviews",
+      "model_visible": false,
+      "reference_only": true
+    },
+    {
+      "id": "E6",
+      "source_path": "data/question_bank/T1_生成评审/F100_T1_Q01/input.json",
+      "source_sha256": "ebd3e3416127a445d566e1c01a3fd59c0d3eb0f6a6f9d93ca13985e0bd3fdd56",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          3872,
+          5096
+        ]
+      },
+      "quote": "2 (Methodology).\nSection 3 presents a case study focused on the development\nof hydrogen-related research and the current support to hydrogen valleys, using data from Horizon 2020 and Horizon\nEurope projects from 2015 to 2029. The results allow to identify organisation with leading roles, a community structure,\nand its evolution over time.\n\nidentified 284 publications dealing with hydrogen valleys,\nwith a systematic increase in the number of cited papers. Furthermore, from a deeper analysis, they found that the most\nfrequently cited publications are studies presenting different\ntypes of technological solutions and concepts. This study\nindicated the existence of a significant research gap in the\nfield of research on the creation and development of Hydrogen Valleys. Among the several, some other studies have been\nfocused on the techno-economic assessment of green hydrogen\nvalley12 providing multiple end-users and their LCA impact13.\nFor example, the South Africa Hydrogen Valley report14 has\nexamined the socioeconomic impact from the Hydrogen\nValley project across multiple dimensions in terms of GDP,\njob market and tax revenue.\nThe North Adriatic Hydrogen Valley or NAHV project15 is\none of the first transnati",
+      "role": "manuscript_before",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F100_R1/assets/manuscript_before_p010.png",
+      "source_sha256": "a2ec9dd05e4db68a7c6f4d11bfec85e24a1615d4fd18a517953e406612b1831e",
+      "locator": {
+        "page": 10,
+        "image_path": "data/question_bank/T3_轮次综合判断/T3_F100_R1/assets/manuscript_before_p010.png"
+      },
+      "evidence_type": "image",
+      "observation": "前稿Fig4图标2015，图注写2016–2024；同页说明未来是现有项目结束时间不是预测。",
+      "role": "manuscript_before_visual",
+      "model_visible": true,
+      "reference_only": false,
+      "id": "E7"
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    },
+    {
+      "id": "P2",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "partly_supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "真人关切/作者答复提供问题定位，必须与所列稿件证据独立对照；本题焦点：不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E1"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    },
+    {
+      "id": "P3",
+      "judgment": "通用方法与氢谷专门研究的冲突建议：原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。一位真人要求通用、一位要求突出氢谷，不能同时当唯一正确目标",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "pending_concern_only_not_required_defect",
+      "verification_requirement": "须以当前题目可见稿件/回复核验，或有具体科学理由保留判断；不得因未同意本条真人关切扣分。"
+    },
+    {
+      "id": "P4",
+      "judgment": "Algorithm1与既有方法比较：原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。步骤清楚、输入输出和方法增益需可复现",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "pending_concern_only_not_required_defect",
+      "verification_requirement": "须以当前题目可见稿件/回复核验，或有具体科学理由保留判断；不得因未同意本条真人关切扣分。"
+    },
+    {
+      "id": "P5",
+      "judgment": "Figure4年份与未来项目完整性：原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。真人指出2015起点/2016图注及2025–29下降可能由未来数据不全",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "pending_concern_only_not_required_defect",
+      "verification_requirement": "须以当前题目可见稿件/回复核验，或有具体科学理由保留判断；不得因未同意本条真人关切扣分。"
+    },
+    {
+      "id": "P6",
+      "judgment": "分类无效与比例分母：原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。Fig8约三分一invalid及缺参考需解释编码和分母",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "pending_concern_only_not_required_defect",
+      "verification_requirement": "须以当前题目可见稿件/回复核验，或有具体科学理由保留判断；不得因未同意本条真人关切扣分。"
+    },
+    {
+      "id": "P7",
+      "judgment": "CORDIS与其他资金来源：原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。CEF/I3等可影响覆盖，但可合理限定CORDIS",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "pending_concern_only_not_required_defect",
+      "verification_requirement": "须以当前题目可见稿件/回复核验，或有具体科学理由保留判断；不得因未同意本条真人关切扣分。"
+    },
+    {
+      "id": "P8",
+      "judgment": "原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "evidence_ids": [
+        "E6"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    },
+    {
+      "id": "P9",
+      "judgment": "原图4有2015标记而图注始2016，属可定位口径不一致；原正文已说明未来数据是现有项目结束时间而非预测，不应说全无该限制。",
+      "evidence_ids": [
+        "E7"
+      ],
+      "importance": "key",
+      "importance_reason": "直接影响核心关切的解释与结论可靠性。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可提出与候选不同的结论，但必须处理本条证据及其限制。"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。；不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档主要判断成立；4档须守住具体边界：不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。",
+      "boundary_2_3": "2档部分识别但混淆或遗漏改变判断的题内事实；3档需正确处理：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "boundary_3_4": "3档主事实正确但可有不影响主要判断的遗漏；4档能准确区分这里的观察、作者声称及未知，不把私有后评审/采纳当事实。关键绑定：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "verified_anchor_ids": [
+        "P1",
+        "P2",
+        "P8"
+      ],
+      "pending_concern_rule": "未核关切非命中清单，不要求全部认同；完整报告须覆盖会改变主要判断的题内科学问题。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。；不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档主要判断成立；4档须守住具体边界：不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只发现变化或复述意见；3档须建立本焦点证据—理由链：CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。",
+      "boundary_2_3": "2档指出问题但关键证据到判断的关系欠充分；3档需解释此处为何成立或仍有限：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "boundary_3_4": "3档主要推理成立；4档处理会改变本点的范围/测量/替代解释，不机械服从真人。绑定判断：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "verified_anchor_ids": [
+        "P1",
+        "P2",
+        "P8"
+      ],
+      "pending_concern_rule": "未核关切非命中清单，不要求全部认同；完整报告须覆盖会改变主要判断的题内科学问题。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。；不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档主要判断成立；4档须守住具体边界：不因合理拒绝跨库集成扣分；仍限制向全资金版图的外推。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：CORDIS网络分析应明确限于所取Horizon项目；单凭网络中心性不能自动等同真实领导能力或全部氢项目覆盖。",
+      "boundary_2_3": "2档方向可取但把局部问题扩大或把披露当解决；3档结论必须与下列可判断范围相称：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "boundary_3_4": "3档总体程度适当；4档能据此区分已支持、部分支持、具体未知和重要性，不以未核项否定整篇：原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "verified_anchor_ids": [
+        "P1",
+        "P2",
+        "P8"
+      ],
+      "pending_concern_rule": "未核关切非命中清单，不要求全部认同；完整报告须覆盖会改变主要判断的题内科学问题。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "本轮定点阅读本卡引用的稿件文字及其局部上下文；T2同篇关切/回复已完整阅读，其他T3报告只读所列摘段。",
+      "完整阅读本轮全部真人评审（只作原稿关切定位）；逐项覆盖科学关切，稿件核验限已列定点片段。",
+      "追加核读原稿方法/结论相关段落，明确已有说明和推论边界。"
+    ],
+    "not_read": [
+      "未完成全文逐页科学验收、原始数据复算和未明示图像的目视核查。",
+      "覆盖中unresolved是具体待核关切，不能作为被测回答必须认同的确定缺陷。"
+    ],
+    "verification_limits": [
+      "证据引文/哈希可自动验证，不代表科学充分性已验收。",
+      "未定位关键词不是全文不存在；未核点不得从作者承诺补成已完成。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "concern_coverage": [
+    {
+      "concern": "通用方法与氢谷专门研究的冲突建议",
+      "disposition": "unresolved",
+      "reason": "原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。一位真人要求通用、一位要求突出氢谷，不能同时当唯一正确目标",
+      "reference_point_ids": [
+        "P3"
+      ],
+      "reference_evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "concern": "Algorithm1与既有方法比较",
+      "disposition": "unresolved",
+      "reason": "原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。步骤清楚、输入输出和方法增益需可复现",
+      "reference_point_ids": [
+        "P4"
+      ],
+      "reference_evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "concern": "Figure4年份与未来项目完整性",
+      "disposition": "unresolved",
+      "reason": "原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。真人指出2015起点/2016图注及2025–29下降可能由未来数据不全",
+      "reference_point_ids": [
+        "P5"
+      ],
+      "reference_evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "concern": "分类无效与比例分母",
+      "disposition": "unresolved",
+      "reason": "原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。Fig8约三分一invalid及缺参考需解释编码和分母",
+      "reference_point_ids": [
+        "P6"
+      ],
+      "reference_evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "concern": "CORDIS与其他资金来源",
+      "disposition": "unresolved",
+      "reason": "原稿评审应核查此关切；本条真人意见只是定位，尚未逐项完成原稿科学裁决。CEF/I3等可影响覆盖，但可合理限定CORDIS",
+      "reference_point_ids": [
+        "P7"
+      ],
+      "reference_evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "concern": "原稿定点科学核验",
+      "disposition": "verified_text_with_limits",
+      "reason": "原稿使用2015–2029 Horizon项目网络。未来年份是项目计划周期而非已完成观察，应限制趋势推断；本条不对未目视Figure4曲线作形状判定。",
+      "reference_point_ids": [
+        "P8"
+      ]
+    },
+    {
+      "concern": "关键图目视与指标口径",
+      "disposition": "verified_visual",
+      "reason": "原图4有2015标记而图注始2016，属可定位口径不一致；原正文已说明未来数据是现有项目结束时间而非预测，不应说全无该限制。",
+      "reference_point_ids": [
+        "P9"
+      ]
+    }
+  ],
+  "source_unit": "full_original_manuscript"
+}

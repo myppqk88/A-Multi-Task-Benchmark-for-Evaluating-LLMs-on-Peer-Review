@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F027_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "检索与纳入范围",
+    "概念论证"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "答复称重构引言、删新石油类比并修正法律区分。核对具体法理和结构改变；正文明确外置的文献目录Table9是综述可追溯性材料，未附不能假称已核全语料。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "I. Overview\nThe paper offers a valuable literature review on Text and Data Mining (TDM), mapping the\ncomplex regulatory framework surrounding these processes and shedding light on what\nconstitutes lawful TDM. However, several areas require improvement for the paper to reach its full\npotential. This report provides some comments and suggestions to strengthen the paper's\nstructure, argumentation, an",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n\n\n\n\nThank you very much for your constructive and insightful comments. I have thoroughly\nrevised the paper in light of your feedback, and I believe these changes have significantly\nstrengthened the review. Below, I address each of your comments and explain the\nadjustments made.\n1. Introduction: Structure and Clarity\nI have restructured the introduction to improve clarity. The concept of \"big data\" is now\nintroduced with a more thorough explanati",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Thilla Rajaretnam, ‘Data Mining and Data Matching: Regulatory\nand Ethical Considerations Relating to Privacy and Confidentiality in\nMedical Data’ (2014) 9 Journal of International Commercial Law and\nTechnology 294.\nDouglas M Kochelek, ‘Data Mining and Antitrust’ (2009) 22 Harvard Journal\nof Law & Technology 515.",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "frameworks. As such, Flynn et al. call for a harmonised international approach towards the regulation of TDM, asking for\nthe World Intellectual Property Organization (WIPO) to play\na “constructive role in establishing a consistent international\nbaseline” for the regulation of TDM.12 Nevertheless, as it stands\nusers conducting TDM must navigate a complex web of regulatory frameworks spanning across multiple jurisdictions.\nGiven the inherent difficulties of comprehensively examining\nthe inner workings of lawful TDM on a global scale, this literature review will provide scholarly insights from the United\nStates (US), European Union (EU), and United Kingdom (UK)\nproviding insights where relevant from other jurisdictions.13\nSimilarly, the practical guide and tool aimed at facilitating lawful TDM, created as part of this research’s wider purpose, will\ntake into account and comparatively analyse these jurisdictions.\nThe collected literature was updated periodically, up until\nMay 2024 using th",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Stepanka Havlikova, ‘Web Scraping and Text and Data Mining Exception:\nCould the Cdsm Directive, Designed to Support the Reuse of Publicly Available\nData, Have Had the Opposite Effect?’ (18 October 2023) <[external resource identifier omitted]\ncom/abstract=4605551> accessed 29 May 2024.\n75",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Nevertheless, the authors argue that while the ruling expands\nTDM access for “well-resourced” institutions, it falls short when\nconsidering wider TDM users and activities.113\nIt can be deduced that authors generally view intellectual\nproperty rights as restricting one’s freedom to conduct TDM.\nWhilst the recent introduction of the EU CDSM TDM-specific\ncopyright exceptions provides a new avenue towards “lawful TDM”, their narrow scope acts as a barrier to free mining.\nThe wider approach of the US arguably creates a more welcoming market for TDM in the US. In a 2022 Research Paper Sean\nFlynn et al. categorised global copyright exceptions for research\npurposes focusing on TDM exceptions.114 The authors provide an informative world map comprising of seven colours\ncategorising countries as having a general research exception,\nrestriction on sharing, restrictions to private reproductions,\nrestrictions to institutional users, restrictions on types of works,\nTDM being restricted and countries ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

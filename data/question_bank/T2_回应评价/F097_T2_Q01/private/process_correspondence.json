@@ -1,0 +1,62 @@
+{
+  "task_id": "F097_T2_Q01",
+  "paper_id": "F1000:127542",
+  "parent_task": "T3_F097_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F097_R1/input.json",
+  "parent_input_sha256": "468eefa00c3f9199fbc5f1fa52e20e0696dda8948ace6a80b50b97a50473f0cb",
+  "review_dimension_AI_candidate": "研究方法与项目范围",
+  "selection_scope": "包含访谈与其他成果的说明；不把公开后其他论文当所给方法证据。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/127542_Areas_of_research_interest__joining_the_dots_between_government_and_re/v1_manuscript.pdf",
+      "original_sha256": "24c5d5f68a223caafdd14c2ee35058e34411429b55f46e42e742aa5ec8f76968",
+      "raw_text_file": "data/question_bank/T2_回应评价/F097_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        30970,
+        31228
+      ],
+      "report_id": "176614",
+      "date": "2023-06-16",
+      "raw_page_numbers": [
+        9
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/127542_Areas_of_research_interest__joining_the_dots_between_government_and_re/v1_manuscript.pdf",
+      "original_sha256": "24c5d5f68a223caafdd14c2ee35058e34411429b55f46e42e742aa5ec8f76968",
+      "raw_text_file": "data/question_bank/T2_回应评价/F097_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        34031,
+        34514
+      ],
+      "report_id": null,
+      "date": "2026-01-12",
+      "raw_page_numbers": [
+        10,
+        11
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "interviews",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 5247,
+    "end": 5777,
+    "exact_quote": "ments; and in researching how ARIs could be optimised to support the research-policy system through\ninterviews with funders, officials and academics involved in the ARI work.\nOur reflections here are based on our work 2018-2023 (GC) and 2019-2023 (KO and AB) which has involved working\nclosely with analyst and policy teams in departments across government, and with intermediaries such as the University\nPolicy Engagement Network (UPEN), the National Academies, the What Works Network, and individual universities\nand researchers",
+    "anchor_matches": 2,
+    "anchor": "interviews"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿无interviews，后稿正文而非仅Amendments新增访谈及2018–2023团队经验的说明。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

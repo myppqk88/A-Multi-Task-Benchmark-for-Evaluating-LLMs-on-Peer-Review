@@ -1,0 +1,36 @@
+{
+  "task_id": "T3_F169_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "区域与国家概念",
+    "分析流程",
+    "主张与修订对应"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "前稿题名RIS、后稿NIS的层级变更须与研究问题、文献和材料一起核对，不能仅换题名保留概念混淆。",
+    "作者的感谢/称文献有帮助不同于逐点解释；核对文件选择与停止纳入的依据是否实质补足。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article requires substantial revisions to strengthen its overall structure, clarity, and coherence.\nThese improvements are crucial for the manuscript to meet the indexing standards and increase\nits potential for successful acceptance. Specifically, the following areas need significant attention:\n1. Conceptual Clarification:\nThe focus of the paper should be clearly defined—whether it addresses ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nI want to express my heartfelt gratitude for your invaluable insights and comments. Your\nfeedback has not only presented a challenge but has also been incredibly helpful in\nenhancing my understanding of the subject matter.\nI took the time to review the article you recommended, and I found it to be extremely\nbeneficial. It provided me with additional perspectives and knowledge that I greatly\nappreciate.\nThank you once again for yo",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Opportunities for Science, Technology, and Innovation (STI) in Ethiopia\nEthiopian National Innovation System (NIS) has the untapped potential to significantly enhance social development,\neconomic growth, and global competitiveness through science, technology, and innovation. Ethiopia can establish itself\nas a centre for innovation excellence and propel the innovation landscape of the African continent by capitalising on its\nadvantages, tackling its current problems, and encouraging cooperation either inside or outside the country. Ethiopia is\npoised to assume a pivotal role in shaping the trajectory of science, technology, and innovation within the region by\nmaking strategic investments, forming partnerships, and enacting legislation that fosters entrepreneurship and innovation. Ethiopia has made great progress toward establishing a conducive ecosystem that is favorable to innovation\nemploying policies, initiatives, and partnerships that support research, technology transfer, and knowl",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "economy and society are the subjects of the selected documents. The process of reviewing the documents was stopped\nwhen it became clear that adding more documents to the study was no longer adding anything either novel or relevant.\nEach document is legally sourced from official government ministries. Although the exclusion criteria weren’t mentioned\nexplicitly, it appears from the selection process that documents that did not match the criteria for inclusion would be\nexcluded.\nThe selected documents cover a wide range of important topics that are crucial to fostering creativity, technological\nadvancement, and economic growth in Ethiopia. The National Science and Technology Policy (2012), the STEM\nEducation Program (2016; Investment Proclamation (1180/2020), the Intellectual Property Law (320/2003; National\nResearch and Development Strategy (2021), the Industrial Parks Development Proclamation (886/2015), the Digital\nStrategy (2021), the Addis Ababa University Innovation and Incubation ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

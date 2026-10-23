@@ -1,0 +1,140 @@
+{
+  "task_id": "F009_T2_Q01",
+  "paper_id": "PeerJ:20600",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F009_T2_Q01/input.json",
+  "input_sha256": "15b0ce5a4e8162ecf95cbbdcb20607c69a7319ce4d20bef94661c02b77f275f4",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F009_T2_Q01/input.json",
+      "source_sha256": "15b0ce5a4e8162ecf95cbbdcb20607c69a7319ce4d20bef94661c02b77f275f4",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The manuscript provides details of the dissemination of the questionnaire online.1. To clarify the number of students. On page 11, it is stated that 60 students are in the course, and then the same-sized target was set at 163.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F009_T2_Q01/input.json",
+      "source_sha256": "15b0ce5a4e8162ecf95cbbdcb20607c69a7319ce4d20bef94661c02b77f275f4",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "The total number of eligible students enrolled in the 4th and 5th years of the pharmacy program was 280. The sample size was calculated using the Raosoft sample size calculator (margin of error 5%, confidence level 95%), yielding a target of 163 participants. Although one of the courses used for initial recruitment included 60 students, invitations were extended to all eligible students across both years through Blackboard announcements and reminders.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复区分280名合格学生、单门初始招募课程60人和目标样本163人，解释三个数量对应不同层次。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；不需要把本题扩成实际回应率或抽样设计的完整审计。"
+    },
+    {
+      "id": "J2",
+      "judgment": "给出5%误差、95%置信水平和计算工具，并说明通过Blackboard邀请两个年级所有合格学生，直接解除60对163表面矛盾。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；不需要把本题扩成实际回应率或抽样设计的完整审计。"
+    },
+    {
+      "id": "J3",
+      "judgment": "163是目标非实际应答数；该答复不证明随机抽样或无非应答偏倚。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；不需要把本题扩成实际回应率或抽样设计的完整审计。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复区分280名合格学生、单门初始招募课程60人和目标样本163人，解释三个数量对应不同层次。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：准确对应280/60/163的总体、渠道与目标层级。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复区分280名合格学生、单门初始招募课程60人和目标样本163人，解释三个数量对应不同层次。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：准确对应280/60/163的总体、渠道与目标层级。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。163是目标非实际应答数；该答复不证明随机抽样或无非应答偏倚。",
+      "high_score_conditions": [
+        "解释表面矛盾如何消除，并不把目标值当最终样本或概率抽样证明。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：163是目标非实际应答数；该答复不证明随机抽样或无非应答偏倚。"
+      ],
+      "boundary_2_3": "准确对应280/60/163的总体、渠道与目标层级。",
+      "boundary_3_4": "解释表面矛盾如何消除，并不把目标值当最终样本或概率抽样证明。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient；不需要把本题扩成实际回应率或抽样设计的完整审计。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：解释表面矛盾如何消除，并不把目标值当最终样本或概率抽样证明。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：163是目标非实际应答数；该答复不证明随机抽样或无非应答偏倚。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：解释表面矛盾如何消除，并不把目标值当最终样本或概率抽样证明。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient；不需要把本题扩成实际回应率或抽样设计的完整审计。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "准确对应280/60/163的总体、渠道与目标层级。",
+    "3_to_4": "解释表面矛盾如何消除，并不把目标值当最终样本或概率抽样证明。"
+  },
+  "source_unit": "focal_concern_response_author_letter"
+}

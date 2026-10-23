@@ -1,0 +1,61 @@
+{
+  "task_id": "F117_T2_Q02",
+  "paper_id": "F1000:135265",
+  "parent_task": "T3_F117_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F117_R1/input.json",
+  "parent_input_sha256": "2052d8bc906602824e20eab3770862e64077ee889bad8a4539b1dcf000a1a784",
+  "review_dimension_AI_candidate": "题名与研究对象一致性",
+  "selection_scope": "保留研究对象由事件本身转向组织行为的完整原要求；题名修改是否足够留到私有过程核查。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/135265_Reviewing_the_Itaewon_Halloween_crowd_crush__Korea_2022__Qualitative_c/v1_manuscript.pdf",
+      "original_sha256": "414376c61000b3fde5dc6ea4d6ec20c58f79264695e920f19004ddf6b002f44d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F117_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        50785,
+        51047
+      ],
+      "report_id": "214388",
+      "date": "2023-11-06",
+      "raw_page_numbers": [
+        14
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/135265_Reviewing_the_Itaewon_Halloween_crowd_crush__Korea_2022__Qualitative_c/v1_manuscript.pdf",
+      "original_sha256": "414376c61000b3fde5dc6ea4d6ec20c58f79264695e920f19004ddf6b002f44d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F117_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        54050,
+        54089
+      ],
+      "report_id": null,
+      "date": "2023-11-19",
+      "raw_page_numbers": [
+        16
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.title",
+    "start": 0,
+    "end": 85,
+    "exact_quote": "Reviewing the Itaewon Halloween crowd crush, Korea 2022:\nQualitative content analysis",
+    "anchor_matches": 1
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.title",
+    "start": 0,
+    "end": 105,
+    "exact_quote": "Reviewing stakeholders during the Itaewon Halloween\ncrowd crush, Korea 2022: Qualitative content analysis",
+    "anchor_matches": 1
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "已对照题名实际字段；题名修改是否完全对齐组织行为的研究重点仍需专家判断。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

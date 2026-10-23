@@ -1,0 +1,86 @@
+F017_T2_Q01
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。
+
+以下为完整题内材料和输出结构；相对图像路径须实际加载为图像，不读取private。
+
+{
+  "task_id": "F017_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "input": {
+    "comment_text": "This is a well-articulated and well-researched article on the concept of joint controllership in\nbiomedical research consortia.\nOverall, I wholeheartedly agree with both the legal analysis made, and the proposed model of\n\"funnel\" analysis.\nOne nuance in the literature, however, appears not to have been addressed. Namely, the authors\nstate that the test for controllership has not changed from the DPD to the GDPR.\nMy own position is that the liability rules associated to joint controllership have changed between\nthe DPD and the GDPR.\nThe DPD recognized a wide 'concept' of joint controller - but limited the potential liability of each\ncontroller to the acts that were associated to their responsibilities within the broader\ncontrollership arrangement.\nAccording to the DPD, the concept of joint controllership was articulated in a broad manner\n(capturing a considerable \"mix\" of different institutional arrangements). However, liability arising\nfrom joint controllership was narrowly construed and associated to the activities left to that\ncontroller's oversight (see e.g. FashionID on this topic).\nConversely, art. 82 of the GDPR establishes the joint and several liability of each joint controller in\na joint controllership arrangement (with further support at Recital 146).\nTherefore, it would appear that there is a substantive shift in the structure of the joint and several\nliability rules:\nCourts have broadly interpreted the concept in the past, but have used the structure of the liability\nrule to limit the arising damages.\n\n\n\n\nThe GDPR implemented a joint and several liability rule, bringing together both a \"broad\" legal\nframing (jurisprudential) and a broad potential for liability.\nI believe that following change might benefit the article:\nI. To describe in the review of the history of the DPD and GDPR the shift in liability rule (i.e. that the\nDPD had a broad conception of JCs but a narrow conception of liability (each liable only for their\nown acts), whereas the GDPR adopts both a broad framing for joint controllership jurisprudentially constructed - and for liability (as constructed through statute).\nOtherwise, however, the article is strong as stands and is recommended for indexing.\nIs the rationale for the Open Letter provided in sufficient detail? (Please consider whether\nexisting challenges in the field are outlined clearly and whether the purpose of the letter is\nexplained)\nYes\nDoes the article adequately reference differing views and opinions?\nPartly\nAre all factual statements correct, and are statements and arguments made adequately\nsupported by citations?\nPartly\nIs the Open Letter written in accessible language? (Please consider whether all subjectspecific terms, concepts and abbreviations are explained)\nYes\nWhere applicable, are recommendations and next steps explained clearly for others to\nfollow? (Please consider whether others in the research community would be able to\nimplement guidelines or recommendations and/or constructively engage in the debate)\nYes\n",
+    "response_text": "\n\n\n\n\n1. Introduction\nFirst of all, we would like to thank the reviewers for their time and comments. In general,\nthese are positive. Especially Anne Barth gave comments which should lead to textual\nchanges. For example, she was completely correct that we forgot a ‘not’ when stating that a\nlarge group of controllers does not add to the protection of the data subjects. In bold the\nomission which Bahr showed and in italics what would made the sentence clearer to\nreviewer Chen. Given those and other textual comments, we submitted a version 2. This\nversion does not differ substantially from version 1. The changes are editorial, given the\ncomments and do not encompass recent care law or literature which we found at after the\nsubmission. Version 2 is, as lawyers would say, ‘ex tunc’, Infra we will discuss what changes\nwe did not incorporate or only very moderately. However, before doing that, we should\ndiscuss new developments as significant time has passed between the publication of our\npaper and this response to the reviewers. Hence, this reply is more ‘ex nunc’. Lastly, our\napologies for the delay in this response. We needed a ‘seasonal break’ to find time for the\nupdate.\n1. New developments\nThere are two. The first is the European Health Data Space (EHDS) proposal by the European\nCommission. That very complex proposal and its comments cannot be discussed here. It\nalso has clauses about ‘joint controllers’. Though the EHDS will be a major game changer\nfor the secondary use of health data, it claims to adhere to the GDPR with (probably) a new\nUnion law legal basis in the sense of article 9.2 I and j. Which entities are joint controllers\nmay be influenced by the EHDS but cannot be decided by the EHDS as that decision follows\nfrom the GDPR. From that perspective it foremost matters whether new case law sheds new\nlight in the ‘joint controller’ discussion. Obviously, new case law could also influence our\nproposal. A recent judgement of the CJEU in case C-683/21[1] does shed new light on this\nissue and we should discuss that decision first. That decision is important for a variety of\nreasons. We will only highlight the essence of the judgment for the issue under discussion\nhere and abstain from details about the circumstances or other aspects of the interesting\njudgement, relevant for the interpretation of other clauses of the GDPR. That essence is, as\nmentioned in number 30 of the judgment, that (our italics added): ……who exerts influence\nover the processing of such data, for his, her or its own purposes, and who participates, as a\nresult, in the determination of the purposes and means of that processing, may be\nregarded as a controller in respect of such processing. The CJEU states that its judgment\nfollows from its earlier decisions. We submit that this is true for a very large extent but that\nthe line in italics is an important refinement which was more implicit in the earlier decisions\nwe discussed in our paper. A law firm which is consulted about a certain data processing\nalso exerts influence as it will give advice on what certainly shouldn’t be done and how it\nmay be done. But it does not do so for its own purposes regarding the data involved. That\n‘influence’ versus ‘own purposes regarding the data involved’ is what we tried to disentangle\nin the sieve model. As it is more complicated there than in the just given example of the\nexternally hired law firm. If a law firm or ICT consultant is embedded in an EU-funded\nresearch consortium as a partner, that partner exerts influence but is also sort of an ally for\nthe purposes. We will come back to that when we discuss the criticism of the reviewers on\nthe sieve model.\n1. The GDPR and DPD differ on joint controllership\nReviewer Bernier states that joint controllership under the Data Protection Directive (DPD)\n\n\n\n\nand the GDPR differ. In the DPD the responsibilities resulting from joint controllership were\nnarrowly constructed while under GDPR joint controllership leads to joint and several\nliability. It is correct that we did not discuss this issue. However, we note that this does not\naffect the strictly legal analysis, as in our paper, of whether a situation is at hand. We\ndiscussed under what conditions parties are considered to be joint controllers, not the\nconsequences if they are considered joint controllers. We have added a clarification\nregarding this point. With present knowledge, it might even be questioned whether the\nGDPR brought a major change in this respect. In mentioned judgement the CJEU reiterated\nat point 42 that: However, the existence of joint responsibility does not necessarily imply\nequal responsibility of the various operators involved in the processing of personal data. On\nthe contrary, those operators may be involved at different stages of that processing of\npersonal data and to different degrees, so that the level of responsibility of each of them\nmust be assessed with regard to all the relevant circumstances of the particular case\n(judgment of 5 June 2018, Wirtschaftsakademie Schleswig-Holstein, C‑210/16,\nEU:C:2018:388, paragraph 43). So, even though this review led to a question mark, we did\nnot follow-up on it.\n[1] Judgement of December 5 2023, ECLI:EU:C:2023:949\n",
+    "necessary_context": "大型研究联合体个人数据治理中共同控制者与GDPR的规范性法律分析。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

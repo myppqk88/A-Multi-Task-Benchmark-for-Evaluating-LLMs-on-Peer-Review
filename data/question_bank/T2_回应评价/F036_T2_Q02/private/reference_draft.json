@@ -1,0 +1,28 @@
+{
+  "task_id": "F036_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "证据呈现与结果解释区分"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "To improve clarity, the authors should more explicitly delineate the results and discussion\nsections. In its current form, there is some blending between the two, with references to the\nliterature appearing in the results section and data quotes embedded within the discussion. This\ncrossover risks confusing readers about where empirical observations end and theoretical\ninterpretation begins. To address this, the authors could clarify the data structure in the results,\nusing clear subheadings and more direct data quotes to support their findings. For example, using\na \"show, don’t tell\" approach would enhance transparency, allowing readers to directly see the\ndata backing each claim and strengthening the study’s credibility. In the discussion, removing\ndirect data quotes and instead focusing on theoretical analysis and implications would reinforce\nthe interpretive flow, making it easier for readers to understand the study’s contribution to\nbroader SI and community economy literature.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "The results section has been amended accordingly. There\nare several new quotes in the results section, and subheadings have been fixed. Quotes\n\n\n\n\nhave been removed from the discussion section, which has also been amended to allow for\nmore reflection on the research questions and the contribution of the study.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留结果/讨论分开及引文位置的要求，答复含新增、删除引文的两部分。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

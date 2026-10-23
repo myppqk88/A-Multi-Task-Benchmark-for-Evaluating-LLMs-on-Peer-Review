@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F060_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究目标与预测",
+    "实验程序",
+    "统计与解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者以探索性、无假设风格回应明确预测要求，不能单凭拒绝预设假设判不充分；仍需检查事后解释与数据支持。",
+    "核对24小时测试程序、诗段操纵及统计模型说明的实际修订；四份报告的不同关切不能混成一位评审。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The authors’ major question is whether poetic meter serves as a cognitive schema that supports\nverbal memory. To assess this claim, they manipulated Italian poems by Dante and Ariosto to have\na) consistent meter and rhyme, b) consistent meter but missing rhyme, c) conserved rhyme but\nincorrect accent pattern, or d) the incorrect # of syllables. These variations were assessed for\nmetric plausibilit",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDetailed Comments:\nIntroduction\nI don’t find that the Introduction as written effectively introduces the research question; nor does\nit effectively review the relevant literature.\nAt the end of the introduction, it’s not clear what is being measured and what is being\nhypothesized. The authors say that they will “aim at measuring the strength of some metric\ndevices.” but it’s not clear which devices they’re specifically talking about, and, moreov",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Gustave Doré’s illustrations of the Divina Commedia, but accompanied passages derived from canti in the Commedia unrelated\nto those the artist referred to, as well as the a priori unrelated\npassages derived from the Orlando Furioso, and they were\nfurther enriched with graded color hues. Each image was\nconsistently paired to each passage, whichever version, ONP,\nNPS, NPA or NPR, was presented to the subject. The variability\nacross images, enhanced also by leaving each image in its original non-commensurate format, was thus adding an independent component to the natural variability across passages, but not\ncontributing to the metric plausibility effect; and possibly\nhelped reduce the variability, across participants, due to their\nheterogeneous testing-at-home conditions.\nThe dialogue over zoom was always conducted by the first\nauthor, but the experiment was self-paced by the participants\nusing the Psychopy platform, with the images displayed on the\nshared screen and the passages played a",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Test phase. The following day participants were connected at the\nsame time, so 24 hours had passed. They listened directly to the\ntest parts of the text, so the verses with a muted non-word, and\nthey were asked to identify the muted target in all three parts,\nincluding then the third one. For the first and second part,\ntested also the previous day, target non-words were different. After\ncompleting the three tests per passage, they listened to the entire\npoem, to receive feedback.\nData analysis. The outcome of interest is essentially the presence of a significant correlation between the ranking produced\nby our intentionally delicate manipulations (expressed by\nthe plausibility index, see Figure 2 and Extended Data) and the\nmemory score in the main experiment (as well as the reaction\ntimes, see Figure 4), that would indicate a joint dependence on\nthe type of manipulation. Correlations were considered significant at p < 0.05. Additional methodological considerations and\ncontrols are detai",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "school in Italy are rather familiar, than with Ariosto, who has\nbeen relegated, especially in the last few decades, to a marginal\nniche in standard Italian curricula. This appears to discount\na possible interpretation of this difference, i.e., that we are seeing two competing effects, whereby both congruence and\nincongruence with established schemata can enhance memory, the latter a novelty effect (Bonasia et al., 2018): novelty\npresupposes the activation of the schema it contradicts. An\nalternative interpretation is that Dante’s verses are just more\ninteresting and tend to focus one’s attention to other aspects\nthan the components of meter. Even if this interpretation were\nto be shown to be correct, it is quite surprising that it would\napply, in our paradigm, to verses that have been deprived of\ntheir meaning. Moreover, our replacing several of the key words\nchosen by Dante with our untalented choice of non-words\nwould have been expected to remove other potentially useful\ndevices from",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "expect that the listener, or the reader, activates the very same\ncognitive schema, at least locally, within the few verses of a\nsingle ottava or three terzine.\nThe time the subjects from the two statistically\nindistinguishable cohorts needed to react to the memory tests\nsuggest an account of the main finding: the metric schema is\nthe same, but it is activated to a different extent. Somewhat\ncounterintuitively, it appears to be activated less with Dante,\nan author with whom most people who have been in high\nschool in Italy are rather familiar, than with Ariosto, who has\nbeen relegated, especially in the last few decades, to a marginal\nniche in standard Italian curricula. This appears to discount\na possible interpretation of this difference, i.e., that we are\nseeing two competing effects, whereby both congruence and\nincongruence with established schemata can enhance memory,\nthe latter a novelty effect (Bonasia et al., 2018): novelty\npresupposes the activation of the schema it contradicts",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

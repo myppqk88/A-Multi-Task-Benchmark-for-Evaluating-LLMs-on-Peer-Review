@@ -1,0 +1,128 @@
+{
+  "task_id": "D08_T2_Q01",
+  "paper_id": "ORE:5-203",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D08_T2_Q01/input.json",
+  "input_sha256": "4a9d71e301c4563815f1d3b79d8a632a018bee3382973688fea67bde706e8e53",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D08_T2_Q01/input.json",
+      "source_sha256": "4a9d71e301c4563815f1d3b79d8a632a018bee3382973688fea67bde706e8e53",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Expert Panel Selection:\nThe criteria are good, but stating the\nnumber\nof publications or years of experience would add objectivity. The gender balance (8 women, 4 men) is noted, but a brief mention of geographical distribution (beyond \"diverse institutional contexts\") would strengthen the claim of European representativeness.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D08_T2_Q01/input.json",
+      "source_sha256": "4a9d71e301c4563815f1d3b79d8a632a018bee3382973688fea67bde706e8e53",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We agree that providing objective thresholds and an explicit geographical distribution of the expert panel enhances the transparency and credibility of our validation process. The Methods section has been revised to include specific eligibility criteria for the experts (≥5 years of relevant practice and/or ≥5 relevant peer-reviewed outputs) and to list the countries where the experts are currently working (Sweden, Greece, Portugal, Spain, Italy, and North Macedonia). Furthermore, we have added a statement to the Discussion's Limitations section to explicitly acknowledge that this distribution skews toward Southern and Western Europe and have committed to broadening this representation in future validation cycles.\nChanges made to manuscript\n: (1) The first paragraph of Methods > Phase 2: First expert validation round has been expanded to include the objective thresholds, gender balance, sectoral mix, and country distribution. (2) The Discussion > Limitations section has been updated to explicitly note the regional skew.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复具体给出至少5年经验和/或5项相关同行评议成果的资格门槛，并列出六个工作国家，直接满足可客观核查与地理分布要求。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；不应因未有全欧洲代表性把透明说明判失败。"
+    },
+    {
+      "id": "J2",
+      "judgment": "承认偏向南欧/西欧并计划扩大范围，合理限制欧洲代表性；覆盖六国不等于欧洲概率代表性，and/or也不能改写为两项均必需。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；不应因未有全欧洲代表性把透明说明判失败。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复具体给出至少5年经验和/或5项相关同行评议成果的资格门槛，并列出六个工作国家，直接满足可客观核查与地理分布要求。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须准确提取资格门槛的and/or及六国信息。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复具体给出至少5年经验和/或5项相关同行评议成果的资格门槛，并列出六个工作国家，直接满足可客观核查与地理分布要求。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须准确提取资格门槛的and/or及六国信息。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。承认偏向南欧/西欧并计划扩大范围，合理限制欧洲代表性；覆盖六国不等于欧洲概率代表性，and/or也不能改写为两项均必需。",
+      "high_score_conditions": [
+        "把透明度提升与代表性证明分开，正确处理地理偏向承认。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：承认偏向南欧/西欧并计划扩大范围，合理限制欧洲代表性；覆盖六国不等于欧洲概率代表性，and/or也不能改写为两项均必需。"
+      ],
+      "boundary_2_3": "须准确提取资格门槛的and/or及六国信息。",
+      "boundary_3_4": "把透明度提升与代表性证明分开，正确处理地理偏向承认。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient；不应因未有全欧洲代表性把透明说明判失败。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：把透明度提升与代表性证明分开，正确处理地理偏向承认。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：承认偏向南欧/西欧并计划扩大范围，合理限制欧洲代表性；覆盖六国不等于欧洲概率代表性，and/or也不能改写为两项均必需。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：把透明度提升与代表性证明分开，正确处理地理偏向承认。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient；不应因未有全欧洲代表性把透明说明判失败。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "须准确提取资格门槛的and/or及六国信息。",
+    "3_to_4": "把透明度提升与代表性证明分开，正确处理地理偏向承认。"
+  },
+  "source_unit": "T2_response_only"
+}

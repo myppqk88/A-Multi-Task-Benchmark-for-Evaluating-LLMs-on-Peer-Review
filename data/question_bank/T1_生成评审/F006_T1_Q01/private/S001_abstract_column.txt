@@ -1,0 +1,1075 @@
+Open Research Europe
+
+O
+
+CASE STUDY
+
+Trade-off hacking: Have the cake and
+
+competing interests into win-wins in d
+technology
+[version 1; peer review: 2 approved with reservations]
+
+Ferdinand Ferroli
+Identity Valley Research, Unkel, 53572, Germany
+
+v1 First published: 24 Nov 2025, 5:358
+
+https://doi.org/10.12688/openreseurope.21771.1
+Latest published: 24 Feb 2026, 5:358
+https://doi.org/10.12688/openreseurope.21771.2
+
+Abstract
+Data-driven innovations in the food sector, from personalised
+nutrition to supply chain tracking, promise clear benefits but
+introduce complex trade-offs between competing interests such as
+personalisation and privacy, or performance and explainability. These
+tensions can hinder responsible innovation if addressed as zero-sum
+conflicts. This paper introduces the concept of “Trade-off Hacking”, a
+user-centric technology design approach that reframes competing
+interests as opportunities for innovation striving for win-win
+outcomes. The concept is used as an analytical device to examine the
+practices of eight pilot projects funded by the Horizon Europe project
+“DRG4FOOD”. Trough analysis of these real-world food tech pilots, this
+study moves beyond merely acknowledging trade-offs to identifying
+reproducible design patterns that rebalance, or even resolve them.
+The analysis reveals a spectrum of strategies to achieve this, from
+governance-based user controls and privacy-preserving architectures
+to co-design methodologies. The paper groups these solutions into
+two main categories: technology-driven resolutions, which use e.g.
+architectural or cryptographic methods to influence a trade-off, and
+cooperation-driven resolutions, which reframe value tensions as
+socio-technical negotiations.
+Keywords
+digital ethics, responsible innovation, privacy, cybersecurity, software
+development, personalisation
+
+Open Research Europe
+
+O
+
+This article is included in the Horizon Europe
+gateway.
+
+Corresponding author: Ferdinand Ferroli (f.ferroli@identityvalley.org)
+
+Author roles: Ferroli F: Conceptualization, Writing – Original Draft Preparation, Wr
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the [European Union’s H
+under grant agreement No [101086523]
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2025 Ferroli F. This is an open access article distributed under the ter
+which permits unrestricted use, distribution, and reproduction in any medium, prov
+
+How to cite this article: Ferroli F. Trade-off hacking: Have the cake and eat it to
+data-driven food technology [version 1; peer review: 2 approved with reservat
+https://doi.org/10.12688/openreseurope.21771.1
+
+First published: 24 Nov 2025, 5:358 https://doi.org/10.12688/openreseurope.21771
+
+O
+
+Introduction
+
+Digital technology is increasingly reshaping not only the global food system but also the relationship towards the food
+sector. Innovations ranging from AI-driven personalised nutrition applications to blockchain-based traceability systems offer
+the potential for promoting public health, empowering consumers, and promoting sustainability (see Ellahi et al., 2023;
+Wu et al., 2025). However, the integration of data-driven technologies into this critical sector also introduces important ethical and practical conflicts. An application that personalises
+meal plans based on sensitive health data must simultaneously
+protect user privacy; an algorithm that predicts the carbon footprint of food products with great precision may not be trusted
+by retailers and regulators if its calculations are not transparent. These tensions are not merely technical hurdles but represent value conflicts at the core of responsible innovation
+(Detopoulou et al., 2023; Donovan et al., 2025; Reis et al.,
+2021).
+Addressing these challenges is a central mission of the
+Horizon Europe “Digital Responsibility Goals for Food”
+(DRG4FOOD) project. With a total funding of €4 million,
+DRG4FOOD aims to foster a data-driven food system that
+inspires trust throughout the digitalised food chain. The
+project functions as a responsible technology incubator, having distributed €1.9 million through two Open Calls to eight
+pilot consortia developing data-driven food tech applications
+(DRG4FOOD, n.d.). Condition for pilot consortia applying to
+the incubator programme was the implementation of/adherence to the project’s guiding framework of the seven Digital
+Responsibility Goals (DRGs). These principles – including Digital Literacy, Cybersecurity, Privacy, Data Fairness, Trustworthy Algorithms, Transparency and Human Agency & Identity
+– provided the normative backbone for the pilot projects
+(Identity Valley, 2025; Meier et al., 2022). This governance
+structure enabled a real-world laboratory where diverse teams
+were explicitly tasked with navigating the inherent tensions
+of building responsible technology while competing under
+real-world market pressures.
+The DRG4FOOD programme was designed to be a causal
+factor in the innovative outcomes observed. By establishing
+digital responsibility as a key selection criterion for pilots and
+providing ongoing coaching and resources, the project aimed
+to create a distinct ecosystem conducive to responsible innovation (Ferroli et al., 2023). This environment incentivised and
+enabled teams to “invest” in resolving complex trade-offs,
+rather than defaulting to the path of least resistance often dictated by requirements of the market alone. The advanced solutions documented in the pilots – from cryptographic protocols of
+the consortium “PINACLE” to the comprehensive open-source
+governance of “Nutrisight” – suggest that the programme’s structure catalysed engagement with responsible design principles
+(Ferroli & Weich, 2025). In this context, this “incubator
+effect” helps understand the successful pilots not as isolated
+instances, but as potential outcomes of a deliberately created
+environment for responsible innovation.
+
+It follows
+DRG4FOO
+hacking” w
+resolve com
+from these
+requirement
+than opposi
+stakeholder
+this analys
+to concept
+forward fo
+technology
+
+Backgrou
+
+To systema
+pilots, this
+This sectio
+course, and
+subsequent
+
+Defining “
+Trade-off h
+ogy develo
+into an op
+tion that c
+than accep
+dilemma –
+moderately
+figure the p
+much as p
+flict into a
+positive-sum
+opers, and
+focuses on
+compromise
+
+Situating t
+The concep
+upon sever
+design and d
+
+The conce
+Value-Sensi
+for the pro
+into the e
+2008). The
+many produ
+between co
+sus the val
+VSD provid
+ues explici
+strategy.
+
+Furthermore
+in the em
+Building on
+structured
+
+O
+
+values into system design, grounded in the IEEE 7000
+standard. Unlike VSD, which provides a broader theoretical
+framework, VBE focuses on a traceable, step-by-step process
+that translates identified stakeholder values into concrete technical and organisational requirements, known as Ethical Value
+Requirements (EVRs) (Spiekermann & Winkler, 2022). By
+drawing from VSD, co-design, and software engineering,
+VBE provides a practical pathway for ensuring that ethical
+considerations are not just discussed but are systematically
+embedded and verified throughout the development life cycle.
+Aspects of trade-off hacking are also intertwined with participatory and co-design methodologies. These approaches involve
+stakeholders, particularly end-users, as active partners in the
+design process (Sanders & Stappers, 2008). As evidenced by
+several DRG4FOOD pilots, engaging users and domain experts
+directly is a powerful strategy for identifying and resolving
+value tensions. Stakeholders become allies in innovation, offering
+insights that can reveal novel, win-win solutions that a purely
+technical/product team might overlook. This transforms the
+resolution of trade-offs from a top-down technical decision
+into a collaborative, socio-technical negotiation (Sadek &
+Mougenot, 2024; Steinke et al., 2021).
+At the foundation of the DRG4FOOD approach stand the
+Digital Responsibility Goals (DRGs), a framework that
+reframes society’s relationship with technology by linking digital innovation to human values and trust (Meier et al., 2022).
+Much like the United Nations’ Sustainable Development
+Goals (SDGs) united global actors around a shared sustainability agenda, the DRGs provide a common orientation for a trustworthy digital transformation. Comprising seven interrelated
+goals – Digital Literacy, Cybersecurity, Privacy, Data Fairness,
+Trustworthy Algorithms, Transparency, and Human Agency
+& Identity – they serve as measurable reference points for
+responsible digital behaviour. In DRG4FOOD, this framework
+functioned as both governance scaffold and design compass,
+enabling project teams to translate ethical imperatives into
+concrete design requirements. The DRGs thus do not merely
+define abstract ideals but offer a normative structure through
+which tensions such as privacy versus personalisation or performance versus explainability can be more systematically
+addressed.
+
+Establishing the analytical framework of trade-offs
+The analysis in this paper is structured around three key tradeoffs that are recurrent in the literature and were prominently
+featured in the experiences of the DRG4FOOD pilots. These
+three dilemmas serve as thematic pillars for the multi-case
+analysis:
+Privacy vs. Personalisation: The tension between the need
+for user data to deliver tailored services and the imperative to
+protect users’ sensitive personal information (see e.g. Awad &
+Krishnan, 2006; Cloarec, 2020).
+Accuracy/Explainability vs. Performance: The conflict where
+the most accurate and powerful algorithmic/AI models, such
+
+as those b
+opaque and
+accountabil
+
+Security v
+security an
+cation or le
+frustrating
+them (Jacob
+
+Trade-off
+pilots
+
+The eight
+DRG4FOO
+case studies
+The DRG4
+projects as
+only the m
+decidedly a
+(as defined
+et al., 202
+admissible
+#2) out of
+Weich, 202
+bility was w
+them into
+conflicts al
+otherwise m
+
+The follow
+sented as
+but rather
+argument th
+yields repli
+progress in
+completely
+organised b
+this section
+and the prim
+
+Reconcilin
+collection
+The “perso
+where servi
+users are w
+& Sin, 200
+case a spec
+beyond sim
+These solu
+intervention
+architectura
+
+At the gov
+provides a
+tionally se
+multi-layere
+standard ba
+separating
+
+O
+
+Table 1. Overview of DRG4FOOD Pilot Projects and Key Trade-Offs.
+Project Name
+
+Core Functionality
+
+ATTESTED
+
+Farm-to-fork traceability system for small producers us
+IoT, RFID, and portable sensors.
+
+Cacao-Tech
+
+Cacao quality and traceability platform using near-infra
+technology and a tracking technology.
+
+DISH
+
+Personalised recipe application using machine learning
+and symbolic AI, focusing on user privacy.
+
+GENIE
+
+Ultra-personalised nutritional recommender based on
+genetic, gut microbiota, and blood test data.
+
+NutriSight
+
+AI tool to automatically extract nutritional information
+from food packaging photos for Open Food Facts.
+
+NutriWell
+
+AI-based personalised nutrition platform for elderly
+individuals, with a focus on social inclusion.
+
+PINACLE
+
+AI-driven nutrition recommender matching donated fo
+with recipients’ dietary needs using blockchain.
+
+SafeNutriKids
+
+AI-driven personalised nutrition education app for
+children aged 6–12.
+
+with a user-facing “data control panel”. This panel empowers
+users to actively manage their preferences in detail and opt out
+of data sharing at any time, shifting the dynamic from passive
+consent to active control.
+Moving to the architectural level, the DISH project demonstrates a different approach. To deliver personalised recipes,
+the team made deliberate architectural choice to store user profiles and persona information “on-device” only. By redesigning
+the data flow to avoid centralised collection of personal data,
+they effectively dissolve the privacy risk at its source. Personalisation is achieved through client-side processing, demonstrating that it is possible to deliver a tailored experience
+without extracting and aggregating sensitive data on a central
+server. This approach makes the trade-off less about balancing
+risks and more about eliminating them through system design.
+A more technologically focused approach is found in the
+PINACLE project, which leverages cryptographic methods
+to make the trade-off obsolete. PINACLE, which matches
+donated food with recipients’ needs, uses a combination of
+Self-Sovereign-Identity (SSI) principles, Verifiable Credentials
+(VCs), and Zero-Knowledge-Proofs (ZKPs). Zero-KnowledgeProofs are a cryptographic protocol that allows one party to
+prove to another that a statement is true without revealing
+any information beyond the validity of the statement itself
+(Garimella & Conway, 2024). In PINACLE’s context, this allows
+a food recipient to prove eligibility without disclosing sensitive information. This represents a significant shift: the conflict between verification (needed for personalisation/matching)
+and privacy is not balanced but is rendered virtually irrelevant.
+The system can verify a user’s dietary needs or status without ever “seeing” the underlying sensitive data. Paired with
+
+VCs, which
+data, this
+et al., 2021)
+
+Together, th
+dilemma is
+GENIE’s a
+about re-st
+graphially
+provides a
+the level of
+and the sens
+
+Explainab
+black box
+A central c
+dictive/gene
+function as
+(Hassija et
+barrier to
+domains lik
+strategies to
+accuracy –
+resorting to
+
+The NutriW
+plans for
+approach to
+strategically
+detailed, co
+including in
+tions behin
+entific pub
+
+O
+
+precision of its AI by showing users the percentage deviation
+between the generated meal plan and their initial nutritional
+requirements. This approach builds trust not by simplifying
+the underlying model, but by making its outputs transparent,
+verifiable, and comprehensible to the user.
+A different strategy is exhibited by NutriSight, which uses a
+neural model to extract nutritional data from images. The team
+resolved the explainability dilemma by implementing a robust
+“human-in-the-loop” validation system. Their setup ensures that
+every prediction is validated by a contributor before it is integrated into the Open Food Facts database. This is a pragmatic
+solution: It allows the project to leverage a high-performance,
+complex model, while relying on human oversight as the guarantor of accuracy and trustworthiness. Here, trust is not established through an explanation of the algorithm’s internal
+workings but through the human verification process itself.
+Finally, the DISH project chose an approach based on technology selection. The team uses methods from the domain of
+symbolic AI that allows reliable tracing of the computation
+process back to the original information sources. Unlike deep
+learning models, symbolic AI systems operate on more explicit
+rules and logic, making their “reasoning” inherently transparent and traceable (Attoresi, 2025; Yu et al., 2023). In this case,
+the trade-off is addressed at the foundational level by selecting an AI paradigm where explainability is a native property.
+This approach prioritises transparency, potentially trading a
+degree of predictive performance for comprehensibility.
+
+Integrating security and user experience
+Security and regulatory compliance are essential for any digital service, but their implementation often introduces friction
+that can negatively impact user experience, leading to frustration or non-compliance (Lennartsson et al., 2021). The pilots
+show that by treating security not as a technical checklist but
+as a user-centred design challenge from the beginning, it is
+possible to create systems that are both safe and seamless.
+The SafeNutriKids project faced a version of this dilemma, as
+it was designed for children, a vulnerable user group requiring
+high standards of data protection and parental consent. Their
+solution was to reframe these stringent compliance requirements
+as an opportunity for user-centric design. Instead of presenting
+parents with legalistic consent forms, the app communicates
+its data policy to children through age-appropriate, interactive
+explanations, using visual cues and simple language. This
+approach transforms a legal necessity into an engaging and
+educational feature. It enhances security by fostering genuine understanding and informed consent. While simultaneously
+improving the user experience for both children and parents.
+The Cacao-Tech project provides another example: The team’s
+traceability platform encountered early concerns from cocoa
+buyers about sharing competitively sensitive data regarding
+their farmers. A purely technical solution – e.g. simply stating
+that the data is encrypted – might not have been sufficient to
+
+build trust
+tion was th
+approach o
+users. By a
+holders in
+nisms, they
+secure but
+text of the
+alleviates t
+rity model
+validate, and
+
+Synthesis
+
+The insight
+sis that gro
+patterns for
+lutions and
+helps classi
+towards wi
+favourable
+more detail
+clear that
+more factor
+hand. In th
+Table 2 – c
+than a guide
+
+Technolog
+This catego
+conflicting
+tem. These
+rithms, or
+at its sour
+personalisat
+tectural cho
+on the user
+data transfe
+experience d
+
+Taking th
+project em
+Zero-Know
+system to v
+ever needin
+eligibility,
+vacy risks
+a successfu
+opting for
+“reasoning”
+explainabili
+arises, rathe
+fact. In eac
+of the system
+
+Governan
+This catego
+lenges that
+
+O
+
+Table 2. Overview of Trade-Off Hacking Patterns in DRG4FOOD Pilot
+Project Name
+
+Key Trade-off
+
+Resolution
+
+DISH
+
+Privacy vs. Personalisation /
+Explainability vs. Performance
+
+On-device data storage
+of inherently transpare
+
+PINACLE
+
+Privacy vs. Personalisation
+
+Zero-Knowledge Proofs
+
+GENIE
+
+Privacy vs. Personalisation
+
+User-facing data contro
+consent
+
+NutriWell
+
+Explainability vs. Performance
+
+“Info Points” in UI to ex
+recommendations
+
+SafeNutriKids
+
+Security vs. User Experience
+
+Interactive, age-approp
+mechanisms
+
+NutriSight
+
+Explainability vs. Performance
+
+Human-in-the-loop vali
+
+Cacao-Tech
+
+Security vs. User Experience
+
+Co-design of data shar
+stakeholders
+
+controls, and stakeholder collaboration. These solutions build
+trust not just through code, but though transparency, agency,
+and shared ownership of how the technology operates. A common pattern is empowering users with direct control. The
+GENIE project, handling extremely sensitive genetic and
+health data, implemented a user-facing “data control panel” that
+allows individuals to actively manage their sharing preferences,
+turning passive consent into active data governance. This
+focus on clarity and agency is also visible in how pilots
+approached the provision of complex information. Instead of
+dense legal text, SafeNutriKids transformed consent forms into
+age-appropriate, interactive explanations, making compliance
+more of an engaging experience. Similarly, NutriWell used
+“Info Points” within its interface to offer clear, contextual justifications for its AI’s nutritional advice, building user trust
+through transparency.
+Beyond individual user interfaces, governance-driven resolutions can also shape the operational process. The NutriSight
+project, for instance, uses AI to extract data but govern its
+use with a strict “human-in-the-loop” protocol, where every
+automated entry is validated by a person. Here, trustworthiness comes from the process, not the algorithm. The collaborative principle is also present in the Cacao-Tech project,
+which resolved data-sharing fears among competitors by
+co-designing the system with its stakeholders. By making the
+design process itself a “negotiation”, the final technology is
+shaped with the trust of its stakeholders.
+
+Discussion
+
+The analysis of the DRG4FOOD pilots and the emergent patterns of trade-off hacking carry some useful implications
+for practitioners, policymakers, and the financial institutions
+funding digital innovation.
+
+The role of the responsible technology incubator
+Above insights suggest that the structure of the DRG4FOOD
+project itself played a role in fostering these innovative solutions.
+
+By making
+tion and
+and created
+ing and res
+of whom a
+resources in
+sible incub
+Horizon Eu
+sible practi
+such progra
+but also e
+and user-ce
+This de-ris
+might othe
+commercial
+
+Implicatio
+For technol
+trade-offs
+win-win fo
+is a power
+The “Edelm
+series of gl
+that trust i
+ple, they f
+concerns a
+while a so
+user privacy
+or innovati
+This is exa
+a way of
+better optim
+federated l
+stays local
+profit from
+individual p
+cultivate th
+as “innovati
+
+O
+
+The patterns identified in this paper – from user-centric control
+panels to privacy-preserving cryptography – provide a more
+nuanced toolkit for responding to these prompts. This requires
+a dual skillset: the technical know-how to identify and
+implement technology-driven solutions and the “social skills”
+to guide governance-driven resolutions through co-design and
+transparent communication. Adopting an interdisciplinary
+approach, bringing in expertise from ethics, law, or social sciences in addition to engineering, is most effective for identifying
+and implementing those more holistic solutions.
+
+good user
+this framin
+in creating
+fore also r
+systems.
+
+Implications for policy-makers
+The experiences of the pilots indicate that regulations like the
+EU General Data Protection Regulation (GDPR), while sometimes perceived as burdensome, can act as powerful catalyst
+for innovation. The need to comply with stringent privacy
+and consent requirements pushed teams like SafeNutriKids
+and PINACLE to develop solutions that not only meet the legal
+requirements but also enhanced user trust and thereby created
+a USP and potential competitive advantage. This suggests that
+policy should not only set high standards for digital responsibility but also actively support the ecosystem needed to meet
+them. This includes fostering environments where innovators
+are encouraged and equipped to pursue the ongoing process of
+optimising trade-offs, funding research into privacy-preserving
+technologies, promoting the dissemination of successful
+design patterns, and fostering environments where innovators
+are encouraged and equipped to find smart, user-centric
+implementations of regulatory requirements.
+
+The experie
+tive proofs
+edging and
+digital tech
+anced or re
+personalisat
+complex AI
+able via hu
+and transpa
+out compr
+direct stakeh
+
+Limitations and future research
+This investigation is based on an analysis of eight pilot projects
+within a specific, EU-funded programme. While this provides
+a coherent dataset, the findings are not generalisable to all contexts and serve primarily as a mental stepping stone to facilitate deeper conversations about re-thinking digital technology
+development. The “incubator effect” through the DRG4FOOD
+funding regime was a factor itself that steered outcomes in a
+preferred direction. Without it these solutions are likely less
+common in projects developed under different incentive structures. Future research should include longitudinal studies to
+track the long-term success and scalability of these “hacked”
+solutions in the market. Comparative analyses of projects developed outside of a “responsible incubator” context is needed to
+determine the real extent to which these patterns are adopted
+organically. Further investigation into the practical implementation of the emergent patterns, particularly the organisational and technical requirements for implementing effective
+technology- or governance-driven “hacks”, would be a rewarding
+path for future work.
+
+By adoptin
+creative an
+developmen
+into both-an
+
+A key cont
+distinct typ
+how such
+The first,
+trade-offs o
+second, go
+transparent
+socio-techn
+
+For practiti
+hacking is
+fronting the
+center of
+achievable,
+process of
+essential ing
+
+Ethics an
+
+Ethical appr
+
+Declarati
+Declaratio
+technolog
+
+During the
+(GPT-5) fo
+After using
+tent and
+published ar
+
+Conclusion
+
+In the pursuit of a data-driven food system that is sustainable, healthy and fair, it is tempting to view digital technology as a rigid means to an end: that we must choose between
+personalisation and privacy, performance and transparency or
+
+Data ava
+
+No data a
+generated o
+
+O
+
+References
+Attoresi M: Neuro-symbolic Artificial Intelligence. European data protection
+supervisor, 2025.
+Reference Source
+Awad NF, Krishnan MS: The personalisation privacy paradox: an empirical
+evaluation of information transparency and the willingness to be profiled
+online for personalisation. MIS Quarterly. 2006; 30(1): 13–28.
+Publisher Full Text
+Chellappa RK, Sin RG: Personalization versus privacy: an empirical
+examination of the online consumer’s dilemma. Inf Technol Manag. 2005;
+6(2–3): 181–202.
+Publisher Full Text
+Cloarec J: The personalisation-privacy paradox in the attention economy.
+Technol Forecast Soc Change. 2020; 161: 120299.
+Publisher Full Text
+Crook B, Schlüter M, Speith T: Revisiting the performance-explainability
+trade-off in Explainable Artificial Intelligence (XAI). In: 2023 IEEE 31st
+International Requirements Engineering Conference Workshops (REW). 2023;
+316–324.
+Publisher Full Text
+Detopoulou P, Voulgaridou G, Moschos P, et al.: Artificial Intelligence,
+nutrition, and ethical issues: a mini-review. Clin Nutr Open Sci. 2023; 50:
+46–56.
+Publisher Full Text
+Donovan SM, Abrahams M, Anthony JC: Perspective: challenges for
+personalized nutrition in the current United States regulatory framework
+and future opportunities. Adv Nutr. 2025; 16(3): 100382.
+PubMed Abstract | Publisher Full Text | Free Full Text
+DRG4FOOD: About. European Union Horizon Europe project. (n.d.).
+Reference Source
+Edelman: 2024 Edelman trust barometer. 2024.
+Reference Source
+Ellahi RM, Wood LC, Bekhit AEA: Blockchain-based frameworks for food
+traceability: a systematic review. Foods. 2023; 12(16): 3026.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Ferroli F, Hermsen K, Talmoudi K: Governance concept for digital
+responsibility. Zenodo. 2023.
+Publisher Full Text
+
+Identity V
+Referenc
+
+Jacobs D,
+and priv
+Publishe
+
+Lennarts
+security
+Publishe
+
+Loftus TJ,
+data priv
+20552076
+PubMed
+
+Meier JJ, H
+for a hum
+digital so
+PubMed
+
+Reis AA, M
+Intellige
+Referenc
+
+Sadek M,
+from AI p
+10877–10
+Publishe
+
+Sanders
+CoDesign
+Publishe
+
+Sedlmeir
+credenti
+Publishe
+
+Spiekerm
+Electronic
+Publishe
+
+Steinke J,
+innovati
+practice.
+Publishe
+
+Ferroli F, Weich S: DRG4FOOD digital responsibility report 2023/2024.
+DRG4FOOD Project, January, 2025.
+Reference Source
+
+Van Der V
+explaina
+Med Infor
+PubMed
+
+Friedman B, Kahn PH, Borning A: Value sensitive design and information
+systems. In: The Handbook of Information and Computer Ethics. 2008; 69–101.
+Publisher Full Text
+
+Wu X, On
+precision
+PubMed
+
+Garimella KK, Conway D: Zero-knowledge proofs and privacy: a technical
+look at privacy. In: Technology, work and globalization. 2024; 157–179.
+Publisher Full Text
+
+Xu H, Luo
+explorat
+marketin
+Publishe
+
+Hassija V, Chamola V, Mahapatra A, et al.: Interpreting black-box models:
+a review on explainable Artificial Intelligence. Cognit Comput. 2023; 16(1):
+45–74.
+Publisher Full Text
+
+Yu D, Yan
+Neural Ne
+PubMed
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 03 February 2026
+
+https://doi.org/10.21956/openreseurope.23550.r68250
+
+© 2026 Vargas-Canales J. This is an open access peer review report d
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Juan Manuel Vargas-Canales
+Universidad de Guanajuato, Salvatierra, Mexico
+
+Trade-off hacking: Have the cake and eat it too? Turn
+in data-driven food technology
+
+General comments:
+The work addresses a real and highly topical probl
+However, there are some areas that need improve
+○
+
+Abstract
+It is not specified how the pilot projects were expli
+○
+
+Introduction
+This section contains statements heavily biased tow
+preferable for it to be more neutral.
+○
+
+Background
+Trade-off hacking: this concept should be expande
+beneficial to explore the issues further.
+Regarding the trade-offs, it would be helpful to exp
+○
+
+○
+
+Trade-off hacking: vignettes from the DRG4FOOD pilo
+This section would be strengthened if it were more
+advisable to include failures, unresolved tensions,
+○
+
+Synthesis: Two patterns of trade-off hacking
+In this section, it would be advisable to delve deep
+patterns. It should be more critical.
+○
+
+Open Research Europe
+
+O
+
+Discussion
+This section seems too closely aligned with the pro
+needed; otherwise, there is a risk of analytical bias
+What would happen if an attempt were made to re
+important to consider? What happens outside the
+○
+
+Conclusions
+This section is very encouraging. It shows a positiv
+○
+
+Is the background of the case’s history and progressio
+Partly
+
+Is the work clearly and accurately presented and doe
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Not applicable
+
+Are all the source data underlying the results availab
+No source data required
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Is the case presented with sufficient detail to be usefu
+Partly
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Economy, innovation, technological c
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 13 Feb 2026
+
+Ferdinand Ferroli
+
+Thank you for the constructive feedback. The manusc
+clarity, balance, and critical reflection. Abstract
+The description of how pilot material was analysed ha
+approach, data basis, and main analytical process mo
+The tone has been revised to be more neutral and ana
+language. Background (trade-off hacking and trade
+The conceptual discussion of trade-off hacking has be
+
+Open Research Europe
+
+O
+
+has been added for focusing on the three main tradeA stronger critical dimension has been added through
+and aspects that may remain challenging in practice.
+More explicit reflection has been included on the limit
+patterns. Discussion
+The critical analysis has been deepened, including ref
+implementation settings. Conclusions
+The conclusion has been revised to a more cautious fr
+of limits and open questions.
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 03 February 2026
+
+https://doi.org/10.21956/openreseurope.23550.r65045
+
+© 2026 Galanakis C. This is an open access peer review report distrib
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Charis M Galanakis
+Galanakis Laboratories, Chania, Greece
+
+This study aims to reconceptualise ethical and functional
+technologies through the lens of “trade-off hacking,” shif
+innovation-oriented, user-centric solutions. By analysing
+projects, it identifies recurring tensions (privacy versus p
+explainability, and security versus user experience). It sys
+addressed in practice. The main outcome is a typology of
+distinguishes technology-driven from governance-driven
+responsibility, and performance can be mutually reinforc
+empirically grounded, and offers a compelling, well-argu
+innovation and is highly commendable.
+1. Clarify the methodological approach more explicit
+sources, and analytical steps, to strengthen transp
+readers better assess the robustness and transfera
+2. Provide a more apparent justification for focusing
+whether other relevant tensions were considered o
+shape interpretations and limit the generalisability
+3. Expand the discussion of limitations by more critic
+introduced by the responsible incubator setting, fu
+and how these factors might affect applicability ou
+markets.
+4. Include more concrete comparative analysis acros
+synthesis table or metrics, to better demonstrate t
+
+Open Research Europe
+
+O
+
+strategies and avoid an overly descriptive, narrativ
+impacts observed.
+5. Add clearer implications for practitioners by transl
+design guidance or decision criteria, helping devel
+technological solutions versus governance-driven
+including scale, cost, and maturity levels.
+
+Is the background of the case’s history and progressio
+Yes
+
+Is the work clearly and accurately presented and doe
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Not applicable
+
+Are all the source data underlying the results availab
+Partly
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Is the case presented with sufficient detail to be usefu
+Yes
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: food security; food waste
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 13 Feb 2026
+
+Ferdinand Ferroli
+
+Thank you for the positive and helpful review. The ma
+the main suggestions.
+1. Methodological transparency
+The methodological approach is now presented
+selection, evidence sources, and analytical step
+2. Why three trade-offs
+Clearer justification has been added for focusin
+the scope implications of this choice are now ac
+3. Limitations and transferability
+The limitations discussion has been expanded,
+
+Open Research Europe
+
+O
+
+contextual influences and on transferability bey
+environments.
+4. Cross-case comparison
+Comparison remains qualitative in this version;
+were introduced due to the exploratory design
+This is now stated as a limitation and identified
+5. Implications for practice
+Practitioner-oriented guidance has been refine
+actionable under real-world constraints.
+
+Competing Interests: No competing interests were di
+
+

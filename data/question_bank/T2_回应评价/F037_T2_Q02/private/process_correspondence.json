@@ -1,0 +1,63 @@
+{
+  "task_id": "F037_T2_Q02",
+  "paper_id": "F1000:167245",
+  "parent_task": "T3_F037_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F037_R1/input.json",
+  "parent_input_sha256": "c0645489611678771777cd7ba61aaf9fa3a30157b981d3205674bd570eefcd1d",
+  "review_dimension_AI_candidate": "样本构成与招募说明",
+  "selection_scope": "评审明确问是否跨学科招募；答复给出修改后句子，仍不自动提供具体招募方法。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/167245_It_s_complicated__staff_experiences_of_academic_integrity_at_a_Mauriti/v1_manuscript.pdf",
+      "original_sha256": "2edc0de94edd1b0fc374c15851f1ab9334f38287ae06f5a40f2d47d897299ec9",
+      "raw_text_file": "data/question_bank/T2_回应评价/F037_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        47284,
+        47531
+      ],
+      "report_id": "443820",
+      "date": "2026-01-06",
+      "raw_page_numbers": [
+        12
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/167245_It_s_complicated__staff_experiences_of_academic_integrity_at_a_Mauriti/v1_manuscript.pdf",
+      "original_sha256": "2edc0de94edd1b0fc374c15851f1ab9334f38287ae06f5a40f2d47d897299ec9",
+      "raw_text_file": "data/question_bank/T2_回应评价/F037_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        49019,
+        49190
+      ],
+      "report_id": null,
+      "date": "2026-01-06",
+      "raw_page_numbers": [
+        13
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 14595,
+    "end": 15139,
+    "exact_quote": "resenting professional staff at the director,\nmanager, and administrative level. The academic staff focus group included six participants from all faculty members.\nI led the discussions in both focus group sessions and, at that time, had already identified potential themes. Yet, as a\nqualitative researcher, I intentionally suspended judgments and allowed time to pass between the sessions and reading of\nthe transcripts. In alignment with Tisdell, Merriam and Stuckey-Peyrot (2025), I adopt a bracketing approach to\ntemporarily set aside bias",
+    "anchor_matches": 1,
+    "anchor": "focus group included six"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 16489,
+    "end": 17022,
+    "exact_quote": "r,\nmanager, and administrative level. The academic staff focus group included six participants from all faculties.\n\n\n\nI led the discussions in both focus group sessions and, at that time, had already identified potential themes. Yet, as a\nqualitative researcher, I intentionally suspended judgments and allowed time to pass between the sessions and reading of\nthe transcripts. In alignment with Tisdell, Merriam and Stuckey-Peyrot (2025), I adopt a bracketing approach to\ntemporarily set aside biases, prejudices, and assumptions. Th",
+    "anchor_matches": 1,
+    "anchor": "all faculties"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "所核招募句由含混的all faculty members改为all faculties；这只澄清构成，不证明具体招募流程。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

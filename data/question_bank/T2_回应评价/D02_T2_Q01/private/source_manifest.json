@@ -1,0 +1,126 @@
+{
+  "task_id": "D02_T2_Q01",
+  "paper_id": "ORE:1-150",
+  "dev_id": "D02",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/round_1/v1_review_01_APPROVED_WITH_RESERVATIONS_Ross_S_Bailie_2022-01-13.txt",
+      "sha256": "10c382ab9baf1b79d25f9bf5466773d58a15be64f36bc443664be869b6a84c35",
+      "locator_lines": [
+        10,
+        17
+      ],
+      "locator_chars_half_open": [
+        358,
+        2195
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/round_1/v1_review_01_author_response_1_author.txt",
+      "sha256": "36b3e8b48e7157e1c2af7b05b5e54841003717dd029990361a7035ed50da3c30",
+      "locator_lines": [
+        6,
+        6
+      ],
+      "locator_chars_half_open": [
+        117,
+        349
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/round_1/v1_review_01_APPROVED_WITH_RESERVATIONS_Ross_S_Bailie_2022-01-13.txt",
+      "source_sha256": "10c382ab9baf1b79d25f9bf5466773d58a15be64f36bc443664be869b6a84c35",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "10c382ab9baf1b79d25f9bf5466773d58a15be64f36bc443664be869b6a84c35",
+      "source_char_range_half_open": [
+        358,
+        2195
+      ],
+      "source_line_range_inclusive": [
+        10,
+        17
+      ],
+      "selected_text_before_cleaning": "This data note introduces a survey of five 'research performing organisations' that are involved in a project to embed sustainable responsible research and innovation practices. The paper is generally well-written. There are few points that should be addressed before the data note can be approved:\nThe links to the Researcher Survey and the Stakeholder Survey data show documents that appear to be identical with both being labelled 'Researcher Survey'. This needs to be corrected.\nIn the Materials and Methods section the subheadings should be refined/corrected - the text under the subheading 'Research Instrument Design'  refers to sampling of respondents and collection of the data, while info on the instrument design appears under the previous subheading. This could be fixed by removing the two level 1 subheadings and including a new subheading on 'Data Collection'.\nThe data Note could be improved by including information on inclusion/exclusion criteria for the sampling process.\nThe note could also be improved by clarification of the reference to 'department or institution wide requests for information' (in the paragraph labelled 'Sampling').\nThe Plain Language Summary refers to 'a pilot effort to implement these surveys', but there is no reference to this being a pilot in other sections of the note. It should be made clear if this was or was not a pilot study, and if so what were the aims and objectives of the pilot study.\nIt would be useful to include some commentary on lessons learned from this initial 'baseline' survey, what refinements have been or should be made to the survey methods and tools, and the extent to which the survey design and survey implementation are considered fit-for-purpose.\nI suggest the title of the Data Note should be refined to more closely reflect the aim/purpose of the Data Note.",
+      "input_segment_after_cleaning": "This data note introduces a survey of five 'research performing organisations' that are involved in a project to embed sustainable responsible research and innovation practices. The paper is generally well-written. There are few points that should be addressed before the data note can be approved:\nThe links to the Researcher Survey and the Stakeholder Survey data show documents that appear to be identical with both being labelled 'Researcher Survey'. This needs to be corrected.\nIn the Materials and Methods section the subheadings should be refined/corrected - the text under the subheading 'Research Instrument Design'  refers to sampling of respondents and collection of the data, while info on the instrument design appears under the previous subheading. This could be fixed by removing the two level 1 subheadings and including a new subheading on 'Data Collection'.\nThe data Note could be improved by including information on inclusion/exclusion criteria for the sampling process.\nThe note could also be improved by clarification of the reference to 'department or institution wide requests for information' (in the paragraph labelled 'Sampling').\nThe Plain Language Summary refers to 'a pilot effort to implement these surveys', but there is no reference to this being a pilot in other sections of the note. It should be made clear if this was or was not a pilot study, and if so what were the aims and objectives of the pilot study.\nIt would be useful to include some commentary on lessons learned from this initial 'baseline' survey, what refinements have been or should be made to the survey methods and tools, and the extent to which the survey design and survey implementation are considered fit-for-purpose.\nI suggest the title of the Data Note should be refined to more closely reflect the aim/purpose of the Data Note.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/round_1/v1_review_01_author_response_1_author.txt",
+      "source_sha256": "36b3e8b48e7157e1c2af7b05b5e54841003717dd029990361a7035ed50da3c30",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "36b3e8b48e7157e1c2af7b05b5e54841003717dd029990361a7035ed50da3c30",
+      "source_char_range_half_open": [
+        117,
+        349
+      ],
+      "source_line_range_inclusive": [
+        6,
+        6
+      ],
+      "selected_text_before_cleaning": "Thanks very much for your helpful and constructive feedback! I have submitted an updated version of this article. Further details about this data have also been added to the Open Access Repository: https://zenodo.org/record/6914524.",
+      "input_segment_after_cleaning": "Thanks very much for your helpful and constructive feedback! I have submitted an updated version of this article. Further details about this data have also been added to the Open Access Repository: [repository/link]",
+      "cleaning_edits": [
+        {
+          "source_segment_chars": [
+            198,
+            232
+          ],
+          "before": "https://zenodo.org/record/6914524.",
+          "after": "[repository/link]",
+          "reason": "保留存在外链的声明，阻止通过链接获取题外材料"
+        }
+      ],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [
+    {
+      "pdf_source": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/v1_manuscript.pdf",
+      "pdf_sha256": "87585a5fa106095b1143633cb5cc3ac70d1edcfb5682f1ad054e325bed3f4a79",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_1-150/private/extracted/S008.txt",
+      "matched_response_start": 16950,
+      "author_header_start": 16909,
+      "author_header": "Author Response 05 May 2023 Eric Jensen Thanks very much for your helpful and constructive feedback! I have submitted an updated version of",
+      "pdf_page_at_match": [
+        6
+      ],
+      "author_block_end": 17244,
+      "match_context": "Author Response 05 May 2023\n\nEric Jensen\nThanks very much for your helpful and constructive feedback! I have submitted an updated\nversion of this article. Further details about this data have also been added to the Open\nAccess Repository: https://zenodo.org/record/6914524.\nCompeting Interests: No competing interests were disclosed.\n\n"
+    },
+    {
+      "pdf_source": "data/originals/ore/social_sciences/1-150_Evaluating_researcher_and_stakeholder_perspectives_on_socially_respons/v2_manuscript.pdf",
+      "pdf_sha256": "e9bed0d8053d6a93d38a48062b9c1d1b4b4a10b55f37d866947008f9448565d8",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_1-150/private/extracted/S009.txt",
+      "matched_response_start": 29805,
+      "author_header_start": 29764,
+      "author_header": "Author Response 05 May 2023 Eric Jensen Thanks very much for your helpful and constructive feedback! I have submitted an updated version of",
+      "pdf_page_at_match": [
+        11
+      ],
+      "author_block_end": 30099,
+      "match_context": "Author Response 05 May 2023\n\nEric Jensen\nThanks very much for your helpful and constructive feedback! I have submitted an updated\nversion of this article. Further details about this data have also been added to the Open\nAccess Repository: https://zenodo.org/record/6914524.\nCompeting Interests: No competing interests were disclosed.\n\n"
+    }
+  ],
+  "role_verification": "已读完整所选原关切与整个对应答复。与原PDF附后有日期的Author Response区块核对，未只凭TXT文件名判角色。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "564827554272b221afab1b4e5b29bd8b424bf624a31b2b93bb3e36888cbb8d48",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.318550+08:00"
+}

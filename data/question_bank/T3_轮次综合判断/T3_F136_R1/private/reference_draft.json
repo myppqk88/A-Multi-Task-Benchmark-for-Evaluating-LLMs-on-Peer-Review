@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F136_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "指标构建",
+    "模型与非线性",
+    "研究增量"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对双阶段PCA相对熵权/CFA的方法理由、非线性检验和宏观审慎调节是否确有新增分析与表格支持。",
+    "摘要列出贡献与引言增加假设不是检验已经成立，仍须结合2015—2023面板设计和系统GMM限制评价。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Thank you for inviting me to review the current manuscript.\nFrom my point of view, this is a very interesting topic and a good attempt. I advise the author(s) to\ncontinue. Some comments should be taken seriously. I hope that these comments will help to\nimprove the document even more.\n1. The abstract must contain the main contributions.\n2. I think the introduction should state the novelty of the pa",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you very much for dedicating your time and effort to reviewing our work, particularly\nfor your prompt review report. Your insightful comments will undoubtedly enhance the\nquality of our manuscript. We have taken your comments to heart and will carefully address\neach of the five main points you raised in the revised version of this article. We look forward\nto your thoughts on the revisions we have made.\n\n\n[Next author respon",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "should address this gap. Lastly, upcoming research could gain from the application of alternative data-driven methodologies, such as CFA.\n5. Conclusion and policy implication\nFinancial inclusiveness has increasingly become a focal point for policymakers, practitioners, and economists due to its\npotential to drive inclusive growth. Despite numerous efforts by policy makers and international financial institutions to\nbolster bank stability and inclusivity, the relationship between FI and bank stability remains contentious and inconsistent\nin existing literature. This study addresses this gap by examining the impact of FI on bank stability within the Ethiopian\ncontext. Using panel data from seventeen commercial banks over the period 2015-2023, the researchers employed a twostage PCA to develop FI index based on ten Convensional and five digital indicators. The effects of FI on bank stability\nwere analyzed using a two-step robust System GMM approach, complemented by Granger causality tests",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "more robust approach to validating nonlinearity than conventional quadratic models; (iv), this study introduces\nmacroprudential regulation as a moderating factor, a dimension largely overlooked in low-income economies. The\nfindings illustrate that while capital adequacy strengthens stability at moderate FI levels, its mitigating effects diminish\nbeyond a certain threshold, signaling the need for more adaptive regulatory frameworks. Third, in response to concerns\nregarding reverse causality, the study employs Dumitrescu-Hurlin (2012) and Juodis et al. (2021) Granger causality tests,\nproviding empirical evidence on the directional nexus between FI and stability. Finally, the study extends its impact\nbeyond academic discourse by offering contextual actionable strategies to optimize FI expansion without compromising\nfinancial stability.\n5.2 Policy implication\nThe policy implications are profound. To promote both FI and stability, policymakers should focus on expanding\ndemographic and geogr",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "diversifies risk and contributes to higher Z-scores and lower NPL ratios, key indicators of bank stability. These studies\ncollectively highlight how extending credit to SMEs serves as a buffer against financial instability by diversifying loan\nportfolios and reducing concentrated risk exposure.\nAhamed and Mallick (2019) extended this argument by analyzing a global dataset of 2635 banks in 86 countries. Using\ntwo-step system GMM, they posited that FI enhances stability by increasing customer deposits and lowering marginal\nbanking costs, with the effectiveness of these benefits being contingent on institutional quality. They highlight the role of\na robust institutional framework in ensuring that FI does not devolve into unchecked risk-taking. In this context, the study\nimplicitly warns against viewing FI initiatives in a silo, devoid of regulatory oversight or institutional support. Similarly,\nHannig and Jansen (2010) emphasized the role of robust institutional frameworks in ensuring tha",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Ahamed and Mallick (2019) extended this argument by analyzing a global dataset of 2635 banks in 86 countries. Using\ntwo-step system GMM, they posited that FI enhances stability by increasing customer deposits and lowering marginal\nbanking costs, with the effectiveness of these benefits being contingent on institutional quality. They highlight the role of\na robust institutional framework in ensuring that FI does not devolve into unchecked risk-taking. In this context, the study\nimplicitly warns against viewing FI initiatives in a silo, devoid of regulatory oversight or institutional support. Similarly,\nHannig and Jansen (2010) emphasized the role of robust institutional frameworks in ensuring that FI initiatives do not\nlead to unchecked risk-taking, a finding also supported by Sethy and Goyari (2022) in their study of South Asian\ncountries, where FI was found to be a key driver of long-term stability.\nIn general, based on the observed nonlinear impact of inclusive finance on financial s",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

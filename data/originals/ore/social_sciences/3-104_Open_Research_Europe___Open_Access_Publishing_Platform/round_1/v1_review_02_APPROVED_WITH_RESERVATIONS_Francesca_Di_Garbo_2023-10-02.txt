@@ -1,0 +1,61 @@
+Article: Open Research Europe | Open Access Publishing Platform
+DOI: 10.12688/openreseurope.16141.1
+Version: 1
+Reviewer: Francesca Di Garbo
+Status: approved with reservations
+Date: 2023-10-02
+Report ID: 33110
+============================================================
+
+Summary and general comments
+This paper introduces two novel techniques for computing distances between languages. The two distance metrics created through these techniques are a measure of topographic distance and one of walking distance between language communities. The paper illustrates the technical implementation of the two measures and shows how they can be used to study linguistic areality and contact effects from a typological perspective. The accuracy of the two metrics is compared against two distance metrics previously used in typological studies of language contact: Euclidean distance and geodesic distance. The four metrics are applied to three existing typological databases, each focusing on linguistic features of three established linguistic areas: the Hindu-Kush, Europe, and South America. The studies show that the choice of distance metric can significantly affect the type of generalizations that be drawn from a model, and that it is hard to establish a priori which measure would work best to capture areality effects in a given dataset. The results presented in the paper suggest that, in general, topographic and geodesic distance perform most consistently across the three datasets.
+The paper makes an important methodological contribution to the study of spatial effects on the distribution of linguistic diversity. Firstly, because it enriches the range of methods typologists can use to control for areal biases in the distribution of structural properties of languages. Secondly, because the method offers a promising new way to account for areality bottom-up. This is especially crucial not only for the purpose of bias control, but also for detecting linguistic areas and/or areality effects in an exploratory fashion, for instance by testing hypotheses about the areal spread of given linguistic phenomena independently of pre-established areal groupings.
+I would encourage the authors to develop a bit more on this second point, which does not emerge so neatly from the current version of the text, but, which, I believe, is of great potential for linguistic typology. Have the authors thought, for instance, about applying their new measures to the newly published
+Grambank dataset
+? This newly released database, the largest worldwide typological database to date, could offer an important test ground to further test the validity of the two distance metrics and, more generally, to detect areality effects bottom-up.
+In addition to the above-mentioned suggestion, I have a number of more minor comments and suggestions of revision, which are highlighted below.
+Minor comments and suggestions
+Abstract
+"We evaluate these distance metrics on three case studies and show
+that topographic distance tends to outperform the other distance
+metrics, but geodesic distances can be used as an adequate a
+pproximation in some cases."
+This passage can be a bit misleading (when compared to the rest of the paper). It seems to imply that topographic distance is consistently better than the other three measures, while, in fact, depending on the model and the phenomena at stake, things can vary. I would suggest the authors to rephrase this passage by framing things in line with what stated in the concluding section (cf.
+From the four distances, the
+topographic and geodesic distances showed the most consistent
+performance across datasets, and would be likely to
+be reasonable first choices. At the same time, in most cases,
+the Euclidean distances were not much worse than the other distances, and might be a good enough approximation in cases
+for which performance is critical, or the dataset cover very
+large areas, and the point-location information is not very
+precise.
+)
+Page 3
+"Section 5.4
+describes a case study on
+modelling potential contact with the different datasets."
+In the abstract, and in the rest of the paper, the modelling study is presented as a series of three independent case studies. Please rephrase in order to make things consistent.
+Page 6
+Figure 2. European languages > Hindu-Kush languages
+Page 8, about the interpretation of Table 2 and of the European case study
+"However, for those features that do show areal
+patterns, both the Euclidean and topographic distances outperform
+the geodesic and walking distance metrics."
+Is this really the case? Unless I interpret things wrongly, judging from Table 2, it seems that it is the topographic and geodesic distances that outperform the other distance measures in this case. Could you please clarify?
+
+
+--- Structured Questions ---
+
+Q: Is the rationale for creating the dataset(s) clearly described?
+A: Yes
+
+Q: Are the protocols appropriate and is the work technically sound?
+A: Yes
+
+Q: Are sufficient details of methods and materials provided to allow replication by others?
+A: Yes
+
+Q: Are the datasets clearly presented in a useable and accessible format?
+A: Yes
+
+Areas of research: Linguistic diversity, linguistic typology, language contact

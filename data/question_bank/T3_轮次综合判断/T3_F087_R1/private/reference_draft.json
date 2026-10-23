@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F087_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "综述方法定位",
+    "概念性主张",
+    "模型呈现"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者将严格系统综述改定位为整合性理论综合；核对摘要、方法及结论是否一致，不能继续按穷尽性系统综述宣称覆盖。",
+    "核对概念性命题、现有文献支持和模型图标识是否区分；合理改研究定位不等于可以免除透明说明。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The manuscript presents a theoretically robust and well-structured review that engages\nsubstantively with contemporary literature on mathematics teacher professional knowledge and\nidentity. The topic is discussed in a largely comprehensive manner within a clearly defined\ntheoretical boundary, offering an integrative synthesis rather than an exhaustive mapping of all\npossible perspectives. Factual ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nWe sincerely thank you for your words and for the time and care you devoted to reading\nour manuscript and for providing detailed, constructive feedback. Let me respond, by using\nyour letter as a template, to each requirement and evaluative remark. For ease of review,\nI’ve indicated where changes were implemented by referencing the relevant sections of the\nrevised manuscript. I’ll proceed to address each requirement.\n1. Methodolog",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "In recent decades, there has been growing interest in understanding and conceptualizing the professional profile and identity\nof mathematics teachers. This interest stems from the need to\nimprove teacher education, promote more effective teaching\npractices, and respond critically to contemporary educational\nchallenges. In this context, the notion of “teacher profile” refers\nto the observable and classifiable characteristics of teachers—\nsuch as knowledge, competencies, and practices—while “teacher\nidentity” refers to how teachers perceive and construct themselves professionally through interaction with their social and\ninstitutional environments.\nTraditionally, these two constructs have been studied in\nparallel but separately: research on what teachers know and do\nhas evolved independently from research on who teachers are\nand how they define themselves. This has resulted in a persistent\nmethodological and conceptual fragmentation that hinders a\ncomprehensive understanding of teacher d",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "comprehensive understanding of teacher development (Lutovac\n& Kaasila, 2019). As a consequence, the field still lacks robust\nframeworks capable of integrating knowledge, beliefs, and\nidentity in a coherent way that informs teacher education.\nThis article presents a review article of theoretical and critical nature, offering a synthetic and interpretative analysis of\nexisting models of teacher knowledge and identity within\nmathematics education. Building on a comparative review of\nestablished frameworks—such as the Mathematics Teacher’s\nSpecialized Knowledge (MTSK) model, communities of practice theory, and sociocultural approaches to identity—the article introduces a novel conceptual model that articulates both\nconstructs in an interdependent structure. This review adopts an\nintegrative lens that seeks to overcome conceptual fragmentation and contribute a coherent structure for guiding both research\nand educational practice.\nDespite advances in both areas of study, several open questio",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nThis article proposes an integrative theoretical model that articulates\nthe interdependence between teacher professional knowledge and\nidentity in mathematics education. Based on a systematic review of\nnational and international approaches, it distinguishes the\nprofessional profile—defined by observable competencies and\nknowledge—from identity, which is constructed in a situated,\ndynamic, and reflective manner. The study draws on the MTSK model,\nWenger’s theory of communities of practice, and the identity\nframework by Van Zoest and Bohl. It incorporates recent\ncontributions on professional noticing, teacher beliefs, self-regulation,\nsituational awareness, and context transfer. The resulting IPD model\ngraphically represents this interdependence, offering a coherent\nframework for analysing teacher education pathways, professional\ndecisions, and classroom practices. From a critical perspective, the\narticle concludes that addressing identity and profile jointly enables\nthe design ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nThis article proposes an integrative theoretical model that articulates\nthe interdependence between teacher professional knowledge and\nidentity in mathematics education. An integrative theoretical synthesis\nof national and international approaches, it distinguishes the\nprofessional profile—defined by observable competencies and\nknowledge—from identity, which is constructed in a situated,\ndynamic, and reflective manner. The study draws on the MTSK model,\nWenger’s theory of communities of practice, and the identity\nframework by Van Zoest and Bohl. It incorporates recent\ncontributions on professional noticing, teacher beliefs, self-regulation,\nsituational awareness, and context transfer. The resulting PIK model\ngraphically represents this interdependence, offering a coherent\nframework for analyzing teacher education pathways, professional\ndecisions, and classroom practices. Methodologically, this paper is\npositioned as an integrative theoretical synthesis: it follows a\nstructured",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

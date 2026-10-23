@@ -1,0 +1,27 @@
+{
+  "task_id": "F024_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "测量与变量",
+    "结论外推"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认不能追补资助方要求、地理与职业阶段资料，并称修正代码本。不能强迫补采无法追回的信息，但应限制外推；核对新旧代码本及停止规则而非照“已更新”判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "This research aims to gain insights into open science practices in six broad disciplinary areas by\nasking researchers about the potential to practice open science behaviours in relation to a past\nproject. Thirteen different open science behaviours are included, which give a comprehensive view\nof open science rather than just publishing related activities.\nThe rationale for the study is good and as",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you as well for the constructive comments. I will respond to your comments\nchronologically:\n1. We agree that it would have been interesting to have data on the mandates of\nfunders or institutions. Unfortunately, we can't collect this data a posteriori. However,\nthere is first evidence that mandates at the level of the research institution do not\nnecessarily have the greatest impact on researchers' open science practices. For\nexample, the existence of a research data policy at a research i",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,116 @@
+{
+  "task_id": "D12_T2_Q01",
+  "paper_id": "ORE:3-166",
+  "dev_id": "D12",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/round_1/v1_review_01_NOT_APPROVED_REJECTED_Martin_Henning_2024-01-02.txt",
+      "sha256": "1d8bf29aa812150ffecbff317dd934beac082e04776ea7f61a00d8733f268ea3",
+      "locator_lines": [
+        18,
+        18
+      ],
+      "locator_chars_half_open": [
+        3730,
+        3939
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/round_1/v1_review_01_author_response_1_author.txt",
+      "sha256": "d936931abb5160d6fa63772dfddf125a53233ef47a50ad48d993464652204038",
+      "locator_lines": [
+        26,
+        28
+      ],
+      "locator_chars_half_open": [
+        7925,
+        9266
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/round_1/v1_review_01_NOT_APPROVED_REJECTED_Martin_Henning_2024-01-02.txt",
+      "source_sha256": "1d8bf29aa812150ffecbff317dd934beac082e04776ea7f61a00d8733f268ea3",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "1d8bf29aa812150ffecbff317dd934beac082e04776ea7f61a00d8733f268ea3",
+      "source_char_range_half_open": [
+        3730,
+        3939
+      ],
+      "source_line_range_inclusive": [
+        18,
+        18
+      ],
+      "selected_text_before_cleaning": "It would also be good if the authors explained whether the patterns could be taken to be general – or are the results a feature of the regions/countries that selected themselves into the university initiative?",
+      "input_segment_after_cleaning": "It would also be good if the authors explained whether the patterns could be taken to be general – or are the results a feature of the regions/countries that selected themselves into the university initiative?",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/round_1/v1_review_01_author_response_1_author.txt",
+      "source_sha256": "d936931abb5160d6fa63772dfddf125a53233ef47a50ad48d993464652204038",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "d936931abb5160d6fa63772dfddf125a53233ef47a50ad48d993464652204038",
+      "source_char_range_half_open": [
+        7925,
+        9266
+      ],
+      "source_line_range_inclusive": [
+        26,
+        28
+      ],
+      "selected_text_before_cleaning": "Although our study focuses mainly on the ERUA regions and countries, our findings can be considered more broadly. We state the reason for this in the Methodological Section, which is that the countries under study were chosen not only because of the ReERUA Project, but also because they represent all key educational/employment regimes in Europe. Specifically, we write:\n“The analysis is conducted at the regional level (NUTS-2) and its geographical scope covers five countries: Greece, Bulgaria, France, Germany, and Denmark. These were chosen on the basis that they represent the main educational/employment regimes in Europe: the universalistic of the Nordic countries, the employment-centered of Continental Europe, the sub-protective of the Mediterranean countries, and the post-socialist of Eastern Europe (Pohl & Walther 2007; Farkas, 2011). While both France and Germany fall under the Continental model, they are both analyzed due to their stark differences in terms of their wage structures (Hein & Vogel, 2009) and educational models (O’Reilly et al., 2019). Given the research’s geographical scope covering all main European regimes pertaining to employment and skills, its findings can be contextualized more broadly and provide insight into the EU as a whole.”\nThe above is also implied in the Introduction and the Discussion.",
+      "input_segment_after_cleaning": "Although our study focuses mainly on the ERUA regions and countries, our findings can be considered more broadly. We state the reason for this in the Methodological Section, which is that the countries under study were chosen not only because of the ReERUA Project, but also because they represent all key educational/employment regimes in Europe. Specifically, we write:\n“The analysis is conducted at the regional level (NUTS-2) and its geographical scope covers five countries: Greece, Bulgaria, France, Germany, and Denmark. These were chosen on the basis that they represent the main educational/employment regimes in Europe: the universalistic of the Nordic countries, the employment-centered of Continental Europe, the sub-protective of the Mediterranean countries, and the post-socialist of Eastern Europe (Pohl & Walther 2007; Farkas, 2011). While both France and Germany fall under the Continental model, they are both analyzed due to their stark differences in terms of their wage structures (Hein & Vogel, 2009) and educational models (O’Reilly et al., 2019). Given the research’s geographical scope covering all main European regimes pertaining to employment and skills, its findings can be contextualized more broadly and provide insight into the EU as a whole.”\nThe above is also implied in the Introduction and the Discussion.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [
+    {
+      "pdf_source": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/v1_manuscript.pdf",
+      "pdf_sha256": "b21af4a0b14aed5575e0c5b23cf4a271c4a2bad8e86440a166dad1b671320313",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_3-166/private/extracted/S008.txt",
+      "matched_response_start": 103064,
+      "author_header_start": 95001,
+      "author_header": "Author Response 08 Apr 2025 Effie Emmanouil Dear Reviewer, we would like to thank you for your valuable and insightful comments. We have pr",
+      "pdf_page_at_match": [
+        28
+      ],
+      "author_block_end": 114990,
+      "match_context": "ns/countries that\nselected themselves into the university initiative?\nAlthough our study focuses mainly on the ERUA regions and countries, our findings can be\nconsidered more broadly. We state the reason for this in the Methodological Section, which\nis that the countries under study were chosen not only because of the ReERUA Project, but\nalso because they represent all key educational/employment regimes in Europe. Specifically,\nwe write: “The analysis is conducted at the regional level (NUTS-2) and its geographical scope\ncovers five countries: Greece, Bulgaria, France, Germany, and Denmark. These were chosen on\nthe basis that they represent the main educational/employment regimes in Europe: the\nuniversalistic of the Nordic countries, the employment-centered of Continental Europe, the subprotective of the Mediterranean countries, and the post-socialist of Eastern Europe (Pohl &\nWalther 2007; Farkas, 2011). While both France and Germany fall under the Contin"
+    },
+    {
+      "pdf_source": "data/originals/ore/social_sciences/3-166_Investing_in_human_capital_in_the_era_of_European_Universities__A_comp/v2_manuscript.pdf",
+      "pdf_sha256": "f38e42df01464cde45ed16d5aea2c33057fdbeec8847ffa6dc15982095891c21",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_3-166/private/extracted/S009.txt",
+      "matched_response_start": 133447,
+      "author_header_start": 125384,
+      "author_header": "Author Response 08 Apr 2025 Effie Emmanouil Dear Reviewer, we would like to thank you for your valuable and insightful comments. We have pr",
+      "pdf_page_at_match": [
+        36
+      ],
+      "author_block_end": 145373,
+      "match_context": "ns/countries that\nselected themselves into the university initiative?\nAlthough our study focuses mainly on the ERUA regions and countries, our findings can be\nconsidered more broadly. We state the reason for this in the Methodological Section, which\nis that the countries under study were chosen not only because of the ReERUA Project, but\nalso because they represent all key educational/employment regimes in Europe. Specifically,\nwe write: “The analysis is conducted at the regional level (NUTS-2) and its geographical scope\ncovers five countries: Greece, Bulgaria, France, Germany, and Denmark. These were chosen on\nthe basis that they represent the main educational/employment regimes in Europe: the\nuniversalistic of the Nordic countries, the employment-centered of Continental Europe, the subprotective of the Mediterranean countries, and the post-socialist of Eastern Europe (Pohl &\nWalther 2007; Farkas, 2011). While both France and Germany fall under the Contin"
+    }
+  ],
+  "role_verification": "已读完整所选原关切与整个对应答复。与原PDF附后有日期的Author Response区块核对，未只凭TXT文件名判角色。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "20fe2dde70a3b39e1f43da5ae919ba4bfca41c6a0672997ddd57b29800b64e98",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.336126+08:00"
+}

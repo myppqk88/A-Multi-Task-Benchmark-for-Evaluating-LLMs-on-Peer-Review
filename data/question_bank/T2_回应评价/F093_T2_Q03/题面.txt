@@ -1,0 +1,83 @@
+F093_T2_Q03
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+{
+  "task_id": "F093_T2_Q03",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "input": {
+    "comment_text": "2. I find it interesting the reflection on gender distribution of researchers who prepare and\nexploit open datasets but I believe it needs a slightly bigger context or explanation to be\nfully appreciated by the reader.",
+    "response_text": "We thank the Reviewer for this comment and have expanded our discussion of the gender\ndisparity in open datasets (pg. 4): “Further, there has been little focus on the gender distribution\nof researchers who exploit open datasets (sometimes called ‘data parasites’; Longo & Drazen,\n2016) relative to those who often are involved in preparing them. This can have real implications\nfor the career development of researchers who collect and share data (particularly if they are at\nan earlier career stage) because this process requires a considerable investment of time relative\nto running analyses on existing data. Specifically, it has been found that female academics are\nassigned and complete more ‘academic housework’, such as mentoring, student and faculty\nservice (including emotional labour) and being involved in lower status committees that do not\nnecessarily get reflected in their CVs (O’Meara et al., 2017; Hanosono et al., 2019; Jarvinen & MikMeyer, 2024). Indeed, this ‘invisible labour’ could also be extended to the time intensive tasks of\n\n\n\n\ndata collection and curation that are specific to open datasets, with women typically\noverrepresented in more junior (e.g., data collection) roles, but underrepresented in more senior\nacademic roles (Herschberg and Berger, 2015). In order for open datasets to avoid becoming a\nroute where gender disparities are amplified, it would be important to examine the mechanisms\nof this unequitable gender distribution and remedy this.”",
+    "necessary_context": "发展科学中家长对儿童数据共享态度的调查。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "task_id": "F122_T2_Q01",
+  "paper_id": "F1000:157354",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F122_T2_Q01/input.json",
+  "input_sha256": "d6c5ef907d626c5743371cd4e779f6f025c44f0d32b16cc36adc50cde7cf9baa",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F122_T2_Q01/input.json",
+      "source_sha256": "d6c5ef907d626c5743371cd4e779f6f025c44f0d32b16cc36adc50cde7cf9baa",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "c) Although ethical considerations are acknowledged, the write-up lacks specifics on how\nanonymity and data protection were maintained beyond simply obtaining oral consent.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F122_T2_Q01/input.json",
+      "source_sha256": "d6c5ef907d626c5743371cd4e779f6f025c44f0d32b16cc36adc50cde7cf9baa",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "3. I elaborated on ethical considerations, detailing data protection measures, secure\nstorage, and the non-collection of identifiable information.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复列出数据保护、安全存储及不收集可识别信息三方向，其中不收可识别信息是具体匿名化策略。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不能说完全没有回应，也不能断言安全措施已经充分落实。"
+    },
+    {
+      "id": "J2",
+      "judgment": "未交代存储权限、介质、保留期限等如何保护资料；原关切要求超出口头同意的具体做法，仅安全存储泛称仍有限。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不能说完全没有回应，也不能断言安全措施已经充分落实。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复列出数据保护、安全存储及不收集可识别信息三方向，其中不收可识别信息是具体匿名化策略。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别不收可识别信息为实质信息，同时指出secure storage尚不具体。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复列出数据保护、安全存储及不收集可识别信息三方向，其中不收可识别信息是具体匿名化策略。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：识别不收可识别信息为实质信息，同时指出secure storage尚不具体。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。未交代存储权限、介质、保留期限等如何保护资料；原关切要求超出口头同意的具体做法，仅安全存储泛称仍有限。",
+      "high_score_conditions": [
+        "将隐私策略描述的充分性与其真实执行分离，不凭缺细节推定伦理违规。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：未交代存储权限、介质、保留期限等如何保护资料；原关切要求超出口头同意的具体做法，仅安全存储泛称仍有限。"
+      ],
+      "boundary_2_3": "识别不收可识别信息为实质信息，同时指出secure storage尚不具体。",
+      "boundary_3_4": "将隐私策略描述的充分性与其真实执行分离，不凭缺细节推定伦理违规。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient；不能说完全没有回应，也不能断言安全措施已经充分落实。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：将隐私策略描述的充分性与其真实执行分离，不凭缺细节推定伦理违规。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：未交代存储权限、介质、保留期限等如何保护资料；原关切要求超出口头同意的具体做法，仅安全存储泛称仍有限。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：将隐私策略描述的充分性与其真实执行分离，不凭缺细节推定伦理违规。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient；不能说完全没有回应，也不能断言安全措施已经充分落实。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "识别不收可识别信息为实质信息，同时指出secure storage尚不具体。",
+    "3_to_4": "将隐私策略描述的充分性与其真实执行分离，不凭缺细节推定伦理违规。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

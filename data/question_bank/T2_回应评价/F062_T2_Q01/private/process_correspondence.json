@@ -1,0 +1,63 @@
+{
+  "task_id": "F062_T2_Q01",
+  "paper_id": "ORE:5-59",
+  "parent_task": "T3_F062_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F062_R1/input.json",
+  "parent_input_sha256": "cb200eaca9168791274486485cc091fee8e92beec4437673374d6920ba843cfa",
+  "review_dimension_AI_candidate": "证据来源与评审要求合理性",
+  "selection_scope": "回复以WHO统计来源解释不同意评审，保留整体回复；不独立确认超额死亡数据真伪。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-59_Force_majeure_impact_on_citizen_science__Perspective_from_an_EU_funded/v1_manuscript.pdf",
+      "original_sha256": "fbe0af8702b4a1d379c7535821813ae6f0585bf32477a4e93691d027229d086d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F062_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        66940,
+        67811
+      ],
+      "report_id": "52276",
+      "date": "2025-04-10",
+      "raw_page_numbers": [
+        17
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-59_Force_majeure_impact_on_citizen_science__Perspective_from_an_EU_funded/v1_manuscript.pdf",
+      "original_sha256": "fbe0af8702b4a1d379c7535821813ae6f0585bf32477a4e93691d027229d086d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F062_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        69473,
+        70088
+      ],
+      "report_id": null,
+      "date": "2025-04-10",
+      "raw_page_numbers": [
+        18
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 8264,
+    "end": 8791,
+    "exact_quote": "re Brazil, Colombia,\nEgypt, Germany, India, Indonesia, the Islamic Republic\nof Iran, Italy, Mexico, Nigeria, Pakistan, Peru, the Philippines,\nPoland, the Russian Federation, South Africa, the\nUnited Kingdom of Great Britain and Northern Ireland,\nTurkey, Ukraine, and the United States of America (USA).”\nCSI-COP’s Researchers spread across Europe and in\nIsrael were also impacted by COVID-19 restrictions, the\nconsequences were felt by female scientists and scientists with\nyoung dependents. Deryugina, Shurchkov and Stearns (2",
+    "anchor_matches": 1,
+    "anchor": "Nigeria"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 8896,
+    "end": 9423,
+    "exact_quote": "re Brazil, Colombia, Egypt,\nGermany, India, Indonesia, the Islamic Republic of Iran,\nItaly, Mexico, Nigeria, Pakistan, Peru, the Philippines,\nPoland, the Russian Federation, South Africa, the\nUnited Kingdom of Great Britain and Northern Ireland,\nTurkey, Ukraine, and the United States of America (USA).”\nCSI-COP’s Researchers spread across Europe and in\nIsrael were also impacted by COVID-19 restrictions, the\nconsequences were felt by female scientists and scientists with\nyoung dependents. Deryugina, Shurchkov and Stearns (2",
+    "anchor_matches": 1,
+    "anchor": "Nigeria"
+  },
+  "process_check_code": "E",
+  "process_check_status": "已核前稿已有信息或所核位置仍保留",
+  "observed_process_note": "前后稿所核国家名单均保留Nigeria；对应作者引用WHO解释不采纳，未独立核验死亡统计。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

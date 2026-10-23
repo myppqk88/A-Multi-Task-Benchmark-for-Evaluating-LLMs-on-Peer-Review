@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F127_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究目标与贡献",
+    "数据来源",
+    "绩效解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对研究目标在引言/文献后的实际位置及CMIE来源选择说明；作者说原文已有与新增修改要分开。",
+    "并购前后绩效比较不自动识别并购因果效应，需核对分析设计、样本和结论措辞。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The application of a Merger and Acquisition (M&A) strategy serves as a substantial and\nconsequential method for maintaining business resilience in highly competitive market\nenvironments. Nonetheless, the challenge of assessing a company's performance through the\nlens of M&A strategies is a complex and multifaceted task. This research endeavor has been\nundertaken to substantiate the rationale behin",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nI did not find any research objectives in the Introduction part. Please develop the Research\n\n\n\nobjectives based on the Research problem and Research questions. – Purpose is mentioned\nin the\nSignificance in the sub-section of the Introduction.\nIn the literature review, the authors are encouraged to construct compelling discussions on\nthe\nresearch objectives, drawing upon the insights of esteemed scholars. It is vital to ensure\nthis practice\nis c",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The 50 biggest mergers in the US between 1979 and 1984 were quantified and their cash flow performance was\nassessed by Healy, Palepu, and Ruback in 1992. They found that, compared to their respective industries, the operating\nperformance of merging companies substantially enhanced in post-merger period (Healy et al., 1992).\nIn 1983, Katsuhiko Ikeda et al. examined the financial results of forty-three (43) combining enterprises from the\nmanufacturing sector in Japan. In more than half of the cases, they noticed an increased Return on Equity (RoE), whereas\nonly approximately half the cases saw an improvement in the rate of return on total assets. However, “both profit rates\nimproved in more than half of the cases in the five-year test, indicating that improvements in firm performance after\nmergers began in line with internal adjustments made by the merging firms. This suggests that there was a necessary\ngestation period during which merging firms learned how to manage their new businesse",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Numerous research papers have been examined, and it has been determined that the impacts on financial results are\ninconsistent, mixed, and different depending on the industry. The fact that the researchers’ methodologies varied made it\ndifficult to summarise their findings, as in some of their results, they used a variety of variables, parameters, and financial\ninformation. Financial performance metrics were employed in several studies. The majority of studies that employed\nfinancial performance measures found no appreciable differences (on either side) between the financial performance prior\nto and following the M&A.\nThese preceding works of research might be used to draw the conclusion that mergers generally do not appear to enhance\nthe post-merger efficiency of acquirers. Gains are either negligible or non-existent by various measurements. Event\nstudies and accounting both fail to provide any proof of value generation. This study’s goal is to investigate these theories\nin the contex",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "and integrating their purchases. The acquiring leadership loses control and is unable to manage the merged firm\neffectively as it grows more complex. After a merger, profitability levels fall as a result of this loss of control.\nConclusion\nThis research work was conducted to better understand the impact of M&As activity on operating financial results.\nThis study shows that the M&As have not had a good effect on a company’s operating performance, especially for the\nchosen beverage companies in India. Despite the limited favourable effects, they are statistically negligible.\nAlthough there are many motivations for a firm to participate in merger activity, our aim in this search was to understand\none crucial feature of M&A activity. It might be difficult to interpret the conclusion or get insights from the quantitative\ninformation when these motives or reasons are qualitative. Additionally, it has been noted from several studies that\nmerger and acquisition efforts for numerous organisatio",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Although there are many motivations for a firm to participate in merger activity, our aim in this search was to understand\none crucial feature of M&A activity. It might be difficult to interpret the conclusion or get insights from the quantitative\ninformation when these motives or reasons are qualitative. Additionally, it has been noted from several studies that\nmerger and acquisition efforts for numerous organisations in their post-merger phase did not result in beneficial shortterm effects (Beena, 2000; Mantravadi and Reddy, 2008; Tambi, 2005; Pawaskar, 2001; Mahamuni and Jumle 2018;\nMarina et al. 2006). However, if the companies do not conduct thorough research before deciding on M&As, it will not\nmeet their expectations or the objectives for the activity.\nBy calculating it and comparing it to the average for an industry or sector, subsequent studies in this area may expand on\nthe present study. Any variations, if any, may then be further investigated to get a better understanding. ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

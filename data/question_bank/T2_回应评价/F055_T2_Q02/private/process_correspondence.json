@@ -1,0 +1,62 @@
+{
+  "task_id": "F055_T2_Q02",
+  "paper_id": "ORE:5-212",
+  "parent_task": "T3_F055_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F055_R1/input.json",
+  "parent_input_sha256": "bebfeb268d2b729a4f592ef4e1fa3cff0e81799cd37d63c8800f9fe989fe1108",
+  "review_dimension_AI_candidate": "文献覆盖与研究定位",
+  "selection_scope": "保留完整所列2021–2025来源；不在T2中检索或验证引文。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-212_Logic_model-based_performance_management_systems_for_export_promotion/v1_manuscript.pdf",
+      "original_sha256": "4f35991327ea91c370a0b0ca2daaeccd8c4b1d604b64d0ab93f252f8f8fce51b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F055_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        93302,
+        93592
+      ],
+      "report_id": "57606",
+      "date": "2025-08-29",
+      "raw_page_numbers": [
+        20
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-212_Logic_model-based_performance_management_systems_for_export_promotion/v1_manuscript.pdf",
+      "original_sha256": "4f35991327ea91c370a0b0ca2daaeccd8c4b1d604b64d0ab93f252f8f8fce51b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F055_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        95634,
+        96430
+      ],
+      "report_id": null,
+      "date": "2025-09-20",
+      "raw_page_numbers": [
+        21,
+        22
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "Bauer",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 63563,
+    "end": 64088,
+    "exact_quote": "(Adams\net al., 2014), though recent literature on public sector sustainability management controls (Bauer & Greiling, 2025) confirms that public organizations are adopting controls aligned\nwith Environmental, Social y Governance (ESG) and Sustainable Development Goals (SDGs), the implementation is often\nincomplete, with limited social dimension integration and lack of\nholistic design.\n\nConclusion\n\nThis study has proposed the application of the Logic Model\nas a structuring and operational framework for the development of",
+    "anchor_matches": 2,
+    "anchor": "Bauer"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿未见Bauer，后稿新增Bauer & Greiling (2025)；作者回信列2024，年份不一致已保留，未裁定哪一年正确。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

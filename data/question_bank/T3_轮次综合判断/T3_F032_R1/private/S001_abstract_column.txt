@@ -1,0 +1,1590 @@
+Open Research Europe
+
+O
+
+RESEARCH ARTICLE
+
+Identifying entrepreneurial discovery
+and strong technology signals: a text
+[version 1; peer review: 2 approved with reservations]
+
+Levan Bzhalava
+
+1, Jari Kaivo-oja1,2, Sohaib S. Has
+
+1Finland Futures Research Centre, Turku School of Economics, University of Turk
+2Kazimieras Simonavičius University, Vilnius, 02189, Lithuania
+
+3SME Management Graduate School, University of Siegen, Siegen, 57072, Germa
+
+v1 First published: 28 Feb 2022, 2:26
+
+https://doi.org/10.12688/openreseurope.14499.1
+Latest published: 01 Nov 2022, 2:26
+https://doi.org/10.12688/openreseurope.14499.2
+
+Abstract
+This study aims to propose methods for identifying entrepreneurial
+discovery processes with weak/strong signals of technological
+changes and incorporating technology foresight in the design and
+planning of the Smart Specialization Strategy (S3). For this purpose,
+we first analyse patent abstracts from 2000 to 2009, obtained from
+the European Patent Office and use a keyword-based text mining
+approach to collect weak and strong technology signals; the word2vec
+algorithm is also employed to group weak signal keywords. We then
+utilize Correlation Explanation (CorEx) topic modelling to link
+technology weak/strong signals to invention activities for the period
+2010-2018 and use the ANOVA statistical method to examine the
+relationship between technology weak/strong signals and patent
+values. The results suggest that patents related to weak rather than
+strong signals are more likely to be high-impact innovations and to
+serve as a basis for future technological developments. Furthermore,
+we use latent Dirichlet allocation (LDA) topic modelling to analyse
+patent activities related to weak/strong technology signals and
+compute regional topic weights. Finally, we present implications of the
+research.
+Keywords
+Smart Specialization Strategy (S3), Entrepreneurial Discovery Process
+(EDP), technology foresight, weak signals, innovations, patents, text
+mining, topic modelling, word2vec.
+
+This article is included in the Marie-SklodowskaCurie Actions (MSCA) gateway.
+
+Open Research Europe
+
+O
+
+This article is included in the Horizon 2020
+gateway.
+
+This article is included in the Economics and
+Business gateway.
+
+Corresponding author: Levan Bzhalava (levani.bzhalava@taltech.ee)
+
+Author roles: Bzhalava L: Conceptualization, Data Curation, Formal Analysis, Fund
+Preparation; Kaivo-oja J: Conceptualization, Data Curation, Funding Acquisition, Me
+Conceptualization, Methodology, Writing – Original Draft Preparation, Writing – Rev
+Competing interests: No competing interests were disclosed.
+
+Grant information: This research was financially supported by the European Union
+under the Marie Sklodowska-Curie grant agreement No. 832862. Dr. Jari Kaivo-oja n
+“Platforms of Big Data Foresight (PLATBIDAFO)”, which has received funding from E
+01.2.2-LMT-K-718-02-0019) under grant agreement with the Research Council of Lit
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2022 Bzhalava L et al. This is an open access article distributed under
+License, which permits unrestricted use, distribution, and reproduction in any med
+
+How to cite this article: Bzhalava L, Kaivo-oja J and Hassan SS. Identifying entrep
+strong technology signals: a text mining approach [version 1; peer review: 2 ap
+2022, 2:26 https://doi.org/10.12688/openreseurope.14499.1
+
+First published: 28 Feb 2022, 2:26 https://doi.org/10.12688/openreseurope.14499.
+
+O
+
+Plain language summary
+
+The European Union (EU) has introduced Smart Specialization
+Strategy (S3) to increase the innovation and competitive potential of its regions by encouraging them to specialize in limited
+key economic areas. However, as the quantity of information is
+growing rapidly in today’s digital economy, regional policymakers lack efficient and viable tools to interpret external
+information, knowledge and map promising areas for smart
+specialization. To address this issue, we used text mining
+methods to identify entrepreneurial discovery processes with
+weak/strong signals of technological changes and incorporate technology foresight in the design and planning of S3. For
+this purpose, we first analysed patent abstracts from 2000 to
+2009 provided by European Patent Office and used a keywordbased text mining approach to collect technology weak and
+strong signals. We then linked technology weak/strong signals
+to invention activities for the period 2010–2018 and examine
+the relationship between technology weak/strong signals and
+patent values. The results suggest that patents related to weak
+rather than strong signals are more likely to be high-impact
+innovations and to serve as a basis for future technological
+developments. Furthermore, we used topic modelling to analyse
+patent activities related to weak/strong technology signals
+and compute regional topic weights.
+
+Introduction
+
+The European Union (EU) has introduced the Smart
+Specialization Strategy (S3) to promote sustainable and
+inclusive economic growth in its regions by inducing them to
+discover and develop economic areas in which they can have
+comparative and competitive advantage. S3 is a place-based and
+bottom-up innovation policy which allows the EU regions to tap
+into their endogenous potential (Coffano & Foray, 2014; Foray
+et al., 2009). As knowledge and competencies are dispersed and
+divided locally, “entrepreneurs in the broadest sense (innovative
+firms, research leaders in higher education institutions,
+independent inventors and innovators) are in the best position to
+discover the domains of R&D and innovation in which a region
+is likely to excel given its existing capabilities and productive
+assets” (Foray & Goenaga, 2013). For this reason, S3 relies
+on an entrepreneurial discovery process (EDP) to map
+promising areas for investment and specialization (Coffano &
+Foray, 2014). The role of regional governments in S3 is to
+identify potential entrepreneurial discovery projects and to develop
+critical mass in these strategic priority areas in order to facilitate
+micro-level discovery and experimentation processes (Foray
+et al., 2011), but policymakers lack appropriate tools and
+methods to identify and assess promising EDPs.
+Previous research studies the distribution of knowledge claims
+by regional patents and explores co-occurrence of technology
+classes to identify industry diversification and specialization
+opportunities across EU regions (Balland et al., 2019; Montresor
+& Quatraro, 2020). Another strand of literature utilizes an unsupervised text mining approach to explore latent topics and to map
+innovation ecosystems based on start-up activities and scientific publications (Bzhalava et al., 2018; Moilanen et al., 2021).
+Although the prior research provides valuable insights for
+
+understandi
+an understa
+on technol
+seemingly
+at first appe
+nized as pa
+ent frame o
+(Schoemake
+signs for fu
+to monitor
+substantially
+ness chang
+studying a
+can help re
+specializatio
+(Paliokaitė e
+
+Theoretic
+
+By adopting
+of its reso
+and innova
+competition
+In contrast
+which a de
+top-down,
+in which l
+technology
+areas for sp
+are fragmen
+innovation-p
+policymake
+future grow
+policy and
+often failed
+et al., 201
+“the eviden
+worldwide
+in terms of
+were chose
+or relevant
+2016). As
+solutions an
+policies app
+stimulate e
+often cause
+Ortega-Argi
+developmen
+technology
+great emph
+setting inn
+firms mainl
+system and
+through exp
+(Lindholmpolicy con
+Isaksen & T
+renewing of
+and relies
+
+O
+
+(Foray, 2015). EDP is an inclusive process and involves a
+wide range of local agents from business and academia to
+discover and produce information about new activities of future
+specialization, whereas ‘the regional government assesses the
+activities’ potential and empowers those actors most capable of
+realizing that potential’ (Virkkala & Mariussen, 2018). Hence,
+entrepreneurs (in the broadest sense) explore new market
+opportunities and bring into existence novel ideas and technologies as well as reshape markets and value networks across
+industries (Lindholm-Dahlstrand et al., 2019; Schumpeter, 1934).
+This process is termed as “creative destruction” in the classic
+innovation literature (Schumpeter, 1934). In “creative destruction” process entrepreneurial firms bring new technologies to
+the market and out-compete established companies by cannibalizing their market profit (which based on existing technologies)
+and making the value of their accumulated knowledge obsolete.
+This, in turn, leads shifting profit pools from incumbents
+to new firms, as well as rearranging industry structures and
+replacing established businesses (Lindholm-Dahlstrand et al.,
+2019). Hence, by relying on EDP, European S3 aims to implement structural economic changes across regions through identifying new domains of future opportunities in which they can
+have competitive advantages and concentrating resources on
+those key limited areas (Foray, 2015).
+To examine regional knowledge bases and to identify technological upgrading (diversification) opportunities, previous
+research uses co-occurrence analysis and explores patent technology classes in regional patent databases (Balland et al., 2019;
+Montresor & Quatraro, 2020), as well as studies trademark business classifications to detect future growth opportunities across
+European regions (Drivas, 2020). In contrast, Moilanen et al.
+(2021) employ an unsupervised text mining method to detect
+latent topics and thematic networks in scientific literature. Other
+strand of literature utilizes network analysis to examine startup
+company sub-industry tags and business descriptions to explore
+the structure of entrepreneurial ecosystems and to examine where
+entrepreneurs drive their businesses across different sectors
+and territories and to detect specialization patterns (Basole
+et al., 2018; Losurdo et al., 2019). Furthermore, Papagiannidis
+et al. (2018) use an unsupervised text mining approach to
+discover latent topics in websites of firms and visually identify
+areas of intense business activities across various places. Similarly,
+other scholars explore web pages of firms to map innovation
+ecosystems (Beaudry et al., 2016; Kinne & Axenbeck, 2020).
+In particular, as web pages of companies are often used to
+publish information about innovative products/services, previous
+research uses web and text mining methods to survey business
+websites and to detect innovation activities across territories
+(Beaudry et al., 2016; Kinne & Axenbeck, 2020).
+To understand future technology and market landscape and to
+identify promising EDPs, foresight can be significantly helpful
+as an instrument to study the potential ways in which the
+future technology and market landscape can unfold. Specifically,
+foresight is defined ‘as a process which involves systematic
+inquiry into longer-term futures, including emerging and novel
+issues, which in turn enables present decision-making and action’
+(Minkkinen et al., 2019). In the process of strategic planning
+
+with foresig
+weak signa
+and discon
+process m
+technology/
+text mining
+Poel, 2013;
+In particul
+signal detec
+each topic
+degree of
+calculates
+on their d
+term (docu
+nal related
+novelty-focu
+text mining
+a local o
+unrelatedne
+big data and
+technologic
+standing of
+design and
+research aim
+ties) with t
+to apply Big
+
+Methods
+
+In this rese
+Patent Offic
+(EP) public
+publications
+it difficult
+this issue,
+provides fre
+includes in
+publication
+(i.e. title, a
+as well as
+tion of the
+tial inform
+(Lee et al.
+research an
+EP full-tex
+the study, w
+weak/strong
+technology
+this purpos
+weak/strong
+ten years p
+2012), and
+with inventi
+
+To identify
+to 2018) a
+with the O
+databases b
+REGPAT d
+with region
+
+O
+
+and inventors. The OECD Patent Quality Indicators database
+July 2020 provides information about indicators of patent
+technological and economic values (e.g. number of citations
+a patent received up to five years after publication, and if a
+patent belongs to the top 1% highly cited patents up to five
+years after publication).
+
+Identifying weak signals with keyword-based text
+mining
+We then cleaned and pre-processed patent abstracts, which
+involved transforming all textual content into lower case keywords
+and deleting numbers, non-English and special characters, as
+well as removing punctuations and stop-words. Moreover,
+keywords are lemmatized, which refers to applying vocabulary
+and morphological analysis and transforming keywords into
+their root forms. We then extracted only noun and adjective
+keywords as they represent technology concepts and, in line
+with Yoon (2012), we calculated their Degree of Visibility
+(DoV) based on the frequency of their occurrence and Degree of
+Diffusion (DoD) based on their appearance in number of
+patent abstracts. Mathematically, DoV and DoD are expressed
+in the following way:
+ TFij 
+ × {1 − tw × (n − j )}
+DoVij = 
+ NNij 
+
+
+
+(1)
+
+ DFij 
+ × {1 − tw × (n − j )}
+DoDij = 
+ NNij 
+
+
+
+(2)
+
+where TFij refers to the total occurrence frequency of a term
+i in period j, and DFij denotes to the document frequency of
+term i in period j. NNj stands for the total number of patent
+abstracts in period j, whereas n is the number of periods.
+Furthermore, to put more weight on recent appearances of
+keywords and to give recent occurrences of keywords more
+importance than past occurrences, Yoon (2012) introduces tw (a
+time-weight) which is defined as 0.05. Moreover, the geometric mean is calculated based on DoV and DoD values to explore
+the increasing rates of keyword occurrences. Terms associated
+with weak signal topics usually have a low absolute occurrence
+frequency and a high time-weighted increasing rates. On the
+contrary, terms related to strong signal topics are likely to have
+a high absolute occurrence frequency and a high time-weighted
+increasing rates. In line with Yoon (2012), we extract keywords
+that are in the top 30% in terms of growth rate. Finally, we
+consider keywords that have less than average absolute yearly
+term (document) frequency as weak signals, and those with more
+than average absolute yearly term (document) frequency as strong
+signals.
+By analyzing patent abstract data for the period 2000–2009,
+we identified weak and strong signal keywords related to
+hospitality/travel, education, telecommunication, healthcare,
+media and entertainment, environment, transportation and
+construction industries. Specifically, the following weak signal
+keywords were identified for the hospitality/travel industry:
+cooking, accommodation, wine, leisure. For the education
+industry – education; for the telecommunication industry – cell
+
+phone; for
+symptom, a
+advertiseme
+nologies/ind
+sustainabilit
+for the con
+we utilised
+keywords (
+only weak
+other words
+extract term
+the industry
+network ap
+associations
+with simila
+(Mikolov et
+fied into tel
+environmen
+signal keyw
+Degree of
+values, see E
+
+Linking we
+After colle
+we linked
+2010–2018.
+textual con
+tion Explan
+supervised
+“anchor wo
+those ancho
+we use wea
+use CorEx
+ties across
+identify 36
+signals. Mo
+to discover
+unsupervise
+creates clus
+up togethe
+documents
+search in p
+topics disc
+2 to 50 a
+selected top
+with 7 topic
+
+Furthermore
+study the
+ent values.
+forward cita
+2005). A p
+a dispropo
+has a cons
+progress (A
+line of prior
+of citations
+also (2) if
+
+O
+
+five years after publication. The first one is a continuous variable, whereas the second one is a binary variable - 1 if a patent
+is classified as a breakthrough and 0 otherwise (Squicciarini
+et al., 2013).
+
+Results
+
+The results show that major invention activities related to weak
+signals of technological changes are concentrated in sustainability, anticancer, symptom, vaccine and greenhouse areas,
+whereas patent activities associated with strong signal keywords are concentrated in mobile technologies, healthcare and
+aircraft/vehicle areas (see Table 1–Table 2). Moreover, we
+also examined whether patents associated with weak or strong
+signals have more technological and economic values in terms
+of number of citations a patent received up to 5 years after
+publication, and if a patent belongs to the top 1% highly cited
+patents up to 5 years after publication. By employing the
+one-way ANOVA modelling approach, the results suggest that
+patents related to technology weak rather than strong signals are
+more likely to be high-impact innovations and to serve as a basis
+for future technological developments (see Table 3–Table 6).
+Technology foresight can provide vital input in the design and
+planning of European S3 in terms of providing information
+about emerging technologies, discontinuities and potential
+future threats and opportunities.
+
+focused on
+pret and d
+topic mode
+ties associa
+embodimen
+(Topic 3),
+systems (To
+Moreover,
+calculating
+ments are
+probability
+distributions
+is associate
+present doc
+show how
+as well as
+analysis, w
+patent abstr
+in each EU
+areas/topics
+
+The top EU
+of patent ab
+These prob
+regions co
+
+Table 1a. Weak signal keywords and related invention activities.
+Weak signal keywords
+Accommodation, shuttering, camping
+
+Advertisement, commercial, advertise, webpage, publishing, prompting, friend, o
+advertising
+
+Anticancer, cytotoxicity, metastasis, somatostatin, hepatitis, radionuclide, ceramid
+quinazoline, apoptosis, macrophage, liposome, histocompatibility, rodent, immuno
+neovascularization, autoimmune, tautomer, arginine, choline, monocyte, mammali
+chemotherapy, death, fibrosis, administering, integrin, dystrophy, fertility, immuno
+methionine, interferon, bioactivity, schizophrenia, cytoplasm, suffering, depolymer
+mortality, mucosal, solvate, potency, prophylaxis, proliferation, hydrate, angiogene
+mimetic, therapeutic, sepsis, formyl, methoxy, lymphocyte, chimeric, phospholipas
+piperidine, liver, tcell, hydrolase, diabete, tuberculosis, carboxy, brightener, thromb
+toxin, transplant, sclerosis, homology, osteoarthritis, fibroblast, marrow, cyclohexyl
+atherosclerosis, metabolite, tumour, thiazole, polyphosphate, mononuclear, bowel
+
+Biomass, gasification, refinery, bioreactor, fermentation, ethanol, pepper, grape, b
+herb, silage, maize, wine
+Biosensor, analyte, biomolecule
+Cellphone
+
+Cement, slump, clinker, rheology, copolymerisation, translucency, consolidation, a
+Cooking, cooker, stove, digester, utensil, blowoff, supercapacitor, recipe, pastry
+Construct, modularity
+
+Education, inability, aviation, consultation, extrude, sharpener, online, intervene, a
+society, searching, ventricular
+
+O
+
+Table 1b. Weak signal keywords and related invention activities.
+Weak signal keywords
+Flight, waypoint, airframe, airport, spanwise, refueling, avionic, tanker, craft
+
+Gaming, multiplayer, redemption, proceeding, outcome, online, distraction, vouch
+
+Greenhouse, silage, stalk, harvest, borne, pepper, cultivation, vegetation, grape, fu
+distillate, crop
+Health, Care, consultation, hospital, diet, linoleic, polyphenol
+Leisure, entertainment, online, aviation, playing
+Media, renderer, playlist
+Motorcycle, fender, windscreen, handgrip, headlight
+Planet, gearing, sun, bogie
+
+Sustainability, poise, hydrogenating, anisotropy, butene, cyclohexyl, cmin, overgr
+prescribed, durometer, sharpener, methoxy, govern, society, novolac, diblock, thiaz
+carboxymethyl, cumbersome combust, ventricular, electrovalve, brightener, screwi
+hydroxylamine, ignitability, discs, microfabrication, flammability, potting, thioester e
+protecting, lactide, polyisoprene, alkanoyl, envisage, bioactivity, copolymerisation, s
+varnish, stirring, ceramide, nitrate, saliency, counteracting, alkylphenol, volatilizatio
+praseodymium choline, depolymerization, evaporate, oscillate, monoglyceride, citr
+onpress, brightening, granulometry, dimethyl, interpolate, coatability, gadolinium,
+dyestuff, nanocomposite deformability alkalinity, bedplate vaporizing, polyphenol,
+microdroplet, rutile, tetrachloride, calcination, sputtering, polyanion, cranking, ther
+lipid, phospholipid, tampon, maize ferric, acetylene inject diamine dimerization, ca
+arginine, avionic, radiant, phenylene, phospholipase, formability, aluminosilicate, so
+turbomachine, dipeptide, polyphosphate methionine, formyl
+
+Symptom, bowel, amelioration, sepsis, sclerosis, alleviation, schizophrenia, osteoa
+administering, atherosclerosis, syndrome, arthritis, hyperactivity, dementia, antiob
+piperidine, mood, suffering, obesity, mellitus, deficit, analgesic, potency, pathology
+endocrine, athlete, overgrowth, hyperglycemia, allergy, pain, amlodipine
+
+Vaccine, tuberculosis, vaccination, antigen, immunology, chicken, allergy, pathoge
+tcell, histocompatibility, fertilization, replicating, rodent, epitope, hcv, therapeutic, l
+interferon, mucosal, carcinoma, neovascularization, fertility, mimic, antitumor, depo
+cytoplasm, monocyte, inactivation, toxin
+
+Wine, grape, pepper, cappuccino, brewing, herb, pastry, coffee, fermentation, lacti
+bedplate, drink, flour, biomass
+
+Table 2. Strong signal keywords and related invention activities
+Strong signal keywords
+Aircraft, turbine, vehicle, chassis
+Broadcast, multimedia, transmit, receptor, display, radio
+
+Cancer, peptide, tumor, medicament, antibody, pharmaceutical, nucl
+therapy, precursor, amino, irradiation, drug, patient, virus, treatment
+
+Lighting, dust, washing, tissue, luminance, security, encoding, tire, pr
+Mobile
+Wind, emitting, plant
+
+O
+
+Table 3. Forward citation (five year) and strong/wea
+analysis.
+sum_sq
+
+DF
+
+F
+
+C(strong_weak_signals)
+
+2.083034e+03
+
+1.0
+
+4
+
+Residual
+
+1.637193e+07
+
+366390.0
+
+N
+
+Table 4. Forward citation (five year), aver
+
+forward cit
+Weak signal related patents
+
+1.665
+
+Strong signal related patents
+
+1.486
+
+Table 5. Breakthrough inventions (1% most citied
+weak signals, ANOVA analysis.
+sum_sq
+
+DF
+
+C(strong_weak_signals)
+
+0.165795
+
+1.0
+
+Residual
+
+2962.482775
+
+366390.0
+
+Table 6. Breakthrough inventions (1% mo
+patents), average.
+
+Breakthrou
+Weak signal related patents
+
+0.009
+
+Strong signal related patents
+
+0.007
+
+how they are concentrating their invention activities on specific topics, reflecting R&D priorities. For example, the results
+show that Paris has the highest regional topic weights in water
+technologies (Topic 0) and protein acid (Topic 3), whereas
+München specialize in aircraft/vehicle power systems (Topic 6).
+Moreover, Hauts-de-Seine is strongly presented in the following invention activities such as cell domain/embodiment
+(Topic 1), image display (Topic 2), data systems (Topic 4) and
+sensor-based intelligence systems (Topic 5). By employing
+interdisciplinary elements of economic innovation, foresight
+and big data fields, the research linked technology foresight
+and regional innovation activities, as well as explored possibilities of identifying and assessing entrepreneurial discovery processes with weak and strong signals of technological
+changes.
+
+Discussio
+
+This resear
+preneurial
+explores th
+in the desig
+demonstrate
+European r
+base and ex
+topic mode
+and strong
+method to e
+weak and
+final stage,
+map Europ
+ogy signals
+
+O
+
+Table 7. The top 10 ranked words of selected weak/strong signa
+Topic 0
+
+Topic 2
+
+Topic 4
+
+Word
+
+probability
+
+word
+
+probability
+
+Word
+
+washing
+
+0.031
+
+portion
+
+0.021
+
+display
+
+method
+
+0.021
+
+display
+
+0.020
+
+informatio
+
+water
+
+0.017
+
+direction
+
+0.016
+
+Data
+
+plant
+
+0.016
+
+surface
+
+0.016
+
+device
+
+invention
+
+0.015
+
+first
+
+0.015
+
+First
+
+dust
+
+0.015
+
+body
+
+0.013
+
+method
+
+present
+
+0.011
+
+side
+
+0.011
+
+security
+
+rubber
+
+0.011
+
+image
+
+0.011
+
+One
+
+step
+
+0.008
+
+second
+
+0.011
+
+system
+
+tub
+
+0.007
+
+position
+
+0.011
+
+Unit
+
+Topic 1
+
+Topic 3
+
+Topic 5
+
+word
+
+probability
+
+word
+
+probability
+
+word
+
+cell
+
+0.038
+
+invention
+
+0.031
+
+signal
+
+base
+
+0.031
+
+protein
+
+0.021
+
+Light
+
+bead
+
+0.019
+
+present
+
+0.017
+
+Value
+
+channel
+
+0.017
+
+tissue
+
+0.017
+
+First
+
+shoulder
+
+0.015
+
+comprising
+
+0.015
+
+Unit
+
+block
+
+0.014
+
+relates
+
+0.013
+
+second
+
+domain
+
+0.011
+
+methods
+
+0.012
+
+sensor
+
+embodiments
+
+0.010
+
+acid
+
+0.012
+
+based
+
+include
+
+0.010
+
+said
+
+0.010
+
+detection
+
+may
+
+0.009
+
+proteins
+
+0.010
+
+Time
+
+Table 8. Regional topic weights in patent activities.
+Region
+
+Topic 0
+
+Topic 1
+
+Topic 2
+
+Top
+
+Hauts-de-Seine
+
+347.5
+
+394.2
+
+254.8
+
+475
+
+Paris
+
+414.4
+
+259.1
+
+147.8
+
+206
+
+München
+
+346.1
+
+143.1
+
+224.4
+
+688
+
+Stockholm country
+
+165.1
+
+222.3
+
+127.7
+
+385
+
+South-East North Brabant
+
+138.3
+
+145.7
+
+148.9
+
+127
+
+Helsinki-Uusimaa
+
+189.2
+
+157.9
+
+138.7
+
+173
+
+Inner London West
+
+217.6
+
+79.6
+
+177.1
+
+344
+
+Madrid
+
+259.3
+
+86.5
+
+143.3
+
+638
+
+O
+
+reveal in which areas different EU regions contribute and also
+reflect R&D priorities. The proposed approach can be used to
+envision future innovation ecosystems and study weak signal
+related invention activities across territories, as well as to calculate regional topic weights and develop policy road mapping
+for innovation ecosystem development in the EU.
+
+activities w
+to anticipat
+which busin
+driven by ne
+
+In addition, this study shows that patents related to weak
+technology signals rather than strong, are more likely to be
+high-impact innovations and to serve as a basis for future
+technological developments, implying that weak signals
+matter for detecting breakthrough inventions. As the quantity
+of information is growing rapidly in today’s digital economy,
+decision-makers often lack appropriate tools and methods to
+process massive amounts of external information, interpret
+signals of impeding technological changes and use them in
+strategic and innovation management. The proposed approach in
+this study can help policy-makers and companies to widen the
+ecosystem-foresight lens and to detect future technology threats
+and opportunities.
+
+Figshare: E
+org/10.6084
+
+The analysis presented in the research can be replicated to
+examine relationship between weak/strong signals and start-up
+performance. Specifically, the research can be extended to
+identify start-up entrepreneurial activities across territories
+with technology weak and strong signals. As start-up entrepreneurs explore new market opportunities and bring into existence
+novel business models, they reshape markets and value networks across industries. Therefore, studying entrepreneurial
+
+Data ava
+Underlyin
+
+This project
+
+•	E
+co
+Q
+
+Extended
+Figshare: Ex
+
+https://doi.o
+2022b)
+
+This project
+•
+
+E
+
+Data are a
+Attribution
+
+Ethics an
+
+Ethical appr
+
+References
+Arts S, Veugelers R: Technology familiarity, recombinant novelty, and
+breakthrough invention. Industrial and Corporate Change. 2015; 24(6):
+1215–1246.
+Publisher Full Text
+Asheim BT: Smart specialisation, innovation policy and regional innovation
+systems: what about new path development in less innovative regions?
+Innovation: The European Journal of Social Science Research. 2019; 32(1): 8–25.
+Publisher Full Text
+Balland PA, Boschma R, Crespo J, et al.: Smart specialization policy in
+the European Union: relatedness, knowledge complexity and regional
+diversification. Regional Studies. 2019; 53(9): 1252–1268.
+Publisher Full Text
+Barca F, McCann P, Rodríguez-Pose A: The case for regional development
+intervention: Place-based versus place-neutral approaches. J Reg Sci. 2012;
+52(1): 134–152.
+Publisher Full Text
+Basole RC, Park H, Chao RO: Visual analysis of venture similarity in
+entrepreneurial ecosystems. IEEE Trans Eng Manag. 2018; 66(4): 568–582.
+Publisher Full Text
+Beaudry C, Héroux-Vaillancourt M, Rietsch C: Validation of a web mining
+technique to measure innovation in high technology Canadian industries.
+In CARMA 2016-1st International Conference on Advanced Research Methods and
+Analytics. 2016; 1–25.
+Reference Source
+Blei DM, Ng AY, Jordan MI: Latent Dirichlet Allocation. Journal of Machine
+Learning Research. 2003; 3: 993–1022.
+Reference Source
+Briggs K, Buehler DL: An analysis of technologically radical innovation and
+breakthrough patents. Int J Econ Bus. 2018; 25(3): 341–365.
+Publisher Full Text
+
+Bzhalava
+Europea
+Integratio
+Publishe
+Bzhalava
+figshare.
+http://w
+Bzhalava
+2022b.
+http://w
+Coffano M
+and Imp
+13(1): 33–
+Referenc
+Drivas K:
+activity.
+Publishe
+Foray D,
+for Growt
+Commiss
+Foray D,
+to Politic
+Difficulti
+Fédérale
+Referenc
+Foray D,
+policy rep
+Referenc
+
+Foray D:
+Innovati
+
+O
+
+Gallagher RJ, Reing K, Kale D, et al.: Anchored Correlation Explanation: Topic
+modeling with minimal domain knowledge. Trans Assoc Comput Linguist. 2017.
+Reference Source
+Hall B, Jaffe A, Trajtenberg M: Market value and patent citations. RAND J Econ.
+2005; 36(1): 16–38.
+Reference Source
+Isaksen A, Trippl M: 4 Path development in different regional innovation
+systems : A Conceptual Analysis. In Innovation Drivers and Regional Innovation
+Strategies. edited by M. Parrilli, R. Fitjar, and A. Rodríguez-Pose, New York and
+London: Routledge. 2016; 66–84.
+Reference Source
+Kim J, Lee C: Novelty-focused weak signal detection in futuristic data:
+Assessing the rarity and paradigm unrelatedness of signals. Technol
+Forecast Soc Change. 2017; 120: 59–76.
+Publisher Full Text
+Kinne J, Axenbeck J: Web mining for innovation ecosystem mapping: a
+framework and a large-scale pilot study. Scientometrics. 2020; 125: 2011–2041.
+Publisher Full Text
+Kwon LN, Park JH, Moon YH, et al.: Weak signal detecting of industry
+convergence using information of products and services of global listed
+companies - focusing on growth engine industry in South Korea. J open
+innov. 2018; 4(1): 10.
+Publisher Full Text
+Lee S, Choi J, Sawng YW: Foresight of promising technologies for healthcareIoT convergence service by patent analysis. J Sci Ind Res. 2019; 78: 489–494.
+Reference Source
+Lindholm-Dahlstrand Å, Andersson M, Carlsson B: Entrepreneurial
+experimentation: a key function in systems of innovation. Small Bus Econ.
+2019; 53(3): 591–610.
+Publisher Full Text
+Losurdo F, Marra A, Cassetta E, et al.: Emerging specializations, competences
+and firms’ proximity in digital industries: The case of London. Papers in
+Regional Science. 2019; 98(2): 737–753.
+Publisher Full Text
+McCann P, Ortega-Argilés R: Smart Specialisation: Insights from the EU
+experience and implications for other economies. J Regional Res. 2016; 36:
+279–293.
+Reference Source
+Mikolov T, Sutskever I, Chen K, et al.: Distributed representations of words
+and phrases and their compositionality. Adv Neural Inf Process Syst. arXiv:
+1310.4546. 2013.
+Reference Source
+Minkkinen M, Auffermann B, Ahokas I: Six foresight frames: Classifying
+policy foresight processes in foresight systems according to perceived
+unpredictability and pursued change. Technol Forecast Soc Change. 2019; 149:
+119753.
+Publisher Full Text
+
+Moilanen
+of Smart
+2021.
+Publishe
+
+Montreso
+Strategie
+technolo
+54(10): 13
+Publishe
+
+Paliokaitė
+specialis
+Change. 2
+Publishe
+
+Paliokaitė
+roadmap
+2016; 110
+Publishe
+
+Papagian
+clusters
+purpose
+Publishe
+
+Schoema
+weak sig
+Change. 2
+Publishe
+
+Schumpe
+capital, c
+Cambridg
+Referenc
+
+Squicciar
+of techn
+Working P
+Publishe
+
+Thorleuc
+web min
+Publishe
+
+Thorleuc
+detectio
+Publishe
+
+Virkkala S
+processe
+entrepren
+emergenc
+Publishe
+
+Yoon J: D
+using tex
+Publishe
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 19 May 2022
+
+https://doi.org/10.21956/openreseurope.15652.r29176
+
+© 2022 Pinto H. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Hugo Pinto
+
+1 Faculdade de Economia, Universidade do Algarve, Faro
+
+2 Centro de Estudos Sociais, Universidade de Coimbra, Co
+
+The article “Identifying entrepreneurial discovery process
+signals: a text mining approach” is a relevant contribution
+It is centered in the textual analysis of patent abstracts fr
+uses a mining approach to collect technology weak and s
+invention activities for the period 2010–2018.
+
+The article presents several good ideas. Nevertheless, I r
+consideration of authors.
+First, smart specialization is a process that is far fro
+diversification. It is anchored in the development o
+excel for its structural change. These domains can
+standpoint means that the paper only addresses th
+that are highly connected with domains where pat
+technological. Domains where DUI learning modes
+And they are crucial, especially in peripheral and/o
+be discussed and referenced in the text.
+○
+
+○
+
+○
+
+Secondly, being the text about the EDP, few lines a
+giving evidence of the many (disparate) ways regio
+the EDPs. Sometimes EDPs were directly related w
+based approaches but were also inspired by partic
+small summary of these practices can be presente
+this specific approach intends to solve.
+
+Thirdly, S3 is commonly referred to as a place-base
+accommodate a stronger regional focus is this arti
+many contributions from the evolutionary geograp
+
+Open Research Europe
+
+O
+
+with this approach, focusing patent portfolios, plea
+Boschma and co-authors and about relatedness. In
+already presented) could emphasize this matter of
+regional diversification in EU.
+
+Finally, the option concerning the selection of peri
+justification.
+Revise the word “citied”.
+○
+
+Consolidate the decimals in the tables, in particular ANOV
+
+Tables referring topics should revised. Instead of “Topic 1
+Topics: (Topic 0), cell domain/embodiment (Topic 1), imag
+data systems (Topic 4), sensor-based intelligence system
+systems (Topic 6).
+Good luck!
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Partly
+
+Are all the source data and materials underlying the r
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Regional Economics, Economic Geog
+Quantitative Studies
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 30 May 2022
+
+Open Research Europe
+
+O
+
+Levan Bzhalava
+Dear Dr. Pinto,
+
+We would like to thank you for the effort and expertis
+reviewing the manuscript. We sincerely appreciate all
+which are all valuable and very helpful for revising an
+With best wishes,
+Levan Bzhalava
+
+Competing Interests: No competing interests were di
+
+Author Response 12 Oct 2022
+
+Levan Bzhalava
+
+We would like to thank the reviewer for constructive com
+considerably to improve the manuscript. Below we provid
+comments:
+First, smart specialization is a process that is far
+diversification. It is anchored in the developme
+can excel for its structural change. These doma
+not. This standpoint means that the paper only
+discovery processes that are highly connected w
+usually more technological. Domains where DU
+neglected in this way. And they are crucial, espe
+regions. This limitation should be discussed and
+Author Response: We included discussion regarding limit
+and Conclusion section.
+Secondly, being the text about the EDP, few line
+or giving evidence of the many (disparate) ways
+actively direct the EDPs. Sometimes EDPs were
+quantitative evidence-based approaches but we
+qualitative approaches. A small summary of the
+justify the pertinence and gap that this specific
+○
+
+○
+
+Thirdly, S3 is commonly referred to as a place-b
+accommodate a stronger regional focus is this
+way, many contributions from the evolutionary
+aligned with this approach, focusing patent por
+contributions of Ron Boschma and co-authors a
+way, the results (that are already presented) co
+smart specializations and regional diversificatio
+Author Response: We extended the literature review and
+regarding entrepreneurial discovery processes (EDPs) an
+○
+
+Open Research Europe
+
+O
+
+well as presented quantitative and qualitative approache
+regions have tried to engage to actively direct EDPs (plea
+)
+Finally, the option concerning the selection of p
+justification.
+Author Response: We included an explanation regarding
+○
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 04 May 2022
+
+https://doi.org/10.21956/openreseurope.15652.r28962
+
+© 2022 Ali M. This is an open access peer review report distributed un
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Muhammad Ali
+Friedrich Schiller University, Jena, Germany
+
+I had the pleasure of reading this paper. It is a very nicely
+impact on policy. Following are my comments:
+1. The authors present a novel approach to predictin
+methodology is better or more sophisticated, the a
+methodology is different from the existing method
+
+2. In the methodology section, the authors write that
+the address of the authors. Since one of the indica
+a lag of a few years, I wonder if the addresses in th
+point of publication or if they update it later? If the
+account for the cases where authors changed thei
+
+3. I guess there are typos in Equations 1 and 2. “NNij
+
+4. It is not clear to me how the term “tw” is used. If it
+does it serve? My guess is that the value of “tw” is c
+publication. Whatever the case might be, it needs b
+
+5. For those who are new to text mining, it would be
+with synonyms. For instance, “playing”, “lighting”, e
+used as keywords. How did the authors ensure tha
+
+6. How can weak signals be more likely to transform
+need to explain it better and relate it with theory. I
+which is quite short.
+
+Open Research Europe
+
+O
+
+7. Data is merged inside the methodology section. Ei
+this section as “Data and Methodology”.
+
+8. The theoretical section does not present an establi
+“Conceptual Framework”.
+
+9. I really appreciate the depth in the analysis of this
+policymakers, I wonder if it is feasible for the polic
+do all these steps every time they sit for a policy m
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Partly
+
+Are all the source data and materials underlying the r
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Economics of innovation, national sy
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 30 May 2022
+
+Levan Bzhalava
+Dear Dr. Ali,
+
+We would like to thank you for taking the necessary ti
+manuscript.
+
+We sincerely appreciate all your valuable comments a
+
+Open Research Europe
+
+O
+
+improve the quality of the manuscript.
+With best wishes,
+Levan Bzhalava
+
+Competing Interests: No competing interests were di
+
+Author Response 12 Oct 2022
+
+Levan Bzhalava
+
+We would like to thank the reviewer for constructive com
+considerably to improve the manuscript. Below we provid
+comments:
+The authors present a novel approach to predic
+their methodology is better or more sophisticat
+their methodology is different from the existing
+Author Response: We included a more substantiate expla
+proposed in the research is different from the previous o
+In the methodology section, the authors write t
+databases by the address of the authors. Since
+impact of patents after a lag of a few years, I wo
+databases are kept the same at the point of pub
+the latter is true, then how did the authors acco
+changed their address?
+Author Response: Addresses of patents are defined by OE
+and European Patent full text database. We made no cha
+It is not clear to me how the term “tw” is used. I
+purpose does it serve? My guess is that the valu
+elapsed since publication. Whatever the case m
+Author Response: Terms associated with weak signal topi
+occurrence frequency and a high time-weighted increasin
+to strong signal topics are likely to have a high absolute
+weighted increasing rates. In line with Yoon (2012), we st
+a time-weighted method (combination of time weights (tw
+specific period (j) in which term frequencies are counted)
+more important than past appearances. For instance, in
+calculate: 1 - 0.05 x (10-1) = 1 - 0.05 x (9)= 1 - 0.45 = 0.5
+= 0.6 … 1 - 0.05x(10-10)= 1 - 0.05x(0)= 1
+I guess there are typos in Equations 1 and 2. “N
+○
+
+○
+
+○
+
+○
+
+Author Response: Yes, there were typos in Equations 1 an
+pointing it out.
+For those who are new to text mining, it would
+dealt with synonyms. For instance, “playing”, “li
+meanings when used as keywords. How did the
+correct patents?
+○
+
+Open Research Europe
+
+O
+
+Author Response: Previous research on text mining sugge
+to-one word level is very likely to produce errors. We first
+keywords as they represent technology concepts, and the
+weak signal keywords. Afterward, the manual selection is
+up main keywords associated with different sectors. After
+keywords, we use them as anchor words and utilize Corre
+modelling to identify related invention activities across EU
+How can weak signals be more likely to transfo
+Authors need to explain it better and relate it w
+Author Response: We included a more substantiate expla
+likely to transform into high-impact innovations.
+Data is merged inside the methodology section
+rename this section as “Data and Methodology
+Author Response: We renamed the section as “Data and M
+The theoretical section does not present an est
+rename it as “Conceptual Framework”.
+Author Response: We renamed it as “Conceptual Framew
+I really appreciate the depth in the analysis of t
+for policymakers, I wonder if it is feasible for th
+datasets and do all these steps every time they
+Author Response: Once data analyses are done and Pytho
+of the parts can be automated so that policymakers to ha
+tools.
+○
+
+○
+
+○
+
+○
+
+Competing Interests: No competing interests were di
+
+

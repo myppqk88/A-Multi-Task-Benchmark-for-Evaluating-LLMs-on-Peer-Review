@@ -1,0 +1,63 @@
+{
+  "task_id": "F127_T2_Q02",
+  "paper_id": "F1000:139508",
+  "parent_task": "T3_F127_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F127_R1/input.json",
+  "parent_input_sha256": "1cff7b2ae44873c36ec8083252f67574ceeb6d9ec14f5e542ed4b170d135d82d",
+  "review_dimension_AI_candidate": "结果解释与文献对话",
+  "selection_scope": "保留评审与作者完整相关要求及对应简短回答。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/139508_Does_the_merger_improve_the_operating_performance_of_the_company__Evid/v1_manuscript.pdf",
+      "original_sha256": "29b161f2554c75ac2497e6b80cb7bd770931ef8b5c10aba93651828637b296c8",
+      "raw_text_file": "data/question_bank/T2_回应评价/F127_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        44435,
+        44527
+      ],
+      "report_id": "208030",
+      "date": "2023-11-06",
+      "raw_page_numbers": [
+        13
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/139508_Does_the_merger_improve_the_operating_performance_of_the_company__Evid/v1_manuscript.pdf",
+      "original_sha256": "29b161f2554c75ac2497e6b80cb7bd770931ef8b5c10aba93651828637b296c8",
+      "raw_text_file": "data/question_bank/T2_回应评价/F127_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        46296,
+        46424
+      ],
+      "report_id": null,
+      "date": "2023-11-16",
+      "raw_page_numbers": [
+        14
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 20193,
+    "end": 20736,
+    "exact_quote": "tatistics. IBM SPSS Statistics Base 29.0 was used for data processing and paired ‘t’ test analysis.\nResults and discussions\nStudy of historical cases of Mergers and Acquisitions have established the changes in financial performance of the\nrestructured firms. However, the previous studies and the current paper confirm that the firm’s performance in terms of\nprofitability, liquidity, and solvency does not show any significant improvement in the short run in the post-merger\nperiod. The present study of post-merger activity’s long-term effec",
+    "anchor_matches": 1,
+    "anchor": "Results and discussions"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 22533,
+    "end": 23076,
+    "exact_quote": "l performance parameters which are mentioned in the testing of hypothesis for the sample companies.\nResults and discussions\nStudy of historical cases of Mergers and Acquisitions have established the changes in financial performance of the\nrestructured firms. However, the previous studies and the current paper confirm that the firm’s performance in terms of\nprofitability, liquidity, and solvency does not show any significant improvement in the short run in the post-merger\nperiod. The present study of post-merger activity’s long-term effec",
+    "anchor_matches": 1,
+    "anchor": "Results and discussions"
+  },
+  "process_check_code": "E",
+  "process_check_status": "已核前稿已有信息或所核位置仍保留",
+  "observed_process_note": "所核结果讨论开头与经营利润率解释基本相同，未把作者Added承诺算作该段已补引文；其他段落的科学充分性未判。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

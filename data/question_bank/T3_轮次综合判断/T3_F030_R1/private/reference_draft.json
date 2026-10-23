@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F030_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "编码可靠性",
+    "证据透明度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "答复称补质性文献、组织情境和需求分析阶段定位，且更正员工数。核对原稿所报κ=.63与70%代码重叠的定义，不能以两项数值代替完整编码树或推断统计不一致。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Thank you for the opportunity to review this paper which focuses on workplace mental health\npromotion in a large state organisation. The paper is an interesting read, but I believe some\nadditional work/adjustments could be made to the manuscript to make it more comprehensive. I\nhope you find this feedback helpful; my suggestions are made below.\nThe majority of the studies in the introduction seem ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for this comment. We have added a section on previous qualitative research in\nthe field of workplace health promotion to the theory section (line 129-162). We have\nprovided an explanation of how the needs analysis is embedded in the project context: “The\nfirst project step is the needs analysis, the results of which are reported here, aims to\nexplore the needs for interventions to promote mental health in the workplace from the\nperspec",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Participants\nAll 6488 employees of the organization were informed\nabout the project by email and got the invitation for\nparticipation in needs analysis interviews. Two managers\nreported back willing to participate without being contacted personally. 15 managers, 22 employees and one security officer\nwere in a next step invited by personal contact: from each of\nthe organization’s six departments, on average three managers\nwere asked to participate, and asked to name employees\nfrom his/her unit who were willing to participate as well.\nIn sum, 34 of the 40 personally invited reported back with\ninterest to participate. Semi-structured interviews have thus been\ndone with 13 managers and 20 employees. The average age\nof the managers was M = 45.38 years (range: 32–65 years) and\nfive out of 13 were men. Five managers belonged to the\nresearch and administration staff and eight to the administration\nstaff. The average age of the employees was M = 40.1 years\n(range: 19–63 years) and two out of 20",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Setting\nThis study was carried out in a large state organization in\nNorthern Germany, which belongs to the sciences and\ndevelopment sector and is self-administrated. The organization consists of six overall (administrative) departments with\nsubunits and four research and development centres. In sum,\n6418 people are employed in the organization, i.e.,\n243 managers and 4678 subordinate employees in research\nand development, and 1497 managers, employees and trainees\nwork in administration.\nParticipants\nAll 6418 employees of the organization were informed\nabout the project by email (through an organization-wide\nmailing list) and got the invitation for participation in needs\nanalysis interviews. Two managers reported back willing to\nparticipate without being contacted personally. 15 managers,\n22 employees and one security officer were in a next step\ninvited by personal contact: from each of the organization’s\nsix departments, on average three managers were asked to\nparticipate, and asked to",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Side effects of mental health interventions\nAn aspect that has been somewhat neglected until now is\nthat any kind of intervention may have not only positive\nimpacts, but also negative side effects. Only recently, side effects\nhave become a seriously discussed and investigated phenomenon\nin the field of psychological intervention research (Linden et al.,\n2020; Schermuly & Graßmann, 2019). Mental health prevention\nintervention in organizations can have several negative side\neffects, such as dysfunctional sensitization of employees and\nmanagers on mental wellbeing, e.g. focusing too much on\npotential harms, wellbeing, and a misunderstanding of mental\nillness as being caused by the workplace (“I believe work has\nmade me sick”). As another problem, unrealistic expectations\nmay occur such as “Work must make me happy every day and if it\ndoes not, it is not the right job for me”. Such unrealistic expectations may give rise to problems that would not have come up\nif “wellbeing” had not been ind",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "and no significant improvement over six months. Other\nreview research found 10 RCT studies of preventive interventions for health care workers with positive effects on reduced\njob stress and higher job satisfaction (Van Wyk & Pillay-Van\nWyk, 2010). In this review only one study found medium-term\npositive effects on work demands and work satisfaction at\n30-week follow-up (Lökk & Arnetz, 2000).\nInterventions to increase mental health and well-being are\nalso implemented in the education sector. Four studies used\nstress management training, school-wide coaching and mentoring\nsupport, among others (Naghieh et al., 2015). Overall, the effects\non work ability, job-related anxiety and burnout were small\n(Naghieh et al., 2015). Programs for young adults in education\nrefer in particular to positive psychology and mindfulness,\nwith about half of the 57 studies in a systematic review\n(Cilar et al., 2020) showing significant effects for well-being,\nproblem-solving and stress reduction.\nAs we have s",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,92 @@
+Article: Open Research Europe | Open Access Publishing Platform
+DOI: 10.12688/openreseurope.17749.1
+Version: 1
+Reviewer: Sean Devine
+Status: approved with reservations
+Date: 2024-07-19
+Report ID: 42232
+============================================================
+
+Overall appraisal ---------------------
+In this paper, Eben and colleagues attempt a replication and extension of Yu et al. (2014). Originally, Yu and colleagues found that self-reported ratings of frustration, motivation, response time, and pressing force varied as a function of goal proximity in a rewarded computerized “blocking” experiment. Eben et al. successfully replicate Yu et al.’s procedure and find in some cases similar results and in others non-consistent results.
+Overall, this paper was well-written and approached the replication with good methods and a clear rationale. I especially appreciated the transparency with which the authors reported their findings and described the technical limitations they ran into. As a replication of a study that’s been cited over 100 times, I think this paper succeeds in providing additional information about the reliability and size of the original effects.
+Below I detail some comments that I think can help further improve this paper.
+Main comments ---------------------
+I hate to be the reviewer who requests to cite his own work, but in this case I think it is appropriate. In the introduction, the authors discuss both recent and classical work on the goal-gradient hypothesis but neglect the burgeoning literature on goal-gradients in cognitive effort expenditure (Katzir et al., 2020; Emanuel et al., 2022; Devine et al., 2020; 2024). This work seems especially relevant since the current task leverages an attentional task (the arrow task) not too dissimilar from the one in Devine et al. (2024), where we found similar speeding proximity effects. So, at the least, it might be useful to put Yu et al.’s (2014) results (and the current replication) in conversation with some more recent work exploring these proximity effects in psychology. Moreover, the authors also discuss past work which has used EMG to measure affect, but do not discuss more recent work specifically linking EMG activity to cognitive effort exertion (Devine et al., 2024; Berger et al., 2020). This seems like something that would be directly relevant to the current discussion and justification of EMG in this context. I leave it up to the authors if they choose to include this work and they should not feel compelled to do so just because some of this work is mine, as the reviewer’s. I just think some of it is particularly relevant for the topic at hand.
+One key element which I found unclear throughout the paper was
+which
+effects Eben and colleagues were aiming to replicate. In their Discussion they state: “Our RT data showed participants sped up in the arrow task the closer they got to the reward. Once they were blocked, participants seemed to be surprised about the outcome and confirmed the outcome with a slowed response [...O]ur current results are not in line with the original study” (p. 14). Yet, in reading Yu et al. (2014), they specifically de-emphasize the confirm-RTs in their analysis: “[Participants] were told that “Confirming the outcome is not a speeded task, and that you have plenty of time (4 sec) to make this response” (p. 167). Further, only RTs to arrows (not confirm-RTs) are reported in Yu et al.’s main text figures and tables. In fact, apart from listing average confirm-RTs, I am not sure where Yu et al. report confirm-RT results whatsoever. Thus, I am not entirely sure what to make of the discussed discrepancy in confirm-RTs. In any case, I am not sure it is correct to position the current replication as strongly inconsistent with the original findings—especially when the majority of behavioral and self-report measures do seem consistent. Perhaps the authors could further clarify their view on the importance of confirm-RTs to the original findings.
+Regarding statistical power, I think there is a bit more work to be done here. Firstly, I was not clear how the authors computed power for their analyses. They report a benchmark Cohen’s d (0.5) which they are able to detect with 80% power. But both their replication analyses (ANOVAs) and exploratory analyses (Bayesian MLMs) do not have effect sizes on this metrics. So perhaps a conversion was done?
+Leaving this question aside, the authors’ rightfully highlight that using Yu et al.’s ANOVA-based analysis, they too fail to find a significant confirm-RT effect (replicating the original null finding). However, when using a multilevel approach, this proximity effect on confirm-RTs emerges. I wholly agree that the multilevel approach is the superior one to the ANOVA-based analysis. However, calculating power in an MLM context is quite different than doing so for ANOVA and usually requires simulation. If indeed the MLM approach afforded increased power over the inferior ANOVA approach, then it could be that the original Yu et al. study was simply underpowered to detect the proximity effect on confirm-RTs. Again, it is hard to judge since, from what I can see, Yu et al. do not report or visualize any confirm-RT data in their original publication. But if this is indeed just a power issue (e.g., Yu et al also found numerical increases in confirm-RTs as a function of proximity, but which failed to achieve significance under an ANOVA approach), this would be a helpful piece of information for explaining the discrepancy in results.
+Going beyond replication-by-significance, it would be interesting to see a brief discussion of relative effect sizes. It is difficult to compare right now because arrow-RT effects are reported by ANOVA in Yu et al. but by MLM in Eben et al. Nevertheless, eyeballing Figure 2 in Eben et al. against Figure 3 in Yu et al., the RT and self-report effects seem remarkably similar (e.g., a roughly ~40ms difference from 1/4 to 4/4 schedules in both samples). At the most, something like a small-telescopes approach could be used (Simonsohn, 2015), but even just a qualitative comparison of the relative effect sizes—particularly for the confirm-RTs (see power issue from comment #3 above)—could be very informative.
+Some more details about the fEMG analysis would be helpful. What preprocessing steps were taken? Were signals bandpassed filtered, and if so at what frequency range? Were they rectified and low-pass filtered? (see van Boxtel, 2010).  Some of these cleaning steps may help more subtle effects emerge, especially under conditions of potentially low power as the authors highlight on p. 13.
+Additionally, here the authors adopted a grand-mean ERP approach for computing fEMG signals (p. 8). Instead, the authors could consider a single-trial approach, in which a summary value for each muscle is computed per trial per subject (e.g., the percent change in maximal constriction from baseline). This approach yields a single scalar summary value per trial and could mitigate power issues by keeping more data in the analysis and permitting a multilevel analysis similar to their RT analysis (something like: “cor ~ mo(proximity) + mo(effort) + ( mo(proximity) + mo(effort) | id)”). The downside to this approach is that it precludes a timecourse analysis, but as far as I understand, the timecourse of the EMG signal is less of interest than the comparison of experimental conditions in this case.  See Devine et al. (2023) for an example of this approach.
+Minor comments ---------------------
+Interestingly, the blocking procedure used here closely mirrors that used in classical experiments on goal-gradients in rats (Brown, 1948). I am not sure if this was an inspiration or not for the original design, but if not, it is an interesting coincidence.
+I very much liked the video of the experiment uploaded to OSF! More researchers should do this—it makes evaluating the methodology much easier.
+Though Yu et al also did not analyze accuracy rates, I wonder if proximity or effort meaningfully influenced accuracy rates in this task. Or was accuracy too high and invariable for a simple task as this?
+References ---------------------
+Berger, A., Mitschke, V., Dignath, D., Eder, A., & van Steenbergen, H. (2020). The face of control: Corrugator supercilii tracks aversive conflict signals in the service of adaptive cognitive control.
+Psychophysiology
+,
+57
+(4), e13524.
+Brown, J. S. (1948). Gradients of approach and avoidance responses and their relation to level of motivation.
+Journal of comparative and physiological psychology
+,
+41
+(6), 450.
+Devine, S., & Otto, A. R. (2022). Information about task progress modulates cognitive demand avoidance.
+Cognition
+,
+225
+, 105107.
+Devine, S., Roy, M., Beierholm, U., & Otto, A. R. (2024). Proximity to rewards modulates parameters of effortful control exertion.
+Journal of Experimental Psychology: General
+.
+Devine, S., Vassena, E., & Otto, A. R. (2023). More than a feeling: physiological measures of affect index the integration of effort costs and rewards during anticipatory effort evaluation.
+Cognitive, Affective, & Behavioral Neuroscience
+,
+23
+(4), 1129-1140.
+Emanuel, A., Katzir, M., & Liberman, N. (2022). Why do people increase effort near a deadline? An opportunity-cost model of goal gradients.
+Journal of Experimental Psychology: General
+,
+151
+(11), 2910.
+Katzir, M., Emanuel, A., & Liberman, N. (2020). Cognitive performance is enhanced if one knows when the task will end.
+Cognition
+,
+197
+, 104189.
+Simonsohn, U. (2015). Small telescopes: Detectability and the evaluation of replication results.
+Psychological science
+,
+26
+(5), 559-569.
+Van Boxtel, A. (2010, August). Facial EMG as a tool for inferring affective states. In
+Proceedings of measuring behavior
+(Vol. 2010).
+
+
+--- Structured Questions ---
+
+Q: Is the work clearly and accurately presented and does it engage with the current literature?
+A: Yes
+
+Q: Is the study design appropriate and is the work technically sound?
+A: Yes
+
+Q: Are sufficient details of methods and analysis provided to allow replication by others?
+A: Yes
+
+Q: Are all the source data and materials underlying the results available? 
+A: Yes
+
+Q: If applicable, is the statistical analysis and its interpretation appropriate?
+A: Yes
+
+Q: Are the conclusions drawn adequately supported by the results?
+A: Partially
+
+Areas of research: Cognitive psychology, cognitive effort, goal-gradient effects, EMG analysis, computational modeling, multilevel modeling

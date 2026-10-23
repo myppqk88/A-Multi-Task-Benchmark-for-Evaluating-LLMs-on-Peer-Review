@@ -1,0 +1,24 @@
+{
+  "task_id": "F003_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审书目建议中的Pedersen文献是独立一项；作者以其主要涉及结构效度、时间稳定性信息不足为由不纳入。不因有理由拒绝而自动扣分，但给定文本不能独立验证该外部文献的性质。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "A generally well written article. Some prior literature dealing with the temporal stability of the type D construct is missing (some of the articles only reporting rank-order stability):\n\nPedersen, S. S., Yagensky, A., Smith, O. R. F., Yagenska, O., Shpak, V., & Denollet, J. (2009). Preliminary evidence for the cross-cultural utility of the type D personality construct in the Ukraine. International Journal of Behavioral Medicine, 16(2), 108–115. [external resource identifier omitted]",
+      "role": "作者信中完整所选原关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "This study did not include enough information on temporal stability to warrant its inclusion in the current paper. It focuses mainly on structural validity.",
+      "role": "完整对应作者答复"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

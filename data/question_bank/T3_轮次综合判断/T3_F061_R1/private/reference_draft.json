@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F061_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "样本与资料来源",
+    "数据验证",
+    "变量解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对焦点国家选择、组织/个人立场及other类别说明是否澄清，206个数据点不自动等于206次访谈。",
+    "外部反馈验证和研究团队内部质量检查是两种程序；核对后稿小标题及参与者说明，不能把内部会议当独立外部验证。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Financing sustainable energy projects is a critical issue for expediting the energy transition. This\nwork presents worthy data that could be used in several fields of research and also beyond\nacademia. This data note is presented in a clear and transparent manner. The authors follow fairly\nall necessary technical and ethical rules for conducting interviews. However, the data note needs\nsome minor ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe would like to thank the reviewer for their positive feedback on our work and are very grateful\nfor their constructive comments and suggestions. They most certainly helped to improve the\nquality of our data note. Financing sustainable energy projects is a critical issue for\nexpediting the energy transition. This work presents worthy data that could be used in\nseveral fields of research and also beyond academia. This data note is presented in a",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "European Union, which cover all the official EU languages,\nand consisted of 18 members. A five-step methodology was\nfollowed in collecting the data, as explained below.\nDefining the scope. First, a distinction was made between focus\nand non-focus countries. When conducting the interviews, the\nresearch team used two different survey templates. On the one\nhand, for non-focus countries, the template was limited to\nobtain quantitative data on specific financial variables for renewable energy projects. On the other hand, the template for focus\ncountries was designed to allow for more in-depth research.\nHence, it included not only the quantitative questions on financial\nvariables but also other qualitative questions to trigger discussions about the evolution of the costs of capital and the impact\nof auctions. Both templates are available in the extended data\n(Brückmann et al., 2021).\nFive EU Member States were selected as focus countries:\nDenmark, Germany, Greece, Portugal, and Spain. When s",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The cost of capital data was collected through structured\ninterviews with stakeholders in EU Member States. The research\nteam conducted the majority of the interviews in the local\nlanguage of the respective country, or in English as default.\nThe team consisted of Master and PhD students across the\nEuropean Union, which cover all the official EU languages,\nand consisted of 18 members. A five-step methodology was\nfollowed in collecting the data, as explained below.\nDefining the scope. First, a distinction was made between focus\nand non-focus countries.\nWhen selecting the focus countries, we considered four criteria:\n1) \u0007having RE auctions in place\n2) \u0007geographical balance\n3) \u0007country risk levels (Denmark and Germany as low risk,\nPortugal and Spain as medium risk, and Greece as a high\nrisk country), and\n4) \u0007different remuneration schemes (Germany with a one-sided\ncontract-for-difference, Greece with a two-sided CfD,\nDenmark with a fixed FIP, Portugal with a hybrid scheme,\nand Spain with i",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "both for focus and non-focus countries, which can be found in\nthe extended data (Brückmann et al., 2021). To ensure that\nthe survey asks relevant questions and is structured in a comprehensive and logical manner, we conducted five initial\nexploratory interviews and adjusted the survey based on the\nreceived feedback (the original version of the questionnaire used\nfor the exploratory interviews can be found in the AURES II\nexploratory interviews template Brückmann et al. (2021)).\nThe questionnaires start first with information on work background and experience of the interviewee, followed by questions\non quantitative values for financing variables of RE projects:\nWACC, cost of debt (CoD), cost of equity (CoE), debt service coverage ratio (DSCR), loan tenor, technology, size of the\nproject, type of financing and time of completed construction\nfor solar PV, wind onshore and wind offshore. The questionnaires asked for values of specific projects. However, if the\ninterviewees did not want to",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Brückmann et al. (2021)) that depicts different auction design\nelements (such as auction volumes, bid bonds, and penalties), and connected them to different stages in the lifetime of a\nrenewable energy power plant. For instance, auction volumes and\nfrequency may affect planning risk during the pre-development\nand development phases. Material and financial pre-qualification\nrequirements may affect the bidders’ allocation risk (the risk\nof obtaining support or winning an auction) - stricter requirements increase potential sunk costs. Penalties and realization\ndeadlines could affect the risk of being penalized, while\nremuneration scheme design affect directly the project revenues and\nmay impact credit risk - namely the debt providers risk of\nrecovering the loan.\nConducting the interviews. Fourth, between November 2019\nand April 2020, the consortium conducted interviews in EU\nMember States (and the United Kingdom), consisting of one\ninterview session per each interviewee. All interviews we",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

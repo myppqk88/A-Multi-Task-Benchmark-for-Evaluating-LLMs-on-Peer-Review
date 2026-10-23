@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F153_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "综述方法与目标",
+    "概念与经验关系",
+    "理论贡献"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认不仅纳入直接研究boundary的文献，还纳入工作生活平衡/冲突，核对纳入说明及问题化方法是否相称。",
+    "提出经验与情境视角不等于已提供新的经验材料；核对对主流假设的批判是否有文献证据。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This literature review (41 readings) focuses on the specific dynamics of work-nonwork boundaries\ncharacterizing academic settings. The objective is to advance the conversation beyond traditional\napproaches/concepts of work-life ‘balance’ and work-life ‘conflict’, and to emphasize how the\nspecific work context influences the construction and negotiation of boundaries. Thank you for the\nopportunity ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you for your detailed and thoughtful feedback on our article. We genuinely\nappreciate your insights and the effort you put into engaging with our work. Your\ncomments have been important in helping us improve the clarity and focus of the paper,\nwhich we have now prepared in version 2.\n\n\n\n\nBased on your feedback, we have made several significant changes. First, we improved the\nmethodology section by providing a more detailed ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The relationship between work and nonwork in academia has\nbeen extensively studied, particularly with regard to concepts\nsuch as work-life balance (Beddoes & Pawley, 2014; Kinman &\nJones, 2008; Rosa, 2022) and work-nonwork conflict (Beigi\net al., 2018), along with their antecedents (Hogan et al., 2014).\nWhile these studies offer valuable insights into the intersection of work and nonwork, they often overlook the distinct\nissue of boundaries - a growing challenge in contemporary\nacademia. Academic work is increasingly characterized by\nblurred boundaries between professional and personal life,\ncontributing to significant mental health and psychological wellbeing concerns (Docka-Filipek & Stone, 2021; Edwards et al.,\n2021).\nAlthough the concepts of work-life balance and work-family\nconflict are important, they primarily focus on managing multiple roles or mitigating work-nonwork role conflict. However,\nthey fail to fully capture how work and nonwork boundaries\nbecome increasingly permeabl",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "intensified these challenges, contributing to stress and mental\nhealth struggles (Griffin, 2022; Hogan et al., 2014).\nAcademia shares challenges with other knowledge-intensive\noccupations (Alvesson, 2004), including autonomy, non-standard\nwork hours, and role multiplicity. Still, the specific dynamics\nof academic work render the negotiation of work-nonwork\nboundaries particularly complex. While these characteristics\nare widely recognised as complicating the work-nonwork interface (Kelliher & Anderson, 2010; Reissner et al., 2021), the\nliterature - aside from a few notable exceptions (Cohen et al.,\n2009; Izak et al., 2023) - often overlook their specific influence\non the construction and negotiation of these boundaries within\nacademic settings. Work-life balance discussions typically focus\non how individuals manage competing personal and professional demands (Rosa, 2022), while research on work-nonwork\nconflict primarily emphasizes role overload (Beigi et al., 2018),\nassuming a clear de",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nThe interplay between work and non-work in academic settings has\nbeen the subject of extensive research, particularly in relation to worklife balance and work-nonwork conflict. However, much of this\nliterature has tended to overlook the specific dynamics of worknonwork boundaries. Moreover, while prior research has explored\ngeneral patterns of conflict and balance, it has not sufficiently\naddressed the unique pressures that academics face, such as high\nautonomy, irregular working hours, and competing demands. This\nreview critically examines how the specific nature of academic work\nshapes the boundaries between work and non-work, advancing the\nconversation beyond traditional approaches. The central research\nquestion guiding this review is: How do the aspects of academic work\nshape the blurring of work-nonwork boundaries? Through a\nproblematizing approach, this review relies on 41 articles to broaden\nand enhance our understanding of the boundary challenges\nacademics encounter. F",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nThe interplay between work and non-work in academic settings has\nbeen the subject of extensive research, particularly in relation to worklife balance and work-nonwork conflict. However, much of this\nliterature has tended to overlook the specific dynamics of worknonwork boundaries. Moreover, while prior research has explored\ngeneral patterns of conflict and balance, it has not sufficiently\naddressed the unique pressures that academics face, such as high\nautonomy, irregular working hours, and competing demands. This\nreview critically examines how the specific nature of academic work\nshapes the boundaries between work and non-work, advancing the\nconversation beyond traditional approaches. The central research\nquestion guiding this review is: How do the aspects of academic work\nshape the blurring of work-nonwork boundaries? Through a\nproblematizing approach, this review relies on 41 articles to broaden\nand enhance our understanding of the boundary challenges\nacademics encounter. F",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

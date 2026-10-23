@@ -1,0 +1,27 @@
+{
+  "task_id": "F029_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与概念",
+    "媒介与记忆解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称删media theory/medium theory区分、重写引言并提前说明遗忘论点。核对概念连贯性及理论主张强度，不强求理论文章做不适用的经验试验。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "This article is an important intervention into the topic of the digital turn. It is an extremely rich\npaper. It is well-grounded theoretically and addresses the digital turn in an original and\ninteresting manner.\nThe author opposes Hosking’s idea that digital memory is a new form of memory that represents\nthe end of collective memory. Whereas the idea of a digital “turn” of memory studies implies ",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you very much for your helpful comments and valuable suggestions. Following your\nremarks, I have made the following changes:\nI have removed the paragraph about the distinction between media theory and\nmedium theory. Following your insightful remarks, I think that this distinction\ndeserves a separate section, and I have chosen to rewrite the introduction to clarify\nmy argument instead of delving into the debate on the status of the digital as a\nmedium.\nI have added a detailed explanation o",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

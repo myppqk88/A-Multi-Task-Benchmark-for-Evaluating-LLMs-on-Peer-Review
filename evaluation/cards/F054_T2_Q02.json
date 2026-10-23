@@ -1,0 +1,128 @@
+{
+  "task_id": "F054_T2_Q02",
+  "paper_id": "ORE:5-343",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F054_T2_Q02/input.json",
+  "input_sha256": "353a9edbeb179215d2bf4e18cd21e9b4c39a83f7e755efc5545f6758e2b1518b",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F054_T2_Q02/input.json",
+      "source_sha256": "353a9edbeb179215d2bf4e18cd21e9b4c39a83f7e755efc5545f6758e2b1518b",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "5. More information should be provided on how the participants have been recruited. The\neligibility and exclusion criteria are clearly mentioned and are appropriate, but there is no\ninformation on demographics or on any previous LL knowledge and experience of the\nparticipants.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F054_T2_Q02/input.json",
+      "source_sha256": "353a9edbeb179215d2bf4e18cd21e9b4c39a83f7e755efc5545f6758e2b1518b",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Response: Unfortunately, we did not collect data on previous LL knowledge and experience.\nWe did not include all demographics for the participants in the expectations survey (since\nthe main focus of the manuscript concerns the FTT evaluation. We have, however, now\nassessed and reported that the full sample of invited researchers matches the FTT\nevaluation participants in gender and background.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者明确此前LL知识与经验未收集，不能凭空补齐；还声明邀请总体与评价参与者在性别和背景匹配。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；可认可无法补收的诚实说明，但不应判所有招募与基线要求已满足。"
+    },
+    {
+      "id": "J2",
+      "judgment": "未给出具体招聘渠道/过程及人口特征数据；性别背景匹配不等于没有自选择，也无法排除经验差异。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；可认可无法补收的诚实说明，但不应判所有招募与基线要求已满足。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者明确此前LL知识与经验未收集，不能凭空补齐；还声明邀请总体与评价参与者在性别和背景匹配。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：要同时覆盖经验未收集与招募信息未交代，而非只批评缺少基线。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者明确此前LL知识与经验未收集，不能凭空补齐；还声明邀请总体与评价参与者在性别和背景匹配。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：要同时覆盖经验未收集与招募信息未交代，而非只批评缺少基线。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。未给出具体招聘渠道/过程及人口特征数据；性别背景匹配不等于没有自选择，也无法排除经验差异。",
+      "high_score_conditions": [
+        "识别匹配声明的有限范围及未提供数值，不把背景匹配视作代表性证明。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：未给出具体招聘渠道/过程及人口特征数据；性别背景匹配不等于没有自选择，也无法排除经验差异。"
+      ],
+      "boundary_2_3": "要同时覆盖经验未收集与招募信息未交代，而非只批评缺少基线。",
+      "boundary_3_4": "识别匹配声明的有限范围及未提供数值，不把背景匹配视作代表性证明。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient；可认可无法补收的诚实说明，但不应判所有招募与基线要求已满足。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：识别匹配声明的有限范围及未提供数值，不把背景匹配视作代表性证明。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：未给出具体招聘渠道/过程及人口特征数据；性别背景匹配不等于没有自选择，也无法排除经验差异。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：识别匹配声明的有限范围及未提供数值，不把背景匹配视作代表性证明。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient；可认可无法补收的诚实说明，但不应判所有招募与基线要求已满足。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "要同时覆盖经验未收集与招募信息未交代，而非只批评缺少基线。",
+    "3_to_4": "识别匹配声明的有限范围及未提供数值，不把背景匹配视作代表性证明。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

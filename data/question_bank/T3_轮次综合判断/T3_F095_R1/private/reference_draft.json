@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F095_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与分析对应",
+    "方法定位",
+    "推论边界"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者降低ANT论述强度、解释中介者概念并移除netnography标签；核对实际方法、资料角色和结论是否同步调整。",
+    "18次访谈、11个西方国家与理论选例不同于跨国总体代表性；将截图改为辅助信息不能替代真实田野方法。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Summary:\nThe study addresses a highly relevant topic in journalism studies: the increasing adoption of\nnews automation technology across media systems and newsrooms. The study’s innovative\nresearch design combines empirical and theoretical approaches. On the one hand, the\nauthor conducted 18 semi-structured interviews with news professionals from 11 Western\ncountries between 2020 and 2021. The int",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you for providing me with helpful feedback, which helped make this work better and\nclearer. Please find below how I addressed your comments:\nThe theoretical focus has been reworked to put less emphasis on ANT. At the same time, I\nalso tried to better detail how this theoretical framework helped inform my data analysis. I\npaid special attention to better explaining how I worked with the concept of intermediaries\nand mediator",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "and, finally, the enlistment of vocal elements as in NLG-toaudio output (e.g., ABC, The Washington Post). This makes\nthe movement of what can be considered the “actor-network\nof automated journalism” discernible to the researcher’s\neye and gives an indication as to where it is heading, thus\nanswering RQ1.\nAll in all, this testifies of a growing journalistic professionalisation in the way automated news is being employed, as\nit is drifting away from political and commercial influences\n(i.e., public service data, data brokers, automated content\nproviders and third-party self-editing tools) to become more\nunder journalists’ control, but also in citizens’ hand (i.e., using\ncrowdsourced material as a source). As shown in Table 2,\nNorth Atlantic media organisations (i.e., Reuters, The Washington Post, ABC, BBC) clearly lead the way in this process of differentiation, in accordance with Hallin and Mancini’s\n(2004) typology: as they write (ibid., p. 80), “the Liberal\nModel is characterized by ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "automated backgrounders—to name a few—all contribute to\ngreater journalistic professionalisation by ensuring independence\nfrom all these forms of external influences.\nThat being said, a process of de-differentiation could also be at\nplay in that compliance with platforms’ terms and conditions\nis generally needed to be able to connect to social media APIs\n(see van Dijck et al., 2018) and matching their technical standards is necessary to have automated audio stories featured\non voice assistants (e.g., Amazon’s Alexa, Google Assistant).\nThe question as to whether platforms or news organisations\nwill act as spokespersons in this growing actor-network of automated journalism—and by extension RQ2—then remains\nopen: should news media take on this role, for instance while\ndeveloping their own self-editing solutions or relying on\ninternal feeds, this could be interpreted as reinforcing the\nautonomy of the journalistic field, whereas—should they\nbecome too dependent on Big Tech companies for da",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "diffusion of emergency alert summaries that were created\nusing its own NLG tool (Collett, 2021; Collett, 2022).\nIn this section, I highlighted how automated news is being\nused at 18 news organisations that were selected based on\nHallin and Mancini’s (2004) media system typology (i.e.,\nNorth Atlantic, North/Central and Mediterranean models)\nand that featured different media types (i.e., news agencies,\nnewspapers, public service broadcasters). Using ANT, I demonstrated that force or effect passes through automated news\nin a linear way as initial intent is kept and when it does what it\nis supposed to do (i.e, intermediary), whereas in other cases\nthere is substantial interference to it (i.e., mediator). The latter\ngoes as follows: first, using alternate data sources while relying\non a media organisation’s own internal feed, data collection or\narchives or, else, crowdsourced material or social media feeds;\nsecond, putting journalists at the centre of interfaces that\nare designed internally",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

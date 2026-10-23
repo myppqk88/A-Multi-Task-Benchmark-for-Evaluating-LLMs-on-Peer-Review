@@ -1,0 +1,27 @@
+{
+  "task_id": "F002_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论边界",
+    "实践建议"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审认为实践建议仍抽象，并要求案例和伦理能力的实施路径；作者以理论文章范围解释不补案例。不能因合理限缩研究范围自动判文字回应不足。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The article develops a materialist perspective to consider the socio-political relations through the\nethics of Artificial Intelligence (AI). Against the ideological discourses of AI promoters (immaterial\nnarrative), the authors adopt a realist position based on attention to context.\nThey emphasize the fact that the ethics of AI is always to be remade according to social, political\nand environmenta",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nMany thanks for the detailed review and comments. Please find below a response to each of\nthem. On the first 3 comments:\n1. There might be some confusion regarding the scope of this article. We added a note\non Endnote 50 to clarify and hope that this helps sort this out.\n2. We are not sure what might have given the impression that we ‘invoke’ the ethics of\ncare as ‘a guarantor of effectiveness against discrimination and concentration of\npower’. The contribution of the ethics of care here is tha",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

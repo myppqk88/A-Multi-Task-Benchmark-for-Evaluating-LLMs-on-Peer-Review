@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F038_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "文献综述边界",
+    "数学与指标定义"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审提出加入数学形式化和实证比较；作者以既有研究的成对相关定义评级分歧。须区分综述范围解释与确已新增实证检验。",
+    "评审提出的公式本身也须审查索引和度量含义，不把人类公式直接当标准答案；核对后稿PCA等解释是否改变结论强度。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The paper titled Divergence and Aggregation of ESG Ratings: A Survey by Arianna Agosto and\nAlessandra Tanda presents an extensive review of the literature concerning the divergence of\nEnvironmental, Social, and Governance (ESG) ratings and the methodologies proposed for their\naggregation.\nThe authors highlight the inconsistencies observed across ESG ratings provided by different\nagencies, emphasiz",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe thank the reviewer for his useful comments and suggestions. Below we provide a\nresponse to his remarks.\n>Response: we thank the reviewer for his comments and suggestions. In the revised\nversion, we have defined the most used metrics in the literature regarding the divergence\nof ESG scores. In particular, the works analysed in our study express divergence in terms of\nlow pairwise correlations between the ESG ratings of different providers. As ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "them into a single metric. Note that the above-mentioned issue\nof weighting is also crucial in this situation, as the weight attributed to each rating should not be only easily estimated, but\nalso interpreted, allowing the stakeholders to be aware of the\ncontribution of each indicator to the assessment of the company\nsustainability profile.\nThe issue of building ESG aggregated scores was addressed by\ntwo recent works. Agosto et al. (2023a) and Agosto et al. (2023b)\nrelied on a Bayesian approach - based on the methodological\nresults of Giudici et al. (2003) and Cerchiello and Giudici (2014)\n- to obtain an aggregated indicator for the ESG performance of\ncompanies by integrating ratings assigned by different providers. In both works the aggregated ESG indicator is computed\nstarting from single ESG scores, by attributing a weight to\neach. The proposed weighting procedure is data-driven, as it\nrelies on the relationship between the ESG performance and the\ncreditworthiness measured by credit",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Data-driven techniques can help build aggregate measures from\nseveral input variables. A method widely used in the statistical\nliterature is Principal Component Analysis (PCA), that aims\nat creating one or more new factors from a larger set of\nobserved variables, where each component is a linear combination of the original variables and orthogonally independent from the other components. Gucciardi et al. (2024)\nemploy PCA (together with pairwise correlation analysis and\nOLS) to evaluate the “common factors” driving Environmental scores. The study finds a limited number of common factors\nunderlying the E score of different providers, mainly linked to\nmore quantitative variables (e.g., natural resources use).\nBissoondoyal-Bheenick et al. (2024) apply PCA and voting\naverage to Sustainalytics, MSCI, and Asset4 ESG ratings\nand conclude the methods might contribute to ESG rating\ndivergence.\nThe limits of PCA emerge when building indexes with a normative value, according to Gai et al. (2023),",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nPurpose\nThis paper reviews the existing literature on the divergence of\nEnvironmental, Social, and Governance (ESG) ratings and explores\nvarious aggregation methods. It highlights the challenges posed by\ninconsistent ESG ratings and their implications for investment\ndecisions.\nDesign/methodology/approach\nThe study conducts a comprehensive review of prior research\nfocusing on ESG ratings, examining their correlation levels and the\nmethodologies employed to assess corporate sustainability. It also\ninvestigates traditional aggregation techniques and modern machine\nlearning approaches used to address these inconsistencies.\nFindings\nPast literature reveals that ESG ratings exhibit a low level of\ncorrelation across different providers, raising concerns about their\nreliability as investment indicators. Although some studies propose\nadvanced aggregation methods to enhance accuracy, significant gaps\nremain in understanding how to effectively consolidate ESG\ninformation to create a depe",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "We have rewritten the introduction and several key sections\nto better integrate the reviewers’ suggestions, providing a\nclearer explanation of the motivation behind our work and the\nmain contributions it offers. In particular, we have updated the\nsection on the literature review to incorporate more recent and\nrelevant studies, ensuring a more comprehensive overview of\nthe existing research. Additionally, we have added a dedicated\nsection outlining the methodology used to select the papers\nincluded in our analysis, thereby improving the transparency and\nreproducibility of our literature survey.\nWe have also expanded the discussion on the metrics most\ncommonly used to assess divergence in ESG scores. Specifically,\nin Section 5 of the revised manuscript, we clarified that most\nstudies quantify divergence by analysing the low pairwise\ncorrelations between ESG ratings assigned by different providers.\nAmong the most frequently used measures, the Pearson\ncorrelation coefficient is often adopt",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

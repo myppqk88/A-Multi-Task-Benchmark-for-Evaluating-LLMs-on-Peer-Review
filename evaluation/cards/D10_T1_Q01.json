@@ -1,0 +1,277 @@
+{
+  "task_id": "D10_T1_Q01",
+  "paper_id": "PeerJ:3082",
+  "task": "T1",
+  "split": "development",
+  "unit": "original_manuscript",
+  "input_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+  "input_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          8367,
+          8556
+        ]
+      },
+      "quote": "The first and second experiments were designed to choose the most suitable vibration patterns for\nfuture experiments and to confirm that tests with blindfolded sighted people were feasible.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          10696,
+          10790
+        ]
+      },
+      "quote": "There are\nnot significant differences between blind and sighted people for any of the patterns",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E3",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          8713,
+          8774
+        ]
+      },
+      "quote": "the subjects had to perform two laps walking\nfor each pattern",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E4",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          10288,
+          10348
+        ]
+      },
+      "quote": "Two-way analysis of variance (ANOVA) was used to examine the",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E5",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          13858,
+          14032
+        ]
+      },
+      "quote": "No\nparticipant considered that VP1 and VP3 provided bad guidance or made them feel lost. Only 2 participants\nconsidered that VP3 provides bad guidance or made them feel lost.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E6",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          17108,
+          17230
+        ]
+      },
+      "quote": "This study indicates that a belt with tactile stimuli is a feasible\nsolution for guiding blind runners on athletic tracks.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E7",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/input.json",
+      "source_sha256": "fd36fc851964ed2371c04dabe564231714457c7cc13df4ba105ef843c1246560",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          17724,
+          17847
+        ]
+      },
+      "quote": "Further work is necessary for testing the vibration patterns in real conditions\nincluding running on a real athletic track.",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E8",
+      "source_path": "data/question_bank/T1_生成评审/D10_T1_Q01/materials/pages/page_006.png",
+      "source_sha256": "e74b75ced0b75faf53ae63549a33ff9c3c01e4514fe96779af75ac397ee802fb",
+      "locator": {
+        "image_path": "materials/pages/page_006.png"
+      },
+      "observation": "表4 VP3有1人feel lost及1人guided badly，VP1和VP2均为0；表3同8人各3模式两圈。",
+      "role": "题内页图",
+      "model_visible": true,
+      "reference_only": false,
+      "evidence_type": "image"
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "每组6名（实验1/2）或4名（实验3）的盲/蒙眼比较不显著不能证明二者等价，若要以蒙眼者替代盲人后续测试，应明确精度或等价目标；可保留探索性可行性结论。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可把研究定位为需要重要澄清的先导研究；不要求其立即完成真实跑步部署，但必须收缩已验证范围。"
+    },
+    {
+      "id": "J2",
+      "judgment": "同人经历三模式且每模式两圈，模式和圈次是重复测量；方法只称双因素ANOVA且结果因素说法不同，应说明受试者依赖和误差结构，不能当独立样本。未复算不宣称p值必错。",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "unresolved",
+      "acceptable_alternatives": "可把研究定位为需要重要澄清的先导研究；不要求其立即完成真实跑步部署，但必须收缩已验证范围。"
+    },
+    {
+      "id": "J3",
+      "judgment": "文字同时说VP3无人低评分又说两人低评分，目视表4为VP3各1人feel lost/guided badly，VP1/VP2均无低评分，应纠正模式标签。",
+      "evidence_ids": [
+        "E5",
+        "E8"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可把研究定位为需要重要澄清的先导研究；不要求其立即完成真实跑步部署，但必须收缩已验证范围。"
+    },
+    {
+      "id": "J4",
+      "judgment": "动态实验是步行40m缩尺跑道而非独立跑步，作者承认跑步振动和设备设计待测；结论guiding blind runners可限定为设计线索，不能称安全实用已验证。",
+      "evidence_ids": [
+        "E3",
+        "E6",
+        "E7"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可把研究定位为需要重要澄清的先导研究；不要求其立即完成真实跑步部署，但必须收缩已验证范围。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "样本/任务/表格事实",
+      "boundary_2_3": "明确实验3是8人步行及重复两圈，而非跑步验证。",
+      "boundary_3_4": "核准表4低评分在VP3及正文自相矛盾；不虚构完整真人原评审。",
+      "high_score_conditions": [
+        "核准表4低评分在VP3及正文自相矛盾；不虚构完整真人原评审。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：明确实验3是8人步行及重复两圈，而非跑步验证。"
+      ]
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "推理与统计依赖",
+      "boundary_2_3": "解释非显著不等价和同人重复观测需处理。",
+      "boundary_3_4": "同时认可小样本探索用途，不将缺功效计划机械等同所有描述发现无效。",
+      "high_score_conditions": [
+        "同时认可小样本探索用途，不将缺功效计划机械等同所有描述发现无效。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：解释非显著不等价和同人重复观测需处理。"
+      ]
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "可推广结论",
+      "boundary_2_3": "限制结论到初步振动模式设计。",
+      "boundary_3_4": "区分步行引导、主观信心、跑步安全和盲人/蒙眼者替代有效性四层，提出对应必要修订。",
+      "high_score_conditions": [
+        "区分步行引导、主观信心、跑步安全和盲人/蒙眼者替代有效性四层，提出对应必要修订。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：限制结论到初步振动模式设计。"
+      ]
+    }
+  },
+  "severe_error_checks": [
+    "将作者声称修改与可见修改混同",
+    "将评审认可、批准、后续沉默当作科学真值",
+    "忽略证据边界作超出材料的强结论"
+  ],
+  "read_scope": {
+    "read": [
+      "完整原稿提取文本；目视p006表3/表4；源索引核实没有独立完整当轮真人报告。"
+    ],
+    "not_read": [
+      "其余页图未目视；作者回信未作为完整独立评审替代；外部文献/数据未核验"
+    ],
+    "verification_limits": [
+      "独立AI候选非真人gold；未复算ANOVA；非显著与等价的区分为逻辑判断。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "coverage_limit": "非穷尽参考；新有效意见及证据充分的不同结论可高分。",
+  "concern_coverage": [
+    {
+      "concern": "独立审读：盲与蒙眼替代",
+      "status": "已核",
+      "reference_point_ids": [
+        "J1"
+      ]
+    },
+    {
+      "concern": "重复测量",
+      "status": "已核",
+      "reference_point_ids": [
+        "J2"
+      ]
+    },
+    {
+      "concern": "表4和正文矛盾",
+      "status": "已核",
+      "reference_point_ids": [
+        "J3"
+      ]
+    },
+    {
+      "concern": "步行到跑步推广",
+      "status": "已核",
+      "reference_point_ids": [
+        "J4"
+      ]
+    }
+  ],
+  "source_unit": "T1"
+}

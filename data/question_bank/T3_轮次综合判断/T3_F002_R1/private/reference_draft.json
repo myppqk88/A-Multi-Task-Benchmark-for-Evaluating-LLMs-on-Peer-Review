@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F002_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论边界",
+    "实践建议"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审认为实践建议仍抽象，并要求案例和伦理能力的实施路径；作者以理论文章范围解释不补案例。不能因合理限缩研究范围自动判文字回应不足。",
+    "核对后稿Endnote 50及实践建议是否真正澄清主张强度；理论范围说明不等于已提供实施有效性的经验证据。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article develops a materialist perspective to consider the socio-political relations through the\nethics of Artificial Intelligence (AI). Against the ideological discourses of AI promoters (immaterial\nnarrative), the authors adopt a realist position based on attention to context.\nThey emphasize the fact that the ethics of AI is always to be remade according to social, political\nand environmenta",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nMany thanks for the detailed review and comments. Please find below a response to each of\nthem. On the first 3 comments:\n1. There might be some confusion regarding the scope of this article. We added a note\non Endnote 50 to clarify and hope that this helps sort this out.\n2. We are not sure what might have given the impression that we ‘invoke’ the ethics of\ncare as ‘a guarantor of effectiveness against discrimination and concentration of\npower’. ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "the Google AI principles10. However, as Resseguier and Rodrigues\nhave argued, these AI ethics initiatives are dominated by a principled approach, i.e., a “law-conception of ethics”, which is\na view on ethics that considers it as a replica of the law, i.e.\na softer version of the law11. Resseguier and Rodrigues point\nto the risk of misusing ethics as a replacement for legal regulation, and in particular the risk of ethics washing. While legal\nregulation might come with hard lines that could restrict innovation, regulation through ethical principles and guidelines\noffer more flexibility and leeway; hence, they are favoured by\nindustry actors12. An issue with this principled approach to\nethics is that it leads to ethics being used as a weaker form\nof regulation by actors with interest in avoiding hard lines13.\nAdditionally, this approach to ethics comes with another pitfall that needs to be addressed: its abstraction and the risk\nof disconnection from social, political and environmental\nm",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "acknowledges that efforts in this area are still needed, especially to move beyond the abstraction of current AI ethics\ninitiatives. More recently, there have been numerous efforts at\nmaking ethics guidelines more fit for purpose by operationalising them to specific sectors of application or development\ncontexts6. These are assuredly necessary and praiseworthy efforts.\nSeveral experts on AI have critiqued AI ethics for failing to\nconsider contextual elements, especially the socio-political\ncontext, which, as they note, is essential to address ethical\nchallenges posed by this technology7. This essay shows\nthat this identified gap in AI ethics finds its root in the very\nnature of the currently dominant approach to AI ethics, i.e.,\na view on ethics that considers it as a softer version of the law.\nIt points to the need to complement this approach and makes\na series of practical recommendations. As such, it calls for\na shift of attention in AI ethics: away from high-level abstract\nprincipl",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "→ \u0007Recognise that a technological product is never “neutral”\nand always reflects specific worldviews and intentions\n→ \u0007Conduct/require assessments of the ethical, social, environmental, and human rights impacts of AI before, during and after deployment of AI systems\n→ \u0007Encourage prudence and honesty about the capabilities of the AI system being sold and do not gloss over\nthe limitations\n→ \u0007Ensure diversity in the composition of the team researching, developing, using, or assessing AI (especially encouraging inclusion of non-white females and non-binary).\n→ \u0007Pay attention to the “privilege hazard”, i.e. the risk of\npeople in position of privilege failing to notice instances of\noppression and injustices perpetuated by AI technologies\n→ \u0007Provide a safe environment for whistle-blowers and\nunion members in the AI industry\n→ \u0007Develop and ensure respect for research ethics in the private research and development (R&D) AI sector.\n→ \u0007Promote and create research ethics committees/AI ethics\noffic",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "→ \u0007Engage with data scientists and software engineers to\nbetter understand the way AI systems are developed and\nthe data collected, cleaned, processed and interpreted\n→ \u0007Draw from ethics theories beyond principlism, especially the ethics of care, virtue ethics, or Spinozist ethics.\n→ \u0007Ensure diversity in the composition of AI ethics teams\n(especially encouraging inclusion of non-white females\nand non-binary individuals).\n→ \u0007Pay attention to the “privilege hazard”, i.e. the risk of\npeople in position of privilege failing to notice instances of\noppression and injustices perpetuated by AI technologies\n→ \u0007Recognise, build upon and further develop AI developers’ ethical sensitivity (rather than impose guidance that\nmay be top-down and disconnected from practice)\n→ \u0007Develop/share use cases on ethical and social impacts\nof AI (especially negative ones) to make the impacts of AI\nmore concrete and understandable\n→ \u0007Engage more with the impacted communities, especially the most vulnerable among ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

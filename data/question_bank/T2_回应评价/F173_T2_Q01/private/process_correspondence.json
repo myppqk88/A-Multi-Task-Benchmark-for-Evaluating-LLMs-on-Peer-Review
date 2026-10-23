@@ -1,0 +1,61 @@
+{
+  "task_id": "F173_T2_Q01",
+  "paper_id": "F1000:129786",
+  "parent_task": "T3_F173_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F173_R1/input.json",
+  "parent_input_sha256": "20f315affc22decb0f522c948f3680a29d42ca27ce1e8ebc0391418649116854",
+  "review_dimension_AI_candidate": "理论覆盖与概念边界",
+  "selection_scope": "含新增引言和不讨论意识必要关联的完整限定；不以新增引用自动判核心论点成立。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/129786_Is_rationality_a_cognitive_faculty/v1_manuscript.pdf",
+      "original_sha256": "727aab8dc48b08679060340dcaa12d5b73ab52c2f7e623fc22c909bb267a4e41",
+      "raw_text_file": "data/question_bank/T2_回应评价/F173_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        34872,
+        35630
+      ],
+      "report_id": "400468",
+      "date": "2025-08-23",
+      "raw_page_numbers": [
+        9
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/129786_Is_rationality_a_cognitive_faculty/v1_manuscript.pdf",
+      "original_sha256": "727aab8dc48b08679060340dcaa12d5b73ab52c2f7e623fc22c909bb267a4e41",
+      "raw_text_file": "data/question_bank/T2_回应评价/F173_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        41249,
+        42601
+      ],
+      "report_id": null,
+      "date": "2025-11-02",
+      "raw_page_numbers": [
+        12
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "Solms",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 2686,
+    "end": 3211,
+    "exact_quote": " in his effort to revise Freud’s\nfoundation of psychoanalysis in light of neuroscientific findings, Solms (2017) highlights experimental results that\ndemonstrate that rational evaluation and consciousness are emergent properties of subcortical affective systems. That is,\nrationality and consciousness are not dependent on inputs from the environment (see also Casanova, 2010). In contrast,\ncognition operates almost entirely on the basis of inputs, which produce perception and memory that can be unconscious\n(see Dall’Aglio",
+    "anchor_matches": 3,
+    "anchor": "Solms"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿无Solms，后稿新增皮层下情感系统讨论；核心概念链接是否成立未裁定。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

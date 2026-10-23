@@ -1,0 +1,28 @@
+{
+  "task_id": "F087_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "综述方法定位"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "the authors are encouraged to clarify\nthe methodological positioning of the review as a theoretical or integrative synthesis,",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "1. Methodological positioning of the review and support for factual statements\nWe fully agree. In the revised manuscript we have clarified, at a higher level of prominence,\nthat the paper is an integrative theoretical synthesis rather than an exhaustive mapping or a\nformal “systematic review” in the strict PRISMA sense. As follows:\nAbstract (methodological positioning): We added an explicit statement positioning\nthe article as an integrative theoretical synthesis and clarifying that it combines a\nstructured search and thematic synthesis without claiming exhaustive coverage.\nMethodological approach (early signposting): We added a short “positioning”\nsubsection that explains the rationale for an integrative synthesis in relation to model\nconstruction and conceptual re-organization.\nSupporting methodological references: To avoid reliance on authorial assertion, we\nincorporated established methodological sources on integrative/theoretical reviews\nand review typologies, which justify the approach adopted.\nBecause the main contribution of the manuscript is conceptual (i.e., the construction and\narticulation of an interdependent model linking teacher knowledge and teacher identity), an\nintegrative theoretical synthesis is the most appropriate methodological form. The revised\nwording is intended to align the reader’s expectations with the actual goals and procedures\nof the review.\n\n3. About the assessment of the discussion in the context of the literature\nWe acknowledge this evaluation and have revised the manuscript to ensure that the\nintended goal is explicit: the article is an integrative synthesis aimed at conceptual model\nconstruction rather than an exhaustive mapping of all perspectives. To address the\nunderlying concern, we (i) strengthened the scope statement and delimitations, and (ii)\nclarified the methodological positioning so that the manuscript is assessed against the\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n\n\n\nappropriate standard for integrative theoretical reviews.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "摘取完整方法定位分句，保留非穷尽性与PRISMA区别的所有说明；第3项重复澄清另关联。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

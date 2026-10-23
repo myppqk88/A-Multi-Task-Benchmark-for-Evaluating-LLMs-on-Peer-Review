@@ -1,0 +1,28 @@
+{
+  "task_id": "F174_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原Word回信的核对；AI候选参考，不是人类金标准",
+  "review_dimensions_AI_candidates": [
+    "研究假设与结果呈现"
+  ],
+  "dimension_status": "候选主题，未冻结为专家标签或权重",
+  "atomic_requirements_scope": "一个完整关切及其全部给定答复；多段联合答复时保留全部关联段落",
+  "ai_checks": [
+    "关切同时要求摘要呈现预期和实际的习得年龄效应；答复说明新增晚期双语者语噪任务较差的实际结果，是否覆盖“预期”需分别判断。",
+    "仅评价所给文字，不凭该句断言摘要真的已改，也不从中认定年龄作用已获因果识别。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The paper also emphasizes the role of age of language acquisition in speech perception, mentioning several differences in the ability to process speech between monolinguals and late bilinguals. It would be better if the authors show expected and actual results about the effects of age of second language acquisition in the abstract of the paper.",
+      "role": "原始回信中的评议引文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "RESPONSE: Thank you for this advice. We have introduced a sentence in the Abstract to indicate that late bilinguals did worse in the speech in noise task.",
+      "role": "作者的完整对应文字回答"
+    }
+  ],
+  "revision_verification": "not_assessed"
+}

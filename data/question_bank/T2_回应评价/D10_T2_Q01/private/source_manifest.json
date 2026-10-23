@@ -1,0 +1,89 @@
+{
+  "task_id": "D10_T2_Q01",
+  "paper_id": "PeerJ:3082",
+  "dev_id": "D10",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/PeerJ/human-computer-interaction/3082_Analysis_of_different_vibration_patterns_to_guide_blind_people/version_v0.2/3082_v0.2_2016-12-15_response_letter.docx",
+      "sha256": "0a7dcf00d1c4130ec0d3f9e6a01d49cf448bd6efb567b7ed3591d640e57f617c",
+      "locator_lines": [
+        23,
+        23
+      ],
+      "locator_chars_half_open": [
+        921,
+        1055
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/PeerJ/human-computer-interaction/3082_Analysis_of_different_vibration_patterns_to_guide_blind_people/version_v0.2/3082_v0.2_2016-12-15_response_letter.docx",
+      "sha256": "0a7dcf00d1c4130ec0d3f9e6a01d49cf448bd6efb567b7ed3591d640e57f617c",
+      "locator_lines": [
+        24,
+        30
+      ],
+      "locator_chars_half_open": [
+        1056,
+        2104
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/human-computer-interaction/3082_Analysis_of_different_vibration_patterns_to_guide_blind_people/version_v0.2/3082_v0.2_2016-12-15_response_letter.docx",
+      "source_sha256": "0a7dcf00d1c4130ec0d3f9e6a01d49cf448bd6efb567b7ed3591d640e57f617c",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "fea30058b3489ed62ab0a5b42f9483e28e7b0d01a3c8c686fb715ef8c5e7963e",
+      "source_char_range_half_open": [
+        921,
+        1055
+      ],
+      "source_line_range_inclusive": [
+        23,
+        23
+      ],
+      "selected_text_before_cleaning": "The sample size is relative small in this study. There is a need to provide a priori power analysis for three experiments, separately.",
+      "input_segment_after_cleaning": "The sample size is relative small in this study. There is a need to provide a priori power analysis for three experiments, separately.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/human-computer-interaction/3082_Analysis_of_different_vibration_patterns_to_guide_blind_people/version_v0.2/3082_v0.2_2016-12-15_response_letter.docx",
+      "source_sha256": "0a7dcf00d1c4130ec0d3f9e6a01d49cf448bd6efb567b7ed3591d640e57f617c",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "fea30058b3489ed62ab0a5b42f9483e28e7b0d01a3c8c686fb715ef8c5e7963e",
+      "source_char_range_half_open": [
+        1056,
+        2104
+      ],
+      "source_line_range_inclusive": [
+        24,
+        30
+      ],
+      "selected_text_before_cleaning": "We have calculated the power analysis. We used the Cohen’s approach:\nCohen, Jacob. 1988. Statistical power analysis for the behavioral sciences. 2nd ed. Hillsdale, N.J: L. Erlbaum Associates.\nWe use contingency table in experiment 1. Therefore, we used the approach for Chi-square tests: Cohen’s w (effect size). In experiments 2 and 3 we use anova, therefore we apply the Cohen’s f for measuring the effect size. Cohen suggests that effect size index values of 0.1, 0.3, and 0.5 represent small, medium, and large effect sizes respectively.\nExperiment 1: Considering w=0.5, with N=12 observations the power is 0.3. The power is not high. Power of 0.8 would need 38 observations.\nExperiment 2: The power of test is 0.8 for the left direction, and 0.9 for the right direction. This levels of power can be considered as good.\nExperiment 3: The power of test is 0.5. Power of 0.8 would need 14 subjects, instead of 8.\nRegarding differences between blind and sighted people, the results are not conclusive and more research is needed with more subjects",
+      "input_segment_after_cleaning": "We have calculated the power analysis. We used the Cohen’s approach:\nCohen, Jacob. 1988. Statistical power analysis for the behavioral sciences. 2nd ed. Hillsdale, N.J: L. Erlbaum Associates.\nWe use contingency table in experiment 1. Therefore, we used the approach for Chi-square tests: Cohen’s w (effect size). In experiments 2 and 3 we use anova, therefore we apply the Cohen’s f for measuring the effect size. Cohen suggests that effect size index values of 0.1, 0.3, and 0.5 represent small, medium, and large effect sizes respectively.\nExperiment 1: Considering w=0.5, with N=12 observations the power is 0.3. The power is not high. Power of 0.8 would need 38 observations.\nExperiment 2: The power of test is 0.8 for the left direction, and 0.9 for the right direction. This levels of power can be considered as good.\nExperiment 3: The power of test is 0.5. Power of 0.8 would need 14 subjects, instead of 8.\nRegarding differences between blind and sighted people, the results are not conclusive and more research is needed with more subjects",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [],
+  "role_verification": "已读完整所选原关切与整个对应答复。PeerJ作者签署回复信内逐点引述评审；不是独立完整评审文件。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "245bc38e8d3455e705e4d99e5f6490d6de57cc4b3893b620068f5f42f81ad177",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.332614+08:00"
+}

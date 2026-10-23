@@ -1,0 +1,23 @@
+{
+  "task_id": "F100_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "数据覆盖与合理限缩研究范围",
+    "研究对象与题名摘要一致性"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.manuscript_text",
+      "exact_quote": "Abstract\nBackground\nHorizon 2020 and Horizon Europe are flagship programs of the\nEuropean Union aimed at supporting research and innovation,\nfostering collaboration among companies, academic institutions, and\nresearch organizations. Comprehensive data on projects, objectives,\nparticipants, funding details, and results of Horizon projects is\navailable through the open access portal CORDIS (Community\nResearch and Development Information Service). This paper\nintroduces a novel methodology for utili",
+      "role": "研究内容定位，不是缺陷金标签"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。"
+  ],
+  "revision_verification": "not_in_task",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

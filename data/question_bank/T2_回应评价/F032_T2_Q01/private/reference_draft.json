@@ -1,0 +1,27 @@
+{
+  "task_id": "F032_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "指标操作化",
+    "理论与时间范围"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审指出S3/创业发现不只技术多样化、时期划分需理由。完整答复包含早期致谢和后续详细逐点回答，不能只凭最先许诺修改判断整体；后稿还需核对术语与期间说明。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The article “Identifying entrepreneurial discovery processes with weak and strong technology\nsignals: a text mining approach” is a relevant contribution to the literature on smart specialization.\nIt is centered in the textual analysis of patent abstracts from 2000 to 2009 provided by EPO and\nuses a mining approach to collect technology weak and strong signals, linking these signals to\ninvention ac",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\n\n\n\nLevan Bzhalava\nDear reviewer, \nWe would like to thank you for the effort and expertise that you contributed towards\nreviewing the manuscript. We [closing signature omitted]\n\n[Next author response post]\n\n\nWe would like to thank the reviewer for constructive comments and suggestions, which helped us\nconsiderably to improve the manuscript. Below we provide responses to the reviewer's\ncomments:\nFirst, smart specialization is a process that is far from being centered in technological\ndiversificat",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

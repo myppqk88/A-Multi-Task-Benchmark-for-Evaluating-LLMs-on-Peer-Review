@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F070_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "假设可检验性",
+    "综述证据与解释",
+    "概念区分"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者用更精确措辞修订假设，但仍须检查“部分确认”的证据规则；语义增强不等于可检验标准补齐。",
+    "核对disinformation与misinformation定义、Al Gore段和引文是否实际改动；答复声称将vaccination messages替换为同样措辞不是变化证据。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This study conducted a systematic literature review of papers about climate obstruction, finding\nan emphasis on immunizing and fact-checking but few studies on the organizational structures\nsupporting disinformation.\nOverall, I find this is an interesting study that makes a useful contribution. The point about the\nneed for more systemic approaches to disinformation is well made. However, I find th",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for your detailed feedback. In response to your concerns about the hypotheses,\nwe have revised them to improve their precision and eliminate vague wording. For example,\nH1 now emphasises \"identifying more precisely the dynamics that sustain disinformation\"\nand \"developing targeted interventions\",\" while H2 focuses on \"quantitative and qualitative\nmethods\" and developing \"operational strategies\".\" H3 has been refined to emphasise a\n\"hol",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The urgency of environmental issues (Willis, 2020), including climate change and global warming (IPCC, 2023), is part of\na widespread concern and has been recognized as a key security challenge (The National Intelligence Council, 2021a).\nThis has led to numerous initiatives to mitigate its effects. The\nEuropean Union is systematically promoting the transition\nfrom a linear economy to a circular, green and blue economy\n(European Commission, 2022; European Commission, 2023),\nwhich requires public opinion to champion the associated\nchange (Carbonell-Alcocer et al., 2022; Trudel, 2019).\nInformation and communication measures are crucial in this\nchange process, as the success of this transition depends on\na profound change in citizens’ beliefs, attitudes, practices\nand behaviors (Mcdonough & Braungart, 2002).\nIt therefore depends on cultural and cognitive processes that\nmay encounter resistance to change, public inaction (Hornsey\n& Fielding, 2020) and manipulative information tactics throug",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "or misleading information, usually motivated by economic,\npolitical or strategic interests. On the other hand, misinformation refers to the unintentional spread of incorrect information, where the sender may believe the information to be true\n(European Commission, 2018; European Commission, 2020).\nThis distinction is key to understanding the tactics underlying\nobstruction strategies in climate action, where interested actors\npromote narratives to manipulate public perception and delay\nthe implementation of sustainable policies.\nIn addition to these approaches, critical media literacy (CML)\nallows us to understand how media narratives shape public perceptions of climate change. CML, and in particular eco-media\nliteracy, enables the critical analysis and deconstruction of misleading information in the media, especially in relation to environmental issues linked to corporate and political interests\n(Kellner & Share, 2019; Lopez, 2023).\nHowever, more systematic approaches that assess from ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "emotional involvement and individual responsibility. Sambrook\net al. (2021) argue, based on behavioural decision research,\nthat extreme weather events only have an impact on\njudgments and decisions if they have occurred recently, and\nalways depending on how strong the subjects’ pre-existing\nbeliefs about the reality of climate change are.\nThe extent of the perceived risk also affects the persuasiveness\nof the content. The evidence found by Dahlstrom and Rosenthal\n(2018) suggests that negative narratives about climate\nchange are more likely to be ignored by audiences, while\nmore neutral narratives have a greater chance of resonating\nwith audiences because their impact is underestimated.\nOther studies (Zhou & Shen, 2021) confirmed that scientific\nevidence and misinformation can be processed differently.\nThus, in the case of scientific evidence, the factuality of the\nmessage and the credibility of the source would influence\nattitudes after exposure to the message, in contrast to\nempathy, ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Solutions and operational recommendations offered\nThe solutions and recommendations (R.Q.3.2) offered in\nthe studies to combat climate change misinformation can be\ncategorized into two groups: the effectiveness of fact-checking\nand audience inoculation strategies, and technological\nand methodological solutions for designing intervention\nmodels.\nEffectiveness of fact-checking and audience inoculation\nstrategies\nRegarding the positive effects of fact-checking, Porter et al.\n(2019) found evidence supporting the idea that party affiliation\ninfluences beliefs about climate change but is not determinant\nof their formation. For example, positive effects on corrective\ninformation were found for Trump’s posted messages on\nclimate change, although the influence was found to be greater\nfor Democrats. These effects could not be replicated for\nmessages related to environmental regulation. The results\ncould find further explanation in the findings of Allen &\nMcAleer (2018), who found a predominantly",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

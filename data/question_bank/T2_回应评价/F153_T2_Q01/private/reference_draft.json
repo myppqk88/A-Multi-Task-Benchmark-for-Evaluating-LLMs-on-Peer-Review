@@ -1,0 +1,28 @@
+{
+  "task_id": "F153_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "综述分析过程透明度"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Moreover, what was\nactually done is not explained. How were the texts read and analysed: which questions? which\nsteps? which codes, if any? I suggest expanding this part and providing more information on the\nanalysis process.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "First, we improved the\nmethodology section by providing a more detailed description of the analysis and the\nreview process.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "只选实际阅读/分析的问题、步骤与代码这一项，不把第三层书目选择合在同一单关切中。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": "D17_T2_Q01",
+  "paper_id": "PeerJ:5414",
+  "dev_id": "D17",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/PeerJ/psychiatry-and-psychology/5414_Mindfulness_and_autonomous_sensory_meridian_response__ASMR/version_v0.2/5414_v0.2_2018-06-20_response_letter.docx",
+      "sha256": "33d36348959f2f93188df30177fdeffd4e43f48d4bdaebf3994bed71b25833f8",
+      "locator_lines": [
+        7,
+        7
+      ],
+      "locator_chars_half_open": [
+        326,
+        1177
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/PeerJ/psychiatry-and-psychology/5414_Mindfulness_and_autonomous_sensory_meridian_response__ASMR/version_v0.2/5414_v0.2_2018-06-20_response_letter.docx",
+      "sha256": "33d36348959f2f93188df30177fdeffd4e43f48d4bdaebf3994bed71b25833f8",
+      "locator_lines": [
+        8,
+        10
+      ],
+      "locator_chars_half_open": [
+        1178,
+        3182
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/psychiatry-and-psychology/5414_Mindfulness_and_autonomous_sensory_meridian_response__ASMR/version_v0.2/5414_v0.2_2018-06-20_response_letter.docx",
+      "source_sha256": "33d36348959f2f93188df30177fdeffd4e43f48d4bdaebf3994bed71b25833f8",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "8376a7db3dfccdbca56b9ddbd0ddd3471bfbfa7b7891c5cdc60c8c436458c253",
+      "source_char_range_half_open": [
+        326,
+        1177
+      ],
+      "source_line_range_inclusive": [
+        7,
+        7
+      ],
+      "selected_text_before_cleaning": "Several issues have been identified:1. The recruitment of the controls is straightforward; however, it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR. The authors mention they were recruited from ASMR Reddit site, however, raw data set and the supplemental materials do not seem to include any methods of verification of ASMR. Were they asked explicitly whether they experience ASMR (as were the controls)? There are questions related to how often they watch ASMR videos etc. on the ASMR checklist but many people enjoy watching such videos without experiencing the sensory response. Therefore, I am concerned that as these participants didn’t explicitly state that they experience the physiological response which constitutes ASMR, there is no way of knowing whether they indeed experience ASMR.",
+      "input_segment_after_cleaning": "Several issues have been identified:1. The recruitment of the controls is straightforward; however, it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR. The authors mention they were recruited from ASMR Reddit site, however, raw data set and the supplemental materials do not seem to include any methods of verification of ASMR. Were they asked explicitly whether they experience ASMR (as were the controls)? There are questions related to how often they watch ASMR videos etc. on the ASMR checklist but many people enjoy watching such videos without experiencing the sensory response. Therefore, I am concerned that as these participants didn’t explicitly state that they experience the physiological response which constitutes ASMR, there is no way of knowing whether they indeed experience ASMR.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/psychiatry-and-psychology/5414_Mindfulness_and_autonomous_sensory_meridian_response__ASMR/version_v0.2/5414_v0.2_2018-06-20_response_letter.docx",
+      "source_sha256": "33d36348959f2f93188df30177fdeffd4e43f48d4bdaebf3994bed71b25833f8",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "8376a7db3dfccdbca56b9ddbd0ddd3471bfbfa7b7891c5cdc60c8c436458c253",
+      "source_char_range_half_open": [
+        1178,
+        3182
+      ],
+      "source_line_range_inclusive": [
+        8,
+        10
+      ],
+      "selected_text_before_cleaning": "Response: Reviewer 1 is correct in noting that we did not ask ASMR participants to view a video to confirm their ASMR status.  This was intentional.  We were concerned that eliciting ASMR tingles prior to the completion of the study could potentially bias the results.  Several items on our questionnaires (in the current study and in Fredborg et al., 2017) related to emotional states.  Inducing ASMR, which is emotionally positive in nature, may have altered participants’ results.  Additionally, having one group of participants experiencing ASMR tingles while the other group (controls) would have introduced an inherent bias into the experimental design.  \nWe should note, however, that if an individual did not experience ASMR, then he or she would not have indicated experiencing tingles in response to any of the ASMR triggers listed in the ASMR Checklist.  The fact that all participants identified specific ASMR triggers (and the speed with which they elicited tingling sensations) suggests that our ASMR participants did, in fact, have ASMR.\nThat said, after reading Reviewer 1’s comments, we agree that it would be useful to more clearly explain how we were able to ensure that the ASMR participants experienced ASMR.  To that end, we have added the following statement to the Participants section, “To gain confidence that individuals recruited to the ASMR group genuinely experienced the phenomenon (rather than watched the videos for relaxation purposes), they were asked to answer specific questions about their ASMR experiences when completing a self-created ASMR checklist (Fredborg et al., 2017; as elaborated below). These questions included a list of 14 popular ASMR-triggering stimuli that participants rated both on the intensity of tingling sensations experienced, as well as how many seconds after stimulus onset that they would typically experience tingles. Only participants who completed the entirety of the ASMR checklist were included in the ASMR group during the analyses.”",
+      "input_segment_after_cleaning": "Response: Reviewer 1 is correct in noting that we did not ask ASMR participants to view a video to confirm their ASMR status.  This was intentional.  We were concerned that eliciting ASMR tingles prior to the completion of the study could potentially bias the results.  Several items on our questionnaires (in the current study and in Fredborg et al., 2017) related to emotional states.  Inducing ASMR, which is emotionally positive in nature, may have altered participants’ results.  Additionally, having one group of participants experiencing ASMR tingles while the other group (controls) would have introduced an inherent bias into the experimental design.  \nWe should note, however, that if an individual did not experience ASMR, then he or she would not have indicated experiencing tingles in response to any of the ASMR triggers listed in the ASMR Checklist.  The fact that all participants identified specific ASMR triggers (and the speed with which they elicited tingling sensations) suggests that our ASMR participants did, in fact, have ASMR.\nThat said, after reading Reviewer 1’s comments, we agree that it would be useful to more clearly explain how we were able to ensure that the ASMR participants experienced ASMR.  To that end, we have added the following statement to the Participants section, “To gain confidence that individuals recruited to the ASMR group genuinely experienced the phenomenon (rather than watched the videos for relaxation purposes), they were asked to answer specific questions about their ASMR experiences when completing a self-created ASMR checklist (Fredborg et al., 2017; as elaborated below). These questions included a list of 14 popular ASMR-triggering stimuli that participants rated both on the intensity of tingling sensations experienced, as well as how many seconds after stimulus onset that they would typically experience tingles. Only participants who completed the entirety of the ASMR checklist were included in the ASMR group during the analyses.”",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [],
+  "role_verification": "已读完整所选原关切与整个对应答复。PeerJ作者签署回复信内逐点引述评审；不是独立完整评审文件。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "72ef2b59848adaa463045c1561dcea5b9dac1d2106e6e0bd5b936afe14188193",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.346157+08:00"
+}

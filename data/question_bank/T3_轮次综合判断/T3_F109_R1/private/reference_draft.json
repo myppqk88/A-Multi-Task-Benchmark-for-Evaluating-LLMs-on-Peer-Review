@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F109_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究范围与贡献",
+    "抽样和方法",
+    "评审建议正当性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者以覆盖多个学科为由拒绝缩窄标题，并拒绝扩大到本研究未测内容，须按调查目标判断回应而非一律要求服从。",
+    "作者指出推荐文献不相关且含评审自身文献；核对引用要求和拒绝理由，不能将拒绝自引视为缺陷或把额外添加文献当研究改善。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Strategic priorities and challenges in research software funding: Results from an\ninternational survey\nThe topics of this paper are interesting, though well known. The structure and content must be\nrevised, and results have to be better explained by authors before to be reconsidered.\nTitle has to be shorter and more specific of the fields concerning funding research software.\nAbstract has to clari",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe are grateful for this report's helpful and constructive reviewer comments. The reviewer\nreport requests some additional information and raises some points for discussion. While\nwe don’t entirely agree with all points presented in this reviewer report, we have taken on\nboard several points and made updates to the manuscript.\nReviewer 2: “Title has to be shorter and more specific of the fields concerning funding\nresearch software.”\nResponse: Th",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nResearch software is increasingly recognized as critical infrastructure in the contemporary research ecosystem\n(Barker et al., 2022; Jensen & Katz, 2023b; Knowles et al., 2021; Hocquet et al., 2024). Research software spans\na broad spectrum, including source code files, algorithms, scripts, computational workflows, and executables, all\ncreated for or during research (Gruenpeter et al., 2021). With the growing reliance on computational methods across\nthe sciences, supporting software development, maintenance, and impact is more essential than ever (e.g., Barker et al.,\n2020; Jay et al., 2021). For this reason, some research funders have developed programs, initiatives and policies to bolster\nresearch software’s role and impact (Hertweck et al., 2024; Strasser et al., 2022). The research software landscape\nincludes government and philanthropic funding sources (Barker & Katz, 2022) that are seeking impact within the\nscientific ecosystem and beyond from their investments (e.g.",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nResearch software is increasingly recognized as critical infrastructure in the contemporary research ecosystem\n(Barker et al., 2022; Jensen & Katz, 2023b; Knowles et al., 2021; Hocquet et al., 2024). Research software spans\na broad spectrum, including source code files, algorithms, scripts, computational workflows, and executables, all\ncreated for or during research (Gruenpeter et al., 2021). With the growing reliance on computational methods across\nthe sciences, supporting software development, maintenance, and impact is more essential than ever (e.g., Barker et al.,\n2020; Jay et al., 2021). For this reason, some research funders have developed programs, initiatives and policies to bolster\nresearch software’s role and impact (Hertweck et al., 2024; Strasser et al., 2022). The research software landscape\nincludes government and philanthropic funding sources (Barker & Katz, 2022) that are seeking impact within the\nscientific ecosystem and beyond from their investments (e.g.",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Within the skills development priorities highlighted by respondents, several technical training topics to support the\ndesign, development and deployment of research software were mentioned. This funder priority aligns with an identified\nneed for training in research software skills (e.g., Carver et al., 2022; Cosden et al., 2022). Moreover, this skills theme\nsuggests that there is recognition among funders that there is a need to invest in the people who underpin research software\n(e.g., Hartley & Barker, 2023; Katz, 2021). However, the more social aspects of research software sustainability and\nimpact were not explicitly mentioned by any respondents. Addressing such social aspects and non-technical skills\nis an essential need in the field. For example, research software projects need to be able to identify relevant parties to\nengage with, maintain effective communication with current and potential users, establish a robust framework for\nmonitoring and addressing evolving needs in a us",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Security\nFunders raised the theme of “security” in the development and use of research software, including ensuring “data\nsecurity,” enhancing software security, and conducting “Security Awareness Training.”\nSecurity: Research software will not be able to be reused if IT departments are not confident that it is secure[,] even\nfor Open science projects.\nWhile infrequently mentioned compared to other themes and with limited detail in the responses, security was seen as a\nfundamental issue to be addressed for a small number of research software funders.\nDiscussion\nIn this paper, we have described the priorities guiding research software funders. Here, we consider the implications of\nthese priorities for advancing research software’s role in the scientific ecosystem.\nWithin the skills development priorities highlighted by respondents, several technical training topics to support the\ndesign, development and deployment of research software were mentioned. This funder priority aligns with an ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

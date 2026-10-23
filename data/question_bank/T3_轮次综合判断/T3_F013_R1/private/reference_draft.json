@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F013_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "立场与研究目标",
+    "证据与论证"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑Open Letter偏项目宣传、作者立场不清与文献综述位置太晚；作者称明确外部分析者身份并前移批判文献。",
+    "比较前后稿章节次序、作者立场陈述和案例论证，不能以增加引文或纠正traying一词就推断核心批判性分析已充分。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Thank you for the opportunity to review this open letter entitled, “Integrating ethical and legal\nframeworks in multi hazard disaster risk management.” As it is an open Letter not a research article,\nit therefore has a different focus. I provide this feedback based on the criteria and guidelines for\nreviewing an open letter.\n1. Is the rationale for the Open Letter provided in sufficient detail?\nTh",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you very much for your insightful and constructive feedback, which I\nfound highly valuable in revising the Open Letter. Here is how I have addressed your\ncomments:\nClarifying the Objective and Standpoint: I revised the Introduction to make the\ncritical stance clearer, explaining that the Open Letter offers a preliminary critical\nreflection on MEDiate's ambitions and early development, while noting my\ninvolvement as an extern",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "3.2.2 France. France’s DRM governance is based on the\nEnvironmental Code and Civil Security Code, along with EU\nGDPR requirements. Local authorities, such as municipal governments in Nice and the Préfecture des Alpes-Maritimes,\noversee emergency management. MEDiate’s Disaster Risk\nAssessment System (DSS) aligns with existing frameworks like\nORSEC, ensuring synergy with established early warning systems. France’s extensive legal regime for disaster risk management and communication, exemplified in Nice, involves\nthe Prefect and municipal authorities sharing responsibility\nfor risk information dissemination. The French Civil Security\nCode regulates the assessment of major natural risks, such as\nfloods, landslides, and wildfires. Nice’s likely hazards include\nriverine and coastal flooding, landslides, extreme weather, heatwaves, forest fires, and earthquakes. Multiple information systems, such as Météo-France and networks like RAINPOL and\nPREDICT, provide real-time weather and flood forec",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "ORSEC, ensuring synergy with established early warning systems. France’s extensive legal regime for disaster risk management and communication, exemplified in Nice, involves\nthe Prefect and municipal authorities sharing responsibility\nfor risk information dissemination. The French Civil Security\nCode regulates the assessment of major natural risks, such as\nfloods, landslides, and wildfires. Nice’s likely hazards include\nriverine and coastal flooding, landslides, extreme weather, heatwaves, forest fires, and earthquakes. Multiple information systems, such as Météo-France and networks like RAINPOL and\nPREDICT, provide real-time weather and flood forecasts. The\nchallenge is integrating these flows, as all data sharing operates under French and EU law. MEDiate’s DSS in Nice targets\nhazards such as flooding, landslides, extreme weather events,\nforest fires, and seismic activity. By interfacing with localized\ndata and legal structures, MEDiate aims to unify hazard exposure modeling for flood",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "4.3 Safeguards and ethical oversight\nImplementing a Disaster Risk Management System (DSS) in\nline with fundamental rights involves not only software but also\norganizational safeguards and ethical oversight. EU-funded\nprojects like MEDiate are required to address ethics and\ndata protection from the start, including dedicated work on\nlegal/ethical compliance, appointing an ethics advisor or board,\nand delivering on requirements such as an Ethics Deliverable or Data Management Plan. In MEDiate, these instruments ensure that data subjects’ rights and freedoms are central\nconsiderations in system design.\nStakeholder engagement and inclusive governance are crucial\nethical requirements for DRM tools. Engaging diverse stakeholders in planning ensures disaster policies reflect collective\nvalues and avoid discrimination. Participatory mechanisms,\nsuch as consulting local officials and NGOs, uphold procedural\nfairness and yield more culturally appropriate outcomes12.\nMEDiate’s participatory co-de",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Section 4 examines fundamental rights in the context of implementing the MEDiate DSS following the project lifecycle.\nEthical oversight includes mechanisms to ensure transparency,\naccountability, and fairness in how data is used and how\nDSS-driven decisions affect communities, ensuring no discriminatory impacts occur. Exemplified by Sendai, international\nDRM frameworks are increasingly incorporating human rights\nprinciples to emphasize the importance of protecting people\nand their assets while promoting human rights, including the\nright to development. It emphasizes empowerment and inclusive participation in DRM, particularly for those disproportionately affected by disasters. UNDRR has reinforced these\nprinciples, urging a human rights-based approach to DRM in\nline with international human rights law.\nThe World Bank and affiliated global initiatives have also\nadopted inclusive DRM policies that reflect human rights values.\nThe World Bank’s Environmental and Social Framework (2018)\ninc",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

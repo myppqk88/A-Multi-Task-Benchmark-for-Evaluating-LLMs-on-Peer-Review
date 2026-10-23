@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F069_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "观察工具与编码",
+    "评分者可靠性",
+    "观察程序"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对十个MFIA类别、两周观察员培训、87%一致率/κ=0.81及每教师两课共80分钟是否进入后稿；这些是作者新增报告，不代表原始记录已独立核验。",
+    "核对语言/非语言行为分类是否一致以及原FIACS的改编说明，不能只凭接收建议就判工具有效。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Final Assessment and Required Revisions\nOverall, this is a valuable contribution to educational research in Nigeria, highlighting persistent\nchallenges in classroom interaction during mathematics instruction. The study addresses an\nimportant gap and uses a recognized analytical framework.\nPoints That Must Be Addressed Before Acceptance:\n1. Clarify the MFIA Categories Used: Provide a list of the 10",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nInstrument\nThe study employed the MFIA instrument ([external resource identifier omitted] to\nsystematically capture teacher–student interaction patterns during mathematics\ninstruction. This allows for categorising and analysing verbal and non-verbal\ncommunication in teaching-learning environments. The observational instrument, the\nclassroom activity sheet, was used to gather data on classroom interactions at one-minute\nintervals during live math",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nThe effectiveness of classroom instruction considerably depends on the quality of interaction between teachers and\nstudents. To foster meaningful classroom interaction in mathematics lessons is essential for enhancing deep learning and\ncritical thinking. Engaging students through collaborative and active learning strategies not only aids in understanding\nabstract concepts but also promotes higher-order thinking skills (Dominguez, 2024; Firdaus & Satriawan, 2025). The\nconventional teaching methods in many Nigerian secondary schools, including those in Lagos State, often rely on\nteacher-centered approaches that limit student participation and engagement. This raises concerns about students’\nconceptual understanding and academic performance in mathematics (Opesemowo, 2025a), the subject usually regarded\nas challenging and intimidating. Implementing more interactive teaching methods like group work, discussions, and\nhands-on activities could help mitigate these concerns and fo",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "solving. (3) Direct Teaching/Lecturing – Explanations, demonstrations, worked examples, definitions, and conceptual\nexposition. (4) Giving Directions – Instructions relating to tasks, class activities, behaviour, or note-taking. (5) Teacher\nResponse to Students – Clarifying, expanding, or giving feedback on student responses. (6) Criticism and Authority\nCues – Statements reflecting correction of behaviour or implicit assertion of authority. (7) Teacher Non-Verbal\nBehaviour – Writing on the board, gesturing, using teaching aids, or other physical demonstrations. (8) Students nonverbal behaviour – Students answering teachers’ questions or giving short non-verbal responses. (9) Student-Initiated\nTalk – Questions, explanations, or ideas introduced spontaneously by students. (10) Confusion and Noise – Pauses,\nclassroom noise, disruptions, or uncertainty during instruction.\nData collection\nThe study analysed the collected data quantitatively using descriptive statistics such as mean scores, ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "visual aids, teachers can create a more engaging and effective learning environment for their students. Ultimately, the\ncombination of verbal and non-verbal communication in the classroom can lead to improved academic performance and\nstudent success.\nThe disparity in the overall interaction time between teachers and students further confirms the teacher-dominated nature\nof classroom discussions. Research by Lo and Chen (2021) suggests that students benefit more from learning\nenvironments where their voices are integral to the instructional process. When the teacher-centered approach monopolises classroom time, opportunities for students to develop problem-solving skills, articulate reasoning, and collaborate\nwith peers are constrained. To create a more student-centered learning environment, teachers should actively seek input\nfrom their students and provide opportunities for them to engage in discussions and activities that promote critical\nthinking and collaboration. By allowing stude",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "• Classroom observational techniques have gained worldwide recognition in developed and developing\ncountries, and the government should make efforts to include observational techniques in teacher training\ninstitutions.\n• In-service teachers’ seminars should be organised for such teachers to expose them to the implications of\nclassroom interaction.\n• Workshops, seminars, training, and conferences should be organised regularly to enhance professional\ndevelopment.\nLimitations and suggestions for further study\nThis study was limited to a small number of secondary schools within the Festac area of Lagos State, Nigeria, which\nrestricts the generalizability of the findings to other educational contexts. The purposive sampling method and reliance on\nobservational data, time constraint and reliance on single data may have introduced bias and failed to capture deeper\ncognitive or affective aspects of classroom interaction. In addition, the study focused solely on mathematics lessons,\nexcluding o",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

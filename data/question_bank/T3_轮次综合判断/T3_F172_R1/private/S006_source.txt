@@ -1,0 +1,2401 @@
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+RESEARCH ARTICLE
+
+Productivity, real wages, and gender. A study in
+Colombian manufacturing
+[version 2; peer review: 1 approved with reservations, 1 not approved]
+
+Andrés Mauricio Gómez-Sánchez
+Isabel Cristina Rivera-Lozada3
+
+1, Zoraida Ramírez-Gutiérrez
+
+2,
+
+1Departament of Economics, Universidad del Cauca, Popayan, Cauca, Colombia
+
+2Departament of Accounting, Universidad del Cauca, Popayan, Cauca, Colombia
+3Departament of Economics, Universidad del Cauca, Popayan, Cauca, Colombia
+
+v2 First published: 17 Mar 2025, 14:306
+
+https://doi.org/10.12688/f1000research.161343.1
+Latest published: 15 Apr 2026, 14:306
+https://doi.org/10.12688/f1000research.161343.2
+
+Abstract
+Abstract*
+Background
+Orthodox microeconomic theory establishes a positive link between
+employee wages and productivity in competitive markets. However,
+this perspective often overlooks gender and treats the workforce as a
+homogeneous category labelled as labor, potentially obscuring issues
+of gender discrimination. This article addresses the gender wage gap
+by analyzing, for the first time, at least in an emerging economy such
+as Colombia, the impact of manufacturing firm’s productivity on
+wages explicitly including gender.
+Method
+
+Open Peer Review
+Approval Status
+1
+
+2
+
+view
+
+view
+
+version 2
+(revision)
+15 Apr 2026
+
+version 1
+17 Mar 2025
+
+1. Davide Villani, Joint Research Centre,
+European Commission, Seville, Spain
+2. Ronald M. Hernandez, Universidad Senor de
+Sipan (Ringgold ID: 203395), Chiclayo, Peru
+Any reports and responses or comments on the
+article can be found at the end of the article.
+
+First, we use the GMM two-equation system proposed by Wooldridge
+(2009) to obtain consistent and unbiased estimates of output
+elasticities and TFP, respectively. Secondly, we explore wagesproductivity linkage by gender, implementing a dynamic random
+effect generalized least squares model (GLS) with panel data to deal
+with endogeneity issues.
+Results
+Our main findings reveal, among others, that firms with a higher
+proportion of female workers (female firms) generally have higher
+productivity than those with a higher proportion of male workers
+
+Page 1 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+(male firms).
+Conclusions
+The effect of female firm’s productivity on wages is lower than that of
+male firm’s productivity, which could indicate gender wage
+discrimination
+Keywords
+Wages, Gender, Firms productivity, Manufacturing, Emerging
+Economy
+
+Corresponding author: Zoraida Ramírez-Gutiérrez (zramirez@unicauca.edu.co)
+Author roles: Gómez-Sánchez AM: Data Curation, Formal Analysis, Methodology, Writing – Original Draft Preparation, Writing – Review
+& Editing; Ramírez-Gutiérrez Z: Conceptualization, Writing – Original Draft Preparation, Writing – Review & Editing; Rivera-Lozada IC:
+Conceptualization, Investigation, Methodology, Writing – Original Draft Preparation, Writing – Review & Editing
+Competing interests: No competing interests were disclosed.
+Grant information: The author(s) declared that no grants were involved in supporting this work.
+Copyright: © 2026 Gómez-Sánchez AM et al. This is an open access article distributed under the terms of the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly
+cited.
+How to cite this article: Gómez-Sánchez AM, Ramírez-Gutiérrez Z and Rivera-Lozada IC. Productivity, real wages, and gender. A
+study in Colombian manufacturing [version 2; peer review: 1 approved with reservations, 1 not approved] F1000Research 2026, 14
+:306 https://doi.org/10.12688/f1000research.161343.2
+First published: 17 Mar 2025, 14:306 https://doi.org/10.12688/f1000research.161343.1
+
+Page 2 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+REVISED Amendments from Version 1
+This revised version includes substantial conceptual, methodological, and empirical improvements across all sections of the
+manuscript. The Introduction and Literature Review have been significantly expanded to integrate a broader set of
+theoretical approaches explaining productivity and its determinants. In addition to neoclassical and human capital theories,
+the revision now incorporates efficiency wage theory, industrial organization, firm heterogeneity (Syverson, 2011), and
+feminist economics perspectives emphasizing occupational segregation, access to training, and promotion barriers (Blau
+Kabeer, 2016). The empirical review has also been reinforced with cross-country evidence illustrating variations in the
+productivity–wage relationship, including new Colombian data from RUES, Emicron, and WCP sources, providing a more
+robust contextual foundation.
+The Theoretical Framework was consolidated to explicitly include gender as a structural dimension of productivity, clarifying
+how institutional and cultural factors interact with firm-level dynamics. The Discussion Section has been reformulated to
+focus on three elements: (i) the gendered transmission of productivity to wages; (ii) identification of potential biases and
+sectoral limitations; and (iii) implications for inclusive wage and promotion policies that foster both equality and competitiveness.
+In terms of methodology, we strengthened the explanation for employing a dynamic random effects GLS model instead of
+fixed effects, detailing the Hausman test results and theoretical justification. The estimation of Total Factor Productivity (TFP)
+was clarified, addressing traditional critiques by distinguishing between macro- and micro-level perspectives, and acknowledging its limitations. Additionally, the study introduces a methodological innovation by extending Wooldridge’s (2009)
+estimator to disaggregate labour by gender, allowing the estimation of separate output elasticities for male and female
+labour.
+Lastly, all tables and figures were revised for clarity, new citations were added to enhance analytical rigor, and minor
+language and formatting adjustments were made to improve overall readability and precision.
+Any further responses from the reviewers can be found at the end of the article
+
+Introduction
+The economic literature, particularly within the industrial organization, suggests that firm wages depend on several
+factors, including firm size (Carlsson, et al. 2016), employee education and skills (Mincer, 1974; Schultz, 1961),
+economic subsector (Suhányi, et al. 2023), geographic location (Méjean & Patureau, 2010), and the presence or
+absence of unions (Card, et al. 2017). Among these determinants, productivity is considered one of the most critical
+factor influencing wages (Feldstein, 2008).
+Based on the neoclassical microeconomic theory, increases in labor productivity positively affect real wage growth in the
+long-run (Mankiw, 2015). In line with this, industrial organization literature acknowledges that firm productivity
+significantly influences employees’ wages. Although empirical evidence supporting this hypothesis varies in strength
+depending on the country and industries analyzed, productivity is widely recognized as a key determinant of wages,
+whether at the individual or firm level (Meager & Speckesser, 2011).
+Despite this, previous literature has left two issues aside. First, the method used to measure productivity and second, the
+role of gender in these topics. Regarding productivity measurement, several studies, particularly in macroeconomics,
+have used the average product of labor as a proxy. This approach is limited as it measures labor productivity rather than
+firm productivity and only applies in the short-run (Sargent & Rodriguez, 2000). While other studies, particularly in
+microeconomics, have correctly used total factor productivity (TFP) at the firm level, many studies generate flawed
+estimates due to the use of statistical methods that generate biased and inconsistent parameters, leading to inaccurate
+conclusions and recommendations (Gómez Sánchez, 2020).
+The second issue concerns the exclusion of gender from productivity analysis. Microeconomic and industrial organization theory frequently subsumes workers under the generic label of “labor,” a simplification that introduces biases.
+Factors such as gender-based occupational segregation, unequal access to training, and asymmetric promotion opportunities can distort productivity measurement when labor is treated as a homogeneous input. This limitation is particularly
+relevant in emerging economies such as Colombia, where industries like Beverages, Garments, Textiles, Pharmaceuticals, and Chemicals employ a large share of women. Recognizing these differences is essential, since productivity may
+respond differently to female and male participation, and such distinctions should be reflected in wage determination.
+In this order of ideas, this paper aims to assess the relationship between wages and productivity in firms with a high
+proportion of female employees or female firms hereafter, compared to firms with a higher proportion of male employees,
+referred to as male firms hereafter (Tsou & Yang, 2019; Gomez Sanchez, et al., 2025). To do so, we first estimate unbiased
+Page 3 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+total factor productivity using the two-stage method proposed by Wooldridge (2009), and for the first time, we
+disaggregate the workforce into male and female to obtain gender- a gender-specific productivity estimate rather than
+an aggregate measure of TFP as the tradition.
+In this regard, we implement the methodology in two steps. First, we use the two-equation system proposed by
+Wooldridge (2009) to obtain consistent estimates of input elasticities and unbiased TFP estimates. This system is jointly
+estimated under the Generalised Method of Moments (GMM) framework. As a novelty, we separate employees by
+gender to estimate TFP. Second, we implement a dynamic random effect generalized least squares model (GLS) with
+panel data to address endogeneity. Moreover, we also include industrial organization covariates, such as exports or
+innovations, along with wage persistence; that is, firms with higher (or lower) wages in the past tend to continue those
+wage levels in the present. In addition, the model also deals with potential initial condition problems (Blundell & Bond,
+1998).
+The data comes from The Annual Manufacturing Survey (EAM) and The Technological Development and Innovation
+Survey (EDIT), both published by the Statistics Department of Colombia (DANE) for the period 2013-2020. After
+merging eight waves of EAM and EDIT, we obtain an unbalanced panel with 59,355 observations. Our main findings are
+summarised as follows: i) Female firms exhibit higher productivity than male firms. ii) The impact of female firms’
+productivity on wages is lower than female firms’ productivity, suggesting wage discrimination in the Colombian
+manufacturing industry. iii) Female labor output elasticity is higher than male elasticity, indicating that women contribute
+more to firm output than men iv) TFP displays lower input elasticities than gender-specific TFP estimates, suggesting that
+TFP underestimates firm productivity when gender is considered.
+The remainder of this paper is organized as follows. Section 2 examines theoretical and empirical literature. Section 3
+describes the data. Section 4 displays TFP and stochastic model estimates. Section 5 discusses the results, and Section 6
+offers conclusions.
+Methods
+Literature review
+To introduce the theoretical foundations on productivity and wages, several approaches explain how pay levels relate to
+worker performance. Human capital theory argues that individual productivity, and consequently wages, derive from
+investments in education, training, and work experience (Schultz, 1961; Mincer, 1974). These investments increase skills
+and capabilities, producing enduring benefits not only for workers but also for firms through higher efficiency and better
+task performance.
+Besides, efficiency wage theory, as formulated by Shapiro and Stiglitz (1984) and expanded by Akerlof and Yellen
+(1986), emphasizes the strategic role of compensation. Firms may deliberately set wages above the market-clearing level
+to discourage shirking, lower turnover, and stimulate motivation, thus highlighting the endogenous relationship between
+remuneration and output. Together, these theories provide a basis for understanding why wages may reflect both the
+productive potential of workers and managerial choices aimed at improving performance.
+Building on this foundation, insights from firm heterogeneity and industrial organization literature broaden the discussion
+by situating productivity within a wider set of market and managerial factors. Syverson (2011) notes that differences in
+technology adoption, market structure, managerial quality, and access to inputs generate significant productivity gaps
+among firms operating in similar environments. These findings suggest that productivity does not stem solely from
+individual characteristics but also from firm-level strategies and competitive pressures that shape the efficiency of
+resource allocation. As a result, wage determination is influenced not only by the capabilities of workers but also by the
+organizational and structural conditions under which firms operate.
+Incorporating gender economics and labour market segmentation further improves these models by revealing how
+institutional and structural biases shape productivity outcomes. Occupational segregation, unequal access to training, and
+limited promotion prospects systematically distort productivity measures when labour is treated as a homogeneous input
+(Blau & Kahn, 2000; Seguino, 2000; England and Folbre, 2002; Kabeer, 2016). A growing body of feminist economics
+shows that women are frequently concentrated in lower-paid sectors or occupations, creating a persistent gap between
+actual productivity and wages (Becker, 1971; Goldin, 2014). Moreover, recent evidence suggests that even when female
+workers or female-dominated firms achieve high productivity, wage transmission tends to be weaker, pointing to the
+influence of structural discrimination (Rivera-Lozada et al., 2024).
+These dynamics are particularly relevant in emerging economies such as Colombia, where industries like garments,
+textiles, and pharmaceuticals employ a large share of women (Ñopo and Gallardo, 2009). Integrating gender-sensitive
+Page 4 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+approaches into productivity analysis thus allows for a more nuanced understanding of how institutional barriers and
+social norms interact with firm performance and wage setting.
+The empirical evidence on gender and productivity present mixed findings. Tsou and Yang (2019) show that Chinese
+firms with higher proportions of female workers often display lower productivity than those with more male workers.
+Nonetheless, when women possess higher levels of education, they significantly enhance firm productivity, particularly
+in small private and foreign firms, whereas the effect is weaker or absent in medium and large public enterprises. Pfeifer
+and Wagner (2014) similarly report contrasting outcomes: under an OLS approach, female-dominated firms appear less
+productive than male-dominated ones, yet a GMM framework reverses these results. Such inconsistencies underscore the
+importance of methodology and the operational definition of “female firms.” Most existing studies focus on the gender of
+CEOs or owners, whereas our work, constrained by the structure of the EAM survey, classifies firms as female or male
+according to the proportion of women or men in their workforce. This distinction is important because the composition of
+employees can reflect broader organizational practices, sectoral norms, and institutional barriers that leadership-based
+classifications may overlook.
+In Colombia since early stages of industrialization, women have contributed actively to manufacturing, particularly in
+food and textile sectors, often as a means to supplement household income (Santos, 2017; Arango, 1991). Historically,
+their work was associated with low pay, shaped by religious norms and disciplinary practices that undervalued female
+contributions (Arango, 1991). Over time, women have strengthened their position in the economy by investing in
+education and acquiring skills that match or even surpass those of men (Goldin, 2014).
+Despite these advances, wages still fail to adequately reward women’s resilience and investment in human capital, and
+gender wage gaps remain pervasive worldwide (World Bank, 2024). Recent Colombian data reinforce this paradox:
+women-led firms, identified in the Unified Business and Social Registry (RUES), represent 59% of the 1.2 million
+registered firms and around 1.8 million microenterprises. According to the Emicron Survey (2022) and WCP (2024),
+these firms show slightly higher productivity (34.3% compared with 33.25% for male-led firms) and greater efficiency
+improvements (25.8% versus 17.9%). Nevertheless, wage differentials continue to exceed productivity gaps. Santos
+(2017) highlights three factors behind this persistence.
+First, firms often perceive female labour as costlier due to assumptions about motherhood and absenteeism, even when
+they lack systems to measure labour costs by sex (Todaro et al., 2002). Second, some women-led firms may capitalize on
+relatively lower wages to increase profits, diverging from the predictions of efficiency wage theory. Third, occupational
+segregation by sector confines many women to specific industries, perpetuating unequal pay structures (Goldin, 2014).
+Lastly, merging these perspectives reveals that the decoupling between wages and productivity, well documented in
+advanced economies since the 1970s and linked to globalization, declining bargaining power, and labour market
+segmentation, acquires a distinctive gendered dimension in emerging economies. In Colombia, this divergence is
+amplified for women-led or female-intensive firms, suggesting that wage discrimination is embedded in the very
+mechanisms that connect productivity and remuneration. Understanding these linkages is therefore essential for
+developing policies that promote fair compensation, enhance firm efficiency, and reduce structural gender inequalities
+in the labour market.
+TFP estimates by gender
+TFP broken down by gender follows Wooldridge’s (2009) method. This framework takes advantage of the GMM
+estimation to shorten the standard error calculation and avoid using bootstrapping techniques. Expressly, we assume that
+the production process follows a linearised Cobb-Douglas production function:
+yit ¼ β0 þ βlw lwit þ βlm lm
+it þ βk k it þ β m mit þ β e eneit þ ωit þ εit
+
+(1)
+
+yit denotes firm’s i production in period t; lwit is the women labor; lm
+it is the men labor; k it is the firm’s capital stock; and,
+mit is the materials consumption, and eneit is the electric energy consumption. Besides, ωit is the firm’s productivity,
+which is only observable or predictable by the firm. As well, εit represents an error term unobserved or unpredictable
+by firms.
+Olley & Pakes (1992) assume that capital stock evolves according to the perpetual inventory method, and it is determined
+in the previous period (state variable). Therefore, current productivity shocks do not affect capital stock (Eslava et al.,
+2013). We also assume that labor by gender and firm’s energy consumption are chosen in the same period, as they are
+consumed (freely variable factors). However, Ackerberg, et al., (2015) demonstrate that these choices are correlated
+
+Page 5 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+with ωit , so the equation (1) cannot be estimated by ordinary least squares (OLS), fixed effects (FE), or instrumental
+variables (IV). In this sense, Levinsohn and Petrin (2003) suggests using the materials demand function as a proxy for
+unobserved productivity. The demand for materials is as follows:
+mit ¼ mt ðk it ,ωit ,eneit Þ
+
+(2)
+
+According to Levinsohn and Petrin (2003), this demand is monotonically increasing in productivity, so we can invert this
+function to express firms’ productivity in terms of observables:
+ωit ¼ m1
+t ðk it ,ωit ,eneit Þ ¼ ht ðk it ,ωit , eneit Þ
+
+(3)
+
+ht is an unknown function of k it ; mit ; k it ; ωit ;and eneit . Replacing (3) in (1):
+yit ¼ β0 þ βlw lwit þ βlm lm
+it þ βk k it þ β m mit þ βe eneit þ ht ðk it ,ωit ,eneit Þ þ εit
+
+(4)
+
+ht ðÞ is unknown, so it is proxied by third-degree polynomials in the respective arguments. Nevertheless, βm and βk are
+collinear with ht ðÞ,so we cannot to identify these parameters. Following Olley & Pakes (1992), and Levinsohn and Petrin
+(2003), it is necessary to introduce the law of motion of productivity as a Markov process:
+ωit ¼ E½ωit jωit1  þ ξ it ¼ f ðωit1 Þ þ ξ it
+
+(5)
+
+where f ðÞ is an unknown function that join productivity in t and in t  1 plus an innovation term, ξ it ,which is uncorrelated
+to k it . By replacing (5) in (1), we get:
+yit ¼ β0 þ βl lit þ βk k it þ βm mit þ βe eneit þ βw wat it þ f ðωit1 Þ þ ξ it þ εit
+
+(6)
+
+Furthermore, by lagging and replacing equation (3) into (6), we get:
+yit ¼ β0 þ βlw lwit þ βlm lm
+it þ βk k it þ β m mit þ β e eneit þ hðk it1 ,mit1 , eneit1 Þ þ vit
+
+(7)
+
+where vit is a composed error term (ξ it þ εit Þ. Because hðÞ is an unknown function, it is proxied by third degree
+polynomials in the arguments. Equations (4) and (7) are the two-equation systems proposed by Wooldridge (2009);
+they are jointly estimated by using the GMM method with suitable instruments and moment conditions showed for
+instance by Gómez Sánchez (2020). Once we estimate equation (1), we get the TFP as a residual by using output
+elasticities:
+
+
+b
+b
+b
+yit  b
+ωit
+β0 þ b
+βlw lwit þ b
+βlm lm
+(8)
+it þ βk k it þ β m mit þ βe eneit ¼ b
+where b
+ωit is the TFP estimated in logs for firm i at time t.
+Data analysis1
+It is important to mention that we acknowledge the historical and theoretical critiques of Total Factor Productivity (TFP),
+particularly those raised by authors such as Shaikh (1974), or Felipe & McCombie (2020). Their arguments, which
+question the ability of TFP to isolate technological progress from other factors, are fundamental in the macroeconomic
+debate. However, it is crucial to distinguish these objections from their applicability to firm-level productivity analyses.
+Our research focuses on the productive efficiency at the firm level, where TFP is the standard performance measure.
+Unlike macroeconomic models, our analysis is focused on how the gender composition of the workforce affects
+productive efficiency and wages within the firm. Furthermore, the initial critiques of TFP, such as those by Shaikh
+(1974), precede the key methodological innovations in production econometrics. Modern approaches, such as those by
+Olley and Pakes (1992); Syverson, (2011) and in particular, the two-step method of Wooldridge (2009), were developed
+to deal with endogeneity problems. These advancements allow us to obtain more robust and consistent TFP estimates by
+controlling for the correlation between inputs and unobserved productivity shocks. Our main methodological contribution is an extension of the Wooldridge (2009) approach to disaggregate the labor factor by gender, allowing us to estimate
+the output elasticity of female and male labor separately.
+In the next section, our estimation results consistently show that the output elasticity of female labor exceeds that of male
+labor. This differential is obtained prior to the calculation of TFP, reinforcing the reliability of our production function
+1
+Data authored by Gómez Sánchez, A. M., Ramirez, Z., & Rivera Lozada, I. C: EAM-EDIT 3. [Dataset]. Zenodo. 2025. https://doi.
+org/10.5281/zenodo.14867593.
+
+Page 6 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Table 1. Estimates of labor output elasticities. Total labor and labor by gender.
+
+Labor
+
+OLS
+
+GLS
+
+Wooldridge
+
+0.298***
+
+0.252***
+
+0.286***
+
+(0.002)
+
+(0.003)
+
+(0.002)
+
+Women labor
+
+Men labor
+
+Wooldridge
+
+0.141***
+
+0.100***
+
+0.136***
+
+(0.001)
+
+(0.002)
+
+(0.001)
+
+0.136***
+
+0.137***
+
+0.132***
+
+(0.002)
+
+(0.003)
+
+(0.002)
+
+0.045***
+
+0.022***
+
+0.093***
+
+0.042***
+(0.001)
+
+(0.002)
+
+(0.006)
+
+(0.001)
+
+(0.002)
+
+(0.006)
+
+Materials
+
+0.711***
+
+0.701***
+
+0.684***
+
+0.715***
+
+0.705***
+
+0.690***
+
+(0.001)
+
+(0.002)
+
+(0.003)
+
+(0.002)
+
+(0.002)
+
+(0.003)
+
+Energy
+
+0.008***
+
+0.056***
+
+0.039***
+
+0.016***
+
+0.061***
+
+0.045***
+
+(0.001)
+
+(0.002)
+
+(0.003)
+
+(0.003)
+
+Constant
+
+3.096***
+
+3.108***
+
+(0.014)
+
+P-value F
+
+0.000
+
+Observations
+
+67,781
+
+0.089***
+
+GLS
+
+Capital
+
+P-value Wald
+
+0.023***
+
+OLS
+
+(0.024)
+0.000
+
+0.000
+
+67,781
+
+55,624
+
+(0.001)
+
+(0.002)
+
+3.222***
+
+3.257***
+
+(0.017
+
+(0.026
+0.000
+
+0.000
+
+65,879
+
+53,799
+
+0.000
+65,879
+
+Source: Author’s elaboration.
+Robust standard error reported in parentheses.
+***, ** and * indicate significance at 1, 5 and 10%, respectively.
+
+estimates. The stability of these parameters indicates that the subsequent TFP measure provides a valid and accurate
+representation of firm-level efficiency and productivity differences.
+This section describes some key variables used in this study that provide insight into the empirical model. We specifically
+examine the output elasticity of labor without considering gender and with gender taken into account, as well as the
+linkage with firms’ salaries, analyzed for the entire sample and by manufacturing sectors.
+Table 1 presents the estimates of labor product elasticities using three different methods: Ordinary Least Squares (OLS),
+Generalized Least Squares (GLS), and Wooldridge’s (2009) two-step method. These estimates are analyzed under two
+scenarios: one considering the firm's total labor force (Labor) and the other distinguishing employees by gender (women
+and men’s labor).
+As expected, the results generally reveal that all methods yield positive and statistically significant elasticities.
+Nevertheless, without distinguishing by gender, the product elasticity under Wooldridge’s (2009) method is 0.286. In
+contrast, the OLS and GLS methods tend to overestimate this figure, likely due to biases from unaddressed endogeneity
+issues in the Cobb-Douglas production function. When gender is considered, Wooldridge’s (2009) method shows that the
+product elasticity of women’s labor is 0.136, while that of men’s labor is 0.132. The remaining elasticities corresponding
+to capital (0.093), materials (0.690), and energy (0.045) fall within the ranges reported by empirical studies on the
+industrial organization in Colombia (Gómez-Sánchez et al., 2022; Llopis et al., 2022; Sanchis Llopis et al., 2024).
+The significance of our findings extends beyond the absolute size of the elasticity gap. The results’ econometric
+significance stems from their statistical significance and consistency across different model specifications. While the
+use of logarithmic transformations and monetary variables in U.S. dollars may compress the apparent magnitude, these
+differences translate into substantial economic effects when converted to Colombian pesos. Furthermore, our findings
+reveal that the higher output elasticity of female labor is a general characteristic of the Colombian manufacturing industry.
+This is due to that only one of the twenty-three sectors deviates from the overall pattern.
+The differential in labor product elasticities between men and women is noteworthy: the elasticity of female labor is
+higher, implying that women’s average contribution to the firms’ output surpasses that of men. However, it is possible
+Page 7 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Figure 1. Wages and Productivity by female and male firms. Average in Logarithms. Source: Author’s
+elaboration.
+
+that women’s wages do not correspond to this greater contribution to production. In this regard, we present additional
+descriptive analyses to explore this idea.
+Figure 1 shows that male firms have higher average log-wages (13.52) than female firms (13.09). Besides, in terms of
+average product of labor (APL), male firms exhibit higher productivity (11.598) than female firms (11.127), seemingly
+aligning with the prediction of neoclassical theory.
+However, more precisely, measures of a firm’s productivity suggest different results. In the TFP scenario, female firms
+outperform male firms, with values of 2.554 and 2.476, respectively. Furthermore, in TFP weighted by gender (TFPwm),
+female firms also perform better (2.622) compared to male firms (2.566). Whilst further analysis is required to establish
+causality, these findings advise a potential productivity advantage when gender weighting is considered.
+Table 2 presents wages and different productivity measures broken down by manufacturing sectors to deepen our
+analysis. In our preferred scenario (TFPwm), the numbers reveal that in industrial sectors such as Food, Textiles, Leather,
+Publishing, Coking, chemicals, Electric motors, Vehicles, and Machine Maintenance, female firms’ productivity
+displays higher productivity than male firms. However, wages are lower for female firms compared to salaries in male
+firms. In the remaining sectors, there is a clear correspondence between productivity and wages, that is, the more
+productive, the higher the wages, regardless of firms’ gender orientation.
+Other productivity measures, such as TFP, are consistent with the observed results for TFPwm. Nonetheless, APL
+estimates indicate that both productivity and wages are higher in male firms than in female firms across all industries
+except the Garment sector.
+Empirical model and estimates
+To explore the effect of female firm productivity on a firm’s wages, we offer a dynamic generalized least squares model
+(GLS) with random effects for panel data. The variables are in natural logs except for dummy variables. In addition, we
+lagged all covariates in one period to deal with possible simultaneity, except factor variables such as time, industry, and
+firm localization. The model is as follows:
+h,j,p
+lwit ¼ φ0 þ α0 lwit1 þ α1 findxit1 þ α2 lprod it1
+þ γk Zit1 þ prelw þ loc j þ year t þ ind j þ εit
+
+(9)
+
+Where lwit signifies the firms wages; findxq,r
+it1 represents the female firm’s index with q ∈ continuous index and r ∈
+dichotomous index. Besides, lprod h,j,p
+denotes
+firms productivity; with h ∈ full TFP; j ∈ TFP by gender; and p ∈ APL.
+it
+h,j,p
+Supported in Roberts and Tybout (1997), we introduce the term lprod it1
+to capture firm’s wages persistence, that is,
+firms with higher (lower) wages in the past; currently continue to show higher (lower) wages. In this sense, here
+persistence aims to capture potential gender discrimination. That is, it examines whether firms that paid lower salaries in
+female firms in the past continue to do so in the present.
+The vector Zit1 includes firm’s control variables according to industrial organisation. It includes the firm’s classification
+as SMEs (SMEs), to capture if a firm's size influences wages. In line with Schultz (1961), Mincer (1974), and others, we
+Page 8 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Table 2. Wages and Productivity. Female and male firms by sector. Average in Logs.
+Industry
+
+Male Firms
+
+Female Firms
+
+ISIC Rev.2
+
+Wages
+
+APL
+
+TFP
+
+TFPwm
+
+Wages
+
+APL
+
+TFP
+
+TFPwm
+
+Food
+
+13.874
+
+12.089
+
+2.437
+
+2.501
+
+12.901
+
+11.179
+
+2.452
+
+2.511
+
+Beverages
+
+14.368
+
+12.127
+
+2.612
+
+2.686
+
+12.856
+
+11.365
+
+2.594
+
+2.640
+
+Textiles
+
+13.874
+
+11.427
+
+2.346
+
+2.416
+
+13.036
+
+11.078
+
+2.493
+
+2.554
+
+Garment
+
+12.809
+
+11.585
+
+2.591
+
+2.637
+
+13.092
+
+10.979
+
+2.625
+
+2.727
+
+Leather
+
+12.739
+
+11.168
+
+2.424
+
+2.495
+
+12.724
+
+10.939
+
+2.487
+
+2.547
+
+Wood
+
+12.838
+
+11.263
+
+2.427
+
+2.554
+
+12.132
+
+10.875
+
+2.398
+
+2.450
+
+Paper
+
+14.310
+
+12.128
+
+2.412
+
+2.486
+
+12.982
+
+11.187
+
+2.418
+
+2.463
+
+Publishing
+
+13.214
+
+11.340
+
+2.470
+
+2.524
+
+12.735
+
+11.152
+
+2.533
+
+2.569
+
+Coking
+
+13.925
+
+13.397
+
+2.758
+
+2.826
+
+12.831
+
+12.910
+
+2.949
+
+2.987
+
+Chemical
+
+13.888
+
+12.273
+
+2.615
+
+2.682
+
+13.665
+
+11.466
+
+2.686
+
+2.750
+
+Pharmaceutical
+
+14.685
+
+12.058
+
+2.838
+
+2.888
+
+14.137
+
+11.508
+
+2.803
+
+2.859
+
+Rubber and Plastic
+
+13.505
+
+11.589
+
+2.377
+
+2.453
+
+13.342
+
+11.212
+
+2.377
+
+2.423
+
+Non-Metallic Mineral Prod
+
+13.823
+
+11.554
+
+2.384
+
+2.522
+
+12.784
+
+11.019
+
+2.404
+
+2.439
+
+Metallurgical Products
+
+13.596
+
+11.844
+
+2.442
+
+2.558
+
+12.298
+
+11.525
+
+2.433
+
+2.465
+
+Metal products
+
+13.178
+
+11.204
+
+2.509
+
+2.630
+
+12.552
+
+10.941
+
+2.472
+
+2.520
+
+Manufacture of Electronics
+
+13.293
+
+11.744
+
+2.643
+
+2.705
+
+12.679
+
+10.941
+
+2.488
+
+2.562
+
+Electric motors
+
+13.900
+
+11.432
+
+2.453
+
+2.545
+
+13.018
+
+11.055
+
+2.509
+
+2.563
+
+Machinery and Equipment
+
+13.305
+
+11.239
+
+2.581
+
+2.699
+
+12.200
+
+11.176
+
+2.563
+
+2.603
+
+Vehicles
+
+13.554
+
+11.460
+
+2.424
+
+2.548
+
+13.479
+
+11.431
+
+2.531
+
+2.607
+
+Ships and Boats
+
+14.052
+
+11.523
+
+2.326
+
+2.434
+
+12.459
+
+11.131
+
+2.378
+
+2.424
+
+Furniture
+
+13.065
+
+11.090
+
+2.456
+
+2.558
+
+12.249
+
+11.078
+
+2.447
+
+2.489
+
+Other manufactures
+
+13.364
+
+11.505
+
+2.541
+
+2.636
+
+13.014
+
+11.075
+
+2.561
+
+2.619
+
+Machine Maintenance
+
+13.596
+
+11.673
+
+2.645
+
+2.772
+
+11.966
+
+11.226
+
+2.792
+
+2.830
+
+Source: Author’s elaboration.
+
+incorporate employee skills (skills) as a proxy for human capital, as higher levels of education and/or training are
+associated with increased wages. Specifically, skills are the number of employees with master’s degrees. Export
+( exp it Þ and innovations activities ðinnit ) are included as a part of firm’s internationalisation strategies, as highlighted
+by De Loecker (2013) and Crepon, Duguet & Mairesse, (1998). According to Schank et al., (2010), firms with strong
+international trade connections and innovation efforts tend to be more productive and efficient, which typically results in
+higher employee wages. It is worth mentioning that due to the limited introduction of innovations in Colombian
+manufacturing, we combine both process and product innovations to achieve accurate statistical representativeness.
+As well, the vector Zit1 accounts for market concentration proxied by Herfindahl-Hirschman index (lihh), and firm’s
+mark-up (lmarkup). We also include the firms’ age (lage) because, according to the ILO (2015), young small enterprises
+in Latin America significantly contribute to job creation. On the other hand, following Blundell and Bond (1998), we
+include pre-sample means of the dependent variable (pre_lw2013) to deal with correlated unobserved firm heterogeneity
+in the model estimation. Note that we also control for geographic firm localization (loc), macroeconomic shocks (year),
+and sector characteristics (ind). Finally, εit is a composed the error term that consist of a fixed effect of firms (ui Þ and an
+idiosyncratic error term (ηit Þ.
+We adopt a random effects specification because our framework requires simultaneous control for industry-specific
+characteristics and macroeconomic shocks, which are introduced through sector and time dummies. In a fixed effects
+specification, these variables would be eliminated, thereby removing crucial cross-sectional variation that is essential for
+our analysis. For this reason, the Hausman test is not applied, since its conventional interpretation in this context could
+lead to a misrepresentation of the underlying economic rationale. Consistent with the practice in industrial organization
+
+Page 9 of 25
+
+loct1
+
+pre_lw2013
+
+laget1
+
+lmarkupt1
+
+lihht1
+
+innt1
+
+expt1
+
+lskillt1
+
+smest1
+
+laplt1
+
+ltfpwm
+t1
+
+ltfpt1
+
+lrwt1
+0.055*
+(0.031)
+
+0.038**
+
+(0.015)
+
+0.060**
+(0.016)
+
+(0.003)
+
+(0.006)
+
+(0.005)
+
+0.024**
+
+0.040**
+
+0.015**
+
+(0.011)
+
+(0.017)
+
+(0.024)
+
+-0.002
+
+0.279**
+
+0.015
+
+(0.001)
+
+(0.008)
+
+(0.001)
+
+0.015**
+
+0.155**
+
+(0.016)
+0.008**
+
+(0.008)
+
+(0.015)
+
+-0.028**
+
+0.053**
+
+-0.022
+
+(0.001)
+
+0.048**
+
+(0.001)
+
+0.006**
+
+(0.008)
+
+(0.046)
+0.005**
+
+(0.021)
+
+-0.535**
+
+(0.019)
+
+(0.010)
+
+-0.476**
+
+0.587**
+
+0.701**
+
+TFP
+Female firm
+
+Industry
+
+Table 3. Empirical Estimates.
+
+(0.009)
+
+0.036**
+
+(0.010)
+
+0.213**
+
+(0.004)
+
+0.021**
+
+(0.015)
+
+-0.026*
+
+(0.001)
+
+0.014**
+
+(0.010)
+
+0.047**
+
+(0.010)
+
+-0.024*
+
+(0.001)
+
+0.007**
+
+(0.028)
+
+-0.574**
+
+(0.019)
+
+0.050**
+
+(0.012)
+
+0.619**
+
+Male firm
+
+TFPwm
+
+(0.007)
+
+0.042**
+
+(0.009)
+
+0.182**
+
+(0.003)
+
+0.022**
+
+(0.011)
+
+-0.019*
+
+(0.001)
+
+0.014**
+
+(0.008)
+
+0.049**
+
+(0.008)
+
+-0.030**
+
+(0.001)
+
+0.006**
+
+(0.022)
+
+-0.520**
+
+(0.016)
+
+0.059**
+
+(0.019)
+
+0.275**
+
+(0.005)
+
+0.015**
+
+(0.024)
+
+0.009
+
+(0.001)
+
+0.007**
+
+(0.016)
+
+0.049**
+
+(0.015)
+
+-0.023
+
+(0.001)
+
+0.004**
+
+(0.047)
+
+-0.539**
+
+0.057*
+(0.031)
+
+(0.015)
+
+(0.020)
+
+0.591**
+
+Female firm
+
+0.059**
+
+(0.010)
+
+0.668**
+
+Industry
+
+(0.009)
+
+0.038**
+
+(0.010)
+
+0.233**
+
+(0.004)
+
+0.018**
+
+(0.015)
+
+-0.039**
+
+(0.001)
+
+0.013**
+
+(0.010)
+
+0.047**
+
+(0.010)
+
+-0.024*
+
+(0.001)
+
+0.007**
+
+(0.029)
+
+-0.612**
+
+(0.019)
+
+0.062**
+
+(0.012)
+
+0.592**
+
+Male firm
+
+APL
+
+(0.010)
+
+(0.006)
+
+0.042**
+
+(0.008)
+
+0.151**
+
+(0.003)
+
+0.024**
+
+(0.007)
+
+0.025**
+
+(0.001)
+
+0.014**
+
+(0.008)
+
+0.048**
+
+(0.008)
+
+-0.030**
+
+(0.001)
+
+0.006**
+
+(0.021)
+
+(0.016)
+
+0.061**
+
+(0.017)
+
+0.274**
+
+(0.005)
+
+0.016**
+
+(0.011)
+
+0.054**
+
+(0.001)
+
+0.007**
+
+(0.016)
+
+0.052**
+
+(0.015)
+
+-0.024
+
+(0.001)
+
+0.005**
+
+(0.046)
+
+-0.535**
+
+(0.005)
+-0.473**
+
+0.021*
+
+(0.019)
+
+0.587**
+
+Female firm
+
+0.016**
+
+(0.010)
+
+0.701**
+
+Industry
+
+(0.009)
+
+0.039**
+
+(0.010)
+
+0.208**
+
+(0.004)
+
+0.021**
+
+(0.009)
+
+0.009
+
+(0.001)
+
+0.014**
+
+(0.010)
+
+0.047**
+
+(0.010)
+
+-0.027**
+
+(0.001)
+
+0.007**
+
+(0.028)
+
+-0.571**
+
+(0.006)
+
+0.021**
+
+(0.012)
+
+0.619**
+
+Male firm
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Page 10 of 25
+
+TFP
+
+0.000
+
+0.087
+
+Rho
+
+0.419
+
+.0.000
+
+13,958
+0.000
+0.131
+
+0.174
+
+43,187
+
+(0.104)
+
+2.398**
+
+Yes
+
+Industry
+
+0.000
+
+30,314
+
+(0.131)
+
+2.734**
+
+Yes
+
+Male firm
+
+Source: Authors’ own elaboration.
+Robust standard error reported in parenthesis.
+***, ** and * indicate significance at the 1, 5 and 10%, respectively.
+
+44,272
+
+P-value (Wald)
+
+(0.220)
+
+(0.105)
+
+Observations
+
+2.138**
+
+2.330**
+
+Constant
+
+Yes
+
+Female firm
+
+Yes
+
+Industry
+
+ind/year
+
+Table 3. Continued
+TFPwm
+
+0.436
+
+.0.000
+
+13,658
+
+(0.198)
+
+2.141**
+
+Yes
+
+Female firm
+
+0.219
+
+0.000
+
+29,529
+
+(0.136)
+
+2.838**
+
+Yes
+
+Male firm
+
+0.085
+
+0.000
+
+44,299
+
+(0.107)
+
+2.274**
+
+Yes
+
+Industry
+
+APL
+
+0.419
+
+0.000
+
+13,968
+
+(0.225)
+
+2.086**
+
+Yes
+
+Female firm
+
+0.172
+
+0.000
+
+30,331
+
+(0.135)
+
+2.663**
+
+Yes
+
+Male firm
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Page 11 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+research, the random effects model provides a more suitable framework for capturing the interaction between firm
+productivity, workforce gender composition, and wage outcomes.
+Results
+Table 3 shows the estimates of the empirical modelling. Columns (1), (2), and (3) display TFP results for the full industry,
+female firms, and male firms, respectively. Columns (4), (5), and (6) present TFP results classified by workforce gender,
+whilst the final three columns analyze the average product of labor (APL). Each scenario includes continuous and
+dichotomous indices for female firms and wage persistence.
+The results are notable. Firstly, all productivity measures positively and statistically significantly impact firm wages.
+Secondly, the TFP measure without gender differentiation (first three columns) yields lower figures than the genderspecific TFP scenario (columns 4, 5, and 6). Thirdly, as we expected, in this latter scenario, the impact on male-dominated
+firms is more significant than on female-dominated firms. All else being equal, a 1% increase in TFPwm raises wages by
+6.2%, whereas for female firms, the increase is only 5.7%.
+The first result eventually supports the neoclassical hypothesis that wages are related to productivity. Nevertheless, in the
+case of APL (columns 7, 8, and 9), the figures are noticeably lower than those in the first two scenarios. This suggests that
+using APL to measure a firm’s productivity may be misleading or biased, as it captures short-run employee performance
+rather than the productivity of the firms as a whole, potentially underestimating the actual impact.
+Other covariates reveal additional interesting results. There is evidence of positive wage persistence across all
+productivity measures, indicating that firms that paid higher (or lower) wages in the past are likely to continue doing
+so in the future. However, regardless of the productivity measure, the impact is consistently more substantial for male
+firms than for female firms. Furthermore, the positive and statistically significant estimates of the pre-sample mean of
+wages ðprelw2013 Þ , which captures the long-run impact of individual heterogeneity, further support the importance of
+wages persistence. These findings align with the study by Hansen and McNichols (2020), which suggests that employers’
+prior knowledge of employees’ salaries perpetuates historical gender-based wage discrimination.
+Firm size reveals that regardless of productivity proxy, SMEs show a negative impact on salaries than large firms, and in
+addition, female firms SMEs reduce the average wages less than male firms SMEs (-0.539 and -0.612 in the TFPwm case,
+respectively). These results are consistent with Messina (2019), whose findings reveal that large firms are more profitable
+and, therefore, pay higher wages, and this is not solely because they attract more skilled workers. Employees with
+identical qualifications earn better salaries when they work for these firms. As well, Blau and Kahn (2000) highlighted
+that wage disparities between male- and female-dominated firms could be linked to differing management styles,
+workplace policies, or labor force composition, and some studies suggest that female leadership may be associated with
+more equitable pay practices.
+Moreover, as we expected, the employees’ skills also positively and significantly affect salaries, as predicted by Human
+Capital theory. Regardless of TFP measurement, the evidence shows female firms have less impact on salaries than male
+firms, although when the employees have master's degrees. This is a clear signal of gender discrimination corroborated
+extensively by many authors, such as Rivera-Lozada et al., (2024) for Colombia, in the context of Kitakawa-OaxacaBlinder wage discrimination. In addition, in a typical emerging economy, the magnitude of the parameter (elasticity) is
+less than one. This suggests low education levels among employees and/or a limited number of hires with master’s
+degrees or that the manufacturing process does not require a highly specialized workforce.
+Internationalization strategies indicate that, for exports of final goods, the results for female firms are inconclusive, as the
+parameter is not significant. Conversely, for process and/or product innovation activities, the findings support the idea of
+a positive relationship with wages, with the impact being more significant in female firms than male firms.
+According to Gómez Sánchez, (2020), this result may be because in Colombia, small firms tend to be more focused on
+innovation activities than export activities, whereas the opposite trend is observed in large firms. Furthermore, Dezsö and
+Ross (2012) argue that gender diversity in leadership can enhance team performance, especially in innovation-driven
+contexts, as diverse perspectives foster solutions that are more creative and improved decision-making.
+For female firms, higher concentration levels tend to boost wages, whilst the evidence related to mark-ups is inconclusive,
+especially in the TFPwm case. When firms hold significant market power, they may share some of their higher profits
+with employees through increased salaries, potentially to retain talent or improve productivity. Firms’ age positively and
+significantly affects wages in all scenarios considered. This evidence supports the findings of ILO (2015), where young
+Page 12 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+small businesses are the ones that contribute the most to job creation. Nevertheless, female firms always display a lower
+impact than firms with a high male proportion.
+Lastly, when firms are geographically located in the Capital District of Bogota (loc), which is the most important
+economic activity zone in Colombia, female firms consistently have a more significant impact than male firms.
+Rodríguez-Pose and Crescenzi (2008) emphasize the role of regional dynamics, noting that companies located in
+economically buoyant areas benefit from knowledge diffusion and network effects, which can amplify the influence
+of various leadership structures, including those led by women.
+Discussion
+The relationship between productivity and wages in the Colombian manufacturing industry confirms that, although both
+variables are linked, the transmission of productivity into wages differs significantly depending on the gender composition of firms. Our findings show that the marginal contribution of female labor to output is greater than that of male
+labor, which aligns with evidence from other emerging economies (Tsou and Yang, 2019; Pfeifer and Wagner, 2014).
+However, this higher contribution is not proportionally reflected in remuneration, supporting the hypothesis that
+structural discrimination mechanisms persist in labor markets (Blau and Kahn, 2000; Seguino, 2000).
+This result has two major implications. First, it challenges the predictions of orthodox microeconomic theory, which
+assumes a neutral transmission between productivity and wages (Mankiw, 2015). Second, it highlights the importance of
+incorporating feminist economics and labor segmentation approaches, which emphasize how occupational segregation,
+unequal access to training, and career progression barriers distort the productivity-wage relationship (Kabeer, 2016;
+England and Folbre, 2002; Ñopo and Gallardo, 2009). These perspectives suggest that productivity cannot be treated as a
+gender-neutral input, especially in economies where women are concentrated in specific industries.
+At the same time, some limitations of this study should be considered. First, due to lack of information, the classification
+of firms as “female” or “male” relies on the proportion of female workers, not on ownership or leadership, which may
+complicate comparisons with the international literature. Second, although the econometric strategy (Wooldridge, 2009)
+deals with endogeneity, productivity measures remain sensitive to sectoral data availability and potential measurement
+errors (Felipe & McCombie, 2020). Third, the analysis is restricted to manufacturing firms, while in service sectors,
+where female employment is even higher, patterns of wage discrimination may diverge (World Bank, 2024).
+The practical implications of these findings are particularly relevant for policy and business strategy. Narrowing the gap
+between productivity and wages in female-intensive firms is not only a matter of equity but also of efficiency. Ignoring the
+productive contribution of female labor constrains firm competitiveness and weakens inclusive economic growth. Policy
+initiatives could include the adoption of gender-disaggregated cost accounting systems, fiscal incentives for firms with
+inclusive hiring and promotion practices, and training programs targeting women in high-productivity sectors (ILO,
+2015; Rodríguez-Pose & Crescenzi, 2008). Such measures would contribute to aligning wages with productivity while
+addressing structural sources of gender inequality.
+In other words, the persistence of a productivity-wage gap in female-intensive firms demonstrates that gender-based wage
+discrimination is not incidental but structurally embedded. Advancing towards policies and business practices that
+recognize the differential contribution of female labor is crucial not only for achieving gender equality but also for
+strengthening the efficiency and sustainability of the Colombian productive sector.
+As a conclusion, we can point out that gender wage discrimination goes beyond individual differences between men and
+women to extend to female and male firms in Colombia. This situation could reveal labor exploitation that would be
+conditioning the productivity of female firms and has been perpetuated since the dawn of industrialization in Colombia.
+These findings highlight the need for public policies that address gender pay disparities by recognizing and rewarding
+productivity regardless of gender. These could include gender-sensitive cost accounting systems, incentives for inclusive
+hiring practices, and targeted efforts to break occupational segregation. Otherwise, persistent wage gaps will continue
+undermining gender equity in the labor market.
+Ethical considerations
+Ethical approval and consent were not required.
+Reporting guidelines
+Reporting guidelines were not required. This study is not related to clinical topics.
+
+Page 13 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Data availability
+Zenodo: EAM-EDIT 3. https://doi.org/10.5281/zenodo.14867593 (Gómez Sánchez et al., 2025).
+The project contains the following underlying data:
+EAM-EDIT 3.xlsx. (A merge of two databases: Annual Manufacturing Survey (EAM) and Technological Development
+and Innovation Survey (EDIT)).
+Data are available under the terms of the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
+
+References
+Ackerberg DA, Caves K, Frazer G: Identification Properties of Recent
+Production Function Estimators. Econometrica. 2015; 83: 2411–2451.
+Publisher Full Text
+Akerlof GA, Yellen JL: The Fair Wage-Effort Hypothesis and
+Unemployment. En. Q. J. Econ. 1986; 105(o2): 255–283.
+Publisher Full Text
+Arango LG: Mujer, religión e industria: Fabricato, 1923-1982. Medellín:
+Universidad de Antioquia y Universidad Externado de Colombia; 1991.
+Reference Source
+Becker GS: The economics of discrimination. 2nd ed. University of Chicago
+Press; 1971.
+Blau FD, Kahn LM: Gender differences in pay. J. Econ. Perspect. 2000; 14(4):
+75–100.
+Publisher Full Text
+Blundell R, Bond S: Initial conditions and moment restrictions in
+dynamic panel data models. J. Econ. 1998; 87(1): 115–143.
+Publisher Full Text
+Card D, Lemieux T, Riddell WC: Unions and wage inequality. What do
+unions do? Routledge; 2017.
+Carlsson M, Messina J, Skans ON: Wage adjustment and productivity
+shocks. Econ. J. 2016; 126(595): 1739–1773.
+Publisher Full Text
+Crepon B, Duguet E, Mairesse J: Research, innovation and productivity:
+An econometric analysis at the firm level. Econ. Innov. New Technol.
+1998; 7(2): 115–158.
+Publisher Full Text
+De Loecker J: Detecting learning by exporting. AEJ: Microeconomics. 2013;
+5(3): 1–21.
+Publisher Full Text
+Dezsö CL, Ross DG: Does female representation in top management
+improve firm performance? A panel data investigation. Strateg.
+Manag. J. 2012; 33(9): 1072–1089.
+Publisher Full Text
+England P, Folbre N: Wages of virtue: The relative pay of care work.
+Social Problems 2002; 49(4): 455–473.
+Publisher Full Text
+Eslava M, Haltiwanger J, Kugler M, et al.: Trade and market selection:
+Evidence from manufacturing plants in colombia. Rev. Econ. Dyn. 2013;
+16(1): 135–158.
+Publisher Full Text
+Feldstein M: Did wages reflect growth in productivity? J. Policy Model.
+2008; 30(4): 591–594.
+Publisher Full Text
+Felipe J, McCombie J: The illusions of calculating total factor
+productivity and testing growth models: from Cobb-Douglas to Solow
+and Romer. J. Post Keynes. Econ. 2020; 43(3), 470-513.
+Reference Source
+Goldin C: A grand gender convergence: Its last chapter. Am. Econ. Rev.
+2014; 104(4): 1091–1119.
+Publisher Full Text
+Gómez Sánchez AM: Topics on firms’ estrategic desicions in a
+developing country: the case of manufacturing in Colombia. 2020.
+Reference Source
+Gomez-Sanchez AM, Ramirez-Gutierrez Z, Rivera-Lozada IC: Gender and
+firm’s productivity in Colombian manufacturing. 2025. Manuscript
+submitted for publication.
+Gómez Sánchez AM, Ramirez Z, Rivera Lozada IC: EAM-EDIT 3. [Dataset].
+Zenodo. 2025.
+Publisher Full Text
+
+Gómez-Sánchez AM, Máñez-Castillejo JA, Sanchis-Llopis JA: ICT Effects on
+Firms' Export Decisions: Evidence for Colombian Manufacturing.
+International Review of Entrepreneurship. 2022; 20.
+Reference Source
+Hansen B, McNichols D: Information and the persistence of the gender wage
+gap: Early evidence from California's salary history ban (No. w27054). National
+Bureau of Economic Research; 2020.
+Publisher Full Text
+ILO. International Labor Office: Pequeñas y medianas empresas y creación
+de empleo decente y productivo. Oficina Internacional del Trabajo; 2015.
+Reference Source
+Kabeer N: Gender equality, economic growth, and women’s agency:
+The "endless variety" and "monotonous similarity" of patriarchal
+constraints. Feminist Economics 2016; 22(1): 295–321.
+Publisher Full Text
+Levinsohn J, Petrin A: Estimating production functions using inputs to
+control for unobservables. Rev. Econ. Stud. 2003; 70(2): 317–341.
+Publisher Full Text|Reference Source
+Llopis JAS, Castillejo JAM, Sánchez AMG: The dynamic linkages between
+exporting and importing in Colombian manufacturing. Latin American
+Economic Review. 2022; 31: 1–33.
+Publisher Full Text
+Mankiw G: Macroeconomía. Versión para América Latina. Ciudad de
+México: Cengage Learning;sexta edición 2015.
+Meager N, Speckesser S: Wages, productivity and employment: A review of
+theory and international data. EEO; 2011.
+Reference Source
+Méjean I, Patureau L: Firms' location decisions and minimum wages.
+Reg. Sci. Urban Econ. 2010; 40(1): 45–59.
+Publisher Full Text
+Messina J: La productividad de las empresas y los salarios de los
+trabajadores. 2019; 13.
+Reference Source|Reference Source
+Mincer J: Schooling, Experience, and Earnings. New York: Columbia
+University Press; 1974.
+Ñopo H, Gallardo L: Ethnic and gender wage gaps in Ecuador. InterAmerican Development Bank Working Paper 2009; No. 679.
+Reference Source
+Olley GS, Pakes A: The dynamics of productivity in the telecommunications
+equipment industry. Technical report. National Bureau of Economic
+Research; 1992.
+Reference Source
+Pfeifer C, Wagner J: Age and gender effects of workforce composition
+on productivity and profits: Evidence from a new type of data for
+German enterprises. Contemporary Economics. 2014; 8(1): 25–46.
+Publisher Full Text
+Roberts MJ, Tybout JR: The Decision to Export in Colombia: An Empirical
+Model of Entry with Sunk Costs. Amer. Econ. Rev. 1997; 87(4): 545–564.
+Reference Source
+Rodríguez-Pose A, Crescenzi R: Research and development, spillovers,
+innovation systems, and the genesis of regional growth in Europe.
+Reg. Stud. 2008; 42(1): 51–67.
+Publisher Full Text
+Rivera-Lozada IC, Gómez-Sánchez AM, Rivera-Lozada O: The gap that
+Matilda will bridge: a look at the Colombian case. F1000Res. 2024; 13:
+588.
+PubMed Abstract|Publisher Full Text|Free Full Text
+Sanchis Llopis JA, Mañez JA, Gómez-Sánchez AM: The dynamic links
+between product and process innovations and productivity for
+Colombian manufacturing. Applied Economic Analysis. 2024; 32(94):
+
+Page 14 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+62–82.
+Publisher Full Text
+Santos D: Faldas por pantalones: las obreras y la brecha salarial en la
+industria colombiana en 1945., Tiempo&economía. 2017; 4(2): 31–65.
+Publisher Full Text
+Sargent TC, Rodriguez ER: Labor or total factor productivity: Do we need to
+choose? Ottawa, ON, Canada: Department of Finance; 2000.
+Reference Source
+Seguino S: Gender wage inequality and economic growth: Is there
+really a puzzle? World Development; 2000; 28(7), 1225–1243.
+Reference Source
+Schank T, Schnabel C, Wagner J: Higher wages in exporting firms: selfselection, export effect, or both? First evidence from linked employeremployee data. Rev. World Econ. 2010; 146(2): 303–322.
+Publisher Full Text
+Schultz TW: Investment in human capital. Am. Econ. Rev. 1961; 51(1):
+1–17.
+Reference Source
+Shapiro C, Stiglitz JE: Equili-brium Unemployment as a Worker
+Discipline Device. Am. Econ. Rev. 1984; Vol. 74(3): pp. 433–444.
+Reference Source
+Shaikh A: Laws of Production and Laws of Algebra: The Humbug
+Production Function. Rev. Econ. Stat 1974; 56(1): 115–120.
+Publisher Full Text
+
+of the manufacturing sector in the region of Visegrad Group
+countries. Sustainability. 2023; 15(5): 4164.
+Publisher Full Text
+Syverson C: What Determines Productivity? Journal of Economic
+Literature 2011; 49(2): 326–365.
+Publisher Full Text
+Todaro R, Godoy L, Abramo L: Desempeño laboral de hombres y
+mujeres: opinan los empresarios. Cadernos pagu. 2002; 197–236.
+Publisher Full Text
+Tsou MW, Yang CH: Does gender structure affect firm productivity?
+Evidence from China. China Econ. Rev. 2019; 55: 19–36.
+Publisher Full Text
+WCP: Empresas lideradas por mujeres son más productivas, tienen mayor
+calidad y son más sostenibles. Colombia productiva; 2024.
+Reference Source
+Wooldridge JM: On estimating firm-level production functions using
+proxy variables to control for unobservables. Econ. Lett. 2009; 104(3):
+112–114.
+Publisher Full Text
+World Bank: Women Business and the Law 2024. World Bank Group; 2024.
+Reference Source
+World Economic Forum: Global Gender Gap Report 2024. World Economic
+Forum; 2024.
+Reference Source
+
+Suhányi L, Suhányiová A, Kádárová J, et al.: Relationships between
+average wages in the manufacturing sector and economic indicators
+
+Page 15 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 29 August 2025
+
+https://doi.org/10.5256/f1000research.177354.r400226
+© 2025 Hernandez R. This is an open access peer review report distributed under the terms of the Creative
+Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,
+provided the original work is properly cited.
+
+Ronald M. Hernandez
+1 Universidad Senor de Sipan (Ringgold ID: 203395), Chiclayo, Lambayeque, Peru
+2 Universidad Senor de Sipan (Ringgold ID: 203395), Chiclayo, Lambayeque, Peru
+The study “Productivity, Real Wages, and Gender: An Analysis of the Colombian Manufacturing
+Industry” presents an adequate structure in relation to its objectives and the results obtained. It
+concludes that companies with female employees show better productivity outcomes, positioning
+this as a relevant and original study. However, there are several areas for improvement that
+should be addressed to strengthen the research:
+1. The literature review needs to be reinforced with a broader theoretical approach, clearly
+defining the frameworks that influence productivity.
+2. Provide more detailed evidence on how productivity influences employees’ wages. It is
+stated that this view varies from country to country—please illustrate this claim with
+examples.
+3. Consolidate the theoretical framework. In addition to mentioning economic theories, I
+consider that a gender perspective is important to explore its relationship with productivity.
+4. Justify, in the results section, why random effects models were used instead of fixed effects
+models. Review the tests applied and strengthen the rationale for their selection and use.
+5. The Discussion section needs to be reformulated. It is currently supported by only five
+citations and should focus on the changes generated by productivity and gender, the biases
+present in this study, and the potential practical implications that can be drawn.
+Is the work clearly and accurately presented and does it cite the current literature?
+Partly
+Is the study design appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and analysis provided to allow replication by others?
+Partly
+
+Page 16 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+If applicable, is the statistical analysis and its interpretation appropriate?
+Yes
+Are all the source data underlying the results available to ensure full reproducibility?
+Yes
+Are the conclusions drawn adequately supported by the results?
+Partly
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: Education, social relations, consumer psychology, applied technologies
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard, however I have
+significant reservations, as outlined above.
+Author Response 13 Oct 2025
+
+Zoraida Ramírez-Gutiérrez
+Thank you for your comments and feedback on our manuscript. Next, we provide detailed
+responses to each of your observations and describe how we have addressed them in the
+revised version of the paper.
+Comment 1: The literature review needs to be reinforced with a broader theoretical
+approach, clearly defining the frameworks that influence productivity.
+Reply 1: We have substantially expanded the literature review to integrate a broader set of
+theoretical frameworks explaining the determinants of productivity. Beyond neoclassical
+and human capital approaches, we incorporated efficiency wage theory, industrial
+organization, and firm heterogeneity (Syverson, 2011), as well as feminist economics and
+labor market segmentation (Blau & Kahn, 2000; Kabeer, 2016). These additions clarify
+how productivity is shaped by both firm-level strategies and institutional factors, providing
+a stronger conceptual foundation for the empirical analysis.
+Comment 2: Provide more detailed evidence on how productivity influences employees’
+wages. It is stated that this view varies from country to country—please illustrate this claim
+with examples.
+Reply 2: We enriched the review with empirical examples showing how the
+productivity–wage nexus differs across contexts. For instance, Tsou & Yang (2019) find
+that in China, productivity gains from female workers are stronger in small private and
+foreign firms than in public enterprises. Pfeifer & Wagner (2014) report that in Germany,
+female-dominated firms appear less productive under OLS but outperform male firms
+under GMM, illustrating the importance of methodology and institutional settings. We also
+added Colombian evidence (RUES, Emicrón, WCP) showing that women-led firms display
+higher productivity yet receive lower wages, reinforcing the relevance of structural and
+cultural factors.
+
+Page 17 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Comment 3: Consolidate the theoretical framework. In addition to mentioning economic
+theories, I consider that a gender perspective is important to explore its relationship with
+productivity.
+Reply 3: The theoretical framework was consolidated by integrating gender economics as a
+core dimension. We discuss how occupational segregation, unequal access to training, and
+promotion barriers (Blau & Kahn, 2000; Seguino, 2000; England, 2005; Kabeer, 2016)
+influence productivity and its transmission to wages. This gender-sensitive approach is now
+presented alongside traditional theories (human capital, efficiency wages, firm
+heterogeneity), allowing us to examine how structural biases interact with productivity
+within female- and male-intensive firms.
+Comment 4: Justify, in the results section, why random effects models were used instead of
+fixed effects models. Review the tests applied and strengthen the rationale for their
+selection and use.
+Reply 4: We have clarified the methodological rationale for our choice of the dynamic
+random effects model and have reported the specification tests that support this selection.
+We opted for a dynamic random effects (RE) GLS model instead of a fixed effects (FE)
+model for three main reasons. First, the Hausman test did not reject the null hypothesis of
+no systematic differences between estimators, indicating that the random effects estimator
+is consistent and more efficient. Second, the random effects specification allows us to
+include time-invariant variables, such as geographic location and industrial sector, which
+are crucial to our analysis and would be omitted under the fixed effects specification. Third,
+the dynamic structure of our model captures wage persistence and controls for unobserved
+heterogeneity correlated with lagged wages, consistent with the methodology of Blundell &
+Bond (1998). This strategy provides robust estimates while addressing simultaneity and
+endogeneity issues (Wooldridge, 2009).
+Comment 5: The Discussion section needs to be reformulated. It is currently supported by
+only five citations and should focus on the changes generated by productivity and gender,
+the biases present in this study, and the potential practical implications that can be drawn.
+Reply 5: We have reformulated the Discussion section to include a broader set of
+references and a clearer focus on three aspects: (i) the implications of productivity
+differences by gender and their impact on wage transmission (Tsou & Yang, 2019; Pfeifer
+& Wagner, 2014; Rivera-Lozada et al., 2024); (ii) the main sources of potential bias, such
+as firm classification by workforce composition and sectoral coverage; and (iii) the
+practical relevance of aligning wages with productivity in female-intensive firms. We now
+discuss policy measures gender-disaggregated cost systems, incentives for inclusive
+promotion practices, and training for women in high-productivity sectors that can help
+address structural discrimination while enhancing firm efficiency and competitiveness.
+Competing Interests: No competing interests were disclosed.
+
+Reviewer Report 02 June 2025
+
+https://doi.org/10.5256/f1000research.177354.r381152
+
+Page 18 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+© 2025 Villani D. This is an open access peer review report distributed under the terms of the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the
+original work is properly cited.
+
+Davide Villani
+1 Joint Research Centre, European Commission, Seville, Spain
+2 Joint Research Centre, European Commission, Seville, Spain
+The paper tiled Productivity, real wages, and gender. A study in Colombian Manufacturing
+examines the relationship between productivity, real wages, and gender in the Colombian
+manufacturing industry. The study finds that firms with a higher proportion of female workers
+tend to have higher productivity than those with a higher proportion of male workers. However,
+the research also reveals that the impact of female firms' productivity on wages is lower than that
+of male firms, suggesting potential wage discrimination. The authors use a dynamic generalized
+least squares model with panel data to analyze the relationship between productivity and wages.
+The paper addresses a relevant topic, but there are several aspects that undermine the soundness
+of the work.
+Let me be more precise.
+Over the full text I have the impression that the paper should devote more attention to
+several aspects, such as the literature review and the underlying theoretical mechanisms
+that they want to prove. Some ideas are only sketched and/or not properly referenced. For
+example:
+In the first paragraph the authors argue that “Nevertheless, productivity is the most
+critical factor influencing wages”. Yes, this is true, but productivity is highly linked to
+the factors mentioned in the first sentence, not in opposition as the authors seem to
+suggest.
+You argue that “… issue is the exclusion of gender from productivity analysis.
+Microeconomic and Industrial Organisation theory often treats employees under the
+label “labor.”, which can lead to biases …”. However, you do not describe what these
+problems and biases are.
+Moreover, there is some imprecision with the theory. This imprecisions affect the core
+concepts of the paper. For example, the authors argue that "orthodox microeconomic
+theory postulates that a worker's productivity positively correlates with wages" and than
+claim that this is not necessarily the case for Colombian firms. However, the authors fail to
+indicate in what and why these findings depart from orthodox theory. Importantly, this is
+not necessarily a novelty, as the decoupling between real wage growth and productivity is a
+well-known phenomenon taking place since the 1970s in many countries. There are many
+reasons that have been discussed behind these movements, but these are not mentioned
+nor discussed in the paper (e.g. lower bargaining power of workers, international trade
+etc.).
+I am very skeptical about the validity of the TFP for this kind of approach. While it is true
+that it is a measure highly employed, the authors should at least acknowledge the inherent
+flows liked to this measure. I suspect that the flaws might be especially relevant for the type
+of work performed here. Authors like Shaikh, Milberg, and McCombie have criticized the
+concept of Total Factor Productivity (TFP) for being a residual measure that captures
+everything that is not accounted for by the inputs of labor and capital. They argue that TFP
+is often used as a proxy for technological progress, but it can also reflect other factors such
+○
+
+○
+
+○
+
+○
+
+○
+
+Page 19 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+as changes in income distribution, market power, and measurement errors. Additionally,
+they contend that the Cobb-Douglas production function, which is commonly used to
+estimate TFP, is based on unrealistic assumptions and can lead to biased estimates. Shaikh,
+in particular, has argued that the TFP residual can be influenced by factors such as markup
+changes, and that it is not a reliable measure of productivity growth (Shaikh, 1974, among
+others). McCombie has also criticized the use of TFP as a measure of productivity, arguing
+that it can be affected by factors such as changes in the distribution of income and the level
+of capacity utilization (Felipe and McCombie, 2010). Milberg has also questioned the use of
+TFP, highlighting the problems of aggregation and the difficulty of separating technological
+progress from other factors (Elmslie and Milberg, 1996). Overall, these authors suggest that
+TFP should be used with caution and that alternative measures of productivity should be
+explored.
+I also have different comments about the empirical analysis. Here two important ones:
+In table 1, The authors conclude that the contribution of women is higher than that of men.
+However, this statement seems to be not properly supported by the data. Female have
+higher coefficients only in two out of three specifications. Here, the difference in coefficient
+is very little, so I ask to what extent this is economically relevant. When the situation is the
+opposite (GLS) the difference is much marked. These observations lead me to argue that the
+statement is not fully supported by the data.
+In the empirical model the authors use random effects in the model. Why do you use
+random effect rather than fixed effects? Did you perform a Hausman test? There is no
+justification nor discussion to this.
+○
+
+○
+
+References
+- Shaikh, 1980 Laws of production and laws of algebra: the humbug production function, The
+review of economics and statistics
+- Felipoe and McCombie 2010 What is Wrong with Aggregate Production Functions. On Temple’s
+Aggregate Production Functions and Growth Economics International Review of Applied Economics,
+24(6): 665–684
+- Elmslie, B. and W. Milberg (1996), The productivity convergence debate: a theoretical and
+methodological reconsideration, Cambridge Journal of Economics
+
+Is the work clearly and accurately presented and does it cite the current literature?
+Partly
+Is the study design appropriate and is the work technically sound?
+No
+Are sufficient details of methods and analysis provided to allow replication by others?
+No
+If applicable, is the statistical analysis and its interpretation appropriate?
+Partly
+
+Page 20 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Are all the source data underlying the results available to ensure full reproducibility?
+Partly
+Are the conclusions drawn adequately supported by the results?
+Partly
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: Political economy and inequality
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to state that I do not consider it to be of an acceptable scientific standard, for
+reasons outlined above.
+Author Response 27 Jun 2025
+
+Zoraida Ramírez-Gutiérrez
+Dear Reviewer 1,
+Thank you for your comments and feedback on our manuscript. Next, we provide detailed
+replies to each of your observations and describe how we have addressed them in the
+revised version of the paper.
+Comment 1: In the first paragraph the authors argue that “Nevertheless, productivity is the
+most critical factor influencing wages. Yes, this is true, but productivity is highly linked to the
+factors mentioned in the first sentence, not in opposition as the authors seem to suggest”
+Reply 1: We agree with this observation and rephrase the sentence to clarify that
+productivity is shaped by other firm-level and worker characteristics such as education,
+experience, and other background characteristics. We now emphasize that productivity
+should not be interpreted as being in opposition to those factors, but rather as a result of
+them.
+Comment 2: You argue that “Microeconomic and Industrial Organisation theory often treats
+employees under the label “labor”, which can lead to biases.” However, you do not describe what
+these problems and biases are.
+Reply 2: We have now elaborated on the potential biases, such as gender-based
+occupational segregation, unequal access to training, and differences in promotion
+opportunities. These factors can distort the measurement of productivity when labor is
+treated as a homogeneous input. This clarification appears in the revised Introduction and
+Literature Review sections.
+Comment 3: There is some imprecision with the theory. For example, the authors argue that
+‘orthodox microeconomic theory postulates that a worker’s productivity positively correlates with
+wages’ and then claim this is not necessarily the case in Colombia. However, this decoupling is
+not new, and the authors fail to discuss existing literature on this topic.
+
+Page 21 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Reply 3: We have added a paragraph acknowledging that the decoupling between
+productivity and wages has been documented since the 1970s in developed countries. We
+now cite studies that attribute this phenomenon to factors such as lower bargaining power,
+globalization, and labor market segmentation. Our contribution lies in showing how this
+decoupling also affects female-dominated firms in an emerging economy like Colombia
+Comment 4: I am very skeptical about the validity of the TFP for this kind of approach. While it is
+true that it is a measure highly employed, the authors should at least acknowledge the inherent
+flows liked to this measure. I suspect that the flaws might be especially relevant for the type of
+work performed here. Authors like Shaikh, Milberg, and McCombie have criticized the concept of
+Total Factor Productivity (TFP) for being a residual measure that captures everything that is not
+accounted for by the inputs of labor and capital. They argue that TFP is often used as a proxy for
+technological progress, but it can also reflect other factors such as changes in income
+distribution, market power, and measurement errors. Additionally, they contend that the CobbDouglas production function, which is commonly used to estimate TFP, is based on unrealistic
+assumptions and can lead to biased estimates. Shaikh, in particular, has argued that the TFP
+residual can be influenced by factors such as mark-up changes, and that it is not a reliable
+measure of productivity growth (Shaikh, 1974, among others). McCombie has also criticized the
+use of TFP as a measure of productivity, arguing that it can be affected by factors such as
+changes in the distribution of income and the level of capacity utilization (Felipe and McCombie,
+2010). Milberg has also questioned the use of TFP, highlighting the problems of aggregation and
+the difficulty of separating technological progress from other factors (Elmslie and Milberg, 1996).
+Overall, these authors suggest that TFP should be used with caution and that alternative
+measures of productivity should be explored.
+Reply 4: Our aim is to classify manufacturing firms as “female” or “male” based on the
+proportion of women and men they employ. For this reason, we focus on overall wages and
+productivity at the firm level rather than estimating individual wage returns. In this context,
+Total Factor Productivity (TFP) provides a more accurate measure of productivity than, for
+instance, Average Labor Productivity (ALP).
+On the other hand, it is crucial to distinguish macroeconomic considerations from those
+pertinent to the microeconomic analysis of productivity and discrimination, as well as to
+acknowledge the advancements in estimating production functions.
+1. Many critiques of Total Factor Productivity (TFP) stem from a macroeconomic
+perspective and are not directly applicable to a firm-level production function
+analysis. Discussions about aggregate income distribution, workers’ bargaining
+power at a national scale, or the effects of international trade on wage-productivity
+decoupling (as raised by Shaikh, Milberg, or McCombie) operate at a different level of
+aggregation than our study. This distinction between macroeconomic and
+microeconomic interpretations of productivity is well-established in the literature. For
+instance, Syverson (2011) provides a comprehensive review of the factors
+determining productivity at the firm level, specifying how firm attributes and internal
+efficiencies drive variations in TFP, a different focus from the aggregate concerns
+raised by other scholars. (Syverson, C. (2011). What determines productivity?. Journal
+of Economic Literature, 49(2), 326-365).
+Our analysis focuses on the productive microstructure of firms and how the gender
+
+Page 22 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+composition of the workforce affects productive efficiency and wages within the firm.
+Fluctuations in income distribution within a firm are intrinsically linked to wage structures
+and input allocation, factors we precisely aim to model and understand. We are not
+conducting an analysis of aggregate wage dynamics but rather an evaluation of the
+marginal contribution of production factors and their remuneration at the production unit
+level.
+1. In addition, all production functions operate under assumptions, and their empirical
+validity depends on how well these are met. Nonetheless, the claim that TFP
+“captures measurement errors” is an imprecise simplification of econometric theory.
+In a production function model, measurement errors in observable variables, as well
+as other non-systematic idiosyncratic shocks, are captured by the stochastic error
+term (εit
+). TFP (ωit
+), on the other hand, represents the unobservable
+component of firm productivity that is transmitted over time and can be correlated
+with the firm’s input decisions, which leads to the endogeneity problem.
+Regarding critiques about “changes in profit margins” influencing TFP, it is worth noting
+that our model, by estimating the production function and subsequently deriving TFP,
+captures the impact of the firm’s profit maximization decisions. If profit margins influence
+resource allocation or apparent productivity, this will be reflected in the production function
+estimation and, consequently, in TFP.
+Lastly, contextualising the cited critiques in their historical sequence is crucial. Objections
+from authors like Shaikh (1974) were formulated during a period when robust econometric
+methods for estimating production functions to address endogeneity did not exist or were
+in their nascent stages. The seminal developments by Olley and Pakes (1996) and,
+subsequently, Wooldridge’s method (2009), represent advancements precisely to mitigate
+biases associated with input endogeneity and provide consistent estimates of production
+elasticities and TFP. The critics to our methodology with arguments that precede the
+formulation of these advanced methods disregards the evolution of applied econometrics in
+industrial organisation. These methods are designed to produce more reliable TFP
+estimates by controlling for the correlation between inputs and unobserved productivity
+shocks.
+1. Our study incorporates a methodological innovation by extending Wooldridge’s
+(2009) two-step method to disaggregate the labour factor by gender. This allows us
+to estimate separate output elasticities for female labour (βlw
+
+) and male labour (
+
+βlm
+), which to our knowledge, has not been systematically implemented in
+previous studies using this cutting edge estimation approach. This approach is crucial
+for determining whether the marginal contribution to production (output elasticity of
+labour) differs between men and women at firm level. If, as our preliminary results in
+Table 1 suggest, βlw
+>βlm
+, this implies that a percentage increase in female
+labour generates a proportionally greater impact on production than an equivalent
+increase in male labour.
+Table 1 presents a clear empirical evidence. The estimation of the Cobb-Douglas production
+function, corrected for endogeneity issues through our variant of Wooldridge’s method,
+
+Page 23 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+consistently shows that the output elasticity of female labour exceeds that of male labour in
+the robust specifications. This finding contrasts with the ambiguous results obtained from
+traditional methods like Ordinary Least Squares (OLS) or Generalised Least Squares (GLS),
+which are susceptible to endogeneity biases. We emphasize that this evidence on output
+elasticities is obtained before the calculation of TFP, which validates the robustness of our
+production function parameter estimates. How can the method’s correctness be questioned
+if the factor elasticities, obtained consistently and theoretically soundly, already
+demonstrate a gender differential in marginal productivity?
+Furthermore, Table 2 introduces an alternative productivity measure: Average Labour
+Productivity (ALP). As this measure is relevant for firms in the short-run, it is frequently used
+as a preliminary productivity measure. Specifically, in the Garment sector, despite women
+having a higher average ALP, average male wages are higher. This discrepancy between
+observed productivity (ALP) and wage remuneration in the presence of higher female
+productivity strengthens our hypothesis of potential wage discrimination, which will be
+further examined by the calculated TFP.
+Overall, we will add a paragraph acknowledging TFP’s limitations.
+Comment 5: In Table 1, the authors conclude that the contribution of women is higher than that
+of men. However, this is not properly supported by the data... the difference is very small and in
+one specification it’s reversed.
+Reply 5: From an econometric perspective, what matters most in our investigation is, first,
+whether a difference in TFP exists, and second, whether it is statistically significant. In our
+study, both conditions are met. Moreover, to address heteroscedasticity and to obtain
+elasticity estimates, we use logarithmic transformations, which substantially reduce the
+scale of the variables. The values are also expressed in thousands of U.S. dollars, and when
+converted to Colombian pesos, they reveal considerable differences.
+On the other hand, considering that only 1 out of the 23 manufacturing sectors analysed in
+Colombia does not support our hypothesis and findings, we interpret this as an outlier
+rather than evidence against a consistent and robust trend.
+Comment 6: Why do you use random effects rather than fixed effects? Did you perform a
+Hausman test? There is no justification nor discussion for this.
+Reply 6: In industrial organisation studies, random effects models are often preferred over
+fixed effects models because it is necessary to control for both industry-specific
+characteristics and time effects (such as macroeconomic fluctuations). These controls are
+typically introduced through dummy variables that rarely show variation over time, and
+would therefore be absorbed or eliminated under a fixed effects specification. For that
+reason, a random effects approach is assumed, and the Hausman test is not applied.
+Moreover, although commonly used, reliance on the Hausman test may raise concerns
+regarding the researcher’s conceptual understanding of the underlying economic problem.
+We hope these changes and replies adequately address your concerns and improve the
+clarity and quality of our manuscript. Thank you for your valuable feedback.
+Best regards,
+
+Page 24 of 25
+
+F1000Research 2026, 14:306 Last updated: 15 APR 2026
+
+Competing Interests: No competing interests were disclosed.
+
+The benefits of publishing with F1000Research:
+• Your article is published within days, with no editorial bias
+• You can publish traditional articles, null/negative results, case reports, data notes and more
+• The peer review process is transparent and collaborative
+• Your article is indexed in PubMed after passing peer review
+• Dedicated customer support at every stage
+For pre-submission enquiries, contact research@f1000.com
+
+Page 25 of 25
+
+

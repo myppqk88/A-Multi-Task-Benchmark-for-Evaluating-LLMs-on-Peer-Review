@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F166_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "定义与分类",
+    "适用范围",
+    "合理拒绝重构"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者拒绝根本重构概念框架但补充并非每类BLT都在每处出现的说明；核对分类穷尽性和具体场地出现性是否区分。",
+    "图示和边界定义的澄清要与实际观测用途相连，不能因跨学科评审期待不同就免除定义精确性的责任。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article provides a succinct presentation of a novel and innovative approach to the analysis of\nthe built environment and the interweaving of social life with built form. The focus on boundaries\nhas significant merit in allowing for engagement with both the material and ideational aspects of\nhuman-built form interrelations as well as a solid practical benefit when undertaking research\nwhere the",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nI thank Karl Kropf for his praise of my efforts and thorough consideration of the BLT\ndefinitions themselves and their presentation. I shall respond to his concerns point by point\nbelow. It is pertinent to point out that very different questions or concerns are raised here\ncompared to the first peer review. No doubt, this reflects the highly interdisciplinary nature\nof the subject matter and the benefits that could be gained from researchers eng",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "BLTs express a useful material reification of the both essential and commonplace constitutive role of boundaries in\nsocial life from which built environments develop. Precisely\nthrough their experiential and social constitutive theoretical\nfoundations – the principles of differentiation and subdivision\nand the operation of seclusion – BLTs make a natural conceptual partner for long-term comparative studies on how built\nform develops. The materialisation of BLTs represents a state\nof establishment immediately followed by negotiation, modification, and potentially transformation as afforded by their\nproperties (see Vis, 2013; Vis, 2018a). We appreciate ‘that\nboundaries may be both contested and consensual, depending on the perspectives and interests of the parties involved,\n[which] leads to a more dialectical understanding of their\nnature and transformations’ (Rodman & Cooper, 1996: 94).\nIn other words, this ontology provides the capacity for systematic social investigations of built env",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "and the operation of seclusion – BLTs make a natural\nconceptual partner for long-term comparative studies on how\nbuilt form develops. The materialisation of BLTs represents a\nstate of establishment immediately followed by negotiation,\nmodification, and potentially transformation as afforded by their\nproperties (see Vis, 2013; Vis, 2018a). We appreciate ‘that\nboundaries may be both contested and consensual, depending on the perspectives and interests of the parties involved,\n[which] leads to a more dialectical understanding of their\nnature and transformations’ (Rodman & Cooper, 1996: 94).\nIn other words, these boundary concepts provide the capacity\nfor systematic social investigations of built environments as\nthey develop, considering both the deep past of settlements and\nexamples of vanished cultures. BLTs will help archaeologists to\n‘engage conceptually with work in other disciplines to make\neffective ancient-modern comparisons, and […] to analyze\n(or reanalyze) our data so that we ca",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "As human beings inhabit space, they section space both conceptually and physically. Depending on lifestyle, disposable\nmaterials, and technology, humans may choose to modify and\neventually transform the physical characteristics of the spatial world to partition off sections in service of the purpose\nof inhabitation. In a habitable world, albeit not necessarily inherently hospitable, humans will use the experiential\nunderstanding of perceptible distinctions to direct and enhance\ntheir life-path within and traversing that world so as to survive and thrive by protecting themselves and their sustenance.\nLogically, the very first instances of construction that fully\ntransforms the physical properties of the world will serve\nas shelter (cf. Appleton, 1975; Van der Laan, 1983). Such\nconstruction activity, modelled on previous experience of\nmaterial properties (cf. constitutive phenomenology, Schütz,\n1967), introduces a clearly perceptible physical contrast that\ngenerates a space where the vul",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "subdivisions that differentiate spaces in relation to their\nsurroundings: acts of construction leading to areas or spaces\nmade to accommodate life that exert physical constraints.\nUnderstanding\nthat\nbuilt\nenvironments\nresult\nfrom\nmaking the world habitable through the linked principles of\n‘differentiation’ and ‘subdivision’ formalises descriptive\nparameters which can be used to meticulously conceptualise the\nrole of built environment configurations in social inhabitation.\nHere I will present an ontological set of socio-spatial conceptualisations of essential built environment elements. These\nconcepts enable a redescription of the built environment\nbased in fundamental, empirically observable, spatial-material\ninformation. The aim of accomplishing such rudimentary\nredescriptions is to advance the understanding of social life in\nconstitutive relation to built environments, exclusively using\nas input data the spatial morphology (configuration, topology, composition, and shape) of the mate",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

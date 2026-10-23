@@ -1,0 +1,61 @@
+{
+  "task_id": "F058_T2_Q01",
+  "paper_id": "ORE:5-65",
+  "parent_task": "T3_F058_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+  "parent_input_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+  "review_dimension_AI_candidate": "工具选择与版本可复现性",
+  "selection_scope": "保留选择理由、版本与日期三者关系，不能用日期声称代替可复现版本。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-65_Copilot_in_service__Exploring_the_potential_of_the_large_language_mode/v1_manuscript.pdf",
+      "original_sha256": "ac4bcae96a8cfa753fa3bd766ec73de7f0e2d9536eedfefa60bc5549980bce79",
+      "raw_text_file": "data/question_bank/T2_回应评价/F058_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        104857,
+        105065
+      ],
+      "report_id": "51991",
+      "date": "2025-03-12",
+      "raw_page_numbers": [
+        22
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-65_Copilot_in_service__Exploring_the_potential_of_the_large_language_mode/v1_manuscript.pdf",
+      "original_sha256": "ac4bcae96a8cfa753fa3bd766ec73de7f0e2d9536eedfefa60bc5549980bce79",
+      "raw_text_file": "data/question_bank/T2_回应评价/F058_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        106959,
+        107594
+      ],
+      "report_id": null,
+      "date": "2025-04-02",
+      "raw_page_numbers": [
+        23
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "version from January 2025",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 31300,
+    "end": 31845,
+    "exact_quote": "E field) by using the Copilot chatbot5.\nWe have chosen to utilise the Copilot chatbot by Microsoft\n(version from January 2025) because it has been already used\nin classrooms and corporate settings rather successfully; and\nbecause it is openly available, and displays all the functionalities\nof similar LLM-based chatbots. Additionally, Copilot is now\nintegrated into Microsoft Office’s 365 applications, making\nit more functional for professional use. As the Microsoft\nwebsite6 promises, “Copilot, your AI companion, is ready to\n\n4\n\nOne helpful ",
+    "anchor_matches": 1,
+    "anchor": "version from January 2025"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿方法新增Copilot版本时间和选择理由；月份说明不自动等于稳定可复现模型版本。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

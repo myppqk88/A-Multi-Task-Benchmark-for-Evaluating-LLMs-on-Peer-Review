@@ -1,0 +1,28 @@
+{
+  "task_id": "F028_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "能力框架与范围",
+    "证据与回应",
+    "角色及时间对应"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "两份当轮评审均有2018-02-19完整答复；2018-01-26普通作者帖子早于相关报告，不能强配为其回复，已单列排除。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "In this correspondence, two well-known European authors’ editors, Dr. Valerie Matarese and Ms.\nKaren Shashok, raise two very interesting points to enhance the core competencies (CC) list for\nbiomed journal editors in Moher et al (2017). They aptly argue that the perspective from authors\nis essential to define journal editor CC and thus inappropriate to be overlooked. Then they indicate\nthat author",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nWe concur with Dr. Luo’s understanding of language and writing in the current globalized\ncontext of research publishing, including some EAL scholars’ recourse to text re-use to\nproduce acceptable English. We also agree that suggestions by journal editors on where\nauthors could obtain help is a competency that researchers are likely to value, and have\nnoted this in version 2. Many journals already list commercial editing service providers on\ntheir websites, but the scope and quality of these ser",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

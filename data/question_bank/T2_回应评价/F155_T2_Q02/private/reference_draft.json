@@ -1,0 +1,28 @@
+{
+  "task_id": "F155_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "文献筛选与来源可信度"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The author could explain the inclusion and exclusion criteria for documents, how to\ndetermine source credibility,",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "2. Methodological Transparency and Rigor\nThe Methods section has been substantially expanded to clarify the qualitative document\nanalysis procedures. We now explicitly explain the inclusion and exclusion criteria for\ndocument selection, the strategies used to assess source credibility, and the analytical steps\nemployed, including categorization, thematic comparison, and triangulation across policy\ndocuments, implementation reports, and academic literature. Furthermore, we have\nstrengthened the academic basis for selecting the five analytical dimensions by directly\nlinking them to the reviewed theory and previous empirical findings.\n\n\n\n3. Clarity and Replicability\nRevisions were also made to improve clarity, coherence, and transparency throughout the\nmanuscript to support interpretive validity and facilitate replication by other researchers.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "只选纳排与来源可信度这一项资料筛选关切；作者方法段统一回答多项，完整段保留并仅就筛选充分性评价。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

@@ -1,0 +1,3627 @@
+RESEARCH ARTICLE
+
+Financial inclusion and stability
+
+level data: A two-step system GMM es
+
+[version 2; peer review: 2 approved, 1 approved with reservation
+
+Mohammed Arebo
+
+, Filmon Hando
+
+, Andualem
+
+Regional and Local Development Studies, Addis Ababa University College of Dev
+
+v2 First published: 15 Nov 2024, 13:1369
+
+https://doi.org/10.12688/f1000research.158461.1
+Latest published: 15 Apr 2025, 13:1369
+https://doi.org/10.12688/f1000research.158461.2
+
+Abstract
+Background
+This paper examines the impact of FI on bank stability within
+Ethiopian context, using panel data from 17 commercial banks over
+the period 2015-2023. Given the scarcity of research focused on the
+relationship between FI and bank stability in Ethiopia, this paper seeks
+to address a crucial gap by analyzing both conventional and digital
+aspects of FI in relation with bank stability.
+Methods
+A two-stage principal component analysis (PCA) was conducted to
+construct a composite FI index, integrating 10 conventional and 5
+digital indicators. The study applied a two-step robust system
+generalized method of moments (GMM) to analyze the effects of FI on
+bank stability, tests nonlinearities using Lind and Mehlum’s (2010) Utest, and examines causality through Dumitrescu-Hurlin (2012) and
+Juodis et al. (2021) causality tests.
+Results
+The result reveals an inverted U-shaped relationship between FI and
+bank stability. FI enhances stability up to a 30.3% threshold, beyond
+which increased transaction costs, information asymmetries, and
+adverse selection risks weaken stability. Capital adequacy moderates
+this effect, raising the threshold to 35.1%, but its stabilizing role
+diminishes at higher levels. Granger causality tests confirm a
+bidirectional relationship. Additionally, bank efficiency and GDP
+growth enhance stability, while real interest rates, total assets, and
+
+income diversification exert destabilizing effects.
+Conclusions
+This study makes three key contributions. First, it provides the first
+empirical analysis of the FI-stability nexus in Ethiopia. Second: (i), it
+develops a multidimensional FI index; (ii), explores both linear and
+nonlinear relationships, and (iii) examines macroprudential regulation
+as a moderating factor. Third, it tests causality, offering policy
+insights. To enhance stability while mitigating risks, policymakers
+must balance FI expansion, enforce regulatory frameworks, and
+implement targeted capital requirements. Regulators should
+strengthen consumer protection and financial literacy, while banks
+must optimize outreach, manage credit risk, and ensure prudent asset
+allocation and liquidity management to sustain financial stability.
+Keywords
+Financial Inclusion; Principal Component Analysis; Bank stability;
+GMM; Ethiopia
+
+Corresponding author: Mohammed Arebo (mohammed.jatoro@aau.edu.et)
+
+Author roles: Arebo M: Conceptualization, Data Curation, Formal Analysis, Investig
+Visualization, Writing – Original Draft Preparation, Writing – Review & Editing; Hand
+Editing; Mekonnen A: Supervision, Validation, Writing – Review & Editing
+Competing interests: No competing interests were disclosed.
+
+Grant information: The author(s) declared that no grants were involved in support
+
+Copyright: © 2025 Arebo M et al. This is an open access article distributed under th
+which permits unrestricted use, distribution, and reproduction in any medium, prov
+
+How to cite this article: Arebo M, Hando F and Mekonnen A. Financial inclusion a
+two-step system GMM estimation [version 2; peer review: 2 approved, 1 approv
+https://doi.org/10.12688/f1000research.158461.2
+
+First published: 15 Nov 2024, 13:1369 https://doi.org/10.12688/f1000research.158
+
+REVISED Amendments from Version 1
+
+In this updated version of the manuscript, we have thoroughly addressed all r
+improvements to enhance the study's rigor, clarity, and contribution to the fi
+strengthened the abstract and introduction by incorporating a specific polic
+the novelty of the study. By comparing our work with previous research,
+findings address critical gaps in the literature, particularly in understanding th
+and banking stability. Second, to provide a stronger theoretical foundation, we
+updated the literature review with the most recent studies. The empirical litera
+the two key variables of the study: (i) FI and banking stability, (ii) non-linear rela
+moderating effects of macro-prudential regulation. This segmentation allows
+more coherent connection to the empirical analysis. Additionally, we have pro
+banks studied. Third, in the methodology section, we have justified the me
+approaches in the field. Fourth, one of the most significant improvements in
+test to address the dynamic nature of financial studies. This test allows us to
+and stability. Furthermore, we have introduced an analysis of the role of m
+nexus. Lastly, in the discussion section, we have compared our findings with
+results. The inclusion of the non-linearity test and the analysis of macro-prud
+more nuanced understanding of the FI-stability relationship.
+
+Any further responses from the reviewers can be found at the end o
+
+1. Introduction
+In contemporary financial policymaking, the pursuit of financial system
+alongside with the promotion of financial inclusion (FI) (Antwi et al., 202
+that the degree of FI can siginificantly impact the stability of financial syste
+Vo et al., 2020; Kim et al., 2020; Ahamed & Mallick, 2019). Historically, t
+primarily on preserving financial stability (Schinasi, 2005). However, over
+key policy goal, complementing the objectives of stability, integrity, and
+initiatives of global regulatory bodies and stakeholders (Hannig & Jansen, 2
+whether financial stability and FI function as substitutes or complemen
+(Morgan & Pontines, 2017).
+
+FI is conceptualized as encompassing the availability, access, and usage
+2021; Pesqué-Cela et al., 2021; Demirgüç-Kunt et al., 2017; Allen et al.
+Specifically, “availability” denotes the infrastructural capacity of financial
+branches, registered agents, and ATMs (Nguyen & Du, 2022; Sarma, 2016
+to which financial services reach society, operationalized as the number of
+accounts across commercial banks, microfinance institutions (Ismael & Al
+actual adoption of financial products, assessed by the total volume of credit
+2022; Nguyen, 2021; Sarma, 2016). Conversely, bank stability, refers
+economic shocks, ensuring the uninterrupted mediation of savings and in
+nance of adequate capital, effective risk management, and sustained publi
+and systemic collapses (Koudalo & Toure, 2023; Oanh et al., 2023; Anat
+The determinants of bank stability can differ significantly across various
+(Ozili, 2018). Factors influencing bank stability include internal element
+(PL) accounts, as well as external socio-economic and political condition
+tualization of financial stability extends beyond individual banks to capture
+financial crises (Cihak, 2020). Ha & Nguyen, (2023) and Borio, (200
+microprudential measures, aimed at reducing individual bank failures, and m
+effects.
+
+Empirical studies on the impact of FI on bank stability in developing coun
+Koudalo & Toure, 2023; Jungo et al., 2022). Neglecting this relationship
+costly financial crises or ongoing financial exclusion (Danisman & Tara
+(1996) highlights that failures within individual financial sectors can trig
+instability stemming from the collapse of financial institutions. In such scen
+ripple effect, eroding investor confidence and prompting a rush to liquid
+understanding contagion risk is crucial for comprehending the dynamics o
+et al., 2020). Consequently, policymakers must adeptly balance the trade
+maintaining stability (Damane & Ho, 2024; 
+Cihák et al., 2016).
+
+While FI is widely recognized as a determinant of financial stability (Oanh e
+perspectives. A dominant strand argues that FI enhances stability by deposit
+economic resilience (e.g., Oanh et al., 2023; Koudalo & Toure, 2023; Mali
+2020; Pham & Doan, 2020; Banna & Alam, 2021; Ahamed & Mallick, 20
+Morgan & Pontines, 2014), while others caution that extending credit to p
+default rates and destabilize financial institutions (e.g., Umar & Akhtar, 202
+Damrah et al., 2023; Barik & Pradhan, 2021; Feghali et al., 2021). How
+existing literature. First, research disproportionately rely on macro-level
+Saharan Africa (Damane & Ho, 2024; Chinoda & Kapingura, 2023; Jima &
+economies (Jungo et al., 2022; Wang & Luo, 2022; Vo et al., 2020; Morgan
+2022; Sethy & Goyari, 2022), Asia (Malik et al., 2022; Pham & Doan, 20
+(Neaime & Gaysset, 2018), Africa (Koudalo & Toure, 2023; Kebede et a
+Sebai & Talbi, 2024; Barik & Pradhan, 2021). Despite, studies examining
+limited (e.g., Umar & Akhtar, 2024; Damrah et al., 2023; Anthony-Orji et
+instance, Ethiopia, where only 10% of households’ access formal credit (L
+concentrated in urban areas (NBE-FSR, 2024), remains conspicuously ab
+studies in Ethiopia have investigated financial sector stability (Filatie &
+2023; Yitayaw et al., 2023; Dress, 2022; Abdu, 2021; Isayas & McMillan,
+Zelie & Wassie, 2019; Meressa, 2018), the impact of FI on bank sta
+methodological limitations persist, including (i) prior studies have often
+ignoring its multidimensional nature (Mapurita & Mayoukou, 2024) or focu
+& Kong, 2023; Chinoda & Kapingura, 2023; Banna & Alam, 2021). Thi
+digital and traditional channels interact dynamically to shape stability outc
+incomplete understanding of FI. (ii), corroborating Damane & Ho, (20
+nonlinear dynamics, and insufficient attention moderating impact of mac
+nexus (see Hua et al., 2023). Third, reliance on linear estimators and inade
+fixed effects) obscures bidirectional relationships and endogenous feedba
+
+This study advances the FI-stability discourse through three novel cont
+imbalance by focusing on Ethiopia, a paradigmatic case of high financial e
+with systemic concentration risks (23.5% of loans held by top borrowers). S
+stability implications under conditions of structural fragility. Second, this s
+multidimensional FI index via two-stage PCA, integrating 10 traditional an
+system GMM estimator to mitigate endogeneity and unobserved heteroge
+nonlinear FI-stability relationship in Ethiopia, validated through Lind and
+rigor; and (iv) introducing macroprudential regulation as a moderating varia
+settings. Third, this study employs Dumitrescu-Hurlin (2012) and Juodi
+bidirectional linkages. Finally, the study offers actionable insights for policy
+and financial stability in Ethiopia.
+
+The remainder of the study is structured as: Part 2 reviews the literature; P
+methods; Part 4 presents and discusses the empirical results; and Part
+implications.
+
+2. Literature review
+2.1 Theoretical literature review
+FI, from a macroeconomic perspective, is seen as a catalyst for “creative
+reducing inequality, and enhancing financial stability. However, at the micr
+behaviors, such as fund misuse and deliberate payment delays, which m
+2023). The impacts of FI are neither uniform nor static; they vary across dif
+led to divergent views among researchers regarding its impact on bank sta
+emerging as the one positing a FI-stability effect and the other suggesting a
+Moaz, 2022). To that end, the relationship between FI and bank stability has
+policy discourse ( 
+Cihák et al., 2016). This study employs a multi-the
+information theory, financial intermediation theory, systemic risk theo
+underpinnings collectively offer a nuanced understanding of the pathway
+in Ethiopia.
+
+Asymmetric information theory, highlighted by Akerlof (1970), addresses
+distribution in financial markets. In FI, this imbalance is particularly signifi
+populations. Difficulties in assessing creditworthiness can lead to adverse
+and operational efficiency, which may compromise financial stability (Oa
+2022; Barik & Pradhan, 2021; Khan, 2011; Bofondi & Gobbi, 2003). Balan
+can thus strengthen the financial system.
+
+The financial intermediation theory underscores the pivotal role of banks i
+Wensveen, 2003; Diamond, 1984), thereby facilitating FI. By providi
+informational gaps, banks contribute to the efficient allocation of capital
+overall financial stability (Servigny & Renault, 2004). This theory emp
+particularly in developing economies where financial exclusion is signific
+broadening their customer base, increasing deposits, and fostering a more
+Diamond, 1984). This phenomenon lessens information asymmetry, there
+2023).
+
+Systemic risk theory, as developed by Minsky (1982) and later refined by B
+of financial institutions and the amplification of shocks through mechanis
+procyclicality. Borio differentiates systemic risk into temporal and cross-s
+the dynamic evolution of aggregate risk, while cross-sectional risk pertains
+system, influenced by common exposures and counterparty risks. Within
+expanding borrower bases can lower lending standards, potentially des
+Hannig and Jansen (2010) argue that FI can enhance stability by diversifyin
+less susceptible to economic cycles, while Prasad (2010) highlights the po
+and economic growth.
+
+Portfolio theory highlights the significance of diversification in mitigating
+diversified loan portfolio can potentially reduce the impact of credit losses
+system (Beck et al., 2013; Wang & Lin, 2021). Adem (2022) concurs, noti
+for banks. Khan (2011) outlines three main ways of mitigating the FI on fina
+through increased lending to smaller firms reduces portfolio risk; an expand
+volatile non-core financing; and improved monetary policy transmission en
+(2021) argue, the effectiveness of diversification hinges on the correlatio
+overall risk profile.
+
+Drawing on the above theoretical foundations, this study offers a unique
+stability can be comprehended. Figure 1 synthesizes these theoretical fra
+destabilizing mechanisms.
+
+On the positive side, corroborating Diamond’s (1984) financial intermedia
+intermediation enhances the flow of funds between borrowers and savers, e
+surplus funds and those in deficit. This formalization strengthens mone
+allocation, and reduces dependence on informal financial systems (Dam
+Additionally, FI facilitates consumption smoothing and savings mobili
+liquidity buffers (Sethy & Goyari, 2022; Khan, 2011). In accordance with
+(2011) emphasizes that higher savings lead to increased investment finan
+loan concentration risk and enhancing risk-sharing mechanisms. Lending t
+further mitigates exposure to single borrowers, lowering the likelihood of n
+stability (Damane & Ho, 2024). However, excessive FI without proper risk
+(Dienillah et al., 2018). Supporting the negative implications of Akerl
+(Damane & Ho, 2024; Sethy & Goyari, 2022), suggests that extending
+increases adverse selection and moral hazard, elevating credit risk and op
+expansion often necessitates outsourcing credit assessments and Know Y
+reputational risks and weakening due diligence (Barik & Pradhan, 202
+Minsky’s (1982) systemic risk theory, Sarmiento (2024), highlights that f
+institutions (NBFIs) can spill over into the broader financial ecosystem, a
+
+Financial Inclusion
+
+Easy access and affordable
+cost of financial services
+
+Increased
+efficiency and size
+of financial system
+
+Increased
+monetary policy
+transmission
+
+Consumption
+smoothing
+
+Increased saving
+
+Enhance
+Investment
+
+Credit diverse and
+risk sharing
+
+U
+fi
+
+Information
+asymmetry, mora
+hazard and adver
+
+Increased
+credit risk
+
+Enh
+Incl
+
+Enhance financial stability
+Inclusion
+Positive effect
+
+Figure 1. Theoretical channels of interactions between FI and bank s
+Ho (2024), Sethy and Goyari (2022) and Barik and Pradhan (2021).
+
+2.2 Empirical review and hypothesis development
+2.2.1 Financial inclusion and bank stability
+
+Empirical research regarding the impact of FI on the stability of financia
+et al., 2023; Feghali et al., 2021; Vo et al., 2020). Despite data limitations, t
+positive and negative effects of FI on the stability of banks.
+
+Khan (2011) identified three key channels through which financial inclusio
+asset diversification, FI reduces the risk and cost associated with bank finan
+potential losses. Second, the inclusion of small depositors attracts retail
+stable than wholesale funding sources. Third, formalization of the inform
+monetary policy transmission, ultimately strengthening the overall stability
+using data from over 1500 commercial banks across 36 emerging economi
+stability by promoting operational efficiency, risk management, and fundin
+employing System GMM for 102 banks in six ASEAN countries, conclude
+customer deposits and reduced non-performing loans (NPLs). Their findin
+(2017), who showed that lending to small and medium sized enterprises (SM
+Z-scores and lower NPL ratios, key indicators of bank stability. These studi
+to SMEs serves as a buffer against financial instability by diversifying lo
+exposure.
+
+During financial crises, resources mobilized from FI initiatives are vital for
+resilience (Ha & Nguyen, 2023; Hannig & Jansen, 2010). Vo et al. (202
+underscore the importance of FI in reducing systemic risks. Vo et al. (2020)
+
+base and improving financial resilience in emerging markets, while Ch
+stabilizing effects of digital FI in Sub-Saharan Africa, noting that it sig
+stability. Another layer of analysis emerges in the work of López and Win
+financial crises using 189 economies data for the period of 2004–2017. The
+of FI experience less severe disruptions in credit availability during econ
+(2020), examining 42 countries across Asia using Feasible Generalized Lea
+positive impact of FI on stability is enough to safeguard financial markets
+fosters a stable retail deposit base. Jungo et al. (2022) further emphasize the
+encouraging investment in FI to maintain monetary system stability, par
+studies like (Chinoda & Kapingura, 2023; Ha & Nguyen, 2023; Jima & Ma
+& Du 2022; Wang & Luo, 2022; Pham & Doan, 2020; Vo et al., 2020; Aham
+et al., 2018; Neaime & Gaysset, 2018; Morgan & Pontines, 2014; Hannig
+bank stability by expanding the deposit base, diversifying risks, reducing
+efficiency through policy transmission.
+
+On the other hand, FI has an adverse impact on bank stability. Oanh et
+inexperienced clients into the formal financial sector, creating challeng
+information, lenders struggle to assess borrowers’ creditworthiness, with n
+Makoni, 2023). Damrah et al. (2023) present a nuanced view of FI’s imp
+2017, illustrating how inclusion can have both positive and negative effec
+conventional) and external factors such as financial crises. Their Linear
+improves access to services, it also introduces inefficiencies and increase
+economic distress. Their findings align with those of Barik and Pradhan (20
+BRICS nations from 2005 to 2015, argue that rapid credit expansion facil
+and escalate non-performing loans (NPLs). Employing System GMM rangi
+examining Chinese banks, found that while FI generally reduces bank ris
+large banks, suggesting that the impact of FI varies depending on bank cha
+Feasible Generalized Least Squares (FGLS), highlight the trade-offs asso
+financial sustainability, it also negatively impacts financial efficiency du
+previously unbanked populations. In light of the above empirical literature
+hypothesis:
+H1: Financial inclusion has a positive impact on bank stability
+
+2.2.2 Non-linear relationship between financial inclusion and bank st
+
+A significant limitation of existing empirical research is its predominant
+stability, often overlooking the variation in this relationship across differ
+Despite the mean impact of FI on bank stability, the findings of (Sebai et al
+Ahamed & Mallick, 2019), reveals an inverted U-shaped relationship betw
+that beyond a certain threshold, further inclusion can destabilize the finan
+identify an inflection point in fintech-driven FI, where early-stage adoption
+later elevates funding costs and operational risks. Contrasting perspective
+Sebai, 2025; Antwi et al., 2024; Sebai & Talbi, 2024; Dang & Thi, 2022; S
+effects resurge at higher development stages.
+
+The above contrasting empirical evidence suggests that FI does not exert a
+& Talbi, 2024). Instead, its effects depend on contextual factors such as m
+and institutional quality. Kebede et al. (2021) further emphasize the intricat
+may be limited by high market concentration, which can stifle competiti
+efforts. Dienillah et al. (2018), using a Tobit model for 19 countries from 20
+stability in high-income nations but shows insignificant effects in lowertailored FI strategies suited to specific economic and regulatory environme
+and Jima and Makoni (2023), who highlight the contextual nature of FI’s im
+(PVAR) model for 58 countries (27 low financial development states and
+2004 to 2020, Oanh et al. (2023) found that FI positively correlates with stab
+but this relationship turns negative in more developed financial systems,
+systemic risks. Similarly, Jima and Makoni (2023), using ARDL cointegra
+2019 for 26 Sub-Saharan African countries, revealed that while FI contribu
+the relationship is bidirectional and contingent on broader economic and
+
+Ahamed and Mallick (2019) extended this argument by analyzing a global
+two-step system GMM, they posited that FI enhances stability by increasi
+banking costs, with the effectiveness of these benefits being contingent on i
+a robust institutional framework in ensuring that FI does not devolve into un
+implicitly warns against viewing FI initiatives in a silo, devoid of regulator
+Hannig and Jansen (2010) emphasized the role of robust institutional fram
+lead to unchecked risk-taking, a finding also supported by Sethy and G
+countries, where FI was found to be a key driver of long-term stability.
+
+In general, based on the observed nonlinear impact of inclusive finance on
+Sebai, 2025; Antwi et al., 2024; Anton & Nucu, 2024; Kebede et al., 2024; H
+Talbi, 2024), this study hypothesizes:
+
+H2. There is an inverted U-shaped relationship between FI and bank s
+2.2.3 The moderating effects of macro-prudential regulation
+
+Contrary to the assumptions of classical economics, market failure theory u
+efficiently governing the real economy. Risks stemming from information
+systemic vulnerabilities, disproportionately affecting traditional comme
+Pantielieieva et al., 2020). To mitigate such risks, financial regulation eme
+risk-taking by banks (Chinoda & Kapingura, 2024). Among regulatory
+cornerstone of prudential oversight, directly enhancing financial stability
+buffers (Anarfo et al., 2020). While CAR independently strengthens finan
+another dimension. FI, concieved as expanding access to formal financia
+reduces reliance on informal channels (Talbi & Sebai, 2025). Yet stringent
+banks’ lending capacity, resulting in credit rationing that stifles FI (Anarfo
+The stability implications of this interaction hinge on regulatory and
+environments, rapid FI expansion may incentivize reckless risk-taking, ero
+(Beck et al., 2013). Conversely, well-capitalized banks are better positione
+risks associated with financial deepening (Thakor, 2014). Robust capital fr
+stability by diversifying revenue streams and reducing dependence on vol
+2023). However, unchecked credit growth may heighten financial fragility
+literature has not thoroughly explored this interaction, but (Anarfo et a
+relationship between CAR and FI positively influences bank stability. Owi
+FI, when moderated by capital adequacy, strengthens bank stability, leadi
+
+H3: The interaction between capital adequacy and FI improves bank s
+2.2.4 Stylized facts about Ethiopian banking sector
+
+The empirical literature on FI and financial stability offers a rich diverse o
+across both streams of research is the need to avoid viewing FI or stability in
+crucial for our empirical analysis. This is particularly relevant for Ethiop
+structural characteristics that shape the FI-stability nexus. Ethiopian ban
+competition and underdeveloped capital markets (Mengesha & Berde, 20
+captive investors at negative real rates, and the absence of market-based
+(Abdu, 2022). State-owned Commercial Bank of Ethiopia (CBE) holds 49.5
+five mid-sized banks control 28.0% and 29.4%, respectively, and 24 small
+Financial deepening is limited, with loans and bonds at 21.4% of GDP a
+deposit interest rates, driven by high inflation (29.3%), alongside 8% sav
+((NBE Annual Report, 2024), highlight persistent financial distortions. FI
+loans disbursed to rural areas, while large borrowers (those with credit ex
+0.5% of clients but control 74.8% of total banking sector loans (NBE-FSR, 2
+introduction of interest-free banking, Safaricom Ethiopia’s licensing un
+(NDPS), and the Digital ID initiative, have increased FI from 10.89% in 2
+Yet, whether these advances enhance stability remains uncertain. The CBE
+state banks prioritize stability via sovereign debt, while private banks,
+asymmetries, limit FI expansion. Negative real returns undermine savin
+
+speculative urban lending lower the threshold at which FI shifts from s
+employs bank-level data to offer appropriately tailored policy implication
+Ethiopia.
+
+3. Methods
+3.1 Source and sample of data
+Commercial banking institutions in Ethiopia are the most dominant and
+services. Based on the data compiled from NBE financial stability report
+total assets, 97.8% of deposits, 93.9% of credit, and 76.1% of equity in the f
+this dominance, the study focuses on commercial banks but due to data a
+banks, the researchers focuses on 17 commercial banks. Data for the study
+National Bank of Ethiopia (NBE), Commercial banks (CBs) annual repor
+2015-2023.
+3.2 Construction and identification of variables
+3.2.1 Dependent variables
+
+
+Different studies used different indicators to measure bank stability (Cihá
+research, Z-score is used as a measure of bank stability, following esta
+Koudalo & Toure, 2023; Barik & Pradhan, 2021; Sethy & Goyari, 2022;
+While the Z-score may emphasize profitability, it remains a widely used
+comprehensiveness, simplicity, and data availability (Ha & Nguyen, 2023
+study focuses exclusively on the Z-score. Z-score is valued for its ability to
+inverse of the probability of insolvency, reflecting the likelihood that a bank
+& Toure, 2023). Higher returns on assets and greater capitalization im
+increased risk (Damrah et al., 2023). This score, calculated from return on
+2023; Vo et al., 2020), is constructed in this study as follows:
+Z  scoreit ¼
+
+ROAit þ EQAi
+sdðROAÞit
+
+Where: ROA represents the return on assets, EQA denotes the ratio betwe
+stands with standard deviation.
+3.2.2 Independent variables
+
+Measuring FI is essential to support evidence-based policy decisions (Sarm
+ment reveals gaps and opportunities for expanding FI (Demirgüç-Kunt et a
+can be misleading (Sarma, 2008; Nguyen, 2021). Composite indices offe
+multiple dimensions, enabling better comparisons across time and region
+multifaceted nature of FI (Mishra, 2007). This study constructs a multi
+combining10 convensional indicators and 5 digital indicators (see Table 1
+3.2.3 Control variables
+
+As outlined in Table 1, the study includes several bank-specific and macroe
+for operational efficiency. While prior studies (Damrah et al., 2023; Jungo
+2013) relied on overhead cost as efficiency measure, this study tailors efficien
+driven banking model. Traditional cost-to-income ratios overlook key ope
+Envelopment Analysis (DEA) to develop a more comparable efficiency m
+efficiency using an output-oriented Constant Returns to Scale (CRS) thro
+choice of CRS is justified by the structure of the Ethiopian banking indus
+Ethiopian banks operate within a homogeneous regulatory framework with l
+subject to similar capital requirements, operational constraints, and gov
+relationship between inputs and outputs across banks. Despite Rao & Lakew
+banks have more control over inputs than outputs, most banks prioritize max
+Thus, assuming out-put oriented CRS provides a realistic framework for c
+scale their operations proportionally regardless of size, making it suitable fo
+
+Notation
+
+Definition
+
+ZS
+
+Computes the buffer of a state’s banking system with the
+volatility of those returns.
+
+BPC
+
+BAC
+
+APC
+
+AAC
+
+PPC
+
+PAC
+
+APD
+
+Convensional
+Availability
+
+Convensional
+Availability
+
+Convensional
+Availability
+
+Convensional
+Availability
+
+Convensional
+Availability
+
+Convensional
+Availability
+
+Digital
+Availability
+
+NBE; WB
+
+NBE; WB
+
+No of PoSs (per 1000 km2)
+
+No of agents (per 1,000 adults)
+
+NBE; WB
+
+NBE; WB
+
+No of ATMs (per 1000 km2)
+
+No of PoSs (per 100,000 adults)
+
+NBE; WB
+
+NBE; WB
+
+No of Branches (per 1000 km2)
+
+No of ATMs (per 100,000 adults)
+
+NBE; WB
+
+NBE
+
+Sources
+
+No of Branches (per 100,000 adults)
+
+Financial inclusion indicators (Independent variable)
+
+Bank Z-Score
+
+Bank stability (Dependent variable)
+
+Variables
+
+Table 1. Overview of indicators and data sources used in the study.
+
+Damrah et al., 2023; Hua et al., 2023; Gharbi & Kammoun, 2023;
+Jima & Makoni, 2023; Jungo et al., 2022; Barik & Pradhan, 2021;
+Ismael & Ali, 2021; Kebede et al., 2021; Nguyen, 2021; Sha’ban
+et al., 2020; Vo et al., 2020; Le et al., 2019; Ahamed & Mallick,
+2019; Camara & Tuesta, 2017
+
+Damrah et al., 2023; Koudalo & Toure, 2023; Barik & Pradhan,
+2021; Sethy & Goyari, 2022; Vo et al., 2020; Ahamed & Mallick,
+2019
+
+Studies
+
+Provides a comprehensive measure of the bank's financial
+strength and capacity, reflecting the aggregate value of its
+economic resources available for generating revenue and
+supporting operations.
+
+Assesses a bank's ability to absorb potential losses and sustain
+operations during financial stress, ensuring it maintains
+sufficient capital to cover its risks and support continued
+stability
+
+lnTA
+
+CAR
+
+IND
+
+EF
+
+RLIR
+
+Natural
+logarithm of
+Total Asset
+
+Capital
+adequacy
+ratio
+
+Income
+Diversification
+
+Operational
+efficiency
+management
+
+Real lending
+
+Inflation adjusted lending interest rate, i.e., lending interest
+
+It refers to the practices and strategies employed to optimize a
+bank's operational processes, reduce costs, and enhance
+productivity.
+
+The non-interest income to total income ratio insight into the
+diversification of a bank's income streams beyond traditional
+interest-based revenue.
+
+The loan loss provision ratio represents the funds set aside to
+cover expected credit losses.
+
+PL
+
+Provision to
+Loan
+
+Indicates how much of the bank's deposit base is being used
+for lending.
+
+Definition
+
+LDR
+
+Notation
+
+Loan to
+Deposit ratio
+
+Control variables
+
+Variables
+
+Table 1. Continued
+
+NBE
+
+NBE
+
+NBE
+
+NBE
+
+NBE
+
+NBE
+
+NBE
+
+Sources
+
+Koudalo & Toure, 2023; Anthony-Orji et al., 2022; Atellu &
+
+Damrah et al., 2023; Ahamed & Mallick, 2019; Beck et al., 2013;
+Shahriar et al., 2022
+
+Ahamed & Mallick, 2019; Sanya & Wolfe, 2011; Elsas et al., 2010
+
+Hua et al., 2023; Jungo et al., 2022; Kebede et al., 2021; Anarfo
+et al., 2020; Vo et al., 2020
+
+Damrah et al., 2023; Jungo et al., 2022; Ramzan et al., 2021;
+Ahamed & Mallick, 2019; Vo et al., 2020; Ali & Puah, 2018; Beck
+et al., 2013a; Gupta & Kashiramka, 2020
+
+Ha & Nguyen, 2023; Hua et al., 2023; Koudalo & Toure, 2023;
+Barik & Pradhan, 2021; Ahamed & Mallick, 2019; Chen et al.,
+2019
+
+Muhammed et al., 2024; Kulu & Bondzie, 2024; Bod’a &
+Zimková, 2021; Hakim, 2017
+
+Studies
+
+In this study, salary and benefits, provisions, general expenses, branches,
+interest income and non-interest income serve as outputs. Using the mod
+efficiency score θ is calculated as the ratio of weighted sum of outputs to
+Ps
+ur Yrj
+Efficiency ðθÞ ¼ Pr¼1
+≤1, j ¼ 1
+m
+i¼1 vi Xij
+
+Where ðθÞ = efficiency score of bank j, Y r j = amount of output r produced b
+j, ur = weight assigned to output r, vi = weight assigned to input i, s = nu
+number of banks (decision-making units) being evaluated.
+
+Additionally, the analysis includes control variables such as income divers
+non-performing loans, loan-to-deposit ratio, and total assets. Macroeconom
+rate and GDP growth rate.
+
+3.3 Financial inclusion composite index development strategy
+PCA is employed to construct an index that effectively reduces data dimen
+(Tram et al., 2023; Nguyen, 2021; Hair et al., 2019; Sha’ban et al., 2020
+effective for large, multivariate datasets, addressing challenges like multi
+redundancy by creating uncorrelated variables that maximize variance
+Jolliffe & Cadima, 2016). Compared to alternative methods, PCA offers sev
+approaches like Sarma (2008) model, which often rely assigning weights o
+Camara & Tuesta, 2017), PCA adapts to changes in data structure (Decancq
+of weights before data collection (Chen et al., 2019). Second, while entro
+overly sensitive to minor data fluctuations than PCA (Chen et al., 2023; Wu
+Additionally, entropy weighting has limited adoption in FI empirical studie
+compared to parametric methods like Confirmatory Factor Analysis (CFA
+subjective decisions on factor structure (Tram et al., 2023; Camara & T
+Cadima, 2016; Steiger, 1979), which may differ across time and space.
+
+Normalization is essential for comparing indicators with varying units and
+z-score standardization, min-max rescaling, and logarithmic transformation
+2008). In this study, the min-max (MMY) approach is used to normalize ind
+exclusion and 1 represents inclusion.
+MMY ¼
+
+Yi  Ymin
+,
+Ymax  Ymin
+
+Where Ymin , minimum value, Ymax , maximum value.
+
+Traditional single-level multivariate analysis often fails to address nest
+independent and identically distributed (i.i.d) observations, potentially mi
+2022). To mitigate this, a multi-level framework is employed, which a
+enhancing analytical precision (Yang et al., 2022; Hox, 2013). Additional
+weight indicators with unequal variances. By generating sub-indices within
+them, the multilevel approach provides a more balanced and accurate com
+Tuesta, 2017; Nagar & Basu, 2002).
+3.3.1 First-stage analysis
+
+Table 2 shows the results of the first-stage PCA. To ensure the suitabilit
+measure and Bartlett’s test of sphericity are performed. These tests conf
+indicators are sufficiently intercorrelated (Ismael & Ali, 2021; Taherdoost e
+a statistically significant chi-square in Bartlett’s test (1950) indicate that fa
+As reported in Table 2, all components meet these criteria (KMO ≥ 0.5 and p
+FI index development. Additionally, internal consistency was measu
+Kline (2015), a Cronbach’s alpha value above 0.6 is acceptable for develo
+of 0.9721, as shown in Table 2, exceeds this threshold, indicating exce
+reliability of the data.
+
+Table 2. First stage PCA result.
+Estimation of PC and eigenvalue of sub-indices of TFI and DFI
+Component
+
+Eigenvalue
+
+Difference
+
+Comp1
+
+5.4682
+
+5.1268
+
+Comp2
+
+0.3415
+
+0.1566
+
+Comp3
+
+0.1849
+
+0.1801
+
+Comp4
+
+0.0048
+
+0.0043
+
+Comp5
+
+0.0004
+
+0.0002
+
+Comp6
+
+0.0003
+
+Availability TFI
+
+Availability DFI
+Comp1
+
+1.9997
+
+Comp2
+
+0.0003
+
+1.9994
+
+Accessibility DFI
+Comp1
+
+2.0686
+
+1.2765
+
+Comp2
+
+0.7921
+
+0.6528
+
+Comp3
+
+0.1373
+
+Usage DFI
+Comp1
+
+3.4725
+
+2.992
+
+Comp2
+
+0.4804
+
+0.443
+
+Comp3
+
+0.0374
+
+0.0278
+
+Comp4
+
+0.0096
+
+Scoring coefficients for orthogonal varimax rotation (weights) an
+Dimensions
+
+Indicators
+
+Comp1
+
+Unexplained
+variance
+
+Normalized
+weights
+
+Convensional
+availability
+
+BP
+
+0.4146
+
+0.06
+
+0.16927
+
+BA
+
+0.4105
+
+0.0786
+
+0.16759
+
+AP
+
+0.4112
+
+0.0753
+
+0.1679
+
+AA
+
+0.4078
+
+0.0908
+
+0.16649
+
+PP
+
+0.3983
+
+0.1324
+
+0.16263
+
+PA
+
+0.4069
+
+0.0948
+
+0.16612
+
+Digital
+availability
+
+AP
+
+0.7071
+
+0.0001
+
+0.5
+
+AA
+
+0.7071
+
+0.0001
+
+0.5
+
+Digital
+Accessibility
+
+MP
+
+0.6382
+
+0.1574
+
+0.375736
+
+IP
+
+0.4067
+
+0.6578
+
+0.239446
+
+WP
+
+0.6536
+
+0.1162
+
+0.384818
+
+DP
+
+0.4691
+
+0.236
+
+0.234706
+
+AP
+
+0.5195
+
+0.0627
+
+0.259963
+
+LGDP
+
+0.4978
+
+0.1396
+
+0.249065
+
+DGDP
+
+0.5121
+
+0.0892
+
+0.256266
+
+Convensional
+usage
+
+Source: Computed based on Stata 14 result.
+
+Hair et al. (2019) deem an explained variance (EV) of 60% or higher as a
+significant portion of the variance in the availability and usage dimensions
+their substantial role in FI index development. For digital inclusion, PC
+availability, indicating its dominance. As well, PC1 explains 69% of the va
+
+both dimensions are important, they contribute differently to the FI index.
+following result is built for each indicators, The dimensions of “availability
+is;
+
+CAvailabilityit ¼ 0:1693BPCit þ 0:1676BACit þ 0:1679APCit þ 0:1665
+
+CUsageCit ¼ 0:2347DCPCit þ 0:26APCit þ 0:2491DGD
+
+The analysis reveals that branch availability has the highest relative weight
+demographic and geographic contexts, emphasizing the crucial role of
+supports Kebede et al. (2021) and highlights the continued importance of p
+financial literacy, which necessitates in-person interactions. Within the usag
+highest weight, followed by the deposit to GDP ratio (0.2563), loan to GD
+(0.2347). This underscores the current focus on deposit mobilization in
+sector’s drive to encourage savings. The dimensions of “Availability”, an
+given as follows:
+
+DAvailabilityDit ¼ 0:5APDit þ 0:5AA
+
+DAccessibilityDit ¼ 0:3757MBPDit þ 0:2395IBPD
+
+In digital availability, agency banking indicators (APD and AAD) have
+importance. For digital accessibility, mobile money wallets have the hi
+banking penetration at 0.3757 and internet banking penetration at 0.239
+preferred digital financial access method for the general population, contras
+used by elitecustomers. This finding aligns with the observation that Ethio
+premium clients.
+3.3.2 Second-stage analysis
+
+Table 3 confirms that the KMO measure exceeds the recommended thresho
+is highly significant (p-value < 0.0001). The first principal component
+indicating that only 19.97% of the variance remains unexplained. This
+extraction, as supported by Hair et al. (2019). Among four components, onl
+is retained for constructing the FII. The derived FII is expressed as follow
+
+IFI ¼ 0:2625Yai t þ 0:2616Yui t þ 0:2254Yai d þ
+Table 3. Second-stage PCA result.
+Estimation of PC and eigenvalue of sub-indices of TFI and DFI
+Component
+
+Eigenvalue
+
+Difference
+
+Comp1
+
+3.20293
+
+2.67426
+
+Comp2
+
+0.528673
+
+0.281266
+
+Comp3
+
+0.247407
+
+0.226421
+
+Comp4
+
+0.0209866
+
+Scoring coefficients for orthogonal varimax rotation (weights) an
+Indicators
+
+Comp1
+
+Unexplained
+
+Normalized weights
+
+Availability
+
+0.524
+
+0.1205
+
+0.2625
+
+Usage
+
+0.5223
+
+0.1263
+
+0.2616
+
+Availability
+
+0.45
+
+0.3515
+
+0.2254
+
+Accessibility
+
+0.5002
+
+0.1987
+
+0.2505
+
+Source: Computed based on Stata 14 result.
+
+This equation indicates that convensional availability (0.2625) has the hig
+infrastructure development in enhancing FI. This aligns with findings from
+(2023), emphasizing the need for robust financial infrastructure alongside
+Usage (0.2616) is the second most significant dimension, reflecting the
+accessibility (0.2505) ranks third, highlighting the increasing impact of d
+weight (0.2254), suggests that while digital solutions are cost-effective,
+address the needs of vulnerable populations, including women, rural resid
+
+To verify the strength of the researchers used the overall average of FI
+between the saving and real lending interest rate and newly developed FI in
+in Table 4 denotes p-values of 0.0000 and 0.0002, respectively, represent
+(0.9617 for saving) and (-0.9391 for real lending interest rate). The direct
+expectations. Real lending interest rates are negatively correlated with FI,
+discourage access, particularly for low-income populations (Gharbi & Kam
+in relation to deposits, a positive higher FI scores are associated with in-cre
+households having access to financial institutions and associated saving p
+robust correlations provide strong evidence for the construct validity of th
+
+3.4 Model specification
+This study adopts an empirical exploration, employing a panel method
+longitudinal dynamics of evaluating the impact of FI on bank stability —
+model for examining the impact of FI on bank stability, the researchers es
+
+ZSit ¼ β0 þ β1 IFIit þ β2 LDRit þ β3 PLit þ β4 lnTAit þ β5 CARit þ β6 EF
+
+Where, ZSit is the measure of bank stability, represented by Z-score, IFI
+PCA, LDRit , represents the loan to deposit ratio, PLit , refers to provisio
+logarithm of total asset, CARit , denotes risk weighted capital adequa
+extracted from DEA approach, INDit , refers to non interest income to tot
+adjusted lending interest rate, GDPit , refers to the gross domestic produc
+to the constant term,and β1 to 9 , represents the slope of the independent
+cross-section & time, respectively.
+3.4.1 Baseline analysis applying two-step system GMM
+
+Traditional FE and RE models, while valuable, often struggle to address e
+variables, measurement errors, reverse causality, and time-invariant unobs
+2020; Leszczensky & Wolbring, 2022). These issues are exacerbated by th
+endogenous regressors, leading to biased and inconsistent estimates (Lesz
+2017). In the context of dynamic panel data, particularly “small T, large N
+technique is critical for obtaining reliable and efficient results (Roodman,
+
+The Arellano and Bond (1991) estimator is particularly effective in addre
+strictly exogenous regressors. By differencing the regressors to eliminate
+
+Table 4. Pearson correlation between FI index, saving and real dep
+
+FII
+
+Pearson Correlation
+
+Saving
+
+Pearson Correlation
+Sig. (bilateral)
+
+RLIR
+
+Pearson Correlation
+Sig. (bilateral)
+
+Source: Computed based on Stata 14 result.
+*p< 0.05.
+**p< 0.01.
+***p< 0.001.
+
+potential biases (Roodman, 2009). The system GMM estimator, introduced
+Bond (1998), extends this by assuming the first differences of the instrum
+incorporating additional instruments and improving estimation efficiency
+2010). System GMM constructs a two-equation system, original levels a
+levels and differences of the instruments (Roodman, 2009). This approac
+which often distorts small-sample properties and yields unstable estimate
+(Blundell & Bond, 2023; Windmeijer, 2005).
+
+As noted by Morgan and Pontines (2017), system GMM not only addresses
+and efficient in the presence of heteroskedasticity and autocorrelation wi
+Table 6, confirm the existence of heteroskedasticity and autocorrelation wit
+particularly effective in addressing serial correlation and unobserved hete
+Therefore, employing GMM to overcome these issues aligns with previous
+et al., 2020; Ahamed & Mallick, 2019; Morgan & Pontines, 2017).
+
+Blundell et al. (2001) and Bond et al. (2001) highlight significant improvem
+lagged dependent variable along with other explanatory variables. To that en
+dynamic form, ensuring more robust and consistent estimations. To test the
+model is as follows:
+Xn
+ZSit ¼ αi þ φi:ZSi,t1 þ
+β X
+1 it it
+
+In this equation, ZSit represents the dependent variable, αi is the individu
+lagged dependent variable, βit are the coefficients for the explanatory vari
+
+The System GMM estimator enhances robustness and efficiency by using b
+address endogeneity and ensure reliable inference (Sebki, 2021; Soto, 20
+dasticity and serial correlation, a two-step System GMM procedure with
+residuals was used (Davidson & MacKinnon, 2004). Although two-step
+standard errors (Presbitero, 2008), the small-sample correction by Windme
+making it preferable over one-step robust GMM (Roodman, 2006). Cons
+estimator was thus selected for further analysis. To prevent overfitting, th
+constrained. The AR(2) and Hansen tests were conducted to validate the a
+ateness of the instrumental variables in the GMM estimation.
+
+The modeling strategy, illustrated in Figure 2, follows a rigorous sequential
+pooled OLS and fixed effects (FE) estimations establish bounds for the autoreg
+upper bound and FE as the lower bound. System GMM is selected over differe
+or below the FE bounds, mitigating weak instrument bias (Azimi, 2022; Bo
+2008). The two-step Sys-GMM estimator is employed with Windmeijer
+heteroskedasticity and serial correlation, enhancing efficiency over one-step
+3.4.2 Non-linearity applying two-step system GMM
+
+To derive deeper insights, this study examines the potential non-linear re
+growing body of literature suggests that the FI-stability nexus may exhibit a
+levels of financial inclusion enhance stability, but excessive inclusion ma
+Sebai, 2025; Khémiri et al., 2024; Sebai & Talbi, 2024; Hua et al., 2023). T
+standard quadratic specification of FI’s impact on bank stability:
+ZSit ¼ αi þ γl:ZSi,t1 þ β1 IFI it þ β2 IFI 2it þ
+
+X
+
+Where, ZSit , denotes bank stability for bank i at a time t, ZSi,t1 , represents
+score of bank i at a time t, IFI2it , captures the non-linear (quadratic) effect of
+the individual-specific effect, γ, is the coefficient for the lagged depend
+explanatory variables ∈it , is the error term.
+
+Panel (N>T)
+
+Check
+staonarity
+
+Below FE bound
+
+Pooled OLS
+test
+
+Diﬀerence
+GMM test
+Yes
+
+Possible
+System
+GMM test
+
+U-test
+
+Causality
+test
+Figure 2. Modeling strategy
+
+Building on prior research (Anarfo et al., 2020; Hua et al., 2023), this stu
+capital adequacy ratio (CAR) in shaping the FI-stability relationship. A wel
+associated with financial deepening, mitigating any adverse effects of exc
+effect, the baseline model is extended as follows:
+
+ZSit ¼ αi þ γl:ZSi,t1 þ β1 IFI it þ β2 IFI 2it þ β3 IFI it ∗C
+
+Here, (IFI2it ∗CARit ), captures the interaction between the squared FI term
+would indicate that capital adequacy conditions influence the extent to wh
+3.4.2.1 Lind and Mehlum (2010) U-test for non-linearity
+
+Traditional non-linear models validate an inverted U-shaped or U-shaped
+when the original and squared terms exhibit opposite signs. However,
+relationship is convex but monotonic, potentially resulting in a false qu
+address this, Lind and Mehlum (2010) extend a U-test for a U-shaped patte
+at lower values and positive at higher values within the observed range. T
+
+β1 þ β2 ðIFIl Þ < 0 < β1 þ β2 ðIFI
+
+Where (IFIl ) and (IFIm ), represent the lower and upper bounds of fin
+conditions hold, the relationship is confirmed as inverted U-shaped.
+
+4. Results and discusion
+4.1 Results
+4.1.1 Descriptive analysis
+
+Table 5 presents the descriptive summary for the variables used to examin
+The analysis is based on a sample of 153 observations, covering 8 years (
+(17) commercial banks operationalized since 2015 are taken for furthe
+including the mean, standard deviation, and the minimum and maximum
+Table 5. Summary analysis.
+Variable
+
+Obs
+
+Mean
+
+Std. Dev.
+
+ZS
+
+153
+
+32.403
+
+15.712
+
+IFI
+
+153
+
+0.059
+
+0.112
+
+LDR
+
+153
+
+0.963
+
+0.089
+
+PL
+
+153
+
+0.007
+
+0.010
+
+lnTA
+
+153
+
+10.155
+
+1.320
+
+CAR
+
+153
+
+0.188
+
+0.089
+
+EF
+
+153
+
+0.893
+
+0.098
+
+IND
+
+153
+
+0.284
+
+0.116
+
+RLIR
+
+153
+
+-0.036
+
+0.083
+
+GDP
+
+153
+
+0.079
+
+0.015
+
+Source: Computed based Stata 14 result.
+
+4.1.2 Empirical analysis technique
+4.1.2.1 Analysis of ordinary least-square regression (OLS)
+
+Using fixed or random effects models in OLS regression is common fo
+simultaneous causality in panel data (Kumar et al., 2022). Fixed effects han
+(Schultz et al., 2010), while random effects reduce variability by pooling da
+and time (Kumar et al., 2022). The Hausman test, which checks for the corr
+guides the choice between these models (Kumar et al., 2022; Greene, 200
+model is the correct choice, as shown in Table 9.
+
+To test for autocorrelation and heteroskedasticity, the Wooldridge, modifi
+employed. Results in Table 6 reveals, both problems were detected. Ho
+Inflation Factor (VIF) results in Table 7, with all VIF values lessthan 10, s
+Following Vo et al. (2020) and Ahamed and Mallick (2019), robust clustere
+issues, as outlined in Table 9.
+
+Table 6. Heteroscedasticity and autocorrelation test.
+Tests
+
+Wooldridge test
+
+Modified Wald test
+
+Type
+
+Serial correlation
+
+Heteroscedasticity
+
+F-test
+
+Chi2 test
+
+F(1,16)=30.970 (p=0.0000)
+
+χ2(17)=112.98 (p=0.00
+
+Sig level
+
+Source: Computed based on Stata 14 result.
+
+Table 7. Multicollinearity test.
+Variables
+
+VIF
+
+1/VIF
+
+ZS
+
+IFI
+
+LDR
+
+PL
+
+TA
+
+IFI
+
+3.94
+
+0.254
+
+-0.29
+
+LDR
+
+1.43
+
+0.701
+
+-0.02
+
+0.423
+
+PL
+
+1.12
+
+0.894
+
+-0.35
+
+0.262
+
+0.215
+
+lnTA
+
+5.69
+
+0.176
+
+-0.16
+
+0.718
+
+0.364
+
+0.220
+
+CAR
+
+1.26
+
+0.791
+
+-0.1
+
+0.045
+
+-0.125
+
+-0.007
+
+-0
+
+EF
+
+1.36
+
+1.3
+
+0.771
+
+0.203
+
+0.323
+
+0.082
+
+0.
+
+IND
+
+2.41
+
+0.414
+
+-0.07
+
+-0.253
+
+-0.282
+
+-0.076
+
+-0
+
+RLIR
+
+3.03
+
+0.33
+
+0.071
+
+0.000
+
+-0.160
+
+-0.138
+
+-0
+
+GDP
+
+2.32
+
+0.431
+
+0.071
+
+0.000
+
+-0.170
+
+-0.112
+
+-0
+
+Source: Computed based on Stata 14 result.
+
+4.1.3 GMM analysis
+4.1.3.1 Stationary test
+
+Conducting a unit root test is crucial to confirm stationarity of variables, t
+(Breitung & Pesaran, 2005). Although a dynamic panel approach is typicall
+difference, it is crucial to ensure none of the variables is integrated at a highe
+To verify stationarity, we employed the Levin-Lin-Chu (LLC) and Har
+I(0) and I(1) levels, as shown in Table 8. The LLC test confirms that all vari
+test shows that only total assets achieve stationarity at first difference. Sinc
+first difference, applying the GMM method is appropriately validated.
+
+Table 8. Stationary test result: LLC and HT.
+LLC
+Variables
+
+T-statistics
+
+Order
+
+ZS
+
+(7.1564)***
+
+I(0)
+
+IFI
+
+(6.7882)***
+
+I(0)
+
+LDR
+
+(3.7723)***
+
+I(0)
+
+PL
+
+(17.1597)***
+
+I(0)
+
+lnTA
+
+(6.7186)***
+
+I(0)
+
+CAR
+
+(8.2427)***
+
+I(0)
+
+EF
+
+(2.9716)**
+
+I(0)
+
+IND
+
+(3.8704)***
+
+I(0)
+
+RLIR
+
+(8.5431)***
+
+I(0)
+
+GDP
+
+(5.8930)***
+
+I(0)
+
+Source: Computed based on Stata 14 result.
+*p < 0.05.
+**p < 0.01.
+***p < 0.001.
+
+Following Bond et al.’s (2001) recommendation, the Pooled OLS coefficie
+Effects coefficient acted as a lower bound. Given that the Difference
+significantly lower than the Fixed Effects coefficient (0.412) and well b
+presented in Table 9, the System GMM approach was deemed appropriat
+
+Table 9. Empirical result of the study.
+Variables
+
+(1) Robust
+Fixed
+Effect
+
+(2) Robust
+Pooled
+OLS
+
+(3) Robust
+One-step
+Difference
+GMM
+
+(4) Ro
+Two-s
+Differ
+GMM
+
+l.ZS
+
+0.412***
+
+0.947***
+
+0.347**
+
+0.328
+
+(5.62)
+
+(55.49)
+
+(2.15)
+
+(1.15)
+
+-8.811
+
+-2.890
+
+-10.41
+
+-9.382
+
+(-0.99)
+
+(-0.52)
+
+(-1.00)
+
+(-0.65
+
+IFI
+
+LDR
+
+PL
+
+lnTA
+
+CAR
+
+EF
+
+IND
+
+RLIR
+
+GDP
+
+_cons
+
+***
+
+***
+
+1.010
+
+11.51
+
+(3.43)
+
+(0.26)
+
+(2.95)
+
+-69.73**
+
+-63.76**
+
+-70.40**
+
+-63.67
+
+(-2.71)
+
+(-2.27)
+
+(-2.77)
+
+(-1.96
+
+-2.249**
+
+0.321
+
+-2.342**
+
+-1.937
+
+(-2.30)
+
+(0.65)
+
+(-2.39)
+
+(-1.83
+
+3.488
+
+0.747
+
+3.566
+
+1.414
+
+(0.71)
+
+(0.45)
+
+(0.69)
+
+(0.18)
+
+13.61***
+
+7.436**
+
+14.04***
+
+13.21
+
+10.82
+
+9.283
+
+(1.74)
+
+(3.56)
+
+(2.60)
+
+(3.65)
+
+(2.00)
+
+6.825*
+
+1.230
+
+7.208*
+
+5.309
+
+(1.80)
+
+(0.41)
+
+(1.80)
+
+(1.09)
+
+-11.38
+
+-6.605
+
+-10.55
+
+-6.237
+
+(-1.54)
+
+(-1.26)
+
+(-1.41)
+
+(-0.64
+
+9.593
+
+29.75
+
+7.668
+
+4.417
+
+(0.42)
+
+(1.05)
+
+(0.35)
+
+(0.19)
+
+16.42*
+
+-12.12
+
+119
+
+119
+
+17
+
+17
+
+(1.86)
+
+(-1.58)
+
+N
+
+136
+
+136
+
+Groups
+
+17
+
+Instruments
+
+-
+
+-
+
+16
+
+16
+
+AR(2) test
+
+-
+
+-
+
+-1.46 (0.144)
+
+-1.38
+
+Hansen test
+
+-
+
+-
+
+10.55 (0.103)
+
+10.55
+
+R-Squared
+
+0.7632
+
+0.9665
+
+P-Value
+
+F(10,16) =
+68.14
+(p=0.000)
+
+F(10,125) =
+413.07
+(p=0.000)
+
+F(10,17) =
+13.59
+(p=0.000)
+
+F(9,14
+8.49
+(p=0.0
+
+Source: Computed based on stata 14 result.
+*
+p< 0.1.
+**
+p< 0.05.
+***
+p< 0.01.
+
+Beyond estimating the mean impact of FI on bank stability using two-step
+potential non-linearity in this relationship. To rigorously investigate the p
+Mehlum (2010) U-test is employed, incorporating a quadratic specifica
+dynamics. Furthermore, the findings presented in Table 10 highlight the mo
+nexus. Specifically, the results illustrate the non-linearity both with and w
+understanding of FI’s conditional effects on stability.
+
+Table 10. Non-linearity test (two step robust system GMM with and
+Variables
+l.ZS
+
+(7) Non-linearity with
+interaction term
+0.212
+(0.72)
+
+FI
+
+513.5***
+(3.15)
+
+FI^2
+
+-731.3**
+(-3.20)
+
+CAR
+
+20.41
+(1.41)
+
+FI*CAR
+
+-305.9**
+(-2.24)
+
+LDR
+
+14.00
+(0.77)
+
+PL
+
+-380.0**
+(-2.71)
+
+LnTA
+
+-12.44***
+(-3.91)
+
+EF
+
+21.86*
+(1.80)
+
+IND
+
+-44.71*
+(-1.95)
+
+RLIR
+
+-30.23**
+(-2.29)
+
+GDP
+
+70.02*
+(2.05)
+
+_cons
+
+108.3***
+(4.24)
+
+N
+
+136
+
+Groups
+
+17
+
+Instruments
+
+17
+
+AR(2) test
+
+-0.83 (p=0.405)
+
+Hansen test
+
+1.32 (p=0.857)
+
+P-Value
+
+F(12,16) = 2943.73 (p=0.000)
+
+Inverse U-test (Lind & Mehlum,
+Test components
+
+Value
+
+Turning point
+Slope at lower bound
+
+Significant
+IFI = 0.351
+
+510.03
+
+p = 0.003***
+
+Slope at upper bound
+
+-340.63
+
+p = 0.003***
+
+Overall test (t-value)
+
+3.15
+
+p = 0.003***
+
+*p< 0.1.
+**p< 0.05.
+***p< 0.01.
+
+4.1.4 Causality test
+
+This research examines the dynamic causal relationship between FI and
+sector. Both the Dumitrescu and Hurlin (2012) W-statistic test and the Juod
+the direction of causality between FI and bank stability. Rejection of the n
+whereas its acceptance suggests none (Antwi et al., 2024). The analysis emp
+Modified Bayesian Information Criterion (MBIC) to ensure result robus
+Žiković et al. (2020) recommendations for shorter time periods.
+
+4.2 Discusion
+The findings reveal that the lagged value of bank stability positively effec
+bank stability significantly impact present stability, as corroborated by th
+Ethiopian context. The positive effect of lagged stability on current con
+instrument for stability analysis, given that banks generally exhibit contin
+reflecting a trend of persistence over time. However, in column 7 and 8 (T
+interaction effects (IFIit ∗CARit ) are introduced, the lagged term lose
+persistence is conditional on evolving financial dynamics, as non-linearity
+paths, reducing reliance on historical trends.
+
+Our findings confirm a significant positive relationship between FI and b
+(Koudalo & Toure, 2023; Nguyen & Du, 2022; Vo et al., 2020; Le et al.,
+Pontines, 2014). The result clearly supports hypothesis 1. Specifically, a 1%
+increase in bank stability in the short run, ceteris paribus. This outcome can b
+FI strengthens bank stability by diversifying bank assets, reducing systemic
+policy transmission (Ahamed & Mallick, 2019; Morgan & Pontines, 2014;
+addresses information asymmetry by allowing lenders to better assess bo
+proprietary information (Nguyen & Du, 2022), thus fostering a more resili
+deposit bases, reducing the procyclicality risk of the banking sector (Chin
+reinforcing financial stability.
+
+Building on prior studies (Sebai et al., 2025; Talbi & Sebai, 2025; Antwi et
+2024; Sebai & Talbi, 2024; Hua et al., 2023; Dang & Thi, 2022; Saha &
+findings in Column 8 confirm an inverted U-shaped relationship between F
+This indicates that while FI enhances stability up to a certain threshold, bey
+aligns with studies showing a positive effect of FI on bank stability (Seb
+Khémiri et al., 2024; Hua et al., 2023) but contrasts with others reporting a d
+Sebai, 2025; Antwi et al., 2024; Sebai & Talbi, 2024; Dang & Thi, 2022; Sah
+stability by mitigating asymmetric information, enabling banks to diversify
+Khémiri et al., 2024), and enhancing the quality of bank-client relationship
+financial transparency (Khémiri et al., 2024). However, at higher levels,
+(2024), the mass participation of low-income individuals in formal bank
+increasing adverse selection and moral hazard risks. This dynamic can
+deterioration, leading to financial distress (Pham & Doan, 2020). The Lind a
+confirm this threshold effect, with the lower bound slope (414.5) exceedi
+stability gains diminish as FI expands beyond a critical point. Specifically, i
+a stability-maximizing threshold at IFI ≈ 30.3% (U-test, p = 0.006), contr
+destabilization only at much higher FI levels (~71.6%) in GCC economie
+balancing financial inclusion efforts to ensure long-term banking stability
+diversification benefits, necessitating prudent regulatory oversight to main
+
+The moderating effect of the interaction (IFIit ∗CARit ) shifts the inflection
+(with interaction), confirming Hypothesis 3, that the interaction between ca
+This indicates that stronger regulatory frameworks can improve the FI–stab
+and fostering transaction efficiency (Ha & Nguyen, 2023). However, beyo
+the negative FI*CAR interaction suggests that higher capital adequacy doe
+FI risks. This could stem from diminishing capital returns, rising regul
+Ethiopia, where government intervention influences financial allocation (
+stability risks as political priorities override market-driven risk managem
+stability in financially inclusive environments, its protective effects weaken
+
+Our findings indicate that control variables such as lnTA, EF, IND, RLIR a
+stability. Larger banks exhibit decreased stability, with a 10.03 unit declin
+short run, ceteris paribus. This effect is evident in both non-linear analysis (
+et al. (2013), who caution that excessive size amplifies systemic vulner
+sector, state-owned CBE dominate ~50% of assets (NBE-FSR, 2024b), f
+implicit government guarantees. The “too-big-to-fail” (TBTF) phenomeno
+risk-taking (Farhi & Tirole, 2012) and increasing instability due to comp
+(Shahriar et al., 2022; Vo et al., 2020). This finding aligns with Vo et al. (20
+Nguyen and Du (2022) and Ahamed and Mallick (2019).
+
+Efficiency positively effect stability, with a 1% increase in efficiency lead
+run, ceteris paribus. This effect is the same in both non-linear analysis (se
+resource allocation, strengthen profitability, and enhance risk managem
+Mohanty, 2017). Empirical evidence links higher efficiency to lower n
+resilience (Shahriar et al., 2022; Berger & DeYoung, 1997). Efficiency also
+long-term sustainability (Kasman & Carvallo, 2014; Fiordelisi et al., 2011)
+(2022), and Ahamed and Mallick (2019).
+
+Income diversification negatively impacts stability, with a 1% increase resu
+short run, ceteris paribus. This effect is particularly evident in model 7 but in
+interest income exposes banks to systemic risks, particularly when div
+(Carlson, 2004). Excessive diversification into volatile markets such as f
+heightens asymmetric information risks (Acharya et al., 2006). Mercieca
+benefits depend on regulatory quality and market discipline. In the Ethiop
+dependent on deposit revenue, an abrupt or poorly managed shift towards g
+instability. This finding aligns with Nguyen and Du (2022) but differing f
+
+GDP growth rate shows a positive effect on stability, with a 1% increase lea
+run, ceteris paribus. This finding remains robust in non-linear analyses with
+interaction effects are excluded. Economic expansion enhances financial s
+economy improves borrower creditworthiness, thereby reducing default
+(Demirgüç-Kunt & Maksimovic, 1998). Additionally, higher GDP growth
+ity, ensuring that debt obligations are met, thereby reducing non-performing
+Financial deepening associated with economic expansion further stren
+absorbing capacity (Fosu et al., 2017). This finding consistent with Ng
+Ahamed and Mallick (2019).
+
+The real lending interest rate (RLIR) exhibits a negative impact on bank st
+with the findings of Anthony-Orji et al. (2022) and Atellu and Muriu (202
+compress net interest margins (NIMs), compelling banks to engage in ris
+(Rajan, 2006; Adrian & Shin, 2009). This “search-for-yield” behavior oft
+exposure to financial shocks. Furthermore, artificially low interest rates co
+adjusted returns and weakening credit standards (López-Penabad et al., 202
+low rates undermine banks’ ability to build capital buffers through ret
+liquidity constraints (Zimmermann, 2019). The destabilizing effects of low
+emerging markets, where financial systems exhibit structural weaknesses an
+2015; Calice et al., 2020). Interest rate repression through regulatory caps f
+to either ration credit or extend loans to subprime borrowers, thereby infla
+Beck et al., 2015). Relatedly, Apergis et al., (2022), highlight that inflationa
+reinforcing the precarious balance between monetary policy and financial
+
+The two-step System GMM analysis, as detailed in Table 9 and Table 10
+supportive of the model’s validity. The AR(2) test indicates no evidence o
+(Prob > χ 2 = 0.479) (model 6), (Prob > χ 2 = 0.405) (model 7) and (Prob >
+absence of misspecification in the dynamic panel model. Similarly, the Han
+χ 2 = 0.857) (model 7) and (Prob > χ 2 = 0.752) (model 8), confirms th
+appropriateness. The F-test (Prob > F = 0.000) for both linear and non
+goodness of fit for the model. In addition to the two-step robust System G
+
+Pooled OLS, robust one-step Difference GMM, robust two-step Difference
+largely consistent. The main variable, FI, is significant in both one-step an
+GDP growth rate is significant in the two-step robust System GMM. Over
+the employed models.
+
+In addition, based on the result revealed in Table 11, the Juodis et al. (2021
+causes bank stability at the 5% level, a result supported by the Dumitrescu
+null hypothesis. This underscores the substantial role of FI in bolstering the
+sector. Additionally, reverse causality from bank stability to FI is significan
+can predict enhancements in FI. These findings suggest that enhancing F
+financial environment fosters greater FI, aligning with previous studies (J
+
+Table 11. Causality test result.
+Test
+
+Z-bar
+
+P-Value
+
+Dir
+
+ZS6¼IFI
+
+7.3252***
+
+95.3201***
+
+ZS$
+
+IFI6¼ZS
+
+14.3706***
+
+4.3273**
+
+IFI
+
+Source: Computed based on Stata 14 result.
+*p< 0.1.
+**p< 0.05.
+***p< 0.01.
+
+5. Conclusion, and policy implication, limitations and future
+5.1 Conclusion
+Financial inclusiveness has increasingly become a focal point for policyma
+potential to drive inclusive growth. Despite numerous efforts by policy ma
+bolster bank stability and inclusivity, the relationship between FI and bank
+in existing literature. This study addresses this gap by examining the impac
+context. Using panel data from seventeen commercial banks over the period
+stage PCA to develop FI index based on ten convensional and five digital
+were analyzed using a two-step robust System GMM approach while te
+(2010) U-test, complemented by Granger causality tests to determine the
+stability.
+
+Our results from the two-stage PCA indicate that convensional availabil
+followed by convensional usage, with digital accessibility and digital avail
+The System GMM analysis confirms that FI has a significant and pos
+relationship between FI and stability is not linear. Instead, the study reve
+contributes positively to stability up to a threshold of approximately
+destabilizing. This turning point reflects the trade-offs associated with exce
+system, particularly among low-income individuals, can heighten transactio
+and increase the likelihood of adverse selection and moral hazard. The intr
+factor extends the stability-maximizing threshold to 35.1%, illustrating that
+of the risks associated with higher FI. However, beyond this point, capital ad
+diminishing returns and heightened regulatory costs erode its effectiveness.
+growth rate are positively associated with bank stability, while real interes
+exhibit negative effects. Additionally, the historical level of bank stability p
+causality tests indicate a bi-directional relationship between FI and bank
+contribute to enhanced stability, and vice versa.
+
+This study makes three contributions to the field. First, it is the first to emp
+stability in Ethiopia, addressing a critical knowledge gap in a financial lan
+Second, methodologically, (i), unlike prior studies that have predomina
+indicators in isolation, this research develops a multidimensional FI index
+ten traditional and five digital indicators. (ii), this study applies a two-ste
+endogeneity concerns and unobserved heterogeneity, thereby enhancing th
+investigation of nonlinear FI-stability relationship in Ethiopia, validated t
+
+more robust approach to validating nonlinearity than conventional qu
+macroprudential regulation as a moderating factor, a dimension largely
+findings illustrate that while capital adequacy strengthens stability at mod
+beyond a certain threshold, signaling the need for more adaptive regulator
+regarding reverse causality, the study employs Dumitrescu-Hurlin (2012) a
+providing empirical evidence on the directional nexus between FI and st
+beyond academic discourse by offering contextual actionable strategies to
+financial stability.
+
+5.2 Policy implication
+The policy implications are profound. To promote both FI and stability
+demographic and geographic outreach, enhancing both convensional and d
+stability supports future stability is also crucial. FI and bank stability are
+directly contribute to improved stability and vice versa. Consistent with
+broadening FI is essential for strengthening banking sector stability in Eth
+
+Specifically, the findings of this study suggest several policy implications
+inflection point of 35%, coupled with the moderating effect of capital adequ
+promoting FI up to this threshold will enhance stability, further expansion req
+recognize that internal buffers such as capital adequacy may not act as pe
+excessive FI. This is particularly critical in Ethiopia, where current FI levels re
+CBE (Arebo et al., 2024), suggesting ample room for expansion before the stab
+expanding financial services to underserved populations not only provide
+enhances overall sector stability and profitability. However, as financial acces
+must be implemented. Echoing the recommendations of Oanh et al. (2023), g
+by eliminating barriers to access, improving financial education, and developi
+Digital financial services, including mobile banking, agent banking, and
+mechanisms to expand inclusion without introducing excessive risks. Th
+account for the evolving relationship between FI and stability. Policymaker
+that ensure FI initiatives are aligned with broader macroeconomic policies.
+particularly for banks expanding into high-risk, financially excluded segmen
+mechanisms must be reinforced to prevent regulatory capture, ensuring that F
+to political distortions. Finally, the regulatory framework governing Ethiopia’
+the growing role of Islamic banking. Given its potential to enhance FI whil
+finance should be supported through a dedicated regulatory framework separa
+Ethiopia’s Islamic banking regulations with international standards set by ins
+Board (IFSB) and the Accounting and Auditing Organization for Islamic Fina
+fostering a stable and inclusive financial ecosystem.
+
+5.3 Limitations and future research directions
+This study acknowledges the following limitations. First, it does not acc
+which may be shaped by the diverse economic and social landscapes acros
+should prioritize a more detailed analysis that incorporates regional policy p
+and support the creation of customized interventions aimed at promoting
+Second, although there were attempts to include digital financial indicato
+authorities hindered the incorporation of these variables into the constructi
+should address this gap. Third, bank stability is measured solely through
+studies should explore alternative risk-based stability measures. Fourth,
+approach, alternative methodologies such as CFA and entropy weighting c
+on commercial bank data may obscure sectoral heterogeneity. Future resea
+microfinance institutions, and fintechs navigate the FI-stability trade-off.
+deeper exploration, given its increasing significance in emerging markets.
+stability effects of FI over an extended period could offer deeper insights in
+frameworks adapt and financial systems mature, the optimal FI threshold
+refine financial inclusion policies accordingly.
+Ethics and consent
+Ethical approval and consent were not required.
+
+Data availability
+Underlying data
+Figshare: Dataset for financial inclusion and stability in Ethiopia case, https
+(Arebo et al., 2024).
+
+Data are available under the terms of the Creative Commons Attribution 4
+Acknowledgements
+Not applicable.
+
+References
+Abdu E: Financial distress situation of financial sectors in Ethiopia:
+A review paper. Cogent Econ. Financ. 2021; 10: 1–13.
+Publisher Full Text
+Abdu E: Financial distress situation of financial sectors in Ethiopia:
+A review paper. Cogent Economics & Finance 2022; 10(1): 1996020.
+Publisher Full Text
+Acharya VV, Hasan I, Saunders A: Should banks be diversified? Evidence
+from individual bank loan portfolios. The Journal of Business 2006; 79(3):
+1355–1412.
+Publisher Full Text
+Adem M: Impact of diversification on bank stability: evidence from
+emerging and developing countries. Discret. Dyn. Nat. Soc. 2022; 2022(1):
+7200725.
+Publisher Full Text
+Adrian T, Shin HS: Money, liquidity, and monetary policy. American
+Economic Review 2009; 99(2): 600–605.
+Publisher Full Text
+Ahamed MM, Mallick SK: Is financial inclusion good for bank stability?
+International evidence. J. Econ. Behav. Organ. 2019; 157: 403–427.
+Publisher Full Text
+
+Apergis N, Aysa
+macroprudent
+risk? Journal of I
+80:101648.
+Publisher Full
+
+Arebo M, Hand
+stability in Ethio
+Publisher Full
+
+Arellano M, Bon
+Carlo evidence
+Rev. Econ. Stud.
+Publisher Full
+
+Arellano M, Bov
+estimation of e
+Publisher Full
+
+Arora R: Links b
+A study of BRI
+BRICS and Emer
+Publisher Full
+
+Akerlof GA: The market for lemons: Quality uncertainty and the
+market mechanism. Q. J. Econ. 1970; 84(3): 488–500.
+Publisher Full Text
+
+Atellu AR, Muriu
+bility? Evidenc
+14(3): 297–311.
+Publisher Full
+
+Ali M, Puah CH: Does bank size and funding risk effect banks’ stability?
+A lesson from Pakistan. Glob. Bus. Rev. 2018; 19(5): 1166–1186.
+Publisher Full Text
+
+Ayalew MM, Xia
+Drivers of Com
+of Research in C
+
+Allen F, Demirgüç-Kunt A, Klapper AL, et al.: The foundations of financial
+inclusion: Understanding ownership and use of formal accounts.
+J. Financ. Intermed. 2016; 27: 1–30.
+Publisher Full Text
+
+Babajide AA, Ad
+economic grow
+629–637.
+Reference Sou
+
+Aman EE: Determinants of financial distress in Ethiopia banking sector. Int. J. Sci. Res. Publ. 2019; 9(5): 98–107.
+Publisher Full Text
+
+Banna H, Alam
+banking stabil
+Economics and F
+Publisher Full
+
+Anarfo EB, Abor JY, Osei KA: Financial regulation and financial inclusion
+in Sub-Saharan Africa: does financial stability play a moderating role?
+Res. Int. Bus. Financ. 2020; 51: 101070.
+Publisher Full Text
+Anatolyevna MI, Ramilevna SL: Financial stability concept: Main
+characteristics and tools. World Applied Sciences Journal 2013; 22(6):
+856–858.
+Reference Source .
+Anthony-Orji OI, Orji A, Ogbuabor JE, et al.: Empirical analysis of financial
+development and financial inclusion nexus in Nigeria/Empiryczna
+ocena związku między rozwojem finansowym i włączeniem
+finansowym w Nigerii. Econ. Reg. Stud. 2022; 15(2): 181–195.
+Publisher Full Text
+Anton SG, Afloarei Nucu AE: The impact of digital finance and financial
+inclusion on banking stability: International evidence. Oeconomia
+Copernicana. 2024; 15(2): 563–593.
+Publisher Full Text
+Antwi F, Kong Y: Investigating the impacts of digital finance
+technology on financial stability of the banking sector: New insights
+from developing market economies. Cogent Business & Management.
+2023; 10(3): 2284738.
+Publisher Full Text
+Antwi F, Kong Y, Gyimah KN: Financial inclusion, competition and
+financial stability: New evidence from developing economies. Heliyon.
+2024; 10(13): e33723.
+PubMed Abstract|Publisher Full Text|Free Full Text
+
+Barik R, Pradha
+evidence from
+Publisher Full
+
+Beck T, De Jong
+country hetero
+Publisher Full
+
+Beck T, Demirg
+banking: Busin
+37: 433–447.
+Publisher Full
+
+Beck R, Jakubik
+new evidence
+525–550.
+Publisher Full
+
+Bellemare MF, P
+the Estimation
+Publisher Full
+
+Berger AN, DeY
+commercial ba
+Publisher Full
+
+Blundell R, Bon
+dynamic pane
+Publisher Full
+
+Blundell R, Bond S: Initial conditions and Blundell–Bond estimators.
+J. Econ. 2023; 234: 101–110.
+Publisher Full Text
+Blundell R, Bond S, Windmeijer F: Estimation in dynamic panel data
+models: improving on the performance of the standard GMM
+estimator. Nonstationary Panels, Panel Cointegration, and Dynamic Panels,
+Emerald Group Publishing Limited. 2001; 15: 53–91.
+Publisher Full Text
+Boďa M, Zimková E: Overcoming the loan-to-deposit ratio by a financial
+intermediation measure—A perspective instrument of financial
+stability policy. J. Policy Model. 2021; 43(5): 1051–1069.
+Publisher Full Text
+Bofondi M, Gobbi G: Bad loans and entry in local credit markets. Bank of Italy;
+2003; 1–29.
+Reference Source
+Bond SR: Dynamic panel data models: a guide to micro data methods
+and practice. Port. Econ. J. 2002; 1: 141–162.
+Publisher Full Text
+
+Damane M, Ho
+Stability: revie
+Studies Research
+Publisher Full
+
+Damrah S, Elian
+Determining t
+Comparative E
+in Kuwait. Mat
+Publisher Full
+
+Dang,Y.H. N., &
+stability in ASE
+Macroeconomic
+Publisher Full
+
+Danisman GO, T
+from Europe. E
+Publisher Full
+
+Davidson R, Ma
+Oxford Univers
+
+Bond SR, Hoeffler A, Temple J: GMM Estimation of Empirical Growth
+Models. 2001.
+Reference Source
+
+Decancq K, Lug
+wellbeing: An
+Publisher Full
+
+Borio C: Implementing a Macroprudential Framework: Blending
+Boldness and Realism. Capitalism and Society. 2011; 6(1).
+Publisher Full Text
+
+DellʼAriccia G, L
+bank risk-takin
+Publisher Full
+
+Borio C: Towards a macroprudential framework for financial
+supervision and regulation? CESifo Economic Studies.; 49(2): 181–215.
+Publisher Full Text
+
+Demirgüç-Kunt
+The journal of fi
+Publisher Full
+
+Breitung J, Pesaran MH: Unit roots and cointegration in panels. 2005.
+Reference Source
+
+Demirgüç-Kunt
+growth: A revi
+Research Workin
+
+Bun MJ, Windmeijer F: The weak instrument problem of the system
+GMM estimator in dynamic panel data models. Econom. J. 2010; 13(1):
+95–126.
+Publisher Full Text
+Calice P, Diaz Kalan F, Masetti O: Interest rate repression around the
+world. 2020.
+Reference Source
+Camara N, Tuesta D: Measuring financial inclusion: a multidimensional index. Bank of Morocco – CEMLA – IFC Satellite Seminar at the
+ISI World Statistics Congress on “Financial Inclusion”. 2017.
+Reference Source
+Carlson M: Are branch banks better survivors? Evidence from the
+depression era. Economic Inquiry. 2004; 42(1): 111–126.
+Publisher Full Text
+Carrino L: The weighting role of normalisation in a multidimensional analysis
+of Social Inclusion. University Ca’Foscari of Venice, Dept. of Economics
+Research Paper Series No. 32; 2015.
+Publisher Full Text
+Charnes A, Cooper WW, Rhodes E: Measuring the efficiency of decision
+making units. Eur. J. Oper. Res. 1978; 2(6): 429–444.
+Publisher Full Text
+
+Demirgüç-Kunt
+2017: Measurin
+access to and u
+34(Supplement
+Publisher Full
+
+Diamond DW: F
+Rev. Econ. Stud.
+Publisher Full
+
+Dienillah AA, An
+financial stabi
+Monetary Econo
+Publisher Full
+
+Dress TS: The D
+Banks: Empiric
+Reference Sou
+
+Dumitrescu E-I,
+heterogeneou
+Publisher Full
+
+Elsas R, Hacketh
+tion. J. Bank. Fin
+Publisher Full
+
+Chen PC, Yu MM, Shih JC, et al. : A reassess-ment of the Global Food
+Security Index by using a hierarchical data envelopment analysis
+approach. Eur. J. Oper. Res. 2019; 272(2): 687–698.
+Publisher Full Text
+
+Farhi E, Tirole J:
+systemic bailo
+Publisher Full
+
+Chen L, Wang X, Wang Y, et al.: Improved entropy weight methods and
+their comparisons in evaluating the high-quality development of
+Qinghai, China. Open Geosciences. 2023; 15(1): 20220570.
+Publisher Full Text
+
+Feghali K, Mora
+and financial s
+Economics and F
+Publisher Full
+
+Chen M, Wu J, Jeon BN, et al. : Monetary policy and bank risk-taking:
+Evidence from emerging economies. Emerging Markets Review. 2017; 31:
+116–140.
+Publisher Full Text
+
+Filatie YS, Sharm
+nexus between
+commercial ba
+Publisher Full
+
+Chinoda T, Kapingura FM: The impact of digital financial inclusion and
+bank competition on bank stability in sub-Saharan Africa. Economies.
+2023; 11(1): 15.
+Publisher Full Text
+
+Fiordelisi F, Mar
+European bank
+Publisher Full
+
+Chinoda T, Kapingura FM: Fintech-based financial inclusion and banks’
+risk-taking: the role of regulation in Sub-Saharan Africa. Journal of
+Economic and Administrative Sciences. 2024.
+Publisher Full Text
+Čihák M, Mare DS, Melecky M: The nexus of financial inclusion and
+financial stability: A study of trade-offs and synergies. World Bank
+Policy Research Working Paper, (7722). 2016.
+Reference Source
+Cihak M, Mare DS, Melecky M: Financial inclusion and stability: review
+of theoretical and empirical links. The World Bank Research Observer.
+2020; 36(2): 197–233.
+Publisher Full Text
+Claessens S, Coleman N, Donnelly M: “Low-For-Long” interest rates and
+banks’ interest margins and profitability: Cross-country evidence.
+Journal of Financial Intermediation. 2018; 35: 1–16.
+Publisher Full Text
+
+Fisseha FL: Doe
+investment? T
+Publisher Full
+
+Fosu S, Ntim CG
+from analysts’
+Publisher Full
+
+Freudenberg M
+A critical asses
+Publisher Full
+
+Gambacorta L, M
+Journal of Finan
+Publisher Full
+
+Gharbi I, Kamm
+inclusion index
+Manag. 2023; 1
+Publisher Full
+
+Greene WH: Econometric analysis. Prentice Hall google schola. 2003; 3:
+116–125.
+Gupta J, Kashiramka S: Financial stability of banks in India: does
+liquidity creation matter? Pac. Basin Financ. J. 2020; 64: 101439.
+Publisher Full Text
+Gupta K, Raman TV: Intellectual capital: A determinant of firms’
+operational efficiency. South Asian Journal of Business Studies. 2020; 10(1):
+49–69.
+Publisher Full Text
+Ha D, Nguyen Y: Institutional quality’s influence on financial
+inclusion’impact on bank stability. Cogent Econ. Financ. 2023; 11(1).
+Publisher Full Text
+Hair JF, Black WC, Babin BJ, et al.: Multivariate Data Analysis. 8th ed. Cengage
+Learning EMEA; 2019.
+Hakim F: The Influence of Non-Performing Loan and Loan to Deposit
+Ratio on the Level of Conventional Bank Health in Indonesia.
+Arthatama. 2017; 1(1): 35–49.
+Reference Source
+Hannig A, Jansen S: Financial inclusion and financial stability: Current
+policy issues. ADBI Working Paper No. 259. 2010.
+Publisher Full Text
+Hill TD, Davis AP, Roos JM, et al.: Limitations of Fixed-Effects Models for
+Panel Data. Sociol. Perspect. 2020; 63(3): 357–369.
+Publisher Full Text
+
+Khémiri W, Cha
+and Islamic ba
+of CSR. Cogent
+Publisher Full
+
+Khan HR: Finan
+same coin. Addr
+of India, at BAN
+Reference Sou
+
+Kim DW, Yu JS, H
+OIC countries.
+Publisher Full
+
+Kim H, Batten J
+financial stabi
+94–104.
+Publisher Full
+
+Kline RB: Princip
+publications; 20
+
+Koudalo YM, To
+stability? Evide
+Publisher Full
+
+Kulu E, Bondzie
+tary policy. Em
+Publisher Full
+
+Hox JJ: 14 Multilevel Regression and Multilevel Structural Equation
+Modeling. The Oxford handbook of quantitative methods. 2013; 281.
+Publisher Full Text
+
+Kumar V, Thrika
+itability: Evide
+100609.
+Publisher Full
+
+Hua X, Bi J, Shi H: The appropriate level of financial inclusion:
+The perspective of financial stability. China Economic Quarterly
+International. 2023; 3(3): 167–178.
+Publisher Full Text
+
+Kyriazos T, Pog
+the problem, d
+13(3): 404–424.
+Publisher Full
+
+Hussain S, Rehman A u, Ullah S, et al.: Financial Inclusion and Economic
+Growth: Comparative Panel Evidence from Developed and Developing
+Asian Countries. SAGE Open. 2024; 14(1).
+Publisher Full Text
+
+López T, Winkle
+cycles? J. Financ
+Publisher Full
+
+Huynh J, Dang VD: Loan portfolio diversification and bank returns:
+Do business models and market power matter? Cogent Econ. Financ.
+2021; 9(1): 1891709.
+Publisher Full Text
+Huynh TLD, Nasir MA, Nguyen SP, et al.: An assessment of contagion
+risks in the banking system using non-parametric and Copula
+approaches. Econ. Anal. Policy. 2020; 65: 105–116.
+Publisher Full Text
+Isayas YN, McMillan D: Financial distress and its determinants:
+Evidence from insurance companies in Ethiopia. Cogent Bus. Manag.
+2021; 8(1).
+Publisher Full Text
+
+López-Penabad
+interest rate p
+from European
+2022; 60:10159
+Publisher Full
+
+Lakew BT, Azad
+track? Internati
+Publisher Full
+
+Law SH, Lee WC
+Evidence from
+2018; 3(3): 143–
+Publisher Full
+
+Ismael DM, Ali SS: Measuring digital and traditional financial inclusion
+in Egypt: A new index. Int. J. Appl. Res. Manag. Econ. 2021; 4(2): 13–34.
+Publisher Full Text
+
+Le TH, Chuc AT,
+on financial ef
+Asia. Borsa Ista
+Publisher Full
+
+Jima MD, Makoni PL: Causality between Financial Inclusion, Financial
+Stability and Economic Growth in Sub-Saharan Africa. Sustainability.
+2023; 15: 1152.
+Publisher Full Text
+
+Leszczensky L,
+Panel Data? Re
+Simulation Stu
+Publisher Full
+
+Jolliffe IT, Cadima J: Principal component analysis: A review and recent
+developments. Philos. Trans. R. Soc. A Math. Phys. Eng. Sci. 2016; 374(2065):
+20150202.
+PubMed Abstract|Publisher Full Text|Free Full Text
+
+Lind JT, Mehlum
+U‐shaped relat
+72(1): 109–118.
+Publisher Full
+
+Jungo J, Madaleno M, Botelho A: The effect of financial inclusion and
+competitiveness on financial stability: why financial regulation
+matters in developing countries? J. Risk Financ. Manag. 2022; 15(3): 122.
+Publisher Full Text
+
+Malik AH, bin M
+Nations: Gover
+2022; 22(2): 377
+Publisher Full
+
+Juodis A, Karavias Y, Sarafidis V: A homogeneous approach to testing for
+Granger non-causality in heterogeneous panels. Empir. Econ. 2021; 60:
+93–112.
+Publisher Full Text
+
+Mapurita CK, M
+financial inclu
+24(6): 1227–124
+Publisher Full
+
+Kasman A, Carvallo O: Financial stability, competition and efficiency in
+Latin American and Caribbean banking. Journal of Applied Economics.
+2014; 17(2): 301–324.
+Publisher Full Text
+
+Markowitz H: P
+Publisher Full
+
+Kebede J, Naranpanawa A, Selvanathan S: Financial inclusion: Measures
+and applications to Africa. Economic Analysis and Policy. 2021; 70:
+365–379.
+Publisher Full Text
+Kebede TN, Erana OT, Tesfaye GD: Determinants of fnancial distress:
+evidence from insurance companies in Ethiopia. J. Innov. Entrep. 2024;
+13(17): 1–23.
+Publisher Full Text
+Kebede JG, Selvanathan S, Naranpanawa A: Financial stability and
+financial inclusion: a non-linear nexus. Journal of Economic Studies. 2024;
+Publisher Full Text
+
+Matsebula V, Sh
+Financial Inclu
+Journal of Econo
+Publisher Full
+
+Mavungu M: Co
+analysis. Algori
+Publisher Full
+
+Meher K, Getan
+fi-nancial sust
+Bank Systems. 2
+Publisher Full
+
+Mengesha ST, B
+Ethiopia: Is the
+
+2245309.
+Publisher Full Text
+Mercieca S, Schaeck K, Wolfe S: Small European banks: Benefits from
+diversification? Journal of Banking & Finance. 2007; 31(7): 1975–1998.
+Publisher Full Text
+Meressa HA: Evaluating financial distress condition of micro finance
+in-stitutions in Ethiopia. International. J. Account. Res. 2018; 3(4): 35–42.
+Publisher Full Text
+Minsky HP: Can “it” happen again? A reprise. Challenge. 1982; 25(3): 5–13.
+Publisher Full Text
+Mirzaei A, Moore T, Liu G: Does market structure matter on banks’
+profitability and stability? Emerging vs. advanced economies. Journal
+of Banking and Finance. 2013; 37: 2920–2937.
+Publisher Full Text
+Mishra SK: A comparative study of various inclusive indices and the index
+constructed by the principal components analysis. 2007. Available at SSRN
+990831.
+Publisher Full Text
+Moaz Safwat Muhammad Siddiq: The Effect of Financial Inclusion on
+Banking Performance. Journal of Financial and Commercial Studies, PHD
+Thesis 32. 2022; 554–578.
+Publisher Full Text
+Mohapatra S, Mohanty S: Improving operational efficiency in utility
+sector through technology intervention. International Journal of
+Enterprise Network Management. 2017; 8(4): 291.
+Publisher Full Text
+Morgan P, Pontines V: Financial stability and financial inclusion. Asian
+Development Bank Institute ADBI Working. Paper 488. 2014.
+Morgan PJ, Pontines V: Financial Stability and Financial Inclusion: The
+Case of SME Lending. Singap. Econ. Rev. 2017; 63(1): 111–124.
+Publisher Full Text
+Mu Y, Lin J: Financial inclusion and stability in Africa’s middle-income
+countries. Leigh, Mansoor, editor. Africa on the move: unlocking the
+potential of small middle-income states. International Monetary Fund; 2016;
+107–129.
+Publisher Full Text
+Muhammed S, Desalegn G, Emese P: Effect of Capital Structure on the
+Financial Performance of Ethiopian Commercial Banks. Risks. 2024; 12:
+69.
+Publisher Full Text
+Nagar AL, Basu SR: Weighting socioeconomic indicators of human
+development: A latent variable approach. In Ullah A , et al., editors.
+Handbook of Applied Econometrics and Statistical Inference. CRC Press; 2002;
+pp. 631-664.
+Publisher Full Text
+National Bank of Ethiopia (NBE) annual report, (2024).
+Reference Source
+National Bank of Ethiopia’s (NBE-FSR): Financial Stability Report.
+Reference Source
+
+Pesaran MH, Sm
+heterogeneou
+Publisher Full
+
+Pesqué-Cela V,
+inclusion: A sy
+Dev. 2021; 33(2
+Publisher Full
+
+Pham MH, Doa
+stability in Asi
+Business. 2020;
+Publisher Full
+
+Prasad ES: Fina
+markets: An o
+
+Presbitero AF: T
+A Reassessme
+Publisher Full
+
+Presbitero AF: T
+Estimation. Riv
+
+Rajan RG: Has f
+management. 2
+Publisher Full
+
+Ramzan M, Am
+affect financia
+inclusion in th
+Financ. 2021; 55
+Publisher Full
+
+Rao KRM, Lake
+Commercial B
+approach. Eur.
+
+Roodman D: Ho
+System GMM i
+Publisher Full
+
+Roodman D: Ho
+“System” GMM
+Development. 2
+
+Saha M, Dutta
+concentration
+evidence. Com
+31(4): 669–692.
+Publisher Full
+
+Sanya S, Wolfe
+revenue diver
+Publisher Full
+
+Sarma M: Inde
+Council for Re
+Delhi. 2008.
+Reference Sou
+
+National Bank of Ethiopia’s (NBE-FSR): Financial Stability Report. 2024a.
+Reference Source
+
+Sarma M: Meas
+Gopalan S, Kiku
+Impact Finance.
+Publisher Full
+
+Neaime S, Gaysset I: Financial inclusion and stability in MENA:
+Evidence from poverty and inequality. Financ. Res. Lett. 2018; 24:
+230–237.
+Publisher Full Text
+
+Sarmiento M: T
+banking secto
+100139.
+Publisher Full
+
+Nguyen TD, Du QLT: The effect of financial inclusion on bank stability:
+Evidence from ASEAN. Cogent Econ. Financ. 2022; 10(1).
+Publisher Full Text
+
+Schinasi GJ: De
+Publisher Full
+
+Nguyen TT: Measuring financial inclusion: a composite FI index for the
+developing countries. J. Econ. Dev. 2021; 23(1): 77–99.
+Publisher Full Text
+Oanh TTK, Van LTT, Dinh LQ: Relationship between financial inclusion,
+monetary policy and financial stability: An analysis in high financial
+development and low financial development countries. Heliyon. 2023;
+9(6): e16647.
+PubMed Abstract|Publisher Full Text|Free Full Text
+Oanh TTK: Digital financial inclusion in the context of financial
+development: Environmental destruction or the driving force for
+technological advancement. Borsa Istanbul Review. 2024; 24(2): 292–303.
+Publisher Full Text
+OECD: Handbook on Constructing Composite Indicators: Methodology and
+User Guide. Paris: OECD Publishing; 2008.
+Publisher Full Text
+Ozili PK: Impact of digital fnance on fnancial inclusion and stability.
+Borsa Istanbul Rev. 2018; 18(4): 329–340.
+Publisher Full Text
+Pantielieieva N, Khutorna M, Lytvynenko O, et al.: FinTech, RegTech and
+traditional financial intermediation: Trends and threats for financial
+stability. In Data-Centric Business and Applications: Evolvements in Business
+Information Processing and Management 2020; 42: 1–21.
+Publisher Full Text
+
+Schinasi GJ: Saf
+2005.
+Publisher Full
+
+Schoenmaker D
+1996; 86–104.
+
+Scholtens B, Va
+an essay on w
+Finance Forum
+
+Schultz EL, Tan
+governance - p
+Publisher Full
+
+Sebai M, Talbi O
+stability: Evide
+and Developme
+Publisher Full
+
+Sebai M, Talbi O
+financial stabi
+Finance Researc
+Publisher Full
+
+Sebki W: Educa
+empirical evid
+Econ. Bus. 2021
+Publisher Full
+
+Servigny AD, Re
+
+Sethy SK, Goyari P: Financial Inclusion and Financial Stability Nexus
+Revisited in South Asian Countries: Evidence from a new
+Multidimensional Financial Inclusion Index. J. Financ. Econ. Policy. 2022;
+14(5): 674–693.
+Publisher Full Text
+Sha’ban M, Girardone C, Sarkisyan A: Cross-Country Variation in
+Fi-nancial Inclusion: A Global Perspective. Eur. J. Financ. 2020; 26:
+319–340.
+Publisher Full Text
+Shahriar A, Mehzabin S, Ahmed Z, et al.: Bank stability, performance and
+efficiency: an experience from West Asian countries. IIM Ranchi journal
+of management studies. 2022a; 2(1): 31–47.
+Publisher Full Text
+Siddik NA, Kabiraj S: Does Financial Inclusion Induce Financial Stability? Evidence from Cross-country Analysis, Australasian Accounting,
+Business and Finance Journal. 2018; 12(1): 34–46.
+Publisher Full Text
+Soto M: System GMM estimation with a small sample. 2009.
+Reference Source
+Steiger JH: Factor Indeterminacy in the 1930s and the 1970s: Some
+Inter-esting Parallels. Psychometrika. 1979; 44(2): 157–167.
+Publisher Full Text
+Taherdoost HAMED, Sahibuddin SHAMSUL, Jalaliyoon NEDA: Exploratory
+factor analysis; concepts and theory. Adv. Appl. Pure Math. 2014; 27:
+375–382.
+Reference Source
+Talbi O, Sebai M: Exploring the relationship between financial
+inclusion and financial stability in BRICS countries: A panel smooth
+transition regression analysis. Development and Sustainability in
+Economics and Finance. 2025; 6:100042.
+Publisher Full Text
+Thakor AV: Bank capital and financial stability: An economic trade-off
+or a Faustian bargain? Annual Review of Financial Economics. 2014; 6(1):
+185–223.
+Publisher Full Text
+Tram TXH, Lai TD, Nguyen TTH: Constructing a composite finan-cial
+inclusion index for developing economies. Q. Rev. Econ. Finance. 2023;
+87: 257–265.
+Publisher Full Text
+Tran S, Nguyen D, Nguyen L: Concentration, capital, and bank stability
+in emerging and developing countries. Borsa Istanbul Review. 2022;
+22(6): 1251–1259.
+Publisher Full Text
+
+Uddin A, Chowd
+inclusion in Ba
+approach. J. De
+Publisher Full
+
+Umar M, Akhta
+evidence from
+Publisher Full
+
+Vo DH, Nguyen
+Asian region u
+36–43.
+Publisher Full
+
+Wang C, Lin Y: I
+N. Am. J. Econ. F
+Publisher Full
+
+Wang R, Luo HR
+emerging econ
+Publisher Full
+
+Windmeijer F: A
+efficient two-s
+Publisher Full
+
+Wu RM, Wang Y
+entropy? Scient
+Publisher Full
+
+Yang Y, Su M, L
+Multilevel (MV
+Modeling (MLS
+Modeling in Edu
+Publisher Full
+
+Yitayaw MK, Mo
+in Ethiopia: A t
+2023; 11(1).
+Publisher Full
+
+Zelie EM, Wassi
+determinant f
+Ethiopia. World
+Publisher Full
+
+Zimmermann K
+Publisher Full
+
+Žiković S, Žikov
+growth nexus:
+Publisher Full
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 24 April 2025
+
+https://doi.org/10.5256/f1000research.178988.r378159
+
+© 2025 Ali N. This is an open access peer review report distributed un
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Najabat Ali
+Soochow University, Suzhou, China
+
+The authors have significantly revised the manuscript; th
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: FDI, Technology Innovation, Green T
+Economic Development, Environmental Sustainability
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Reviewer Report 23 April 2025
+
+https://doi.org/10.5256/f1000research.178988.r378160
+
+© 2025 Sadok H. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Hicham Sadok
+
+Mohammed V University of Rabat (Morocco), Rabat, Moro
+
+The authors have taken into account most of the remark
+version. They have substantially improved the first versio
+and substantive requirements for acceptance as a scienti
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Finance and Economics
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+
+Version 1
+Reviewer Report 14 February 2025
+
+https://doi.org/10.5256/f1000research.174050.r362882
+
+© 2025 Gharbi I. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Inès Gharbi
+University of Sfax, Sfax, Tunisia
+
+Thank you for inviting me to review the current manuscr
+
+From my point of view, this is a very interesting topic and
+continue. Some comments should be taken seriously. I h
+improve the document even more.
+1. The abstract must contain the main contributions.
+
+2. I think the introduction should state the novelty of the
+published in the field. Author(s) should be more explicit a
+fill identified research gaps to strengthen the justification
+
+3. The paper demonstrates an adequate understanding
+However, I have seen that no hypotheses are mentioned
+and show the reader that you have tested them.
+
+4. Please give reasons for the choice of methodologies us
+method rather than the entropy weighting method to co
+
+5. At the same time, I think that the conclusion part of th
+contributions, limitations, and future research directions
+
+References
+1. Gharbi I, Kammoun A: Developing a Multidimensional
+Based on Income Groups. Journal of Risk and Financial Ma
+2. Gharbi I, Kammoun A: Relationship between digital ba
+from Tunisia. International Journal of Business Studies. 202
+3. Gharbi I, Daoud Y, Kammoun A: The Digitalization in th
+
+Text
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Partly
+
+Are sufficient details of methods and analysis provide
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are all the source data underlying the results availab
+Yes
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Financial technologies, Digitalization
+and Green finance
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 14 Feb 2025
+
+Mohammed Arebo
+Dear Ass. Professor Inès Gharbi,
+
+Thank you very much for dedicating your time and eff
+for your prompt review report. Your insightful comme
+quality of our manuscript. We have taken your comme
+each of the five main points you raised in the revised
+to your thoughts on the revisions we have made.
+
+Competing Interests: No competing interests were di
+
+Author Response 04 Mar 2025
+
+Mohammed Arebo
+
+Thank you for your detailed and constructive review o
+
+have been instrumental in enhancing the novelty, me
+our work. We have addressed each of your suggestion
+1. The abstract must contain the main contributi
+Response: Thank you for your valuable comment. The
+the main contributions of the study, particularly the n
+macro-prudential regulation.
+2. I think the introduction should state the novel
+papers published in the field. Author(s) should be m
+methodology or results fill identified research gap
+publication.
+Response: Thank you very much for significant comm
+states the novelty of the paper by comparing it with o
+methodology and results address identified research
+3. The paper demonstrates an adequate understa
+the field. However, I have seen that no hypotheses
+mention the hypotheses and show the reader that
+Response: Thank you for this significant comment. We
+the most recent studies and segmented it to focus on
+and banking stability, (ii) non-linear relationship betw
+stability, (iii) the moderating effects of macro-prudent
+allows for clearer hypothesis formulation and empiric
+4. Please give reasons for the choice of methodol
+stage PCA method rather than the entropy weight
+Financial Inclusion Index?
+Response: Thank you this valuable comment. We have
+two-stage PCA method over alternatives, such as the e
+for constructing the financial inclusion index.
+5. At the same time, I think that the conclusion p
+with contributions, limitations, and future researc
+Response: Thank you for your significant comment. Th
+considering contribution. Policy implications, and limi
+presented in separate section.
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 11 February 2025
+
+https://doi.org/10.5256/f1000research.174050.r362883
+
+© 2025 Sadok H. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Hicham Sadok
+
+Mohammed V University of Rabat (Morocco), Rabat, Moro
+
+The article examines the impact of financial inclusion on
+It addresses an important issue that deserves analysis an
+deserve improvement:
+
+1-To clarify in the introduction the two key variables of th
+financial inclusion and banking stability: these two conce
+precisely.
+
+2- From the conceptualization of the key variables, it wou
+review to focus on the work related to these two concept
+ideas or hypotheses to study in the empirical part: a segm
+been done does not allow us to know what the usefulnes
+3-It would be useful in the empirical part to detail a little
+studied.
+
+4- At the level of dependent variables, namely, financial s
+significant for stability, it rather designates profitability. H
+stability, it is not sufficient. Why not consider the ratios o
+instead of the Z ratio?
+Good luck
+
+References
+1. Sadok H, Assadi D: The Contribution of AI-Based Analy
+Inclusion. 2023. 11-25 Publisher Full Text
+2. Sadok H: How can inclusive growth be enabled from fin
+Business Performance Management. 2021; 22 (2/3). Publish
+
+Is the work clearly and accurately presented and doe
+Partly
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Partly
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are all the source data underlying the results availab
+Yes
+
+Are the conclusions drawn adequately supported by t
+
+Partly
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: Finance and Economics
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 12 Feb 2025
+
+Mohammed Arebo
+Dear Professor Hicham Sadok,
+
+We sincerely thank you for the time and effort you ha
+particularly for your prompt review report. Your insigh
+enhance the quality of our manuscript. We have taken
+consideration in the revised version of this article.
+
+Competing Interests: No competing interests were di
+
+Author Response 04 Mar 2025
+
+Mohammed Arebo
+
+We sincerely appreciate the time and effort you have
+thoughtful comments have provided valuable guidanc
+theoretical, empirical and methodological aspects of t
+changes made in response to your feedback.
+
+1. To clarify in the introduction, the two key variable
+by financial inclusion and banking stability: these two
+defined precisely.
+Response: Thank you for your valuable comment. The
+provide precise definitions of financial inclusion and b
+
+2. From the conceptualization of the key variables, it
+literature review to focus on the work related to these
+ultimately deduce ideas or hypotheses to study in the
+review like what has been done does not allow us to k
+is for the future!!
+Response: Thank you for this significant comment. We
+the most recent studies and segmented it to focus on
+and banking stability, (ii) non-linear relationship betw
+stability, (iii) the moderating effects of macro-prudent
+allows for clearer hypothesis formulation and empiric
+
+3. It would be useful in the empirical part to detail a
+banks studied.
+Response: Thank you very much your feedback. Addit
+banks studied have been included in the empirical sec
+
+4. At the level of dependent variables, namely, finan
+sufficiently significant for stability, it rather designate
+important for stability, it is not sufficient. Why not con
+criterion of stability instead of the Z ratio?
+Response: Thank you for your insightful comment. Wh
+profitability, it was used due to the unavailability of ris
+acknowledged this limitation in the revised manuscrip
+solely through the Z-score due to data limitations. Fut
+risk-based stability measures.”
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 22 January 2025
+
+https://doi.org/10.5256/f1000research.174050.r354020
+
+© 2025 Ali N. This is an open access peer review report distributed un
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Najabat Ali
+Soochow University, Suzhou, China
+
+Thanks for inviting me to review the current manuscript.
+current quality does not meet the indexing standard. The
+needs the following significant modifications:
+
+1. The authors must add a specific policy recommendatio
+2. The study's novelty should be highlighted by comparin
+in the field.
+3. The theoretical framework should be added.
+4. The literature review section should be enriched with t
+5. In the methodology section, justify the methods used i
+existing field methods.
+6. The graphical presentation of the methodology will be
+7. In the results and discussion section, compare your res
+8 The conclusion, policy implications, and limitations sho
+9. An English language check is required to avoid gramm
+
+References
+1. Ali N, Tariq S: Determinants of Fintech Adoption in Ban
+Evidence from Pakistan. International Journal of Technolog
+2025; 16 (3). Publisher Full Text
+2. Junqi L, Abbas S, Rongbing L, Ali N: The impact of digita
+leverage ratio: The case of a-share listed non-financial en
+Shenzhen stock exchanges.PLoS One. 2024; 19 (8): e03029
+
+Is the work clearly and accurately presented and doe
+Partly
+
+Is the study design appropriate and is the work techn
+Partly
+
+Are sufficient details of methods and analysis provide
+Partly
+
+If applicable, is the statistical analysis and its interpre
+Partly
+
+Are all the source data underlying the results availab
+Partly
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: FDI, Technology Innovation, Green T
+Economic Development, Environmental Sustainability
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 24 Jan 2025
+
+Mohammed Arebo
+Dear Professor Najabat Ali,
+
+We sincerely thank you for the time and effort you ha
+particularly for your prompt review report. Your insigh
+enhance the quality of our manuscript. We eagerly an
+suggestions from the other reviewers, and upon rece
+into account in the revised version of this article.
+
+Regards
+Mohammed Jatoro Arebo
+Main and corresponding author
+
+Competing Interests: No competing interests were di
+
+Author Response 04 Mar 2025
+
+Mohammed Arebo
+
+Thank you for your thorough review and constructive
+insightful comments have significantly helped us imp
+quality of the study. We have carefully addressed each
+below.
+
+1. The authors must add a specific policy recommen
+Response: We appreciate your valuable comment. We
+recommendation to the abstract section.
+
+2. The study's novelty should be highlighted by com
+studies in the field.
+Response: Thank you for your important comment. W
+by comparing it with previous research and explicitly
+results address identified research gaps.
+
+3. The theoretical framework should be added.
+Response: Thank you for your meticulous comment. W
+to provide a stronger foundation for the study.
+
+4. The literature review section should be enriched w
+Response: Thank you for this significant comment. We
+the most recent studies and segmented it to focus on
+and banking stability, (ii) non-linear relationship betw
+stability, (iii) the moderating effects of macro-prudent
+allows for clearer hypothesis formulation and empiric
+
+5. In the methodology section, justify the methods u
+with the existing field methods.
+Response: Thank you for your valuable comment. We
+study by comparing them with existing approaches (s
+The methodology section, previously included in the r
+Model Specification subsection under the Methods se
+the non-linearity test and Lind and Mehlum’s (2010) U
+methodological rigor. Lastly, we have provided a ratio
+method over alternatives, such as the entropy weight
+the financial inclusion index.
+
+6. The graphical presentation of the methodology w
+understand.
+Response: Thank you for your comment. A graphical r
+been added to improve clarity and accessibility.
+
+7. In the results and discussion section, compare yo
+studies.
+Response: Thank you very much for this significant co
+section now includes comparisons with existing studie
+
+8. The conclusion, policy implications, and limitation
+headings.
+Response: Thank you for your significant comment. In
+other reviewer comments, the conclusion restructure
+implications, limitations, and future research direction
+explicitly highlighted within the conclusion.
+
+9. An English language check is required to avoid gr
+Response: Thank you for your significant comment. A
+been conducted to eliminate grammatical and spellin
+
+Competing Interests: No competing interests were di
+
+The benefits of publishing with F1000Research:
+
+• Your article is published within days, with no editorial bias
+• You can publish traditional articles, null/negative results,
+• The peer review process is transparent and collaborative
+
+• Your article is indexed in PubMed after passing peer revie
+• Dedicated customer support at every stage
+For pre-submission enquiries, contact research@f1000.com
+
+

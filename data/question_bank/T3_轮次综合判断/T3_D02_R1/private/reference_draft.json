@@ -1,0 +1,46 @@
+{
+  "question_id": "T3_D02_R1",
+  "gold_label": null,
+  "expert_annotations": null,
+  "status": "AI材料核查与候选评分要点，不是专家金标准",
+  "candidate_checks": [
+    "数据注记的代表性边界及新增局限",
+    "采样/小标题的调整与数据链接可用性不是同一判断"
+  ],
+  "AI_demonstrations": [],
+  "caution": "不能用平台通过状态赋标签；需要独立人标。",
+  "question_eligibility": "held_not_a_complete_T3_question",
+  "demonstration_scope": "仅局部教学例，不能给整篇标签，不能计完整T3题",
+  "restoration_checks": [
+    "三类survey文档和两类变量结构已实际附入；字段结构文件是字典而非逐人回答。核对Researcher/Stakeholder/RPO三类对象，不把五家机构的探索性资料当整个欧洲代表性样本。",
+    "将作者回复的抽样/措辞改动与前后稿Data validation和新增局限对照；附件可读不证明抽样代表性已解决，也不证明所有仓储中的逐人数据已复算。"
+  ],
+  "current_status": "当前会话6.1-sol参考要点，非专家金标准；未运行模型",
+  "supplement_evidence": [
+    {
+      "input_field": "materials.supplements.A01.text",
+      "exact_quote": "\n[Source attachment page 1]\nGRRIP WP5\nRPO Survey Documentation\nThis file includes the survey dataset and survey design. The data for this survey is not available in\nthe Zenodo GRRIP Community as it contains sensitive inf",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A02.text",
+      "exact_quote": "Variable Group,Variable,Variable Options,Question,Type,Label,Values\nUID_G,UID,UID_O1,Unique ID,Text,-,-\nconsent_G,consent,consent_O1,\"Please indicate whether you understand the information provided above, agree with the ",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A03.text",
+      "exact_quote": "\n[Source attachment page 1]\nGRRIP WP5\nResearcher Survey Documentation\nThis file includes detailed information about the survey dataset and survey design. The data is\navailable in multiple formats in the Zenodo GRRIP Comm",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A04.text",
+      "exact_quote": "Variable Group,Variable,Variable Options,Question,Type,Label,Values\nUID_G,UID,UID_O1,Unique ID,Text,-,-\nconsent_G,consent,consent_O1,\"Please indicate whether you understand the information provided above, agree with the ",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A05.text",
+      "exact_quote": "\n[Source attachment page 1]\nGRRIP WP5\nStakeholder Survey Documentation\nThis file includes detailed information about the survey dataset and survey design. The data is\navailable in multiple formats in the Zenodo GRRIP Com",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    }
+  ]
+}

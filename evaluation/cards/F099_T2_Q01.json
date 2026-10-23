@@ -1,0 +1,128 @@
+{
+  "task_id": "F099_T2_Q01",
+  "paper_id": "ORE:5-348",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F099_T2_Q01/input.json",
+  "input_sha256": "cad6384910a3dcf8cf5de4078a62ddb57e3b1790ed87fada7371eb5fe705e544",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F099_T2_Q01/input.json",
+      "source_sha256": "cad6384910a3dcf8cf5de4078a62ddb57e3b1790ed87fada7371eb5fe705e544",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "to update Figure 4. Word cloud, putting together area and areas; problem and problems;\ncompany and companies, recover and recovery",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F099_T2_Q01/input.json",
+      "source_sha256": "cad6384910a3dcf8cf5de4078a62ddb57e3b1790ed87fada7371eb5fe705e544",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We would like to express our sincere gratitude to Reviewer 2 for the positive evaluation of\nour manuscript and for the thoughtful and constructive suggestions, which have helped us\nimprove both the clarity and technical accuracy of the paper. Below we detail how each\ncomment was addressed:\n1.\nGeneral comments: Response:\nA List of Acronyms at the beginning of the paper for reader clarity would be a great\nhelp, we will check with the editors.\nA comprehensive English (UK) revision of the entire manuscript has been carried out\nto improve fluency, grammar, and terminology consistency.\n2.\nIntroduction: Response:\nIn accordance with the reviewer’s suggestion, we have replaced the term “ornamental\nrocks” with “ornamental stones” or “dimension stones” throughout the text.\nThe symbol “€” was removed from “€459,632 (103€),” as recommended.\n○\n\n○\n\n○\n\n○\n\n3.\n\nStudy area: Response:\nhe temperature range now reads “between 13°C and 15°C,” correcting the lowercase\n“c” and improving consistency with scientific formatting standards.\n4.\nMethods: Response:\nThe unnecessary comma was removed from the sentence “The second stage\nconsidered the search for extractive companies operating in the region and data\ncollection (semi-structured interviews)” making the sentence more grammatically\ncorrect and fluid.\n5.\nResults and analysis: Response:\nWe have simplified the sentence as advised, keeping only “to be analyzed” and\ndeleting “to be specified.\n6.\nDiscussion: Response:\nThe market analysis paragraph has been summarized to focus on the key findings:\nthe export orientation of production, the predominance of the Asian market, and the\nlimited domestic distribution.\nThe description of the exploitation technique has been revised to ensure technical\naccuracy. The new version clarifies that the quarrying process involves creating\nbenches with diamond wire saws, cutting stone blocks that are subsequently\nprocessed in working plants. It also notes that portions of rock not suitable as blocks\nare treated as waste rock for abandoned quarry projects, as per the reviewer’s\ncorrection.\nWe are deeply grateful for the reviewer’s detailed technical insights, which have improved\nthe scientific precision, structure, and readability of our manuscript.\n○\n\n○\n\n○\n\n○\n\n○\n\n\n\n[Next author response post]\n\n\nDear reviewer, We thank you very much for the careful reading of the\n\n\n\n\nmanuscript and for the constructive and valuable comments provided. All remarks and\nsuggestions have been thoroughly considered and addressed in the revised version of the\nmanuscript, which has been submitted to the journal’s editor. We believe that these\nrevisions have improved the clarity and quality of the work. [closing signature omitted]",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "关切明确要求词云合并四组词形；完整答复详细列举语言、符号、采石技术等修改，却未提词云或这四组词。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient；partially_sufficient只能承认总括声明的有限相关性，不能声称已合并词云。"
+    },
+    {
+      "id": "J2",
+      "judgment": "后续统称全部处理不能确认对该具体归一化要求作出解释；回复长和其他技术细节均不补该缺口。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient；partially_sufficient只能承认总括声明的有限相关性，不能声称已合并词云。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。关切明确要求词云合并四组词形；完整答复详细列举语言、符号、采石技术等修改，却未提词云或这四组词。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：必须检查area/areas等具体目标，而非被其他编辑细节分散。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：关切明确要求词云合并四组词形；完整答复详细列举语言、符号、采石技术等修改，却未提词云或这四组词。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：必须检查area/areas等具体目标，而非被其他编辑细节分散。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。后续统称全部处理不能确认对该具体归一化要求作出解释；回复长和其他技术细节均不补该缺口。",
+      "high_score_conditions": [
+        "在指出无目标回应时不推断实际图必然未改；不把recover/recovery的语义合并正确性当已验证。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：后续统称全部处理不能确认对该具体归一化要求作出解释；回复长和其他技术细节均不补该缺口。"
+      ],
+      "boundary_2_3": "必须检查area/areas等具体目标，而非被其他编辑细节分散。",
+      "boundary_3_4": "在指出无目标回应时不推断实际图必然未改；不把recover/recovery的语义合并正确性当已验证。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。insufficient；partially_sufficient只能承认总括声明的有限相关性，不能声称已合并词云。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：在指出无目标回应时不推断实际图必然未改；不把recover/recovery的语义合并正确性当已验证。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：后续统称全部处理不能确认对该具体归一化要求作出解释；回复长和其他技术细节均不补该缺口。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：在指出无目标回应时不推断实际图必然未改；不把recover/recovery的语义合并正确性当已验证。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "insufficient；partially_sufficient只能承认总括声明的有限相关性，不能声称已合并词云。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "必须检查area/areas等具体目标，而非被其他编辑细节分散。",
+    "3_to_4": "在指出无目标回应时不推断实际图必然未改；不把recover/recovery的语义合并正确性当已验证。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

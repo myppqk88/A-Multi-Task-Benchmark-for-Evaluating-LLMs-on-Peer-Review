@@ -1,0 +1,63 @@
+{
+  "task_id": "F061_T2_Q04",
+  "paper_id": "ORE:1-136",
+  "parent_task": "T3_F061_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F061_R1/input.json",
+  "parent_input_sha256": "1b32972f42d86a0bae3bb3f1230953a4e8b16783abc67c15a8204fde4d029bc4",
+  "review_dimension_AI_candidate": "样本框架与案例选择",
+  "selection_scope": "保留两段国家筛选逻辑及地理平衡请求，只评给定的文字解释。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/1-136_Financing_conditions_of_renewable_energy_projects___results_from_an_EU/v1_manuscript.pdf",
+      "original_sha256": "32f0e6fac80dc541c7c7cea5a5c122f7364cb50694793f0f29dd1a8d1caa8229",
+      "raw_text_file": "data/question_bank/T2_回应评价/F061_T2_Q04/private/S001_source.txt",
+      "source_span_cover": [
+        34918,
+        35515
+      ],
+      "report_id": "29019",
+      "date": "2022-05-04",
+      "raw_page_numbers": [
+        10
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/1-136_Financing_conditions_of_renewable_energy_projects___results_from_an_EU/v1_manuscript.pdf",
+      "original_sha256": "32f0e6fac80dc541c7c7cea5a5c122f7364cb50694793f0f29dd1a8d1caa8229",
+      "raw_text_file": "data/question_bank/T2_回应评价/F061_T2_Q04/private/S001_source.txt",
+      "source_span_cover": [
+        38484,
+        38676
+      ],
+      "report_id": null,
+      "date": "2022-05-16",
+      "raw_page_numbers": [
+        11
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 4529,
+    "end": 5067,
+    "exact_quote": "ted of 18 members. A five-step methodology was\nfollowed in collecting the data, as explained below.\nDefining the scope. First, a distinction was made between focus\nand non-focus countries. When conducting the interviews, the\nresearch team used two different survey templates. On the one\nhand, for non-focus countries, the template was limited to\nobtain quantitative data on specific financial variables for renewable energy projects. On the other hand, the template for focus\ncountries was designed to allow for more in-depth research.\nHe",
+    "anchor_matches": 1,
+    "anchor": "Defining the scope"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 4529,
+    "end": 5067,
+    "exact_quote": "ted of 18 members. A five-step methodology was\nfollowed in collecting the data, as explained below.\nDefining the scope. First, a distinction was made between focus\nand non-focus countries.\nWhen selecting the focus countries, we considered four criteria:\n1) \u0007having RE auctions in place\n2) \u0007geographical balance\n3) \u0007country risk levels (Denmark and Germany as low risk,\nPortugal and Spain as medium risk, and Greece as a high\nrisk country), and\n4) \u0007different remuneration schemes (Germany with a one-sided\ncontract-for-difference, Greece w",
+    "anchor_matches": 1,
+    "anchor": "Defining the scope"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿将重点国家筛选四项标准列清，包括拍卖、地理平衡、风险及报酬方案。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

@@ -1,0 +1,128 @@
+{
+  "task_id": "D13_T2_Q02",
+  "paper_id": "PeerJ:19382",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D13_T2_Q02/input.json",
+  "input_sha256": "d2704364cd318049e6d6492c4767c716d17afdb984ef2133bbc64053a5cdf994",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D13_T2_Q02/input.json",
+      "source_sha256": "d2704364cd318049e6d6492c4767c716d17afdb984ef2133bbc64053a5cdf994",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "It is important to examine the impact of sex on the associations and in the mediation analysis, as many other PL studies and competency studies have shown sex as assigned at birth to be a factor. Sex differences should also be reported in Table 1.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D13_T2_Q02/input.json",
+      "source_sha256": "d2704364cd318049e6d6492c4767c716d17afdb984ef2133bbc64053a5cdf994",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Thank you for pointing this out. We have updated Table 1 to report sex differences, ensuring our results are more comprehensive and aligned with your recommendation.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "关切分别要求表1描述性性别差异、关联中的性别影响及中介分析中的性别影响。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不宜凭表1修改判全部解决。"
+    },
+    {
+      "id": "J2",
+      "judgment": "答复仅声明更新表1，没有回应关联或中介模型如何处理性别；补描述表不等于调整混杂或检验效应修饰。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient；不宜凭表1修改判全部解决。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。关切分别要求表1描述性性别差异、关联中的性别影响及中介分析中的性别影响。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须点名关联和中介两项遗漏。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：关切分别要求表1描述性性别差异、关联中的性别影响及中介分析中的性别影响。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须点名关联和中介两项遗漏。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。答复仅声明更新表1，没有回应关联或中介模型如何处理性别；补描述表不等于调整混杂或检验效应修饰。",
+      "high_score_conditions": [
+        "区分描述差异、协变量调整、交互/分层的不同目标；不能未经设计依据强制某单一统计做法。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：答复仅声明更新表1，没有回应关联或中介模型如何处理性别；补描述表不等于调整混杂或检验效应修饰。"
+      ],
+      "boundary_2_3": "须点名关联和中介两项遗漏。",
+      "boundary_3_4": "区分描述差异、协变量调整、交互/分层的不同目标；不能未经设计依据强制某单一统计做法。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient；不宜凭表1修改判全部解决。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分描述差异、协变量调整、交互/分层的不同目标；不能未经设计依据强制某单一统计做法。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：答复仅声明更新表1，没有回应关联或中介模型如何处理性别；补描述表不等于调整混杂或检验效应修饰。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分描述差异、协变量调整、交互/分层的不同目标；不能未经设计依据强制某单一统计做法。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient；不宜凭表1修改判全部解决。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "须点名关联和中介两项遗漏。",
+    "3_to_4": "区分描述差异、协变量调整、交互/分层的不同目标；不能未经设计依据强制某单一统计做法。"
+  },
+  "source_unit": "T2_response_only"
+}

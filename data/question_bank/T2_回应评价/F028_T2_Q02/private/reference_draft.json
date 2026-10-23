@@ -1,0 +1,28 @@
+{
+  "task_id": "F028_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "职业资格与概括边界"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "However,\nto avoid creating the impression that all authors’ editors are suitably trained, optimally competent\nin all the editing they undertake, involved members of appropriate associations and proactive in\nundertaking CPD, Matarese and Shashok should acknowledge that there are no CC for authors’\neditors, nor are authors’ editors required to have certain academic or professional qualifications.\nMatarese and Shashok are currently among the most respected and high-profile biomedical\nauthors’ editors; their plea to involve authors’ editors in developing CC for journal editors should\nbe placed in that context.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "We appreciate Dr. Burrough-Boenisch’s cautionary note on the variations in authors’ editors’\nskills, practices and commitment to continuing education, which are to be expected for any\nprofession that does not have defined entry qualifications or agreed-upon CC.\nThe author editing literature contains several proposals for key skills and tasks (see, for\nexample, Lang 1999; Burrough-Boenisch 2013; Chapter 7 in Matarese 2016), but although\nthey overlap to some extent, they also tend to reflect the particular circumstances of\ndifferent authors’ editors’ professional settings, clients and disciplinary focus. Although\nseveral professional associations offer formal certification, these programs do not cover all\nfacets of author editing, such as the interpersonal aspects of working with researchers and\nthe value of multilingualism. Like journal editors, authors’ editors with different skills,\nstrengths and specialist knowledge can provide valuable services in some areas, but may\nhave shortcomings in other areas. Our impression is that authors’ editors are likely to be\ntransparent about their strengths and limitations, in order to help researchers decide\nwhether they are able to provide the right types of support.\nWe have noted the lack of universally agreed-upon professional qualifications for authors’\neditors in version 2.\nBurrough-Boenisch J: Editing non-native English: reflections from a Netherlands-based\neditor on those who do it and the skills they should have. The 21st Century Text. July 30,\n2013.\nLang TA: A curriculum for biomedical writing and editing: a second volley. CBE Views. 1999;\n22(1): 3–5.\nMatarese V: Editing research: the author editing approach to providing effective support to\nwriters of research papers. Medford: Information Today; 2016.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留作者全部回答及参考文献，不能把存在专业组织等同所有从业者胜任。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

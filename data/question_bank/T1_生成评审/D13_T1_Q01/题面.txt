@@ -1,0 +1,1470 @@
+题号：D13_T1_Q01
+任务：带依据的自由同行评审
+
+You are reviewing the supplied social-science manuscript using only the provided material. Write a concise peer-review report in English, no more than 1,200 words. Identify up to five substantive concerns, each in a separate paragraph, and explain why it matters. Cite the relevant supplied section or passage when possible. Do not invent missing analyses or references. Distinguish confirmed errors, missing information, and suggestions. Do not infer facts from the paper's publication status. Use the supplied page images to read tables, figures, equations and any ambiguous text-extraction order; manuscript_text is a searchable aid and must not replace visual material. External resources mentioned in the manuscript are not available for this task. Their non-inclusion does not establish that the authors failed to share them. If a judgment requires such resources, state the limitation. Do not browse, open links or retrieve other manuscript versions. Return JSON with a single review_text string.
+
+【输入全文】
+
+Abstract
+
+38
+39
+
+Objective. To investigate whether physical literacy mediates the relationship between grit and
+well-being among obese college students.
+
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+
+Methods. A total of 385 obese undergraduate students were recruited. Participants completed
+validated questionnaires measuring grit, physical literacy, and well-being. Mediation analyses
+were performed to estimate indirect effects and generate bias-corrected 95% confidence intervals
+(CI).
+Results. Grit was positively associated with physical literacy, and physical literacy was
+positively associated with well-being. Physical literacy partially mediated the relationship
+between grit and well-being, with the indirect effect accounting for 26.32% of the total effect
+(indirect effect = 0.20, 95% CI [0.09, 0.31]). In a parallel mediation model analyzing the
+subdimensions of physical literacy, the “interaction with the environment” emerged as the
+strongest mediator (indirect effect = 0.15, 95% CI [0.10, 0.21]), accounting for 19.74% of the
+total effect. The indirect effects through “motivation” and “confidence and physical competence”
+were also significant but accounted for smaller proportions of the total effect (6.58% and 5.26%,
+respectively).
+Conclusions. Physical literacy, particularly the ability to interact with the environment, partially
+mediates the relationship between grit and well-being among obese college students. These
+findings suggest that interventions aiming to enhance physical literacy—especially
+environmental engagement—could amplify the positive impact of grit on well-being. A
+multifaceted approach that fosters both psychological traits and physical competencies may be
+effective in improving the psychological and physical health of this population.
+
+60
+
+Introduction
+
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+
+Add your introduction here. Obesity among college students has become a significant global
+public health concern, with prevalence rates increasing alarmingly over the past few
+decades(Ward et al. 2019; Ng et al. 2014). This trend is particularly troubling given the
+numerous adverse health outcomes associated with obesity, including cardiovascular disease,
+type 2 diabetes, and mental health disorders(Okunogbe et al. 2021). College students represent a
+critical demographic, as habits formed during this transitional period often persist into adulthood,
+influencing long-term health trajectories(KavehFarsani, Kelishadi, and Beshlideh 2020; Sun et
+al. 2021; Nelson et al. 2008). Despite the recognition of obesity’s physical health implications,
+there is a pressing need to understand the psychological factors that can enhance well-being in
+obese college students, a population that often experiences stigma, social isolation, and reduced
+Abstract
+quality of life(Smith, Fu, and Kobayashi 2020; Pearl, Wadden, and Jakicic 2021; Puhl and
+ 2010).
+Heuer
+
+
+Grit, defined as perseverance and passion for long-term goals, has been identified as a crucial
+trait that contributes to success and well-being across various populations(Duckworth and Quinn
+ Empirical studies have linked higher levels of grit to enhanced academic achievement,
+2009).
+lower attrition rates, and improved psychological well-being in higher education settings(Credé,
+Tynan, and Harms 2017; Bowman et al. 2015). Individuals exhibiting high levels of grit tend to
+maintain motivation and resilience, contributing positively to their overall life satisfaction and
+
+
+
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+
+mental health(Datu, Valdez, and King 2016; Disabato, Goodman, and Kashdan 2019). For obese
+college students, grit may play an essential role in navigating the additional hurdles they may
+encounter, potentially buffering against negative outcomes and fostering psychological
+flourishing(Totosy De Zepetnek et al. 2021)
+Well-being is a multidimensional construct that reflects optimal psychological functioning and
+experience(Ryan and Deci 2001). The PERMA model, proposed by Seligman, conceptualizes
+well-being through five core elements: Positive Emotion, Engagement, Relationships, Meaning,
+and Accomplishment(Seligman 2011). This model provides a comprehensive framework for
+understanding how individuals thrive and flourish. In the context of college students, well-being
+as defined by the PERMA model is particularly relevant, as it encapsulates emotional well-being,
+involvement in meaningful activities, the quality of social relationships, a sense of purpose, and
+the achievement of personal goals(Butler and Kern 2016). Prior research has indicated that
+higher levels of grit are associated with enhanced well-being across these dimensions, suggesting
+that gritty individuals may experience greater life satisfaction and psychological
+flourishing(Vainio and Daukantaitė 2016). Obese individuals may experience disparities in these
+well-being dimensions due to societal pressures and health-related challenges(Lin et al. 2020).
+Investigating factors that enhance well-being in this group is therefore of critical importance.
+Simultaneously, physical literacy has emerged as a holistic construct encompassing the
+motivation, confidence, physical competence, knowledge, and understanding necessary to value
+and engage in physical activities throughout life(Edwards et al. 2017; Whitehead 2010). Physical
+literacy extends beyond physical capabilities to include cognitive and affective dimensions that
+foster lifelong participation in physical activity, which is crucial for both physical and mental
+well-being(Robinson et al. 2015). Engaging in regular physical activity has been linked to
+improved well-being as per the PERMA model, contributing to positive emotions, opportunities
+for engagement, enhanced relationships through social interactions, a sense of meaning, and
+feelings of accomplishment(Lubans et al. 2016). For obese college students, physical literacy
+may be particularly pertinent, as it can influence their willingness and ability to participate in
+physical activity, which is crucial for both physical and mental health(R. Ma et al. 2021; R.-S.
+Ma, Sum, Li, et al. 2020; Cairney et al. 2019).
+The potential mediating role of physical literacy in the relationship between grit and well-being
+among obese college students presents a promising yet underexplored area of inquiry. It is
+posited that individuals with higher levels of grit are more likely to engage persistently in
+physical activities, thereby developing greater physical literacy, which in turn enhances their
+well-being across the PERMA dimensions(Tedesqui and Young 2017). Gritty obese students
+may exhibit a propensity for sustained engagement in physical activities despite challenges,
+leading to the development of physical competence and confidence—key components of
+physical literacy(Guerrero et al. 2019; Howard and Crayne 2019). This sustained engagement not
+
+
+
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+
+only reinforces physical literacy but also contributes to improved well-being through
+mechanisms such as enhanced self-efficacy, stress reduction, social connectedness, and a sense
+of achievement(Wilson, Ellison, and Cable 2015; Lubans et al. 2016).
+Understanding this mediation is crucial, as it could inform targeted interventions aimed at
+promoting both psychological and physical health among obese college students. By fostering
+physical literacy, educational institutions can enhance the well-being of students with high levels
+of grit, enabling them to channel their perseverance into beneficial activities that support weight
+management and psychological flourishing(Jeong and So 2020; Jefferies et al. 2019). Programs
+that integrate physical literacy development with support for building grit may offer a
+multifaceted approach to improving health outcomes in this population (Schure, Christopher, and
+Christopher 2008; Caldwell et al. 2009).
+Therefore, this study aims to investigate the mediating role of physical literacy in the relationship
+between grit and well-being among obese college students. We hypothesize that physical literacy
+serves as a crucial mediator, whereby obese students with higher levels of grit are more likely to
+develop physical literacy through persistent engagement in physical activities, which in turn
+enhances their overall well-being. The proposed model is illustrated in Figure 1.
+
+Methods
+Participants
+
+141
+142
+143
+144
+145
+146
+147
+148
+149
+
+A total of 385 obese undergraduate students were recruited from six major universities in
+Guangzhou, China: Sun Yat-sen University, South China Normal University, Jinan University,
+South China University of Technology, Guangzhou University, and South China Agricultural
+University. Participants ranged in age from 18 to 22 years (M = 19.54, SD = 0.84), with 60.52%
+identifying as male and 39.48% as female. Inclusion criteria required participants to be enrolled
+as full-time undergraduate students and classified as obese, defined by a Body Mass Index (BMI)
+≥ 30 kg/m² according to the World Health Organization (WHO)(World Health Organization,
+n.d.). Table 1 presents the detailed characteristics of the participants.
+
+150
+151
+
+Measures
+Grit
+
+152
+153
+154
+155
+156
+157
+158
+
+Grit was assessed using the Short Grit Scale (Grit-S) developed by Duckworth(Duckworth and
+Quinn 2009). The Chinese version of the Grit-S, which has been translated and validated for
+reliability and validity among Chinese populations(Zhong et al. 2018; Li et al. 2018), was
+employed in this study. The Grit-S is an 8-item self-report instrument measuring two
+dimensions: Perseverance of Effort (e.g., “I am a hard worker”) and Consistency of Interests
+(e.g., “My interests change from year to year” [reverse-scored]). Participants respond on a 5point Likert scale ranging from 1 (Not at all like me) to 5 (Very much like me). The Grit-S has
+
+
+
+159
+160
+
+demonstrated good internal consistency (Cronbach’s α = 0.86) and construct validity (0.73 to
+0.83)(Duckworth and Quinn 2009). In the present study, the overall Cronbach’s alpha was 0.81.
+
+161
+
+Physical literacy
+
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+
+Physical literacy was assessed using the Simplified Chinese Version of the Perceived Physical
+Literacy Instrument (PPLI-SC)(R.-S. Ma, Sum, Hu, et al. 2020), which encompasses three
+dimensions: (1) Motivation (e.g., “I aspire to know the current sports trend”), (2) Confidence and
+Physical Competence (e.g., “I possess adequate fundamental movement skills”), and (3)
+Interaction with the Environment (e.g., “I have strong social skills”). Developed based on
+Whitehead’s definition of physical literacy, the instrument measures college students’ attitudes
+toward physical activity and the extent to which they take responsibility for their
+bodies(Whitehead 2010). The Simplified Chinese Version has demonstrated strong reliability
+and validity for measuring physical literacy among Chinese university students, with a
+Cronbach’s α of 0.86 and confirmatory factor analysis indicating factor loadings ranging from
+0.60 to 0.92(R.-S. Ma, Sum, Li, et al. 2020). In this study, the overall Cronbach’s alpha was
+0.84.
+
+175
+
+Well-being
+
+176
+177
+178
+179
+180
+181
+182
+183
+184
+
+Well-being was evaluated using the PERMA-Profiler(Butler and Kern 2016), a 23-item selfreport measure assessing the five dimensions of the PERMA model: Positive Emotion,
+Engagement, Relationships, Meaning, and Accomplishment. The translated Chinese version of
+the PERMA-Profiler demonstrated excellent cultural adaptability. It exhibited high Cronbach’s
+alpha coefficients (α = 0.79–0.88), indicating strong internal consistency, as well as good
+divergent validity (r = −0.19 to −0.38) and convergent validity (r = 0.53–0.85). Structural
+validity was also satisfactory(Nie et al. 2024). In the current study, the overall Cronbach’s alpha
+was 0.89.
+
+185
+
+Procedure
+
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+
+Participants were recruited over a six-month period through university health centers, student
+associations, and campus-wide email announcements. The study was conducted in accordance
+with the ethical standards of the Declaration of Helsinki and was approved by the Institutional
+Review Board of Jinan University (Approval Number: JNUKY-2023-0154). Interested students
+contacted the research team and were scheduled for an initial screening session. During this
+session, trained research assistants measured participants’ height and weight to calculate BMI,
+confirming eligibility based on the inclusion criteria (BMI ≥ 30 kg/m²). Participants were
+informed about the purpose and procedures of the study, their rights to confidentiality, and their
+freedom to withdraw at any time without penalty. Written informed consent was obtained from
+all participants prior to data collection.
+Eligible participants were then provided with a secure link to an online survey, ensuring data
+confidentiality and anonymity. The survey included demographic questions followed by the Grit-
+
+
+
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+
+S, PPLI-SC, and Chinese version of the PERMA-Profiler questionnaires. To minimize order
+effects, the presentation of the main instruments was randomized. The survey took
+approximately 10–20 minutes to complete. Data were collected anonymously to ensure privacy
+and confidentiality.
+To mitigate potential sources of bias, the study implemented several measures. Participant
+recruitment was randomized across six universities to ensure a diverse sample representative of
+obese college students. Measurement bias was minimized by using validated instruments (Grit-S,
+PPLI-SC, and PERMA-Profiler) translated and culturally adapted for Chinese populations. To
+prevent social desirability bias, all surveys were completed anonymously online. The
+presentation order of questionnaires was randomized to control for order effects.
+
+211
+
+Sample Size
+
+212
+213
+214
+215
+216
+217
+
+The study size was determined based on a priori power analysis to detect a medium effect size (f²
+= 0.15) in the mediation model with three predictors, using G*Power 3.1 software. A minimum
+of 143 participants was required to achieve 80% power at a 0.05 significance level. To account
+for potential dropouts or missing data, the sample size was increased by 50%, resulting in a final
+target of 385 participants.
+
+218
+
+Data Analysis
+
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+
+All statistical analyses were performed using the Statistical Package for the Social Sciences
+(SPSS, version 26.0). Descriptive statistics (means, standard deviations) were calculated for grit,
+physical literacy, and well-being (PERMA) scores. Skewness and kurtosis values were examined
+to assess the normality of data distributions. Bivariate Pearson correlation analyses were
+conducted to explore the relationships among grit, well-being, and physical literacy dimensions
+(Motivation, Confidence and Physical Competence, and Interaction with the Environment).
+These correlations provided preliminary insights into the associations between the variables. To
+test the mediating effect of physical literacy on the relationship between grit and well-being, the
+SPSS PROCESS macro (version 3.5) was employed. Specifically, Model 4 of the PROCESS
+macro was utilized to assess the mediation effect. Bootstrapping procedures with 5,000
+resamples were applied to generate bias-corrected 95% confidence intervals (CIs) for the indirect
+effects. An indirect effect was considered statistically significant if the 95% CI did not include
+zero. This non-parametric resampling method enhances the robustness of the mediation analysis,
+particularly in cases where normality assumptions may not hold. All statistical tests were twotailed, with a significance level set at p < 0.05.
+
+234
+236
+
+Results
+Preliminary analyses
+
+237
+238
+
+All participants provided complete and valid responses for all measures, with no missing data
+detected. Descriptive statistics and correlations among grit, well-being, and physical literacy
+
+235
+
+
+
+239
+240
+241
+242
+243
+244
+245
+
+(including the subdimensions) are presented in Table 2. The skewness (|skewness| < 2) and
+kurtosis (|kurtosis| < 7) values indicated that the data were approximately normally distributed.
+To avoid one type of error, we lowered the threshold of significance to 0.05/6 = 0.008. To
+control for Type I error due to multiple comparisons, we adjusted the significance threshold
+using the Bonferroni correction, setting it at 0.05/6 = 0.008. Because the physical literacy score
+is the sum of its three subdimensions, we did not compute separate correlations for the
+subdimensions to avoid redundancy and issues of multicollinearity.
+
+246
+247
+
+Mediation Analysis Using Total Physical Literacy Score
+
+248
+249
+250
+251
+252
+253
+
+The PROCESS macro (Model 4) was employed to test the mediation effect of physical literacy
+between grit and well-being among obese college students. Grit was designated as the focal
+predictor (X); physical literacy was the proposed mediator (M). X and M were incorporated as
+predictors in an ordinary least-squares regression analysis to predict the students’ well-being (Y).
+Building upon the following regression equations, the results of the bootstrapping analysis are
+presented in Table 3.
+�㕌 = �㕎1 + �㕐 �㕋 + �㗆1
+
+254
+
+�㕀 = �㕎2 + �㕎 �㕋 + �㗆2
+
+�㕌 = �㕎3 + �㕐'�㕋 + �㕏 �㕀 + �㗆3
+
+Where a, b, and c’ estimate the paths mentioned in Figure 1 separately.
+
+255
+256
+257
+
+The mediation analysis demonstrated that grit was significantly positively associated with
+
+258
+259
+
+physical literacy (β = 0.12, F = 28.81, p < 0.001), indicating that obese college students with
+higher levels of grit tend to exhibit greater physical literacy. Physical literacy was also
+
+260
+261
+262
+263
+264
+265
+266
+267
+268
+
+significantly positively associated with well-being (β = 0.56, F = 925.94, p < 0.001), suggesting
+that enhanced physical literacy contributes to higher well-being. The total effect of grit on wellbeing was significant (total effect = 0.76, 95% CI [0.63, 0.89]), and when physical literacy was
+included in the model, the direct effect of grit on well-being remained significant but was
+reduced (direct effect = 0.56, 95% CI [0.45, 0.67]), accounting for 73.68% of the total effect. The
+indirect effect of grit on well-being through physical literacy was significant (indirect effect =
+0.20, 95% CI [0.09, 0.31]), accounting for 26.32% of the total effect; since the bootstrap
+confidence interval did not include zero, this confirms that physical literacy partially mediates
+the relationship between grit and well-being among obese college students.
+
+269
+270
+
+Parallel Mediation Analysis Using Physical Literacy Subdimensions
+
+271
+272
+273
+274
+275
+
+To further investigate the mediating effects of the subdimensions of physical literacy on grit and
+well-being, we employed a parallel mediation model. This analytical approach tested the
+mediating effects of the three subdimensions of physical literacy—motivation (M₁), confidence
+and physical competence (M₂), and interaction with the environment (M₃)—on the relationship
+between grit (X) and well-being (Y).
+
+
+
+�㕀1 = �㕎1 �㕋 + �㗆1
+�㕀2 = �㕎2 �㕋 + �㗆2
+�㕀3 = �㕎3 �㕋 + �㗆3
+
+276
+277
+278
+
+�㕌 = �㕐'�㕋 + �㕏1 �㕀1 + �㕏2 �㕀2 + 3 �㕀3 + �㗆4
+
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+
+Where a₁, a₂, a₃ are the coefficients representing the effect of grit on each mediator. b₁, b₂, b₃
+are the coefficients representing the effect of each mediator on well-being. c′ is the direct effect
+of grit on well-being after accounting for the mediators.
+The results of the parallel mediation analysis are presented in Tables 4 and 5. Figure 2 presents
+the graphical representation of the mediation model and the regression coefficients. As shown in
+Table 4, grit was significantly positively associated with all three subdimensions of physical
+literacy: motivation (β = 0.07, F = 10.86, p < 0.001), confidence and physical competence (β =
+0.08, F = 12.20, p < 0.001), and interaction with the environment (β = 0.21, F = 93.17,
+p < 0.001). Each subdimension was also significantly positively associated with well-being.
+Table 5 shows the mediating effects; the total effect of grit on well-being was significant (effect
+value = 0.76, SE = 0.07, LLCI = 0.63, ULCI = 0.89), and when considering the mediators, the
+direct effect of grit on well-being remained significant but was reduced (effect value = 0.51,
+LLCI = 0.40, ULCI = 0.63), accounting for 67.11% of the total effect. The indirect effects
+through the subdimensions of physical literacy were all significant: motivation (indirect effect =
+0.05, 95% CI [0.01, 0.09])), accounting for 6.58% of the total effect; confidence and physical
+competence (indirect effect = 0.04, 95% CI [0.01, 0.08]), accounting for 5.26% of the total
+effect; and interaction with the environment (indirect effect = 0.15, 95% CI [0.10, 0.21]),
+accounting for 19.74% of the total effect. These findings demonstrate that while all three
+subdimensions of physical literacy partially mediate the relationship between grit and well-being,
+interaction with the environment has the strongest mediating effect, suggesting that enhancing
+students’ engagement with their environment may be particularly effective in leveraging grit to
+improve well-being among obese college students.
+
+304
+
+Discussion
+
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+
+This study aimed to investigate the mediating role of physical literacy in the relationship between
+grit and well-being among obese college students. The findings provide compelling evidence that
+physical literacy partially mediates this relationship, highlighting the importance of physical
+literacy in enhancing the well-being of this population. Notably, among the subdimensions of
+physical literacy, interaction with the environment emerged as the most significant mediator,
+suggesting that engagement with one’s physical and social environment is crucial in translating
+grit into well-being.
+Consistent with our hypotheses and previous research, we found that grit was significantly
+positively associated with well-being among obese college students. This aligns with studies
+indicating that individuals with higher levels of grit tend to experience greater psychological
+
+
+
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+
+well-being, life satisfaction, and resilience to adversity(Vainio and Daukantaitė 2016; Duckworth
+and Quinn 2009; Disabato, Goodman, and Kashdan 2019). Gritty individuals are more likely to
+persevere through challenges and maintain consistent interests over time, which may buffer
+against the psychological stressors associated with obesity, such as stigma, discrimination, and
+social isolation(Totosy De Zepetnek et al. 2021; Puhl and Heuer 2010).
+
+350
+
+Practical Implications
+
+351
+352
+353
+354
+355
+
+The findings have important practical implications for interventions aimed at improving the wellbeing of obese college students. Programs that focus on developing grit and physical literacy
+simultaneously may be particularly effective. For instance, incorporating goal-setting workshops,
+resilience training, and perseverance exercises can enhance grit(Caldwell et al. 2009; Schure,
+Christopher, and Christopher 2008). Concurrently, offering physical activities that are enjoyable,
+
+The mediation analysis extends the existing literature by demonstrating that physical literacy is a
+significant pathway through which grit enhances well-being. Specifically, higher levels of grit
+were associated with greater physical literacy, which in turn was linked to improved well-being.
+This finding supports the notion that physical literacy is not merely about physical competence
+but also encompasses motivation, confidence, and the ability to interact effectively with the
+environment(Whitehead 2010; Edwards et al. 2017). Gritty individuals may be more motivated
+to engage in physical activities, persist in developing physical skills, and overcome barriers to
+participation, thereby enhancing their physical literacy(Guerrero et al. 2019; Tedesqui and
+Young 2017).
+Among the subdimensions of physical literacy, interaction with the environment had the
+strongest mediating effect. This suggests that the ability to engage with the physical and social
+environment is particularly important for the well-being of obese college students. Engaging in
+physical activities often involves social interaction, teamwork, and a sense of belonging, which
+are key components of the PERMA model of well-being(Butler and Kern 2016; Seligman 2011).
+Participation in group sports or recreational activities can foster positive emotions, build
+meaningful relationships, provide a sense of accomplishment, and enhance engagement—all
+contributing to overall well-being(Cairney et al. 2019; Lubans et al. 2016).
+The significant mediating effects of motivation and confidence and physical competence,
+although smaller, also underscore their roles in the grit–well-being relationship. Motivation
+drives individuals to initiate and sustain physical activity, while confidence and physical
+competence enable them to participate effectively and enjoy the benefits of such activities(R.-S.
+Ma, Sum, Li, et al. 2020; Robinson et al. 2015). These components may help obese college
+students overcome psychological barriers, such as fear of judgment or failure, enhancing their
+willingness to engage in health-promoting behaviors(Howard and Crayne 2019; R. Ma et al.
+2021).
+
+
+
+356
+357
+358
+359
+360
+361
+362
+363
+364
+
+inclusive, and tailored to different skill levels can improve physical literacy, especially in terms
+of interacting with the environment(Jefferies et al. 2019; Jeong and So 2020). Educational
+institutions should consider creating supportive environments that encourage physical activity
+participation among obese students. This includes providing access to facilities, offering diverse
+and non-competitive physical activity options, and fostering a culture of acceptance and
+inclusivity. Mentorship programs and peer support groups can also help students build
+confidence and social connections, further enhancing their physical literacy and wellbeing(Jefferies et al. 2019).
+
+365
+
+Limitations and Future Directions
+
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+
+Despite the valuable insights, several limitations should be acknowledged. The cross-sectional
+design limits the ability to infer causality; longitudinal studies are needed to establish temporal
+relationships and examine how changes in grit and physical literacy over time impact well-being.
+Additionally, the reliance on self-report measures may introduce social desirability and recall
+biases; future research could incorporate objective measures of physical activity and physical
+competence, such as accelerometers or fitness tests, to validate self-reported data. The sample
+was limited to obese college students from universities in Guangzhou, China, which may affect
+the generalizability of the findings; cultural factors may influence perceptions of grit, physical
+literacy, and well-being, so replicating the study in different cultural contexts and including
+diverse populations would enhance the external validity of the results. Furthermore, while the
+study focused on physical literacy as a mediator, other potential mediators or moderators—such
+as social support, self-esteem, or mental health literacy—were not examined; exploring these
+factors could provide a more comprehensive understanding of the mechanisms linking grit and
+well-being, and future studies could also investigate the role of negative psychological traits,
+such as anxiety or depression, which may interact with grit and physical literacy.
+
+382
+
+Conclusions
+
+383
+384
+385
+386
+387
+388
+389
+390
+391
+
+In conclusion, this study highlights the pivotal role of physical literacy in mediating the
+relationship between grit and well-being among obese college students. The findings suggest that
+fostering both psychological traits like grit and competencies like physical literacy can
+significantly enhance well-being in this population. By emphasizing the subdimension of
+interaction with the environment, interventions can be tailored to promote active engagement in
+physical and social activities, thereby leveraging grit to improve mental health outcomes. This
+integrated approach holds promise for addressing the complex challenges faced by obese college
+students, ultimately contributing to their academic success and quality of life.
+
+392
+
+Conflicts of Interest
+
+399
+
+The authors declare no conflict of interest
+
+400
+401
+
+Data availability statement
+
+402
+403
+404
+405
+406
+407
+
+The data supporting this study’s findings are not publicly available due to confidentiality
+agreements with the participants. The research team is committed to ensuring the privacy and
+anonymity of all participants, and data cannot be shared to protect their sensitive information.
+However, specific aggregated data or additional information related to the study may be made
+available upon reasonable request to the corresponding author, subject to ethical approval and
+institutional policies.
+
+408
+409
+
+References
+
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+
+Bowman, Nicholas A., Patrick L. Hill, Nida Denson, and Ryan Bronkema. 2015. “Keep on
+Truckin’ or Stay the Course? Exploring Grit Dimensions as Differential Predictors of
+Educational Achievement, Satisfaction, and Intentions.” Social Psychological and
+Personality Science 6 (6): 639–45. [URL或联系信息隐去]
+Butler, Julie, and Margaret L. Kern. 2016. “The PERMA-Profiler: A Brief Multidimensional
+Measure of Flourishing.” International Journal of Wellbeing 6 (3): 1–48.
+[URL或联系信息隐去]
+Cairney, John, Dean Dudley, Matthew Kwan, Rheanna Bulten, and Dean Kriellaars. 2019.
+“Physical Literacy, Physical Activity and Health: Toward an Evidence-Informed
+Conceptual Model.” Sports Medicine 49 (3): 371–83. [URL或联系信息隐去]
+Caldwell, Karen, Mandy Harrison, Marianne Adams, and N. Travis Triplett. 2009. “Effect of
+Pilates and Taiji Quan Training on Self-Efficacy, Sleep Quality, Mood, and Physical
+Performance of College Students.” Journal of Bodywork and Movement Therapies 13 (2):
+155–63. [URL或联系信息隐去]
+Credé, Marcus, Michael C. Tynan, and Peter D. Harms. 2017. “Much Ado about Grit: A MetaAnalytic Synthesis of the Grit Literature.” Journal of Personality and Social Psychology
+113 (3): 492–511. [URL或联系信息隐去]
+Datu, Jesus Alfonso D., Jana Patricia M. Valdez, and Ronnel B. King. 2016. “Perseverance
+Counts but Consistency Does Not! Validating the Short Grit Scale in a Collectivist
+Setting.” Current Psychology 35 (1): 121–30. [URL或联系信息隐去]
+Disabato, David J., Fallon R. Goodman, and Todd B. Kashdan. 2019. “Is Grit Relevant to
+Well‐being and Strengths? Evidence across the Globe for Separating Perseverance of
+Effort and Consistency of Interests.” Journal of Personality 87 (2): 194–211.
+[URL或联系信息隐去]
+Duckworth, Angela Lee, and Patrick D. Quinn. 2009. “Development and Validation of the Short
+Grit Scale (Grit–S).” Journal of Personality Assessment 91 (2): 166–74.
+[URL或联系信息隐去]
+
+
+
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+
+Edwards, Lowri C., Anna S. Bryant, Richard J. Keegan, Kevin Morgan, and Anwen M. Jones.
+2017. “Definitions, Foundations and Associations of Physical Literacy: A Systematic
+Review.” Sports Medicine 47 (1): 113–26. [URL或联系信息隐去]
+Guerrero, Michelle D., Joel D. Barnes, Jean-Philippe Chaput, and Mark S. Tremblay. 2019.
+“Screen Time and Problem Behaviors in Children: Exploring the Mediating Role of Sleep
+Duration.” International Journal of Behavioral Nutrition and Physical Activity 16 (1):
+105. [URL或联系信息隐去]
+Howard, Matt C., and Matthew P. Crayne. 2019. “Persistence: Defining the Multidimensional
+Construct and Creating a Measure.” Personality and Individual Differences 139
+(March):77–89. [URL或联系信息隐去]
+Jefferies, Philip, Michael Ungar, Patrice Aubertin, and Dean Kriellaars. 2019. “Physical Literacy
+and Resilience in Children and Youth.” Frontiers in Public Health 7 (November):346.
+[URL或联系信息隐去]
+Jeong, Hyun-Chul, and Wi-Young So. 2020. “Difficulties of Online Physical Education Classes
+in Middle and High School and an Efficient Operation Plan to Address Them.”
+International Journal of Environmental Research and Public Health 17 (19): 7279.
+[URL或联系信息隐去]
+KavehFarsani, Zabihollah, Roya Kelishadi, and Kioumars Beshlideh. 2020. “Study of the Effect
+of Family Communication and Function, and Satisfaction with Body Image, on
+Psychological Well-Being of Obese Girls: The Mediating Role of Self-Esteem and
+Depression.” Child and Adolescent Psychiatry and Mental Health 14 (1): 39.
+[URL或联系信息隐去]
+Li, Jingguang, Yajun Zhao, Feng Kong, Shuailing Du, Suyong Yang, and Song Wang. 2018.
+“Psychometric Assessment of the Short Grit Scale Among Chinese Adolescents.”
+Journal
+of
+Psychoeducational
+Assessment
+36
+(3):
+291–96.
+[URL或联系信息隐去]
+Lin, Xiling, Yufeng Xu, Xiaowen Pan, Jingya Xu, Yue Ding, Xue Sun, Xiaoxiao Song,
+Yuezhong Ren, and Peng-Fei Shan. 2020. “Global, Regional, and National Burden and
+Trend of Diabetes in 195 Countries and Territories: An Analysis from 1990 to 2025.”
+Scientific Reports 10 (1): 14790. [URL或联系信息隐去]
+Lubans, David, Justin Richards, Charles Hillman, Guy Faulkner, Mark Beauchamp, Michael
+Nilsson, Paul Kelly, Jordan Smith, Lauren Raine, and Stuart Biddle. 2016. “Physical
+Activity for Cognitive and Mental Health in Youth: A Systematic Review of
+Mechanisms.” Pediatrics 138 (3): e20161642. [URL或联系信息隐去]
+Ma, Ruisi, Ting Liu, Kim Wai Raymond Sum, Tianyu Gao, Minghui Li, Siu Ming Choi, Yan
+Huang, and Wenyi Xiang. 2021. “Relationship Among Physical Literacy, Mental Health,
+and Resilience in College Students.” Frontiers in Psychiatry 12 (December):767804.
+[URL或联系信息隐去]
+Ma, Rui-Si, Raymond Kim-Wai Sum, Ming-Hui Li, Yan Huang, and Xue-Liang Niu. 2020.
+“Association between Physical Literacy and Physical Activity: A Multilevel Analysis
+Study among Chinese Undergraduates.” International Journal of Environmental
+Research and Public Health 17 (21): 7874. [URL或联系信息隐去]
+Ma, Rui-Si, Raymond K.W. Sum, Yu- Na Hu, and Tian-Yu Gao. 2020. “Assessing Factor
+Structure of the Simplified Chinese Version of Perceived Physical Literacy Instrument
+for Undergraduates in Mainland China.” Journal of Exercise Science & Fitness 18 (2):
+68–73. [URL或联系信息隐去]
+
+
+
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+
+Nelson, Melissa C., Mary Story, Nicole I. Larson, Dianne Neumark‐Sztainer, and Leslie A. Lytle.
+2008. “Emerging Adulthood and College‐aged Youth: An Overlooked Age for
+Weight‐related
+Behavior
+Change.”
+Obesity
+16
+(10):
+2205–11.
+[URL或联系信息隐去]
+Ng, Marie, Tom Fleming, Margaret Robinson, Blake Thomson, Nicholas Graetz, Christopher
+Margono, Erin C Mullany, et al. 2014. “Global, Regional, and National Prevalence of
+Overweight and Obesity in Children and Adults during 1980–2013: A Systematic
+Analysis for the Global Burden of Disease Study 2013.” The Lancet 384 (9945): 766–81.
+[URL或联系信息隐去]
+Nie, Yi-Zi, Xu Zhang, Ning-Wei Hong, Chao Zhou, Qian-Qian Huang, Shu-Yan Cao, and Chen
+Wang. 2024. “Psychometric Validation of the PERMA-Profiler for Well-Being in
+Chinese
+Adults.”
+Acta
+Psychologica
+246
+(June):104248.
+[URL或联系信息隐去]
+Okunogbe, Adeyemi, Rachel Nugent, Garrison Spencer, Johanna Ralston, and John Wilding.
+2021. “Economic Impacts of Overweight and Obesity: Current and Future Estimates for
+Eight Countries.” BMJ Global Health 6 (10): e006351. [URL或联系信息隐去]
+Pearl, Rebecca L., Thomas A. Wadden, and John M. Jakicic. 2021. “Is Weight Stigma
+Associated with Physical Activity? A Systematic Review.” Obesity 29 (12): 1994–2012.
+[URL或联系信息隐去]
+Puhl, Rebecca M., and Chelsea A. Heuer. 2010. “Obesity Stigma: Important Considerations for
+Public Health.” American Journal of Public Health 100 (6): 1019–28.
+[URL或联系信息隐去]
+Robinson, Leah E., David F. Stodden, Lisa M. Barnett, Vitor P. Lopes, Samuel W. Logan, Luis
+Paulo Rodrigues, and Eva D’Hondt. 2015. “Motor Competence and Its Effect on Positive
+Developmental Trajectories of Health.” Sports Medicine 45 (9): 1273–84.
+[URL或联系信息隐去]
+Ryan, Richard M., and Edward L. Deci. 2001. “On Happiness and Human Potentials: A Review
+of Research on Hedonic and Eudaimonic Well-Being.” Annual Review of Psychology 52
+(1): 141–66. [URL或联系信息隐去]
+Schure, Marc B., John Christopher, and Suzanne Christopher. 2008. “Mind–Body Medicine and
+the Art of Self‐Care: Teaching Mindfulness to Counseling Students Through Yoga,
+Meditation, and Qigong.” Journal of Counseling & Development 86 (1): 47–56.
+[URL或联系信息隐去]
+Seligman, Martin E. P. 2011. Flourish: A Visionary New Understanding of Happiness and WellBeing. Simon and Schuster.
+Smith, Justin D., Emily Fu, and Marissa A. Kobayashi. 2020. “Prevention and Management of
+Childhood Obesity and Its Psychological and Health Comorbidities.” Annual Review of
+Clinical Psychology 16 (1): 351–78. [URL或联系信息隐去]
+Sun, Xiaomin, Yixuan Li, Li Cai, and Youfa Wang. 2021. “Effects of Physical Activity
+Interventions on Cognitive Performance of Overweight or Obese Children and
+Adolescents: A Systematic Review and Meta-Analysis.” Pediatric Research 89 (1): 46–
+53. [URL或联系信息隐去]
+Tedesqui, Rafael A. B., and Bradley W. Young. 2017. “Investigating Grit Variables and Their
+Relations with Practice and Skill Groups in Developing Sport Experts.” High Ability
+
+
+
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+
+Studies 28 (2): 167–80. [URL或联系信息隐去]
+Totosy De Zepetnek, J.O., J. Martin, N. Cortes, S. Caswell, and A. Boolani. 2021. “Influence of
+Grit on Lifestyle Factors during the COVID-19 Pandemic in a Sample of Adults in the
+United States.” Personality and Individual Differences 175 (June):110705.
+[URL或联系信息隐去]
+Vainio, Mia M., and Daiva Daukantaitė. 2016. “Grit and Different Aspects of Well-Being: Direct
+and Indirect Relationships via Sense of Coherence and Authenticity.” Journal of
+Happiness Studies 17 (5): 2119–47. [URL或联系信息隐去]
+Ward, Zachary J., Sara N. Bleich, Angie L. Cradock, Jessica L. Barrett, Catherine M. Giles,
+Chasmine Flax, Michael W. Long, and Steven L. Gortmaker. 2019. “Projected U.S.
+State-Level Prevalence of Adult Obesity and Severe Obesity.” New England Journal of
+Medicine 381 (25): 2440–50. [URL或联系信息隐去]
+Whitehead, Margaret, ed. 2010. Physical Literacy: Throughout the Lifecourse. 1st ed.
+International Studies in Physical Education and Youth Sport. London ; New York:
+Routledge.
+Wilson, Mathew G, Georgina M Ellison, and N Tim Cable. 2015. “Republished: Basic Science
+behind the Cardiovascular Benefits of Exercise.” Postgraduate Medical Journal 91
+(1082): 704–11. [URL或联系信息隐去]
+World Health Organization. n.d. “Obesity and Overweight.” Accessed September 4, 2024.
+[URL或联系信息隐去]
+Zhong, Chuxian, Meng-Cheng Wang, Yiyun Shou, Fen Ren, Xintong Zhang, Mingshu Li, and
+Wendeng Yang. 2018. “Assessing Construct Validity of the Grit-S in Chinese
+Employees.” Edited by Jesus Alfonso Daep Datu. PLOS ONE 13 (12): e0209319.
+[URL或联系信息隐去]
+
+
+
+Table 1(on next page)
+Tables
+
+
+
+1
+
+2
+3
+4
+
+Table 1. Demographic and physical characteristics of the participants.
+Characteristics (N = 385)
+
+Mean (SD)
+
+Sex (Male/Female)
+Age (Years)
+BMI (kg/m²)
+GPA (5.0)
+Grade (n, %)
+Grade 1
+Grade 2
+Grade 3
+Grade 4
+Only child in family (n, %)
+Yes
+No
+
+233/152
+19.54 (0.84)
+31.17 (1.04)
+2.93 (0.48)
+197 (51.17%)
+121 (31.43%)
+63 (16.36%)
+4 (1.04%)
+368 (95.58%)
+17 (4.42%)
+
+Note: BMI: Body Mass Index; GPA: Grade Point Average.
+Table 2. Descriptive statistics and bivariate correlations
+
+1. Grit
+2. Well-Being (PERMA)
+3. Motivation
+4. Confidence and Physical Competence
+5. Interaction with the Environment
+6. Physical literacy
+5
+6
+7
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+3.21(0.32)
+156.57 (24.36)
+10.77 (2.19)
+10.67 (2.28)
+7.65 (1.32)
+29.10 (5.19)
+
+—
+0.25*
+0.42*
+0.48*
+0.44*
+0.49*
+
+—
+0.45*
+0.45*
+0.40*
+0.48*
+
+—
+0.79*
+0.60*
+—
+
+—
+0.64*
+—
+
+—
+—
+
+—
+
+Note: Correlation coefficients are presented below the diagonal. * indicates p < 0.001.
+Table 3. Mediating effects of grit on well-being through physical literacy
+Total effect
+Direct effect
+Indirect effect
+
+8
+9
+10
+11
+
+Mean (SD)
+
+Effect value
+
+SE
+
+LLCI
+
+ULCI
+
+Effect size
+
+0.76
+0.56
+0.20
+
+0.07
+0.06
+0.06
+
+0.63
+0.45
+0.09
+
+0.89
+0.67
+0.31
+
+73.68%
+26.32%
+
+Note: SE: Standard Error; LLCI: Lower Limit of the Confidence Interval; ULCI: Upper Limit of the Confidence
+Interval.
+Table 4. Regression Analyses in the Parallel Mediation Model
+
+Independent variable
+
+Dependent variable
+
+β
+
+F
+
+R2
+
+Grit
+
+Motivation
+Confidence and physical competence
+Interaction with the environment
+Well-Being (PERMA)
+Well-Being (PERMA)
+
+0.07*
+0.08*
+0.21*
+0.24*
+0.50*
+
+10.86
+12.20
+93.17
+123.27
+533.21
+
+0.03
+0.04
+0.11
+0.06
+0.20
+
+Motivation
+
+
+△R2
+
+0.01
+0.02
+0.06
+0.03
+0.18
+
+
+Confidence and physical competence
+Interaction with the environment
+12
+13
+14
+
+0.49*
+0.50*
+
+652.847
+672.04
+
+0.24
+0.25
+
+0.23
+0.24
+
+Note: * indicates p < 0.001.
+Table 5. Mediating effects of grit on well-being through physical literacy subdimensions
+Total effect
+Direct effect
+M1
+M2
+M3
+C1
+C2
+C3
+
+15
+16
+17
+
+Well-Being (PERMA)
+Well-Being (PERMA)
+
+Effect value
+
+SE
+
+LLCI
+
+ULCI
+
+Effect size
+
+0.76
+0.51
+0.05
+0.04
+0.15
+-0.01
+-0.11
+-0.10
+
+0.07
+0.06
+0.02
+0.02
+0.03
+0.02
+0.02
+0.02
+
+0.63
+0.40
+0.01
+0.01
+0.10
+-0.04
+-0.15
+-0.15
+
+0.89
+0.63
+0.09
+0.08
+0.21
+0.03
+-0.07
+-0.06
+
+—
+67.11%
+6.58%
+5.26%
+19.74%
+—
+—
+—
+
+Note: M1: Indirect effect of motivation; M2: Indirect effect of confidence and physical competence; M3: Indirect
+effect of interaction with the environment; C1: M2-M1; C2: M2-M3; C3: M1-M3
+
+
+
+Figure 1
+Figure 1. Proposed mediation model.
+
+
+
+Figure 2
+Figure 2. Graphical illustration of the parallel mediation model.
+
+
+
+【必须同时阅读的原版面图像】
+materials/pages/page_003.png (p003)
+materials/pages/page_004.png (p004)
+materials/pages/page_005.png (p005)
+materials/pages/page_006.png (p006)
+materials/pages/page_007.png (p007)
+materials/pages/page_008.png (p008)
+materials/pages/page_009.png (p009)
+materials/pages/page_010.png (p010)
+materials/pages/page_011.png (p011)
+materials/pages/page_012.png (p012)
+materials/pages/page_013.png (p013)
+materials/pages/page_014.png (p014)
+materials/pages/page_015.png (p015)
+materials/pages/page_016.png (p016)
+materials/pages/page_017.png (p017)
+materials/pages/page_018.png (p018)
+materials/pages/page_019.png (p019)
+materials/pages/page_020.png (p020)
+
+图像均为题内相对路径；运行器须把文件实际作为图像传入，不能只把文件名作为文字。输出格式见input.json。

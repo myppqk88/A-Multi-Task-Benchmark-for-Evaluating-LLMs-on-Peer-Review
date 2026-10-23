@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F122_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "跨文化测量",
+    "样本与翻译",
+    "因子模型与可靠性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对本地与全球SEEQ文献、翻译、样本量和伦理程序的补充；增加背景文献不同于完成跨文化测量等值检验。",
+    "核对CFA模型/拟合指标和Cronbach α的实际呈现，内部一致性不能单独证明全部效度。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "1. Clarity and Accuracy of Presentation and Citation of Current Literature\nThe introduction does not reference relevant literature, citing only a few sources such as AlMuslim and Arifin (2015) and Constantinou and Wijnen-Meijer (2022). This is because authors\nfailed to adequately connect the literature about students appraisal or evaluation of teaching\nperformances (presumably what the authors aim",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for your insightful feedback. In response to your first comment regarding the\nliterature review’s scope and relevance, I have significantly revised the introduction and\nliterature review to address the areas you highlighted:\n1. I expanded the discussion on the role of student evaluations in teaching quality\nassessment, incorporating more recent literature.\n2. I included additional studies on the cross-cultural adaptation of psychometri",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "1. Introduction\nCourse and program evaluation is a quality control process performed internally by all colleges and universities.\nStudent evaluations of teaching (SET) are performed by delivering questionnaires that employ rating scales, such as\nthe Likert scale. These scales enable students to indicate their degree of either agreeing or disagreeing with certain\nstatements. While SETs were originally designed for evaluating courses and programs, they have since been used to\nassess teaching effectiveness. Various teaching aspects, including group interaction, preparation and organization, and\nstudent feedback, are often evaluated when evaluating the effectiveness of a teacher (Constantinou & Wijnen-Meijer,\n2022). The data collected through SETs can provide valuable insights into the need for modifying the instructional\nmaterial or teaching approach used in a specific course. SETs have also been utilized to assist make valuable decisions on\nthe development of academic careers. Prospectiv",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "1. Introduction\nCourse and program evaluation is a critical quality control process performed by all colleges and universities. Student\nevaluations of teaching (SET), typically administered through questionnaires with rating scales (e.g., Likert scales),\nenable students to express their degree of agreement or disagreement with various statements. Initially designed for\nevaluating courses and programs, SETs have expanded to assess teaching effectiveness (Marsh, 1987). Marsh (1987)\ndefines teaching effectiveness as the assessment of various instructional components, including clarity of presentation,\ninstructor enthusiasm, organization, interaction with students, and feedback provision. These factors reflect pedagogical\nskills beyond the subject matter and demonstrate how SETs assess both course quality and teaching effectiveness.\nOne widely used tool in educational research is the Student Evaluation of Educational Quality (SEEQ) developed by\nMarsh (1982). When developing SEEQ, several a",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "3. Results\n3.1 Reliability of internal consistency\nTo determine the internal consistency reliability of each SEEQ scale, Cronbach’s alpha was used. The output was\nassessed using the corrected item-total correlation or alpha if an item was omitted (Field, 2013). The reliability (alpha)\ncoefficients for the eight 30-item SEEQ scales are presented in Table 1.\n3.2 Confirmatory factor analysis\nConfirmatory factor analysis (CFA) is the most suitable technique for cross validating the factor structure of a test, as per\nByrne (2001). Using the AMOS version 26.0 statistical tool, a covariance matrix (Figure 1) was used to evaluate the\nvalidity of the item allocation to the eight SEEQ measures (IBM Corp, 2024a). The eight-factor structure proposed for the\noriginal scale has been confirmed by the Arabic version of SEEQ’s acceptable CFA indices (Figure 1).\n4. Discussion\nThe revised CFA model’s goodness-of-fit indices indicate a strong fit to the study data: χ2 (df =349) = 3854.401,\nCFI = .963, GFI",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "3.2 Confirmatory factor analysis\nConfirmatory factor analysis (CFA) is the most suitable technique for cross validating the factor structure of a test, as per\nByrne (2001). Using the AMOS version 26.0 statistical tool, a covariance matrix (Figure 1) was used to evaluate the\nvalidity of the item allocation to the eight SEEQ measures (IBM Corp, 2024a). AMOS v26 was selected due to its\nsophisticated modeling capabilities and user-friendly interface, which make it well-suited for managing complex\nstructural equation models. The eight-factor structure proposed for the original scale has been confirmed by the Arabic\nversion of SEEQ’s acceptable CFA indices (Figure 1).\n4. Discussion\nThe revised CFA model’s goodness-of-fit indices indicate a strong fit to the study data: χ2 (df=349)=3854.401,\nCFI=.963, GFI=.970, PCOLOSE=1.00, and RMSEA=.032. These indices all exceeded thresholds. Cronbach’s Alpha\nshowed 0.935 reliability, demonstrating high internal consistency. However, applying Cronbach’s al",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

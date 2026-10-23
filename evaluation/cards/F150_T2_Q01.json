@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "F150_T2_Q01",
+  "paper_id": "ORE:3-220",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F150_T2_Q01/input.json",
+  "input_sha256": "c6efe775a9082bdd486f1118ad2e18579f36a0fed52da6c9e90f8610b3bb947e",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F150_T2_Q01/input.json",
+      "source_sha256": "c6efe775a9082bdd486f1118ad2e18579f36a0fed52da6c9e90f8610b3bb947e",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          1069
+        ]
+      },
+      "quote": "Anyway, the text effectiveness is constrained by the absence of contemporary literature, limiting\ninsights into current trends and challenges surrounding the child-centric approach in the\neducation of migrant and refugee children. Incorporating more recent sources is imperative to\ncapture evolving policies and to assess the real-time implications for social cohesion and children's\nrights. So, I would suggest to find recent publications if there are any understanding and\naddressing the socio-educational inclusion of migrant and refugee children through a child-centric\napproach is of paramount importance in fostering cohesive and inclusive societies. This topic\nholds significance as it directly influences the well-being and development of vulnerable\npopulations, shaping their access to fundamental rights and opportunities. A comprehensive\nexploration of this subject not only contributes to academic discourse but also informs policy and\npractice, playing a crucial role in creating educational environments that promote diversity, equity,\nand social harmony.",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F150_T2_Q01/input.json",
+      "source_sha256": "c6efe775a9082bdd486f1118ad2e18579f36a0fed52da6c9e90f8610b3bb947e",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          1027
+        ]
+      },
+      "quote": "Dear reviewer, We would like to sincerely thank you for your thoughtful and\nconstructive feedback on our manuscript. We have carefully considered your comments and\nhave made the necessary revisions. Below is a summary of the changes made:\nIncorporation of Recent Literature:\nWe have updated the manuscript by incorporating more recent and relevant\nsources to provide a more comprehensive analysis of current policies and\nchallenges surrounding the child-centred approach in the education of migrant\nand refugee children.\nExpanded Discussion on the Relevance of the Topic:\nWe have expanded our exploration of how a child-centred approach can\nenhance the socio-educational inclusion of migrant and refugee children.\nContribution to Practice:\nWe discuss how the findings can help create educational environments that\npromote diversity, equity, and social harmony.\nWe hope that these revisions address your concerns and improve the quality and clarity of\nthe manuscript. Thank you again for your valuable feedback.\n○\n\n○\n\n○\n\n○\n\n○\n\n○",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；移民与难民儿童社会教育融合的儿童中心跨文化理论综述。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。；回应文字充分性",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_2_3": "2档识别部分事实；3档须准确引用与本点有关的关键材料：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_3_4": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；移民与难民儿童社会教育融合的儿童中心跨文化理论综述。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。；回应文字充分性",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只识别部分要求或复述答复；3档须准确处理：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_2_3": "2档只识别部分要求或复述答复；3档须准确处理：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_3_4": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；移民与难民儿童社会教育融合的儿童中心跨文化理论综述。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。；回应文字充分性",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_2_3": "2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：回复仅声称加入近期资料、扩展关联和实践讨论，未列任何资料或新论点；可以判部分/不足，不能判近期覆盖已证。",
+      "boundary_3_4": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：把核心近期文献要求与附带社会意义区分；篇幅和礼貌不等于证据。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "focal_concern_response_independent_report"
+}

@@ -1,0 +1,79 @@
+{
+  "task_id": "D16_T2_Q01",
+  "condition": "T2_response_only",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。",
+  "input": {
+    "comment_text": "The methodology section is sufficiently detailed in terms of the data collection process, participant demographics, and how Chinese checkers was integrated into the curriculum. However, more specific details on the measures of “enthusiasm” and “engagement” could enhance reproducibility.\nThe study’s results can largely be replicated based on the description, but certain subjective measurements (e.g., student enthusiasm) require further clarification to ensure reproducibility by others.",
+    "response_text": "The authors appreciate the thorough review and constructive feedback provided. We have made substantial revisions to address the key concerns, particularly regarding effect size interpretation, measurement clarity, and cultural influence documentation. The revised manuscript now presents a more balanced discussion of the intervention's impact, acknowledging the modest yet significant effects while providing clearer context for their practical implications in educational settings.\nSpecial attention has been given to strengthening the methodology section, especially regarding the measurement of student engagement and enthusiasm. We have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility. The revised version also provides more robust evidence for cultural influences on strategic thinking by incorporating additional quantitative data and theoretical frameworks from Newton (2014) and Ho (2020).\nAdditionally, we have expanded the discussion section to include comparisons with other pedagogical approaches and provided a more nuanced interpretation of the statistical findings, particularly regarding their educational significance and practical applications in political science education.",
+    "necessary_context": "将跳棋用于比较政治课程的教学干预研究；提供作者完整一段整体回复。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

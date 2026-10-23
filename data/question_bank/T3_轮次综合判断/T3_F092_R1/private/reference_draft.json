@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F092_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究意义与外推",
+    "概念呈现"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审要求从特定项目报告提升到博士教育启示，作者称增加跨国博士培养模式讨论；核对后稿是否超越项目介绍。",
+    "缩略语减少和术语表属于呈现改进，不等于代表性或跨地区适用性证据增加。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This article is potentially very interesting to a wide range of readers however the style hampers its\nability to succeed. There are, in my view, two issues that need attention to ensure that this\nimpressive study reaches the audience it should.\n1. The incredibly high number of acronyms needs attention. The reader has to constantly work\nbackwards and forward to make sense of the article.\n2. The art",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you very much for your positive and constructive feedback on\nour manuscript. Please find our answers to your raised points and comments in a point-bypoint format below. Any changes to the manuscript are highlighted via track-change-mode\nas well as appended to each response.\n1. The incredibly high number of acronyms needs attention. The reader has to\nconstantly work backwards and forward to make sense of the article.\nThank yo",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "well-received and appreciated as one of the noteworthy advantages in the ITN model. Notably, though 15–20% ESRs\ndid not benefit from this multidisciplinary approach due to\nlack of common research interest, lack of other supervisors\nwithin their respective ITNs with the required subject matter\nexpertise, and difficulties with host institutions preventing\ncollaborations. It is somewhat surprising that in spite of the\nemphasis on interdisciplinary research in ITNs, there is still\na lack of experts to seek support from or to collaborate with.\nA potential solution could be further enlarging the ITN network based on the research projects undertaken by the doctoral\ncandidates so that adequate support can be provided. Although\nmost doctoral candidates were satisfied with their collaborations, they were mostly limited to other ESRs or academic\norganisations within their own ITNs. This is an expected outcome given that with 15 ESRs and supervisors and multiple\nhost institutions, the ITNs within ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "international experiences prepared some ESRs better for the\nmobility related challenges and consequently exerted little\nimpact on their academic performance, physical, psychological\nand overall well-being. Nonetheless, mobility-related challenges did have moderate to severe impact on the majority\nESRs. Support for settling in the new country mostly came from\nhost institutions and teams. This is perhaps one of the reasons\nthat many ESRs from both the tinnitus-related and other ITNs\nopine that the ITN experience is largely dependent on the host\ninstitution. To participate in MSCA-ITNs it is mandatory to\nmove to a new country. However, no settling allowance is provided to ESRs and about 90.0% of ESRs agreed that an initial\nallowance would be helpful.\nAltogether, the perspectives of ESRs from other ITNs\nresonated with those of ESIT and TIN-ACT ESRs. The scientific and personal supervision was satisfactory for most ESRs\nfrom all ITNs, and the multidisciplinary ITN framework was\nwell-receive",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Under the umbrella of Horizon 2020, the MSCA represents a\ndedicated programme for supporting international and interdisciplinary education and mobility throughout Europe, promoting research careers in all scientific fields by providing\nfellowships to young academics from all over the world. MSCA\noffers several programmes of research support. The two main\nmeans of funding intended for early career or Early Stage\nResearchers (ESRs) are International Training Networks (ITNs)\nand Individual Fellowships, depending on the current educational and career stages of an individual. Individual Fellowships\nare directed towards individual postdoctoral researchers\nafter the completion of a PhD. In this paper, we discuss the\nMSCA-ITNs which aim to provide PhD training. The MSCA-ITN\nhas a unique structure where multiple partner organisations\nincluding universities, research institutions, research infrastructures, businesses, small to medium enterprises, and other establishments from different countries",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "within a defined training framework (Doonan et al., 2018). The\nEuropean Union’s (EU) Innovative training network (ITN)\nunder the Marie Skłodowska-Curie Actions (MSCA) is an example of a multinational interdisciplinary PhD programme for\ntraining new generations of researchers.\nA major objective of the European Commission (EC) is to promote innovation and sustainability through cutting-edge research\nin its member states and affiliated countries i.e., the European\nResearch Area. Horizon 2020, set out to cover the period of\n2014 to 2020, is a central instrument of the EC’s eighth strategic funding programme in the area of innovation, research\nand technological development. The aims of Horizon 2020 are\ngrouped under three pillars, “Excellent Science”, “Industrial\nLeadership”, and “Societal Challenges”, with an overall budget\nestimated at around 80 billion euros.\nUnder the umbrella of Horizon 2020, the MSCA represents a\ndedicated programme for supporting international and\ninterdisciplinary e",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

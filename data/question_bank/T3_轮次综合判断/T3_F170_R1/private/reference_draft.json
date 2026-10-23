@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F170_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "法律文本分析",
+    "概念与论证",
+    "形式与实质区分"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对Act大小写、语法更正及资源诅咒理论等段落的实际变化；冗长赞誉不等于清晰覆盖要求。",
+    "文内对制度与实施差距的论证须有材料，不能把历史法案评议当题外当前法律指导。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article discusses a contemporary issue relating to the Nigerian petroleum industry. It\nexamines the Petroleum Industry Act 2021 vis-a-vis the prospects, challenges, and the way\nforward in addressing the problems identified in the article.\nThe background, methods, and results are okay but there are some minor editorial corrections\nto be made on page 1 and other pages of the article. For instanc",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nAUTHORS’ RESPONSES\nWe extend our deepest appreciation for the meticulous review and valuable suggestions\nprovided by the esteemed reviewer. Your expertise and keen eye have undeniably\nenhanced the quality of our manuscript, and we are sincerely grateful for your time and\neffort.\n\n\n\nThe article delves into a pressing contemporary issue, pertaining to the Nigerian petroleum\nindustry, and meticulously examines the Petroleum Industry Act 2021 in rel",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "KOC is the largest corporation in terms of revenue and is in charge of the production of petroleum. By 2040, the KPC\nplans to boost its capacity for oil production to 4.75 million barrels per day. Additionally, KPC declared plans to boost\nnatural gas output to 4 billion cubic feet per day by 2030. Kuwait is one of the largest producers of oil and has one of the\nlargest proven reserves of crude oil in the world, as previously stated. In the past, it flared off a considerable amount of its\nassociated gases. It is also important to mention that KOC has made significant progress in recent years in reducing gas\nflaring in its operations. Kuwait has made efforts over the past decades to limit gas flaring in order to both cushion the\neffects of climate change, thereby executing a significant reduction in its carbon emissions, and provide its power plants\nwith gas supplies to satisfy the country’s fast-rising energy demand. The residual gas flaring levels decreased by roughly\n40% between 2014 ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The study will be useful to the Federal Government of Nigeria, policymakers in the oil and gas sector, energy\npractitioners, researchers, and scholars in policy formulation and enactment of legal regime regulating the oil and gas\nindustry by offering guidelines for legislators on the best approach to employ when drafting a sustainable oil and gas legal\nframework to promote transparency, energy diversification by incorporating renewable energy and other low-carbon\nenergy sources into the nation’s energy mix, and active citizen participation in the development of low-carbon energy\ntechnologies being a global clarion call for low-carbon energy utilisation.\nThe study is organized into five sections, with the introduction and statement of the problem in the first section.\nSection two is the literature review, including resource ownership theory and utilitarian theory. Section three outlines the\nmethodology. Section four presents the results by deliberating on the challenges of the Nigeria’s",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Olujobi OJ: Analysis of the Legal Framework Governing\nGas Flaring in Nigeria’s Upstream Petroleum Sector\nand the Need for Overhauling. MDPI Journal of Social Sciences.\n2020; 9: 132.",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Obaje A, et al.: The Nigerian Petroleum Industry Act, Frontier\nBasins Exploration and the Global Energy Transition. Energy and\nEarth Science. 2022; 5(1): 1–5.\nPublisher Full Text",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

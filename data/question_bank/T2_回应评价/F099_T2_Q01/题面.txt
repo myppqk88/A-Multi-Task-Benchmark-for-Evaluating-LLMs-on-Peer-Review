@@ -1,0 +1,83 @@
+F099_T2_Q01
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+{
+  "task_id": "F099_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "input": {
+    "comment_text": "to update Figure 4. Word cloud, putting together area and areas; problem and problems;\ncompany and companies, recover and recovery",
+    "response_text": "We would like to express our sincere gratitude to Reviewer 2 for the positive evaluation of\nour manuscript and for the thoughtful and constructive suggestions, which have helped us\nimprove both the clarity and technical accuracy of the paper. Below we detail how each\ncomment was addressed:\n1.\nGeneral comments: Response:\nA List of Acronyms at the beginning of the paper for reader clarity would be a great\nhelp, we will check with the editors.\nA comprehensive English (UK) revision of the entire manuscript has been carried out\nto improve fluency, grammar, and terminology consistency.\n2.\nIntroduction: Response:\nIn accordance with the reviewer’s suggestion, we have replaced the term “ornamental\nrocks” with “ornamental stones” or “dimension stones” throughout the text.\nThe symbol “€” was removed from “€459,632 (103€),” as recommended.\n○\n\n○\n\n○\n\n○\n\n3.\n\nStudy area: Response:\nhe temperature range now reads “between 13°C and 15°C,” correcting the lowercase\n“c” and improving consistency with scientific formatting standards.\n4.\nMethods: Response:\nThe unnecessary comma was removed from the sentence “The second stage\nconsidered the search for extractive companies operating in the region and data\ncollection (semi-structured interviews)” making the sentence more grammatically\ncorrect and fluid.\n5.\nResults and analysis: Response:\nWe have simplified the sentence as advised, keeping only “to be analyzed” and\ndeleting “to be specified.\n6.\nDiscussion: Response:\nThe market analysis paragraph has been summarized to focus on the key findings:\nthe export orientation of production, the predominance of the Asian market, and the\nlimited domestic distribution.\nThe description of the exploitation technique has been revised to ensure technical\naccuracy. The new version clarifies that the quarrying process involves creating\nbenches with diamond wire saws, cutting stone blocks that are subsequently\nprocessed in working plants. It also notes that portions of rock not suitable as blocks\nare treated as waste rock for abandoned quarry projects, as per the reviewer’s\ncorrection.\nWe are deeply grateful for the reviewer’s detailed technical insights, which have improved\nthe scientific precision, structure, and readability of our manuscript.\n○\n\n○\n\n○\n\n○\n\n○\n\n\n\n[Next author response post]\n\n\nDear reviewer, We thank you very much for the careful reading of the\n\n\n\n\nmanuscript and for the constructive and valuable comments provided. All remarks and\nsuggestions have been thoroughly considered and addressed in the revised version of the\nmanuscript, which has been submitted to the journal’s editor. We believe that these\nrevisions have improved the clarity and quality of the work. [closing signature omitted]",
+    "necessary_context": "葡萄牙自然公园采石与保护冲突的社会环境研究。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

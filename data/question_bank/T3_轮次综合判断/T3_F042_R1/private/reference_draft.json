@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F042_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "语言偏差",
+    "检索策略与可复核性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对英语限制的资源理由、未覆盖国家的局限，以及系统检索27篇和手检35篇的差异是否真实解释。",
+    "作者引用已有版本说明补充文字，必须按当轮日期核对其所指后稿，不能将后来发布的报告倒灌成触发前次修订。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Echoing the other two reviewers, the choice of limiting the review to English language journal\narticles should be discussed and justified.\nFurther discussion of how the ‘manual searches’ and ‘further additions’ differed would be\nappreciated specifically regarding peer recommendations.\nOverall, this systematic review is high quality and makes important contributions.\nAre the rationale for, and obje",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear Dr Danielle Jane Kerrigan Thank you for offering your time and valued expertise for\npeer reviewing in the Open Access Europe’s approach as well as for finding my contribution\nto be of high quality. Following the previous comments that I have already received, I added\nin version 2 of this paper the following. In response to the exclusive use of English, the\nfollowing text was added:\nUnder “Preliminary decisions”: (1) “… the limited resources",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "AND tenant*) OR (private AND landlord*) OR\n(tenant* AND landlord*) OR (landlord*-tenant* OR\ntenant*-landlord*)) AND TITLE-ABS-KEY ((housing\nOR home OR house OR flat OR apartment OR\nflat-share OR (hous* AND “in multiple occupation”)\nOR (rooming AND hous*) OR (boarding AND hous*)))\nAND TITLE-ABS-KEY ((qualitative OR interview OR\nethnograph* OR “case study” OR “case studies”)))\nAND (EXCLUDE (AFFILCOUNTRY, “United Kingdom”) OR EXCLUDE (AFFILCOUNTRY, “United\nStates”) OR EXCLUDE (AFFILCOUNTRY, “Australia”)\nOR EXCLUDE (AFFILCOUNTRY, “Canada”) OR\nEXCLUDE (AFFILCOUNTRY, “Sweden”) OR EXCLUDE\n(AFFILCOUNTRY, “Germany”) OR EXCLUDE (AFFILCOUNTRY, “Netherlands”) OR EXCLUDE (AFFILCOUNTRY, “Italy”) OR EXCLUDE (AFFILCOUNTRY,\n“Japan”) OR EXCLUDE (AFFILCOUNTRY, “New\nZealand”) OR EXCLUDE (AFFILCOUNTRY, “Denmark”) OR EXCLUDE (AFFILCOUNTRY, “Ireland”)\nOR EXCLUDE (AFFILCOUNTRY, “Norway”) OR\nEXCLUDE (AFFILCOUNTRY, “Spain”) OR EXCLUDE\n(AFFILCOUNTRY, “Austria”) OR EXCLUDE (AFFILCOUNTRY, “Belgium”) OR EXCLUDE (AF",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "As the 27 references were dispersed across a wide range of\njournals, with none featuring more than twice, specific journals were selected for further manual searches using the\nbroad keywords rent* and housing. These were: Housing\nStudies and the International Journal of Housing Policy for\ntheir international focus on housing; Geoforum and Urban\nStudies for their international albeit broader substantive focus;\nand Habitat International for its emphasis on low-income\ncountries. Google Scholar was also used. Searches were\nconducted between January 12 and 16, 2023. As a result, 35\nadditional references were incorporated, bringing the total to\n62. Peer recommendations produced no additions to the sample,\nwhich reinforces confidence in the relevance of the sample.\nThe apparently unusual fact that systematic searches returned\n27 relevant references compared to the 35 returned by manual\nsearches reflects a series of decisions that I have strategically\ntaken to align the scope of the review wit",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The 2008–2010 Global Financial Crisis and the Covid-19\npandemic have highlighted rental housing as a significant\nsource of inequalities in wealth, health, and well-being\nworldwide, often failing to provide many tenants with a true\nsense of ‘home.’ A burgeoning recent academic literature\nfocusing on Anglo-Saxon countries and older EU member states\nhas revealed troubling issues, such as poor housing quality,\ninsecurity, eviction experiences and anxieties, and economic\nstress. These findings raise valid concerns about tenants’\nwell-being in the less institutionalised and therefore riskier\nprivate renting sectors (PRS), where informal transactions\nelevate risks and conceal vulnerabilities from state action.\nThe project titled “The Affective Economies of Emerging Private Renting Markets: Understanding Tenants and Landlords\nin Postcommunist Romania (AFFECTIVE-PRS)” addresses\nthese important concerns. The project aims to explore the affective economies that connect private tenants and landlor",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "enables the synthesis of large amounts of diverse qualitative\ndata and facilitates critical engagement with the assumptions\nthat shape and inform a body of research’ (Farias & Laliberte\nRudman, 2016 p:33).\nSeveral systematic and scoping reviews have focused on the\neveryday experiences of private tenants in the high-income\nstates of the Minority World, particularly in the well-researched\nAnglo-Saxon countries (Chisholm et al., 2020; Garnham &\nRolfe, 2019; McCarthy & Simcock, 2024; Rolfe et al., 2023;\nSoaita et al., 2020; Soaita et al., 2022; Woodhall-Melnik &\nDunn, 2016). In contrast, only one scoping review on rental\narrangements in the Majority World has been identified, and\nit dates back nearly 30 years (Rakodi, 1995). Considering\nthat the challenges faced by private tenants and landlords in\nthe Majority World are likely to be more salient and fundamentally different from those elsewhere, assembling this\nexpectedly small and fragmented literature for synthesis holds\nsignificant acade",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

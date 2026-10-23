@@ -1,0 +1,53 @@
+Article: Open Research Europe | Open Access Publishing Platform
+DOI: 10.12688/openreseurope.19238.1
+Version: 1
+Reviewer: Luca Di Persio
+Status: approved with reservations
+Date: 2025-02-24
+Report ID: 50578
+============================================================
+
+The paper titled
+Divergence and Aggregation of ESG Ratings: A Survey
+by Arianna Agosto and Alessandra Tanda presents an extensive review of the literature concerning the divergence of Environmental, Social, and Governance (ESG) ratings and the methodologies proposed for their aggregation.
+The authors highlight the inconsistencies observed across ESG ratings provided by different agencies, emphasizing the implications of such discrepancies on investment decision-making, regulatory policies, and corporate sustainability strategies. The study adopts a methodological approach grounded in a systematic review of previous works, critically evaluating the statistical and econometric techniques employed to assess and consolidate ESG ratings into a unified indicator.
+The main findings suggest that ESG ratings exhibit a low level of correlation across different providers, which undermines their reliability as a basis for investment strategies. The sources of such divergence can be traced back to variations in scope, measurement techniques, and weighting schemes employed by different agencies. In response to this issue, various aggregation techniques have been proposed, ranging from classical statistical approaches, e.g., Principal Component Analysis (PCA) and Ordinary Least Squares (OLS) regression, to more sophisticated ML-based methods, including Bayesian aggregation and gradient boosting algorithms such as XGBoost. The article underscores that no single method has emerged as universally optimal, thereby necessitating further research into the design of robust aggregation techniques that enhance the reliability of ESG ratings.
+It is worth mentioning that the paper provides a well-structured discussion of ESG rating divergence and its consequences. Nevertheless, certain aspects require further refinement to strengthen its scientific rigour. In particular, I suggest the Authors to better formalise the theoretical framework to structure the discussion around ESG rating divergence. A rigorous mathematical model could be introduced to formalize the problem of ESG rating inconsistency. E.g., let \( R_i^j \) denote the ESG rating assigned to firm \( i \) by provider \( j \). The divergence between two providers \( j \) and \( k \) for a given firm \( i \) could be measured through a divergence metric, such as the Euclidean norm:
+\[
+D_{ik} = \sqrt{\sum_{j=1}^{N} (R_i^j - R_i^k)^2}
+\]
+where \( N \) represents the total number of ESG rating providers under consideration. Analogously, as an alternative to the latter, one could consider a Mahalanobis distance approach to account for the covariance structure between ratings.
+Moreover, theoretical discussions on PCA, Bayesian aggregation, and ML-methods provide valuable insights, but their effectiveness in synthesizing ESG ratings remains an open question. An empirical study could be designed in which multiple ESG rating datasets are aggregated using different methodologies, and the resulting aggregated scores are evaluated against financial market outcomes such as credit spreads or stock returns. Specifically, given a set of ESG ratings \( R_{i}^j \), an aggregated ESG score \( S_i \) could be constructed as a linear combination:
+\[
+S_i = \sum_{j=1}^{N} w_j R_i^j
+\]
+where \( w_j \) are weights derived through various optimization approaches, such as Bayesian updating or regression models that maximize correlation with an independent measure of firm sustainability.
+It seems to the underwritten that the lack of such a discussion also weakens the practical applicability of the study. Indeed, ML-techniques such as XGBoost, while powerful in their predictive capabilities, often suffer from low interpretability, making it difficult for investors to understand the underlying structure of the aggregated ESG scores. A possible solution could be to consider SHAP (SHapley Additive exPlanations) values or partial dependence plots to dissect the contribution of individual ESG components to the final score.
+Let me also consider that the divergence of ESG ratings can be examined using statistical measures of dispersion, e.g. (standard deviation)
+\[
+\sigma_i = \sqrt{\frac{1}{N} \sum_{j=1}^{N} (R_i^j - \bar{R}_i)^2}
+\]
+where \( \bar{R}_i \) is the mean ESG rating for firm \( i \), provides an indication of variability. If the standard deviation is high, it implies substantial disagreement among providers. Another approach is to use clustering techniques, such as k-means or hierarchical clustering, to group firms based on rating similarity, revealing whether discrepancies arise due to fundamental methodological differences among rating agencies.
+Analogously, a regression-based approach could also be employed to quantify the determinants of ESG rating divergence. A mixed-effects model of the form:
+\[
+D_{ij} = \alpha + \beta_1 X_{i} + \beta_2 Y_{j} + \epsilon_{ij}
+\]
+where \( X_{i} \) represents firm-level characteristics, and \( Y_{j} \) represents rating-provider-specific attributes, e.g., methodology used and data sources, which could identify the primary drivers of rating inconsistencies.
+Summing up, the submitted paper provides a critical review of ESG rating divergence and aggregation methods, yet it could benefit from a more rigorous theoretical and empirical foundation. It would also be interesting if the Authors could better underline/propose possible future research aiming at, e.g., developing hybrid models that integrate statistical, Bayesian, and ML-approaches while maintaining interpretability. Moreover, the relationship between ESG scores and financial performance should be further explored through dynamic asset pricing models that incorporate ESG factors as state variables.
+
+
+--- Structured Questions ---
+
+Q: Is the topic of the review discussed comprehensively in the context of the current literature?
+A: Yes
+
+Q: Are all factual statements correct and adequately supported by citations?
+A: Yes
+
+Q: Is the review written in accessible language? 
+A: Yes
+
+Q: Are the conclusions drawn appropriate in the context of the current research literature?
+A: Yes
+
+Areas of research: Stochastic analysis and applications, financial arguments included. Machine learning and application to time series forecasting, LLM-based models, calibration methodologies.

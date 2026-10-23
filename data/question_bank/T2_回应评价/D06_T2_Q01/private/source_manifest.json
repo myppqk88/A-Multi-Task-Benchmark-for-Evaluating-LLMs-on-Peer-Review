@@ -1,0 +1,116 @@
+{
+  "task_id": "D06_T2_Q01",
+  "paper_id": "ORE:4-24",
+  "dev_id": "D06",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/round_1/v1_review_02_APPROVED_WITH_RESERVATIONS_Esra_Kurul_2024-03-06.txt",
+      "sha256": "5b9af28200a11fa05cf3387f3e95b780706dd0c2523403ccbe074c8049f847a5",
+      "locator_lines": [
+        11,
+        11
+      ],
+      "locator_chars_half_open": [
+        538,
+        826
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/round_1/v1_review_02_author_response_1_author.txt",
+      "sha256": "155d52742e3daeef72f9f6c6eb1dd53c28e7bd86ab54f6f15adb9e33d9e1e46d",
+      "locator_lines": [
+        10,
+        10
+      ],
+      "locator_chars_half_open": [
+        1558,
+        1935
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/round_1/v1_review_02_APPROVED_WITH_RESERVATIONS_Esra_Kurul_2024-03-06.txt",
+      "source_sha256": "5b9af28200a11fa05cf3387f3e95b780706dd0c2523403ccbe074c8049f847a5",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "5b9af28200a11fa05cf3387f3e95b780706dd0c2523403ccbe074c8049f847a5",
+      "source_char_range_half_open": [
+        538,
+        826
+      ],
+      "source_line_range_inclusive": [
+        11,
+        11
+      ],
+      "selected_text_before_cleaning": "The structural characteristics of the 'networks' of the InnoRenew CoE on these three different channels, have been provided at the beginning of the Materials and methods section. This demographic data has not been used to evaluate the 'measures of engagement' on this different platforms.",
+      "input_segment_after_cleaning": "The structural characteristics of the 'networks' of the InnoRenew CoE on these three different channels, have been provided at the beginning of the Materials and methods section. This demographic data has not been used to evaluate the 'measures of engagement' on this different platforms.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/round_1/v1_review_02_author_response_1_author.txt",
+      "source_sha256": "155d52742e3daeef72f9f6c6eb1dd53c28e7bd86ab54f6f15adb9e33d9e1e46d",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "155d52742e3daeef72f9f6c6eb1dd53c28e7bd86ab54f6f15adb9e33d9e1e46d",
+      "source_char_range_half_open": [
+        1558,
+        1935
+      ],
+      "source_line_range_inclusive": [
+        10,
+        10
+      ],
+      "selected_text_before_cleaning": "Answer 2: This was not the goal of our study, however we provided a description of the audience at the InnoRenew CoE social media channels, since we are aware that the characteristics of the audience is important for the engagement. We rewrote the Discussion section in order to enhance this aspect as a limitation of our study, and added the recommendation for future studies.",
+      "input_segment_after_cleaning": "Answer 2: This was not the goal of our study, however we provided a description of the audience at the InnoRenew CoE social media channels, since we are aware that the characteristics of the audience is important for the engagement. We rewrote the Discussion section in order to enhance this aspect as a limitation of our study, and added the recommendation for future studies.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [
+    {
+      "pdf_source": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/v1_manuscript.pdf",
+      "pdf_sha256": "2f9e15a34dcdc1ea0a9a15751c021d04b76b64b0a071308a005637075c6a2c30",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_4-24/private/extracted/S007.txt",
+      "matched_response_start": 60151,
+      "author_header_start": 58560,
+      "author_header": "Author Response 21 May 2024 Lea Primožič The authors are appreciating the critical view of the manuscript and acknowledge the identified im",
+      "pdf_page_at_match": [
+        17
+      ],
+      "author_block_end": 61610,
+      "match_context": "e the 'measures of\nengagement' on this different platforms.\nAnswer 2: This was not the goal of our study, however we provided a description of the audience\nat the InnoRenew CoE social media channels, since we are aware that the characteristics of the\naudience is important for the engagement. We rewrote the Discussion section in order to enhance\nthis aspect as a limitation of our study, and added the recommendation for future studies.\nPoint 3: The discussion is mainly based on the number of impressions, shares and\ncomments. The differences between these 'measures of engagement' by different users has\nnot been established in enough depth. For example, there is a claim that \"users may not be\ncomfortable commenting on topics connected to sustainable construction, or that they are\nnot interested in engaging in conversations on social media to develop new relationships.\"\nAs far as the paper is concerned, this correlation is now based on any evidence.\nAnswer 3: W"
+    },
+    {
+      "pdf_source": "data/originals/ore/social_sciences/4-24_What_type_of_social_media_posts_about_sustainable_construction_is_bett/v2_manuscript.pdf",
+      "pdf_sha256": "b43f046f882458467f6040f4f2b8ff25b7238cc7546bfb1366e9d3af1f99eb86",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_4-24/private/extracted/S008.txt",
+      "matched_response_start": 64767,
+      "author_header_start": 63274,
+      "author_header": "Author Response 21 May 2024 Lea Primožič The authors are appreciating the critical view of the manuscript and acknowledge the identified im",
+      "pdf_page_at_match": [
+        18
+      ],
+      "author_block_end": 66226,
+      "match_context": "e the 'measures of\nengagement' on this different platforms.\nAnswer 2: This was not the goal of our study, however we provided a description of the audience\nat the InnoRenew CoE social media channels, since we are aware that the characteristics of the\naudience is important for the engagement. We rewrote the Discussion section in order to enhance\nthis aspect as a limitation of our study, and added the recommendation for future studies.\nPoint 3: The discussion is mainly based on the number of impressions, shares and\ncomments. The differences between these 'measures of engagement' by different users has\nnot been established in enough depth. For example, there is a claim that \"users may not be\ncomfortable commenting on topics connected to sustainable construction, or that they are\nnot interested in engaging in conversations on social media to develop new relationships.\"\nAs far as the paper is concerned, this correlation is now based on any evidence.\nAnswer 3: W"
+    }
+  ],
+  "role_verification": "已读完整所选原关切与整个对应答复。与原PDF附后有日期的Author Response区块核对，未只凭TXT文件名判角色。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "0c73e5686caf00ba1c6b434bb9d55757b8d08ad671470329277552057e8e412e",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.325680+08:00"
+}

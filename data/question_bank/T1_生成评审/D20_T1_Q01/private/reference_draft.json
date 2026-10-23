@@ -1,0 +1,36 @@
+{
+  "task_id": "D20_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前会话AI材料资格说明；非专家金标准，未调用被测/裁判模型",
+  "ai_reference_scope": "没有预先生成唯一评审答案或六维/质量标签。模型输出后再匿名切分和人工评分。",
+  "eligibility_note": "通过特殊教育课堂案例、工具开发及师生反馈研究视障学生科学学习，属于融合教育/教学设计。",
+  "non_exhaustive_verification_guidance": [
+    "所有批评须可在所给版本定位；不要把未提供外部资料直接当论文错误。",
+    "以题内原版面核验表格、公式、统计值与图例，不能按提取顺序误读。",
+    "不对未提供的外部新颖性或专业事实默认给正确性满分。"
+  ],
+  "restoration_checks": [
+    "正式前后测工具包含口头/触觉施测说明、逐题预期答案与0/1评分规则；按此核对正文测量描述与总分解释，不能把“新增数据链接”等同于已验证方法。",
+    "正式访谈问题栏和观察记录结构已附，未将逐人回答列为必读工具。阶段一的全班观察与阶段三四名五年级参与者须区分，不能直接把观察记录出现更多学生编码判成四人样本虚构。",
+    "专家判断附件有13项评分及Aiken V参考表；材料存在不等于四人前后测可以识别因果。核对回复声称新加的图、局限和步骤是否原稿已经存在。"
+  ],
+  "current_status": "当前会话6.1-sol参考要点，非专家金标准；未运行模型",
+  "supplement_evidence": [
+    {
+      "input_field": "input.supplements.A01.text",
+      "exact_quote": "\n[Source attachment page 1]\nTranslated Version\nLEARNING OBSERVATION RESULTS NOTES\nObservation Date : 16 April 2025\nObservation No Description of Observation Results\n1 The teacher greets the students and asks how they are",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "input.supplements.A02.text",
+      "exact_quote": "\n[Source attachment page 1]\nVALIDATION SHEET\nScience Kit for Visual Impairment in Elementary Schools\nA. Validator Identity\nFull name and title :\nDepartment :\nInstitution :\nField of Expertise :\nB. Guidelines for Filling i",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "input.supplements.A03.text",
+      "exact_quote": "\n[Source attachment page 1]\nPre/Post-Test Instrument\nSubject : Natural science\nLeve : 5th grade of Elementary School\nTopic : Magnetism\nLearning Outcome:\nStudents understand that force can affect the motion of objects, as",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    }
+  ]
+}

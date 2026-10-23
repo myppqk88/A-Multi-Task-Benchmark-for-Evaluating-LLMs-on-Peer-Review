@@ -1,0 +1,128 @@
+{
+  "task_id": "F152_T2_Q01",
+  "paper_id": "ORE:4-73",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F152_T2_Q01/input.json",
+  "input_sha256": "2d7584a295fa97244794b8366f37ecc4c66530d962b701325b3b53d0bccf9817",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F152_T2_Q01/input.json",
+      "source_sha256": "2d7584a295fa97244794b8366f37ecc4c66530d962b701325b3b53d0bccf9817",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The submitted article can be indexed as is, both structurally and substantively. However,\nconcerning the DES, I would like to make a suggestion. Some of the countries that do not appear\nin the database are democracies nowadays. It seems to me that following the evolution of their\n\n\n\n\nelectoral rules would contribute to a better understanding of the processes of democratization.\nThus, if DES can be supplemented with more European countries although if not defined as\ndemocratic in the examined period, it will have a greater contribution to the comparative politics.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F152_T2_Q01/input.json",
+      "source_sha256": "2d7584a295fa97244794b8366f37ecc4c66530d962b701325b3b53d0bccf9817",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Dr. Daniela Pastarmadzhieva suggested to extend the DES 1919-1945 to countries which are\ndemocracies today but have not been democracies during the interwar period.\nResponse: We agree with Dr. Daniela Pastarmadzhieva that this would be interesting and\nrelevant. Unfortunately, we do not have the resources and time to extend the DES as of now\nbut will keep this suggestion in mind for future extensions.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "评审提出扩展至战间期非民主但当今民主国家，属于数据库外延建议，未指出当前数据库内错误。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient在当前建议性范围内成立；无需保证未来扩展一定兑现。"
+    },
+    {
+      "id": "J2",
+      "judgment": "作者认可价值，明确当前时间资源不足并保留未来扩展；这是一项有理由的暂不采纳，不应因未新增国家直接判回应失败。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient在当前建议性范围内成立；无需保证未来扩展一定兑现。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。评审提出扩展至战间期非民主但当今民主国家，属于数据库外延建议，未指出当前数据库内错误。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：区分可选扩展与纠正既有数据错误。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：评审提出扩展至战间期非民主但当今民主国家，属于数据库外延建议，未指出当前数据库内错误。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：区分可选扩展与纠正既有数据错误。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。作者认可价值，明确当前时间资源不足并保留未来扩展；这是一项有理由的暂不采纳，不应因未新增国家直接判回应失败。",
+      "high_score_conditions": [
+        "认可明确资源限制的拒绝，同时不把现有民主国家覆盖外推为已能分析所有民主化历程。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：作者认可价值，明确当前时间资源不足并保留未来扩展；这是一项有理由的暂不采纳，不应因未新增国家直接判回应失败。"
+      ],
+      "boundary_2_3": "区分可选扩展与纠正既有数据错误。",
+      "boundary_3_4": "认可明确资源限制的拒绝，同时不把现有民主国家覆盖外推为已能分析所有民主化历程。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient在当前建议性范围内成立；无需保证未来扩展一定兑现。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可明确资源限制的拒绝，同时不把现有民主国家覆盖外推为已能分析所有民主化历程。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：作者认可价值，明确当前时间资源不足并保留未来扩展；这是一项有理由的暂不采纳，不应因未新增国家直接判回应失败。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可明确资源限制的拒绝，同时不把现有民主国家覆盖外推为已能分析所有民主化历程。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient在当前建议性范围内成立；无需保证未来扩展一定兑现。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "区分可选扩展与纠正既有数据错误。",
+    "3_to_4": "认可明确资源限制的拒绝，同时不把现有民主国家覆盖外推为已能分析所有民主化历程。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

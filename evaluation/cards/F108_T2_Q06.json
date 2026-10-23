@@ -1,0 +1,128 @@
+{
+  "task_id": "F108_T2_Q06",
+  "paper_id": "F1000:158087",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F108_T2_Q06/input.json",
+  "input_sha256": "5a659ddb340a68856c2028209ea6af31bbc3ae099dcd72f10fe2c55d894047e1",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q06/input.json",
+      "source_sha256": "5a659ddb340a68856c2028209ea6af31bbc3ae099dcd72f10fe2c55d894047e1",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "4. While you have used Doyle's framework on cognitive tasks, it is unclear how this framework\nrelates to the development of your teaching strategies. Further explanation is needed.\nAdditionally, some may argue that memorisation is not a critical thinking skill. How might this\naffect your study?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q06/input.json",
+      "source_sha256": "5a659ddb340a68856c2028209ea6af31bbc3ae099dcd72f10fe2c55d894047e1",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "RESPONSE: Thank you. Doyle’s framework was used to define or limit “teaching” to\nsomething that is intended to promote skills as described by Doyle (which corresponds\nroughly with Bloom’s taxonomy) as opposed to teaching that may seek to improve emotions\nor attitude (for example teaching aimed at improving well-being or interest in science).\nThese skills were not limited to those that are ”critical thinking skills” but rather to help limit\nwhat “teaching” is in the context of this review.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复把Doyle框架用于界定教学活动的技能导向，区别情感或态度导向；框架不是批判思维技能本身的同义词。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可成立；不可仅因未给额外策略映射而降分，也不能错误要求删除所有记忆活动。"
+    },
+    {
+      "id": "J2",
+      "judgment": "因此包含记忆类认知任务不必导致把记忆当批判思维，答复澄清了概念层级；未给出逐类策略映射，但原误解已有直接解释。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可成立；不可仅因未给额外策略映射而降分，也不能错误要求删除所有记忆活动。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复把Doyle框架用于界定教学活动的技能导向，区别情感或态度导向；框架不是批判思维技能本身的同义词。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须解释教学范围与批判思维技能的区别。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复把Doyle框架用于界定教学活动的技能导向，区别情感或态度导向；框架不是批判思维技能本身的同义词。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须解释教学范围与批判思维技能的区别。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。因此包含记忆类认知任务不必导致把记忆当批判思维，答复澄清了概念层级；未给出逐类策略映射，但原误解已有直接解释。",
+      "high_score_conditions": [
+        "准确复述框架的限定用途，并保留未提供策略映射的边界，不外推纳入决策已验证。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：因此包含记忆类认知任务不必导致把记忆当批判思维，答复澄清了概念层级；未给出逐类策略映射，但原误解已有直接解释。"
+      ],
+      "boundary_2_3": "须解释教学范围与批判思维技能的区别。",
+      "boundary_3_4": "准确复述框架的限定用途，并保留未提供策略映射的边界，不外推纳入决策已验证。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient可成立；不可仅因未给额外策略映射而降分，也不能错误要求删除所有记忆活动。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：准确复述框架的限定用途，并保留未提供策略映射的边界，不外推纳入决策已验证。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：因此包含记忆类认知任务不必导致把记忆当批判思维，答复澄清了概念层级；未给出逐类策略映射，但原误解已有直接解释。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：准确复述框架的限定用途，并保留未提供策略映射的边界，不外推纳入决策已验证。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient可成立；不可仅因未给额外策略映射而降分，也不能错误要求删除所有记忆活动。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "须解释教学范围与批判思维技能的区别。",
+    "3_to_4": "准确复述框架的限定用途，并保留未提供策略映射的边界，不外推纳入决策已验证。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

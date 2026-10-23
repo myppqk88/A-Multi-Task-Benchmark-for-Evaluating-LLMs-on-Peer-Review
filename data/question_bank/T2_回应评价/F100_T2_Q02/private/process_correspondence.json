@@ -1,0 +1,61 @@
+{
+  "task_id": "F100_T2_Q02",
+  "paper_id": "ORE:4-268",
+  "parent_task": "T3_F100_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F100_R1/input.json",
+  "parent_input_sha256": "6bf22dd3ffde860e82812ddf9e29d5c7a27f22f2983dd504616aa99fe665d2f3",
+  "review_dimension_AI_candidate": "研究对象与题名摘要一致性",
+  "selection_scope": "保留作者对标题、摘要和引言的完整相关回答，不提供实际后稿供T2判断。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/4-268_Mapping_leadership_and_communities_in_EU-funded_research_through_netwo/v1_manuscript.pdf",
+      "original_sha256": "8c1959e004899d994ca1e5c357d2e6cdf727f173584c67f45eb2e5513af2d09c",
+      "raw_text_file": "data/question_bank/T2_回应评价/F100_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        69078,
+        69512
+      ],
+      "report_id": "48910",
+      "date": "2024-12-26",
+      "raw_page_numbers": [
+        20
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/4-268_Mapping_leadership_and_communities_in_EU-funded_research_through_netwo/v1_manuscript.pdf",
+      "original_sha256": "8c1959e004899d994ca1e5c357d2e6cdf727f173584c67f45eb2e5513af2d09c",
+      "raw_text_file": "data/question_bank/T2_回应评价/F100_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        72236,
+        72693
+      ],
+      "report_id": null,
+      "date": "2025-06-09",
+      "raw_page_numbers": [
+        21
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.title",
+    "start": 0,
+    "end": 81,
+    "exact_quote": "Mapping leadership and communities in EU-funded research\nthrough network analysis",
+    "anchor_matches": 1
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.title",
+    "start": 0,
+    "end": 81,
+    "exact_quote": "Mapping leadership and communities in EU-funded\nresearch through network analysis",
+    "anchor_matches": 1
+  },
+  "process_check_code": "E",
+  "process_check_status": "已核前稿已有信息或所核位置仍保留",
+  "observed_process_note": "忽略换行后前后稿题名相同，均未加入hydrogen；不能按作者称标题已改就登记完成。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

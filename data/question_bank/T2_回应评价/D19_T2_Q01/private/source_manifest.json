@@ -1,0 +1,95 @@
+{
+  "task_id": "D19_T2_Q01",
+  "paper_id": "PeerJ:1050",
+  "dev_id": "D19",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/PeerJ/ethical-issues/1050_Attitudes_of_medical_students_in_Lahore__Pakistan_towards_the_doctor_patient_rel/version_v0.2/1050_v0.2_2015-05-06_response_letter.docx",
+      "sha256": "0fefa792eeca3aff9e20826c2f45c27ea623ea459262749736c31df29dd4a61c",
+      "locator_lines": [
+        43,
+        43
+      ],
+      "locator_chars_half_open": [
+        1886,
+        2119
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/PeerJ/ethical-issues/1050_Attitudes_of_medical_students_in_Lahore__Pakistan_towards_the_doctor_patient_rel/version_v0.2/1050_v0.2_2015-05-06_response_letter.docx",
+      "sha256": "0fefa792eeca3aff9e20826c2f45c27ea623ea459262749736c31df29dd4a61c",
+      "locator_lines": [
+        45,
+        46
+      ],
+      "locator_chars_half_open": [
+        2133,
+        2806
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/ethical-issues/1050_Attitudes_of_medical_students_in_Lahore__Pakistan_towards_the_doctor_patient_rel/version_v0.2/1050_v0.2_2015-05-06_response_letter.docx",
+      "source_sha256": "0fefa792eeca3aff9e20826c2f45c27ea623ea459262749736c31df29dd4a61c",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "8b85ea7d8477af6928284267b719fb568eddd3d527edfcc9bff18a1898174572",
+      "source_char_range_half_open": [
+        1886,
+        2119
+      ],
+      "source_line_range_inclusive": [
+        43,
+        43
+      ],
+      "selected_text_before_cleaning": "There were various sweeping statements in the manuscript. For example line 63 which said that patient autonomy was \"never considered in prior times\". There were also unusual terms used such as in line 92 \"non-problem based learning\".",
+      "input_segment_after_cleaning": "There were various sweeping statements in the manuscript. For example line 63 which said that patient autonomy was \"never considered in prior times\". There were also unusual terms used such as in line 92 \"non-problem based learning\".",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/ethical-issues/1050_Attitudes_of_medical_students_in_Lahore__Pakistan_towards_the_doctor_patient_rel/version_v0.2/1050_v0.2_2015-05-06_response_letter.docx",
+      "source_sha256": "0fefa792eeca3aff9e20826c2f45c27ea623ea459262749736c31df29dd4a61c",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "8b85ea7d8477af6928284267b719fb568eddd3d527edfcc9bff18a1898174572",
+      "source_char_range_half_open": [
+        2133,
+        2806
+      ],
+      "source_line_range_inclusive": [
+        45,
+        46
+      ],
+      "selected_text_before_cleaning": "We have rephrased the above mentioned sentences. Line 63, now reads as “Patients in the modern era are becoming more and more autonomous, (Shankar & Piryani, 2009) an entity seldom considered in the past but modern medicine cannot advance without incorporating this essential ethical necessity. (Tor, 2001)”\nThe term non-problem based learning has been clarified in the revised manuscript and it now reads as, “The dominant form of teaching in the medical colleges across the country is conventional consisting of didactic lecture techniques, non-problem-based learning (PBL) teaching methods, long lectures, tutorials and practical tasks (Waqas et al., 2015).” in line 92.",
+      "input_segment_after_cleaning": "We have rephrased the above mentioned sentences. Line 63, now reads as “Patients in the modern era are becoming more and more autonomous, (Shankar & Piryani, 2009) an entity seldom considered in the past but modern medicine cannot advance without incorporating this essential ethical necessity. (Tor, 2001)”\nThe term non-problem based learning has been clarified in the revised manuscript and it now reads as, “The dominant form of teaching in the medical colleges across the country is conventional consisting of didactic lecture techniques, non-problem-based learning (PBL) teaching methods, long lectures, tutorials and practical tasks ([引文A]).” in line 92.",
+      "cleaning_edits": [
+        {
+          "before": "Waqas et al., 2015",
+          "after": "[引文A]",
+          "reason": "原文作者自引身份去标识；未改变论点"
+        }
+      ],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [],
+  "role_verification": "已读完整所选原关切与整个对应答复。PeerJ作者签署回复信内逐点引述评审；不是独立完整评审文件。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "b260f21876c763f663dd2fc02775026877bbebaf56b8abb4cef045b653513e14",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.349321+08:00"
+}

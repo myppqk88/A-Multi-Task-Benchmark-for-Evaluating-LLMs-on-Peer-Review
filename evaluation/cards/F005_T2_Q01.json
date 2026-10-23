@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "F005_T2_Q01",
+  "paper_id": "PeerJ:2011",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F005_T2_Q01/input.json",
+  "input_sha256": "1fc89c271d8bbca1ed83f617c24b04f2e776e92be38b7531344da3e2ae90355f",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F005_T2_Q01/input.json",
+      "source_sha256": "1fc89c271d8bbca1ed83f617c24b04f2e776e92be38b7531344da3e2ae90355f",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          130
+        ]
+      },
+      "quote": "Suggest title change to be more specific ie, include “the International Society for Medical Publication Professionals experience”.",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F005_T2_Q01/input.json",
+      "source_sha256": "1fc89c271d8bbca1ed83f617c24b04f2e776e92be38b7531344da3e2ae90355f",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          364
+        ]
+      },
+      "quote": "Thank you for this suggestion.  We would prefer to keep the title concise and avoid the risk of readers inferring the article came from International Society for Medical Publication Professionals (ISMPP).  We have, however, included more specific details about ISMPP in the introduction and the abstract specifies that the data came from the ISMPP Annual Meetings.",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；发表职业群体的会议摘要后续发表率与循证出版实践的元研究。 本关切为作者签署回信中的原评审引用；不是独立完整原评审报告。仅评价给定的这项建议及完整对应答复。；回应文字充分性",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_2_3": "2档识别部分事实；3档须准确引用与本点有关的关键材料：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_3_4": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；发表职业群体的会议摘要后续发表率与循证出版实践的元研究。 本关切为作者签署回信中的原评审引用；不是独立完整原评审报告。仅评价给定的这项建议及完整对应答复。；回应文字充分性",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只识别部分要求或复述答复；3档须准确处理：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_2_3": "2档只识别部分要求或复述答复；3档须准确处理：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_3_4": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；发表职业群体的会议摘要后续发表率与循证出版实践的元研究。 本关切为作者签署回信中的原评审引用；不是独立完整原评审报告。仅评价给定的这项建议及完整对应答复。；回应文字充分性",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_2_3": "2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：作者给题名简洁及避免机构背书误解的理由，并以摘要会议来源和引言详细说明替代；是合理不照单改题。",
+      "boundary_3_4": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不把标题未采用评审措辞判失败；实际摘要是否已写不在T2可核范围。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "focal_concern_response_author_letter"
+}

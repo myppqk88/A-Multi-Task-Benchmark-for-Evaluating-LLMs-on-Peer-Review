@@ -1,0 +1,128 @@
+{
+  "task_id": "F136_T2_Q01",
+  "paper_id": "F1000:158461",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F136_T2_Q01/input.json",
+  "input_sha256": "68934b65f7783baf3828c07b4e1cb42b9739d44d4f6a736d339902b09ac0d9c5",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F136_T2_Q01/input.json",
+      "source_sha256": "68934b65f7783baf3828c07b4e1cb42b9739d44d4f6a736d339902b09ac0d9c5",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "4. Please give reasons for the choice of methodologies used, why choose the two-stage PCA\nmethod rather than the entropy weighting method to construct the Financial Inclusion Index?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F136_T2_Q01/input.json",
+      "source_sha256": "68934b65f7783baf3828c07b4e1cb42b9739d44d4f6a736d339902b09ac0d9c5",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Dear reviewer, \nThank you very much for dedicating your time and effort to reviewing our work, particularly\nfor your prompt review report. Your insightful comments will undoubtedly enhance the\nquality of our manuscript. We have taken your comments to heart and will carefully address\neach of the five main points you raised in the revised version of this article. We look forward\nto your thoughts on the revisions we have made.\n\nResponse: Thank you this valuable comment. We have provided a rationale for choosing the\ntwo-stage PCA method over alternatives, such as the entropy weighting and CFA method,\nfor constructing the financial inclusion index.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "关切要求解释为何用两阶段PCA而非熵权；答复只声称已提供选择理由，没有给出比较依据、数据性质或适配条件。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient或partially_sufficient均可，差异仅在是否给主题匹配的修改声明有限信用。"
+    },
+    {
+      "id": "J2",
+      "judgment": "提到CFA拓宽了被比较方法名称，但方法名不是方法选择论证；不能推断两阶段PCA已经被证明更优。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient或partially_sufficient均可，差异仅在是否给主题匹配的修改声明有限信用。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。关切要求解释为何用两阶段PCA而非熵权；答复只声称已提供选择理由，没有给出比较依据、数据性质或适配条件。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：从只说回应不够具体升级为明确指出缺少PCA与熵权的选择依据。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：关切要求解释为何用两阶段PCA而非熵权；答复只声称已提供选择理由，没有给出比较依据、数据性质或适配条件。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：从只说回应不够具体升级为明确指出缺少PCA与熵权的选择依据。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。提到CFA拓宽了被比较方法名称，但方法名不是方法选择论证；不能推断两阶段PCA已经被证明更优。",
+      "high_score_conditions": [
+        "兼顾主题已被承接和实质论证缺位，不替作者编造PCA优势。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：提到CFA拓宽了被比较方法名称，但方法名不是方法选择论证；不能推断两阶段PCA已经被证明更优。"
+      ],
+      "boundary_2_3": "从只说回应不够具体升级为明确指出缺少PCA与熵权的选择依据。",
+      "boundary_3_4": "兼顾主题已被承接和实质论证缺位，不替作者编造PCA优势。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。insufficient或partially_sufficient均可，差异仅在是否给主题匹配的修改声明有限信用。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：兼顾主题已被承接和实质论证缺位，不替作者编造PCA优势。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：提到CFA拓宽了被比较方法名称，但方法名不是方法选择论证；不能推断两阶段PCA已经被证明更优。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：兼顾主题已被承接和实质论证缺位，不替作者编造PCA优势。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "insufficient或partially_sufficient均可，差异仅在是否给主题匹配的修改声明有限信用。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "从只说回应不够具体升级为明确指出缺少PCA与熵权的选择依据。",
+    "3_to_4": "兼顾主题已被承接和实质论证缺位，不替作者编造PCA优势。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

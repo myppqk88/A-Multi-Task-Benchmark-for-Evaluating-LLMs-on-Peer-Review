@@ -1,0 +1,80 @@
+{
+  "task_id": "F028_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。\n本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。",
+  "input": {
+    "comment_text": "In this correspondence, two well-known European authors’ editors, Dr. Valerie Matarese and Ms.\nKaren Shashok, raise two very interesting points to enhance the core competencies (CC) list for\nbiomed journal editors in Moher et al (2017). They aptly argue that the perspective from authors\nis essential to define journal editor CC and thus inappropriate to be overlooked. Then they indicate\nthat authors’ editors can give insights on authors’ behalf when reliable author opinion is not\nreadily available by calling attention to the work of authors’ editors and their advantage over\njournal editors in familiarity with authors in different contexts.\nThe two points they suggest to be added to the CC list of Moher et al (2017) are not only insightful\nbut also very caring for most EAL (English as an additional language) scholars who often struggle\nto publish in a language they do not have much control. The first one is that the CC list should reinclude journal editors’ competence to give useful feedback on language and writing to authors\ninstead of relying on standardized reviewer reports where this aspect is simply judged\n“acceptable” or “unacceptable”. In a highly globalized academic community where biomedical\njournals are at the very forefront of globalization, it is unrealistic to expect most reviewers to give\nconcrete language and writing feedback to researchers, particularly EAL ones. Therefore, it seems\nincumbent on journal editors to possess this as a core competence. What I am thinking here is\nthat journal editors may also need more knowledge of authors’ editors. This is because EAL\nresearchers need to be referred to the right authors’ editors for support when fixing the language\nand writing problems goes beyond their own capacity.\nThe second competence Matarese and Shashok suggest to add is that journal editors should be\nable to interpret results of plagiarism-detection software sensibly and sensitively rather than\nsimplistically relying on arbitrarily set maximum-text-overlap percentages. As is known to writing\nresearchers and authors’ editors, text re-use is an important, if not the most, way for EAL scholars\nto learn academic writing and compose papers in English. Journal editors’ lack of ability to tell the\ndifference between plagiarism and well-meant text re-use can render them to punish the innocent\nand alienate EAL scholars from their journals, as convincingly argued by the two authors of this\npiece.\n\n\n\nOverall, I find the suggestions of Matarese and Shashok very useful to refine the CC list for journal\neditors, as given in Moher et al (2017), in a well-crafted text. Their effort to support EAL scholars in\nways beyond working on manuscripts should be commended. Therefore, I recommend that this\ncorrespondence be indexed as soon as possible. If they would like to add that journal editors also\nneed to have the ability to refer EAL scholars to proper authors’ editors, I would appreciate this\npiece even more.\n",
+    "response_text": "\nWe concur with Dr. Luo’s understanding of language and writing in the current globalized\ncontext of research publishing, including some EAL scholars’ recourse to text re-use to\nproduce acceptable English. We also agree that suggestions by journal editors on where\nauthors could obtain help is a competency that researchers are likely to value, and have\nnoted this in version 2. Many journals already list commercial editing service providers on\ntheir websites, but the scope and quality of these services vary.\nJournal editors have differing criteria for “acceptable” English or writing, but as the ultimate\narbiters of when the language and writing are “good enough” for publication in their\njournal, they should, for the sake of transparency and fairness, let authors know what\ncriteria they use to decide which texts are publishable and which need improvement.\n",
+    "necessary_context": "作者编辑与期刊编辑核心能力、EAL学者写作和生物医学出版制度的元研究讨论。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F068_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "结论与主张边界",
+    "轮次对应"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "本题采用v2→v3，当前报告只要求补结论段；早先v1报告及晚于v2的答复不能混入本轮材料。",
+    "核对后稿是否确有概括主要结果且保留可靠性/效度限制的结尾；加一段结论不代表补做实验或解决全部历史争议。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "We thank the authors for their work in revising the paper. We would like to request one minor\nchange, namely, that the authors add a brief concluding paragraph to the end of the discussion\nsection. We would then be happy to accept the manuscript for indexing based on the most recent\nrevisions.\n",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nOn behalf of my co-authors and myself, I thank you again for your helpful remarks and for\nmaking the effort to evaluate how we implemented them. As you suggested, we added a\n\n\n\n\nconcluding paragraph to summarize the central points of this work. In case of further\nquestions or comments, please feel free to contact us any time.\n[closing signature omitted]",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "approach is larger than that of another stimulus category, such\nas office articles (e.g., Lender et al., 2018). It is necessary to\ncompare two stimulus categories to control for stimulus-independent factors, such as differences in muscle strength or posture,\nwhich influence speed of approach and avoidance responses. Next\nto stimulus categories, the used representation of approach and\navoidance (e.g. zooming stimuli, moving a manikin towards\nor away from stimuli, moving stimuli in 3D environment), the\ninput devices (e.g. keyboards, computer mice, touchscreens,\nmotion sensors) and the instruction types (Krieglmeyer & Deutsch,\n2010) affect psychometric properties of AAT implementations.\nTwo different task instructions have been used. In the (more\ntypical) irrelevant-feature AAT (e.g. Kakoschke et al., 2017a;\nBrockmeyer et al., 2015), participants must approach or avoid\nstimuli based on a feature of the stimulus that is unrelated\nto the bias being measured (e.g. approach stimuli with green",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "What and how much someone eats depends on explicit processes such as deliberate dietary intentions as well as on implicit\nresponses to environmental food cues. While this cue reactivity expresses itself through cue-induced consumption and\nsubjective food cravings, it is also evident in behavioural biases\nthat motivate responses towards the respective food cue (Boswell\n& Kober, 2015; Brockmeyer et al., 2015). These behavioural\nbiases may play a pivotal role in the cascade of events that initiates and maintains dietary failure: approach bias towards food\nhas been related to higher food intake when self-regulatory\ncapacity is low, and it has been related to more uncontrolled eating in impulsive individuals (Booth et al., 2018; Kakoschke\net al., 2015; Kakoschke et al., 2017b). This does not seem to\nextend to individuals with clinically diagnosed binge eating however, who do not show an increased approach bias to food compared to healthy controls (Paslakis et al., 2017). At the other\nend of",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "of 1920 × 1080 pixels, placed in portrait-format with a\n10% tilt towards the participant.\nThe AAT included 24 object and 24 food images, selected\nfrom the food-pics_extended database (Blechert et al., 2019)\nand the FRIDa database (Foroni et al., 2013). As objects are\nused to control for stimulus-independent factors, they should\nnot elicit behavioural response tendencies and we thus\nselected emotionally neutral objects based on normative ratings from the respective databases. The food images were\ndrawn semi-randomly for each participant from a larger pool\nof 60 individually rated food items1 to ensure an equal number\nof desired and non-desired foods. The stimuli’s variability on\ndesire to eat was increased to examine trial-level correlations\nbetween individual RTs and item-specific desire to eat ratings. For the IAT, we selected the 12 most highly desired\nstimuli of the personalized stimulus set used in the AAT based\non median split. Here we aimed for a more homogeneous stimulus set to ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Questionnaires\nReliability values are based on the full sample. As Cronbach’s\nα systematically underestimates reliability, we additionally\nreport McDonald’s ω (Mcdonald, 1978; Revelle & Zinbarg,\n2009; Sijtsma, 2009).\nTEMS – natural concern and health motivation. TEMS\n(Renner et al., 2012) was used to compare this sample’s\norientation towards natural and healthy food, compared to\nthe general population. Each scale consisted of 5 statements\nabout one’s reasons to eat food, rated on a 7-point likert scale.\nReliability was good for the natural concern (α = .92, ω = .92)\nand health motivation subscale (α = .86, ω = .87).\nFood craving questionnaire – state (FCQ-S) and trait (FCQT-r). The German versions of the FCQ-S and FCQ-T-r (Meule\net al., 2014; Meule et al., 2012a) were used to measure state\nand trait food craving, respectively. Both scales consisted\nof 15 statements rated on a 5-point likert scale. Both scales\nhad excellent reliability in this study (α = .90, ω = .90).\nDutch eating beha",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

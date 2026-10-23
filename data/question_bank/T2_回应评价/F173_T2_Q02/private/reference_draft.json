@@ -1,0 +1,28 @@
+{
+  "task_id": "F173_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "理论形式化与模型适用范围"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "2. Lack of Bayesian Formalization\nAlthough the paper discusses rationality as a form of optimization, it does not address the wellestablished Bayesian brain hypothesis or the free-energy principle (Friston). These models\nformalize rationality as probabilistic inference under uncertainty—a process that is dynamic,\n\n\n\nadaptive, and not tied to any fixed cognitive trait. This approach aligns with the idea of rationality\nas a “method” but provides a stronger computational and neuroscientific foundation.\nSuggestion: At minimum, include a discussion of Bayesian rationality to contextualize the relatoroperator distinction within ongoing models of brain function.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "I appreciate the comment. I added the following text in the last Section of the paper:\nWho’s afraid of the Organismus Oeconomicus hypothesis?\n…\n\n\n\n6. Many neuroscientists model the brain as an optimization mechanism (OM) that\nmust formulate models (beliefs) about the world in the face of uncertainty. This effort,\ngenerally called the “Bayesian brain hypothesis”, assumes that the brain uses new\ninformation à la Bayes’ rule—namely, to update its priors (ex ante beliefs) to\nformulate more accurate posteriors (ex post beliefs) (e.g., Knill & Pouget (2004; Rao &\nBallard, 1999)). Friston (2010) generalizes such OM, calling it “the free-energy\nprinciple”, highlighting that the organism wants to minimize the surprise, i.e., the gap\nbetween what to expect on the basis of ex ante available information and what it\nactually finds ex post, i.e., after executing the pertinent action. The minimization of\nsurprise amounts to learning and adopting more accurate beliefs. The higher the\naccuracy of the belief is, the higher the probability of successful action. These\nBayesian brain models are about the rationality of belief formation, which somewhat\ndiffers from models regarding the rationality of action, the focus of this paper.\nNevertheless, they are models of rationality that do not portray rationality as a\ncognitive mechanism but rather are propelled by the desire of the organism to\npossess accurate beliefs or minimize free energy. Such models of rationality are\ngeneralizable to any organism—i.e., not restricted to upper primates or, worse, to\nhumans.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "完整保留信念理性与行动理性区别，不截掉作者的范围限定。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

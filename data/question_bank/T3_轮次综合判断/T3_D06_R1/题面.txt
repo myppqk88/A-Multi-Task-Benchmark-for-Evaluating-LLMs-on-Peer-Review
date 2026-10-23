@@ -1,0 +1,2094 @@
+【本题材料范围】
+本题附件核查：正文给出三种帖子操作化、Figure 1–3实际刺激示例、Table 1指标与Table 2主题分布，图像均在题内。外部声明为逐帖指标CSV及元数据txt；未发现将关键方法/附录外置的明确依赖。保留可见证据整篇判断，不声称复算全部帖数据。 正文提及但未提供的外部资料不能假装已读。评价科学报告是否充分与题包是否缺件应分开；不因未给底层原始数据自动判证据不足。
+
+T3_D06_R1
+
+你是社会科学研究的独立评议者。阅读以下同一稿件一个修订周期的全部给定材料，判断修订稿在当前证据下的实质可接受性。给定的报告和作者回复是待核查的主张，不是金标准；你不需要服从审稿人的错误要求，也不能把作者说“已修改”当作已解决。
+本题来自公开发表后评议；判断不等于传统期刊的接收决定、平台是否通过评议或下一轮结果。时点为后稿公布后、后续报告进入之前。只根据本题的材料和附带图表判断，不检索原文、不利用文献身份或历史结局。
+先列出最多5个最影响核心主张的已解决或残留问题，再给总体判断。细微语言/排版问题本身不足以判“需要实质修改”。若缺少某项外部数据，请明确证据边界；不要仅因本题没有原始数据就自动判证据不足。
+每个重要判断都要引用材料字段名和准确短引文/页图位置；区分回应主张、可见实际修改、科学上是否足够。所有字段按以下JSON结构输出。
+
+输出结构：
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overall_label",
+    "rationale",
+    "issues",
+    "evidence_limits"
+  ],
+  "properties": {
+    "overall_label": {
+      "type": "string",
+      "enum": [
+        "acceptable_under_rubric",
+        "needs_substantive_revision",
+        "insufficient_evidence"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "issues": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "issue",
+          "response_claim",
+          "observed_change",
+          "resolution",
+          "importance",
+          "evidence"
+        ],
+        "properties": {
+          "issue": {
+            "type": "string"
+          },
+          "response_claim": {
+            "type": "string"
+          },
+          "observed_change": {
+            "type": "string"
+          },
+          "resolution": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "partially_resolved",
+              "unresolved",
+              "not_verifiable",
+              "reviewer_request_not_warranted"
+            ]
+          },
+          "importance": {
+            "type": "string",
+            "enum": [
+              "central",
+              "supporting",
+              "minor"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "input_field",
+                "exact_quote",
+                "location_hint"
+              ],
+              "properties": {
+                "input_field": {
+                  "type": "string"
+                },
+                "exact_quote": {
+                  "type": "string"
+                },
+                "location_hint": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence_limits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "process_consistency_auxiliary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
+
+
+=== manuscript_before ===
+
+Abstract
+Background
+In an effort to move to a sustainable society, new concepts and
+findings related to sustainable construction are being developed. With
+ambition to transfer newly developed knowledge to society, various
+communication paths are being used. In this study we investigated
+what kind of messages shared on institutional social media channels
+(Facebook, Twitter (now renamed to X), and LinkedIn) about
+sustainable construction create more audience engagement.
+Methods
+The study consisted of two phases of weekly social media posts. In
+each phase, 15 posts were published on the same day and time, while
+engagement was monitored. Three different types of posts were
+created, that were sequential cycling each week. Type 1 was written
+informative content related to research activities; type 2 was image
+content related to the research activities and equipment, with a short
+text caption of the image; and type 3 was image content with people –
+scientists working on research activities with a short text caption of
+the image.
+Results
+Poisson regression analysis revealed that type 3 posts result in the
+most audience engagement on LinkedIn, suggesting that using
+images of people in combination with short text captions is the most
+effective way to engage social media audiences. These findings can
+
+O
+
+help organizations to use social media to promote sustainable
+construction and other sustainability-related research. The
+engagement was lower on Facebook and Twitter (X).
+Conclusions
+As the science is aiming to be closer to the society, these findings
+deliver an important insight of science communication through the
+social media. Although the study delivered several lessons learnt
+related to science communication through social media studies, it
+provides an important bases for further studies. Conclusions can
+support research organizations in improving their science
+communication.
+
+Introduction
+
+The field of communication witnessed many changes over time.
+Many communication models exist that define communication
+and describe its various elements (Foulger, 2004). The communication models developed in the past have been adapted also
+to the field of science with the goal of efficient science communication (Burns et al., 2003). Communication and dissemination
+of research findings is common practice among scientists.
+Often, this is also a requirement from research funding bodies.
+We can define it as a planned process that carefully considers
+the intended audience and the contexts in which research
+findings will be presented, with the goal of effectively communicate and engage with the target audience through various
+interactions (Wilson et al., 2010).
+There are several ways to disseminate and communicate about
+research. Science communication is about sharing findings,
+increasing public appreciation, increasing knowledge, and understanding, influencing opinions, policy preferences and behaviours, and is about promoting diverse science perspectives
+for comprehensive societal challenges (Medicine et al., 2017).
+As the scientific topics related to environmental issues are complex and hard to understand for the general public (Moser, 2010),
+the models of communication must be adopted and include
+not only the transfer of information from the messenger to
+the audience through a channel, but they must recognize also
+the context and the meaning of the message (Jasanoff et al.,
+2001). Improving the population’s beliefs about science and
+generating social acceptance are also among the aims of science
+communication. Just like in the communication literature, also
+in science communication we find one-way communication
+when scientist share their knowledge to the public, and a
+dialogue model, when the public, experts and other stakeholders are engaged in a scientific discussion (Kappel & Holmen,
+2019). Social networks are one of the channels offering
+the possibility of dialog and they became a crucial part of
+communication strategies.
+Social media play an important role in science communication.
+The emergence of different social media channels has revolutionized the manner in which the general public interacts with
+scientists and scientific institutions. Social media means a twoway technology-facilitated dialogue, that is more interactive,
+compared to traditional media (Kaplan & Haenlein, 2010).
+It allows information to spread rapidly in a digital community (Darling et al., 2013). Users engage on social media channels with liking, commenting, and sharing posts (Hwong et al.,
+2017). Scientist are using social media to share their scientific results and the general public is using them to search for
+information (Van Noorden, 2014). Scientists are quickly adopting social media for disseminating their research results
+because science communication is becoming more and more
+important (Parsons et al., 2014). Science relies heavily on
+social interaction, and scientists require effective communication and creativity, since inability to convince fellow
+experts of the significance of one’s work can result in being
+disregarded and irrelevant (Insall, 2023).
+
+Many social media channels exist, like Twitter (X), Facebook, YouTube, Pinterest, Instagram, and different blogs. Three
+channels dominate science communication, namely Twitter (X),
+Facebook, and LinkedIn (Collins et al., 2016). The surveyed
+scientists use Facebook for personal use and they share
+scientific results with colleagues, family and friends, and only
+few believed that it is an appropriate channel to share research
+with the general public (Collins et al., 2016). Facebook is
+a social network where users share more personal information (Skeels & Grudin, 2009), and compared to LinkedIn and
+Twitter (X), it has the highest number of users – over 2 billion
+monthly active users (Dixon, 2023b). Facebook is where users
+want to be connected with friends, their work and spend time
+with daily activities such as playing games or being part of
+groups with similar interests (Mazman & Usluel, 2010). On
+the other hand, LinkedIn is dedicated to professional networks
+(Skeels & Grudin, 2009). It has over 774 million users and it
+is the most effective platform in terms of audience engagement (Dixon, 2022). LinkedIn is known as a professional
+platform for self-promotion and job recruitment (Bridgstock,
+2019). Twitter (X) is the channel most used by scientists
+to communicate with other scientists (Collins et al., 2016).
+Users are connecting with their family, friends and colleagues by
+sharing short news and status updates (Bonsón et al., 2019). In
+comparison to Facebook and LinkedIn, Twitter (X) has the
+lowest number of users – over 350 million users (Dixon, 2023a).
+Additionally, it is critical to consider the platform’s unique
+history, which includes political (particularly in the United
+States) and ownership changes. These factors are likely to have
+influenced Twitter (X) users’ demographics, the type of content they share, and their level of engagement on the platform
+(Rohlinger et al., 2023). Twitter (X) is very important in terms
+of policy and journalism (Lupton, 2014).
+In order to be successful in sharing messages on different social
+media channels there are some factors to consider. For example, it is important to know what is the best time of day to post
+for reaching the widest audience. However, it is hard to predict
+which time and day is the best to post on different social media
+channels. Nevertheless, there is data that suggest peak times.
+Peak days and times differ for Facebook, Twitter (X), and
+LinkedIn. Tuesday from 9am to 12pm (in all time zones) was
+identified as a peak period in all three channels (Post, 2021).
+This data can be changing quickly as different social media
+algorithms are changing constantly. The length of social media
+posts is another characteristic that might influence the audience engagement. Some authors say that the length of posts
+does not affect engagement (Li & Xie, 2020), still several web
+blogs (Geyser, 2022; McLachlan, 2022) report that 80 characters
+is an average post length effective on social media.
+On social media, informative and emotional type of messages
+tend to create more engagement (Li & Xie, 2020). Adding
+visual elements help create more engagement (Bruce et al.,
+2017; Goldfarb & Tucker, 2011; Li & Xie, 2020; Pieters &
+Wedel, 2004). Images of people in print ads increase their
+effectiveness (Li & Xie, 2020). Top features for engaging
+
+messages on Facebook and Twitter (X) in space science are
+photos and other visual elements (Hwong et al., 2017). Visual
+communication is more persuasive, it gets more attention and
+enhances memorability of a message. Images also induce positive emotions which influences our persuasion towards a topic
+(Escalas, 2004). In a meta-analysis study they found out that
+adding a realistic photograph to a text message increases the
+persuasion (Seo, 2020). Messages must be clear and simple, and they need to fill in the knowledge gaps between the
+communicator and the audience (Moser, 2010). Additionally,
+messages need to get audience attention and must have an
+important emotional impact (Korhonen et al., 2016; Moser,
+2010). Another important implication of social media communication is the lifespan of social media posts that is relatively
+short, and it is different for each social media channel. The
+lifespan of Twitter (X) posts is 15 minutes, Facebook 6 hours,
+and LinkedIn 30 hours (Ripo, 2021). Using hashtags in social
+media posts is an integral part of communication. It started
+as an idea to use the hashtag in front of the keyword allowing
+users to link and easily find similar content. Later we witnessed
+how it helped in creating several social movements (Me too,
+black lives matter, …) or other marketing campaigns. Popular press recommends to use between two and three hashtags
+(Lee, 2016; Schwab, 2021; Socialbakers, 2021).
+
+that contribute to lowering the effects of climate change, significant progress can be achieved. The most promising way
+to limit the negative impacts of the building industry for the
+environment is to promote the use of renewable materials. There are several challenges that must be addressed if we
+want to promote the wider use of renewable materials in buildings. In this perspective, the most common prejudice is that
+wooden buildings suffer from low sound insulation. More
+specifically, it is a challenge to achieve high impact noise
+insulation because the structural elements are light, more sensitive to excitation, and generally lack sufficient damping that
+would restrain the propagation of vibrations (Bard Hagberg,
+2018). This engineering issue is addressed in this research
+project. Researchers are investigating the potential of creating
+wooden composites based resilient layer to limit impact noise
+in buildings. The main purpose of the project is to improve the
+impact noise insulation in wooden buildings by engineering a
+sustainable resilient layer. This is done by a fundamental assessment of the annoyance of impact noise in the built
+environment that surmounts standardized insulation ratings.
+InnoRenew CoE is the leading partner. Other project partners are University of Primorska, University of Ljubljana, IBO
+Austrian Institute for Building and Ecology, and TU Vienna
+University of Technology.
+
+Social media and appropriate marketing and communication
+strategies can make a big difference also in consumer behaviour that impacts the climate change, and the needed sustainability transformation of our society. Research organizations,
+and companies are using social media when talking about
+sustainability related issues to the general public (Clark, 2008).
+As consumers gain interest in environmental topics it causes
+companies to embrace greener ways of operating and, in return,
+communicating about this. Consumers are searching on social
+media for products that are more sustainable. Therefore, using
+social media became an important tool for communication.
+Global consumer brands are emphasizing environmental aspects
+in their online sustainability communication (Primožič &
+Kutnar, 2022). Green advertising on social media is an important marketing tool companies should use. Efficient communication about sustainability related topics, among which also
+sustainable construction, should be based on a clear communication strategy (Dawkins, 2004). A recent study suggests
+that messages about environmental and social issues, shared
+on Twitter (X), engage stakeholders the most (as compared to
+other sustainable development goals), while the relationship
+between the stakeholder engagement and image or video type of
+message was not supported (De Luca et al., 2022).
+
+This study was conducted in the framework of the
+above-mentioned research project. We investigated what kinds
+of messages related to this project we need to communicate
+on different social media channels to create more audience
+engagement. The overall objective of this research is to study
+the type of messages that should be shared on institutional
+social media channels (Facebook, Twitter (X), and LinkedIn)
+about sustainable construction related topics in order to
+create more engagement of the audience.
+
+In our study, communicating about sustainable construction
+related topics was approached by communicating on social
+media about research activities of a project J4-3087 Engineered
+wood composites with enhanced impact sound insulation performance to improve human well being financed by Slovenian
+Research and Innovation Agency and Austrian Science Fund. The
+aim of the project is to address climate change issues and
+the negative impacts of the building industry. With research
+projects dedicated to developing solutions in different fields
+
+RQ4: Are there any differences connected with the added
+alternative text to social media posts with an image?
+
+In order to follow the main objective of this study, we
+formulated the following research questions (RQ):
+RQ1: What are the effective types of messages to be shared
+on social media channels (Facebook, Twitter (X), and LinkedIn) to increase engagement of the target audience towards
+sustainable construction solutions?
+RQ2: Are there any differences among the three social media
+channels used in terms of message effectiveness?
+RQ3: Are there any differences connected with time/season?
+
+Materials and methods
+
+For this study the content and materials were prepared and collected in English and posted on institutional social media channels of the research institute InnoRenew CoE. InnoRenew
+CoE is a research institute dedicated to research and innovation in the field of renewable materials and healthy built
+
+environments. Two key research areas are wood modification and restorative environmental and ergonomic design
+(REED), which supports creating positive health impacts for
+building users and the environment.
+Based on data obtained on April 17, 2023, InnoRenew CoE
+is active on Facebook with 1953 followers, Twitter (X) with
+1430 followers and LinkedIn with 2571 followers. The institute is posting only content in English on its social media
+channels. Compared to other, similar, research institutions
+from Slovenia, for example the Slovenian National Building
+and Civil Engineering Institute, InnoRenew CoE has higher
+number of followers, while in comparison with bigger international research institutes, like the RISE Research Institutes
+of Sweden, its numbers are lower.
+The audience of InnoRenew CoE’s social media channels on
+Facebook is mostly in the age group from 35–44, and 53%
+of the audience is female. Facebook followers are mostly
+from Slovenia, followed by USA, Italy, and Germany. The
+LinkedIn audience is also mostly from Slovenia, followed by
+Turkey, Finland, and Croatia. Follower’s job function is predominately from the research field, followed by education,
+business development, engineering, and operations. The industry that is covered from LinkedIn audience is the higher education, research, paper and forest products manufacturing, civil
+engineering, and construction. Unfortunately, Twitter (X) analytics no longer provides audience insights, however according to a previous study from the United States, the audience
+is mostly younger people who are more likely to be highly
+educated and have higher incomes (Wojcik & Hughes, 2019).
+The shared content on social media channels was highly interdisciplinary, connecting different fields with the same goal
+– to advance more sustainable solutions in the built environment. Each of the project partners were preparing content
+related to their research project tasks. The InnoRenew CoE was
+communicating about building and testing the wood-based
+resilient layer for use in floating floors, about setting up the
+vibration exposure device, and the Ambisonics loudspeaker
+system for tests in the anechoic chamber. Most topics were
+connected to the field of wood composites, impact noise and
+the dynamic characterization of structures. The IBO Austrian
+Institute for Building and Ecology was preparing content
+related to impact noise levels, sound measurements, as well
+as different types and acoustic properties of wooden component, and the impact and the descriptors of different material types and layers. Therefore, social media posts were related
+to human well-being, acoustics, and impact noise. The TU
+Vienna University of Technology shared content about acoustics numerical modelling. In the shared content, scientists are
+presenting a Finite Element Method (FEM) model as a visual
+representation of a floor structure. Furthermore, the FEM was
+used to predict the influence of floor structures on the impact
+sound insulation of wooden ceilings. Additionally, results of the
+FEM Model are modelling the dynamic force excitation of the
+floor structure by a tapping machine and the necessary measurement setup for validation of the model. The University of
+
+Primorska prepared content about human well-being related
+to indoor materials and noise. Posts were about measuring stress in people, stress caused by exposure to noise, and
+how different materials used indoors can mitigate noise disturbance. University of Ljubljana prepared content related to
+mechanical models and the related boundary conditions that
+well describe the elastic response of the developed resilient
+layer.
+The study was conducted in 2022 and consisted of two phases.
+The first phase took place from May 3 until August 9, and the
+second phase took pace from August 30, until December 6. In
+each phase 15 posts were published, one every Tuesday at 10
+am on InnoRenew CoE’s social media channels (Facebook,
+Twitter (X), and LinkedIn). On each platform the same post
+was published. Monitoring of engagement (Table 1) took place
+every Thursday at 10 am. We collected different information
+related to the effectiveness of communication for the studied
+social media channels, since not all include the same parameters.
+However, we clarified in advance what each parameter means
+in order to properly compare the data. We monitored engagement on Twitter (X) and LinkedIn, which is measuring the
+total number of times a user has interacted with a message.
+We compared it with the number of clicks on the post on Facebook. Engagement is an important metric revealing that the
+content is compelling, and it leads to discussion. Further, we
+measured impressions on Twitter (X) and LinkedIn, which
+are reflecting the number of times a message was seen, hence
+we can compare it with the reach of a message on Facebook.
+Impressions are important to understand if the message is reaching a vast audience. Therefore, in the analysis we used the term
+engagement which includes engagement on Twitter (X) and
+LinkedIn and number of clicks on Facebook, and the term
+impressions which includes impressions on Twitter (X) and
+LinkedIn, and reach on Facebook. Additionally, we collected
+data about number of likes, comments, and shares received on
+each social media channel.
+Three different types of posts were created. Type 1 posts
+(Figure 1) was written informative content (80–150 characters with spaces). Content was related to the project research
+activities and research fields. All content was of informative
+nature.
+
+Table 1. Quantitative measures monitored on social media.
+Facebook
+Engagement
+Number of clicks
+
+x
+
+Reach
+
+x
+
+Impressions
+Number of likes, comments,
+and shares
+
+x
+
+Twitter
+
+LinkedIn
+
+X
+
+x
+
+X
+
+x
+
+X
+
+x
+
+Figure 1. Example of Type 1 post on Facebook.
+
+Type 2 posts (Figure 2) was image content related to
+the project research activities and research equipment
+used in the project together with short text caption of the
+image.
+Type 3 posts (Figure 3) was image content with people –
+scientists working with research equipment used in the
+project together with short text caption of the image.
+Each post contained two hashtags – one was related to the
+project name and always the same (#iris), while the other
+differed depending on the content.
+
+Figure 2. Example of Type 2 post on Twitter (X).
+
+Overall, this study included 30 posts related to wood composites, sound insulation, building acoustics, human well-being,
+and modelling of the floating floor. In Table 2 we present
+the number of the 30 social media posts, their type and the
+respective field they were covering.
+Additionally, we posted four additional weekly posts (at the
+same time and day each week) of only type 3 on social media,
+with the same content as we posted in previous two phases
+of type 1 and type 2. We aimed to verify that the studied differences in engagement can be attributed to different types
+and not the content.
+
+Results
+
+The analysis performed has delivered important findings
+to be used in future science communication through social
+media. We are providing the results of the study and in the
+discussion point out the need for future research in the field.
+The analysis of social media posts included performance of 30
+social media posts, 15 from phase 1 and 15 from phase 2. All
+social media posts were somehow evenly distributed regarding the content; however, we can notice a small difference.
+The topic of human well-being was the one mostly communicated about, followed by social media posts about impact
+noise and acoustics, wood composites, and modelling (Table 2).
+For the analysis we applied Poisson regression as our data was
+count data of relatively low values and we had a small sample size (30 posts). Poisson regression is an analysis known
+as a generalized linear model. It is used for modelling data
+predictions. The outcome variable is a count of the number
+of events that occur in a fixed period of time (Coxe et al.,
+2009). The data obtained from our study fit these requirements.
+
+Figure 3. Example of Type 3 post on LinkedIn.
+
+Since we analysed three different social media channels, we
+have to note that although there may be some overlap of individuals that follow the social media accounts on each platform,
+we have treated the audience in each platform as independent
+from one another.
+As related to the RQ 3 and RQ4, we first analysed each phase
+of posts separately, in order to verify if there is any difference between the two phases, considering the time dimension (season) and the added alternative text. The alternative text
+was added to posts in phase 2. It means that each social media
+post that contained an image had also the written alternative
+text that is explaining what is on the image, enabling wider
+accessibility. It is usually used to describe elements, like photos
+and other types of data visualizations. The difference between
+
+Table 2. Number of analysed posts per research topic and
+type of post.
+Type 1
+
+Type 2
+
+Type 3
+
+Total
+
+Wood composites
+
+3
+
+2
+
+1
+
+6
+
+Impact noise
+
+1
+
+2
+
+4
+
+7
+
+Acoustics
+
+2
+
+3
+
+2
+
+7
+
+Human well-being
+
+3
+
+2
+
+3
+
+8
+
+Modelling
+
+2
+
+1
+
+2
+
+5
+33*
+
+* In total there were three social media posts (one of type 1 and two of type
+3) that were covering two different fields and not just one, this is why in the
+Table 2 the total number is 33.
+
+the two phases is not statistically significant when comparing number of likes, impressions and engagement. Number of
+comments and shares was very low, so we did not include these
+two parameters in the analysis. Furthermore, number of likes on
+Twitter (X) is always lower compared to number of likes on
+LinkedIn and on Facebook, in all types of posts. On the other
+hand, number of likes on LinkedIn and Facebook is relatively similar in all types of posts and both phases (Figure 4).
+We observed the same result in terms of impressions on
+Twitter (X) as it is always considerably lower (Figure 5).
+Impressions are higher on LinkedIn compared to Facebook,
+regardless of type and phase. Engagement is the lowest on
+Facebook (Figure 6), a bit higher on Twitter (X), and the highest
+on LinkedIn, regardless of post type.
+As there was no significant difference between the phase
+1 and phase 2, the overall analysis in relation to RQ1 and
+RQ2, included all 30 social media posts, regardless of phase,
+was performed.
+We compared the number of likes on all three social media
+channels, the engagement on Twitter (X) and LinkedIn with
+number of clicks on Facebook, and the reach on Facebook with
+impressions on Twitter (X) and LinkedIn. As stated above,
+we compared parameters that are differently named on the
+social media channels but according to the definitions they
+measure the same thing.
+With the Poisson mixed model, we modelled the data predictions based on the number of likes (Figure 7). We found out
+that each type is different and that the most likes are of type 3
+posts, across all social media channels. Effect of type is consistent. We expect that on Facebook and LinkedIn, the number
+
+Figure 4. Number of likes for each post type on Facebook, Twitter (X), and LinkedIn.
+
+Figure 5. Impressions for each post type on Facebook, Twitter (X) and LinkedIn.
+
+Figure 6. Engagement for each post type on Facebook, Twitter (X) and LinkedIn.
+
+of likes is approximately the same, regardless of type, and we
+expect number of likes on Twitter (X) to be considerably lower.
+The number of followers in the Twitter (X) account is the lowest
+therefore this result is at least somehow expected. Additionally, Twitter (X) is the social media with the lowest
+number of users in general. On average the higher number of
+likes is on LinkedIn for all posts types.
+Similarly, the type 3 posts shared on LinkedIn were highest in impressions (Figure 8). There is less variance in posts
+on all channels compared to the number of likes (Figure 7).
+
+Type 3 posts performed better regardless of the social media
+channel.
+In regard to engagement, posts performed slightly different.
+The highest was still on LinkedIn, and type 3 posts performed
+the best for all channels, while lowest on Facebook, which is
+not the case for number of likes and impressions (Figure 9). We
+discovered that Twitter (X) and Facebook are fairly consistent in terms of engagement, while we notice a lot of variability
+on LinkedIn. The reasons for the variance can be found in the
+changing algorithms on social media, different preferences of
+
+Figure 7. Number of likes for each type for Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+Figure 8. Impressions for each post type on Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+users, and other happening on the day of the post. For example,
+the social media post shared on LinkedIn with lower engagement were shared on dates when there was several news
+stories related to the current war or Brexit developments.
+Further, we found that there was only one comment on
+LinkedIn for type 3 post, and there were only five shares of
+posts, of which one on Twitter (X) for type 3, and three on
+Facebook for type 1 and one on Facebook for type 3. These
+findings indicate that users may not be comfortable commenting on topics connected to sustainable construction, or that they
+
+are not interested in engaging in conversations on social media
+to develop new relationships. This was suggested also by previous research which discovered that certain users are afraid
+to engage in social interactions online (Ellison et al., 2014).
+Sharing a post is even a more visible action than commenting or liking, but it is also less direct, as found in past studies
+(Li & Xie, 2020).
+Finally, with the analysis of the additional weekly posts of only
+type 3 we confirmed that the studied differences of engagement can be attributes to the studied factors. Namely, we
+
+Figure 9. Engagement for each post type on Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+discovered that if we share the same content in as different type,
+the result is the same (e.g. the shared content does not affect our
+results). On average, these additionally shared posts of type 3
+performed better in terms of engagement, compared to the same
+content shared as type 1 and type 2.
+
+Discussion
+
+In our study we found that social media posts related to sustainable construction topics, shared on social media channels
+of a research institute, containing an image with people, performed the best on different social media channels. This is
+why, in relation to the first research question we discovered
+that social media posts with an image of people (type 3 post)
+generated highest engagement, impressions and likes. Literature suggests that visual elements such as images are helpful
+in terms of creating engagement (Bruce et al., 2017; Goldfarb
+& Tucker, 2011; Hwong et al., 2017; Li & Xie, 2020; Pieters &
+Wedel, 2004). However, there are also some contradictory findings where the relation between the image in engagement was
+not confirmed (De Luca et al., 2022). Several scholars studied
+the persuasion and engagement of visual elements in advertising
+and marketing areas, but to our knowledge there is a lack of
+studies in this field related to research of sustainable construction. Therefore, we uncovered a novel insight regarding
+social media posts of research organizations. The reason why
+people engage with some posts on social media, and some not,
+is hard to predict and can be affected by several factors. Some
+authors (Chung & Darke, 2006) suggest that people who are
+engaging more often have certain personal characteristics, like
+the urge to provide useful information and to influence how
+other people perceive them. The content of the message and
+how it is said also influences users and engagement in online
+
+discussion. Emotional, social, cognitive and descriptive words
+help to reach greater engagement (Moore & McFerran, 2017).
+With reference to the second research question, LinkedIn performed the best in terms of message effectiveness. This is somehow expected given that the account from where the social
+media posts were shared had the highest number of followers,
+compared to the other two channels included in the study. Additionally, in comparison to Facebook, LinkedIn has less users
+overall, however it is the platform known to have an engaged
+audience (Dixon, 2022). Moreover, we found that in terms
+of likes, all types of social media posts performed similarly
+on Facebook and LinkedIn, while on Twitter (X) the number
+is considerably lower. Twitter (X) is the channel that is more
+dedicated to political discussions (Lupton, 2014) this is why
+users might not have a high interest in research topics. In
+contrast (Collins et al., 2016) argues that scientists are using
+Twitter (X) as a means to communicate with their peers.
+However, the latest changes in ownerships, could potentially
+have impacted the communication dynamics. The institutional
+account from where posts were shared has the least number of
+followers on Twitter (X), compared to the other two social
+media channels. As previously stated, LinkedIn is a professional
+networking channel, therefore users are focused on their profession and career development, which leads to more meaningful interactions. Similarly, content uploaded on LinkedIn
+is more likely to increase user engagement as users find it
+more useful and relevant to their professional development. In
+comparison, Twitter (X) and Facebook typically feature content of a different sort, and people do not engage as much
+because they utilize them for other goals other than
+professional.
+
+Regarding the third and fourth research questions we found
+that the time dimension (season) and alternative text does
+not influence the engagement and other monitored parameters, as the analysis revealed there was no significant difference between posts of phase 1 and phase 2. Due to social media
+algorithms constantly changing, it is difficult to forecast when
+is the optimum time to post (Post, 2021). The uncontrolled
+changes of social media algorithms, which the account holders cannot influence, can also affect the reason why there is
+no significant difference between the two phases in relation to
+adding alternative text.
+Furthermore, we identified limitations of our study. First, the
+audience in this study is related to one institution (research
+organization). Accordingly, the audience may have its own
+characteristics which are not representative of the larger population. With available analytical tools the audience was studied
+on each social media channels, however these functions are limited and not all social media channels offer the same kind of
+data, which is another limitation. Comparability of the three
+social media channels is an additional limitation. The number of
+followers is different on the three channels and there might be
+an overlap between followers. However, in the analysis we
+did account for repeated measures of the same post on different platform by including the unique post ID as a source
+of random error. While it is likely there is some duplication
+of individuals between platforms, we do not have the information to determine if the same individuals responded to the
+posts on multiple platforms. We nonetheless believe the data
+provides valuable insights into the performance of the posts
+between platforms, as our study revealed that regardless of the
+social media channel, posts containing an image with people,
+performed the best.
+Moreover, the fact that posts were shared from an institutional
+account and not a physical person can influence the results.
+Appropriately interpreting findings is difficult because it is challenging to determine an accurate explanation for discrepancies and variances in social media posts. This is connected
+also to the fact that the algorithm on social media channels are
+constantly changing. On top of that, we must stress that the content for social media posts was prepared in collaboration with
+researchers from different research organizations. This might
+have influenced the results as the language used was more
+understandable for professional and scientific stakeholders,
+rather than the general public reached on some social media
+channels. If the content would be prepared by communication practitioners or social media specialists, perhaps the findings would be different. At the same time, this is an important
+implication for further studies which should focus on
+expanding the knowledge in this area.
+We are aware that such social media studies are very complex
+to perform and include many external factors that are influencing the outcomes, such as the variation in follower counts
+across social media platforms, the credibility of accounts,
+and the diverse audience characteristics. However, we believe
+
+that studies like this one, are very important as they contribute to a more scientific approach in understanding the dynamics of social media engagement, despite the limitations and
+complexities involved.
+Overall, this finding can serve to help other communication
+practitioners and researchers to improve their communication
+and dissemination activities on social media about their research
+projects, and to more effectively promote their project activities related to sustainable construction. Our results show that
+posts with an image of a person and short text caption are
+best in terms of different parameters that are important for
+reaching the audience.
+Future studies should consider finding a way to encourage
+the audience to engage through commenting or sharing with
+their own thoughts, and although the language in science is
+English, communication to target audience out of the scientific and professional community should be performed in local
+languages.
+In the field of sustainable construction we can expect that the
+New European Bauhaus (New European Bauhaus, n.d.) principles in developing new solutions together, sustainable, and beautiful will significantly influence the science communication in
+the field. It is attempting to bridge research and practice. With
+further studies on social media use in science communication
+we can significantly contribute to these ambitions.
+
+Conclusion
+
+This study investigated the effectiveness of different types
+of social media posts, shared on institutional Facebook,
+Twitter (X), and LinkedIn accounts, about sustainable construction related topics. Findings suggests that social media posts
+with an image of a person generate the highest engagement.
+These findings provide an important message for communicators and researchers that want to improve their communication activities on social media and assuring broader outreach of
+their research projects.
+In addition to communication experts and researchers, these
+findings can also serve policy makers as more communication about sustainable construction is needed, either on social
+media or on other channels, to promote and enhance its wider
+use. Encouraging communication about sustainability and
+sustainable construction related topics is crucial to raise awareness and help to transition to a more sustainable society.
+Policy makers are already taking important steps in this direction by creating and adopting strategies and initiatives, such
+as the New European Bauhaus in Europe. However, additional
+communication efforts are needed to enable the transition
+to a sustainability-oriented society.
+Future research should examine effectiveness of different languages, addressing other relevant stakeholders such
+as architects, constructors, engineers, and other professionals, and by involving communication experts in the creation
+
+of the content. More social media channels (Instagram,
+Reddit, TikTok etc.) could be added to the sample and apply
+the presented methodological approach to further investigate and expend findings. In future studies, partners involved
+in the study could be sharing, liking and reposting social
+media posts and thus investigate the potential of extended reach.
+Moreover, it is worth noting that the social media posts in this
+study covered highly interdisciplinary research topics, from
+acoustics to wood composites and psychology. Potentially, there
+is a need for a more focused and gradual approach to social
+media communication about sustainable construction topics.
+Further research should focus on determining which topics
+should be prioritized and communicated to wider audience
+on social media. Accordingly, a more holistic understanding of sustainable construction topics in society can be built. To
+our knowledge there is a lack of prior studies investigating the
+engagement of different types of social media messages,
+about a research topic connected with sustainable construction, therefore we believe such studies can be an important
+first step in the direction of better understanding the social
+media communication. The information and metrics monitored and observed in this study can help sustainability communication experts and researchers to create impactful
+messages and to redefine strategies in order to promote more
+sustainable construction practice, and raise awareness. Furthermore, it is crucial to learn how to use social media
+in science communication and contribute to the so much
+needed transformation of engaging society in science.
+
+Data availability
+Underlying data
+
+Zenodo: Data for the social media study of sustainable
+construction communication
+https://doi.org/10.5281/zenodo.10454501 (Primožič et al., 2024)
+This project contains the following underlying data:
+• social media study_240108_md_v1.txt
+• socialmediastudy_230103_d_p1_v1.csv
+• socialmediastudy_230103_d_p2_v1.csv
+• socialmediastudy_230103_d_p3_v1.csv
+Data are available under the terms of the Creative Commons
+Attribution 4.0 International license (CC-BY 4.0).
+
+Acknowledgments
+We thank Professor Dr Eric Hansen (Oregon State University,
+USA) for providing comments on the manuscript and
+insightful discussion. We thank Dr Dean Lipovac (Faculty of
+Mathematics, Natural Sciences and Information Technologies,
+University of Primorska, Slovenia), Dr Maximilian Neusser
+(Vienna University of Technology, Austria), and Dr Daniel
+Svenšek (Faculty of Mathematics and Physics, University of
+Ljubljana, Slovenia) for preparing the social media posts used in
+this study and for insightful discussion.
+
+References
+Hagberg KB: Management of acoustics in lightweight structures. [Doctoral
+Thesis (Compilation), Department of Construction Sciences. Department of
+Construction Sciences, Lund University, 2018.
+Reference Source
+Bonsón E, Perea D, Bednárová M: Twitter as a tool for citizen engagement:
+An empirical study of the Andalusian municipalities. Government
+Information Quarterly. 2019; 36(3): 480–489.
+Publisher Full Text
+Bridgstock R: Employability and Career Development Learning through
+Social Media: Exploring the Potential of LinkedIn. Brill, 2019; 143–152.
+Publisher Full Text
+Bruce NI, Murthi BPS, Rao RC: A Dynamic Model for Digital Advertising:
+The Effects of Creative Format, Message Content, and Targeting on
+Engagement. Journal of Marketing Research. 2017; 54(2): 202–218.
+Publisher Full Text
+Burns TW, O’Connor DJ, Stocklmayer SM: Science Communication: A
+Contemporary Definition. Public Understanding of Science. 2003; 12(2):
+183–202.
+Publisher Full Text
+Chung CMY, Darke PR: The consumer as advocate: Self-relevance, culture,
+and word-of-mouth. Market Lett. 2006; 17(4): 269–279.
+Publisher Full Text
+Clark A: Selling Sustainability. Greenbiz, 2008.
+Reference Source
+
+Darling E, Shiffman D, Cȏté I, et al.: The role of Twitter in the life cycle of a
+scientific publication. Ideas in Ecology and Evolution. 2013; 6(1): 1.
+Publisher Full Text
+Dawkins J: Corporate responsibility: The communication challenge. Journal
+of Communication Management. 2004; 9(2): 108–119.
+Publisher Full Text
+De Luca F, Iaia L, Mehmood A, et al.: Can social media improve stakeholder
+engagement and communication of Sustainable Development Goals? A
+cross-country analysis. Technological Forecasting and Social Change. 2022; 177:
+121525.
+Publisher Full Text
+Dixon S: LinkedIn—Statistics & Facts. Statista. September 27, 2022.
+Reference Source
+Dixon S: Twitter accounts with the most followers worldwide as of January
+2023. Statista. January 25, 2023a.
+Reference Source
+Dixon S: Number of monthly active Facebook users worldwide as of 1st
+quarter 2023. Statista. September 5, 2023b.
+Reference Source
+Ellison NB, Vitak J, Gray R, et al.: Cultivating Social Resources on Social
+Network Sites: Facebook Relationship Maintenance Behaviors and Their
+Role in Social Capital Processes. J Comput Mediat Commun. 2014; 19(4): 855–870.
+Publisher Full Text
+
+Collins K, Shiffman D, Rock J: How Are Scientists Using Social Media in the
+Workplace? PLoS One. 2016; 11(10): e0162680.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Escalas JE: IMAGINE YOURSELF IN THE PRODUCT: Mental Simulation,
+Narrative Transportation, and Persuasion. Journal of Advertising. 2004; 33(2):
+37–48.
+Publisher Full Text
+
+Coxe S, West SG, Aiken LS: The Analysis of Count Data: A Gentle Introduction
+to Poisson Regression and Its Alternatives. J Pers Assess. 2009; 91(2):
+121–136.
+PubMed Abstract | Publisher Full Text
+
+Geyser W: What is the Best Length for Social Media Posts? (Free Character
+Counter). Influencer Marketing. August 16, 2022.
+Reference Source
+
+Foulger D: Models of the Communication Process. 2004.
+
+Goldfarb A, Tucker C: Advertising Bans and the Substitutability of Online
+and Offline Advertising. Journal of Marketing Research. 2011; 48(2): 207–227.
+Publisher Full Text
+Hwong YL, Oliver C, Van Kranendonk M, et al.: What makes you tick? The
+psychology of social media engagement in space science communication.
+Comput Hum Behav. 2017; 68: 480–492.
+Publisher Full Text
+Insall R: Science Twitter - navigating change in science communication. Nat
+Rev Mol Cell Biol. 2023; 24(5): 305–306.
+PubMed Abstract | Publisher Full Text
+Jasanoff S, Markle GE, Peterson JC, et al.: Handbook of Science and
+Technology Studies. SAGE Publications, 2001.
+Reference Source
+Kaplan AM, Haenlein M: Users of the world, unite! The challenges and
+opportunities of Social Media. Bus Horizons. 2010; 53(1): 59–68.
+Publisher Full Text
+Kappel K, Holmen SJ: Why Science Communication, and Does It Work? A
+Taxonomy of Science Communication Aims and a Survey of the Empirical
+Evidence. Front Commun. 2019; 4.
+Publisher Full Text
+Korhonen E, Toppinen A, Lahtinen K, et al.: Communicating Forest Sector
+Sustainability: Results from Four European Countries. Forest Prod J. 2016;
+66(5–6): 362–370.
+Reference Source
+Lee K: How to Use Hashtags: How Many, Best Ones, and Where to Use
+Them. Buffer. 2016.
+Reference Source
+Li Y, Xie Y: Is a Picture Worth a Thousand Words? An Empirical Study of
+Image Content and Social Media Engagement. J Marketing Res. 2020; 57(1):
+1–19.
+Publisher Full Text
+Lupton D: Twitter: Social communication in the digital age. Inform Commun
+Soc. 2014; 17(5): 644–646.
+Publisher Full Text
+Mazman SG, Usluel YK: Modeling educational usage of Facebook. Comput
+Educ. 2010; 55(2): 444–453.
+Publisher Full Text
+McLachlan S: Ideal Length of Social Media Posts: A Guide for Every
+Platform. Hootsuite. 2022.
+Reference Source
+Medicine, N. A. of S., Engineering, and, Education, D. of B. and S. S. and, &
+Agenda, C. on the S. of S. C. A. R: Communicating Science Effectively: A
+Research Agenda. National Academies Press, 2017.
+PubMed Abstract | Publisher Full Text
+Moore SG, McFerran B: She Said, She Said: Differential Interpersonal
+Similarities Predict Unique Linguistic Mimicry in Online Word of Mouth.
+J Assoc Consum Res. 2017; 2(2): 229–245.
+Publisher Full Text
+Moser SC: Communicating climate change: History, challenges, process
+
+and future directions. Wires Clim Change. 2010; 1(1): 31–53.
+Publisher Full Text
+New European Bauhaus: Beautiful, sustainable, together. European Union,
+(n.d.). Retrieved 27 December 2023.
+Reference Source
+Parsons ECM, Shiffman DS, Darling ES, et al.: How Twitter literacy can benefit
+conservation scientists. Conserv Biol. 2014; 28(2): 299–301.
+PubMed Abstract | Publisher Full Text
+Pieters R, Wedel M: Attention Capture and Transfer in Advertising: Brand,
+Pictorial, and Text-Size Effects. J Marketing. 2004; 68(2): 36–50.
+Publisher Full Text
+Post A: Best Times to Post on Social Media in 2021. Social Media Data. 2021.
+Reference Source
+Primožic L, Kutnar A: Sustainability Communication in Global Consumer
+Brands. Sustainability. 2022; 14(20): 13586.
+Publisher Full Text
+Primožic L, Kutnar A, Prislan R, et al.: Data for the social media study of
+sustainable construction communication. [Data set]. Zenodo. 2024.
+http://www.doi.org/10.5281/zenodo.10454501
+Ripo J: How Long Does A Social Media Post Live? LinkedIn. 2021.
+Reference Source
+Rohlinger DA, Rose K, Warren S, et al.: Does the Musk Twitter Takeover
+Matter? Political Influencers, Their Arguments, and the Quality of
+Information They Share. Socius. 2023; 9(8): 23780231231152193.
+Publisher Full Text
+Schwab PN: How many hashtags should you put in your LinkedIn posts?
+[Research]. IntoTheMinds. 2021.
+Reference Source
+Seo K: Meta-Analysis on Visual Persuasion–Does Adding Images to Texts
+Influence Persuasion? Athens Journal of Mass Media and Communications. 2020;
+6(3): 177–190.
+Publisher Full Text
+Skeels MM, Grudin J: When social networks cross boundaries: A case study
+of workplace use of facebook and linkedin. Proceedings of the 2009 ACM
+International Conference on Supporting Group Work, 2009; 95–104.
+Publisher Full Text
+Socialbakers: Everything you need to know about #hashtags on Facebook.
+2021.
+Reference Source
+Van Noorden R: Online collaboration: Scientists and the social network.
+Nature. 2014; 512(7513): 126–9.
+PubMed Abstract | Publisher Full Text
+Wilson PM, Petticrew M, Calnan MW, et al.: Disseminating research findings:
+What should researchers do? A systematic scoping review of conceptual
+frameworks. Implement Sci. 2010; 5(1): 91.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Wojcik S, Hughes A: U.S. adult Twitter users are younger and more likely to
+be Democrats than the general public. Most users rarely tweet, but the most
+prolific 10% create 80% of tweets from adult U.S. users. 2019.
+
+图表页附件：
+assets/manuscript_before_p03.png
+assets/manuscript_before_p04.png
+assets/manuscript_before_p05.png
+assets/manuscript_before_p06.png
+assets/manuscript_before_p07.png
+assets/manuscript_before_p08.png
+assets/manuscript_before_p09.png
+assets/manuscript_before_p10.png
+assets/manuscript_before_p11.png
+assets/manuscript_before_p12.png
+assets/manuscript_before_p13.png
+
+
+=== manuscript_after ===
+
+Abstract
+Background
+In an effort to move to a sustainable society, new concepts and
+findings related to sustainable construction are being developed. With
+ambition to transfer newly developed knowledge to society, various
+communication paths are being used. In this study we investigated
+what kind of messages shared on institutional social media channels
+(Facebook, Twitter (now renamed to X), and LinkedIn) about
+sustainable construction create more audience engagement.
+Methods
+The study consisted of two phases of weekly social media posts. In
+each phase, 15 posts were published on the same day and time, while
+engagement was monitored. Three different types of posts were
+created, that were sequential cycling each week. Type 1 was written
+informative content related to research activities; type 2 was image
+content related to the research activities and equipment, with a short
+text caption of the image; and type 3 was image content with people –
+scientists working on research activities with a short text caption of
+the image.
+Results
+Poisson regression analysis revealed that type 3 posts result in the
+most audience engagement on LinkedIn, suggesting that using
+images of people in combination with short text captions is the most
+effective way to engage social media audiences. These findings can
+
+O
+
+help organizations to use social media to promote sustainable
+construction and other sustainability-related research. The
+engagement was lower on Facebook and Twitter (X).
+Conclusions
+As the science is aiming to be closer to the society, these findings
+deliver an important insight of science communication through the
+social media. Although the study delivered several lessons learnt
+related to science communication through social media studies, it
+provides an important bases for further studies. Conclusions can
+support research organizations in improving their science
+communication.
+
+Introduction
+
+The field of communication witnessed many changes over time.
+Many communication models exist that define communication
+and describe its various elements (Foulger, 2004). The communication models developed in the past have been adapted also
+to the field of science with the goal of efficient science communication (Burns et al., 2003). Communication and dissemination
+of research findings is common practice among scientists.
+Often, this is also a requirement from research funding bodies.
+We can define it as a planned process that carefully considers
+the intended audience and the contexts in which research
+findings will be presented, with the goal of effectively communicate and engage with the target audience through various
+interactions (Wilson et al., 2010).
+There are several ways to disseminate and communicate about
+research. Science communication is about sharing findings,
+increasing public appreciation, increasing knowledge, and understanding, influencing opinions, policy preferences and behaviours, and is about promoting diverse science perspectives
+for comprehensive societal challenges (Medicine et al., 2017).
+As the scientific topics related to environmental issues are complex and hard to understand for the general public (Moser, 2010),
+the models of communication must be adopted and include
+not only the transfer of information from the messenger to
+the audience through a channel, but they must recognize also
+the context and the meaning of the message (Jasanoff et al.,
+2001). Improving the population’s beliefs about science and
+generating social acceptance are also among the aims of science
+communication. Just like in the communication literature, also
+in science communication we find one-way communication
+when scientist share their knowledge to the public, and a
+dialogue model, when the public, experts and other stakeholders are engaged in a scientific discussion (Kappel & Holmen,
+2019). Social networks are one of the channels offering
+the possibility of dialog and they became a crucial part of
+communication strategies.
+Social media play an important role in science communication. The emergence of different social media channels has
+revolutionized the manner in which the general public interacts
+with scientists and scientific institutions. Social media means a
+
+two-way technology-facilitated dialogue, that is more interactive,
+compared to traditional media (Kaplan & Haenlein, 2010).
+It allows information to spread rapidly in a digital community (Darling et al., 2013). Users engage on social media channels with liking, commenting, and sharing posts (Hwong et al.,
+2017). Scientist are using social media to share their scientific results and the general public is using them to search for
+information (Van Noorden, 2014). Scientists are quickly adopting social media for disseminating their research results
+because science communication is becoming more and more
+important (Parsons et al., 2014). Science relies heavily on
+social interaction, and scientists require effective communication and creativity, since inability to convince fellow
+experts of the significance of one’s work can result in being
+disregarded and irrelevant (Insall, 2023).
+Many social media channels exist, like Twitter (X), Facebook,
+YouTube, Pinterest, Instagram, and different blogs. Three
+channels dominate science communication, namely Twitter (X),
+Facebook, and LinkedIn (Collins et al., 2016). The surveyed
+scientists use Facebook for personal use and they share
+scientific results with colleagues, family and friends, and only
+few believed that it is an appropriate channel to share research
+with the general public (Collins et al., 2016). Facebook is
+a social network where users share more personal information
+(Skeels & Grudin, 2009), and compared to LinkedIn and
+Twitter (X), it has the highest number of users – over 2 billion
+monthly active users (Dixon, 2023b). Facebook is where users
+want to be connected with friends, their work and spend time
+with daily activities such as playing games or being part of
+groups with similar interests (Mazman & Usluel, 2010). On
+the other hand, LinkedIn is dedicated to professional networks
+(Skeels & Grudin, 2009). It has over 774 million users and it
+is the most effective platform in terms of audience engagement (Dixon, 2022). LinkedIn is known as a professional
+platform for self-promotion and job recruitment (Bridgstock,
+2019). Twitter (X) is the channel most used by scientists
+to communicate with other scientists (Collins et al., 2016).
+Users are connecting with their family, friends and colleagues by
+sharing short news and status updates (Bonsón et al., 2019). In
+comparison to Facebook and LinkedIn, Twitter (X) has the
+lowest number of users – over 350 million users (Dixon, 2023a).
+Additionally, it is critical to consider the platform’s unique
+history, which includes political (particularly in the United
+States) and ownership changes. These factors are likely to have
+influenced Twitter (X) users’ demographics, the type of content they share, and their level of engagement on the platform
+(Rohlinger et al., 2023). Twitter (X) is very important in terms
+of policy and journalism (Lupton, 2014).
+In order to be successful in sharing messages on different social
+media channels there are some factors to consider. For example, it is important to know what is the best time of day to post
+for reaching the widest audience. However, it is hard to predict
+which time and day is the best to post on different social media
+channels. Nevertheless, there is data that suggest peak times.
+Peak days and times differ for Facebook, Twitter (X), and
+LinkedIn. Tuesday from 9am to 12pm (in all time zones) was
+identified as a peak period in all three channels (Post, 2021).
+This data can be changing quickly as different social media
+
+algorithms are changing constantly. The length of social media
+posts is another characteristic that might influence the audience engagement. Some authors say that the length of posts
+does not affect engagement (Li & Xie, 2020), still several web
+blogs (Geyser, 2022; McLachlan, 2022) report that 80 characters
+is an average post length effective on social media.
+On social media, informative and emotional type of messages
+tend to create more engagement (Li & Xie, 2020). Adding
+visual elements help create more engagement (Bruce et al.,
+2017; Goldfarb & Tucker, 2011; Li & Xie, 2020; Pieters &
+Wedel, 2004). Images of people in print ads increase their
+effectiveness (Li & Xie, 2020). Top features for engaging
+messages on Facebook and Twitter (X) in space science are
+photos and other visual elements (Hwong et al., 2017). Visual
+communication is more persuasive, it gets more attention and
+enhances memorability of a message. Images also induce positive emotions which influences our persuasion towards a topic
+(Escalas, 2004). In a meta-analysis study they found out that
+adding a realistic photograph to a text message increases the
+persuasion (Seo, 2020). Messages must be clear and simple, and they need to fill in the knowledge gaps between the
+communicator and the audience (Moser, 2010). Additionally,
+messages need to get audience attention and must have an
+important emotional impact (Korhonen et al., 2016; Moser,
+2010). Another important implication of social media communication is the lifespan of social media posts that is relatively
+short, and it is different for each social media channel. The
+lifespan of Twitter (X) posts is 15 minutes, Facebook 6 hours,
+and LinkedIn 30 hours (Ripo, 2021). Using hashtags in social
+media posts is an integral part of communication. It started
+as an idea to use the hashtag in front of the keyword allowing
+users to link and easily find similar content. Later we witnessed
+how it helped in creating several social movements (Me too,
+black lives matter, …) or other marketing campaigns. Popular press recommends to use between two and three hashtags
+(Lee, 2016; Schwab, 2021; Socialbakers, 2021).
+Social media and appropriate marketing and communication
+strategies can make a big difference also in consumer behaviour that impacts the climate change, and the needed sustainability transformation of our society. Research organizations,
+and companies are using social media when talking about
+sustainability related issues to the general public (Clark, 2008).
+As consumers gain interest in environmental topics it causes
+companies to embrace greener ways of operating and, in return,
+communicating about this. Consumers are searching on social
+media for products that are more sustainable. Therefore, using
+social media became an important tool for communication.
+Global consumer brands are emphasizing environmental aspects
+in their online sustainability communication (Primožič &
+Kutnar, 2022). Green advertising on social media is an important marketing tool companies should use. Efficient communication about sustainability related topics, among which also
+sustainable construction, should be based on a clear communication strategy (Dawkins, 2004). A recent study suggests
+that messages about environmental and social issues, shared
+on Twitter (X), engage stakeholders the most (as compared to
+other sustainable development goals), while the relationship
+between the stakeholder engagement and image or video type of
+message was not supported (De Luca et al., 2022).
+
+In our study, communicating about sustainable construction
+related topics was approached by communicating on social
+media about research activities of a project J4-3087 Engineered wood composites with enhanced impact sound insulation
+performance to improve human well being financed by Slovenian
+Research and Innovation Agency and Austrian Science Fund.
+The aim of the project is to address climate change issues and
+the negative impacts of the building industry. With research
+projects dedicated to developing solutions in different fields
+that contribute to lowering the effects of climate change,
+significant progress can be achieved. The most promising way
+to limit the negative impacts of the building industry for the
+environment is to promote the use of renewable materials. There are several challenges that must be addressed if we
+want to promote the wider use of renewable materials in buildings. In this perspective, the most common prejudice is that
+wooden buildings suffer from low sound insulation. More
+specifically, it is a challenge to achieve high impact noise
+insulation because the structural elements are light, more sensitive to excitation, and generally lack sufficient damping that
+would restrain the propagation of vibrations (Bard Hagberg,
+2018). This engineering issue is addressed in this research
+project. Researchers are investigating the potential of creating
+wooden composites based resilient layer to limit impact noise
+in buildings. The main purpose of the project is to improve the
+impact noise insulation in wooden buildings by engineering a
+sustainable resilient layer. This is done by a fundamental assessment of the annoyance of impact noise in the built
+environment that surmounts standardized insulation ratings.
+InnoRenew CoE is the leading partner. Other project partners are University of Primorska, University of Ljubljana, IBO
+Austrian Institute for Building and Ecology, and TU Vienna
+University of Technology.
+This study was conducted in the framework of the
+above-mentioned research project. We investigated what kinds
+of messages related to this project we need to communicate
+on different social media channels to create more audience
+engagement. The overall objective of this research is to study
+the type of messages that should be shared on institutional
+social media channels (Facebook, Twitter (X), and LinkedIn)
+about sustainable construction related topics in order to
+create more engagement of the audience.
+In order to follow the main objective of this study, we
+formulated the following research questions (RQ):
+RQ1: What are the effective types of messages to be shared
+on social media channels (Facebook, Twitter (X), and
+LinkedIn) to increase engagement of the target audience
+towardssustainable construction solutions?
+RQ2: Are there any differences among the three social media
+channels used in terms of message effectiveness?
+RQ3: Are there any differences connected with time/season?
+RQ4: Are there any differences connected with the added
+alternative text to social media posts with an image?
+
+Materials and methods
+
+For this study the content and materials were prepared and
+collected in English and posted on institutional social media
+channels of the research institute InnoRenew CoE. InnoRenew
+CoE is a research institute dedicated to research and innovation in the field of renewable materials and healthy built
+environments. Two key research areas are wood modification and restorative environmental and ergonomic design
+(REED), which supports creating positive health impacts for
+building users and the environment.
+Based on data obtained on April 17, 2023, InnoRenew CoE
+is active on Facebook with 1953 followers, Twitter (X) with
+1430 followers and LinkedIn with 2571 followers. The
+institute is posting only content in English on its social media
+channels. Compared to other, similar, research institutions
+from Slovenia, for example the Slovenian National Building
+and Civil Engineering Institute, InnoRenew CoE has higher
+number of followers, while in comparison with bigger international research institutes, like the RISE Research Institutes
+of Sweden, its numbers are lower.
+The audience of InnoRenew CoE’s social media channels on
+Facebook is mostly in the age group from 35–44, and 53%
+of the audience is female. Facebook followers are mostly
+from Slovenia, followed by USA, Italy, and Germany. The
+LinkedIn audience is also mostly from Slovenia, followed by
+Turkey, Finland, and Croatia. Follower’s job function is predominately from the research field, followed by education,
+business development, engineering, and operations. The industry
+that is covered from LinkedIn audience is the higher
+education, research, paper and forest products manufacturing, civil engineering, and construction. Unfortunately, Twitter
+(X) analytics no longer provides audience insights, however
+according to a previous study from the United States, the audience
+is mostly younger people who are more likely to be highly
+educated and have higher incomes (Wojcik & Hughes, 2019).
+The shared content on social media channels was highly interdisciplinary, connecting different fields with the same goal
+– to advance more sustainable solutions in the built environment. Each of the project partners were preparing content
+related to their research project tasks. The InnoRenew CoE was
+communicating about building and testing the wood-based
+resilient layer for use in floating floors, about setting up the
+vibration exposure device, and the Ambisonics loudspeaker
+system for tests in the anechoic chamber. Most topics were
+connected to the field of wood composites, impact noise and
+the dynamic characterization of structures. The IBO Austrian
+Institute for Building and Ecology was preparing content
+related to impact noise levels, sound measurements, as well
+as different types and acoustic properties of wooden component, and the impact and the descriptors of different material
+types and layers. Therefore, social media posts were related
+to human well-being, acoustics, and impact noise. The TU
+Vienna University of Technology shared content about acoustics
+numerical modelling. In the shared content, scientists are
+presenting a Finite Element Method (FEM) model as a visual
+representation of a floor structure. Furthermore, the FEM was
+used to predict the influence of floor structures on the impact
+
+sound insulation of wooden ceilings. Additionally, results of the
+FEM Model are modelling the dynamic force excitation of the
+floor structure by a tapping machine and the necessary measurement setup for validation of the model. The University of
+Primorska prepared content about human well-being related to
+indoor materials and noise. Posts were about measuring stress
+in people, stress caused by exposure to noise, and how different materials used indoors can mitigate noise disturbance. University of Ljubljana prepared content related to mechanical
+models and the related boundary conditions that well describe
+the elastic response of the developed resilient layer.
+The study was conducted in 2022 and consisted of two phases.
+The first phase took place from May 3 until August 9, and the
+second phase took pace from August 30, until December 6. In
+each phase 15 posts were published, one every Tuesday at 10
+am on InnoRenew CoE’s social media channels (Facebook,
+Twitter (X), and LinkedIn). On each platform the same post
+was published. Monitoring of engagement (Table 1) took place
+every Thursday at 10 am. We collected different information
+related to the effectiveness of communication for the studied
+social media channels, since not all include the same parameters.
+However, we clarified in advance what each parameter means
+in order to properly compare the data. We monitored engagement on Twitter (X) and LinkedIn, which is measuring the
+total number of times a user has interacted with a message.
+We compared it with the number of clicks on the post on Facebook. Engagement is an important metric revealing that the
+content is compelling, and it leads to discussion. Further, we
+measured impressions on Twitter (X) and LinkedIn, which
+are reflecting the number of times a message was seen, hence
+we can compare it with the reach of a message on Facebook.
+Impressions are important to understand if the message is reaching a vast audience. Therefore, in the analysis we used the term
+engagement which includes engagement on Twitter (X) and
+LinkedIn and number of clicks on Facebook, and the term
+impressions which includes impressions on Twitter (X) and
+LinkedIn, and reach on Facebook. Additionally, we collected
+data about number of likes, comments, and shares received on
+each social media channel.
+Three different types of posts were created. Type 1 posts
+(Figure 1) was written informative content (80–150 characters with
+spaces). Content was related to the project research activities and
+research fields. All content was of informative nature.
+Type 2 posts (Figure 2) was image content related to
+the project research activities and research equipment
+Table 1. Quantitative measures monitored on social media.
+Facebook
+Engagement
+Number of clicks
+
+x
+
+Reach
+
+x
+
+Impressions
+Number of likes, comments,
+and shares
+
+x
+
+Twitter
+
+LinkedIn
+
+X
+
+x
+
+X
+
+x
+
+X
+
+x
+
+Figure 1. Example of Type 1 post on Facebook.
+
+Figure 2. Example of Type 2 post on Twitter (X).
+
+used in the project together with short text caption of the
+image.
+Type 3 posts (Figure 3) was image content with people –
+scientists working with research equipment used in the
+project together with short text caption of the image.
+Each post contained two hashtags – one was related to the
+project name and always the same (#iris), while the other
+differed depending on the content.
+Overall, this study included 30 posts related to wood composites, sound insulation, building acoustics, human well-being,
+and modelling of the floating floor. In Table 2 we present
+the number of the 30 social media posts, their type and the
+respective field they were covering.
+Additionally, we posted four additional weekly posts (at the
+same time and day each week) of only type 3 on social media,
+with the same content as we posted in previous two phases
+of type 1 and type 2. We aimed to verify that the studied
+differences in engagement can be attributed to different types
+and not the content.
+
+Results
+
+The analysis performed has delivered important findings
+to be used in future science communication through social
+media. We are providing the results of the study and in the
+discussion point out the need for future research in the field.
+
+Figure 3. Example of Type 3 post on LinkedIn.
+
+Table 2. Number of analysed posts per research
+topic and type of post.
+Type 1
+
+Type 2
+
+Type 3
+
+Total
+
+Wood composites
+
+3
+
+2
+
+1
+
+6
+
+Impact noise
+
+1
+
+2
+
+4
+
+7
+
+Acoustics
+
+2
+
+3
+
+2
+
+7
+
+Human well-being
+
+3
+
+2
+
+3
+
+8
+
+Modelling
+
+2
+
+1
+
+2
+
+5
+33*
+
+* In total there were three social media posts (one of type 1 and
+two of type 3) that were covering two different fields and not just
+one, this is why in the Table 2 the total number is 33.
+
+The analysis of social media posts included performance of 30
+social media posts, 15 from phase 1 and 15 from phase 2. All
+social media posts were somehow evenly distributed regarding the content; however, we can notice a small difference.
+
+The topic of human well-being was the one mostly communicated about, followed by social media posts about impact
+noise and acoustics, wood composites, and modelling (Table 2).
+For the analysis we applied Poisson regression as our data
+was count data of relatively low values and we had a small
+sample size (30 posts). Poisson regression is an analysis known
+as a generalized linear model. It is used for modelling data
+predictions. The outcome variable is a count of the number
+of events that occur in a fixed period of time (Coxe et al.,
+2009). The data obtained from our study fit these requirements.
+Since we analysed three different social media channels, we
+have to note that although there may be some overlap of individuals that follow the social media accounts on each platform,
+we have treated the audience in each platform as independent
+from one another.
+As related to the RQ 3 and RQ4, we first analysed each phase
+of posts separately, in order to verify if there is any difference
+between the two phases, considering the time dimension
+(season) and the added alternative text. The alternative text
+was added to posts in phase 2. It means that each social media
+post that contained an image had also the written alternative
+text that is explaining what is on the image, enabling wider
+accessibility. It is usually used to describe elements, like photos
+and other types of data visualizations. The difference between
+the two phases is not statistically significant when comparing
+number of likes, impressions and engagement. Number of
+comments and shares was very low, so we did not include these
+two parameters in the analysis. Furthermore, number of likes on
+Twitter (X) is always lower compared to number of likes on
+LinkedIn and on Facebook, in all types of posts. On the other
+hand, number of likes on LinkedIn and Facebook is relatively
+
+similar in all types of posts and both phases (Figure 4).
+We observed the same result in terms of impressions on
+Twitter (X) as it is always considerably lower (Figure 5).
+Impressions are higher on LinkedIn compared to Facebook,
+regardless of type and phase. Engagement is the lowest on
+Facebook (Figure 6), a bit higher on Twitter (X), and the
+highest on LinkedIn, regardless of post type.
+As there was no significant difference between the phase
+1 and phase 2, the overall analysis in relation to RQ1 and
+RQ2, included all 30 social media posts, regardless of phase,
+was performed.
+We compared the number of likes on all three social media
+channels, the engagement on Twitter (X) and LinkedIn with
+number of clicks on Facebook, and the reach on Facebook with
+impressions on Twitter (X) and LinkedIn. As stated above,
+we compared parameters that are differently named on the
+social media channels but according to the definitions they
+measure the same thing.
+With the Poisson mixed model, we modelled the data
+predictions based on the number of likes (Figure 7). We found
+out that each type is different and that the most likes are of
+type 3 posts, across all social media channels. Effect of type is
+consistent. We expect that on Facebook and LinkedIn, the
+number of likes is approximately the same, regardless of type,
+and we expect number of likes on Twitter (X) to be considerably
+lower. The number of followers in the Twitter (X) account is
+the lowesttherefore this result is at least somehow expected.
+Additionally, Twitter (X) is the social media with the lowest
+number of users in general. On average the higher number of
+likes is on LinkedIn for all posts types.
+
+Figure 4. Number of likes for each post type on Facebook, Twitter (X), and LinkedIn.
+
+Figure 5. Impressions for each post type on Facebook, Twitter (X) and LinkedIn.
+
+Figure 6. Engagement for each post type on Facebook, Twitter (X) and LinkedIn.
+
+Similarly, the type 3 posts shared on LinkedIn were highest in impressions (Figure 8). There is less variance in posts
+on all channels compared to the number of likes (Figure 7).
+Type 3 posts performed better regardless of the social media
+channel.
+In regard to engagement, posts performed slightly different.
+The highest was still on LinkedIn, and type 3 posts performed
+the best for all channels, while lowest on Facebook, which is
+not the case for number of likes and impressions (Figure 9). We
+discovered that Twitter (X) and Facebook are fairly consistent
+
+in terms of engagement, while we notice a lot of variability
+on LinkedIn. The reasons for the variance can be found in the
+changing algorithms on social media, different preferences of
+users, and other happening on the day of the post. For example,
+the social media post shared on LinkedIn with lower engagement were shared on dates when there was several news
+stories related to the current war or Brexit developments.
+Further, we found that there was only one comment on
+LinkedIn for type 3 post, and there were only five shares of
+posts, of which one on Twitter (X) for type 3, and three on
+
+Figure 7. Number of likes for each type for Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+Figure 8. Impressions for each post type on Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+Facebook for type 1 and one on Facebook for type 3. These
+findings indicate that users may not be comfortable commenting on topics connected to sustainable construction, or that they
+are not interested in engaging in conversations on social media
+to develop new relationships. This was suggested also by previous research which discovered that certain users are afraid
+to engage in social interactions online (Ellison et al., 2014).
+Sharing a post is even a more visible action than commenting or liking, but it is also less direct, as found in past studies
+(Li & Xie, 2020).
+Finally, with the analysis of the additional weekly posts of
+only type 3 we confirmed that the studied differences of
+engagement can be attributes to the studied factors. Namely, we
+
+discovered that if we share the same content in as different type,
+the result is the same (e.g. the shared content does not affect our
+results). On average, these additionally shared posts of type 3
+performed better in terms of engagement, compared to the same
+content shared as type 1 and type 2.
+
+Discussion
+
+In our study we found that social media posts related to sustainable construction topics, shared on social media channels
+of a research institute, containing an image with people, performed the best on different social media channels. This is
+why, in relation to the first research question we discovered
+that social media posts with an image of people (type 3 post)
+generated highest engagement, impressions and likes. Literature
+
+Figure 9. Engagement for each post type on Facebook, Twitter (X) and LinkedIn (phase 1 and phase 2 combined).
+
+suggests that visual elements such as images are helpful in
+terms of creating engagement (Bruce et al., 2017; Goldfarb &
+Tucker, 2011; Hwong et al., 2017; Li & Xie, 2020; Pieters &
+Wedel, 2004). However, there are also some contradictory findings where the relation between the image in engagement was
+not confirmed (De Luca et al., 2022). Several scholars studied
+the persuasion and engagement of visual elements in advertising
+and marketing areas, but to our knowledge there is a lack of
+studies in this field related to research of sustainable construction. Therefore, we uncovered a novel insight regarding
+social media posts of research organizations. The reason why
+people engage with some posts on social media, and some not,
+is hard to predict and can be affected by several factors. Some
+authors (Chung & Darke, 2006) suggest that people who are
+engaging more often have certain personal characteristics, like
+the urge to provide useful information and to influence how
+other people perceive them. The content of the message and
+how it is said also influences users and engagement in online
+discussion. Emotional, social, cognitive and descriptive words
+help to reach greater engagement (Moore & McFerran, 2017).
+With reference to the second research question, LinkedIn performed the best in terms of message effectiveness. This is somehow expected given that the account from where the social
+media posts were shared had the highest number of followers,
+compared to the other two channels included in the study. Additionally, in comparison to Facebook, LinkedIn has less users
+overall, however it is the platform known to have an engaged
+audience (Dixon, 2022). Moreover, we found that in terms
+of likes, all types of social media posts performed similarly
+on Facebook and LinkedIn, while on Twitter (X) the number
+is considerably lower. Twitter (X) is the channel that is more
+dedicated to political discussions (Lupton, 2014) this is why
+users might not have a high interest in research topics. In
+contrast (Collins et al., 2016) argues that scientists are using
+
+Twitter (X) as a means to communicate with their peers.
+However, the latest changes in ownerships, could potentially
+have impacted the communication dynamics. The institutional
+account from where posts were shared has the least number of
+followers on Twitter (X), compared to the other two social
+media channels. As previously stated, LinkedIn is a professional
+networking channel, therefore users are focused on their profession and career development, which leads to more meaningful interactions. Similarly, content uploaded on LinkedIn
+is more likely to increase user engagement as users find it
+more useful and relevant to their professional development. In
+comparison, Twitter (X) and Facebook typically feature content of a different sort, and people do not engage as much
+because they utilize them for other goals other than
+professional.
+Regarding the third and fourth research questions we found
+that the time dimension (season) and alternative text does not
+influence the engagement and other monitored parameters,
+as the analysis revealed there was no significant difference
+between posts of phase 1 and phase 2. Due to social media
+algorithms constantly changing, it is difficult to forecast when
+is the optimum time to post (Post, 2021). The uncontrolled
+changes of social media algorithms, which the account holders
+cannot influence, can also affect the reason why there is no
+significant difference between the two phases in relation to
+adding alternative text.
+Furthermore, we identified limitations of our study. First, the
+audience in this study is related to one institution (research
+organization). Accordingly, the audience may have its own
+characteristics which are not representative of the larger
+population, potentially limiting the generalizability of the
+findings (Berkowitz & donnerstein, 1982). Knowing
+the exact characteristics of our audience and understanding
+
+the potential for audience overlap and relapse is a significant
+limitation. With available analytical tools the audience was
+studied on each social media channels, however these functions are limited and not all social media channels offer the
+same kind of data. Comparability of the three social media
+channels is an additional limitation (Kietzmann et al., 2011).
+The number of followers is different on the three channels
+and there might be an overlap between followers. However, in
+the analysis we did account for repeated measures of the
+same post on different platform by including the unique post
+ID as a source of random error. While it is likely there is
+some duplication of individuals between platforms, we do
+not have the information to determine if the same individuals
+responded to the posts on multiple platforms. Despite
+these limitations we believe the data provides valuable insights
+into the performance of the posts between platforms, as our
+study revealed that regardless of the social media channel,
+posts containing an image with people, performed the best. We
+suggest that future studies investigate about the characteristics
+of audience on different social media channels and its
+effects on post engagement to address these limitations more
+comprehensively.
+Moreover, the fact that posts were shared from an institutional
+account and not a physical person can influence the results.
+Appropriately interpreting findings is difficult because it is challenging to determine an accurate explanation for discrepancies
+and variances in social media posts. This is connected
+also to the fact that the algorithm on social media channels are
+constantly changing (Post, 2021). On top of that, we must stress
+that the content for social media posts was prepared in collaboration with researchers from different research organizations.
+This might have influenced the results as the language used
+was more understandable for professional and scientific
+stakeholders, rather than the general public reached on some
+social media channels. If the content would be prepared
+by communication practitioners or social media specialists,
+perhaps the findings would be different (Miller - Carpenter &
+Lertpratchya, 2016). At the same time, this is an important
+implication for further studies which should focus on
+expanding the knowledge in this area.
+
+Future studies should consider finding a way to encourage
+the audience to engage through commenting or sharing with
+their own thoughts, and although the language in science is
+English, communication to target audience out of the scientific and professional community should be performed in local
+languages.
+In the field of sustainable construction we can expect that the
+New European Bauhaus (New European Bauhaus, n.d.) principles
+in developing new solutions together, sustainable, and beautiful
+will significantly influence the science communication in the
+field. It is attempting to bridge research and practice. With
+further studies on social media use in science communication
+we can significantly contribute to these ambitions.
+
+Conclusion
+
+This study investigated the effectiveness of different types
+of social media posts, shared on institutional Facebook,
+Twitter (X), and LinkedIn accounts, about sustainable construction related topics. Findings suggests that social media posts
+with an image of a person generate the highest engagement.
+These findings provide an important message for communicators and researchers that want to improve their communication activities on social media and assuring broader outreach of
+their research projects.
+In addition to communication experts and researchers, these
+findings can also serve policy makers as more communication about sustainable construction is needed, either on social
+media or on other channels, to promote and enhance its wider
+use. Encouraging communication about sustainability and
+sustainable construction related topics is crucial to raise awareness and help to transition to a more sustainable society.
+Policy makers are already taking important steps in this direction by creating and adopting strategies and initiatives, such
+as the New European Bauhaus in Europe. However, additional
+communication efforts are needed to enable the transition
+to a sustainability-oriented society.
+
+We are aware that such social media studies are very complex
+to perform and include many external factors that are influencing the outcomes, such as the variation in follower counts
+across social media platforms, the credibility of accounts,
+and the diverse audience characteristics (Soares et al., 2021).
+However, we believe that studies like this one, are very
+important as they contribute to a more scientific approach in
+understanding the dynamics of social media engagement,
+despite the limitations and complexities involved.
+
+Future research should examine effectiveness of different languages, addressing other relevant stakeholders such
+as architects, constructors, engineers, and other professionals, and by involving communication experts in the creation
+of the content. More social media channels (Instagram,
+Reddit, TikTok etc.) could be added to the sample and apply
+the presented methodological approach to further investigate and expend findings. In future studies, partners involved
+in the study could be sharing, liking and reposting social
+media posts and thus investigate the potential of extended
+reach. Additionally, future research should place more focus on
+effects of diverse audiences to post engagement.
+
+Overall, this finding can serve to help other communication
+practitioners and researchers to improve their communication
+and dissemination activities on social media about their research
+projects, and to more effectively promote their project activities related to sustainable construction. Our results show that
+posts with an image of a person and short text caption are
+best in terms of different parameters that are important for
+reaching the audience.
+
+Moreover, it is worth noting that the social media posts in this
+study covered highly interdisciplinary research topics, from
+acoustics to wood composites and psychology. Potentially, there
+is a need for a more focused and gradual approach to social
+media communication about sustainable construction topics.
+Further research should focus on determining which topics
+should be prioritized and communicated to wider audience
+on social media. Accordingly, a more holistic understanding
+
+of sustainable construction topics in society can be built. To
+our knowledge there is a lack of prior studies investigating the
+engagement of different types of social media messages, about
+a research topic connected with sustainable construction,
+therefore we believe such studies can be an important first
+step in the direction of better understanding the social
+media communication. The information and metrics
+monitored and observed in this study can help sustainability
+communication experts and researchers to create impactful
+messages and to redefine strategies in order to promote
+more sustainable construction practice, and raise awareness.
+Furthermore, it is crucial to learn how to use social media
+in science communication and contribute to the so much
+needed transformation of engaging society in science.
+
+Data availability
+Underlying data
+
+Zenodo: Data for the social media study of sustainable
+construction communication
+https://doi.org/10.5281/zenodo.10454501 (Primožič et al., 2024)
+
+This project contains the following underlying data:
+• social media study_240108_md_v1.txt
+• socialmediastudy_230103_d_p1_v1.csv
+• socialmediastudy_230103_d_p2_v1.csv
+• socialmediastudy_230103_d_p3_v1.csv
+Data are available under the terms of the Creative Commons
+Attribution 4.0 International license (CC-BY 4.0).
+
+Acknowledgments
+We thank Professor Dr Eric Hansen (Oregon State University,
+USA) for providing comments on the manuscript and insightful
+discussion. We thank Dr Dean Lipovac (Faculty of
+Mathematics, Natural Sciences and Information Technologies,
+University of Primorska, Slovenia), Dr Maximilian Neusser
+(Vienna University of Technology, Austria), and Dr Daniel
+Svenšek (Faculty of Mathematics and Physics, University of
+Ljubljana, Slovenia) for preparing the social media posts used in
+this study and for insightful discussion.
+
+References
+Bard Hagberg K: Management of acoustics in lightweight structures.
+[Doctoral Thesis (Compilation), Department of Construction Sciences. Department
+of Construction Sciences, Lund University, 2018.
+Reference Source
+Berkowitz L, Donnerstein E: External validity is more than skin deep: some
+answers to criticisms of laboratory experiments. Am Psychol. 1982; 37(3):
+245–257.
+Publisher Full Text
+Bonsón E, Perea D, Bednárová M: Twitter as a tool for citizen engagement:
+an empirical study of the Andalusian municipalities. Gov Inf Q. 2019; 36(3):
+480–489.
+Publisher Full Text
+Bridgstock R: Employability and career development learning through
+social media: exploring the potential of LinkedIn. Brill, 2019; 143–152.
+Publisher Full Text
+Bruce NI, Murthi BPS, Rao RC: A dynamic model for digital advertising:
+the effects of creative format, message content, and targeting on
+engagement. J Mark Res. 2017; 54(2): 202–218.
+Publisher Full Text
+Burns TW, O’Connor DJ, Stocklmayer SM: Science communication: a
+contemporary definition. Public Underst Sci. 2003; 12(2): 183–202.
+Publisher Full Text
+Carpenter S, Lertpratchya A: Social media communicator roles: a scale. Social
+Media + Society. 2016; 2(1).
+Publisher Full Text
+Chung CMY, Darke PR: The consumer as advocate: self-relevance, culture,
+and word-of-mouth. Market Lett. 2006; 17(4): 269–279.
+Publisher Full Text
+Clark A: Selling sustainability. Greenbiz, 2008.
+Reference Source
+Collins K, Shiffman D, Rock J: How are scientists using social media in the
+workplace? PLoS One. 2016; 11(10): e0162680.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Coxe S, West SG, Aiken LS: The analysis of count data: a gentle introduction
+to Poisson regression and its alternatives. J Pers Assess. 2009; 91(2):
+121–136.
+PubMed Abstract | Publisher Full Text
+Darling E, Shiffman D, Cȏté I, et al.: The role of Twitter in the life cycle of a
+
+scientific publication. Ideas in Ecology and Evolution. 2013; 6(1): 1.
+Publisher Full Text
+Dawkins J: Corporate responsibility: the communication challenge. Journal
+of Communication Management. 2004; 9(2): 108–119.
+Publisher Full Text
+De Luca F, Iaia L, Mehmood A, et al.: Can social media improve stakeholder
+engagement and communication of sustainable development goals? a
+cross-country analysis. Technol Forecast Soc. 2022; 177: 121525.
+Publisher Full Text
+Dixon S: LinkedIn—statistics & facts. Statista. September 27, 2022.
+Reference Source
+Dixon S: Twitter accounts with the most followers worldwide as of January
+2023. Statista. January 25, 2023a.
+Reference Source
+Dixon S: Number of monthly active Facebook users worldwide as of 1st
+quarter 2023. Statista. September 5, 2023b.
+Reference Source
+Ellison NB, Vitak J, Gray R, et al.: Cultivating social resources on social
+network sites: Facebook relationship maintenance behaviors and their
+role in social capital processes. J Comput Mediat Commun. 2014; 19(4): 855–870.
+Publisher Full Text
+Escalas JE: Imagine yourself in the product: mental simulation, narrative
+transportation, and persuasion. J Advert. 2004; 33(2): 37–48.
+Publisher Full Text
+Foulger D: Models of the communication process. 2004.
+Geyser W: What is the best length for social media posts? (free character
+counter). Influencer Marketing. August 16, 2022.
+Reference Source
+Goldfarb A, Tucker C: Advertising bans and the substitutability of online
+and offline advertising. J Mark Res. 2011; 48(2): 207–227.
+Publisher Full Text
+Hwong YL, Oliver C, Van Kranendonk M, et al.: What makes you tick? The
+psychology of social media engagement in space science communication.
+Comput Hum Behav. 2017; 68: 480–492.
+Publisher Full Text
+Insall R: Science Twitter - navigating change in science communication. Nat
+Rev Mol Cell Biol. 2023; 24(5): 305–306.
+PubMed Abstract | Publisher Full Text
+
+Jasanoff S, Markle GE, Peterson JC, et al.: Handbook of science and
+technology studies. SAGE Publications, 2001.
+Reference Source
+Kaplan AM, Haenlein M: Users of the world, unite! The challenges and
+opportunities of Social Media. Bus Horizons. 2010; 53(1): 59–68.
+Publisher Full Text
+Kappel K, Holmen SJ: Why science communication, and does it work? A
+taxonomy of science communication aims and a survey of the empirical
+evidence. Front Commun. 2019; 4.
+Publisher Full Text
+Kietzmann J, Hermkens K, McCarthy I, et al.: Social media? Get serious!
+understanding the functional building blocks of social media. Bus Horiz.
+2011; 54(3): 241–251.
+Publisher Full Text
+Korhonen E, Toppinen A, Lahtinen K, et al.: Communicating forest sector
+sustainability: results from four European countries. Forest Prod J. 2016;
+66(5–6): 362–370.
+Reference Source
+Lee K: How to use hashtags: how many, best ones, and where to use them.
+Buffer. 2016.
+Reference Source
+Li Y, Xie Y: Is a picture worth a thousand words? an empirical study of image
+content and social media engagement. J Marketing Res. 2020; 57(1): 1–19.
+Publisher Full Text
+Lupton D: Twitter: social communication in the digital age. Inform Commun
+Soc. 2014; 17(5): 644–646.
+Publisher Full Text
+Mazman SG, Usluel YK: Modeling educational usage of Facebook. Comput
+Educ. 2010; 55(2): 444–453.
+Publisher Full Text
+McLachlan S: Ideal length of social media posts: a guide for every platform.
+Hootsuite. 2022.
+Reference Source
+Medicine, N. A. of S., Engineering, and, Education, D. of B. and S. S. and, &
+Agenda, C. on the S. of S. C. A. R: Communicating science effectively: a
+research agenda. National Academies Press, 2017.
+PubMed Abstract | Publisher Full Text
+Moore SG, McFerran B: She said, she said: differential interpersonal
+similarities predict unique linguistic mimicry in online word of mouth.
+J Assoc Consum Res. 2017; 2(2): 229–245.
+Publisher Full Text
+Moser SC: Communicating climate change: history, challenges, process and
+future directions. Wires Clim Change. 2010; 1(1): 31–53.
+Publisher Full Text
+New European Bauhaus: Beautiful, sustainable, together. European Union,
+(n.d.). Retrieved 27 December 2023.
+Reference Source
+Parsons ECM, Shiffman DS, Darling ES, et al.: How Twitter literacy can benefit
+
+conservation scientists. Conserv Biol. 2014; 28(2): 299–301.
+PubMed Abstract | Publisher Full Text
+Pieters R, Wedel M: Attention capture and transfer in advertising: brand,
+pictorial, and text-size effects. J Marketing. 2004; 68(2): 36–50.
+Publisher Full Text
+Post A: Best times to post on social media in 2021. Social Media Data. 2021.
+Reference Source
+Primožic L, Kutnar A: Sustainability communication in global consumer
+brands. Sustainability. 2022; 14(20): 13586.
+Publisher Full Text
+Primožic L, Kutnar A, Prislan R, et al.: Data for the social media study of
+sustainable construction communication. [Data set]. Zenodo. 2024.
+http://www.doi.org/10.5281/zenodo.10454501
+Ripo J: How long does a social media post live? LinkedIn. 2021.
+Reference Source
+Rohlinger DA, Rose K, Warren S, et al.: Does the Musk Twitter takeover
+matter? Political influencers, their arguments, and the quality of
+information they share. Socius. 2023; 9(8): 23780231231152193.
+Publisher Full Text
+Schwab PN: How many hashtags should you put in your LinkedIn posts?
+[Research]. IntoTheMinds. 2021.
+Reference Source
+Seo K: Meta-analysis on visual persuasion–does adding images to texts
+influence persuasion? Athens Journal of Mass Media and Communications. 2020;
+6(3): 177–190.
+Publisher Full Text
+Skeels MM, Grudin J: When social networks cross boundaries: a case study
+of workplace use of facebook and linkedin. Proceedings of the 2009 ACM
+International Conference on Supporting Group Work, 2009; 95–104.
+Publisher Full Text
+Soares JC, Limongi R, Cohen ED: Engagement in a social media: an analysis
+in higher education institutions. Online Information Review. 2021; 46(2):
+256–284.
+Publisher Full Text
+Socialbakers: Everything you need to know about #hashtags on Facebook.
+2021.
+Reference Source
+Van Noorden R: Online collaboration: scientists and the social network.
+Nature. 2014; 512(7513): 126–9.
+PubMed Abstract | Publisher Full Text
+Wilson PM, Petticrew M, Calnan MW, et al.: Disseminating research findings:
+what should researchers do? a systematic scoping review of conceptual
+frameworks. Implement Sci. 2010; 5(1): 91.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Wojcik S, Hughes A: U.S. adult Twitter users are younger and more likely to
+be Democrats than the general public. Most users rarely tweet, but the most
+prolific 10% create 80% of tweets from adult U.S. users. 2019.
+
+图表页附件：
+assets/manuscript_after_p04.png
+assets/manuscript_after_p05.png
+assets/manuscript_after_p06.png
+assets/manuscript_after_p07.png
+assets/manuscript_after_p08.png
+assets/manuscript_after_p09.png
+assets/manuscript_after_p10.png
+assets/manuscript_after_p11.png
+assets/manuscript_after_p12.png
+assets/manuscript_after_p13.png
+
+
+=== reviews ===
+
+--- R1 ---
+
+The research idea is innovative, and I appreciate how the authors are trying to do the
+operationalization with some acknowledged limits. My suggestion is to have different sections
+between Introduction and Theoretical Background (Literature Review). The current introduction
+section reads more like a theoretical background. I would suggest having an introduction that
+gives a non-technical audience a general overview of the topic. This is important as the authors
+are trying to do interdisciplinary research (e.g., communication, social media, sustainability, and
+construction).
+I am also curious about how the authors address research questions. In my opinion, the research
+questions resemble specific and testable hypotheses. If my guess is right, with the same spirit of
+reaching a non-technical audience, I would suggest breaking down the theoretical background
+per hypothesis.
+Kudos for your hard work.
+Is the work clearly and accurately presented and does it engage with the current literature?
+Yes
+Is the study design appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and analysis provided to allow replication by others?
+Yes
+Are all the source data and materials underlying the results available?
+Yes
+
+If applicable, is the statistical analysis and its interpretation appropriate?
+Yes
+Are the conclusions drawn adequately supported by the results?
+Yes
+
+--- R2 ---
+
+There is very little engagement with the literature. This is at the beginning of the paper and is
+mainly concerned about communciation. However, the realities of scientific communication
+through social media have not been explored.
+The structural characteristics of the 'networks' of the InnoRenew CoE on these three different
+channels, have been provided at the beginning of the Materials and methods section. This
+demographic data has not been used to evaluate the 'measures of engagement' on this different
+platforms.
+
+The discussion is mainly based on the number of impressions, shares and comments. The
+differences between these 'measures of engagement' by different users has not been established
+in enough depth. For example, there is a claim that "users may not be comfortable commenting
+on topics connected to sustainable construction, or that they are not interested in engaging in
+conversations on social media to develop new relationships." As far as the paper is concerned, this
+correlation is now based on any evidence.
+Is the work clearly and accurately presented and does it engage with the current literature?
+Partly
+Is the study design appropriate and is the work technically sound?
+Partly
+Are sufficient details of methods and analysis provided to allow replication by others?
+Yes
+Are all the source data and materials underlying the results available?
+Yes
+If applicable, is the statistical analysis and its interpretation appropriate?
+Partly
+Are the conclusions drawn adequately supported by the results?
+Partly
+
+
+=== responses ===
+
+--- R1 ---
+
+Dear reviewer. Thank you for the suggestions, feedback [行政致谢已隐藏]. We appreciate your recognition of the innovative nature of the presented study and
+your acknowledgment of the challenges associated with it. In our study we were guided by
+research questions as our research is exploratory and the studied topic is complex. This led us
+also in the analysis, results and discussion part. However, we will assure to take into
+consideration all the suggestions in the future similar studies that we aim to perform.
+
+--- R2 ---
+
+The authors are appreciating the critical view of the manuscript and acknowledge the identified
+importance of the topics addressed by the reviewer. The modifications of the manuscript
+following the recommendations of the reviewer have improved the manuscript and addressed the
+feedback given by the reviewer. All the changes are marked with track changes in the Manuscript
+file.
+Point 1: There is very little engagement with the literature. This is at the beginning of the
+paper and is mainly concerned about communciation. However, the realities of scientific
+communication through social media have not been explored.
+Answer 1: We acknowledge the importance of engaging with the existing literature
+comprehensively, therefore we addressed this comment by rewriting the Discussion in order to be
+
+more engaged with the literature presented in the Introduction. In the Introduction section we
+provide findings of existing literature on the studied field. The identified gaps led us to create the
+main objective of our study. We connected the findings form the existing literature with the main
+findings of this study in the Discussion section.
+Point 2: The structural characteristics of the 'networks' of the InnoRenew CoE on these three
+different channels, have been provided at the beginning of the Materials and methods
+section. This demographic data has not been used to evaluate the 'measures of
+engagement' on this different platforms.
+Answer 2: This was not the goal of our study, however we provided a description of the audience
+at the InnoRenew CoE social media channels, since we are aware that the characteristics of the
+audience is important for the engagement. We rewrote the Discussion section in order to enhance
+this aspect as a limitation of our study, and added the recommendation for future studies.
+Point 3: The discussion is mainly based on the number of impressions, shares and
+comments. The differences between these 'measures of engagement' by different users has
+not been established in enough depth. For example, there is a claim that "users may not be
+comfortable commenting on topics connected to sustainable construction, or that they are
+not interested in engaging in conversations on social media to develop new relationships."
+As far as the paper is concerned, this correlation is now based on any evidence.
+Answer 3: We acknowledge that knowing the exact characteristics of the audience, the possible
+audience relapse and similar issues is a limitation of our study. We rewrote this part in the
+Discussion section to highlight it better. As for the quoted finding of our study regarding users
+not being comfortable to comment on topics on social media, this is the interoperation of the
+result which is also in line with previous studies that are cited in the manuscript, e.g. (Ellison et
+al., 2014)

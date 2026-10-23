@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F133_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "文献平衡",
+    "资料时效性",
+    "结论依据"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者回复只笼统表示接受并调整，核对后稿是否补宏观数据和不支持单一债务依附论的文献。",
+    "新增讨论标题与段落不自动证明呈现相反证据；不得按评审的肯定意见代替检索方法的核查。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The case study is extremely interesting and presents relevant data and the PRISMA methodology\nis appropriate for this type of work.\nHowever, I consider that they should update the study at the level of agricultural and oil\nproduction and some macroeconomic indicators of Ecuador, which may well be provided by the\nCentral Bank of Ecuador, since we are in the year 2024.\nLikewise, although the criteri",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear Reviewer\nThank you for your comments, which have been accepted and adjusted based on the\nrecommendations and inserted in the text.\nI remain attentive to the indications for the respective correction.\n[closing signature omitted]",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The analysis of the authors’ criteria mostly coincides in pointing out that this financial support for Ecuador has generated\ngreater indebtedness and dependence on the policies of these organizations throughout history, increasing the degree of\ninequality and exacerbating poverty, which especially affects children, women and the elderly (Daoud, Herlitz y\nSubramanian, 2022). In recent years, the WB has become a development agency to support countries in crisis, therefore,\naccording to the criteria of the analyzed authors, it is necessary to focus on sustainable projects that are framed in a\nsustained growth of income and support the achievement of rights, especially in education as a factor enabling the\ndevelopment of human capital (Wang & Zheng, 2024, p. 19).\n5. Conclusions\nThe historical condition of indebtedness of Ecuador since it was part of the Gran Colombia has been increasing over the\nyears, several investigations from a historical approach determine the productive wealth of the",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "4. Discussion\nSince the creation of the IMF and WB as financial organizations to overcome the post-war crisis, there have been several\ninterventions in different countries, from a viewpoint of support to equalize their balance of payments and promote an\ninternational financial order, the contribution with the participation of the least favored countries has been quite limited in\nstrengthening their development (Arias y Vera, 2002), without equal representation (Sánchez, 2014); The pandemic\nsituation, the internal political crisis, and other macroeconomic factors cause poor debt management and increase\nmacroeconomic imbalances (Neaime y Gaysset, 2022).\nThe analysis of the authors’ criteria mostly coincides in pointing out that this financial support for Ecuador has generated\ngreater indebtedness and dependence on the policies of these organizations throughout history, increasing the degree of\ninequality and exacerbating poverty, which especially affects children, women and the elderly (",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "As expressed,\nAlfaro (1896) “Venezuela and New Granada settled their foreign debt in a reasonable and honest manner, but\nEcuador did not. The history of these two countries is evidence of the unpatriotic and immoral behavior recorded in\nthe annals of the Latin American republics” (pp. 2-3).\nThe debt recorded at £1,424,579.05 rose to £2,393,293 by December 31, 1853 with interest at 6% per annum. New loans\nhad to be renegotiated to cover the interest and overdue bonds. In some cases, these renegotiation agreements involved the\nuse of vacant land as a form of payment, becoming an obstacle to economic development from the outset (Liehr, 1989).\nDuring this republican stage, the country experienced a significant influence of military power and the church. The new\nrepublic was established on a poorly defined territorial order, with a network of interests, hegemony and domination at the\nnational level, which led to the exclusion of the masses and the absence of a shared history among the indig",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Some economic analysts consider these organizations as double-edged weapons, stressing the care that must be taken for\nsafe negotiations, as in 2010, 2013, 2014, 2015 and 2017 were the years where the greatest controversies occurred almost\nat the same time in Chile, Argentina, Uruguay and Paraguay, countries where the economic measures imposed by the\ngovernments as a guarantee for access to a loan from the IMF ended in protests and multiple disagreements by the citizens.\nThe last three decades represent a process of financial reforms that have led to uncertainty and constant volatility, as well\nas slow growth, crises and stabilization policies. Monetarist economic policies have diminished the purchasing power of\nfamilies and companies, there has been a destructuring of currency spaces, and there have been many attempts at\nmonetary union (Girón & Correa, 2008, p. 9).\nAccording to the latest report of the International Development Bank (IDB) the total debt of Latin America and the\nCaribb",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

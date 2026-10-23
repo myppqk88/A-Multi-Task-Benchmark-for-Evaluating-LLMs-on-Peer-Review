@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F025_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "参与者与抽样",
+    "工作坊分析"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称明确SPPI工具/方法映射目标并细化漏斗分析，同时将欧洲以外适用性留待后续。核对研究目标、材料到建议的推导与外推边界，不把参与人数多当机制成立。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article proposes a structured approach for rethinking science-policy-practice interaction\n(SPPI) to support transformative sustainability research and innovation in Europe. The authors\ncombine insights from a large set of workshops and activities (~300 participants across 20+\nEuropean countries) with a “funnelling” analytical process to identify key challenges, gaps, and\nopportunities in SPPI ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for the insightful and constructive review. We have revised the manuscript based\non the advice. The revisions include several additions and clarifications addressing the\nreview comments.\nFurthermore, some overlapping or wordy expressions have been removed or shortened to\nkeep the manuscript concise. Please find point-by-point responses below.\n1. Response: As rightly pointed out, the aim of the study should have been more clearly\nstated",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "We use insights from document analysis, interviews, and\nworkshops with experts in environmental and sustainability\nresearch and innovation across Europe. The focus is on practical experiences and concrete examples. The materials were\ncollected under the EU funded Coordination and Support\nAction “Collaborative Action coordinating and enhancing\nsystemic, actionable and transversal Sustainability Research\nand Innovation” (CASRI, www.casri.eu). One of the main aims\nof the project is to identify good practices and gaps in SPPI\nacross Europe. This aligns with the project’s overall goal to\noutline a strategic European R&I agenda that stimulates\ncollaboration on key topics for environmental and sustainability\nR&I and thereby promoting sustainable development in Europe\nin times of multiple crises.\nThis study draws on reflections from academic literature with\nobservations from desk studies and expert and stakeholder\nviews from fourteen European countries and regions, including\nAustria, Basque Co",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "which was adapted to national specificities (Maring et al.,\n2025, Appendix D). Participants were selected from the interviewees and, on occasion, included additional key stakeholders.\nThe workshops provided participants with an opportunity\nto summarise, review and reflect on the views of others and\nhighlight the most important issues.\nSmall teams of nationally based researchers were responsible\nfor initial analysis, organization of interviews and workshops,\nand data analysis. Recognising the high diversity of national\ncontexts, participant backgrounds, and topics addressed, the\nanalysis relied on qualitative interpretations and aimed to summarize key points related to SPPI for international comparison, following a comparative case study approach (Bartlett &\nVavrus, 2016). Cross-country coherence of interpretations was\nensured through multiple rounds of review by project coordination, designated theme leaders, and the project’s international\nadvisory board. The results were compiled int",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Increase societal relevance through localised expertise\nDevelop a ‘Contextualization Toolkit’ for SPPI, including\nadaptable communication strategies, facilitation techniques,\nand resource allocation models. This toolkit should be designed\nto guide practitioners in tailoring SPPI tools to specific cultural,\neconomic, and political contexts while ensuring alignment\nwith EU and global objectives. Invest in localised long-term,\nindependent knowledge brokers who possess the linguistic and\ncultural competency and legitimacy within their communities to\nfacilitate effective communication and build trust within diverse\ncommunities.\nAddress cross-systemic knowledge needs\nEstablish ‘SPPI Innovation Networks’ at the intersection of\nacademic institutions, government agencies, and civil society\norganizations. These networks should employ individuals\ntrained in systems thinking, facilitation, and relational leadership\n– to identify leverage points for change, build cross-sectoral\npartnerships, and fo",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Institutionalise SPPI platforms for trust-building\nEstablish dedicated, multi-stakeholder ‘Sustainability SPPI\nForums’ at national and sub-national levels. These Forums\nshould prioritise the representation of marginalized\ncommunities and individuals directly impacted by sustainability\ntransitions. Design these forums with a deliberate focus\non fostering mutual understanding and trust, embedding\nstructured facilitation methods, participatory narrative-building\nand transparent decision-making rules to bridge divergent\nperspectives and prevent elite capture. Implement independent\nregular monitoring and evaluation of participation and equity\noutcomes to ensure inclusivity and adapt Forum structures as\nneeded.\nReframe solutions to prioritise empowerment\nOrganise collaborative ‘Problem Definition Workshops’ co-led\nby scientists, policymakers, and community representatives.\nThese workshops should explicitly examine underlying\npower dynamics and systemic inequalities that contribute to\nenviron",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

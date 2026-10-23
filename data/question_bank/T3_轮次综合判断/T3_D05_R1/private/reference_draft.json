@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_D05_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "实验操纵与测量",
+    "模型适用性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对不同相关性条件、概念区分和假设检查的作者主张与后稿实际变化，不能从结果表反推外部刺激全文。",
+    "本题四环本地资料已齐；未附外部完整刺激、变量字典和假设检查文档，相关内容只能记为无法由题内核验，不自动否定主文全部修订。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "In this paper, the authors present a cross-sectional study that investigates the effects of\nprecautionary information on risk perception and trust in the context of 5G, using large general\npopulation samples. The authors aim to demonstrate several hypotheses including the trust in\nnational institutions (which provide the precautionary information).\nFirst of all, I want to point out that I am not a",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, thank you very much for your thoughtful comments and for taking the\ntime to review our paper despite it not being directly within your area of expertise. We\nhighly appreciate your feedback, especially regarding our treatment of EMF exposure and\nthe communication of scientific findings to the public.\nClarification of EMF limits and precautionary advice:\nWe acknowledge your concern regarding our formulation of precautionary informat",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nBackground\nTechnological advancements, such as the introduction of 5G, offer\nopportunities but also raise concerns. Although no evidence suggests\nnegative effects of radiofrequency electromagnetic fields (RF-EMF)\nwithin defined exposure limits, authorities responsible for risk\ncommunication provide precautionary advice to help citizens reduce\npersonal exposure. However, previous research indicates that\nprecautionary information can increase risk perception and decrease\ntrust.\nMethods\nThis cross-sectional study investigated effects of precautionary\ninformation on risk perception and trust in the context of 5G, using\nlarge general population samples in Germany and Greece. For the\nfirst time, personal relevance was examined as a potential moderating\nfactor, using a novel approach to assess practical and thematic\nrelevance. Participants were first surveyed on their relevance of the\ntopic, then provided with basic information about “RF-EMF and\nhealth”, and, in the experimental grou",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nBackground\nTechnological advancements, such as the introduction of the fifth\ngeneration technology standard 5G, offer opportunities but also raise\nconcerns. Although no evidence suggests negative effects of\nradiofrequency electromagnetic fields (RF-EMF) within defined\nexposure limits, authorities responsible for risk communication\nprovide precautionary advice to help citizens reduce personal\nexposure. However, previous research indicates that precautionary\ninformation can increase risk perception and decrease trust.\nMethods\nThis cross-sectional study investigated effects of precautionary\ninformation on risk perception and trust in the context of 5G, using\nlarge general population samples in Germany and Greece. For the\nfirst time, personal relevance was examined as a potential moderating\nfactor, using a novel approach to assess practical and thematic\nrelevance. Participants were first surveyed on their relevance of the\ntopic, then provided with basic information about “RF-EMF a",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "well as we used actual government agency communication\nmaterial as a base for it.\nFinally, another potential explanation for the absence of a\nmore pronounced effect of precautionary information might be\nthat RF-EMF as a potential risk triggers less strong responses\nnowadays than ten or 15 years before. People might nowadays\nbe less ready to increase their RP in response to information on\nthe topic than before.\nConcerning trust, it is important to keep in mind that effects in\nprevious studies have been much less consistent than those on\nRP. As explained above, there were large differences regarding content but also regarding wording and lengths of the\nprecautionary information not only between our studies and\nprevious ones, but also among the previous ones. All these\nfactors may influence how trustworthy the information is perceived. Furthermore, how trust is measured, and the object\nof trust could play a role. In previous studies, the object of\ntrust was “public health protection” (e.g",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Our results differ from those of previous studies which\nfound that RP was higher and trust lower when receiving\nprecautionary information compared to basic information only\n(e.g., Boehmert et al., 2020; Wiedemann & Schütz, 2005;\nWiedemann et al., 2006). There are different possible explanations\nfor these findings. First it needs to be noted that the effect of\nprecautionary information was not found in all previous studies.\nFor example, Boehmert, Wiedemann, and Croft (2016) did not\nfind a general difference, only if considering individual variables, like trait-anxiety and gender. Most importantly, when\ncomparing research on the effects of precautionary information,\nit needs to be kept in mind that researchers used different types\nof precautionary information for their studies. For example,\nearlier studies (e.g., Wiedemann & Schütz, 2005; Wiedemann\net al., 2006) presented mostly precautionary information\nthat are impossible or hard to implement by citizens individually,\nfor example infor",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

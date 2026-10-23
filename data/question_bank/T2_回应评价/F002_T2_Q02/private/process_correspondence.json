@@ -1,0 +1,64 @@
+{
+  "task_id": "F002_T2_Q02",
+  "paper_id": "ORE:1-27",
+  "parent_task": "T3_F002_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F002_R1/input.json",
+  "parent_input_sha256": "ce587b9c6ba62154c8635f3b9522c195fecbd7c6413d62111d55d406550acfe9",
+  "review_dimension_AI_candidate": "理论解释与评审前提",
+  "selection_scope": "原意见质疑保证有效性的说法，作者否认该前提并解释理论工具角色；保留完整回应。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/1-27_Ethics_as_attention_to_context__recommendations_for_the_ethics_of_arti/v1_manuscript.pdf",
+      "original_sha256": "8173eecca5c1565a3089f6d595258cc9c19b9c52804100c1c7d84e485c64d41d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F002_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        51933,
+        52142
+      ],
+      "report_id": "27581",
+      "date": "2021-10-06",
+      "raw_page_numbers": [
+        11
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/1-27_Ethics_as_attention_to_context__recommendations_for_the_ethics_of_arti/v1_manuscript.pdf",
+      "original_sha256": "8173eecca5c1565a3089f6d595258cc9c19b9c52804100c1c7d84e485c64d41d",
+      "raw_text_file": "data/question_bank/T2_回应评价/F002_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        54334,
+        55299
+      ],
+      "report_id": null,
+      "date": "2021-11-26",
+      "raw_page_numbers": [
+        12,
+        13
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 790,
+    "end": 1324,
+    "exact_quote": "does so by drawing from alternative ethical\ntheories to the dominant principled one, especially the ethics of care\nor other feminist approaches to ethics. Related to this, it encourages\nthe inclusion of social sciences and humanities in the development,\ndeployment and use of AI, as well as in AI ethics discussions and\ninitiatives. This article presents this proposal for an ethics as attention\nto context and formulates a series of practical recommendations to\nimplement this proposal concretely.\n\n\nIntroduction\n\nThe ethics of artif",
+    "anchor_matches": 14,
+    "anchor": "ethics of care"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 790,
+    "end": 1324,
+    "exact_quote": "does so by drawing from alternative ethical\ntheories to the dominant principled one, especially the ethics of care\nor other feminist approaches to ethics. Related to this, it encourages\nthe inclusion of social sciences and humanities in the development,\ndeployment and use of AI, as well as in AI ethics discussions and\ninitiatives. This article presents this proposal for an ethics as attention\nto context and formulates a series of practical recommendations to\nimplement this proposal concretely.\n\n\nIntroduction\n\nThe ethics of artif",
+    "anchor_matches": 14,
+    "anchor": "ethics of care"
+  },
+  "process_check_code": "R",
+  "process_check_status": "解释不采纳或范围限定，未预设必须修改",
+  "observed_process_note": "作者否认将care作为效果保证，解释其理论作用；不预设理论文章必须增加案例实验。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "F035_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究识别与内生性",
+    "样本与因果措辞"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "原评审指出421家企业的重复横截面与重大方法缺口；答复先预告后详答。核对竞合构念、统计模型及关系/因果主张，不将许诺以后提交详答当作已经覆盖所有要求。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The article focuses on understanding the relationship between coopetition and the likelihood of\ninnovation using data on 421 SMEs in Nigeria. The data is a repeated cross-section collected in\n2008 and 2011.\nIn general, the paper is well-written with very sound motivation and structure. The paper is also\nsuccinct and the authors seem well vested in the literature.\nHowever, there are major methodolo",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nDear reviewer, Thank you for your valueable feedback. We are working on addressing all\nyour concerns. We'll submit a revised version with a detailed response soon. Thank you one\nagain. Best Regards, Sohaib & Co-Authors\n\n\n[Next author response post]\n\n\nDear reviewer, Thank you very much for sparing time to review our manuscript. Indeed,\nyour observations about our paper are quite relevant and we intend to address your\nconcerns in the new version of our study. We have carefully examined all your o",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

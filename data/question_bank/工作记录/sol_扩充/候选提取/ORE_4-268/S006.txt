@@ -1,0 +1,37 @@
+Article: Mapping leadership and communities in EU-funded research through network analysis
+DOI: 10.12688/openreseurope.18544.1
+Version: 1
+Reviewer: Chanel Tri Handoko
+Status: approved with reservations
+Date: 2025-09-09
+Report ID: 58795
+============================================================
+
+The authors introduce a robust approach to network analysis using CORDIS data, applying AI-driven classification and community detection algorithms to reveal the evolution of project collaborations from 2015 to 2029. The North Adriatic Hydrogen Valley (NAHV) is used as a case study to highlight methodological advancements and practical insights. The work is contextualized against contemporary literature, emphasizing gaps and innovations in mapping EU research collaborations. Methodological steps, including data acquisition, network construction, centrality and coreness analysis, and consensus approaches for community detection, are clearly outlined. Results underscore the increasing scale and stability of research communities driven by EU hydrogen initiatives, with implications for policy and future research.
+1. The introduction concisely positions the study within the broader context of EU-funded innovation research, drawing from text mining and network analysis literature. The manuscript highlights prior limitations of network methods applied to CORDIS data and references several recent surveys and application papers. To improve engagement, the manuscript could discuss specific recent findings from the referenced text-mining and community detection studies in more detail, especially regarding methodological choices (e.g., how consensus community detection advances the field relative to alternative methods)
+2. The stepwise methodology is well-structured, including pseudocode and detailed algorithmic descriptions for each stage: data preparation, network construction, centrality and coreness computation, community detection, and longitudinal tracking. The choice of specific algorithms (Louvain, Leiden, Label Propagation, Edge Betweenness, Leading Eigenvector, Walktrap, Infomap) is justified, and the strengths/limitations of each are empirically explored in the results section. The technical discussion of how consensus and quality checks are implemented could be expanded, especially on algorithm selection and validation, perhaps with more concrete implementation notes or reproducibility factors.
+3. The manuscript might briefly summarize the data cleaning and validation steps performed before analysis, including potential issues with missing or inconsistent records from CORDIS.
+4. The manuscript may benefit from including summary statistics (mean, variance, etc.) for centrality measures, and quantitative measures of algorithmic performance or computational cost comparison across algorithms
+
+
+--- Structured Questions ---
+
+Q: Is the work clearly and accurately presented and does it engage with the current literature?
+A: Yes
+
+Q: Is the study design appropriate and is the work technically sound?
+A: Yes
+
+Q: Are sufficient details of methods and analysis provided to allow replication by others?
+A: Yes
+
+Q: Are all the source data and materials underlying the results available? 
+A: Yes
+
+Q: If applicable, is the statistical analysis and its interpretation appropriate?
+A: Yes
+
+Q: Are the conclusions drawn adequately supported by the results?
+A: Yes
+
+Areas of research: renewable energy, public partner partnership

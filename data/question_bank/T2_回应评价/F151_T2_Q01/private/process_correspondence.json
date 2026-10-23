@@ -1,0 +1,63 @@
+{
+  "task_id": "F151_T2_Q01",
+  "paper_id": "F1000:150421",
+  "parent_task": "T3_F151_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F151_R1/input.json",
+  "parent_input_sha256": "adc098142b1179aadfded6ce0cb8159063704f850d0396e3c23e1434a1c6c4c5",
+  "review_dimension_AI_candidate": "数据可得性与可复现性",
+  "selection_scope": "完整总回复只有未来升级承诺；不因报告后面平台勾选Yes就忽略实质文本中的数据问题。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/150421_Women_s_representation_in_higher_leadership_positions_in_Ethiopia_in_t/v1_manuscript.pdf",
+      "original_sha256": "de1c6ecac21de2c78eebcba21b62625bec063a087a649cbda0b53f6a8f15a22b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F151_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        55038,
+        55552
+      ],
+      "report_id": "299158",
+      "date": "2024-07-25",
+      "raw_page_numbers": [
+        14
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/150421_Women_s_representation_in_higher_leadership_positions_in_Ethiopia_in_t/v1_manuscript.pdf",
+      "original_sha256": "de1c6ecac21de2c78eebcba21b62625bec063a087a649cbda0b53f6a8f15a22b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F151_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        60540,
+        60902
+      ],
+      "report_id": null,
+      "date": "2024-07-31",
+      "raw_page_numbers": [
+        16
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 40947,
+    "end": 41494,
+    "exact_quote": "hical status and agreed to\nproceed with its publishing by granting an ethical approval certificate.\nData availability statement\nUnderlying data\nDryad: Women’s status in Higher leadership positions in Ethiopia since 1991 [Dataset], Dryad. Accessible via this link:\n[external resource identifier omitted] (Chekol & Hadaro, 1991).\nThe project contains the following underlying data and tables: Women_in_ legislative_body; Women_in_the_\nexecutive_body; Women_in_the_judiciary_body and Women_in_the_upper house_ (HoF). It has also included the\nextended",
+    "anchor_matches": 1,
+    "anchor": "Data availability statement"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 42609,
+    "end": 43156,
+    "exact_quote": "hical status and agreed to\nproceed with its publishing by granting an ethical approval certificate.\nData availability statement\nUnderlying data\nDryad: Women’s status in Higher leadership positions in Ethiopia since 1991 [Dataset], Dryad. Accessible via this link:\n[external resource identifier omitted] (Chekol & Hadaro, 1991).\nThe project contains the following underlying data and tables: Women_in_ legislative_body; Women_in_the_\nexecutive_body; Women_in_the_judiciary_body and Women_in_the_upper house_ (HoF). It has also included the\nextended",
+    "anchor_matches": 1,
+    "anchor": "Data availability statement"
+  },
+  "process_check_code": "E",
+  "process_check_status": "已核前稿已有信息或所核位置仍保留",
+  "observed_process_note": "前稿已有Dryad数据可得性声明，后稿保留；不按评审笼统要求推定原稿未共享，也未验证仓库可访问。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

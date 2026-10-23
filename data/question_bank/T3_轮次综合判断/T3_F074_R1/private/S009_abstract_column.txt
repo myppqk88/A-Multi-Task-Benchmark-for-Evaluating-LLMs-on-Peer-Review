@@ -1,0 +1,1619 @@
+Open Research Europe
+
+O
+
+REVIEW
+
+Technologies for an inclusive ro
+[version 2; peer review: 3 approved]
+
+Dimitris ALIMISIS
+
+EDUMOTIVA (European Lab for Educational Technology), Kapnikareas 19A, Athe
+
+v2 First published: 21 Apr 2021, 1:40
+
+https://doi.org/10.12688/openreseurope.13321.1
+Latest published: 18 Jun 2021, 1:40
+https://doi.org/10.12688/openreseurope.13321.2
+
+Abstract
+The H2020 project “INBOTS: Inclusive Robotics for a Better Society”
+(2018–21) has worked in different disciplines involved in the
+acceptance and uptake of interactive robotics, including the
+promotion of accessible and multidisciplinary education programs. In
+INBOTS, educational robotics is considered as a learning tool that can
+bring robotics into school classrooms and benefit all children
+regardless of their future educational or professional orientation.
+Aiming to make robotics education inclusive, INBOTS has introduced a
+paradigm shift inspired by sound pedagogies (Papert’s
+constructionism) and emerging educational trends (the maker
+movement) and focused on creativity and other 21st-century skills.
+However, the realisation of this new paradigm requires appropriate
+curricula and technologies at both hardware and software levels. This
+paper addresses several questions and dilemmas related to the
+technologies currently in use in robotics education and the kind of
+technologies that can best support the proposed paradigm. This
+discussion results in specific criteria that robotics technologies must
+fulfil to foster the new paradigm. Based on these criteria, we review
+some representative technologies in both hardware and software.
+Then, we identify and discuss some technological solutions that
+exemplify the kind of technologies that can best support inclusive
+robotics education and make the proposed paradigm feasible. Finally,
+we show how some of these technologies can be combined to design
+a creative and inclusive project consistent with the criteria set in this
+paper.
+Keywords
+learning technologies, robotics education, maker movement, inclusive
+education, INBOTS.
+
+This article is included in the Horizon 2020
+gateway.
+
+Open Research Europe
+
+O
+
+This article is included in the Robotics
+collection.
+
+Corresponding author: Dimitris ALIMISIS (alimisis@edumotiva.eu)
+
+Author roles: ALIMISIS D: Conceptualization, Methodology, Writing – Original Draf
+Competing interests: No competing interests were disclosed.
+
+Grant information: This research was financially supported by the European Union
+programme under the grant agreement No. 780073 (Inclusive Robotics for a Better
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2021 ALIMISIS D. This is an open access article distributed under the
+which permits unrestricted use, distribution, and reproduction in any medium, prov
+
+How to cite this article: ALIMISIS D. Technologies for an inclusive robotics educ
+Research Europe 2021, 1:40 https://doi.org/10.12688/openreseurope.13321.2
+
+First published: 21 Apr 2021, 1:40 https://doi.org/10.12688/openreseurope.13321.
+
+O
+
+REVISED
+
+Amendments from Version 1
+
+The major differences between this version and the previously
+published version:
+The concept of inclusiveness in the framework of robotics
+education is clarified as clearly distinct to accessibility for children
+with disabilities.
+More references are added to help readers know the provenance
+of all the questions discussed in section “Establishing criteria”
+In Table 1, an ordinal scale consisting of a spectrum of qualitative
+values is used for comparing the performance of platforms.
+A new paragraph is added in section “Reviewing programming
+languages and tools” addressing the issue that efforts to provide
+a low floor in programming should not undermine a high ceiling
+(which is important for learners to reach).
+A summary of the reviews to argue how they collectively answer
+the second research question is added in the end of the section
+“Reviewing more technologies that can serve the inclusive
+paradigm”
+In section “Introduction: a new paradigm in educational robotics”
+2 new paragraphs are added to argue for the need of a radical
+change in the current core concepts and practices of robotics
+education with the focus being on the transformation of robotics
+education towards an education inclusive of all children and
+explain the use of the term “new paradigm”.
+In section “Analysing three popular technologies against the
+criteria” the paragraph explaining why those three tools were
+selected is enriched with more arguments for the selection of
+the tools.
+In section “Analysing three popular technologies against the
+criteria” a new paragraph is added to address the issue that
+some of the criteria used to evaluate the three platforms can be
+influenced at some extent by the teacher’s interventions.
+The age appropriateness of the tools reviewed is mentioned
+in section “Analysing three popular technologies against the
+criteria”
+Subheadings are added to make more visible the structure of the
+discussion.
+Any further responses from the reviewers can be found at
+the end of the article
+
+Introduction: a new paradigm in educational
+robotics
+
+More than ever before, educators are using robotics kits and
+educational robots to teach and inspire students of all ages,
+from pre-school to secondary school, preparing them for a
+society in which robotics are used more and more often in
+everyday life. Robotics education is usually conceived as a
+two-fold mission: education in robotics and education with
+robotics. The in case promotes knowledge and understanding of the design, analysis, application, and operation of robots;
+the with concept is broader and entails the use of robotics as
+a tool for teaching and learning science, technology, engineering, arts and math (STEAM) subjects and developing
+21st-century skills: creativity, problem-solving, critical thinking
+and teamwork, for example 1,2.
+This distinction between the two branches of robotics education
+is important because it affects the inclusiveness of the project.
+
+Learners in
+in and attit
+neering, te
+pursue univ
+engineering
+with roboti
+their future
+great prom
+and respect
+before they
+
+The H2020
+Society” b
+involved in
+including t
+education p
+sidered as
+classrooms
+educational
+tion team
+framework
+EU level,
+groups: pre
+secondary s
+
+The concep
+is clearly
+disabilities3
+social uptak
+make the
+accessible
+the future a
+This conce
+ception that
+tional skill
+engineering
+with gende
+may result
+interested
+ones5. The
+life and mo
+developed
+21st centu
+misconcepti
+offer know
+a shift requ
+practices o
+transformat
+inclusive of
+
+We have
+paradigm
+construction
+movement
+maker cultu
+education w
+skills: pro
+During the
+have alrea
+
+O
+
+According to a systematic review10 most of the existing research
+studies in robotics education have used constructivist and
+constructionist frameworks to design and implement robotics
+curricula and to analyse young children’s engagement in
+robotics education. However, the dominant framework seems to
+be different when it comes to the several curricula provided by
+the producers of popular commercial robotic kits which
+dictate the use of the kits by teachers and children and
+inevitably influence robotics education. A recent review11 of
+some typical educational robotics curricula supporting wellknown technologies has revealed a chaotic landscape where
+curricula rarely share common methods and principles.
+Their development does not seem to follow a generic and
+comprehensive model. Most of those curricula propose usually a restricted step-by-step guided approach for learners or
+strictly scripted workshops to assembly and program prescribed
+models of robots that do not lead to any meaningful
+learning12. This approach is far away from a constructionist or maker education framework and cannot foster creativity,
+inventiveness, and curiosity for children13.
+In the INBOTS framework, we are aware that the realisation of
+a new paradigm in education depends on appropriate curricula
+and technologies. We have already reviewed the more prominent curricula and recommended changes to align them with the
+proposed paradigm11. In addition, a set of specific curricula
+and resources for school education that exemplify the new
+paradigm have been developed. The INBOTS curricula and
+resources have been piloted with teachers and children in
+courses in Athens (Autumn–Winter 2019); a short video from
+the pilots is available on YouTube. The curricula and resources
+are available online to help teachers and educators implement
+the proposed paradigm in their classes and labs and inspire
+them to create their own curricula and resources.
+The new paradigm – and the INBOTS curricula – needs support
+from appropriate technological tools. We have already
+provided a systematic review of the available educational
+robotics technologies that appear in the literature13 and a list
+of available resources.
+Following up on this work within INBOTS, the present paper
+explores a central question emerging from our previous work:
+what kind of technologies (at hardware and software levels)
+are appropriate to support the new paradigm and engage young
+people with an inclusive robotics education? To answer this
+question, we need first to answer the following sub-questions:
+– What criteria should inform decisions about the potential
+of particular technologies to support an inclusive robotics
+education?
+– To what extent can the technologies currently used support
+an inclusive robotics education?
+The following section addresses these questions by examining
+some critical dilemmas regarding technologies used in robotics
+education. In the process, we identify criteria that robotics
+
+technologie
+subsequentl
+technologie
+propose an
+to demonst
+robotics ed
+Finally, we
+bined to d
+with our par
+
+Discussio
+
+Before exp
+education a
+necessary t
+end, some
+education ar
+
+Establishin
+Arts and c
+This challen
+study14 in w
+robot from
+those in a
+structured
+from scratc
+while build
+their awaren
+
+In other pa
+the frame
+13–17 crea
+low-cost an
+“make you
+mindset. In
+students in
+creative “ar
+
+We concur
+as “creative
+vides hands
+and act upo
+children to
+gering thei
+transparency
+children un
+its uses16.
+
+Technologie
+learners? T
+obvious fro
+robotics ed
+aging techn
+only secon
+typing tech
+such as Ar
+classrooms4
+eventually
+suppose a
+
+O
+
+as soldering, circuiting, C coding etc.) that young students or
+novices are unlikely to possess. Moreover, the producers of
+technologies for professionals or hobbyists focus on doing the
+job fast and at a low cost. They do not care much (nor is it
+their role) to help users understand how the product works; this
+often results in “overdesigned” technologies which essentially
+hide how the product actually works.
+We have already argued1,5 that the technologies we invite
+children to interact with should be designed in line with sound
+learning theories and constructionist/constructivist pedagogy6,18.
+However, this premise alone cannot guarantee the design of
+appropriate tools. Very often, technologies for learning offer
+“less for more” compared to corresponding professional tools
+or are not reliable. Putting emphasis on making technologies
+educationally meaningful and engaging should not compromise
+their reliability or scientific accuracy.
+
+Cost matte
+and cognit
+be an inhi
+Our exper
+shown tha
+everyday l
+creative so
+sive, ready
+make only a
+
+From this
+kind of tech
+
+– enable st
+
+– offer tran
+
+– are desig
+
+Should technologies prepare students for engineering jobs or
+develop personal expression and skills? Decisions regarding
+which objectives to pursue in robotics education have
+evident consequences for the choice of technologies deployed12.
+If the emphasis is on preparing students for engineering jobs,
+then technologies replicating or simulating professional tools
+may be the right choice; however, if we focus on personal
+expression and skills development for all, regardless of future
+careers, then technologies compatible with the above-mentioned
+“arts and crafts” model, which allow children to design and
+make their own robotic artefacts from scratch, seem the right
+choice.
+
+– do not
+outside t
+
+Should more time be spent on technicalities or creative tasks?
+When students start working on their robotics projects, they
+need some initial training to learn to use the technology.
+The time required for this training is an important factor
+for student engagement. According to our experiences in
+pilots4, children are impatient to see concrete results and feel
+frustrated or even disappointed when they encounter difficulties
+using the tools or when it takes too long to progress from
+technicalities to creative tasks. Moreover, the attention demanded
+by technical issues may compromise their interest and undermine their engagement in the project. Thus, to allot more
+project time to creative tasks and less to technicalities, we
+need technology that is easy for learners to understand and use
+without exposing them to an unnecessary level of technical
+detail12.
+
+How do th
+criteria set
+platforms (
+assessed ag
+of a spec
+average, p
+aimed to in
+might best s
+
+Scenarios from everyday life or “missions to Mars”? Very
+often in robotics competitions (e.g. the World Robot Olympiad)
+or in the curricula and manuals proposed by the producers
+of commercial robotics kits, “exotic” scenarios and models
+of robots inspired by fiction movies or popular TV shows are
+proposed to excite children’s interest. Industries advertise
+spectacular robots ready for space adventures, which sound
+exciting but have nothing to do with children’s everyday lives.
+There is a risk that this sort of marketing will result in the
+mystification of robots and promote misconceptions about how
+robotics technologies work and the reasoning behind them5.
+
+– emphasis
+instead o
+
+– allow fo
+technical
+
+– demystif
+robot wo
+
+– are of low
+
+The three p
+they are am
+approaches
+attracted co
+have been s
+potential an
+offers modu
+construction
+form, like
+computing,
+it into an
+teachers an
+robotic arte
+an accessib
+ing ease of
+tors and ch
+their Micr
+artefacts.
+
+O
+
+Table 1. Comparing the performance of platforms popular in educationa
+the discussion at an ordinal scale: excellent, good, average, poor, very p
+Criterion
+enables students to build DIY robots from scratch.
+offers transparency of their underlying structure.
+is designed for learners and not for professionals or hobbyists.
+requires prior knowledge of the technology from outside the classroom.
+
+emphasises personal expression and skills development for all instead of prep
+students for engineering jobs.
+allows for more time to be spent on creative tasks and less on technicalities.
+demystify robots and helps children understand how their robot works.
+is of low cost for schools.
+
+As Table 1 shows, LEGO Mindstorms and Arduino platforms
+meet some, but not all, of the set criteria, while Micro:bit
+performs quite well in most categories. The popular commercial
+platform LEGO Mindstorms builds on the familiarity to children
+with LEGO bricks and offers (though at high cost) easy modular assembling of robots and abstraction of unnecessary technical details. However, it lags behind the other two platforms
+in terms of openness to manipulation by the learner, transparency of the underlying electronics and potential to become a
+design material.
+Arduino platform, though designed primarily for professionals
+and hobbyists, offers more opportunities for learners to “make
+their own robots”, can easily become a design tool in the hands
+of learners, and provides many opportunities for learners’ own
+manipulations. However, Arduino requires prior knowledge of
+the technology from outside the classroom (e.g. electronics,
+soldering skills). Moreover, students usually have to spend
+more time on technicalities than with LEGO Mindstorms or
+Micro:bit and may be frustrated by the many unnecessary
+details to which they are expected to attend. We concur with
+Blikstein: “a toolkit that is supposed to help students learn
+robotics but makes them spend half of their time figuring out
+how a breadboard works, will not be able to live up to its goals”12.
+The Micro:bit platform seems to excel in certain aspects when
+compared with LEGO Mindstorms and Arduino. It carries
+most of the advantages of Arduino without some of its shortcomings. The electronics in Micro:bit are comparatively more
+transparent, without exposing users to unnecessary details;
+less prior technical knowledge and skill is required. Micro:bit
+combines expressive electronics with arts and crafts, and it is a
+good example of an inclusive technology that enables children
+to make their own low-cost robotic artefacts to support inclusive education in robotics, in line with our discussion in this
+article.
+
+Of course,
+at some e
+regarding t
+1st criterion
+teacher ma
+enable stud
+with the DI
+scratch; or
+expression
+again can e
+priate shield
+section of t
+expression
+always imp
+of each pla
+for users w
+depicted in
+
+Reviewing
+The progra
+entiates rob
+gramming
+Text coding
+nical langu
+commands
+programmin
+options: ch
+ronment w
+window in
+text coding.
+
+In Table 2,
+solutions fo
+discussed. T
+in Table 3,
+might be in
+
+O
+
+Table 2. Comparison of three tools for programming
+the task “turn on the LED”.
+Programming language
+
+Lighthouse project/task:
+turn on the LED
+
+Arduino C
+
+digitalWrite(9, HIGH);
+
+Mblock
+Open Roberta Lab
+
+Table 3. Comparison of three tools for programming the
+task “play note”.
+Programming
+language
+
+Theremin project/task: play note
+
+Arduino C
+
+tone(buzzer_buzzer, 300, 100)
+
+Mblock
+Open Roberta Lab
+
+Table 4. Comparison of three tools for programming the
+task “rotate the servo motor”.
+Programming
+language
+
+Sunflower project/task: rotate the
+servo motor
+
+Arduino C
+
+servo_Sunflower.write(90)
+
+Mblock
+Open Roberta Lab
+
+lighthouse, a Theremin music box and a sunflower, respectively. The (partial) solutions come from programming platforms
+well known in educational robotics: Arduino IDE (as an example of text coding with commands written in C/C++ language)
+and two VPL platforms (MBlock and Open Roberta Lab) that
+use visual blocks instead of text commands.
+Comparing the text coding and block-based solutions in
+Table 2, Table 3 and Table 4, we can first observe that the technical language used by Arduino C is not the most practical for young students, who are not familiar with technical
+languages. For instance, the students might not understand
+terms such as “digitalWrite” or “HIGH” or “LOW”12. The same
+issue arises with the MBlock editor, which, although it uses
+visual blocks to change the text commands, still uses the same
+terminology.
+In contrast to Arduino C and MBlock, Open Roberta Lab
+uses more widely recognised terms (“ON-OFF”, for example,
+
+instead of
+that makes
+“digitalWrit
+language:
+“frequency”
+
+These exam
+with a mo
+it is not e
+we need, a
+language th
+byists but
+communitie
+but also to
+in many c
+text coding.
+that is mea
+for children
+
+However, i
+lower the c
+them23. Wi
+opportunity
+ing tools.
+board using
+text code i
+window. Th
+with text co
+programmin
+
+Another pr
+(Table 2, T
+and rigorou
+cles for yo
+of syntax a
+to the dis
+such as dif
+ming interf
+their robots
+children fr
+terms with a
+
+Reviewing
+inclusive p
+The maker
+duce STEA
+some indic
+they may s
+the analysis
+begins with
+school) lear
+learners (sec
+
+Cardboard
+nearly ubiq
+an easily a
+combining
+ing with th
+friendly wa
+
+O
+
+electronics projects using paper circuits (Figure 1), arts and
+crafts (Figure 2) and friendly programming (Figure 3). Children
+can use the Chibi Chip board (Figure 1) to bring their
+projects to life by connecting switches and sensors to it. The
+materials used look like familiar craft supplies; for instance,
+strips of copper tape or other conductive material are used to
+connect the Chibi Chip board to the LED (or other) circuit in a
+loop (Figure 2). The focus in Chibitronics is on combining
+expressive electronics with arts and crafts, and it currently
+supports only a few sensors and actuators, which means fewer
+options for robotics projects than Arduino-like microcontrollers
+can offer. However, this is a good example of a technology that
+enables children to make simple, low-cost arts and crafts
+projects, in line with our discussion.
+
+Table 1 sh
+ent advanta
+that LEGO
+its the time
+however, it
+material an
+offers, at lo
+rial, but it
+considerabl
+
+With these
+different te
+not its we
+would com
+
+Figure 1. Making a simple LED circuit with Chibi Chip board and strips of cop
+
+Figure 2. The lighthouse project with Chibi Chip board, an LED circuit and so
+
+O
+
+Figure 3. Simulation of the Chibi Chip board (left) and the code for the lighth
+
+power and flexibility of RaspberryPi or Arduino. Indeed, such
+solutions have already been proposed and entered the market.
+For instance, the BrickPi board and the PiStorms board, among
+others, replace the LEGO NXT/EV3 brick with the Raspberry
+Pi or Arduino board and offer an extension that makes it
+compatible with the LEGO Mindstorms platform. For this
+purpose, a “shield” is added to the Raspberry Pi or Arduino
+board that offers connectors to the LEGO Mindstorms sensors
+and motors. Combining the processing power of the low-cost
+Raspberry Pi or Arduino board with the convenience of the
+LEGO motors, sensors and building system results in a better
+tool than either system offers alone.
+In another example, the well-known littleBits series offers
+the littleBits Arduino Bit, a microcontroller that gives the
+power to code the littleBits circuits and control the way lights,
+buttons, motors, sensors and other Bits interact. The Arduino
+Bit can offer the functionality of an Arduino Leonardo without
+any breadboarding, soldering or wiring. It is simply plugged
+into a computer, snapped together with other Little Bits and
+programmed with the visual blocks–based Code Kit App or
+with MakeBlock (Figure 4).
+Very often, a breadboard is used in connection with a microcontroller to make electric circuitry. Our experiences in
+our pilots with young learners have shown that difficulties
+and misunderstandings arise for these students while working with a breadboard; they do not understand how its holes are
+connected internally or why the breadboard differs from the
+standard diagrams used in physics lessons. Can we improve
+the design of the breadboard to make it friendlier and more
+meaningful for young learners?
+In an interesting project aimed at strengthening the understanding of the breadboard and closing the gap between its
+representation in the diagram and the physical breadboard, a
+3D-printed plastic cover was designed as an overlay to fit on
+top of a standard breadboard. The cover visualised the internal
+connections between the holes, and the supply lines were
+
+coloured re
+was design
+and to fu
+in compari
+eCraft2Lear
+of the brea
+to a real
+to use the br
+
+Several eff
+popular Ar
+and more
+in electroni
+“shield”: a
+controller t
+For exampl
+with a mic
+the Internet.
+
+There are
+purposes. T
+shield des
+for educati
+while build
+ing easier t
+modules, l
+more to an
+the creation
+
+Using shie
+wiring to
+Learners do
+components
+the shield
+whenever
+circuit and
+fewer error
+Finally, shi
+Arduino-lik
+
+O
+
+Figure 4. The common blink project with littleBits CodeBit (right) and MakeB
+
+Grove by Seeed Studio is another interesting solution that
+provides an open, modular system designed for easy connection of sensors or actuators to a microprocessor, thus making it
+easy to connect, experiment and simplify the prototyping
+process without wiring or soldering. Recently, Arduino and
+Seeed Studio announced the Arduino Sensor Kit – Base: a
+plug and play addition to the Arduino board to get users started
+with electronics and programming. The kit helps to connect and
+program basic Grove modules that include both sensors and
+actuators – again without requiring a breadboard, soldering
+or wiring. Children can also use the compact and flexible
+Proto Shield kit to build their own Arduino Shield. The Proto
+Shield kit makes it easy to design custom circuits and solder
+electronics directly on it.
+A simplified type of shield is Snapino, which is helpful for
+beginners and novices and offers a useful introduction to the
+Arduino board. Snap Circuits use electronic blocks that snap
+onto a clear plastic grid to build different circuits. The Snapino
+module is an Arduino UNO microcontroller mounted on a
+Snap Circuits base. When combined with Snap Circuits,
+which has electronic parts and modules mounted on snaps, it
+offers a simple and easy prototyping platform. Because LEDs
+come with internal resistors, users do not need to worry about
+protecting them. A base grid is provided instead of a breadboard
+for mounting parts and wires.
+Summarising these reviews in relation to the criteria set in this
+discussion, we argue that several technologies are already
+available which, at a lower or higher degree, can support an
+inclusive robotics education paradigm inspired from the maker
+movement. The main innovations we have found useful to this
+end include: the combination of expressive electronics with
+arts and crafts (e.g. Chibitronics) that enables children to make
+simple, low-cost robotic artifacts from scratch and provides
+opportunities for personal expression; the combination of two
+different kits in one platform (e.g. BrickPi, PiStorms) that can
+result in a better tool taking the strengths of each kit and not
+
+its weakne
+(e.g. 12) o
+can help m
+young learn
+ing circuitr
+a simple a
+add new fe
+the reviewe
+related to t
+tion. Howe
+insights in
+robots could
+
+Combinin
+design a r
+To conclud
+educational
+to show ho
+create easy
+cal project
+design it so
+result, for e
+and it mov
+illustrated a
+In Figure 6
+attached to
+step motor
+breadboard
+
+Figure 7 i
+car in Ope
+together, pr
+(e.g. repeat
+concepts (e
+close to no
+ful for you
+(e.g. rotatio
+way accord
+
+O
+
+Figure 5. Robot configuration in Open Roberta Lab.
+
+Figure 6. Combining Arduino board with Grove shield and modules to design
+lights turn on and it moves forward.
+
+basic design that learners can expand, adding more wheels and
+sensors, crafting a chassis or decorating their creation according
+to their own design.
+
+Conclusions
+
+This paper explores technological solutions and tools that
+can contribute to a more inclusive robotics education. We
+review key dilemmas regarding the use of technologies in
+robotics education, offering a perspective that might be useful
+in both evaluating technologies currently in use and developing
+
+new tools
+ics educati
+technologie
+technologies
+for learners
+
+Technologie
+for young
+carefully co
+technocentr
+
+O
+
+Figure 7. Programming the robot in Open Roberta Lab.
+
+how to use the tool29. Such a technocentric approach is precisely
+the opposite of the inclusive approach we adopt in this paper.
+We suggest several technological solutions and present an
+indicative scenario that aims at a didactic transformation
+of the “difficult” technologies before putting them in the hands
+of young learners. This didactic transformation involves the
+transformation of professional or scientific tools in a way that
+optimises comprehension and ease of use in the educational
+process.
+Finally, this paper highlights the educational value of the
+“arts and crafts” model and the need for robotics kits that can
+become a hands-on design material for children to manipulate
+
+and think
+inventive an
+inclusive ed
+
+Further wo
+technologie
+education
+new ways
+robotics com
+and towards
+
+Data and
+
+No data are
+
+References
+1.
+
+Alimisis D: Educational Robotics: Open questions and new challenges.
+Themes in Science and Technology Education. 2013; 6(1): 63–71.
+Reference Source
+
+2.
+
+Eguchi A: Educational robotics for promoting 21st century skills. Journal of
+Automation Mobile Robotics and Intelligent Systems. 2014; 8(1): 5–11.
+Publisher Full Text
+
+3.
+
+Bar-El D, Worsley M: Making the maker movement more inclusive: Lessons
+learned from a course on accessibility in making. Int J Child Comput Interact.
+2021; 29: 100285.
+Publisher Full Text
+
+4.
+
+Alimisis D, Loukatos D, Zoulias E, et al.: The Role of Education for the Social
+Uptake of Robotics: The Case of the eCraft2Learn Project. In: Pons J. (eds)
+Inclusive Robotics for a Better Society. INBOTS 2018. Biosystems & Biorobotics.
+Springer, Cham. 2020; 25: 180–187.
+Publisher Full Text
+
+5.
+
+Alimisis D: Emerging Pedagogies in Robotics Education: Towards a
+Paradigm Shift. In: Pons J. (eds) Inclusive Robotics for a Better Society. INBOTS
+2018. Biosystems & Biorobotics. Springer, Cham. 2020; 25: 123–130.
+Publisher Full Text
+
+6.
+
+Papert S, Harel I: Constructionism. NY: Ablex Publishing Corporation. 1991.
+Reference Source
+
+7.
+
+Blikstein P: Digital Fabrication and ’Making’ in Education: The
+Democratization of Invention. In J. Walter-Herrmann & C. Büching (Eds.),
+FabLabs: Of Machines, Makers, and Inventors. Bielefeld: Transcript Publishers,
+2013.
+Publisher Full Text
+
+8.
+
+Schon S,
+modern
+and teac
+edition. 2
+
+9.
+
+Blikstein
+Powerfu
+Makeolog
+56-59). Ta
+Referenc
+
+10.
+
+Jung SE, W
+Educatio
+Publishe
+
+11.
+
+Sapounid
+shortcom
+Robotics t
+Intelligen
+
+12.
+
+Blikstein
+Review a
+Human-C
+Publishe
+
+13.
+
+Sapounid
+Technolo
+A. Afonso
+Mathema
+Nova scie
+Referenc
+
+O
+
+14.
+
+15.
+
+Fortunati L, Manganelli AM, Ferrin G: Arts and crafts robots or LEGO®
+MINDSTORMS robots? A comparative study in educational robotics. Int J
+Technol Des Educ. 2020.
+Publisher Full Text
+Alimisis D, Alimisi R, Loukatos D, et al.: Kids make their own robots: good
+practices from the eCraft2Learn project. FORMARE, Firenze University Press.
+2019; 19: 12–29.
+Publisher Full Text
+
+16(3).
+Referenc
+22.
+
+Sentance
+of the BB
+Computer
+Publishe
+
+23.
+
+Papert S:
+Basic Boo
+Referenc
+
+24.
+
+Devine J,
+efficient
+Architectu
+Publishe
+
+16.
+
+Matthews S, Viller S, Boden M: “... And We Are the Creators!” Technologies as
+Creative Material. TEI ‘20: Proceedings of the Fourteenth International Conference
+on Tangible, Embedded, and Embodied Interaction. ACM, NY USA. 2020;
+511–518.
+Publisher Full Text
+
+17.
+
+Matthews S, Matthews B: Reconceptualising feedback: Designing
+educational tangible technologies to be a creative material. Int J Child
+Comput Interact. 2021; 29: 100278.
+Publisher Full Text
+Piaget J: To understand is to invent. New York, NY: Basic Books. 1974.
+Reference Source
+
+25.
+
+Resnick M
+all. Comm
+Publishe
+
+26.
+
+19.
+
+Saleiro M, Carmo B, Rodrigues JMF, et al.: A Low-Cost Classroom-Oriented
+Educational Robotics System. In Social Robotics. Cham: Springer International
+Publishing, 2013; 74–83.
+Publisher Full Text
+
+Qi J, Dick
+Rosenfeld
+environm
+
+27.
+
+20.
+
+Agatolio F, Moro M: A Workshop to Promote Arduino-Based Robots as
+Wide Spectrum Learning Support Tools. In: Merdan M., Lepuschitz W.,
+Koppensteiner G., Balogh R. (eds) Robotics in Education. Advances in Intelligent
+Systems and Computing. Springer, Cham. 2017; 457.
+Publisher Full Text
+
+Pedersen
+the gap
+Koppens
+Advances
+Publishe
+
+28.
+
+Papert S:
+technoce
+Publishe
+
+21.
+
+Castledine AR, Chalmers C: LEGO Robotics: An authentic problem solving
+tool? Design and Technology Education: an International Journal, [S.l.]. 2011;
+
+29.
+
+Brennan
+classroo
+Referenc
+
+18.
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 04 November 2021
+
+https://doi.org/10.21956/openreseurope.14892.r27836
+
+© 2021 Petrovic P. This is an open access peer review report distribu
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Pavel Petrovic
+
+Department of Applied Informatics, Faculty of Mathemat
+Bratislava, Slovakia
+
+This article formulates and discusses important question
+need to consider when selecting a technological didactica
+robotics educational tools and approaches into education
+of current state of the art regarding the various technolo
+into comparison a few of the notoriously used solutions h
+article would certainly be a recommended read for anyon
+robotics or electronics technology into their educational
+resource with new ideas for some experienced users in th
+
+On the other hand, it certainly would not be the only read
+implementation scenario, since technology is only one (a
+Much more important would be WHICH pedagogical goa
+going to be done with the technology and HOW it is goin
+technologies mentioned in the article are relevant in one
+thus it is impossible to generalize over them at this level.
+end gives some other advantage on another one, so the
+dependent" issue and should be treated as such. Also, I w
+unifying the approaches, that the article suggested at so
+evolution, creativity, and progress in general. For instanc
+current trend of all the educational environments for chil
+On one hand, yes, the child can move from one solution
+curve for a new technology is faster. On the other hand,
+crossroads still, and other approaches than the outdated
+programming model need to be heavily investigated and
+programming, which allows natural parallelization while
+code, to name just one.
+
+Open Research Europe
+
+O
+
+I would also like to contest the positive assessment of the
+Arduino in Table 1. It certainly does not fall into the same
+Arduino is higher in several degrees of magnitude. The p
+significant obstacle thus many of the workshops with Mic
+display and the gyro - i.e. at a level of projects that could
+on a mobile phone or a tablet, if you like. However, witho
+servicing, and all the other extra hassle with the hardwar
+designed for learners contrary to the suggestion in the T
+prior knowledge than Micro:bit. Ranging Arduino as poor
+spending is definitely unfair too. It is just different, works
+experiences, which can sometimes be treated more valua
+learn about what happens inside. That matters. What val
+wizzard who can impress others by legendary-kind of exp
+TURN ON!" ...and then the LED turned on, and all the chil
+and stayed happy forever. I know what you mean, but m
+uncomparable. They are all valid, very useful, and beautif
+purpose, that's it.
+Is the topic of the review discussed comprehensively
+literature?
+Yes
+
+Are all factual statements correct and adequately sup
+Partly
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Educational Robotics, Artificial Intelli
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Reviewer Report 25 October 2021
+
+https://doi.org/10.21956/openreseurope.14892.r27137
+
+© 2021 Eguchi A. This is an open access peer review report distribute
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Open Research Europe
+
+O
+
+Amy Eguchi
+
+Department of Education Studies, University of California
+
+Thank you for the revisions and responding to my comm
+maybe making the sub-title clearer will help readers und
+
+The current title is "Introduction: a new paradigm in educ
+say "a new paradigm in educational robotics for inclusive
+new paradigm is not for educational robotics but to prov
+the learners.
+
+On page 6, the top of the left column, I would change the
+
+"Of course, some of the criteria in Table 1 can be influenc
+options that a teacher makes. For instance,
+regarding the performance of Lego Mindstorms against
+build DIY robots”), a teacher who is familiar with how to i
+teaching may ...."
+Is the topic of the review discussed comprehensively
+literature?
+Yes
+
+Are all factual statements correct and adequately sup
+Yes
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Educational robotics, STEM educatio
+curriculum development, AI literacy.
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Reviewer Report 13 August 2021
+
+https://doi.org/10.21956/openreseurope.14892.r27138
+
+© 2021 Matthews S. This is an open access peer review report distrib
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Open Research Europe
+
+O
+
+Sarah Matthews
+Faculty of Engineering, Architecture and Information Tec
+Brisbane, Australia
+
+This version has answered my pressing concerns, no furt
+Is the topic of the review discussed comprehensively
+literature?
+Yes
+
+Are all factual statements correct and adequately sup
+Yes
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Interaction design, educational techn
+analysis of children's interactions with technologies.
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+
+Version 1
+Reviewer Report 01 June 2021
+
+https://doi.org/10.21956/openreseurope.14391.r26783
+
+© 2021 Eguchi A. This is an open access peer review report distribute
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Amy Eguchi
+
+Department of Education Studies, University of California
+
+The paper presents an evaluation of popular robotics too
+classroom as part of a larger project called "INBOTS: Incl
+evaluation focused on how the tool can promote learning
+The author came up with a set of eight criteria to assess
+The platforms evaluated were Lego Mindstorms, Arduino
+
+Open Research Europe
+
+O
+
+evaluation to include and assess other tools including pro
+used with the three platforms to provide a more holistic
+
+The author uses the term "new paradigm" to explain the
+constructionism and maker movements while focusing o
+However, those have already been used in educational co
+approach is new in Greece, it needs to be addressed in th
+
+Regarding the evaluation of the robotics tools, there is no
+were selected. There are more and more robotics tools b
+those are some of the most popular tools available, there
+selected. For example, VEX IQ, Robotis' OLLO, Sony's KOO
+to LEGO Mindstorms.
+
+Although the evaluation is comprehensive and touched u
+to evaluate the tools are more instructional problems tha
+first category of DIY robotics can be influenced by instruc
+materials can be used with LEGO Mindstorms to create m
+is too big to use with a wearable type of project, it can cre
+which costumes are created using craft materials. Arduin
+expression using various shields and kits, such as the one
+Again, it is more instructional than tool-specific.
+
+Although each robotics tool has some limitations, which
+learning goals and outcomes of a lesson/curriculum. If th
+electric circuit, Arduino is better than Mindstorm.
+
+Another factor that should be taken into account when d
+age/developmental stage of students. In the paper, it is n
+has targeted. The evaluation of the tools should include t
+each tool. Although Arduino is a good tool for DIY type p
+appropriate for lower elementary school students. Althou
+for classroom teachers and educators considering using
+teaching practices especially focusing on inclusive roboti
+information about how each technology satisfies the crite
+introducing more options that could make the tool more
+criteria, I would suggest organizing the discussion aroun
+effective to integrate the various pedagogies and approa
+teachers/educators to use in their classrooms.
+
+Lastly, additional English edit of the manuscript will be he
+Is the topic of the review discussed comprehensively
+literature?
+Partly
+
+Are all factual statements correct and adequately sup
+
+Open Research Europe
+
+O
+
+Partly
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Educational robotics, STEM educatio
+curriculum development, AI literacy.
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 10 Jun 2021
+
+Dimitris ALIMISIS
+
+Thanks for your time to review this paper and for you
+suggestions. Below are my responses to your comme
+made in the paper.
+
+Regarding the term "new paradigm": I agree with you
+movement have already been used in educational con
+framework seems to be different when it comes to the
+producers of popular commercial robotic kits which ce
+teachers and children and robotics education inevitab
+educational robotics curricula supporting well-known
+landscape where curricula rarely share common elem
+propose usually a restricted step-by-step guided appr
+program prescribed models of robots. This approach
+maker education framework and cannot foster creativ
+children [1]. We have criticised somewhere else [2] the
+technocentric [3] paradigm in robotics education and
+paradigm shift [2]. This requires a radical change in t
+of robotics education with the focus being on the tran
+towards an education inclusive of all children which in
+paradigm. I have now explained this issue in two new
+
+Regarding the selection of the reviewed tools, I have n
+to better explain why those three tools were selected
+the most popular, represent quite different approach
+have attracted much attention by the research comm
+
+Open Research Europe
+
+O
+
+“some of the categories used to evaluate the tools are mo
+specific issues”: I agree that some of the categories use
+be influenced at some extent by the teacher’s instruct
+suggest some crafting with Lego Mindstorms to deco
+from scratch. And yes, Arduino, if combined with shie
+the paper, can improve its potential for self-expressio
+review [1] and our experiences from schools at EU lev
+dominant case in schools and the evaluations in Table
+dominant use of the tools, not the desired ones. While
+certain tool might be improved at some extent if coup
+certain pedagogy, I believe that the philosophy and ar
+(or promotes) a certain learning pathway for users wi
+shortcomings like those depicted in Table 1. I have no
+address this issue.
+
+Regarding the age appropriateness of the reviewed to
+groups appropriate for each reviewed tool.
+
+Regarding the organisation of the discussion: The cur
+actually organised around the criteria set; it starts wit
+platforms to explore how well they satisfy the criteria
+going to suggestions for alternative or improved tech
+discussion and based again on the criteria set (pages
+
+1. Sapounidis T., Alimisis D. (2021) Educational Ro
+Shortcomings. In: Malvezzi M., Alimisis D., Moro
+to Foster 21st-Century Skills. EDUROBOTICS 202
+Intelligence, vol 982. Springer, Cham. https://do
+2. Alimisis D. (2020) Emerging Pedagogies in Robo
+Shift. In: Pons J. (eds) Inclusive Robotics for a Be
+& Biorobotics, vol 25. Springer, Cham. https://d
+3. Brennan K. (2015) Beyond technocentrism: Sup
+classroom. Constructivist Foundations 10(3): 28
+http://constructivist.info/10/3/289
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 11 May 2021
+
+https://doi.org/10.21956/openreseurope.14391.r26784
+
+© 2021 Matthews S. This is an open access peer review report distrib
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Open Research Europe
+
+O
+
+Sarah Matthews
+Faculty of Engineering, Architecture and Information Tec
+Brisbane, Australia
+
+This well-written review addresses a set of questions surr
+technologies, namely Mindstorms Lego, Arduino and Mic
+environments for robotics and other maker platforms. It
+technologies for their ability to support widescale ‘inclusi
+author’s analysis identifies a set of criteria that should be
+potential of hardware and software to be a ‘creative mate
+development of skills such as critical thinking and proble
+paper. The discussion is framed well with respect to the d
+are brought into the classroom e.g., for the learning of IC
+concepts, or to encourage meta-cognitive skills such as p
+also introduces the INBOTS project’s results to date and p
+robotics project that makes use of existing technologies
+and meaningful interactive robots.
+
+The topic is timely—insights regarding the nature of and
+more than a new content area in educational curricula is
+contributions to the recent special issue of International
+(Vol. 29, 2021) on Computing, Design and Making in Educat
+
+Below are recommendations to strengthen and clarify th
+
+The paper employs an important but potentially idiosync
+“benefits all children regardless of their future education
+‘inclusive’ appears to refer to treating technology educati
+competency, thereby including all students. This is distin
+inclusivity to accessibility for children with disabilities, e.g
+definition of inclusive, or clarification of this distinction fo
+misreadings of the motivation of the project.
+
+Readers who are looking to apply the criteria on page 4 w
+each of the questions originated. While most of the ques
+subject of previous studies, two of the criteria are introdu
+explanatory note detailing their provenance, even if they
+personal experience or anecdote, will both add clarity an
+importance to attach to the individual criteria.
+
+Table 1 presents an important contribution, providing an
+against the criteria. But it treats each of the criteria as bin
+case for/against certain technologies. A qualitative, or po
+more accurate, particularly for the more qualitative criter
+
+The recommendation on page 6 to “rethink the role of a t
+strange for young learners”… and to use a more “human
+other researchers in this space would debate. It might be
+
+Open Research Europe
+
+O
+
+Papert), that while it is important to lower the floor to pa
+ways that do not also lower the ceiling for what children
+1980)2. This appears to be where some of the resistance
+programming languages stems.
+
+Some additional references to existing research and the
+better ground the selection of these particular technolog
+Lego Mindstorms: (Castledine, 2011)3 (Üçgül, 2013)4 raise
+Mindstorms in a problem solving environment; Arduino:
+20156; Smith et al., 20157); Micro:bit: (Sentance et al., 201
+
+The structure of the “Discussion” is not currently visible in
+sections, and distinct purposes that ought to be structura
+Analysing three technologies against the criteria, Review
+Reviewing maker kits, Reviewing friendly adaptations to A
+There is currently not a summary of the review(s) to argu
+second research question; it is answered only implicitly in
+hypothetical project. A short summary following the revie
+valuable.
+
+References
+1. Bar-El D, Worsley M: Making the maker movement mo
+course on accessibility in making. International Journal of
+Publisher Full Text
+2. Papert S.A: Mindstorms: Children, Computers, And Pow
+3. Castledine A.-R: Lego robotics: an authentic problem so
+P., Chandra, V. (Eds.), Proceedings of the 1st International Co
+1-13
+4. Üçgül M: History and Educational Potential of LEGO Mi
+Fakültesi Dergisi 11. 2013.
+5. Agatolio F, Moro M: A Workshop to Promote Arduino-B
+Support Tools. 457: 113-125 Publisher Full Text
+6. Bekker T, Bakker S, Douma I, van der Poel J, et al.: Teac
+design-based learning with digital toolkits in schools. Inte
+Interaction. 2015; 5: 29-38 Publisher Full Text
+7. Smith R, Iversen O, Hjorth M: Design thinking for digita
+Journal of Child-Computer Interaction. 2015; 5: 20-28 Publis
+8. Sentance S, Waite J, Yeomans L, MacLeod E: Teaching w
+micro:bit initiative. in: Proceedings of the 12th Workshop on
+Education. 2017. 87-96 Publisher Full Text
+9. Videnovik M, Zdravevski E, Lameski P, Trajkovik V: The
+Classroom: Learning Experiences and First Impressions.
+Information Technology Based Higher Education and Trainin
+Is the topic of the review discussed comprehensively
+literature?
+Partly
+
+Open Research Europe
+
+O
+
+Are all factual statements correct and adequately sup
+Partly
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Interaction design, educational techn
+analysis of children's interactions with technologies.
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 10 Jun 2021
+
+Dimitris ALIMISIS
+
+Thanks for your time to review this paper and for you
+recommendations. Below are my responses to your co
+corresponding revisions made in the paper.
+
+Regarding the concept of inclusiveness: this paper is b
+project (Inclusive Robotics for a Better Society), and m
+Highly Accessible and Multidisciplinary Robotics Educa
+inclusiveness in INBOTS relates to the broader social u
+inclusive robotics education in the paper refers to an
+benefits coming from robotics education accessible f
+and familiarise children with them, develop skills for a
+adoption of robots in their work or everyday life. This
+challenge the misconception that fluency with robotic
+skill relevant only for students who will follow robotics
+This misconception, coupled with gender-biased view
+result in discouragement or exclusion of students not
+especially the female ones. Hence, the concept of incl
+robotics education that offers knowledge and skills va
+distinct to accessibility for children with disabilities. I h
+to clarify the concept of inclusiveness.
+
+“two of the criteria are introduced without reference to p
+references to literature and to our experiences from a
+know the provenance of the questions (Should techno
+engineering jobs or develop personal expression and
+
+Open Research Europe
+
+O
+
+Regarding your suggestion for a qualitative scale in Ta
+scale consisting of a spectrum of qualitative values fo
+platforms (excellent, good, average, poor, very poor).
+
+Regarding your comment on the “low floor – high ceilin
+“Technical language” and “human language” in the pa
+only in text coding (e.g. Arduino IDE) but also inside th
+tools intended for young learners which in many case
+in text coding intended for professionals. Our main co
+programming work meaningful and accessible for you
+imposed by an unnecessarily technical terminology; h
+ensure a low floor for young learners in programming
+for making programming meaningful for learners sho
+to “high ceiling”, I agree with you that efforts to provi
+not undermine a high ceiling (which is important for l
+end the opportunity for young learners to have parall
+coding tools. For instance, when learners program the
+in Open Roberta Lab, Arduino C text coding is autom
+second window. This parallel access helps to familiaris
+them to jump into a more advanced programming too
+now added in p. 8 a paragraph addressing your comm
+
+“Some additional references to existing research and the
+now been added.
+
+“The structure of the “Discussion” is not currently visible i
+now been inserted to make the structure visible.
+
+“A short summary following the reviews that returns to th
+now added in page 11 a summary of the reviews.
+
+Competing Interests: No competing interests were di
+
+

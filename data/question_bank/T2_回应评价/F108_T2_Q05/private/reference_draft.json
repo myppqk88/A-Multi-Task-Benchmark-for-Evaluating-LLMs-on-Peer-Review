@@ -1,0 +1,28 @@
+{
+  "task_id": "F108_T2_Q05",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "分类框架与穷尽性"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "2. One of the objectives of this overview is to \"inform the development of a framework for types of\nteaching strategies.\" However, pre-specifying teaching strategies could present potential issues.\nFor instance, what if the included SRs identify additional teaching strategies? How can you check\nthat the teaching strategies considered are comprehensive? What criteria were used to develop\nthe list of teaching strategies, particularly given that some may overlap?",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "RESPONSE: Thank you. We used a common taxonomy from Beck (that was based on a\nreview of teacher education textbooks) to initially develop a list of potentially relevant\nteaching strategies. We further developed this list iteratively based on literature review and\nstakeholder engagement. The protocol provides a comprehensive overview of how the\nsearch strategy and methods were developed.\n[external resource identifier omitted]\nWe agree that there is inherent uncertainty about whether our framework is useful and fully\ncomprehensive, which is why we stated in the discussion: “…It would be helpful for users of\nthis research if researchers studying the effects of teaching strategies could reach a\nconsensus on a taxonomy.”\nIt was beyond the scope of this review to report on additional teaching strategies that were\nnot aiming to teach critical thinking.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留迭代建构、协议依据、不确定性与研究范围限制。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

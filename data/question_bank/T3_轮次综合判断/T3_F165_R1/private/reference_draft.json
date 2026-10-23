@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F165_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "距离定义与公式",
+    "模型解释",
+    "图表与预测验证"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑以经纬度直接构造欧氏距离，作者部分修正公式并保留一项技术异议；核对球面/投影与预测模型用途的实际解释。",
+    "核对GP、留出语言交叉验证和密网格预测图的区别，不能把代码/公式更正自动等同模型选择已充分论证。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This paper explores different methods measuring geographic distances, calculates these distances\nfor all pairs of languages at a global scale, and tests their correlation with linguistic features. It\nprovides a valuable resource for the researchers in linguistic and cultural evolution, and discusses\nwhich of these definitions are more suitable for studying different geographic areas and linguistic",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe have carried out most of the corrections the reviewer suggests. Several formulas were\nmiss-formatted, and several descriptions of the results were not correct, as the reviewer\npointed out. We have fixed these. We have also improved several figures according to the\nreviewer's suggestions. There is one major point the reviewer mentions with which we're\nnot in agreement. Below some specifics: * Regarding the comparison with Euclidean\ndistances: ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Studying language contact, spatial diffusion, and typology\n(among others) requires having reliable distances measurements between linguistic communities. However, most work so\nfar has used either Euclidean or geodesic distances (see Guzmán\nNaranjo & Becker, 2021; Murawaki & Yamauchi, 2018;\nRanacher et al., 2021, for an example). Both these approaches,\nhowever, make some relatively simplified and unrealistic\nassumptions about the spatial separation of human populations.\nEuclidean distances assume that the earth is flat, and geodesic\ndistances assume that the surface of the earth is a smooth\nsphere. While these assumptions can be warranted in some\nsituations (e.g. communities which are very close together,\nor in individual islands), using these metrics leads to bias\nestimates of the separation of speech communities.\nAs a way of addressing these issues, a method for calculating approximate walking distances was recently proposed\nby Wichmann & Hammarström (2020), who propose a\ncomputationa",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Studying language contact, spatial diffusion, and typology\n(among others) requires having reliable distances measurements between linguistic communities. However, most work so\nfar has used either Euclidean or geodesic distances (see Guzmán\nNaranjo & Becker, 2021; Guzmán Naranjo & Mertner, 2022;\nRanacher et al., 2021, for an example). Both these approaches,\nhowever, make some relatively simplified and unrealistic\nassumptions about the spatial separation of human populations. Euclidean distances assume that the earth is flat and\ndistorted, and geodesic distances assume that the surface of the\nearth is a smooth sphere. While these assumptions can be warranted in some situations (e.g. communities which are very close\ntogether, or in individual islands), using these metrics leads to\nbiased estimates of the separation of speech communities.\nAs a way of addressing these issues, a method for calculating approximate walking distances was recently proposed by\nWichmann & Hammarström (2020), who p",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "changes in between both points. This is the distance along an\nuneven, rugged surface. To calculate topographic distances\nwe used the gdistance package (van Etten, 2017) in R.\nGiven its computational challenges, some words on the matter\nare necessary at this point.\nCalculating topographic distances requires building an incidence matrix (a graph of connections between all points) with\na digital elevation model (DEM) raster of the region containing the points of interest. Thus, the first step is to assemble\na DEM for the region of interest, which, in our case, is the\nwhole world. There are many sources for elevation data\nfreely available, but not all datasets cover the whole planet\n(the northern most and southern most areas are often missing).\nFor this we used the Global Multi-resolution Terrain Elevation Data 2010 (Danielson & Gesch, 2011), which does cover\nthe whole globe, and is available at different resolutions\n(30-, 15-, and 7.5-arc-seconds). While ideally one would use\nthe highest ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "h is the horizontal distance, and v the elevation difference.\nWe can then use this distance graph to calculate the shortest path between two points using Dijkstra algorithm, or any\nother similar algorithm to find the shortest path between two\nnodes in a graph (see Wang, 2020, for a more in-depth explanation). It is important to notice that there are alternative methods to calculate the distance between two adjacent points.\nOur approach assumes vertical and horizontal displacement\nis equally costly, but one could assign different weights to each.\nHowever, even at a relatively low resolution, calculating\ntopographic distances is still very resource intensive. Given\nthese computational challenges, we only calculated distances\nbetween languages within different macro-areas. Additionally,\nfor North America and Eurasia, we were not able to compute\nthe incidence matrix for the whole macro-area and had to\ndivide these into four, partially overlapping quadrants, and\ncalculate the distance betwe",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

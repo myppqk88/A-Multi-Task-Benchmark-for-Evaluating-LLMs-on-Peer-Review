@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F045_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "概念与测量",
+    "研究目标边界"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审区分条目的语言重叠与理论概念差异，作者主张条目分析正为澄清跨领域概念；核对后稿是否明确推论边界。",
+    "题内不含外部逐条问卷语料库，不能声称已经重新计算所有重叠率；仍可核对主文中概念、方法和结论的修订。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The motivation behind Federico Pianzola’s analysis is the enormous number of questionnaires and\nscales that have been developed across various fields in which scholars investigate media users'\nstate of being 'captured‘, 'absorbed‘, 'transported‘ or 'involved‘ by a message and / or its delivery\ntechnology. Because much media innovation aims at improving or intensifying such user\nexperiences, themat",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nI am very grateful to Christoph Klimmt for his thorough commentary. I am very glad to see\nthat we agree on the main epistemological goal of my scoping review:\n\n\n\n\nThe precise analysis of which items and questionnaires display which kind of linguistic\noverlap in spite of (alleged) conceptual discrepancies is a great contribution by Pianzola,\nbecause it helps to detect those spots in media absorption research that seem to require\nparticular effort",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "of the psychometric questionnaires used in VR research in the\nyears 2016–17 found that the most used one is the Presence\nQuestionnaire (Witmer & Singer, 1998), which heavily focuses\non visual realism and naturalness of interaction. However,\nthe broadest and most protracted collective effort aimed at\nclarifying how to measure presence (Hartmann et al., 2016;\nVorderer et al., 2004) has excluded realism from the subdimensions of presence, keeping only “self-location” and “possible\naction” as core dimensions. Indeed, these two categories seem to\nbe the two really specific to presence, since a comparison\nwith non-mediated reality is also relevant for the “imagery” category, which concerns items related to narrative absorption.\nInquiring about the vividness of imagery or about the realism of a VR scene is a way to check how similar the imagined/\nmediated experience is to a non-mediated one. Both realism and\nvivid imagery are outcomes that can be associated to presence,\nbut they are not parti",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "worth noting that questionnaires investigating narrative absorption include these three groups of items but also items related\nto spatial presence and social presence (with characters of a\nstory), which can be considered subdimensions of narrative\nabsorption. Given their metaphorical nature, items explicitly\nasking whether an experience elicited involvement, engagement, immersion, or absorption are not particularly useful for\ndescribing the psychological processes activated during the\nexperiences they aim at qualifying. Moreover, the adjective\n“immersive” is used in VR research as a technical attribute of\nthe medium – consistently with Sheridan seminal definition\n(Sheridan, 1992) – whereas in game and narrative studies\nit is a quality of the player or reader’s experience (Jennett\net al., 2008; Ryan, 2015; Stockwell, 2019).\nAnother popular but quite heterogeneous group of questions\nconcerns the emotional impact of mediated experiences. Ten\nquestionnaires investigate this aspect in sligh",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nBackground: This is a review and analysis of the questionnaires most\nused in empirical research on psychological phenomena labelled as\n“presence,” “flow,” and “narrative absorption,” mostly for experiences\nmediated by technology (printed books, screens for games and films,\nand virtual reality). Overlapping concepts have been formulated in\ndifferent fields according to specific disciplinary interests and based\non knowledge within each field.\nObjectives: This review focuses on how language is actually used in\nquestionnaire items, rather than on how concepts are formulated topdown and arbitrarily associated with corresponding linguistic\nexpressions that become items of a questionnaire. The goal is to\nhighlight similarities and overlaps in order to show the core aspects of\nthe psychological states elicited by mediated experiences.\nEligibility criteria: Questionnaires developed or used for research\nabout VR, video games, films, or books have been selected for\nanalysis. They should ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nBackground: This is a review and analysis of the questionnaires most\nused in empirical research on psychological phenomena labelled as\n“presence,” “flow,” and “narrative absorption,” mostly for experiences\nmediated by technology (printed books, screens for games and films,\nand virtual reality). Overlapping concepts have been formulated in\ndifferent fields according to specific disciplinary interests and based\non knowledge within each field.\nObjectives: This review focuses on how language is actually used in\nquestionnaire items, rather than on how concepts are formulated topdown and associated with corresponding linguistic expressions that\nbecome items of a questionnaire. The goal is to highlight similarities\nand overlaps in order to show a possible interdisciplinary agreement\nabout the core aspects of the psychological states elicited by mediated\nexperiences.\nEligibility criteria: Questionnaires developed or used for research\nabout VR, video games, films, or books have been se",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

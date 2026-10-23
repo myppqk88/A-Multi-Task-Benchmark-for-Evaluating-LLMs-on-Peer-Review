@@ -1,0 +1,23 @@
+{
+  "task_id": "F155_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "研究缺口与文献对话",
+    "文献筛选与来源可信度"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.manuscript_text",
+      "exact_quote": "Abstract\nBackground\nResearch comparing inclusive education implementation in nonWestern contexts, such as Indonesia and Oman, remains limited. Both\ncountries share cultural similarities yet differ significantly in their\neducation governance. Understanding these differences is crucial for\nimproving inclusive education policies and practices.\nMethods\nThis study employed qualitative document analysis, reviewing 33\npolicy and implementation documents from Indonesia and Oman. The\nanalysis focused on ",
+      "role": "研究内容定位，不是缺陷金标签"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。"
+  ],
+  "revision_verification": "not_in_task",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

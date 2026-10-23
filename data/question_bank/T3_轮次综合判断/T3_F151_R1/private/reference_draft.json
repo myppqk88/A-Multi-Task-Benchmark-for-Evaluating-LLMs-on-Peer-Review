@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F151_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "时间范围与历史证据",
+    "数据呈现",
+    "回应与实际修订"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者回复主要表示会考虑建议，必须从后稿核对时间线、领导职位范围与数据/图表变化，不能凭感谢判已解决。",
+    "区分长期趋势、个别职位和政策背景解释，不能从女性比例变化直接推断某项政策因果效果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Constructive Assessment of the Study\nThe case study on women’s political representation in Ethiopian leadership positions is wellstructured and provides a comprehensive examination of the subject. Below is a detailed\nassessment along with answers to the mandatory reviewer questions and recommendations for\npotential improvements.\nBackground and Historical Context\nAssessment:\nThe study offers a thor",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you very much for taking the time and employing your efforts to review our article,\nand I appreciate your commitment. All the comments and suggestions are greatly\nconstructive and appreciated, and we will consider them in upgrading the manuscript to\ncontribute to better scientific knowledge production in the theme of women and leadership.\nThanks, again.\n",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "On the other hand, across the last 30 years since 1991, a total of 805 judges have been appointed to the federal courts, and\namong them, the proportion of female judges was 197 (24%), while the number of male judges was 608 (76%).\nMeanwhile, independently, the share of female judges in the Federal First Instance Courts (FFICs), Federal High Courts\n(FHCs), and the Federal Supreme Court (FSC) across the last thirty years was 27%, 21%, and 22.3%, respectively. From\nthis, it is sound to deduce that the representations of female judges are better at the federal first instance court than the other\ntwo federal courts.\nGenerally, for the past thirty years, there have only been 24% of women serving as federal judges, and only 14% and 25%\nof them have held leadership roles as president and vice president, respectively. The study’s main conclusion was that\nwomen are underrepresented in Ethiopia’s legal system, both in leadership roles and in arbitration. This finding is\nconsistent with the conclu",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "High executive positions in Ethiopia are typically held by men’s, including those of presidents, deputy prime ministers,\nand prime ministers. Amazingly, throughout Ethiopian history since 1991, there has never been a female prime minister\nor president (before to President Sahle-work Zewde’s election as the country’s first female president in 2018). Over the\npast thirty years, the average percentage of women holding ministerial positions has been 19%. On average, there has\nbeen a modest increase of 3.44% in the number of women holding ministerial positions. The ministry of women, children,\nyouth, and social affairs; the ministry of culture and tourism; and the ministry of urban development and construction are\nthe top three departments (ministerial roles) that are frequently headed by female ministers, according to this study.\nThe study’s primary finding also demonstrated the minimal representation of women in leadership roles and arbitration\nwithin the Ethiopian legal system. During th",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "1. Introduction\n1.1 Study background\nThe struggle for gender equality is a historical movement for equality, democracy, and women’s rights, and the\ninterventions implemented for gender equality are important tools to enhance women’s enjoyment and participation\nin social, economic, and political decision-making areas (Hearn & Husu, 2016). All levels of leadership positions in\npublic institutions, civil society organizations (CSOs), non-governmental organizations (NGOs), and private organizations should be gender inclusive and take gender diversity into consideration, according to the findings of empirical\nliterature (Offermann & Foley, 2020). It is because, as argued by Ojulu and Melesse (2014); Ballington and Karam\n(2005), it is impossible to realize a participatory, genuine, accountable, and transparent governance system without the\nfull and equal involvement of women. This also concerned by the convention of the Beijing platform for action that stated\ngoals of peace and development a",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "1.2 Empirical literature\nPrevious studies have been undertaken on women and leadership themes in Africa and Ethiopia too. In Africa, the 18-year\nstate of knowledge production on African women in leadership and management has been examined by Nkomo and\nNgambi (2009) in their article entitled ‘African Women in Leadership: Current Knowledge and a Framework for Future\nStudies’. The authors have done an extensive review of existing published research, including journal articles, books,\nbook chapters, and monographs that have been published from 1990–2008 (18 years).\nAmong a total 43 publication reviewed by the authors, the largest body of knowledge has been produced on women’s\nleadership and management status is in case of South Africa, followed by Nigeria and Ghana. The findings of their review\ndisclosed the underrepresentation of women in public office and political leadership in Africa. The majority of the\nempirical studies have focused on the factors that affect women’s performance in e",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

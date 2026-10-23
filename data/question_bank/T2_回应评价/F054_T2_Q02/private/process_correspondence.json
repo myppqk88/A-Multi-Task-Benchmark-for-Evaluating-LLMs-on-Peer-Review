@@ -1,0 +1,61 @@
+{
+  "task_id": "F054_T2_Q02",
+  "paper_id": "ORE:5-343",
+  "parent_task": "T3_F054_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F054_R1/input.json",
+  "parent_input_sha256": "502ef79bbfb2ab07372eff8d65a75cbdf4df5f6205b2192e6d93e38996125dc3",
+  "review_dimension_AI_candidate": "招募透明度与既有经验",
+  "selection_scope": "保留未收既有经验、人口资料范围和后来比较样本的全部回答。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/5-343_Accelerating_Expertise__A_Fast-Track_Training_Program_for_Living_Lab_M/v1_manuscript.pdf",
+      "original_sha256": "5e38ad93f7b8ca53973230a304fe2fb894656de96556efb25825337c796e5dd8",
+      "raw_text_file": "data/question_bank/T2_回应评价/F054_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        69645,
+        69922
+      ],
+      "report_id": "64101",
+      "date": "2026-01-10",
+      "raw_page_numbers": [
+        18
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/5-343_Accelerating_Expertise__A_Fast-Track_Training_Program_for_Living_Lab_M/v1_manuscript.pdf",
+      "original_sha256": "5e38ad93f7b8ca53973230a304fe2fb894656de96556efb25825337c796e5dd8",
+      "raw_text_file": "data/question_bank/T2_回应评价/F054_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        75475,
+        75871
+      ],
+      "report_id": null,
+      "date": "2026-04-08",
+      "raw_page_numbers": [
+        20
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "gender",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 26098,
+    "end": 26624,
+    "exact_quote": "). The majority of participants were from the academic field (Table 2). The relative proportions in gender and\nresearcher’s background showed a similar distribution in the participants of the evaluation questionnaire as compared to\nthose in the expectations questionnaire.\nThe overall satisfaction score regarding the FTT was 9.11 out of a possible 10 (SD = 1.07, Range 5–10; N = 47). Almost\nhalf of the participants indicated the maximum score (N = 22). Furthermore, we asked researchers to what extent the FTT\nmet their expe",
+    "anchor_matches": 1,
+    "anchor": "gender"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿未见gender，后稿新增期待问卷与评价问卷样本在性别和研究背景分布相近的说明；未因此补齐作者承认未收的既有LL经验。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

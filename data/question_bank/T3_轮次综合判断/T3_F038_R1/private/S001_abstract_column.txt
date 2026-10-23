@@ -1,0 +1,897 @@
+Open Research Europe
+REVIEW
+
+Divergence and aggregation of ESG ra
+
+[version 1; peer review: 1 approved, 1 approved with reservation
+
+Arianna Agosto, Alessandra Tanda
+
+Department of Economics and Management, University of Pavia, Pavia, Lombard
+
+v1 First published: 30 Jan 2025, 5:28
+
+https://doi.org/10.12688/openreseurope.19238.1
+Latest published: 30 Jun 2025, 5:28
+https://doi.org/10.12688/openreseurope.19238.2
+
+Abstract
+Purpose
+This paper reviews the existing literature on the divergence of
+Environmental, Social, and Governance (ESG) ratings and explores
+various aggregation methods. It highlights the challenges posed by
+inconsistent ESG ratings and their implications for investment
+decisions.
+Design/methodology/approach
+The study conducts a comprehensive review of prior research
+focusing on ESG ratings, examining their correlation levels and the
+methodologies employed to assess corporate sustainability. It also
+investigates traditional aggregation techniques and modern machine
+learning approaches used to address these inconsistencies.
+Findings
+Past literature reveals that ESG ratings exhibit a low level of
+correlation across different providers, raising concerns about their
+reliability as investment indicators. Although some studies propose
+advanced aggregation methods to enhance accuracy, significant gaps
+remain in understanding how to effectively consolidate ESG
+information to create a dependable sustainability indicator.
+Originality
+This paper provides a critical analysis of the current state of ESG rating
+methodologies, emphasizing the need for improved aggregation
+strategies. It underscores the importance of future research in
+leveraging ESG data to develop more consistent and reliable
+measures of corporate sustainability.
+
+Open Research Europe
+
+Keywords
+ESG ratings, divergence, aggregation, survey
+
+This article is included in the COST Actions
+gateway.
+
+Corresponding author: Alessandra Tanda (alessandra.tanda@unipv.it)
+
+Author roles: Agosto A: Conceptualization, Formal Analysis, Funding Acquisition, I
+Preparation, Writing – Review & Editing; Tanda A: Conceptualization, Methodology,
+Review & Editing
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the European Union’s F
+part of the COST Action CA19130 ‘Fintech and Artificial Intelligence in Finance’ (FinA
+Cooperation in Science and Technology). This project also received funding from th
+M4C2, Investment 1.1, Progetti di Ricerca di Rilevante Interesse Nazionale (PRIN) –
+Project title: 'Climate risk and uncertainty: environmental sustainability and asset p
+F53D23009320001. And has also received funding the European Union-NextGenera
+Resilient, INclusive and Sustainable (GRINSPE00000018). The views and opinions ex
+necessarily reflect those of the European Union, nor can the European Union be he
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2025 Agosto A and Tanda A. This is an open access article distributed
+Attribution License, which permits unrestricted use, distribution, and reproduction
+cited.
+
+How to cite this article: Agosto A and Tanda A. Divergence and aggregation of E
+approved, 1 approved with reservations] Open Research Europe 2025, 5:28 https
+
+First published: 30 Jan 2025, 5:28 https://doi.org/10.12688/openreseurope.19238.1
+
+1 Introduction and background
+
+The environmental impact of corporate activities has become
+increasingly important over the last decades (Yu et al., 2021).
+Indeed, companies are made accountable for the impact of
+their business activities on the planet and society through the
+measurement of their Corporate Social Performance (CSP).
+Many companies have implemented over time sustainability reporting that started initially on a voluntary basis (e.g., the
+Global Reporting Initiative - GRI) (Monteiro et al., 2023, for
+a review) and was later incorporated into the regulatory provisions. For instance, in Europe, the Non-Financial Reporting
+Directive (NFRD) (Directive 2014/95/EU) introduced in 2014
+the requirement for large companies and public-interest entities
+with more than 500 employees to publish non-financial information related to ESG topics. The directive was later improved
+and refined by the Corporate Sustainability Reporting Directive
+(CSRD) (Directive 2022/2464/EU). The new rules expand the
+NFRD, with the objective to improve the quality and consistency of information provided by companies on the topic of
+sustainability. Additionally, it enlarges the applicability of
+these rules to all large companies and, gradually, to listed
+SMEs. The Directive also introduces European Sustainability
+Reporting Standards and the external assurance (verification)
+of sustainability information.
+Beside the corporate disclosure, several data providers have
+started to distribute sustainability scores or ratings, often proxied through the ESG profile of the companies (Pollman, 2022).
+This information, together with companies’ disclosure in annual
+reports or sustainability reports complements financial information available on the market and enables investors to assess the
+sustainability of corporates, i.e., considering how companies’
+behaviour affects external stakeholders and paying attention to the economic, environmental, social, and time factors
+(Lozano, 2012; Lozano, 2018; Muñoz-Torres et al., 2019). In
+other words, this set of information contributes to the reduction of asymmetries of information for investors and, at the
+same time, a reduction in the cost of capital for corporates (Yu
+et al., 2021).
+Despite these efforts to promote the diffusion of sustainability disclosure, the birth of multiple ESG ratings providers has
+brought to a proliferation of methods and scores that often
+disagree and create “aggregate confusion” on the market as
+discussed by Berg et al. (2022). This has the perverse effect
+of generating additional uncertainty on the market, rather than
+actually reducing asymmetries of information for investors.
+Motivated by such considerations, the present paper provides
+a review of the financial and statistical literature concerning
+the analysis of ESG scores’ divergence and the development of
+methodologies for ESG ratings/scores aggregations.
+The paper is structured as follows: Section 2 provides a brief
+overview of the ESG ratings and scores; Section 3 motivates the
+need for developing ESG aggregating measures by presenting
+the relevant literature focused on ESG rating divergence and
+
+its possible
+contribution
+concludes.
+
+2 ESG rat
+
+The ESG p
+their sustain
+
+While Env
+ronment de
+such as car
+ment, biod
+(European
+factors refe
+ing issues
+gender gap
+human cap
+Commission
+factors inst
+ernance of
+sustainable
+sustainable
+Alkaraan, 2
+
+These three
+decisions w
+of investors
+equity or
+have started
+Commission
+policymake
+In the fina
+intermediar
+ment activi
+call for th
+evaluations
+Plan for Fin
+2018), to
+terms of e
+have also a
+climate cha
+can affect
+Companies
+more susta
+disclose mo
+of informa
+funds (Yu e
+
+To inform t
+specialised
+measures a
+ratings or s
+and the deg
+(Avetisyan
+rating prov
+(company r
+applies pro
+and produc
+
+evaluations assigned by different providers often produce divergent results (Abhayawansa & Tyagi, 2021; Berg et al., 2022;
+Billio et al., 2021; Dimson et al., 2020; Dorfleitner et al., 2015),
+yielding to potential “sustainability arbitrage” as recently
+discussed in Pollman (2022). Indeed, multiple ESG ratings for a given company can differ, providing opaque information about the company’s ESG profile. A recent survey
+by KPMG showed the existence of more than 160 ESG ratings
+and data providers (KPMG, 2020), with numerous agencies
+(eg. Bloomberg, Thomson Reuters, S&P, etc.) whose ESG ratings may differ. The potential presence of divergent scores for
+the same companies can represent an element of uncertainty
+for investors and regulators, who may need to choose among
+different measures and/or combining them into a single metric.
+
+3 Divergence of ESG scores
+
+Several recent works showed poor convergence between ESG
+ratings provided by different agencies and analysed the sources
+of such inconsistencies. Indeed, understanding the origin of
+ESG rating divergence can help:
+• regulators to put in place proper measures to increase
+and harmonise ESG disclosure of companies;
+• investors to choose between alternative rating providers or
+to manage divergence through the aggregation of scores
+issued by different providers;
+• companies to improve disclosure of their ESG approach.
+Several works showed little convergence between different ESG
+ratings through empirical studies. Among them, Dorfleitner
+et al. (2015), analysing ESG rating data of publicly traded
+companies provided by three agencies in the 2002–2012
+period, find that the ratings assigned by the considered providers exhibit low linear correlations and significantly differ in
+distribution, with a small percentage of companies assigned to
+the same score quartile. The differences in the scoring approaches
+- revealed in the qualitative evaluation of the three rating
+methodologies performed in the same paper - partially explain
+such inconsistencies. Similar conclusions were reached by
+Chatterji et al. (2016), who documented the lack of agreement across ESG ratings issued by six providers between 2002
+and 2010, even after adjusting for explicit differences in the
+definition of CSP held by the different raters. In their review of
+the related literature, Abhayawansa and Tyagi (2021) examined the possible causes of the differences in the ESG ratings
+and rankings produced by different agencies, and found that
+divergences in ESG scores are mainly attributable to disagreements about the definition, composition and weightings for
+each of the E, S and G factors and to differences in the methodological approaches. In particular, according to Capizzi
+et al. (2021), the weight component is crucial in explaining
+ESG rating divergences.
+The issue of divergence of ESG ratings and its possible causes
+were explored in depth by Berg et al. (2022), who provided
+a broad empirical study to document the ESG evaluations’
+divergence and identify the factors that contribute to the
+differences. Specifically, the authors consider data from six
+different ESG rating providers in 2014, including ESG ratings
+
+and the re
+by imposin
+decompose
+ment, and
+identified c
+dimensions
+managemen
+and enviro
+among ratin
+and Govern
+connected t
+Indeed, wh
+to measure
+to qualitati
+Muñoz-Torr
+computing
+dimension
+managemen
+
+The source
+the work by
+of common
+agencies, w
+site ratings
+works, Bill
+such disag
+ance. Indee
+therefore th
+the ratings
+leads to t
+the conseq
+prices is w
+nificant dif
+non-ESG on
+
+Despite so
+cies worke
+ESG rating
+ratings (Esc
+The impac
+was also st
+ESG score
+rates. In pa
+that the sm
+domestic an
+stocks.
+
+Overall, the
+age compan
+2019), but
+be tackled t
+
+Standardisa
+tance to ena
+ties, to allow
+their enviro
+improve the
+recently und
+Commission
+
+The importance of ESG metrics is further destined to grow in the
+future and ESG ratings will influence investors’ decisions, therefore affecting firms’ ability to finance their investment and also
+their capability to pursue a more sustainable business model.
+The need for ESG metric standardisation is therefore strongly
+felt by the market, motivated by the growing importance of
+sustainable finance1 and understanding how ESG ratings provide information to the market and how these ratings can affect
+creditworthiness is a major managerial and policy challenge.
+
+4 ESG score aggregation
+
+In the economic and financial context, it is frequent to construct indicators as the synthesis of multiple input variables. The
+weighted mean represents a natural solution, but the estimation
+of weights can be problematic and their choice can be subjective, strongly affecting the final indicators. The issue is so
+relevant that the European Commission provided a set of recommendations for the construction of aggregated metrics to be
+used for policy purposes and indicated the steps to be followed
+to build composite indicators, including data management,
+weighting, uncertainty and sensitivity analysis (European Union
+and Joint Research Centre, 2008).
+Data-driven techniques can help build aggregate measures from
+several input variables. A method widely used in the statistical literature is Principal Component Analysis (PCA), that aims
+at creating one or more new factors from a larger set of
+observed variables, where each component is a linear combination of the original variables and orthogonally independent
+from the other components. A paper by Gucciardi et al. (2024)
+employs PCA (together with pairwise correlation analysis and
+OLS) to evaluate the “common factors” driving Environmental scores. The study finds a limited number of common factors
+underlying the E score of different providers, mainly linked to
+more quantitative variables (e.g., natural resources use).
+An alternative to PCA, allowing to take the temporal dimension into account, is represented by Dynamic Factor Models
+(DFM), which, similarly to PCA, creates new factors through a
+system of latent variables and parameters associated with the
+contribution of each observed variable (see Bitetto et al., 2021).
+Both PCA and DFM make it possible to assess the role played
+by each variable, easing the interpretability of results. However, both approaches call for a large enough set of variables
+(at least 10–15), which is not always available.
+The need for synthesising variables in a single indicator also
+arises in the ESG context, and is related to the empirically
+found divergence of ESG ratings discussed in Section 3. Indeed,
+when ESG scores provided by different agencies for a given
+company are discordant, a possible solution for the investor/
+regulator is to use an aggregated measure which synthesises
+
+1
+
+Just as a background information, the number of sustainable investment
+funds available in Europe grew from 200 at the end of 2016 to 3,196 at
+the end of 2020 (Morningstar, 2021), with a corresponding growth in the
+managed assets.
+
+them into a
+of weightin
+uted to eac
+also interpr
+contribution
+sustainabilit
+
+The issue o
+two recent w
+relied on a
+results of G
+- to obtain
+companies
+ers. In both
+starting fro
+each. The
+relies on th
+creditworth
+agencies.
+
+In Agosto
+a weight th
+counts of c
+generated
+obtained th
+tionship be
+by previous
+tors (EBA,
+odology is
+for which
+ers, togethe
+of the me
+2018–2020
+weights for
+an out-of-sa
+improves th
+ured by us
+and predict
+merged sco
+positive err
+classes) wit
+and B-rated
+tion (negati
+with the co
+other words
+the merged
+the most cre
+
+The Bayesi
+who built a
+that integra
+In this wor
+the single
+company’s
+according t
+cifically, th
+companies
+attributed w
+
+to a training sample of European listed companies and validate the estimated weights on a testing sample. For each
+company, the probability of belonging to a speculative rating
+class is calculated as the weighted mean of the probabilities
+assigned by the three considered scores, using the Bayesian
+likelihood-based weights. By comparing the classification performance - in terms of Receiving Operating Curve (ROC) of the aggregated score with that of the individual ones, the
+authors found that the merged score performs better in the tails
+of the distribution, where the more extreme financial profiles
+(very bad or very good companies) lie. The authors also showed
+that the results are robust to the inclusion of financial ratios
+as control variables. Bayesian learning techniques are not the
+only possible solution to statistically aggregate single indicators using predictive accuracy. Indeed, Agosto et al. (2023a)
+also showed the application of an artificial intelligence
+method, XGBOOST (Chen, 2015), an ensemble model which
+works over the idea of combining several weak classifiers to
+create a strong one characterised by extremely good performance thanks to a regularised gradient boosting framework. The
+XGBOOST and the Bayesian model lead to very similar results
+in terms of classification performance, but, as claimed by the
+authors, the latter provides explainable weights which can be
+interpreted and used in further evaluations.
+
+used as the
+this can c
+increasing
+information
+have tried
+the inform
+coherent an
+file of corp
+(e.g., PCA
+XGBOOST
+and further
+into the div
+to improve
+For sure, th
+and an inc
+to solve th
+view, under
+help them t
+mental, soc
+that produc
+and hence th
+
+Ethics an
+
+Ethical appr
+
+5 Concluding remarks
+
+This paper has reviewed the literature on the divergence of
+ESG ratings. It has become evident that the proliferation of
+ESG rating providers has brought a high number of ratings that
+investors, policymakers and markets can access to evaluate
+the sustainability of companies. While this can be positive,
+there is a general lack of consensus on the ”best” rating to be
+
+Data ava
+
+No data are
+
+Acknowled
+The paper is
+
+References
+Abhayawansa S, Tyagi S: Sustainable investing: the black box of
+Environmental, Social, and Governance (ESG) ratings. The Journal of Wealth
+Management. 2021; 24(1): 49–54.
+Publisher Full Text
+Adams RB, Mehran H: Bank board structure and performance: evidence
+for large bank holding companies. J Financ Intermed. 2012; 21(2): 243–267.
+Publisher Full Text
+Agosto A, Cerchiello P, Giudici P: Bayesian learning models to measure the
+relative impact of ESG factors on credit ratings. Int J Data Sci Anal. 2023a;
+1–12.
+Publisher Full Text
+Agosto A, Giudici P, Tanda A: How to combine ESG scores? A proposal based
+on credit rating prediction. Corp Soc Responsib Environ Manag. 2023b; 30(6):
+3222–3230.
+Publisher Full Text
+Alkaraan F: Corporate governance and sustainability issues. Corporate
+Governance and Sustainability Review. 2023; 7(1): 4–6.
+Publisher Full Text
+Avetisyan E, Ferrary M: Dynamics of stakeholders’ implications in the
+institutionalization of the CSR field in France and in the United States. J Bus
+Ethics. 2013; 115(1): 115–133.
+Publisher Full Text
+Berg F, Koelbel JF, Rigobon R: Aggregate confusion: the divergence of ESG
+ratings. Rev Financ. 2022; 26(6): 1315–1344.
+Publisher Full Text
+
+Billio M, C
+and perf
+Publishe
+
+Bitetto A
+epidemio
+24037.
+PubMed
+
+Capizzi V
+of Italian
+Publishe
+
+Cerchiello
+2014; 43(
+
+Chatterji
+Implicat
+Manag J.
+Publishe
+
+Chen T: X
+1(4).
+
+Dimson E
+47(1): 75–
+Publishe
+
+Dorfleitn
+corporat
+approach
+Publishe
+
+EBA: Discussion paper on management and supervision of ESG risks for
+credit institutions and investment firms. EBA/DP/2020/03. 2020.
+Reference Source
+Eng LL, Fikru M, Vichitsarawong T: Comparing the informativeness of
+sustainability disclosures versus esg disclosure ratings. Sustainability
+Accounting, Management and Policy Journal. 2022; 13(2): 494–518.
+Publisher Full Text
+Escrig-Olmedo E, Fern´andez-Izquierdo MA, Ferrero-Ferrero I, et al.: Rating
+the raters: Evaluating how ESG rating agencies integrate sustainability
+principles. Sustainability. 2019; 11(3): 915.
+Publisher Full Text
+ESMA: No action letter on sustainability-related disclosures for
+benchmarks. 2020a.
+Reference Source
+ESMA: Strategyon sustainable finance. ESMA 2-105-1052, 2020b.
+Reference Source
+Esteban-Sanchez P, de la Cuesta-Gonzalez M, Paredes-Gazquez JD: Corporate
+social performance and its relation with corporate financial performance:
+International evidence in the banking industry. J Clean Prod. 2017; 162:
+1102–1110.
+Publisher Full Text
+European Commission: Action plan: financing sustainable growth.
+Communication from the Commission to the European Parliament, the
+European Council, the Council, the European Central Bank, the European
+Economic and Social Committee and the Committee of the regions, Brussels,
+8.3.2018, COM(2018) 97 final, 2018.
+Reference Source
+European Commission: Provisional agreement on the European Climate
+Law. 2021.
+Reference Source
+European Commission: Overview of sustainable finance. (n.d.).
+Reference Source
+European Union and Joint Research Centre: Handbook on constructing
+composite indicators: methodology and user guide. OECD publishing, 2008.
+Reference Source
+Giudici P, Mezzetti M, Muliere P: Mixtures of products of dirichlet processes
+for variable selection in survival analysis. J Stat Plan Inference. 2003; 111(1–2):
+101–115.
+Publisher Full Text
+Gucciardi G, Ossola E, Parisio L, et al.: Common factors behind companies’
+environmental ratings. University of Milan Bicocca Department of Economics,
+Management and Statistics Working Paper Forthcoming, 2024.
+Publisher Full Text
+KPMG: Sustainable investing: fast-forwarding its evolution. Technical report,
+2020.
+Reference Source
+Lagoarde-Segot T: Sustainable finance. A critical realist perspective. Res Int
+Bus Finance. 2019; 47: 1–9.
+Publisher Full Text
+Lozano R: How can ‘theories of the firm’ help make societies more
+
+sustaina
+Referenc
+
+Lozano R
+sustaina
+Sustainab
+Publishe
+
+Monteiro
+mandato
+environm
+accounta
+Publishe
+
+Mornings
+Referenc
+
+Muñoz‐To
+environm
+models t
+Environ M
+Publishe
+
+OICV-IOS
+products
+Referenc
+
+Pollman
+Research
+Referenc
+
+Robeco: S
+(n.d.).
+
+Scalet S,
+Ethics. 20
+Publishe
+
+Times F:
+Referenc
+
+United N
+Referenc
+
+Van Duur
+manage
+138(3): 52
+Publishe
+
+Wang H,
+stock ret
+Publishe
+
+Yu EPy, Ta
+risk perc
+sustaina
+3975–400
+Publishe
+
+Zeng G, X
+categori
+1554–156
+Publishe
+
+Open Research Europe
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 24 February 2025
+
+https://doi.org/10.21956/openreseurope.20823.r50578
+
+© 2025 Di Persio L. This is an open access peer review report distribu
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Luca Di Persio
+Verona University, Verona, Italy
+
+The paper titled Divergence and Aggregation of ESG Rating
+Alessandra Tanda presents an extensive review of the lite
+Environmental, Social, and Governance (ESG) ratings and
+aggregation.
+
+The authors highlight the inconsistencies observed acros
+agencies, emphasizing the implications of such discrepan
+regulatory policies, and corporate sustainability strategie
+approach grounded in a systematic review of previous w
+and econometric techniques employed to assess and con
+indicator.
+
+The main findings suggest that ESG ratings exhibit a low
+providers, which undermines their reliability as a basis fo
+such divergence can be traced back to variations in scope
+weighting schemes employed by different agencies. In re
+techniques have been proposed, ranging from classical s
+Component Analysis (PCA) and Ordinary Least Squares (O
+ML-based methods, including Bayesian aggregation and
+XGBoost. The article underscores that no single method h
+thereby necessitating further research into the design of
+enhance the reliability of ESG ratings.
+
+It is worth mentioning that the paper provides a well-stru
+divergence and its consequences. Nevertheless, certain a
+strengthen its scientific rigour. In particular, I suggest th
+theoretical framework to structure the discussion around
+mathematical model could be introduced to formalize th
+E.g., let \( R_i^j \) denote the ESG rating assigned to firm \
+
+Open Research Europe
+
+between two providers \( j \) and \( k \) for a given firm \(
+divergence metric, such as the Euclidean norm:
+\[
+D_{ik} = \sqrt{\sum_{j=1}^{N} (R_i^j - R_i^k)^2}
+\]
+
+where \( N \) represents the total number of ESG rating p
+Analogously, as an alternative to the latter, one could con
+to account for the covariance structure between ratings.
+
+Moreover, theoretical discussions on PCA, Bayesian aggr
+valuable insights, but their effectiveness in synthesizing E
+empirical study could be designed in which multiple ESG
+different methodologies, and the resulting aggregated s
+market outcomes such as credit spreads or stock returns
+R_{i}^j \), an aggregated ESG score \( S_i \) could be const
+\[
+S_i = \sum_{j=1}^{N} w_j R_i^j
+\]
+
+where \( w_j \) are weights derived through various optim
+updating or regression models that maximize correlation
+sustainability.
+
+It seems to the underwritten that the lack of such a discu
+applicability of the study. Indeed, ML-techniques such as
+predictive capabilities, often suffer from low interpretabi
+understand the underlying structure of the aggregated E
+consider SHAP (SHapley Additive exPlanations) values or
+contribution of individual ESG components to the final sc
+
+Let me also consider that the divergence of ESG ratings c
+measures of dispersion, e.g. (standard deviation)
+\[
+\sigma_i = \sqrt{\frac{1}{N} \sum_{j=1}^{N} (R_i^j - \bar{R
+\]
+where \( \bar{R}_i \) is the mean ESG rating for firm \( i \),
+standard deviation is high, it implies substantial disagree
+approach is to use clustering techniques, such as k-mean
+firms based on rating similarity, revealing whether discre
+methodological differences among rating agencies.
+Analogously, a regression-based approach could also be
+of ESG rating divergence. A mixed-effects model of the fo
+
+\[
+D_{ij} = \alpha + \beta_1 X_{i} + \beta_2 Y_{j} + \epsilon_{ij
+
+Open Research Europe
+
+\]
+
+where \( X_{i} \) represents firm-level characteristics, and
+specific attributes, e.g., methodology used and data sour
+drivers of rating inconsistencies.
+
+Summing up, the submitted paper provides a critical revi
+aggregation methods, yet it could benefit from a more ri
+foundation. It would also be interesting if the Authors co
+future research aiming at, e.g., developing hybrid model
+ML-approaches while maintaining interpretability. Moreo
+and financial performance should be further explored th
+incorporate ESG factors as state variables.
+Is the topic of the review discussed comprehensively
+literature?
+Yes
+
+Are all factual statements correct and adequately sup
+Yes
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Stochastic analysis and applications,
+learning and application to time series forecasting, LLM-b
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 06 Jun 2025
+
+Alessandra Tanda
+
+We thank the reviewer for his useful comments and s
+response to his remarks.
+>Response: we thank the reviewer for his comments
+version, we have defined the most used metrics in the
+of ESG scores. In particular, the works analysed in our
+low pairwise correlations between the ESG ratings of
+usually continuous, the most natural choice to model
+
+Open Research Europe
+
+correlation coefficient. However, correlation can be al
+measures such as the Spearman coefficient. The latte
+with mean absolute error and the percentage of obse
+considered rating providers. Correlation is not only e
+between the original ESG scores - to show the empiric
+- but can also be included, in the next step of aggrega
+extent the results of the aggregation obtained with di
+Bissoondoyal-Bheenick et al., 2024). Concerning the e
+producing aggregated scores able to effectively predi
+have first defined the most natural mathematical form
+indicator, i.e. a weighted average of different scores, t
+expert-based approach or estimated by data (Berg et
+et al., 2023b; Bissoondoyal-Bheenick et al., 2024). In th
+discussed how difficult it is to measure and compare t
+indicators due to the absence of a target variable. Ind
+models, which are validated using the actual incidenc
+cannot be easily and objectively summarised by an ob
+in the literature use unsupervised techniques such as
+2024; Gucciardi et al., 2024), while others rely on the r
+performance (Billio et al., 2021; Gai et al., 2023) or cre
+ratings (Agosto et al., 2023a; Agosto et al., 2023b). As
+discussed in the revised version, the unavailability of a
+implementable testing framework represents a limita
+methodologies. Applying cluster analysis to the propo
+common financial and strategic features in companie
+now mentioned among the aspects that deserve furth
+depth analysis of the topic of explainability of the weig
+Regarding this last aspect, we have emphasized how m
+not explainable by design, such as XGBOOST, do not n
+accuracy that justifies the use of a computationally ex
+as discussed by Agosto et al. 2023a.
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 22 February 2025
+
+https://doi.org/10.21956/openreseurope.20823.r50969
+
+© 2025 Capizzi V. This is an open access peer review report distribute
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Vincenzo Capizzi
+University of Piemonte Orientale, Novara, Italy
+
+Open Research Europe
+
+The paper reviews the existing literature on the divergen
+Governance (ESG) ratings and explores various aggregat
+posed by inconsistent ESG ratings and their implications
+finding of the analysis is the persistence of significant ga
+consolidate ESG information to create a dependable sust
+Overall, the paper is truly interesting in that addresses an
+reference extant literature. The research design is truly o
+However, there are some limitations in the current draft
+guidelines to further enhance the quality of the manuscr
+First, the Author might consider improving the intr
+the motivation behind their research and the sour
+Second, as far as the literature review is concerned
+selected the investigated contributions.
+Furthermore, the literature selection seems not up
+papers on the same topic.
+Finally, the writing style might be improved
+Good luck!
+○
+
+○
+
+○
+
+Is the topic of the review discussed comprehensively
+literature?
+Yes
+
+Are all factual statements correct and adequately sup
+Yes
+Is the review written in accessible language?
+Yes
+
+Are the conclusions drawn appropriate in the context
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Finance, Entrepreneurial Finance, ES
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Author Response 06 Jun 2025
+
+Alessandra Tanda
+
+Response to reviewers for the paper Divergence and a
+Reviewer 1 : We thank the reviewer for his comments
+provided a response to his very useful comments.
+
+Open Research Europe
+
+First, the Author might consider improving the introd
+the motivation behind their research and the source o
+Response: we thank the reviewer for his comments an
+Introduction and different sections of the paper to int
+motivation and the contribution of the paper.
+
+Second, as far as the literature review is concerned, th
+selected the investigated contributions >
+Response: we appreciate reviewer's suggestion. In the
+short section describing the process employed to sele
+
+Furthermore, the literature selection seems not upda
+papers on the same topic. >
+Response: In the new version we have updated the lit
+recent papers.
+Competing Interests: no competing interests
+
+

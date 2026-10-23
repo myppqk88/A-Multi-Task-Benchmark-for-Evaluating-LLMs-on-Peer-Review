@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F090_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "重复与测量限制",
+    "统计分析选择",
+    "解释与事后推论"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对惊讶感为事后回忆测量、阻断概率分母和故障力测量的限制是否写入后稿，不能混用140/70与完整任务分母。",
+    "作者拒绝追加可能近似p-hacking的分析并保留原计划结果；不同意评审要求可以合理，但须核对是否透明报告及恰当限缩结论。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The manuscript describes a replication attempt of a study by Yu et al. (2014), who had shown that\nthe more participants have already put effort into receiving a reward, and the closer they are to\ngetting it, the more they become frustrated when blocked from receiving the announced reward,\nresulting in increased response force in the next trials. The same methods were used as in the\noriginal study,",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n1. I mainly have minor comments (see below), but also struggle with the authors’\nconclusion that participants were surprised by the ‘blocking’ trials. This interpretation\nseems unlikely to me, based on the fact that blocking trials were 2 times more likely\n(n = 140) than win trials (n = 70). Also, surprise was only measured retrospectively, at\nthe end of the experiment (it is thus memory about feeling surprised).\nReply: We have added this to the",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "expended effort (Pompilio et al., 2006) and goal proximity\n(Shidara & Richmond, 2002). As individuals make progress\nin their goal pursuit, the effort already invested increases (i.e.,\nexpended effort), while they also get closer to the end reward\n(i.e., goal proximity). In many situations, these two factors are inherently confounded, but the psychological mechanisms underlying the effects of these two factors may differ. For\ninstance, expended effort is retrospective in nature as it concerns\nthe effort already invested, while goal proximity is prospective as it orients towards an upcoming reward (Yu et al., 2014).\nDisentangling the effects of expended effort and goal proximity\nwill therefore be informative in understanding successive goaldirected behaviors, and how individuals react when they fail.\nYu et al. (2014) developed an experimental task to disentangle these two typically confounded factors (see Method for\nmore details). The task consisted of multiple ’schedules’. In\neach sched",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "trial, participants had to do a task in which they indicated the\nleft versus right direction of arrows via button presses. At\nany stage however, they could get blocked. That meant that\neven when the response was correct, the participants were told\nthat they were too slow and that they would not get the reward.\nBy manipulating the number of trials in a schedule and at\nwhich stage participants were blocked, Yu et al. (2014) were\nable to disentangle expended effort and goal proximity. For\nexample, when participants were blocked at the very first trial\nout of four trials, both goal proximity and expended effort\nwere low; when they were blocked in the last trial out of four\ntrials, both goal proximity and expended effort were high\n(i.e., the typical situation with the two factors confounded).\nHowever, when participants were blocked in the first trial in\na one-trial schedule (i.e., three quarters of a coin were already\navailable, the schedule consisted of only one trial), goal proximity was ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "(Makowski et al., 2023, version 0.5.7), extraDistr (Wolodzko,\n2023, version 1.10.0), loo (Vehtari et al., 2023, version 2.6.0),\nbridgesampling (Gronau et al., 2020, version 1.1-2), brms\n(Bürkner, 2017; Bürkner, 2018; Bürkner, 2021, version\n2.20.4), bayesplot (Gabry & Mahr, 2024; Gabry et al., 2019,\nversion 1.11.0), bayestestR (Makowski et al., 2019, version\n0.13.1), tidaybayes (Kay, 2023, version 3.0.6) tidyverse\n(Wickham, 2021, version 1.3.2) and PerformanceAnalytics\n(Peterson & Carl, 2020, version 2.0.4).\nWe excluded and replaced two participants where we had\nproblems with data recording, one participant where a memory error in PsychoPy prevented us from finishing the testing,\ntwo participants where the electrodes fell off during testing,\none participant who seemed to have not understood the\ntask and told us they adopted a guessing strategy, and four\nparticipants with fewer than 7 observations in at least one\ncell after excluding error trials.\nFor the analyses, we excluded all practi",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "(Kay, 2023, version 3.0.6) tidyverse (Wickham, 2021, version\n1.3.2) and PerformanceAnalytics (Peterson & Carl, 2020,\nversion 2.0.4).\nWe excluded and replaced two participants where we had problems with data recording, one participant where a memory\nerror in PsychoPy prevented us from finishing the testing, two\nparticipants where the electrodes fell off during testing, one\nparticipant who seemed to have not understood the task and\ntold us they adopted a guessing strategy, and four participants\nwith fewer than 7 observations in at least one cell after\nexcluding error trials.\nFor the analyses, we excluded all practice trials, trials in which\nparticipants made an error or the RT was above 500 ms, and\nschedules in which the confirm response (win vs. block) was\nincorrect. We also excluded trials with an RT of 0 ms as this\nwas an impossible value. The analyses focused on the effect\nof getting blocked on RT; thus, we only analyzed trials in\nwhich participants got blocked. In line with Yu et al",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

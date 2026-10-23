@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "D01_T2_Q02",
+  "paper_id": "PeerJ:1604",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D01_T2_Q02/input.json",
+  "input_sha256": "c505a0aa44a25996ee41fa877bc4c4f95b3393cb633a3bed2a7c6688e318a7a6",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D01_T2_Q02/input.json",
+      "source_sha256": "c505a0aa44a25996ee41fa877bc4c4f95b3393cb633a3bed2a7c6688e318a7a6",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          155
+        ]
+      },
+      "quote": "Instruments. The authors should insert for each measures the factorial structure and\ninternal consistency reliability that measures present in their study.",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D01_T2_Q02/input.json",
+      "source_sha256": "c505a0aa44a25996ee41fa877bc4c4f95b3393cb633a3bed2a7c6688e318a7a6",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          541
+        ]
+      },
+      "quote": "Answer: The information on the internal validity of the IHS for both students and working health professionals is now at the end of the sampling and procedures subsection of the methods. In calculating the subscale scores, we used the factor structure of the developed scale (Schrank et al. 2011.). Please let us know if the reviewer feels it is necessary for us to conduct a confirmatory factor analysis; as the main focus was on the correlation between the total hope score and VAS we instead chose to follow the reported factor structure.",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；问卷研究使用IHS总分、分量表及视觉模拟评分。；回应文字充分性",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_2_3": "2档识别部分事实；3档须准确引用与本点有关的关键材料：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_3_4": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；问卷研究使用IHS总分、分量表及视觉模拟评分。；回应文字充分性",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只识别部分要求或复述答复；3档须准确处理：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_2_3": "2档只识别部分要求或复述答复；3档须准确处理：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_3_4": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；问卷研究使用IHS总分、分量表及视觉模拟评分。；回应文字充分性",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_2_3": "2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：回复称提供IHS内部效度并沿用既有因子结构，未给本样本内部一致性数值；使用总分不自动消除测量适切性问题。",
+      "boundary_3_4": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不机械要求CFA，但须区分继承结构、本样本可靠性及总分分析目标。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "T2_response_only"
+}

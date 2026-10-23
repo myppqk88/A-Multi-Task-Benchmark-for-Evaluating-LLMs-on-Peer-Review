@@ -1,0 +1,128 @@
+{
+  "task_id": "F076_T2_Q01",
+  "paper_id": "F1000:136338",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F076_T2_Q01/input.json",
+  "input_sha256": "05dce32c32389cbcfda4b8ac6eb90c8559f496b14e7f70e0b76b9a8472436c06",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F076_T2_Q01/input.json",
+      "source_sha256": "05dce32c32389cbcfda4b8ac6eb90c8559f496b14e7f70e0b76b9a8472436c06",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "While the article provides valuable suggestions for future research, including expanding the\nanalysis to other policy areas, incorporating quantitative data, and further exploring the role of\nNSAs, it will be good if the article provides forward-thinking approach to understanding ASEAN's\npolicy subsystems by analyzing the implications of the future agenda of regional integration (e.g.,\nASEAN’s post-2025 vision) as well as the emerging new trends and challenges (e.g., issues on twin\ntransition such as green/circular economy and digital transformation). Since the issues facing\nASEAN in the future are expected to be more entrenched with global economy (e.g., impact of\nintensifying geo-political tensions and economic fragmentation), will the NG framework still\nremain robust or will it be expanded to include a more structural analysis of governance issues in\nthe region. It will be interesting how the framework can elaborate these changes.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F076_T2_Q01/input.json",
+      "source_sha256": "05dce32c32389cbcfda4b8ac6eb90c8559f496b14e7f70e0b76b9a8472436c06",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Thank you for your review. I have taken on board your key suggestions on the utility of the\nNG lens, especially in assessing ASEAN's response to the current and critical issues as well\nas future issues as it considers its post-2025 community-building agenda. The lens could be\nutilised to study other issues if the issue-area/s can be identified, the policy network/s\nascertained, the interest and will (determination) of ASEAN member states are assessed\nspecific to that issue/s and the resource dependency dynamics for each member in terms of\nthe benefits and risks or disadvantages can be studied. Once these variables are mapped,\nthere is a likelihood of gaining a better insight into ASEAN's response and any\nimplementation lag. Appropriate policies can then be developed regionally to address the\nvarious aspects of the issue/s. One caveat is that there needs to be further studies on the\napproach to look at different issues to understand better the variables involved and how\nASEAN norms impede or support a policy issue.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "答复提出NG应用到新议题需识别议题、政策网络、成员国意愿与资源依赖收益风险，提供条件性延伸路径。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient为主；sufficient须把评审的具体趋势分析视为建议性扩展并论证现有条件说明足够。"
+    },
+    {
+      "id": "J2",
+      "judgment": "没有具体分析后2025、双转型或地缘碎片化如何改变框架，也没有明确是否须结构性扩展；进一步研究的保留是适当但不完成全部前瞻要求。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient为主；sufficient须把评审的具体趋势分析视为建议性扩展并论证现有条件说明足够。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。答复提出NG应用到新议题需识别议题、政策网络、成员国意愿与资源依赖收益风险，提供条件性延伸路径。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：要区分一般适用条件与对特定未来冲击的实际分析。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：答复提出NG应用到新议题需识别议题、政策网络、成员国意愿与资源依赖收益风险，提供条件性延伸路径。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：要区分一般适用条件与对特定未来冲击的实际分析。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。没有具体分析后2025、双转型或地缘碎片化如何改变框架，也没有明确是否须结构性扩展；进一步研究的保留是适当但不完成全部前瞻要求。",
+      "high_score_conditions": [
+        "承认框架延伸路径有内容，同时避免把条件性可能说成框架对所有新趋势已稳健。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：没有具体分析后2025、双转型或地缘碎片化如何改变框架，也没有明确是否须结构性扩展；进一步研究的保留是适当但不完成全部前瞻要求。"
+      ],
+      "boundary_2_3": "要区分一般适用条件与对特定未来冲击的实际分析。",
+      "boundary_3_4": "承认框架延伸路径有内容，同时避免把条件性可能说成框架对所有新趋势已稳健。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient为主；sufficient须把评审的具体趋势分析视为建议性扩展并论证现有条件说明足够。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：承认框架延伸路径有内容，同时避免把条件性可能说成框架对所有新趋势已稳健。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：没有具体分析后2025、双转型或地缘碎片化如何改变框架，也没有明确是否须结构性扩展；进一步研究的保留是适当但不完成全部前瞻要求。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：承认框架延伸路径有内容，同时避免把条件性可能说成框架对所有新趋势已稳健。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient为主；sufficient须把评审的具体趋势分析视为建议性扩展并论证现有条件说明足够。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "要区分一般适用条件与对特定未来冲击的实际分析。",
+    "3_to_4": "承认框架延伸路径有内容，同时避免把条件性可能说成框架对所有新趋势已稳健。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

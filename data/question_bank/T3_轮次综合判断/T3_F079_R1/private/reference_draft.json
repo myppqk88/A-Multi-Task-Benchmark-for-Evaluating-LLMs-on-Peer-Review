@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F079_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论贡献",
+    "质性分析与证据",
+    "实践意义"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审追问so what及文献综述与发现的衔接，作者称补充综合和实践含义；核对后稿是否阐明D-authorship概念的增量。",
+    "11名设计师的质性发现须按研究目标判断，不按小样本自动否定；核对引文、分析步骤与Inside-Out/Outside-In解释的联系。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This article explores the entrepreneurial journey of product designers to understand the gap\nbetween invention and commercialization. Following interviews with eleven design entrepreneurs,\nthe authors develop a new concept called ‘Design Authorship’ (D-authorship) which can either be\nInside-Out (design-led) or Outside-In (user-led).\nThe premise of this paper is really interesting as the gap betwee",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n\n\n\n\nDear reviewer, College of Business, Technological University Dublin (TU Dublin),\nDublin, Ireland\nI would like to express my sincere gratitude for the insightful and meticulous review of this\npaper. Your detailed and constructive feedback has been immensely valuable in refining\nand strengthening the quality of this manuscript. I appreciate the time and effort you have\ndedicated to carefully evaluating the content. Please find below the answer",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "(Bremner & Rodgers, 2013) or prescriptive models. Design has\nshifted from ‘disciplinary based’ to ’project-based’ (Heppell,\n2006). Design entrepreneurship requires the designer´s ability to\ncombine ideas and methods from different areas of knowledge\nand keep themselves in a constant learning loop. Feyerabend\n(2010) describes the designer’s mindset as an ’anything goes’\nmindset that is not inhibited by well-confirmed theories or established working practices. Designer entrepreneurs fit within\nthis description. Certain conditions contribute to this flexible\nmindset such as advancements in prototyping technology, global connectivity, access to funding via crowdfunding platforms\nand information accessibility (Valencia & Pearce, 2019), facilitating learning through trial and error. According to Kelly &\nKelly (2013), prototyping and testing with the user is one of\ndesign thinking’s key principles, which can reveal problems sooner\nand enable learning.\nIt is worth noting that, in this un-disci",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "These phases encompass creative problem-solving models and\nprocesses in product and service design, organisational and\nsocietal innovation. The phases in both classifications resemble to a corporate system, where designers depend on and\ninteract with other disciplines and departments, having a specific role and semi-fixed set of activities. Therefore, designers working within a company cover particular stages of these\ninnovation process. In contrast, designers working solo or for\na start-up cover a much more comprehensive range of activities and must cross the disciplinary boundaries of design,\nadapting to the specific conditions of the new venture.\nDesign entrepreneurship without a discipline. Nowadays,\ndesign practices should move far from linear methodologies\n(Bremner & Rodgers, 2013) or prescriptive models. Design\nhas shifted from ‘disciplinary based’ to ’project-based’\n(Heppell, 2006). Design entrepreneurship requires the designer´s\nability to combine ideas and methods from differ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "using a study invitation email. The video was distributed on\nsocial media platforms such as LinkedIn and from the personal\nemail of the principal investigator. The short videos explained\nthe research context, the relevant theories and gaps found in\nthe literature, and also why the participants’ expertise was\nneeded to fill out the missing gaps.\nPhase 2: interviews. For phase 2, an interview model was created based on the findings of the literature review in phase one.\nThe semi-structured interviews served to enable an understanding of the opinions and experiences of individuals related\nto design, entrepreneurship and innovation in the UK ecosystem. Based on these interviews, the doodle map created in\nphase 1 evolved with each subsequent interview/encounter; it\nbecame a depository of the new insights and findings of the\nstudy. The flexibility in the research process opened further inquiries. The iterative approach followed in data generation during\nphase 2 enhanced the construction of t",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Structure and data generation methods\nThe study consisted of four phases. Phase 1 reviewed the\navailable studies in the subject and compiled them in a\nmap of doodles that captured the critical insights of the literature review. Phase 2 consisted of an interview model that\nexplored the relevant areas of the entrepreneurial journey with\nparticipants involved in design, entrepreneurship, and innovation. Phase 3 used a semi-structured interview (Valencia\net al., 2021) and a visual map of possible milestones, targeted\nspecifically to designer-entrepreneurs to help them describe their\nentrepreneurial journey. A think-aloud activity accompanied\nthis map to help D-entrepreneurs articulate their key learnings\non each specific milestone, the sequence, and the journey’s\nchallenges. Phase 4 addressed the validity of the study. These\nphases are described in detail below.\nPhase 1: literature review and respondent recruitment. The\nresearch team conducted a systematic literature review to\nfind the com",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

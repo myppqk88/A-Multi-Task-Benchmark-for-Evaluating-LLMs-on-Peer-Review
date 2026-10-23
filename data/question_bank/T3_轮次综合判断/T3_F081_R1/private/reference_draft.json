@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F081_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与文献",
+    "质性分析与证据",
+    "图像解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称按规范价值、记忆、仪式、情感重整文献，补入田野照片和分析小结；核对后稿是否增强影像生产、风格与接收的联系。",
+    "记忆同质化的理论解释要与访谈/影像证据对应，新增照片和引文不自动证明解释成立。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This is a very promising paper which aims to contribute to the existing literature on wedding\nimages and the meanings and consumption of these media. In particular the paper focuses on\nhow individuals make sense of and talking about their re-viewing of their own wedding photos\nand videos some time after the event. In this respect, the paper contributes to literature on visual\nmedia and memory-maki",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nI value your feedback and I am grateful for your input. The current state of research has\nbeen comprehensively updated to include relevant literature about wedding photography\nwith a particular focus on memory. The literature review therefore addresses the ways in\nwhich norms and values are expressed in wedding photography, as well as the extent to\nwhich photos and videos influence memory processes. The overview of the discussed\nliterature is st",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Each couple participates in a shared cultural memory through\ntheir wedding photos. The reception of their photos and the\nmemory of the day and the stories of their making contribute to the cultural practice of the wedding ritual. The ritual\nas well as its media production, distribution, and reception\npractices become part of a shared cultural identity.\nAs it has been laid out thus far, taking and looking at\nphotographs of a wedding take part in different memory processes, namely individual and cultural memory, respectively.\nBoth are performed in different moments that in the current\napproach are systematized as spaces of memories. Wedding\nphotos are taken and the videos are filmed during the wedding.\nSometimes even pre-wedding shoots take place. The production of wedding media can be understood as one memory\nspace. Another space is constituted by the photos and videos\nthemselves as the memory space of representation. They often\nfollow or play with certain aesthetic norms of wedding dep",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "is an effective means to steer the stickiness of emotions that\n“constitute a powerful aural framing device that aids personal and collective memory construction.”30 Again the personal is distinguished from the collective memory, consistent\nwith Ruchatz’s analysis of the difference between individual\nand collective memory.31 This difference also proves to be\ncrucial in the current study. The couple shares a collective\nmemory of the day and at the same time they are individuals\nwho may each have different experiences and emotions.\nHow far these divergent experiences are synchronized or are\naccepted as such tells us something about the context of the\nphotos, the active process of remembering, and how much\nindividuality is possible. “In its rejection of visual conflict,\nwedding photography may even have redemptive power to\nbring the hope of cohesion and stability to social groups.”32\nBoth in photographing and in looking at the images, this\ncohesion and redemptive power may be possible. Emo",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Erika Engstrom and Beth Semic, “Portrayal of Religion in Reality\nTV Programming: Hegemony and the Contemporary American Wedding,”\nJournal of Media and Religion 2, no. 3 (August 1, 2003): 145–63,\n[external resource identifier omitted]",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "of their social network and provide them with a means of\nreviving their belief in ‘happily ever after.’”19\n(3) Otnes and Pleck further describe the function of these\nidealized representations as souvenirs of a ritual that connects\nthe past with the present to remember good times in difficult\ntimes.20 Likewise, the romantic lavish wedding provides a\n“repository of memories of this magic and romance, and\noffers the promise of perfect (e.g. boundless and guilt free)\nconsumption.”21 In this case photos have a double function.\nThey legitimate luxurious consumption because it is part of\nthe ritual transformation captured forever in photographs. At\nthe same time, photos store memories of the magical and\nromantic rite of passage.\nThese stored memories are presented in wedding albums\nthat function to teach viewers about the correct behaviour\nduring a wedding and what the ritual should look like.\n“Sharing the album, then, becomes a powerful mnemonic tool\nas the ritual is reenacted, stories added",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

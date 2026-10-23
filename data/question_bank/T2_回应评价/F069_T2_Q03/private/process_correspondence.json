@@ -1,0 +1,62 @@
+{
+  "task_id": "F069_T2_Q03",
+  "paper_id": "F1000:166713",
+  "parent_task": "T3_F069_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F069_R1/input.json",
+  "parent_input_sha256": "9e2a1da6a0420687b870336dc5e35c3be2ceddc36c8a68ab298a0c9588c38ce6",
+  "review_dimension_AI_candidate": "测量工具与分类操作化",
+  "selection_scope": "十项类别及适应性修改完整保留；不据名称就认定与FIACS一致。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/166713_Application_of_Modified_Flanders_Interaction_Analysis_During_Mathemati/v1_manuscript.pdf",
+      "original_sha256": "b924d006ebc0ed6540f151c668064574362bbd8011be7bf25152637821a205fd",
+      "raw_text_file": "data/question_bank/T2_回应评价/F069_T2_Q03/private/S001_source.txt",
+      "source_span_cover": [
+        43936,
+        44095
+      ],
+      "report_id": "432297",
+      "date": "2025-11-22",
+      "raw_page_numbers": [
+        11
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/166713_Application_of_Modified_Flanders_Interaction_Analysis_During_Mathemati/v1_manuscript.pdf",
+      "original_sha256": "b924d006ebc0ed6540f151c668064574362bbd8011be7bf25152637821a205fd",
+      "raw_text_file": "data/question_bank/T2_回应评价/F069_T2_Q03/private/S001_source.txt",
+      "source_span_cover": [
+        46060,
+        48081
+      ],
+      "report_id": null,
+      "date": "2025-11-23",
+      "raw_page_numbers": [
+        12,
+        13
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "ten original FIACS",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 15460,
+    "end": 15998,
+    "exact_quote": "board work, and limited student-initiated talk are common. The MFIA used in this study\nretained the ten original FIACS behavioural categories but introduced contextual modifications. The categories are:\n(1) Praise and Encouragement – Teacher statements or gestures showing approval, motivation, or positive reinforcement.\n(2) Content-Related Questioning – Teacher questions directly related to mathematics concepts, procedures, or problem\n\n\n\nsolving. (3) Direct Teaching/Lecturing – Explanations, demonstrations, worked examples, definiti",
+    "anchor_matches": 1,
+    "anchor": "ten original FIACS"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增十项FIACS行为类别及情境适应的具体说明，分类有效性仍待科学判断。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

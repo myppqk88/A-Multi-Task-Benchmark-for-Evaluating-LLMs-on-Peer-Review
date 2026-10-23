@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F155_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "资料纳入与可信度",
+    "比较分析流程",
+    "理论与实施联系"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对作者新增文件纳入/排除、来源可信度及编码分类/三角核对说明是否进入后稿。",
+    "五个比较维度的材料基础与国家文化概括须区分，统一理论框架不自动保证跨国指标可比。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Strengths:\nThe research gap is clearly and strongly identified from the abstract to the introduction. The\nauthor uses a global theoretical framework connecting Universal Design for Learning (UDL);\nIEP/PPI; and Inclusive Pedagogy. The comparison between Oman and Indonesia is consistent\nacross five dimensions: service models, teacher training, curriculum adaptation, community\ninvolvement, and cultur",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nWe sincerely thank the reviewers for their careful reading of our manuscript and for their\ninsightful, constructive, and encouraging comments. We greatly appreciate the recognition\nof the strengths of this research, particularly regarding the clarity of the research gap, the\ncoherence of the comparative framework, and the integration of global theoretical\nperspectives such as Universal Design for Learning (UDL), Individualized Ed",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "teacher flexibility in adapting learning strategies, rather than forcing students to conform to a rigid system. The Universal\nDesign for Learning (UDL) framework reinforces this principle by promoting curriculum flexibility thru diverse ways of\nrepresenting, motivating, and expressing learning outcomes.19 On a practical level, implementing inclusion requires an\nIndividualized Education Program (IEP) or Individualized Learning Program (PPI: Program pembelajaran individual),\nwhich provides a measurable learning plan tailored to each child’s needs. Moreover, Gibson and Blandford,20\nemphasized the important role of the Special Educational Needs Coordinator (SENCO) in the UK to ensure the IEP is\nimplemented, while in Indonesia this role is carried out by the Special Guidance Teacher.21 Thus, personalized learning\nbecomes the core of inclusion implementation so that every student can develop their maximum potential.\nIn addition, the implementation of inclusive education also requires clear a",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Moreover, the literature also confirms that failure to implement inclusion theories has serious consequences. Children\nwith special needs may face academic and social marginalization, while teachers are locked in uniform approaches that\ndisregard difference, and formal policies lose their practical usefulness. On the structural level, highly centralized\nadministration encourages low community participation, whereas a decentralized system has the potential to produce\ninter-regional inequities due to differences in teacher capacity and resources.26 Thus, the realization of inclusion\nnecessitates a balance between adaptive and participative centralization and uniform and equal decentralization.\nOverall, this literature review confirms that effective implementation of inclusive education requires a synergistic\ninteraction between global normative foundations, inclusive pedagogy theories, teacher training, personalization of\nlearning through IEPs/PPIs according to children’s needs, curricul",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Meanwhile, Oman benefits from strong coordination thru a centralized system. Every school has a clear framework for\ninclusion services. However, the top-down approach limits the space for public participation. ADB25 and Emam44 studies\nconfirm that formal policies are not always rooted in everyday practices, especially when it comes to involving families\nand communities.\nFrom the perspective of teacher training, both countries face capacity constraints. Oman has a more established national\nsystem, but gaps in teacher experience are still evident.14 Indonesia has GPK as an important element, but the distribution\nand quality of training are uneven. This strengthens the argument that successful inclusion requires ongoing, practicebased training, not just formal policies.45\nCurriculum adaptation is also a weak point. Indonesia has already regulated this in the Ministry of Education and\nCulture24 guidelines, but in practice, it is often hampered by limitations in teacher competence. Oman als",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Based on the discussion above, the strength of this study lies in weaving global frameworks such as UDL and IEP into a\nrarely studied cross-country comparative analysis, revealing how contrasting governance logics—centralization in Oman\nand decentralization in Indonesia—shape the way international commitments are translated into everyday learning\npractices. Beyond advancing scholarly debate, this research offers practical value by offering concrete recommendations\nto policymakers, educational leaders, and practitioners seeking to embed inclusive principles more deeply into their\nsystems. The recommendations presented here aim to guide both countries in strengthening inclusive practices while also\ncontributing to the broader global effort to ensure that education is recognized and realized as a right for every child in\nevery context.\nConclusion\nThe results of this study indicate that the implementation of inclusive education in Indonesia and Oman operates with\ndifferent dynamics dependi",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

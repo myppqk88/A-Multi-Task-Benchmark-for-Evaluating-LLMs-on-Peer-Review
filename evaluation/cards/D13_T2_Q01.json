@@ -1,0 +1,140 @@
+{
+  "task_id": "D13_T2_Q01",
+  "paper_id": "PeerJ:19382",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D13_T2_Q01/input.json",
+  "input_sha256": "c16d9389af09638fc063dfa6e86d1af438d374f7dca2fa42932b4d6bd75137ad",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D13_T2_Q01/input.json",
+      "source_sha256": "c16d9389af09638fc063dfa6e86d1af438d374f7dca2fa42932b4d6bd75137ad",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Using a Bonferroni style is not needed if the actual P values are reported.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D13_T2_Q01/input.json",
+      "source_sha256": "c16d9389af09638fc063dfa6e86d1af438d374f7dca2fa42932b4d6bd75137ad",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Thank you very much for your thoughtful comment. We acknowledge that reporting exact p-values can be sufficient in many cases and that a Bonferroni correction may not always be strictly necessary. However, in our manuscript we performed multiple correlation analyses simultaneously, and thus opted for a conservative approach to control the overall Type I error rate at 5%. By using the Bonferroni-adjusted threshold (0.05/6 = 0.008), we help readers interpret the statistical significance of these tests in a consistent and transparent manner. Thank you again for your suggestion and for helping us refine our presentation of the results.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者说明同时进行6次相关检验，以0.05/6控制家族错误率，给出保留Bonferroni的直接理由。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；允许指出保守程度，但不能要求必须取消校正。"
+    },
+    {
+      "id": "J2",
+      "judgment": "报告精确p值并不自动控制多重检验错误率，评审前提不充分；0.008为约值，不必把常见四舍五入当核心科学错误。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；允许指出保守程度，但不能要求必须取消校正。"
+    },
+    {
+      "id": "J3",
+      "judgment": "选择保守校正可讨论检验族、相关性与功效，但不是因为存在别的方法就判本回复无效。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient；允许指出保守程度，但不能要求必须取消校正。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者说明同时进行6次相关检验，以0.05/6控制家族错误率，给出保留Bonferroni的直接理由。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：必须解释精确p与多重性控制不等价。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者说明同时进行6次相关检验，以0.05/6控制家族错误率，给出保留Bonferroni的直接理由。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：必须解释精确p与多重性控制不等价。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。选择保守校正可讨论检验族、相关性与功效，但不是因为存在别的方法就判本回复无效。",
+      "high_score_conditions": [
+        "认可有理由反驳评审，清晰说明六检验族与阈值边界且不声称所有分析都已无误。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：选择保守校正可讨论检验族、相关性与功效，但不是因为存在别的方法就判本回复无效。"
+      ],
+      "boundary_2_3": "必须解释精确p与多重性控制不等价。",
+      "boundary_3_4": "认可有理由反驳评审，清晰说明六检验族与阈值边界且不声称所有分析都已无误。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient；允许指出保守程度，但不能要求必须取消校正。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可有理由反驳评审，清晰说明六检验族与阈值边界且不声称所有分析都已无误。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：选择保守校正可讨论检验族、相关性与功效，但不是因为存在别的方法就判本回复无效。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可有理由反驳评审，清晰说明六检验族与阈值边界且不声称所有分析都已无误。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient；允许指出保守程度，但不能要求必须取消校正。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "必须解释精确p与多重性控制不等价。",
+    "3_to_4": "认可有理由反驳评审，清晰说明六检验族与阈值边界且不声称所有分析都已无误。"
+  },
+  "source_unit": "T2_response_only"
+}

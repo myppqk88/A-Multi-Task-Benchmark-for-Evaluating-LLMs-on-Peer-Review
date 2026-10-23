@@ -1,0 +1,61 @@
+{
+  "task_id": "F069_T2_Q01",
+  "paper_id": "F1000:166713",
+  "parent_task": "T3_F069_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F069_R1/input.json",
+  "parent_input_sha256": "9e2a1da6a0420687b870336dc5e35c3be2ceddc36c8a68ab298a0c9588c38ce6",
+  "review_dimension_AI_candidate": "观察编码与可靠性",
+  "selection_scope": "培训、校准、κ和百分比一致性完整保留，不仅摘两个数字。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/166713_Application_of_Modified_Flanders_Interaction_Analysis_During_Mathemati/v1_manuscript.pdf",
+      "original_sha256": "b924d006ebc0ed6540f151c668064574362bbd8011be7bf25152637821a205fd",
+      "raw_text_file": "data/question_bank/T2_回应评价/F069_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        44096,
+        44272
+      ],
+      "report_id": "432297",
+      "date": "2025-11-22",
+      "raw_page_numbers": [
+        11
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/166713_Application_of_Modified_Flanders_Interaction_Analysis_During_Mathemati/v1_manuscript.pdf",
+      "original_sha256": "b924d006ebc0ed6540f151c668064574362bbd8011be7bf25152637821a205fd",
+      "raw_text_file": "data/question_bank/T2_回应评价/F069_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        48082,
+        50369
+      ],
+      "report_id": null,
+      "date": "2025-11-23",
+      "raw_page_numbers": [
+        13
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "87%",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 19136,
+    "end": 19659,
+    "exact_quote": "’s kappa (κ) were\ncomputed. Across all MFIA categories, observers achieved:\n• Percentage Agreement: 87%\n• Cohen’s Kappa (κ): 0.81\nA kappa coefficient above 0.80 indicates strong inter-rater reliability, confirming that the observers consistently applied\nthe MFIA coding scheme. Any minor inconsistencies identified were resolved prior to the commencement of formal data\ncollection. This process ensured that the observational data collected during classroom visits were both reliable and valid\nfor analysis.\nObservation pro",
+    "anchor_matches": 1,
+    "anchor": "87%"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿无87%和κ=0.81的报告，后稿新增；未独立核验计算或原始编码。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

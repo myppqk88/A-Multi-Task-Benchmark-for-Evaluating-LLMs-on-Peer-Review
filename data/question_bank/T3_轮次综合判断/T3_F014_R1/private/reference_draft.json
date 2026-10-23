@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F014_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究贡献",
+    "访谈与编码透明度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审重视相对既有迁移研究的原创增量；答复称引言补理论与经验文献。核对是否说明多阶段综合如何构成新增认识，不把增加引文等同证明原创性。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "I have read this article with great interest. I find this piece very well researched, structured and\nwritten. The article explores a relevant and timely issue, shedding light on important dynamics in\nthe governance of undocumented migration across the Mediterranean. As such, I am convinced\nthat this article makes an important contribution, especially by translating the existing findings\ninto clear",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, thank you very much for the precious time dedicated to providing\nfeedback on our manuscript. We are grateful for your extremely valuable and insightful\ncomments that led to possible improvements in the updated article. We have carefully\nconsidered them and incorporated in the new version of our article. In particular in the\nIntroduction we added several sentences where we engage more closely with a number of\nboth theoretical and e",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Since the late 1990s, the phenomenon of undocumented\nmigration across the Mediterranean has dominated public\ndebate. More recently, however, with the explosion of the\nso-called “refugee crisis” in Europe in 2015 and the introduction\nof increasingly restrictive policies aimed at preventing migrants\nfrom crossing European borders, the topic of migration and\nrefuge across the Mediterranean has gained high visibility in\nthe international agenda (Crawley et al., 2018; Krzyżanowski\net al., 2018).\nSince 2014, almost 1,3 million undocumented migrants have\narrived in Europe crossing the Mediterranean Sea so far, while\nmore than 28,000 people have died or have been missing in\nthe attempt of reaching the European Union, with more than\n22,000 of them just along the Central Mediterranean route, the\none which from the Northern African coasts (especially Libya\nand Tunisia) reaches European borders1.\nThe high visibility of landings, their dramatic dangerousness\nin terms of human costs and, consequentl",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Although, the hardening of borders and their growing militarisation might have increased the services provided by smuggling\nnetworks operating along increasingly fatal routes, obliging\nmigrants to rely on them, the role played by other smuggling\nfacilitators, such as migrants themselves who capitalize on the\nknowledge accumulated during repeated attempts to migrate\nby providing their know how as facilitators or brokers to other\nmigrants on the move should not be overshadowed. This adds\nfurther complexity to this scenario, as these actors engage in\na wide variety of behaviours, ranging from violence and/or\nexploitation to aid and solidarity (Aziani, 2023; Zhang et al.,\n2018). Similar remarks may be extended to self-organized journeys\nmade up by groups of migrants who, especially during the\npandemic, departed from Tunisia or Morocco without any\nprofessional support.\nThe idea of migration as a linear and fixed path, a voluntary\nprocess or as a forced choice has clearly shown its limits, p",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "As one migrant interviewed sadly emphasised:\n\u0007Documents make big problem for me, because I have more\nstress, I can't go to sleep […] When you have no work,\nnothing, you must have more stress, you ask some question yourself: Why? Why am I still there? […] Sometimes\nI ask: Why you? I have no luck. You are unlucky man.\nSometimes I say myself you are unlucky man (Interview\nwith migrants n. 16).\nFor migrants who decided to stay in Italy, however, it is\nnot uncommon that the first reception facilities where they\nwere placed were crowded and in isolated areas. Social isolation and overcrowding, therefore, prevented the timely\nbeginning of linguistic, housing, work and social integration\nprocesses and instead favoured the reactivation of conditions\nof sickness, unease and depression that are often ignored.\nThis is the case of A. and her husband, who fled Pakistan\nafter having been persecuted to death by their families for\nmarrying against their will. When they arrived in Italy in\n2015, they we",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Based on the outcomes of this research and our interviewees’\nexperiences, representations and evaluation of undocumented\nforms of migration across the Mediterranean, the following\nrecommendations are made:\n1. Reconsider the legal distinction existing between economic\nand political migrants and the impact that this might have on\nthe lives of the people involved.\nOur data clearly indicate that both so-called economic and\npolitical migrants, given the restrictions imposed to legal\nmigration to the European Union, are obliged to rely on\nservices provided by a number of actors who accompany\nthem across borders and, most crucially, to the embarkation points in Libya and Tunisia. Therefore, migrants with different profiles and needs travel along the same routes, are\noften accompanied by the same facilitators, and often end\nup in being sold to other traffickers, kidnapped, detained,\nexploited in the work sector, tortured and obliged to provide additional money if they want, not only to continu",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

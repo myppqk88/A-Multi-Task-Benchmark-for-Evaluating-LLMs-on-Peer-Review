@@ -1,0 +1,28 @@
+{
+  "task_id": "F133_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "竞争解释与论证平衡"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Likewise, although the criteria of the different authors cited in this document mostly coincide in\npointing out that financial support for Ecuador has generated greater indebtedness and\ndependence on the policies of these organizations throughout history, I consider that they should\nalso be included.\nin this case study, especially in the discussion section, to later refer to in the conclusions (to\ncomplete the analysis), those criteria that do not share this argument, given that, being\nmultilateral credit organizations, they must ensure because that financial resource that they grant\nvia loans to countries that request them, return to their coffers. It must be remembered that these\ninstitutions do not oblige any country to request this type of financial requirements and they are\nnot responsible for the fact that certain rulers in power, in some countries and in the case of\nEcuador specifically, have allocated the funds for an excessive increase in bureaucracy. waste of\nfinancial resources, corruption, among other evils (endemic in some South American countries),\nforgetting the origin of this type of funds, which must be returned according to the established\ndeadlines and conditions.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Dear Reviewer\nThank you for your comments, which have been accepted and adjusted based on the\nrecommendations and inserted in the text.\nI remain attentive to the indications for the respective correction.\n[closing signature omitted]",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者未逐点作答；给定完整总回复，不能当已提供替代解释。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F086_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与假设",
+    "概念操作化",
+    "统计解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者先确认收到、后发详细修订说明；核对拆分假设、crisis parties定义和删除表5的实际变化。",
+    "理论重排及增加稳健表述不自动消除新旧政党比较的混杂，须按给定模型和测量判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This paper addresses the important topic of internal democracy in new parties, testing whether\nnewer organizations differ in their degree of intra-party democracy compared to older parties. The\nstudy employs comparative datasets and appropriate statistical methods to examine these\nquestions. While the research makes a valuable contribution, several aspects could be\nstrengthened to enhance clarity ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you for your thoughtful review and helpful comments. They are greatly appreciated.\nWe have reviewed your points, alongside the feedback from the other reviewers. We are\ncurrently preparing the revised manuscript and will incorporate your input as we work\ntoward the final resubmission.\n[closing signature omitted]\n\n[Next author response post]\n\n\nDear reviewer, \nWe are pleased to submit the revised version of our manuscript, fo",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Over the last two decades, many new parties have emerged in\nWestern Europe. The emergence of new parties is not a novelty, but their number and electoral success, especially in\nsome countries, are particularly relevant during this period\n(Chiaramonte & Emanuele, 2022). Apparently, some of these\nparties, at least in their first stage, have bet on increasing their\ninternal democracy to reconnect with disaffected citizens by\nleaning on digital tools. Nevertheless, many authors point\nout that these parties are subject to electoral competition and\nbecome institutionalized, a fact that makes them take steps\nback in terms of internal democracy (for instance, Meloni &\nLupato, 2023). Some scholars also claim that their participation model is essentially plebiscitary (the what, how, and when\nof what is discussed or asked remain in the hands of an elite),\nwhich triggers the effect of reinforcing the power of leaders and failing to empower members and citizens (Barberà &\nRodríguez-Teruel, 2020; Bi",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "determinants of IPD within the new political parties of Western\nEurope by examining the interplay between digitalization, ideology, and populism. A central aim of this investigation is\nto empirically assess two key research questions: Are these\nnewer political formations demonstrably more democratic than\ntheir established counterparts? and In what ways, and why,\ndoes their IPD diverge from traditional party structures? We\npresent new empirical evidence designed to provide a more\ncomprehensive and nuanced response to these questions.\nOur conceptualization of IPD places a primary emphasis on\ninclusiveness, defined as the breadth of the circle of party decision-makers (Scarrow, 2005). As established by Von dem Berge\nand Poguntke (2017), inclusiveness constitutes the most salient\ndimension for evaluating the democratic quality of intra-party\ndecision-making processes, as it inherently incorporates the critical elements of participation, centralization, and accountability.\nThis particular f",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "parties that distinguishes between assembly-based and plebiscitary intra-party democracy. Finally, the PPDB and the POPPA\nprovide us with data to be able to analyze the IPD of the crisis\nparties, compare it among them, and to the older parties. By\noperationalizing our datasets within this framework, we check the\ntwo hypotheses we formulate based on the literature.\nFirst, regarding our first hypothesis, we may reject it as a\nresult of our descriptive analysis, which shows that the crisis\nparties are neither more plebiscitary than the older Western\nEuropean parties nor are they essentially plebiscitary. For the\ncrisis parties, being essentially plebiscitary is not the rule.\nIn fact, there are fewer plebiscitary parties among them than\namong older Western European parties. We neither may say\nthat the crisis parties from the left, most of which claim they\nbet on boosting their internal democracy to regain legitimacy,\nare essentially plebiscitary except in very specific cases (the\nAIPD mean",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "of identified populist parties is greater within the crisis party\ngroup than among older parties. Given the established negative\ncorrelation between populism and IPD (Böhmelt et al., 2022),\nwe should expect that crisis parties would thus be less internally democratic than older cohorts. Overall, this expectation is generally met: crisis parties are, on average, slightly less\ninternally democratic than older parties. Our findings strongly\nindicate that populism serves as a significant mediator in the\ndynamics linking a party’s crisis status and the observed level\nof internal democratic practice (H2a). This underscores the\ntheoretical importance of populism in structuring intra-party\npolitics. An analysis across the ideological spectrum of the\ndesignated ‘crisis cohort’ reveals that left-wing crisis parties\nemerge as the most internally democratic group, although they\nremain less internally democratic than their older left-wing\ncounterparts. When the analysis is restricted solely to popu",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

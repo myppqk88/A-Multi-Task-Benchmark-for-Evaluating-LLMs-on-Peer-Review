@@ -1,0 +1,1926 @@
+Open Research Europe
+
+O
+
+RESEARCH ARTICLE
+
+Mapping leadership and commu
+research through network analysis
+
+[version 2; peer review: 1 approved, 2 approved with reservation
+
+Fabio Morea
+
+1, Alberto Soraci1,2, Domenico De S
+
+1Area Science Park, Trieste, Friuli-Venezia Giulia, Italy
+
+2Department of Economics, University of Messina, Messina, Italy
+
+3Universita degli Studi di Trieste, Trieste, Friuli-Venezia Giulia, Italy
+
+v2 First published: 18 Dec 2024, 4:268
+
+https://doi.org/10.12688/openreseurope.18544.1
+Latest published: 07 Aug 2025, 4:268
+https://doi.org/10.12688/openreseurope.18544.2
+
+Abstract
+Background
+Horizon 2020 and Horizon Europe are flagship programs of the
+European Union aimed at supporting research and innovation,
+fostering collaboration among companies, academic institutions, and
+research organizations. Comprehensive data on projects, objectives,
+participants, funding details, and results of Horizon projects is
+available through the open access portal CORDIS (Community
+Research and Development Information Service). This paper
+introduces a novel methodology for utilizing CORDIS data to reveal
+collaborations, leadership roles, and their evolution over time.
+Methods
+The methodology is based on network analysis. Data is downloaded
+from the CORDIS portal, enriched, segmented by year and
+transformed into weighted networks representing collaborations
+between organizations. Centrality measures are used to assess the
+influence of individual organizations, while community detection
+algorithms are used to identify stable collaborations. Temporal
+analysis tracks the evolution of these roles and communities over
+time. To ensure robust and reliable results, the methodology
+addresses challenges such as input-ordering bias and result
+variability, while the exploration of the solution space enhances the
+accuracy of identified collaboration patterns.
+Results
+
+Open Research Europe
+
+To illustrate the approach, the methodology is applied to a specific
+case: analyse the evolution of collaborations in hydrogen valleys, in
+the broader frame of “hydrogen energy” research and innovation
+projects funded by Horizon programmes.
+Conclusions
+The proposed methodology effectively identifies influential
+organizations and tracks the stability of research collaborations. The
+insights gained are valuable for policy-makers and organizations
+seeking to foster innovation through sustained partnerships. This
+approach can be extended to other sectors, offering a framework for
+understanding the impact of EU research funding on collaboration
+and leadership dynamics.
+Keywords
+Innovation, Horizon 2020, Horizon Europe, Network Analysis,
+Community Detection, Hydrogen, Hydrogen Valley
+
+This article is included in the Horizon Europe
+gateway.
+
+This article is included in the Artificial
+Intelligence and the Social Sciences and
+Humanities collection.
+
+O
+
+Open Research Europe
+
+O
+
+Corresponding author: Fabio Morea (fabio.morea@areasciencepark.it)
+
+Author roles: Morea F: Conceptualization, Data Curation, Methodology, Software,
+Writing – Review & Editing; Soraci A: Writing – Original Draft Preparation, Writing –
+Writing – Review & Editing
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the European Union’s H
+under grant agreement No [101111927](North Adriatic Hydrogen Valley [NAHV]). A
+support of the North Adriatic Hydrogen Valley (NAHV) project. The funders had no r
+decision to publish, or preparation of the manuscript. The views and opinions expre
+and do not necessarily reflect the official positions of the European Union or the Cle
+European Union nor the granting authority assumes responsibility for the content p
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2025 Morea F et al. This is an open access article distributed under th
+which permits unrestricted use, distribution, and reproduction in any medium, prov
+
+How to cite this article: Morea F, Soraci A and De Stefano D. Mapping leadership
+network analysis [version 2; peer review: 1 approved, 2 approved with reserva
+https://doi.org/10.12688/openreseurope.18544.2
+
+First published: 18 Dec 2024, 4:268 https://doi.org/10.12688/openreseurope.18544
+
+O
+
+REVISED Amendments from Version 1
+     
+The updated version (V2) incorporates substantial revisions
+informed by the reviewers’ comments and our own efforts to
+enhance the quality of the manuscript.
+The introduction has been expanded to include additional
+references to prior studies that have utilised CORDIS data,
+highlighting the limited application of network analysis in this
+context. Moreover, the section addressing the policy framework
+on hydrogen valleys has been extended to incorporate recent
+developments supported by the Clean Hydrogen Partnership.
+This update has also led to the inclusion of additional
+bibliographical references.
+Although the methodology remains unchanged from the
+previous version, the corresponding section has been
+reformulated to improve readability. A high-level Algorithm 1, and
+it is accompanied by detailed pseudocode boxes (Algorithm 2 to
+Algorithm 5
+�) describing in detail the most relevant parts.
+The captions of several figures have been revised to offer more
+precise explanations of the visual elements, to highlight key
+findings, and to assist the reader in interpreting the results
+more effectively. This applies in particular to Figure 4, Figure 5,
+and Figure 7 through Figure 12. Additionally, a new figure has
+been included in the introduction, resulting in changes to figure
+numbering in V2 compared to V1.
+Any further responses from the reviewers can be found at
+the end of the article
+
+1 Introduction
+
+Understanding the long-term dynamics of innovation is relevant for effective policy-making and strategic research planning. While innovation is fundamentally driven by collaboration
+between companies, academic institutions, and research organizations, its long-term dynamics remain elusive due to lack of
+structured data and analytical challenges.
+In this paper, we present a novel methodology that employs
+network analysis techniques to assess the evolution of collaborations driven by Horizon 2020 and Horizon Europe
+programmes. To illustrate the proposed approach, we examine a
+case study in the hydrogen energy sector—specifically focusing
+on hydrogen valleys.
+Section 1 introduces the context of the methodology, the case
+study (hydrogen valleys), and it outlines the key research
+questions. Addressing these questions requires a complex
+approach, employing network analysis and tackling challenges
+such as input-ordering bias and result variability, as detailed
+in Section 2 (Methodology). Section 3 presents a case study
+focused on the development of hydrogen-related research
+and the current support to hydrogen valleys, using data from
+Horizon 2020 and Horizon Europe projects from 2015 to 2029.
+The results allow to identify organisation with leading roles, a
+community structure, and its evolution over time.
+
+1.1 Analysis of CORDIS data with network analysis
+techniques
+Researchers have applied diverse data science techniques to
+CORDIS data since 2010 to gain insights into collaboration
+
+and innov
+a common
+text mining
+text-mining
+descriptions
+
+The applic
+tion netwo
+is not new
+ties of col
+structure an
+ics at cou
+use of a r
+derived from
+tional level.
+struct a net
+Horizon 2
+network ce
+funding10,11
+the research
+
+A limited
+detection te
+For exampl
+projects an
+fied field-sp
+composition
+duces a no
+casting H2
+communitie
+
+In this stre
+cific netwo
+the various
+potential inf
+
+In the prese
+and integra
+tools to tho
+as centralit
+tion of “ro
+Furthermore
+the current
+detection al
+
+The metho
+threefold. F
+rithms on w
+the intensit
+it adopts
+a taxonomy
+cise classifi
+a temporal
+collaboratio
+
+1.2 Hydro
+Hydrogen V
+tive efforts
+that unders
+
+O
+
+essential for informed policy-making and strategic research
+planning.
+A “Hydrogen Valley” is a geographical area where several
+hydrogen applications are combined into an integrated ecosystem that produces, exchanges, and consumes a significant
+amount of hydrogen, covering the entire hydrogen value chain:
+production, storage, distribution, and final use15.
+Across Europe, at least 90 Hydrogen Valleys are operational,
+planned, or proposed16. In Europe this growth is largely driven
+by initiatives like the Clean Hydrogen Partnership (or Clean
+Hydrogen Joint Undertaking - JU), an Institutionalised Partnership settled under the art 187 of the TFUE17 which sees
+the joint commitment of EU Commission and other public
+and private organizations to support research and innovation
+(R&I) activities in hydrogen technologies in Europe.
+The Clean Hydrogen Joint Undertaking leverages Horizon
+Europe funding to support research, innovation, and scale-up
+projects aligned with the EU’s climate and energy objectives.
+Moreover, various national and regional funding programs
+further support the development of HVs. Furthermore, the
+
+Clean Hyd
+evance of t
+hydrogen s
+Figure 1.
+
+Altogether,
+hydrogen v
+of which 1
+sent investm
+funding of
+increase in
+issued by
+and the c
+also pointe
+ment “Tow
+Hydrogen V
+of “hydrog
+the develop
+
+More Hydr
+the scope
+and abroa
+constitution
+
+Figure 1. Hydrogen Valleys supported by the Clean Hydrogen Partnership (s
+
+O
+
+hydrogen valley impact on a territory, and its development over
+the years. This small number of studies has been also assessed
+in 2023 by a Polish team22 by applying the bibliographic method
+and a quantitative analysis of the collected publications. The
+researchers identified 284 publications dealing with hydrogen valleys, with a systematic increase in the number of cited
+papers. Furthermore, from a deeper analysis, they found that
+the most frequently cited publications are studies presenting
+different types of technological solutions and concepts. This
+study indicated the existence of a significant research gap in the
+field of research on the creation and development of Hydrogen
+Valleys. Among the several, some other studies have been
+focused on the techno-economic assessment of green hydrogen
+valley23 providing multiple end-users and their LCA impact24.
+For example, the South Africa Hydrogen Valley report25 has
+examined the socioeconomic impact from the Hydrogen Valley project across multiple dimensions in terms of GDP, job
+market and tax revenue.
+The North Adriatic Hydrogen Valley or NAHV project26 is
+one of the first transnational hydrogen valleys developed in
+Europe. It embraces the EU territories of Croatia, Slovenia
+and the Italian region Friuli Venezia Giulia and involves
+37 partners based mainly on those countries. The project is
+co-financed by Horizon Europe programme and supported by
+the Clean Hydrogen Partnership27.
+NAHV has been planned under the willingness to activate a
+long-lasting hydrogen economy. The heuristic structure of the
+NAHV is based on a systemic vision and the development
+of a holistic model of the valley. As showed in Figure 2, this
+heuristic approach considers not only innovation related to
+vertical “hard pillars” (which are typical of a hydrogen valley,
+such as production, transport, storage and distribution of hydrogen) but also to the ”soft pillars“, which are regulatory framework, training and capacity building and involvement of civil
+society. Equally important is the level of cooperation among
+the various actors within the valley. NAHV aims also to
+develop and test a pathway of industrial transformation
+
+Figure 2. A schematic representation of the North Adriatic
+Hydrogen Valley project. Testbeds are primarily driven by
+industrial partners, while collaboration with policymakers,
+universities, and research organisations is crucial for enabling
+innovation.
+
+linked to g
+tion leadin
+economic ac
+
+1.3 Collab
+Hydrogen
+hydrogen t
+tiatives to
+tems align
+which invol
+industry, g
+By looking
+possible to
+open innov
+among the
+quintuple h
+is pushed b
+of the need
+with a targ
+context of
+addressing
+the econom
+vation ecos
+creativity a
+macro-regio
+well as th
+more innov
+petitiveness
+To reach
+to put in
+collaboratio
+businesses
+hydrogen va
+
+The Staff
+above has
+opment of
+and innova
+investments
+5) Develop
+increasing
+reach this
+funds, proj
+mobilized.
+rates has e
+Kohesio37 t
+eral funded
+established
+tiatives. In
+out as one
+updated dat
+
+1.4 Resear
+Understand
+for effective
+the perspec
+dynamics o
+be a good
+involved in
+
+O
+
+focus on the development of its own project activities, but it
+may benefit from identifying partners and competitors that are
+engaged in other hydrogen valleys. This broader awareness
+may help identifying synergies, risks, and market opportunities.
+
+validate th
+multiple so
+approach i
+coherent ou
+
+Policymakers adopt yet another perspective. They have a strategic vision to align local, national, and European resources,
+aiming for medium- and long-term impact of the innovation
+ecosystems. Achieving this requires a clear understanding of
+how collaborations emerge between industry and research,
+who the key stakeholders are, and how these collaborations
+evolve over time.
+
+The metho
+further disc
+ment (Sect
+measures (
+and tempo
+overview of
+
+This paper addresses the elusiveness of innovation proposing a methodology that is suitable for two approaches: projectspecific (e.g., examining the role of project partners to gain
+deeper insights into their role within the broader landscape
+of EU-funded research in the same sector) and a policyoriented (e.g., analysing how Horizon grants are shaping
+competitive ecosystems in a given sector). In both cases, two
+research questions are essential:
+
+Algorithm
+collabora
+
+1.
+
+2.
+
+Which organisations are the most influential in driving research and innovation? Identifying these key players — whether companies, academic institutions, or
+research organisations — is important for other organisation that want to be in contact with them in future projects.
+Moreover, policy makers may be interested in assessing
+whether the policy put in place in their territory has produced
+an improvement of leadership roles over the years.
+Are EU-funded projects fostering partnerships that extend
+beyond the duration and scope of individual projects? If
+such long-term communities exist, they serve as vital indicators of the open innovation and quintuple helix models effectiveness. Stable communities suggest robust
+exchanges of ideas and collaboration, which are essential for sustaining innovation and achieving the long-term
+innovation goals.
+
+The methodology presented in Section 2 aims to provide quantitative answers to the research questions above.
+Key requirements of this approach are that results must be
+independent of contingent factors (such as software implementation or ordering of the input data) and tested for validity. Additionally, when multiple algorithmic options are
+available, the selection must be data-driven and performanceoriented, ensuring that the chosen algorithm yields the most
+interpretable and reliable outcomes.
+
+2 Methods
+
+The proposed methodology builds on well-established network analysis techniques, such as centrality measures and
+community detection, while incorporating novel elements to
+enhance the stability and quality of results, and to produce a
+temporal analysis. Notably, a new method for exploring the
+solution space is introduced, along with a comprehensive quality check process to select the most appropriate algorithm,
+
+1: Data
+
+1.1 A
+
+1.2 A
+
+1.3 M
+P
+
+2:  Enrich
+
+3:  Filter a
+
+3.1 fi
+
+3.2 s
+
+3.3 s
+p
+
+4:  Calcu
+
+5: for ea
+
+4.1: C
+
+4.2: C
+
+4.3: I
+
+5: Temp
+
+6: Outpu
+associated
+
+2.1 Data a
+The source
+Research an
+Commission
+seminate in
+their outco
+data on p
+details, and
+sets have b
+2014 to 20
+2021 to 20
+composed
+organisation
+denoted as P
+
+Each projec
+its acronym
+is associate
+tives, and
+call and fu
+
+O
+
+project with one or more topics, encoded according to the
+European Science Vocabulary (EuroSciVoc), the multilingual
+taxonomy representing scientific fields developed by the EU’s
+Publications Office.
+
+assumed to
+start date t
+project to
+years during
+
+There is a many-to-many relationship between organisations
+and projects (i.e. a project has several organisations, and an
+organisation can be part of several projects). In table O* each
+organisation is identified by a unique identifier (orgID), a
+name, detailed geolocation information. In addition, the table
+records the role of each organisation in each project (coordinator, participant, or associated partner), as well as the
+total costs incurred by the organisation within each project
+(totalCost) and the corresponding eligible contribution
+from the Horizon programme (netEcContribution).
+
+Textual fiel
+a format u
+tives are
+user-defined
+make this i
+involves cr
+attributes e
+such as w
+market upt
+one of sev
+script that
+which proc
+dataframe,
+variables, w
+
+Data representation can be optimized by merging the corresponding tables for Horizon 2020 and Horizon Europe, to
+obtain the following core data structures:
+• table P* listing all projects, their projID, start and
+end dates, reference to the Horizon calls for proposal,
+keywords, and a long textual descriptions of project
+objectives;
+• table O* listing all organisations, their orgID location, their role in the project, and monetary values
+totalCost and netEcContribution;
+• table T* associating each project in P to one or more
+keywords of the EuroSciVoc taxonomy.
+
+2.2 Data preparation
+The initial step in data preparation involves identifying the
+subset of projects P ⊂ P* on which we aim to focus, based
+on the topics from that are relevant for the objectives of the
+analysis. Consequently, the other tables can be filtered to
+ensure that only pertinent data is retained in the form of
+O ∈ O* (organisation name and location). The core information for our analysis the weights table denoted as W, which
+encodes the annual effort each organisation o ∈ O puts into
+each project p ∈ P in a given year. A proxy for the values
+in W can be derived from either netEcContribution
+or totalCost. The former indicates the total amount of
+public funding received by an organisation upon project
+completion and serves as a useful proxy for how much the
+Horizon grant promotes collaboration. The latter reflects the
+total cost incurred by the organisation to complete the project.
+For non-profit organisations involved in research projects,
+these values often coincide, as the Horizon grant may cover
+100% of the costs. However, for private companies investing in pilot projects, such as in the NAHV project, the two
+values can differ significantly, sometimes by an order of
+magnitude. In the case study presented in Section 3, the
+weight is based on netEcContribution, expressed in
+thousands of euros.
+The data is then segmented on a yearly basis. Denoting by
+Wy the matrix for a given year y, it is a rectangular matrix of
+size |projID| × |orgID|. The value of each project is
+
+Algorithm
+
+Input:
+• P=s
+cost
+
+Output:
+• W[o,
+durin
+
+ymin ← min
+
+ymax ← ma
+
+for y = ymin
+
+end for
+
+2.3 Netwo
+The first st
+ing its nod
+matrix.
+
+A network
+nv = |V | v
+analysis, a
+which nod
+information
+rectangular
+erates a tw
+sets of nod
+nodes from
+joint partic
+
+O
+
+be obtained from a two-mode network and described by a
+square matrix, denoted as A = W T W, where W T is the
+transposed of W. In our case, A is symmetric, and G is consequently an undirected graph. Figure 3 illustrates the transformation process from the two-mode network of organisations
+by projects to the one-mode network consisting only of
+organisation-by-organisation ties.
+Since the data is calculated on a yearly basis from 2015
+to 2029, the complete model consists of set of networks
+G = {G2015 . . . G2029} that represents collaborations between
+organisations within Horizon research project.This spans from
+the launch of the first projects in 2015 to the anticipated completion of the longest ongoing Horizon Europe project in
+2029. The generic network is denoted as Gy where the
+subscript y refers to a specific year.
+
+Algorithm 3. Network Analysis
+
+Input:
+• W weight matrix for year y
+Output:
+• C_y = community partition of the network in year y
+• centrality for each organisation o
+for y = ymin to ymax do
+
+Ay ← WyT Wy Calculate adjacency matrix for one-mode network
+Gy ← network nodes and edges from Ay
+
+Calculate centrality measures of Gy and associate values to
+each organisation
+Community detection Cy ← a valid and stable partition of Gy //
+refer to Algorithm 4
+end for
+
+2.4 Centrality measures analysis
+The network structure can be evaluated using centrality
+measures—degree, strength, and coreness—to determine
+the importance and influence of nodes, each offering distinct
+insights.
+
+Figure 3. Schematic view of a project as two-mode network
+(left) and as one-mode network (right). Uppercase letters A, B,
+C, D, E represent organisations. The green square denoted with
+P represents a project. Edge width is proportional to the weight,
+i.e. the value each organisation brings to the project. The sum of
+weights in the two-mode network is equal to the sum of weights in
+the one-mode network.
+
+The degree
+trality mea
+to that nod
+of projects
+year. A hig
+locally cen
+number of
+of our res
+organisation
+projects, refl
+
+Strength of
+dent to tha
+neighbours
+between no
+vides a mo
+reference to
+example s(
+the moneta
+is involved d
+
+The k-core
+node’s pos
+based on it
+of k if it
+is a maxim
+degree k,
+to at least
+interpreted
+other organ
+collaborativ
+
+Centrality m
+and saved
+track chang
+ferent year
+collaboratio
+
+2.5 Comm
+Community
+helps to u
+network. A
+that satisfie
+densely con
+A partition
+whose union
+
+A commun
+that takes a
+and return
+algorithms
+rithm shou
+applied wit
+large, dens
+munity de
+such as com
+meet the
+within than
+
+O
+
+addressed with a thorough quality check on P. A less known
+issue is the Input-Ordering Bias: Although networks are
+mathematically non-ordered entities, their implementation in
+any software algorithm is inevitably ordered (in the form of
+a list of edges, or a matrix as A mentioned above). The order
+in which nodes and edges are stored in the practical implementation of the network can affect the results, as illustrated
+in 44.
+A more elusive issue is the variability of results. When A is
+based on a heuristic or randomized approach to identify the
+optimal partition, it may yield different results each time they
+are executed: Pi ≠ Pj. All these issues can be addressed through
+Algorithm 4, based on the repeated execution of A(G*, ρ),
+where G* is shuffled version of Gy to reduce the effect
+of input ordering bias) and to explore the solution space.
+Specifically, the solution space S = {P1, P2, . . . , Pns} is the
+set of all unique partitions that A produces across t trials.
+Our research aims to analyse S, and to determine the minimum number of trials tc required to confidently assert the
+completeness of S.
+After selecting the most suitable algorithm, the analysis may
+yield either a single, ideal solution or a dominant solution—one
+that is more frequently observed than others. In these cases,
+this solution can be identified and analysed. However, if
+no single solution emerges as dominant, a ”consensus community detection approach” can be applied to consolidate the
+variable results into a single, reliable solution. This process
+is illustrated in 4 and discussed thoroughly in 44.
+Algorithm 4. Consensus Community Detection
+
+// explore solution space
+for t = 1 to tmax do
+
+as illustrate
+solutions in
+for p) and
+alent soluti
+additional
+probability
+solutions. W
+ferent situa
+dominant so
+
+Probabilitie
+under a B
+this ensure
+computation
+
+2.6 Tempo
+As introduc
+into the u
+which can
+tion of com
+as a family
+corresponds
+communitie
+understand
+method inv
+Cj ∈ Gy+1
+Ci and Cj
+intersect, t
+further cla
+of its mem
+ensure acc
+global com
+continuing c
+
+G* ← random permutation of Gy
+
+Algorithm
+
+Pt ← A(G*, ρ)
+
+for y = y1 t
+
+if Pt is identical to another partition in S then
+Update frequency count in S
+
+else
+Append Pt to S
+
+end if
+end for
+
+for ci ∈
+
+for
+cj as contin
+
+end
+
+end f
+end for
+
+Generate
+
+// Identify a single solution according to solution space type
+if solution space type is single then
+return the unique partition
+else if solution space type is dominant or multiple then
+the most frequent partition
+else
+handle sparse or lack of valid community detection
+
+Knowledge about the solution space, along with the awareness that a single or dominant solution exists, emerges gradually
+as a result of an experiment of repeated trials A(G, ρ) → Pi,
+
+3 Results
+
+This sectio
+to a sub
+NAHV pro
+encompasse
+Europe, cov
+aims to in
+and their e
+onstrates h
+to provide
+market-orie
+
+O
+
+Figure 4. Confidence intervals associated with different solutions in the solu
+of the community detection algorithm progressively reveal the a range of solutions
+stable, while new solutions become rare beyond 50 trials—indicating convergence.
+
+The data has been prepared using the EuroSciVoc topic hydrogen energy, and the AI-generated categories are market vs
+technology, as explained in Section 2.2. The family of
+networks {G2015 . . . G2024} has a remarkable evolution over
+time. G2015 is composed of 83 organisations, and the number
+steadily increases to 648 by 2024. The number of collaborations, represented by the network’s edges, grew proportionally during this period, and the total value of projects,
+measured by the sum of weights in the network, saw an even
+more significant increase, rising from 547 to 6628. Looking
+ahead to the period from 2025 to 2029, the future of collaborations will be shaped by contracts currently in operation and influenced by upcoming calls and new projects. As
+shown in Figure 5, after 2024 the number of partners and
+collaborations decreases, while the total investment remains
+stable for the next two years.
+Between 2016 and 2024 there is an increase in the number of
+organisations from 83 to 648 and a proportional rise in collaborations as represented by weights, rising from 547 to 6628.
+Current data for projects continuing in years 2025 to 2029
+suggest further growth in the total value of projects.
+
+3.1 Leadership roles
+The methodology for AI-generated categories, discussed in
+2.2, is applied to the hydrogen projects dataset. This classification approach distinguishes between projects focused on
+market development — encompassing policy, market uptake,
+business models, and hydrogen valleys — and those centred
+on technological development. The NAHV project clearly
+falls into the former category. This classification enables the
+creation of two distinct families of networks, denoted as
+GyM and GyT . The total value of the projects in each group
+is shown in Figure 6, revealing an interesting trend: while
+investment in market-oriented projects has been consistently
+present since 2016, there is a notable increase in such
+
+investments
+of Horizon
+gen Partne
+market integ
+
+Figure 7 il
+categories
+hydrogen-re
+those enga
+projects.
+
+The figure
+and highlig
+The diagra
+ness in GyM
+resents the
+organisation
+with colou
+their progr
+while all N
+given NAH
+are involved
+
+Coreness v
+gests that
+ticipation i
+that, follow
+has not yet
+The analys
+ing ongoin
+this period.
+but rather a
+dates.
+
+Moreover, c
+degree-core
+
+O
+
+Figure 5. Evolution of the networks Gy from 2015 to 2029, represented by th
+number of collaborations (vertical axis) and total investment per year (bubb
+expanded. The apparent decline after 2025 reflects the fact that only projects alre
+Europe calls and new projects are not yet represented in the data, which explains th
+
+Figure 6. Comparison between technology-oriented and market-oriented pr
+M
+T
+groups are identified by the AI generated labels: Gy and Gy .
+
+by a bubble. Degree serves as a proxy for an organisation’s
+capacity to form partnerships with many other organisations,
+while coreness reflects its ability to partner with influential
+organisations. Although coreness is limited by degree, the size
+of the bubble represents the organisation’s strength, which
+serves as a proxy for its capacity to attract substantial funding
+and invest in large projects. An example is shown in Figure 11,
+which also includes an information about communities.
+
+As explaine
+the solution
+of solution
+The tested
+Label Prop
+Eigenvector
+The tests
+communitie
+
+3.2 Communities
+In the context of this paper, communities refer to relevant
+subgroups of organisations that exhibit strong collaborative
+ties. The focus is on analysing a single partition and its evolution over time. The analysis is conducted on the family of
+complete networks, Gy.
+
+The numbe
+algorithms
+the excepti
+simpler. Int
+tion. Howe
+that were n
+
+O
+
+Figure 7. Longitudinal coreness of NAHV partner organisations (2015–2029).
+over time, compared to the full yearly range (grey background). Trends reflect each o
+panel: market-oriented projects. Right panel: technology-oriented projects.
+
+Figure 8. Number of solutions |𝕊y| generated by different community detec
+of distinct partitions identified in a given year by one algorithm. Ranges and peaks
+behaviour across the study period.
+
+often below 0.5. EV produced multiple valid solutions in most
+years but failed to find a partition in 2024.
+A more in-depth observation of the solution space for 2024
+(the most critical year) reveals additional details, as shown in
+V
+Figure 9. LV generates a large set of solutions with | SL2024
+| = 69,
+which are also highly diverse, as evidenced by the similarity plot showing a bimodal distribution with peaks around
+0.6 and 0.9. Moreover, approximately one-third of the solutions are invalid due to containing one or more internally
+
+disconnecte
+the LV alg
+munities ca
+the partitio
+lem of disc
+tions for t
+communitie
+ing parame
+a commun
+community
+
+O
+
+Figure 9. Solution space diagrams for selected community detection algorit
+intervals for the solutions identified by each algorithm. In the case of LV and LP o
+distribution of community size for each solution. Proper communities are repre
+represented as blue diamonds. Right: pairwise similarity between solutions.
+
+O
+
+LP generates a different solution with each run; in this case,
+with t = 100, there are 96 valid and distinct solutions, while
+4 are invalid due to internally disconnected communities.
+Better results can be achieved with IM that produces |SIM| = 1
+in most years, and a dominant one solution in the most complex cases such as 2024. Overall, WT is the only algorithm
+that consistently provided valid results across all years, with
+valid partitions and |SWT| = 1, consequently, it will be used
+for community detection and temporal evolution analysis.
+The selected partition Py can be represented as a network in
+which nodes belonging to the same community are grouped and
+coloured to distinguish between communities. For example,
+the result for P2018 is shown in Figure 10. Some communities
+appear disconnected from the others; these consist of
+organisations that, in that year, participated in only one
+project and thus form a separate component.
+
+Each bubbl
+plane. Degr
+projects an
+ity to partn
+bubbles in
+that excel in
+
+Community
+ures to p
+network stru
+
+Figure 11
+each bubble
+mined by
+correspond
+tional to th
+the given y
+
+Figure 10. Network G2018, with communities detected using the WT algorithm
+project-based collaborations. Communities are grouped and colour-coded. The
+communities and the fragmentation of less-connected organisations.
+
+Figure 11. Centrality measures of all organisations in G2024. Each bubble repre
+(horizontal axis, number of collaborations) and coreness (vertical axis, influence w
+funding), and colour indicates community membership. The plot highlights how o
+projects, work with influential partners, and secure large funding.
+
+O
+
+is the upper limit for coreness, as no points appear above the
+line with a slope of 1. In practical terms, this indicates that an
+organisation that participates in many projects (high degree)
+is not necessarily the most influential in the network.
+Strength, which reflects the total weight of an organisation’s
+connections, remains independent of both degree and coreness,
+meaning that large bubbles can appear anywhere on the graph.
+This means that some organisations, despite having relatively
+few connections (low degree), are linked to relevant partners (high coreness) and stand out for their ability to secure
+significant EU research funding (high strength).
+
+3.3 Evolution of communities
+Temporal evolution was calculated as described in
+Section 2.6, using the WT algorithm to ensure the robustness
+of the results. In the diagram shown in Figure 12, the horizontal axis represents time, with each community depicted
+as a coloured rectangle. The height of each rectangle is proportional to the sum of the strengths of its members. For the
+purpose of clarity, only the six largest communities are represented. The analysis reveals a significant pattern: initially
+a large number of small communities is formed, and their
+configuration changes rapidly. This reflects the fact that in
+Horizon 2020 public funding was primarily allocated to
+technology-oriented research projects, and partnerships changed
+rapidly. However, with the onset of Horizon Europe, and
+specifically the Clean Hydrogen partnership, three large
+communities emerge, and are set to continue collaboration
+through 2029.
+The significant size of the largest communities reflects the
+increasing allocation of resources to Horizon Europe projects
+in the hydrogen sector. This growth is driven by the development of hydrogen valleys, which have fostered long-term, stable
+partnerships, contributing to both the stability of collaborations
+and the continued expansion of these communities.
+
+4 Discuss
+
+This paper
+lysing the
+with a case
+ing networ
+detection, w
+tions, moni
+tion of col
+Europe proj
+
+Specifically
+gen sector
+nities that
+characterize
+gradually s
+partnerships
+
+The method
+of centralit
+temporal ne
+visualizatio
+”Organizati
+explore an
+vation prog
+measures
+organization
+entire Hori
+categorized
+Natural Sc
+Health Sci
+Humanities
+
+One limitat
+the CORD
+initiatives,
+or local au
+
+Figure 12. Evolution of the largest communities from 2015 to 2029. For clari
+height reflects total strength of each community. The figure highlights an early phase
+stable partnerships during Horizon Europe. The 2025–2029 data reflects funded pr
+
+O
+
+other sources could provide a more comprehensive perspective,
+but such datasets are currently unavailable.
+
+5 Conclusions and future work
+
+The methodology presented in this paper can provide valuable insights for both policymakers and project coordinators.
+Policy makers, such as those supporting Hydrogen Valley
+projects across Friuli Venezia Giulia, Croatia, and Slovenia,
+can leverage this methodology to monitor the engagement of
+organizations in their respective territories. As the Hydrogen
+Valley projects launched in 2022–2023 come to an end and
+new Horizon calls for proposals become available, policy
+makers will be able to assess whether today’s leading organisations can form new partnerships and maintain their leadership positions. In addition, policy makers at European level
+can use the methodology to gain insights into the evolution
+of communities, to assess their openness to newcomers and
+the stability of collaboration between industrial and academic
+partners. From an alternative perspective, project coordinators within industrial or research organisations may use the
+methodology presented in this paper to identify potential
+partners who may be influential in facilitating future
+collaborations.
+Future work will focus on several key areas. We will continue
+to monitor the centrality measures of the NAHV partners
+over the course of the project and beyond. In addition, we will
+apply the methodology to further case studies on different
+topics, in particular pandemic preparedness and electron
+microscopy, both of which are topics of interest for Area
+Science Park and have been published in 56. Finally, future
+research will explore how the rich textual information from
+project deliverables available in CORDIS can be effectively
+leveraged to enhance network models.
+
+Ethics and consent
+
+Ethical approval and consent were not required.
+
+Data availability
+
+The underlying data for this research is available through
+data.europa.eu, the official portal for European data, under a
+CC0 license:
+Repository name: CORDIS - EU research projects under
+Horizon 2020 (2014–2020). DOI: https://doi.org/10.2906/1121
+17098108/1239. The repository contains the following underlying data: H2020 projects file, which includes participating
+organisations, legal basis information, topic information, project
+URLs and classification with the European Science Vocabulary
+(EuroSciVoc).
+Repository name: CORDIS - EU research projects under
+Horizon Europe (2021–2027). DOI: https://doi.org/10.2906
+/112117098108/2040 The repository contains the following
+
+underlying
+participating
+information
+Science Voc
+
+The data cr
+the terms
+tional licen
+Network D
+repository c
+
+• O.cs
+
+• P.csv
+
+• W.cs
+in a
+weig
+shar
+with
+
+• activ
+used
+orga
+
+• 2015
+set
+tion
+to 2
+(deg
+
+• form
+.csv
+
+• sam
+visu
+2029
+
+Software
+
+The softwa
+parts:
+
+communit
+Source cod
+nities
+
+Archived s
+13825471
+
+License: Cr
+4.0)
+
+horizon
+Source cod
+nities
+
+Archived s
+11276687
+
+License: C
+(CC-BY 4.0
+
+O
+
+References
+22.
+
+Frankows
+valleys: a
+348–359.
+Publishe
+
+23.
+
+Petrolles
+hydroge
+47(57): 24
+Publishe
+
+24.
+
+Concas G
+multiple
+Publishe
+
+25.
+
+Departm
+and ENG
+Septemb
+Referenc
+
+26.
+
+European
+Publishe
+
+27.
+
+Maruccia Y, Solazzo G, Del Vecchio P, et al.: Evidence from network analysis
+application to innovation systems and quintuple helix. Technol Forecast Soc
+Change. 2020; 161: 120306.
+Publisher Full Text
+
+European
+joint tec
+Referenc
+
+28.
+
+7.
+
+Muscio A, Ciffolilli A, Lopolito A: Technological diversity in collaborative
+projects: insights into European research policy. J Econ Policy Reform. 2022;
+25(3): 322–343.
+Publisher Full Text
+
+Komnino
+generic p
+9694.
+Publishe
+
+29.
+
+8.
+
+Cerqueti R, Iovanella A, Mattera R: Clustering networked funded European
+research activities through rank-size laws. Ann Oper Res. 2023; 342: 1–29.
+PubMed Abstract | Publisher Full Text | Free Full Text
+
+Chesbrou
+profiting
+2003.
+Referenc
+
+30.
+
+9.
+
+Enger SG: Closed clubs: network centrality and participation in Horizon
+2020. Sci Public Policy. 2018; 45(6): 884–896.
+Publisher Full Text
+
+10.
+
+Popescu-Apreutesei LE, Iosupescu MS, Fotache D, et al.: European Union
+machine learning research: a network analysis of collaboration in higher
+education (2020–2024). Electronics. 2025; 14(7): 1248.
+Publisher Full Text
+
+Carayann
+helix and
+each oth
+sustaina
+1(1): 41–6
+Publishe
+
+31.
+
+11.
+
+Protogerou A, Caloghirou Y, Siokas E: Research networking and technology
+fusion through EU-funded collaborative projects. Sci Public Policy. 2013;
+40(5): 576–590.
+Publisher Full Text
+
+Casaram
+helix inn
+internat
+Publishe
+
+32.
+
+Hegyi FB
+Ecosyste
+Publishe
+
+12.
+
+Genova VG, Giordano G, Ragozini G, et al.: An analytic strategy for data
+processing of multimode networks. Adv Data Anal Classif. 2024; 18:
+745–767.
+Publisher Full Text
+
+33.
+
+Pires SM,
+develope
+Plan Stud
+Publishe
+
+13.
+
+Kosztyán ZT, Király F, Katona AI: Analysis and prediction of the Horizon 2020
+R&D&I collaboration network. Expert Syst Appl. 2024; 255(Part B): 124417.
+Publisher Full Text
+
+34.
+
+14.
+
+Publications Office of the European Union: Euroscivoc - European science
+vocabulary. Accessed: 2024-09-24.
+Reference Source
+
+Agrawal
+innovati
+labs. J Ur
+Publishe
+
+35.
+
+15.
+
+Clean Hydrogen Partnership: Hydrogen valleys: insights into the emerging
+hydrogen economies around the world. 2021.
+Reference Source
+
+Soraci A:
+shipbuild
+Universit
+
+36.
+
+16.
+
+Bampaou M, Panopoulos KD: An overview of hydrogen valleys: current
+status, challenges and their role in increased renewable energy
+penetration. Renew Sustain Energy Rev. 2025; 207: 114923.
+Publisher Full Text
+
+Federal E
+innovati
+Referenc
+
+37.
+
+European
+Accessed
+Referenc
+
+17.
+
+Treaty on the functioning of the European Union. Official Journal of the
+European Union. 2012; C326. Consolidated version.
+Reference Source
+
+38.
+
+European
+Referenc
+
+39.
+
+18.
+
+Clean Hydrogen Partnership: HORIZON-JU-CLEANH2-2025 - Call for Proposals
+2025. April 2024; 2025-05-03.
+Reference Source
+
+EU Public
+(2014–20
+http://w
+
+40.
+
+19.
+
+European Commission: Towards a roadmap for accelerating the deployment
+of Hydrogen Valleys across Europe: challenges and opportunities.
+Commission Staff Working Document SWD(2024) 159 final, June 24, 2024;
+Accessed: 2025-05-03.
+Reference Source
+
+EU Public
+EUROPE
+http://w
+
+41.
+
+Batagelj
+network
+Publishe
+
+42.
+
+Diboune
+detectio
+Netw Ana
+Publishe
+
+43.
+
+Khawaja
+methods
+compreh
+Publishe
+
+44.
+
+Morea F,
+
+1.
+
+Malloci FM, Penadés LP, Boratto L, et al.: A text mining approach to extract
+and rank innovation insights from research projects. In: Web Information
+Systems Engineering -- WISE 2020. Springer International Publishing, Cham,
+2020; 143–154.
+Publisher Full Text
+
+2.
+
+Esztergár-Kiss D: Horizon 2020 project analysis by using topic modelling
+techniques in the field of transport. Trans Telecommun J. 2024; 25(3): 266–277.
+Publisher Full Text
+
+3.
+
+Barber MJ, Krueger A, Krueger T, et al.: Network of European Union-funded
+collaborative research and development projects. Phys Rev E Stat Nonlin Soft
+Matter Phys. 2006; 73(3 Pt 2): 036132.
+PubMed Abstract | Publisher Full Text
+
+4.
+
+Breschi S, Cusmano L: Unveiling the texture of a European Research Area:
+emergence of oligarchic networks under EU framework programmes. In:
+Knowledge flows in European industry, Routledge. 2006; 294–324.
+Reference Source
+
+5.
+
+Balland PA, Boschma R, Ravet J: Network dynamics in collaborative research
+in the EU, 2003–2017. Eur Plan Stud. 2019; 27(9): 1811–1837.
+Publisher Full Text
+
+6.
+
+20.
+
+Weichenhain U, Kaufmann M, Hölscher M, et al.: Going global: an update
+on hydrogen valleys and their role in the new hydrogen economy. Clean
+Hydrogen Partnership, 2021.
+Reference Source
+
+21.
+
+Majka A, Klimczyk M, Kucharski K, et al.: Hydrogen valley as a hub for
+technological cooperation between science, business, local government
+and NGOS: an overview of approaches in Europe. Torun Int Stud. 2023; 1(17):
+5–15.
+Publisher Full Text
+
+O
+
+45.
+46.
+47.
+
+48.
+49.
+
+50.
+
+in community detection through a consensus-based approach. 2024.
+Publisher Full Text
+Blondel VD, Guillaume JL, Lambiotte R, et al.: Fast unfolding of communities
+in large networks. J Stat Mech. 2008; 2008(10): P10008.
+Publisher Full Text
+Traag VA, Waltman L, Van Eck NJ: From Louvain to Leiden: guaranteeing wellconnected communities. Sci Rep. 2019; 9(1): 5233.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Raghavan UN, Albert R, Kumara S: Near linear time algorithm to detect
+community structures in large-scale networks. Phys Rev E Stat Nonlin Soft
+Matter Phys. 2007; 76(3 Pt 2): 036106.
+PubMed Abstract | Publisher Full Text
+Newman MEJ, Girvan M: Finding and evaluating community structure in
+networks. Phys Rev E Stat Nonlin Soft Matter Phys. 2004; 69(2 Pt 2): 026113.
+PubMed Abstract | Publisher Full Text
+Newman MEJ: Finding community structure in networks using the
+eigenvectors of matrices. Phys Rev E Stat Nonlin Soft Matter Phys. 2006;
+74(3 Pt 2): 036104.
+PubMed Abstract | Publisher Full Text
+Pons P, Latapy M: Computing communities in large networks using random
+walks. In: Computer and Information Sciences-ISCIS 2005: 20th International
+
+Symposiu
+284–293.
+Publishe
+51.
+
+Rosvall M
+commun
+104(18): 7
+PubMed
+
+52.
+
+R Core Te
+2022.
+Referenc
+
+53.
+
+Csardi G,
+in R. 202
+Referenc
+
+54.
+
+Morea F:
+
+55.
+
+European
+Referenc
+
+56.
+
+Morea F:
+Publishe
+
+57.
+
+Morea F:
+2024.
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 09 September 2025
+
+https://doi.org/10.21956/openreseurope.22476.r58795
+
+© 2025 Handoko C. This is an open access peer review report distribu
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Chanel Tri Handoko
+Sebelas Maret University, Surakarta, Indonesia
+
+The authors introduce a robust approach to network ana
+driven classification and community detection algorithms
+collaborations from 2015 to 2029. The North Adriatic Hyd
+study to highlight methodological advancements and pra
+against contemporary literature, emphasizing gaps and i
+collaborations. Methodological steps, including data acqu
+and coreness analysis, and consensus approaches for co
+Results underscore the increasing scale and stability of re
+hydrogen initiatives, with implications for policy and futu
+1. The introduction concisely positions the study within th
+innovation research, drawing from text mining and netw
+highlights prior limitations of network methods applied t
+recent surveys and application papers. To improve engag
+specific recent findings from the referenced text-mining
+detail, especially regarding methodological choices (e.g.,
+advances the field relative to alternative methods)
+2. The stepwise methodology is well-structured, including
+descriptions for each stage: data preparation, network co
+computation, community detection, and longitudinal trac
+(Louvain, Leiden, Label Propagation, Edge Betweenness,
+is justified, and the strengths/limitations of each are emp
+The technical discussion of how consensus and quality ch
+expanded, especially on algorithm selection and validatio
+implementation notes or reproducibility factors.
+3. The manuscript might briefly summarize the data clea
+before analysis, including potential issues with missing o
+4. The manuscript may benefit from including summary s
+centrality measures, and quantitative measures of algori
+comparison across algorithms
+
+Open Research Europe
+
+O
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Yes
+
+Are all the source data and materials underlying the r
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: renewable energy, public partner pa
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+
+Version 1
+Reviewer Report 07 January 2025
+
+https://doi.org/10.21956/openreseurope.20048.r48915
+
+© 2025 Olympios A. This is an open access peer review report distrib
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Andreas V Olympios
+University of Cyprus, Nicosia, Cyprus
+
+This paper develops a methodology to analyse collaborat
+Horizon 2020 and Horizon Europe, using the hydrogen e
+to thank the authors for their interesting work, and provi
+and areas for improvement:
+The introduction begins clearly but a more compre
+○
+
+Open Research Europe
+
+○
+
+○
+
+○
+
+○
+
+○
+
+○
+
+○
+
+O
+
+needed. It would be useful to include an in-depth a
+their limitations before discussing the novel contri
+While hydrogen is identified as a case study, the in
+specific topic, which creates a disconnect. If hydrog
+in the introduction should be broader, emphasisin
+the specific application.
+Algorithm 1 is presented in a mixed format, combi
+pseudocode. This could be improved by separating
+presenting the pseudocode independently for clar
+The data acquisition strategy appears logical and w
+
+Captions for all figures should be detailed enough
+Some captions, such as for Figure 3, lack sufficient
+Figure 3 requires further explanation, and the ima
+the text difficult to read.
+The font sizes used in figures are inconsistent. For
+Figures 4 and 5.
+Figure 4 timeline begins in 2015, but the caption st
+
+The downward trend from 2025–2029 in Figure 4 is
+in partners and collaborations but does not explain
+data (e.g., new projects not yet appearing), the figu
+clarified to avoid confusion.
+The classification of projects into market-oriented
+reveals interesting trends. However, the notable in
+2023 is not discussed in detail, leaving a gap in inte
+Figure 6 is interesting, but the small font size make
+read. It would be good to increase the size or restr
+For Figure 8, the paper mentions that one-third of
+literature, but the supporting references or discus
+Figures 9 and 10 lack legends and are challenging
+annotations that correspond to the organizations o
+informative.
+The professionalism of the paper could be improve
+design, font sizes, and formatting.
+Overall, the paper introduces a methodology that can pro
+hydrogen energy sector, but there are some areas for im
+literature review, presentation of figures, and depth of an
+○
+
+○
+
+○
+
+○
+
+○
+
+○
+
+Is the work clearly and accurately presented and doe
+Partly
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Yes
+
+Are all the source data and materials underlying the r
+
+Open Research Europe
+
+O
+
+Yes
+
+If applicable, is the statistical analysis and its interpre
+Yes
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: Energy systems, heat pumps, buildin
+power, optimisation.
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 09 Jun 2025
+
+Fabio Morea
+
+Thank you for your detailed review. Your feedback ha
+specific areas for improvement, and we have revised t
+updated version will be submitted shortly. Specifically
+provide a broader framing of the methodology and ad
+review on network analysis. Algorithm 1 has been refo
+improvements were made to the figures and captions
+Best regards,
+the Authors
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 26 December 2024
+
+https://doi.org/10.21956/openreseurope.20048.r48910
+
+© 2024 Zemīte L. This is an open access peer review report distribute
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Laila Zemīte
+Riga Technical University, Riga, Latvia
+
+The research article "Mapping leadership and communiti
+network analysis" by Fabio Morea, Alberto Soraci, and Do
+
+Open Research Europe
+
+O
+
+methodology for analysing collaborations and leadership
+using network analysis. The study focuses on the hydrog
+Adriatic Hydrogen Valley (NAHV) project, and utilizes data
+comprehensive information on Horizon 2020 and Horizon
+involves downloading and enriching data from CORDIS, s
+into weighted networks representing collaborations betw
+are used to assess the influence of individual organizatio
+algorithms identify stable collaborations. Temporal analy
+communities over time. The results demonstrate the eme
+communities within the hydrogen energy sector, highligh
+insights gained are valuable for policymakers and organi
+through sustained partnerships. The approach can be ex
+framework for understanding the impact of EU research
+dynamics. The article also discusses the concept of hydro
+ecosystems that produce, exchange, and consume hydro
+chain. The NAHV project, involving 37 partners from Croa
+Friuli Venezia Giulia, aims to develop a long-lasting hydro
+holistic approach. The study's findings reveal that Horizo
+to the formation of stable, long-term partnerships, partic
+The methodology presented can improve visualizations i
+valuable insights for both policymakers and project coord
+monitoring the centrality measures of NAHV partners an
+studies.
+
+The paper presents an excellent framework for analysing
+hydrogen sector. The paper employs advanced centrality
+algorithms to identify influential organizations and analy
+time. By focusing on the North Adriatic Hydrogen Valley (
+how EU-funded initiatives effectively foster collaboration
+government, while addressing critical sustainability chall
+collaborative dynamics and the entire hydrogen value ch
+detailed. It skillfully integrates technical approaches, such
+applications, including policy impact evaluation. The robu
+analysis of collaboration patterns further strengthen the
+
+The article's current title does not fully reflect its focus on
+emphasis on the hydrogen sector. A revised title, such as
+Communities in EU-funded Hydrogen Research Throu
+with the paper's subject matter and objectives. Additiona
+highlight the centrality of hydrogen research in the analy
+
+Section 1.1 limits its scope by primarily discussing the NA
+include a broader examination of existing, planned, and
+would significantly enhance the article's value. Incorpora
+Hydrogen Partnership’s database (e.g., https://h2v.eu/hy
+comprehensive overview of the hydrogen valleys landsca
+highlight regional variations, common challenges, and sy
+objectives and aligning with the EU's broader hydrogen s
+
+Open Research Europe
+
+O
+
+The study's reliance on the CORDIS dataset, while robust
+from other funding sources such as local Member State c
+or the Interregional Innovation Investment (I3) instrume
+methodology could be enhanced by integrating data from
+Including insights from diverse datasets would expand th
+more actionable recommendations for policymakers and
+spectrum of hydrogen-related projects within and beyon
+the methodologies and techniques for integrating differe
+funding sources.
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Yes
+
+Are all the source data and materials underlying the r
+Partly
+
+If applicable, is the statistical analysis and its interpre
+Partly
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: My areas of research focus on renew
+energy storage, smart energy systems, electricity grid sy
+regulation of electricity and gas transmission. My work a
+infrastructure, energy security, and sustainable energy d
+innovation in smart grids and energy market regulations
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Author Response 09 Jun 2025
+
+Fabio Morea
+Thank you for your constructive review.
+
+Your feedback helped us improve the structure and cl
+
+Open Research Europe
+
+O
+
+manuscript (to be submitted shortly) reflects your sug
+literature. Key changes include a revised title and abs
+contents of the paper) and an expanded introduction
+of hydrogen valleys. This has made the introduction s
+excessively so.
+Regarding additional funding sources (e.g. CEF, I3, na
+that this is an important direction. However, due to th
+accessibility of these datasets, we see this as a separa
+explore in a future study.
+Thank you again for your valuable contribution
+Best regards,
+the Authors
+
+Competing Interests: No competing interests were di
+
+

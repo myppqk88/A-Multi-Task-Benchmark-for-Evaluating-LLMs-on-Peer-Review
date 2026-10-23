@@ -1,0 +1,32 @@
+{
+  "question_id": "T3_D04_R1",
+  "gold_label": null,
+  "expert_annotations": null,
+  "status": "AI材料核查与候选评分要点，不是专家金标准",
+  "candidate_checks": [
+    "qualitative code与programming code不可混淆",
+    "轴心编码、饱和度范围与工具两类的非排他性",
+    "外部coding tree/interview guide链接未在本包核验"
+  ],
+  "AI_demonstrations": [],
+  "caution": "不能用平台通过状态赋标签；需要独立人标。",
+  "question_eligibility": "held_not_a_complete_T3_question",
+  "demonstration_scope": "仅局部教学例，不能给整篇标签，不能计完整T3题",
+  "restoration_checks": [
+    "后稿新增访谈提纲与coding tree现有实体：提纲覆盖工具目的、设计、资源、用户反馈及项目后续；编码树展示Purpose/Process/Praxis/Post-project legacy层级。核对后稿轴心编码叙述与树的对应，不能仅凭“已上传”认定分析推导充分。",
+    "原稿没有承诺这些后来新增附件，附件仅标记用于manuscript_after；不把后稿材料倒灌为原稿已有细节。图中不同层级框不能直接等同初始代码数，不能只数图框便认定46码声明错误。"
+  ],
+  "current_status": "当前会话6.1-sol参考要点，非专家金标准；未运行模型",
+  "supplement_evidence": [
+    {
+      "input_field": "materials.supplements.A01.text",
+      "exact_quote": "\n[Source attachment page 1]\nInterview guide – Toolkit study\nIntroduc*on\nInterviewers’ personal introduc*on\nGeneral study introduc*on\n-Development of tools for living labs and prac**oners engaging in FS\ntransforma*on\n-Eng",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    },
+    {
+      "input_field": "materials.supplements.A02.text",
+      "exact_quote": "\n[Source attachment page 1]\n",
+      "reason": "已附入的正式工具文本；需结合对应完整图像，不以附件存在自动赋可接受标签"
+    }
+  ]
+}

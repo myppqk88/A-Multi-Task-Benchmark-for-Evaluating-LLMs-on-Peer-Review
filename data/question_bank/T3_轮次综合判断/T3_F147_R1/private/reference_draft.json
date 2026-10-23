@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F147_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "组间混杂",
+    "测量与统计",
+    "伦理规范与效果区分"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "不同专业的完整班级构成实验和对照，核对后稿是否明确混杂、将结论收窄为探索性；显著组内提高不自动证明组间干预因果效应。",
+    "核对评分rubric、κ=0.84、效应量和多重调整的实际报告；补伦理框架引用不能代替设计识别或合规核验。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This mixed-methods action research examines the effectiveness of an “Active Learning–GenAI\nSynergy Framework” for EFL/ESL writing. Intact classes in Pakistan receive AI-mediated active\nlearning or traditional instruction for 15 weeks. Pre- and post-tests are analysed with nonparametric statistics, and eight interviews explore student experiences and ethical awareness. The\nauthors report larger wri",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n1. Reviewer Comment: The ethical and governance discussion does not engage with major,\ncurrent GenAI frameworks, particularly the EU AI Act, UNESCO guidance for generative AI in\neducation and research, and the Safe AI in Education Manifesto.\nResponse: This limitation is acknowledged, and Section 2.5 has been strengthened by\nincorporating discussion of the EU AI Act (2024), UNESCO's guidance on generative AI\nin education and research (2023), and ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "5.2 Active learning processes: Evidence and theoretical alignment\nMetacognitive awareness, reflected in comments like “I started to notice when I was depending too much on AI,”\nvalidates Bonwell and Eison’s (1991) assertion that active learning requires reflection. This distinguishes the study from\nprior AI writing research. Liu et al. (2021) also noted metacognitive improvements but lacked the systematic ethical\nframework used here. Structured prompts ensured AI use remained cognitively demanding, aligning with Prince’s (2004)\ndefinition of meaningful learning. AI tools enhanced rather than inhibited collaboration. Students reported increased peer\ninteraction through shared AI engagement and reflection tasks, extending Johnson and Johnson’s (2009) collaborative\nlearning theory into AI-mediated contexts. This contrasts with Anderson and Rainie’s (2023) concerns about AI reducing\ncollaboration, as the partnership model positioned AI as a facilitator rather than a replacement.\n5.3 Gender",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "and represent the issue that Davis (1989) discusses about uncritical acceptance. The protocol (See Appendix 7) served as a\nnon-compliance governance framework. The alignment of EU AI Act (transparency through disclosure), (European\nCommission, 2024), UNESCO principles (critical literacy) (UNESCO, 2023) and Safe AI standards (dependency\nprevention) the international frameworks were converted into the classroom practice. Mitigation Risk register mitigation\nin the case of dishonesty, dependency, bias can be seen as a demonstration of mitigation in a scalable way. Ethics\nawareness (M = 3.4/4.0) is high, and 91 per cent disclosure confirms effectiveness.\nAll these ethical, pedagogical, and practical aspects are important to inform larger theoretical synthesis of AI-mediated\nactive learning.\n5.6 Theoretical synthesis: Active learning–GenAI synergy framework\nFindings validate the Active Learning–GenAI Synergy Framework, showing AI can function as cognitive partners,\nmetacognitive mirrors, and",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Weekly Writing Performance Tracking: Six intermediate writing assessments provided a timeline on how students\nimproved over the course of the intervention as well as the periods when students were making significant improvements\ntowards the goal.\nQualitative data collection\nSemi-Structured Interviews: Eight students from the experimental group participated in in-depth interviews exploring\ntheir experiences with AI-mediated active learning, focusing on:\n• Perceptions of AI as cognitive partners\n• Experiences with ethical reflection processes\n• Changes in metacognitive awareness and autonomous learning behaviors\n• Challenges and benefits of AI collaboration within active learning frameworks\nMoreover, the researchers made notes of weekly discussions with the students as a reflection on the intervention.\n3.7 Ethical considerations and safeguards\nThe study maintained rigorous ethical standards aligned with both research ethics and AI integration ethics by seeking\napproval from the Bahauddin",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Ethical Awareness: Coded reflection quality (1 = descriptive to 4 = metacognitive), AI disclosure accuracy, interview\nanalysis. Progression: M = 1.8 (Week 1) to M = 3.4 (Week 15). No missing data. See complete rubric (Appendices-3).\nWeekly Writing Performance Tracking: Six intermediate writing assessments provided a timeline on how students\nimproved over the course of the intervention as well as the periods when students were making significant improvements\ntowards the goal.\nQualitative data collection\nSemi-Structured Interviews (See Appendix 4) were conducted through purposive sampling with eight participants,\nshowing differing performance levels (3 high, 3 medium, 2 low achievers), gender-balanced (4F, 4M). Individual 30-45\nmin interviews explored cognitive partnership, ethical reflection, metacognitive development, active learning, and\ntechnology acceptance. Audio-recorded, transcribed verbatim, accuracy-checked. See full protocol in the Appendices-4.\n3.7 Ethical considerations and ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

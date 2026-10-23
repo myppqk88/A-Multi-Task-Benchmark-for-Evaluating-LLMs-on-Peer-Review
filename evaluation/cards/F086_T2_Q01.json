@@ -1,0 +1,128 @@
+{
+  "task_id": "F086_T2_Q01",
+  "paper_id": "ORE:5-288",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F086_T2_Q01/input.json",
+  "input_sha256": "0edde00b40acf667af471bdcfe0a7960d448debfa5e70c3f332689692c8b98ff",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F086_T2_Q01/input.json",
+      "source_sha256": "0edde00b40acf667af471bdcfe0a7960d448debfa5e70c3f332689692c8b98ff",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Regarding Table 5: I recommend reconsidering the presentation of regression results based on a\nvery small sample (N=39). With such limited observations, the statistical power is questionable and\nresults may be unstable. As an alternative, you might consider adding an interaction term\nbetween 'crisis parties' and populism to the main analysis, which would allow you to test the\nconditional relationship while maintaining adequate sample size. If you retain the separate\nanalysis, please discuss the limitations explicitly and consider reporting measures of model fit and\ndiagnostics to assess reliability.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F086_T2_Q01/input.json",
+      "source_sha256": "0edde00b40acf667af471bdcfe0a7960d448debfa5e70c3f332689692c8b98ff",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Dear reviewer, \nThank you for your thoughtful review and helpful comments. They are greatly appreciated.\nWe have reviewed your points, alongside the feedback from the other reviewers. We are\ncurrently preparing the revised manuscript and will incorporate your input as we work\ntoward the final resubmission.\n[closing signature omitted]\n\n[Next author response post]\n\n\nDear reviewer, \nWe are pleased to submit the revised version of our manuscript, following the valuable\nfeedback provided by the reviewers.\nWe have comprehensively addressed all comments and suggestions. We have incorporated\nnumerous editorial and stylistic changes throughout the text to enhance clarity and\nanalytical rigor, as you recommended. Crucially, we have reorganized the literature review\naround thematic topics, as suggested. Furthermore, we have integrated our theoretical\nframework with the reformulated hypotheses (which have been decomposed for greater\nspecificity) to provide a stronger justification for our approach. We have also refined the\noperationalization of \"crisis parties\" and eliminated the Table 5. Finally, we have enhanced\nthe concluding section by more explicitly discussing our findings in relation to previous\nresearch and clearly delineating their contribution, ensuring the entire text adheres to a\nconsistently formal and appropriate academic tone.\nWe believe that these revisions have resulted in a significantly more robust and consistent\nversion of the manuscript. We [closing signature omitted]",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复最终声明删除Table 5，直接撤去N=39的争议回归展示；审稿人提供交互项与保留时诊断是替代路径，不是必须同时执行。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient最稳；sufficient可基于删除争议分析已满足撤除要求，但须不声称条件关系已检验。"
+    },
+    {
+      "id": "J2",
+      "judgment": "回复未明确该表对应推论是否同步撤回，未解释主分析能否回答条件关系；其他理论、文风修改不构成小样本可靠性证据。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient最稳；sufficient可基于删除争议分析已满足撤除要求，但须不声称条件关系已检验。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复最终声明删除Table 5，直接撤去N=39的争议回归展示；审稿人提供交互项与保留时诊断是替代路径，不是必须同时执行。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能要求删除表后仍必须提交同一小样本诊断，也不能把删除表认作完成交互检验。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复最终声明删除Table 5，直接撤去N=39的争议回归展示；审稿人提供交互项与保留时诊断是替代路径，不是必须同时执行。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能要求删除表后仍必须提交同一小样本诊断，也不能把删除表认作完成交互检验。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。回复未明确该表对应推论是否同步撤回，未解释主分析能否回答条件关系；其他理论、文风修改不构成小样本可靠性证据。",
+      "high_score_conditions": [
+        "区分停止报告不稳定分析与解决条件关系研究问题，处理推论是否保留的不确定性。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：回复未明确该表对应推论是否同步撤回，未解释主分析能否回答条件关系；其他理论、文风修改不构成小样本可靠性证据。"
+      ],
+      "boundary_2_3": "不能要求删除表后仍必须提交同一小样本诊断，也不能把删除表认作完成交互检验。",
+      "boundary_3_4": "区分停止报告不稳定分析与解决条件关系研究问题，处理推论是否保留的不确定性。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient最稳；sufficient可基于删除争议分析已满足撤除要求，但须不声称条件关系已检验。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分停止报告不稳定分析与解决条件关系研究问题，处理推论是否保留的不确定性。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：回复未明确该表对应推论是否同步撤回，未解释主分析能否回答条件关系；其他理论、文风修改不构成小样本可靠性证据。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分停止报告不稳定分析与解决条件关系研究问题，处理推论是否保留的不确定性。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient最稳；sufficient可基于删除争议分析已满足撤除要求，但须不声称条件关系已检验。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "不能要求删除表后仍必须提交同一小样本诊断，也不能把删除表认作完成交互检验。",
+    "3_to_4": "区分停止报告不稳定分析与解决条件关系研究问题，处理推论是否保留的不确定性。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

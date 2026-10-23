@@ -1,0 +1,80 @@
+{
+  "task_id": "F002_T2_Q02",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。",
+  "input": {
+    "comment_text": "2. The ethics of care is invoked as a guarantor of effectiveness against discrimination and\nconcentration of power, but it is not explicitly detailed as a pragmatic way to adapt AI ethics\nto concrete contexts.",
+    "response_text": "2. We are not sure what might have given the impression that we ‘invoke’ the ethics of\ncare as ‘a guarantor of effectiveness against discrimination and concentration of\npower’. The contribution of the ethics of care here is that it makes it possible to\napproach the ethics of AI differently from the currently dominating approach which is\ncharacterised by “principlism”. The ethics of care gives theoretical tools to challenge\nthis dominant approach and to develop a new approach (new approach that is then\n\n\n\n\ncomplemented by more practical recommendations). As indicated in the paper, we\nsee the ethics of care as having ‘developed resources to move beyond the principled\napproach to ethics’, and the ‘view from nowhere’ that characterizes this approach. We\nsee value in the ethics of care as it invites to ‘pay closer attention to relations of power\nand inequalities.’",
+    "necessary_context": "AI伦理、权力与社会不平等的规范性社会科学论证。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

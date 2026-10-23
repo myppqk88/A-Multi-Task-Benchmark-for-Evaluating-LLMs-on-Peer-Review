@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F043_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "分类与编码依据",
+    "检索来源",
+    "结果解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者同意调整“监管弱化”和“祖先传统”的分类，却不接受Google Scholar表述必须重写；不同子问题不能被整体礼貌答复掩盖。",
+    "核对经济/法律、政治/文化维度和表3—5的解释是否真正修改；引文频次不是概念分类客观性的自动证明。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article shows in an interesting way the different meanings of informality, and the little\nagreement that exists in the theory and its practical implications.\nOne of the observations is that in the Economic dimension the search chain: “weakening of control\nof regulatory bodies” would seem to deal with more legal aspects as they are control bodies.\nSimilarly, the search string 'promotion and con",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear Mr. Edisson Coba ([external resource identifier omitted]\nFirst of all, I wish to thank you for the thoroughness, kindness and courtesy you have shown\nin your review. I fully understand and value the work of a reviewer, which in many cases\nreceives no other reward than the professional satisfaction of carrying out a vital task and\nthe respect of fellow academics who, after months (or years) of work on a project, submit\ntheir papers for evalu",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The economic dimension is directly related to the living\nconditions of people engaged in informal activities and,\ntherefore, to informal economic processes. It must be made\nreasonably easy for all public-private actors to introduce more\nequitable and progressive aspects at the fiscal and legal level,\nand to articulate direct relationships between all types of companies and the immediate environment in which goods are\nproduced or services are managed. The situation must also be\nopen to regulation by understanding enterprises to be one more\nliving element of the community rather than immovable and\nsacrosanct institutions.\nThe legal dimension considers the development and establishment of legislative and regulatory measures, especially those\nthat have a bearing on the general interest. Among the most\nimportant are the processes of liberalization, with clear benefits\nfor the ruling classes, such as: deregulation of markets; collusion of supranational bodies; lack of competition; protection",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "observed and noted (Bulmer, 1979; Nosofsky, 1986); c) From\nthere, a theoretical framework was built for each dimension,\njustified by their treatment in the existing academic literature: in\nthis case, seven were required. The same systematization can be\nreplicated for other research, adapting the number of dimensions\nin relation to the existing literature that justifies them; d) Each\ndefinition of informality was analyzed at a conceptual level to\ndiscover whether it contained the preconfigured implications in each one of the dimensions; if so, they were included\nin Table 8 for subsequent counting and analysis. Initially, the\nMAXQDA ([external resource identifier omitted] program was to be\nused to carry out a semantic analysis, but eventually an iterative study carried out manually by the author was preferred\ndue to the interpretive complexity of each informality structure identified. This procedure resulted in a grouping of related\nconcepts through seven dimensions: economic (Eco), lega",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "political, social, and labor domains do not control the evolution\nof this economy, or do so only residually. In accordance with ILO\nRecommendation No. 204 on the transition from the informal to the formal economy2 (ILO, 2015), the creation and\nDifferent ILO instruments have been proposed, such as the Fundamental\nConventions on 1) Forced Labour, 1930 (No. 29), and 2014 Protocol, 2) The\nFreedom of Association and Protection of the Right to Organise, 1948 (No.\n87), 3) The Right to Organise and Collective Bargaining Convention (4) Equal\nRemuneration, 1951 (No. 100), 5) The Abolition of Forced Labour, 1957 (No.\n105), 6) Discrimination (Employment and Occupation), 1958 (No. 111), 7)\nMinimum Age, 1973 (No. 138), 8) Worst Forms of Child Labour, 1999 (No.\n182); and the Governance Conventions on 1) Labour Inspection, 1947 (No. 81),\n2) Employment Policy, 1964 (No. 122), 3) Labour Inspection (Agriculture),\n1969 (No. 129), 4) Tripartite Consultation (International Labour Standards),\n1976 (No. 144).",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "offset some of the inherent inequality, marginality and meagre social coverage provided by weak welfare systems. These\nprocesses contribute to greater political and social stability in\ndisadvantaged regions, which is borne out by the evidence that\nmany governments tacitly allow informality free rein despite\ntheir discourse that would seem to indicate the opposite. In\naccordance with ILO Recommendation No. 204 on the transition from the informal to the formal economy3 (ILO, 2015),\nthe creation and sustainability of decent enterprises and jobs\nshould be facilitated and promoted while the informalization of\njobs should be prevented wherever possible. There is undoubtedly a complex relationship between the state and the informal\neconomy, with a direct correlation between insufficient regulation or poor regulation and an increase in informality\nprocesses.\nThe associations mentioned above are the extremes of a\ncontinuum, from which it is inferred that the strongest connection is established ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

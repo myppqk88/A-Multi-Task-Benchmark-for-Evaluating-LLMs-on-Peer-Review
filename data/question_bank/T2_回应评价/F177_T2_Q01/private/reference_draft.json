@@ -1,0 +1,28 @@
+{
+  "task_id": "F177_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原Word回信的核对；AI候选参考，不是人类金标准",
+  "review_dimensions_AI_candidates": [
+    "测量透明度与效度"
+  ],
+  "dimension_status": "候选主题，未冻结为专家标签或权重",
+  "atomic_requirements_scope": "一个完整关切及其全部给定答复；多段联合答复时保留全部关联段落",
+  "ai_checks": [
+    "两个连续段落共同追问测量内容并要求英文问卷，作者用同一段作答，作为一个完整测量透明度关切封装。",
+    "答复称补英文量表并列举样题；不能据附件承诺验证自报工具的效度，也不能把信度等同效度。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The design is retrospective and depends on questionnaires for PTSD, growth, and virtues. Although such questionnaires can be reliable and informative, it is less clear that they are valid for what they purport to measure. Many PTSD researchers have doubts about what PTSD self-reports capture. In addition, for readers to understand what is measured by the virtues questionnaire, we would need a fuller description. The VIA has a very doubtful structure and content but less is known about the validity of the Chinese Virtues Questionnaire, so I would need to review copies of all the questionnaires in English before making a recommendation.\n\nI suspect that the findings and conclusions are justified, but as I mentioned I would prefer to see the questionnaires before making further comments. This is important work that should be continued. I just don't have confidence that I know what you have measured without seeing the questionnaires themselves. I cannot really make a specific recommendation yet without that.",
+      "role": "原始回信中的评议引文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "We included English version of used questionnaires as supplementary documents, which can help researchers clearly understand what they are measured. Furthermore, in the revision, we also add item samples for Chinese Virtues Questionnaire (Page 6, Line 15-16): Item samples include “I can accept love from others” (Relationship), “I like to think of new ways to do things” (Vitality), and “I control my emotions” (Conscientiousness).",
+      "role": "作者的完整对应文字回答"
+    }
+  ],
+  "revision_verification": "not_assessed"
+}

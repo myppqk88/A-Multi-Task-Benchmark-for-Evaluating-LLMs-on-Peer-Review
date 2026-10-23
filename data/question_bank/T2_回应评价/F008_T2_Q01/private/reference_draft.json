@@ -1,0 +1,27 @@
+{
+  "task_id": "F008_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "抽样与代表性",
+    "分析框架"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "回应以brief report范围解释文献深度与访谈人数，同时称补框架与文献；范围约束可合理，但不能代替说明取样及理论适用。完整访谈提纲与代码簇需作为原稿附件核验。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The paper focuses on the interplay between top-down and bottom-up processes within local\nenergy transition initiatives. It aims at gaining insights into the ways that a more balanced\napproach can be achieved, by taking into consideration the (mutual) interests, barriers and\nexpectations of the municipality and local citizen initiatives. Needs and expectation gaps in local\nprojects have been identi",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you very much for your insightful feedback and recommendations. We appreciate the\ntime and effort you put into reviewing our brief report and have addressed your comments\nas follows:\nWe have now introduced the framework in the introduction to provide clearer context\nand structure.\nWe would like to kindly clarify that the format of a brief report emphasizes the\ninclusion of only \"essential references.\" As such, we have adhered to this guideline,\nbut we understand the importance of the broa",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

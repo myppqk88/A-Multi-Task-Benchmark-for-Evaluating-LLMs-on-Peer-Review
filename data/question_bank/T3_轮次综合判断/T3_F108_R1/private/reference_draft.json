@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F108_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "综述目的与分类",
+    "偏倚与异质性",
+    "效果图解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对概览的必要性及教学策略分类如何形成；不能把综述概览直接当某一教学资源的效果试验。",
+    "作者建议修改平均效应图标题以避免策略间比较，须核对图3实际呈现和文字警示是否一致，异质均值不能排成可靠优劣榜。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This overview provides a timely and important examination of current evidence synthesis in the\nfield of critical thinking instruction. It points out issues such as the lack of consideration of adverse\neffects and the risks of bias assessment. However, several areas need to be addressed to enhance\nthe overall quality:\nIntroduction\n1. This section clearly defines key terms, such as critical thinking",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nIntroduction:\n1. This section clearly defines key terms, such as critical thinking and teaching strategies.\nHowever, the justification for providing an overview of systematic reviews (SR) needs further\nclarification. Although the authors suggest that the overview will inform the design of their\nintervention, Be Smart about Your Health, it would strengthen the argument if they justified\nthe necessity of the overview from both a methodological and",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nCritical thinking about health\nWe designed the Be Smart about your Health resources for secondary school teachers and their students (in the 8th or\n9th year of school, age 13-15) in Kenya, Rwanda, and Uganda.1 The aim of these resources is to help students cope with\nthe abundance of information and misinformation about how to care for their health. Critical thinking is important for\nmaking informed choices and it is a core competency in the curricula for all three countries.2–4 However, it is often not\ntaught in the classroom, partly due to a lack of carefully developed educational resources, and a lack of information about\neffective teaching strategies. The Be Smart about your Health resources were developed to help fill this gap. These\nresources focus on critical thinking about health actions – things that people do to care for their health or the health of\nothers. Critical thinking about health actions is especially important because:\n• Good health is essential for dail",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Why we have taken a broad focus in this overview\nAlthough our specific interest is in primary and secondary school students and critical thinking outcomes, we have not\nlimited this overview to that population or those outcome measures. There are four reasons for this. First, there are not\nmany reviews that focus specifically on critical thinking.28–39 To the extent that those reviews do consider the effects of\nspecific strategies, they tend to be broad categories and comparisons of strategies tend to be made indirectly (in metaregression analyses). For example, Abrami and colleagues explored differences in the effect of three types of instruction\n(dialogue; authentic or anchored instruction; and mentoring, coaching, or tutoring) across 341 comparisons with different\npopulations, outcome measures, and study designs.28 Thus, an overview that only included critical thinking as an\noutcome would be limited.\nSecond, although some learning outcomes may be of little relevance to learning to th",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Discussion\nHundreds of systematic reviews of teaching strategies have been produced over the past 20 years. They provide a valuable\nbasis for informing decisions about the use of these strategies. However, these reviews have some important limitations,\nincluding:\n• Inconsistent terminology and definitions\n• Unnecessary duplication of efforts\n• Failure to consider adverse effects\n• Inadequate assessments of the risk of bias\n• Inadequate assessments of the credibility of subgroup effects (effect moderators)\nWe developed and revised a framework for categorising teaching strategies that met our needs. It is uncertain whether that\nframework will prove useful to others. Some of the reviews included in our overview could be classified in more than one\nway. Nonetheless, we found the framework helpful for organising the reviews and the teaching strategies and making\nsense of what is known. It would be helpful for users of this research if researchers studying the effects of teaching\nstrategies ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Strategies for teaching critical thinking in primary and secondary schools\nAlthough we have included effect sizes in our summaries of strategies that we considered most relevant to teaching\ncritical thinking in primary and secondary schools, the average effect sizes summarised in Figure 3, as well as those\nreported in other overviews such as Hattie’s,64 are difficult to interpret for several reasons in addition to those noted\nabove, including:\n• Variable quality of the included meta-analyses\n• Variable quality of the studies included in the meta-analyses65\n• Variable outcome measures\n• Variation in what each strategy was compared to\n• Variable statistical methods\n• General challenges to interpreting effect sizes66\nFor these reasons, the reported effect sizes should not be used to compare the effectiveness of different teaching strategies\nand firm conclusions cannot be drawn about the magnitude of effects for most of the teaching strategies.\nNonetheless, the findings of the systematic r",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

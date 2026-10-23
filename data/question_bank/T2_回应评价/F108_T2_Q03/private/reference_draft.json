@@ -1,0 +1,28 @@
+{
+  "task_id": "F108_T2_Q03",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "效应异质性与图表解释"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "10. I agree with your justification that reported effect sizes should not be used to compare the\neffectiveness of teaching strategies due to their heterogeneity. This point could be made clearer in\nFigure 3, where average effect sizes from meta-analyses are presented. Could this be misleading if\nthe average effect sizes are shown here?",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "RESPONSE: Suggestion to change the Figure label to “Average effect sizes from metaanalyses included in summaries of the most relevant teaching strategies vary greatly”",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "只评改图题的回应充分性；后稿是否仍误导另核，不预设已解决。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

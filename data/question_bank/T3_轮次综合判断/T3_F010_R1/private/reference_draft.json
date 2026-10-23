@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F010_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "概念操作化",
+    "研究范围"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审要求解释新闻选择如何边缘化全球议题，并联系资源民族主义；答复只概括声称在国族化与结论两节处理。",
+    "核对后稿是否真正处理气候/生物多样性和全球议程，而不只把论题范围改述为国家身份再生产。短答复的充分性与真实修订是两个判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This is a well argued and objective analysis of the US, Greek, Dutch, and Israeli ministries of\nforeign affairs websites. It illustrates the way information is articulated, circulated and\ndisseminated through official channels and networks. The use of content analysis is possibly\nadequate to the aims and goals of the article as it stresses the choice of specific sets of news\nagainst other news. Th",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you very much for your review. Your points have been taken into consideration,\ndiscussed and addressed in 'the naitonalization of all spaces' and 'conclusions' sections.\n",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "national homelands. In these cases, the nationalization of the\nlost space is purely conceptual and imaginary, since there is no\nactual space to become nationalized. Examples of lost homelands may be found in the national narratives of the Armenians,\nthe Greeks, the Germans and the Serbs among others (Koulos,\n2016).\nAccordingly, the emergence of another type of ‘space’ could\nnot have gone unnoticed and not become interpreted along\nnational terms. Cyberspace describes a psycho-geographic\nenvironment, the abstract nature of which makes it difficult to define (Kitchin, 1998). The term ‘cyberspace’ was\nfirst introduced by William Gibson in his novel Neuromancer\nand is defined as a ‘consensual hallucination experienced daily\nby billions of legitimate operators, in every nation […] the\ngraphical representation of data abstracted from the banks of\nevery computer in the human system’ (Gibson, 1984). Michael\nBenedikt expands Gibson’s innovative concept by describing\ncyberspace as a new, parallel",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Cyberspace has allowed extraordinary prospects for nationalism,\nexactly because of its functionality. It has offered an alternative\nuniverse with infinite potential for the storage, preservation\nand reproduction of national identity symbols – like legends, folk songs, anthems, genealogies, art, pictures, contested\nversions of history, maps, alternative linguistic and orthographic\nforms, dialects, etc. – and has provided for the ultimate public\nsphere (Nelson, 1996). Its deterritorialized nature releases the\nimaginative powers of nation-building, which do not depend on\nthe physical proximity of the community’s members (Candan\n& Hunger, 2008). The Internet provides national communities with ‘mass-mediated imaginaries, that is, spaces of memory\n(lieux de memoir) physically tethered to real world geography,\nbut free of many – if not all – of its restrictions’ (Saunders,\n2011). It further supports the creation of a Habermasian transnational public sphere where marginalized groups can ‘produ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "\t\u0007‘Israel, land of the Bible and the historic homeland of\nthe Jewish people, is situated in the Middle East […]\nIn this land, the Jewish people began to develop its\ndistinctive religion and culture some 4,000 years\nago, and here it has preserved an unbroken physical presence, for centuries as a sovereign state, at\nother times under foreign domination’.55\nThis part follows the main Jewish national narrative on the\nJewish claim to the land, which is based on a hereditary\nright. This is interpreted mostly on the basis of theologically\ninspired claims that Jewish unity derives from the common\ndescent of Jews from Abraham (Tekiner, 1991). With the ‘unbroken physical presence’ of 4,000 years, the website – following\nthe Jewish nationalist ideology – attempts to establish the element of continuity of the Jews in time and space. Continuity\nin time and over space is something that all modern nationalisms inculcate in order to ‘prove’ and ‘verify’ the ownership of a particular territory by their",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The article further analyzed the websites of the ministries of\nforeign affairs of four countries – Greece, the Netherlands,\nthe USA and Israel – in order to examine how current state\nnational ideology infiltrates cyberspace through them. All sites\nreproduce intrinsic elements as well as symbolic constituent\ncomponents of their respective national identities online. The\nGreek website reflects the fixation of Greek nationalism with\nthe past, the troubled relationship with the Greek significant\n‘other’ – Turkey – and interprets the ‘national’ issues along\nGreek national lines. The Dutch website reproduces the antinational, corporatist, tolerant and pluralistic traits of Dutch\nnational identity, while the US website reflects the sense of\nmission and liberalism that have shaped American nationalism.\nFinally, the Israeli website echoes the Jewish national narrative regarding the claim to the land and propagates the\nJewish national positions with regards to the conflict with the\nPalestinians.",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

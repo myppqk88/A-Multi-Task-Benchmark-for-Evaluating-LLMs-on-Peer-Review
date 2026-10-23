@@ -1,0 +1,164 @@
+{
+  "task_id": "D19_T2_Q01",
+  "paper_id": "PeerJ:1050",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D19_T2_Q01/input.json",
+  "input_sha256": "b260f21876c763f663dd2fc02775026877bbebaf56b8abb4cef045b653513e14",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D19_T2_Q01/input.json",
+      "source_sha256": "b260f21876c763f663dd2fc02775026877bbebaf56b8abb4cef045b653513e14",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "There were various sweeping statements in the manuscript. For example line 63 which said that patient autonomy was \"never considered in prior times\". There were also unusual terms used such as in line 92 \"non-problem based learning\".",
+      "role": "当轮真人关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D19_T2_Q01/input.json",
+      "source_sha256": "b260f21876c763f663dd2fc02775026877bbebaf56b8abb4cef045b653513e14",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We have rephrased the above mentioned sentences. Line 63, now reads as “Patients in the modern era are becoming more and more autonomous, (Shankar & Piryani, 2009) an entity seldom considered in the past but modern medicine cannot advance without incorporating this essential ethical necessity. (Tor, 2001)”\nThe term non-problem based learning has been clarified in the revised manuscript and it now reads as, “The dominant form of teaching in the medical colleges across the country is conventional consisting of didactic lecture techniques, non-problem-based learning (PBL) teaching methods, long lectures, tutorials and practical tasks ([引文A]).” in line 92.",
+      "role": "对应作者答复",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "judgment": "收窄过去从不考虑患者自主的绝对断言，并澄清non-problem based learning术语。",
+      "evidence_ids": [
+        "E1"
+      ],
+      "importance": "high",
+      "importance_reason": "界定本题需回应的科学要求，不能把接受建议作为满足要求。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可认可已实质改写，但若判充分须解释PBL括号是指所否定的问题式学习而非新术语；不能只数改了两句就判充分。"
+      ]
+    },
+    {
+      "id": "P2",
+      "judgment": "回复提供两句替换全文：never改为seldom并加引文，教学术语置于传统讲授、长课、辅导和实践的语境。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "high",
+      "importance_reason": "决定文字层面的处理程度。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可认可已实质改写，但若判充分须解释PBL括号是指所否定的问题式学习而非新术语；不能只数改了两句就判充分。"
+      ]
+    },
+    {
+      "id": "P3",
+      "judgment": "seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "high",
+      "importance_reason": "控制结论强度，防止把声称修订当成可见科学证据。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可认可已实质改写，但若判充分须解释PBL括号是指所否定的问题式学习而非新术语；不能只数改了两句就判充分。"
+      ]
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "focus": "准确区分评审要求与回复中的实际陈述：回复提供两句替换全文：never改为seldom并加引文，教学术语置于传统讲授、长课、辅导和实践的语境。",
+      "high_score_conditions": [
+        "完整准确复述以下要求：收窄过去从不考虑患者自主的绝对断言，并澄清non-problem based learning术语。",
+        "引文与作者实际回应相符，承诺、报告数值和解释理由不相互替换。"
+      ],
+      "low_score_risks": [
+        "把作者未给出的步骤/结果写成已经给出；或漏读完整回复的对应内容。"
+      ],
+      "levels": {
+        "0": "无可评估的证据判断，或虚构题内关键文字。",
+        "1": "仅泛称作者接受或拒绝建议，未准确辨识本题实际答复。",
+        "2": "提取部分真实内容，但漏掉或误述影响判断的一项要求：收窄过去从不考虑患者自主的绝对断言，并澄清non-problem based learning术语。",
+        "3": "准确概括要求与回复，能识别：回复提供两句替换全文：never改为seldom并加引文，教学术语置于传统讲授、长课、辅导和实践的语境。",
+        "4": "重要要求与回复均有逐字可核证据支持，准确标明信息缺失所在；不把未引述的后稿内容当可见事实。"
+      },
+      "boundary_2_3": "由部分概括提升为准确覆盖：收窄过去从不考虑患者自主的绝对断言，并澄清non-problem based learning术语。",
+      "boundary_3_4": "全部影响结论的事实与引用一致，且没有把材料不可见夸为作者未做。",
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy"
+    },
+    "argument_validity": {
+      "focus": "判断回复如何满足或未满足科学要求：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+      "high_score_conditions": [
+        "把作者具体处理与关切的科学目的建立联系：回复提供两句替换全文：never改为seldom并加引文，教学术语置于传统讲授、长课、辅导和实践的语境。",
+        "指出真正影响处理程度的缺口：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。"
+      ],
+      "low_score_risks": [
+        "从已修改直接推出科学问题解决；仅凭篇幅、礼貌或是否听从评审论充分。"
+      ],
+      "levels": {
+        "0": "没有可评估的对应推理，或核心理由与题内材料相反。",
+        "1": "只匹配主题词，未解释作者内容与要求的关系。",
+        "2": "能解释一部分对应，但遗漏核心推理边界：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+        "3": "解释对应机制：回复提供两句替换全文：never改为seldom并加引文，教学术语置于传统讲授、长课、辅导和实践的语境。；识别相关限制：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+        "4": "完整处理本题重要要求及其理由，不机械采纳评审前提；不将题内不需要的额外核验设为充分的先决条件。"
+      },
+      "boundary_2_3": "须从主题覆盖转向说明：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+      "boundary_3_4": "核心推论均有理由，范围拒绝或前提纠正若存在须按其科学理由评价。",
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity"
+    },
+    "conclusion_appropriateness": {
+      "focus": "在T2文字任务中选择与上述证据和理由相称的充分性结论；候选为partially_sufficient",
+      "high_score_conditions": [
+        "结论承认已答部分，也保留与本关切直接相关的缺口。",
+        "revision_verification=not_assessed；没有后稿不自动降低文字充分性。"
+      ],
+      "low_score_risks": [
+        "宣称实际修改已核实；或因看不到后稿就全盘否定有内容的答复。"
+      ],
+      "levels": {
+        "0": "未给可评估结论，或决定性地把本题变成已核实实际修改/论文真伪的判断。",
+        "1": "有可评估判断但出现严重局部越界，如声称某处实际修改已经核实；或标签与核心理由明显相反。",
+        "2": "结论大致相关，但未区分文字是否充分与科学主张是否已证实。",
+        "3": "结论与本题已答和未答要素相称，并明确not_assessed。",
+        "4": "结论精确限于本题文字证据；对影响标签的具体缺口交代其权重，不把未验证后稿或需更多材料本身当作者答复失败。"
+      },
+      "boundary_2_3": "充分性判断不得越界为修订核验；须对应：seldom仍是广泛历史概括，题内未给引文内容；non-problem-based learning (PBL)的括号反而可能将PBL误贴给非PBL，术语问题未完全消除。",
+      "boundary_3_4": "标签与理由、未知的处理一致；同一任务定义下有理由的不同标签可同得4。",
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness"
+    }
+  },
+  "severe_error_checks": [
+    "不得用原稿、后稿或后来评审替本题作者补答。",
+    "不得把真人关切自动当作正确前提。",
+    "不得遗漏本题要求：收窄过去从不考虑患者自主的绝对断言，并澄清non-problem based learning术语。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整读取本题comment_text、response_text与necessary_context；逐项分析全部可见要求。"
+    ],
+    "not_read": [
+      "未读取或引用后稿、后轮报告作为本题充分性依据；未访问外部链接或复算数据。"
+    ],
+    "verification_limits": [
+      "证据为题内文字；不能确认任何实际修改、数据开放或图表正确性。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "candidate_adequacy_label": "partially_sufficient",
+  "revision_verification": "not_assessed",
+  "scoring_note": "AI整理的评分参照候选；五级锚点评价模型判断质量，不等于给论文或作者回复打0–4分。",
+  "source_unit": "T2_response_only"
+}

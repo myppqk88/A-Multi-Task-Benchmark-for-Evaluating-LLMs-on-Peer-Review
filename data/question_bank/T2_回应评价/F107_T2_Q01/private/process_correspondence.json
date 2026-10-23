@@ -1,0 +1,61 @@
+{
+  "task_id": "F107_T2_Q01",
+  "paper_id": "F1000:131992",
+  "parent_task": "T3_F107_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F107_R1/input.json",
+  "parent_input_sha256": "4e881145bbd380d241df1df20080976a37c6491f785ab7430917c584d7c4952d",
+  "review_dimension_AI_candidate": "替代解释与群体差异",
+  "selection_scope": "保留低收入解释女性感知差异的评审限制与作者引文承诺。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/131992_The_economic_effects_of_perceptions_of_the_Russia-Ukraine_war_in_Ecuad/v1_manuscript.pdf",
+      "original_sha256": "f89df214f7c240433e975409bbce2b39c1878f64d8cea0aa28908e8d891ad7b1",
+      "raw_text_file": "data/question_bank/T2_回应评价/F107_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        69596,
+        70043
+      ],
+      "report_id": "204347",
+      "date": "2023-10-10",
+      "raw_page_numbers": [
+        19
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/131992_The_economic_effects_of_perceptions_of_the_Russia-Ukraine_war_in_Ecuad/v1_manuscript.pdf",
+      "original_sha256": "f89df214f7c240433e975409bbce2b39c1878f64d8cea0aa28908e8d891ad7b1",
+      "raw_text_file": "data/question_bank/T2_回应评价/F107_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        71530,
+        71714
+      ],
+      "report_id": null,
+      "date": "2023-10-14",
+      "raw_page_numbers": [
+        20
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "gender income disparity",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 40486,
+    "end": 41029,
+    "exact_quote": " economic evolution, which is\nconsistent with the literature regarding inflation. Additionally, the gender income disparity, with females typically\nearning less than males, may lead females to express greater concern about issues like inflation and poverty. In contrast,\nmales are more well-acquainted with financial information (Walstad & Rebeck, 2002) and feel more optimistic about the\ntemporality of the war event.\nAlong the same lines, a more significant preoccupation with topics such as stock market crashes, corruption, and poverty\ncou",
+    "anchor_matches": 1,
+    "anchor": "gender income disparity"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增女性收入通常较低可能影响通胀/贫困担忧的解释；不是因果识别结果。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

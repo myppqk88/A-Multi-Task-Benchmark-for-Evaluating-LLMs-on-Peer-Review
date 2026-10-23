@@ -1,0 +1,28 @@
+{
+  "task_id": "F036_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "质性分析过程透明度"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "While the authors employ a qualitative comparative case study design, further detail regarding the\ndata collection and analysis would enhance the methodology section. For example, more in-depth\ndescriptions of data coding, the interview protocol, and any analytical software or techniques used\nwould strengthen the study’s rigor and replicability.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "The methodology section has been updated to reflect this comment, regarding\ndata coding, the interview protocol, and the analytical software used.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "只选资料编码、访谈协议和分析工具的程序透明度；比较案例情境与选择不混入该题。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

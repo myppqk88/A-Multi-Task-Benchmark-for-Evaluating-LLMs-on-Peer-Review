@@ -1,0 +1,128 @@
+{
+  "task_id": "F108_T2_Q03",
+  "paper_id": "F1000:158087",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F108_T2_Q03/input.json",
+  "input_sha256": "873a46f5734ee6b1df5ec2d53fa133f1f4420daf6b6ff0f000bb198d6fc698d0",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q03/input.json",
+      "source_sha256": "873a46f5734ee6b1df5ec2d53fa133f1f4420daf6b6ff0f000bb198d6fc698d0",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "10. I agree with your justification that reported effect sizes should not be used to compare the\neffectiveness of teaching strategies due to their heterogeneity. This point could be made clearer in\nFigure 3, where average effect sizes from meta-analyses are presented. Could this be misleading if\nthe average effect sizes are shown here?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q03/input.json",
+      "source_sha256": "873a46f5734ee6b1df5ec2d53fa133f1f4420daf6b6ff0f000bb198d6fc698d0",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "RESPONSE: Suggestion to change the Figure label to “Average effect sizes from metaanalyses included in summaries of the most relevant teaching strategies vary greatly”",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者提出把图题改成各教学策略平均效应量差异很大；这承接了图示误导问题。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient为主；不能仅凭改图题判核心误读风险消除。"
+    },
+    {
+      "id": "J2",
+      "judgment": "差异很大不等于不可跨策略比较；回复没明确写入异质性导致不可排名的警示，也未解释为何保留平均值呈现仍不误导。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient为主；不能仅凭改图题判核心误读风险消除。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者提出把图题改成各教学策略平均效应量差异很大；这承接了图示误导问题。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需要指出vary greatly与不可比较不等价。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者提出把图题改成各教学策略平均效应量差异很大；这承接了图示误导问题。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需要指出vary greatly与不可比较不等价。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。差异很大不等于不可跨策略比较；回复没明确写入异质性导致不可排名的警示，也未解释为何保留平均值呈现仍不误导。",
+      "high_score_conditions": [
+        "说明图题可降低误解但不足以证明消除比较暗示，且不声称实际看过Figure 3。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：差异很大不等于不可跨策略比较；回复没明确写入异质性导致不可排名的警示，也未解释为何保留平均值呈现仍不误导。"
+      ],
+      "boundary_2_3": "需要指出vary greatly与不可比较不等价。",
+      "boundary_3_4": "说明图题可降低误解但不足以证明消除比较暗示，且不声称实际看过Figure 3。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient为主；不能仅凭改图题判核心误读风险消除。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：说明图题可降低误解但不足以证明消除比较暗示，且不声称实际看过Figure 3。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：差异很大不等于不可跨策略比较；回复没明确写入异质性导致不可排名的警示，也未解释为何保留平均值呈现仍不误导。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：说明图题可降低误解但不足以证明消除比较暗示，且不声称实际看过Figure 3。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient为主；不能仅凭改图题判核心误读风险消除。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "需要指出vary greatly与不可比较不等价。",
+    "3_to_4": "说明图题可降低误解但不足以证明消除比较暗示，且不声称实际看过Figure 3。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

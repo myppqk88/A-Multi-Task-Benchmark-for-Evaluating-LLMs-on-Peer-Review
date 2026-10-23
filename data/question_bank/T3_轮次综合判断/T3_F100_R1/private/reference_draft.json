@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F100_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "方法贡献",
+    "算法可复核性",
+    "图表解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承诺扩展一般网络方法文献、重排算法1和图注；核对后稿是否清楚区分方法与氢能案例。",
+    "算法排版变整齐不等于输入、输出、参数和时间网络处理已透明，须按实际伪代码及文字验证。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This paper develops a methodology to analyse collaborations over time among participants in\nHorizon 2020 and Horizon Europe, using the hydrogen energy sector as a case study. I would like\nto thank the authors for their interesting work, and provide my comments regarding the strengths\nand areas for improvement:\nThe introduction begins clearly but a more comprehensive review of the literature is\nnee",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for your detailed review. Your feedback has been very helpful in identifying\nspecific areas for improvement, and we have revised the manuscript accordingly. The\n\n\n\n\nupdated version will be submitted shortly. Specifically, we expanded the introduction to\nprovide a broader framing of the methodology and added a more comprehensive literature\nreview on network analysis. Algorithm 1 has been reformatted for clarity, and several\nimprovements",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "1.2 Collaboration-driven innovation in Hydrogen Valleys\nHydrogen valleys are innovative ecosystems focused on\nhydrogen technology, leveraging regional and national initiatives to develop sustainable energy solutions. These ecosystems align well with the Quintuple Helix innovation model,\nwhich involves collaboration between five key actors: academia,\nindustry, government, civil society, and the environment.\nBy looking closer the hydrogen valley modus operandi, it is\npossible to observe that it is based on two main paradigms: the\nopen innovation model18, where the exchange of know-how\namong the several actors of the valley is stimulated and (b) the\nquintuple helix19 model that is a model in which innovation\nis pushed by the integration in the classical triple helix model\nof the needs expressed by the civil society and media and\nby a targeted effort to solve a specific challenges20. In the context of Hydrogen valleys, the primary challenge is typically\naddressing climate change by driving",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "and innovation patterns. While tabular analysis remains\na common method, more advanced approaches, such as\ntext mining, have increasingly been adopted: for example,\ntext-mining approaches have been used to analyze project\ndescriptions from CORDIS data in 1 and 2.\nThe application of network analysis tools to the innovation networks derived from collaboration to research project\nis not new and it has been used to study: topological properties of collaboration networks3; the relation between network\nstructure and the EU broad policy objectives4; innovative dynamics at country-level5,6; technological diversity7,8 proposed the\nuse of a rank-size approach for clustering complex networks\nderived from the collaboration in European project at organisational level. In the work by 9, CORDIS data were used to construct a network and identify evidence of “closed clubs” within\nHorizon 2020 projects—specifically, a correlation between\nnetwork centrality and an organisation’s success in securing\nfundi",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "with a case study focused on the hydrogen sector. By\nemploying network analysis, centrality measures, and community\ndetection, we demonstrated how to identify pivotal organizations, monitor their influence over time, and delineate the\nevolution of collaborations fostered by Horizon 2020 and\nHorizon Europe projects.\nSpecifically, the analysis shows that Horizon grants in hydrogen sector projects have prompted the emergence of communities that have significantly evolved over the years. Initially\ncharacterized by small, rapidly changing groups, these groups\ngradually shifted towards the formation of larger, more stable\npartnerships, particularly in the domain of hydrogen valleys.\nThe methodology presented in this paper, particularly the use\nof centrality measures, community detection algorithms and\ntemporal network analysis, offers opportunities to improve the\nvisualizations in the Horizon Dashboard43. For instance, the\n”Organization Profile” visualization, which allows users to\nexplore a",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "This paper presented a comprehensive methodology for analysing the long-term impact of EU-funded research projects,\nwith a case study focused on the hydrogen sector. By employing network analysis, centrality measures, and community\ndetection, we demonstrated how to identify pivotal organizations, monitor their influence over time, and delineate the evolution of collaborations fostered by Horizon 2020 and Horizon\nEurope projects.\nSpecifically, the analysis shows that Horizon grants in hydrogen sector projects have prompted the emergence of communities that have significantly evolved over the years. Initially\ncharacterized by small, rapidly changing groups, these groups\ngradually shifted towards the formation of larger, more stable\npartnerships, particularly in the domain of hydrogen valleys.\nThe methodology presented in this paper, particularly the use\nof centrality measures, community detection algorithms and\ntemporal network analysis, offers opportunities to improve the\nvisualizations",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

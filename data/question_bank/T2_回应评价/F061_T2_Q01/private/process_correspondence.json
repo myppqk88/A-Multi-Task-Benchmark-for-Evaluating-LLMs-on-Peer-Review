@@ -1,0 +1,61 @@
+{
+  "task_id": "F061_T2_Q01",
+  "paper_id": "ORE:1-136",
+  "parent_task": "T3_F061_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F061_R1/input.json",
+  "parent_input_sha256": "1b32972f42d86a0bae3bb3f1230953a4e8b16783abc67c15a8204fde4d029bc4",
+  "review_dimension_AI_candidate": "访谈对象与观点归属",
+  "selection_scope": "保留专家个人意见不等于机构官方观点的限定。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/1-136_Financing_conditions_of_renewable_energy_projects___results_from_an_EU/v1_manuscript.pdf",
+      "original_sha256": "32f0e6fac80dc541c7c7cea5a5c122f7364cb50694793f0f29dd1a8d1caa8229",
+      "raw_text_file": "data/question_bank/T2_回应评价/F061_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        35516,
+        35687
+      ],
+      "report_id": "29019",
+      "date": "2022-05-04",
+      "raw_page_numbers": [
+        10
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/1-136_Financing_conditions_of_renewable_energy_projects___results_from_an_EU/v1_manuscript.pdf",
+      "original_sha256": "32f0e6fac80dc541c7c7cea5a5c122f7364cb50694793f0f29dd1a8d1caa8229",
+      "raw_text_file": "data/question_bank/T2_回应评价/F061_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        38849,
+        39317
+      ],
+      "report_id": null,
+      "date": "2022-05-16",
+      "raw_page_numbers": [
+        11
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "personal expert assessments",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 19068,
+    "end": 19615,
+    "exact_quote": "rdless if they are a single estimate or a range estimate.\n4\n\nIn addition, the survey inputs are the personal expert assessments of the\ninterviewees and do not necessarily represent the official views of their\norganisations.\n3\n\nNevertheless, in case of interest to obtain more information than the dataset in the extended data (Brückmann et al., 2021) or a more detailed subset, the readers are advised to contact the main data collection coordinator\nMoïra Jimeno under the following e-mail address: [external resource identifier omitted].\n\n\nIn a t",
+    "anchor_matches": 1,
+    "anchor": "personal expert assessments"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增个人专家判断不必代表机构官方观点的脚注。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

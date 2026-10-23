@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F032_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "指标操作化",
+    "理论与时间范围"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审指出S3/创业发现不只技术多样化、时期划分需理由。完整答复包含早期致谢和后续详细逐点回答，不能只凭最先许诺修改判断整体；后稿还需核对术语与期间说明。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article “Identifying entrepreneurial discovery processes with weak and strong technology\nsignals: a text mining approach” is a relevant contribution to the literature on smart specialization.\nIt is centered in the textual analysis of patent abstracts from 2000 to 2009 provided by EPO and\nuses a mining approach to collect technology weak and strong signals, linking these signals to\ninvention ac",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n\n\n\nLevan Bzhalava\nDear reviewer, \nWe would like to thank you for the effort and expertise that you contributed towards\nreviewing the manuscript. We [closing signature omitted]\n\n[Next author response post]\n\n\nWe would like to thank the reviewer for constructive comments and suggestions, which helped us\nconsiderably to improve the manuscript. Below we provide responses to the reviewer's\ncomments:\nFirst, smart specialization is a process that is far",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "(Foray, 2015). EDP is an inclusive process and involves a\nwide range of local agents from business and academia to\ndiscover and produce information about new activities of future\nspecialization, whereas ‘the regional government assesses the\nactivities’ potential and empowers those actors most capable of\nrealizing that potential’ (Virkkala & Mariussen, 2018). Hence,\nentrepreneurs (in the broadest sense) explore new market\nopportunities and bring into existence novel ideas and technologies as well as reshape markets and value networks across\nindustries (Lindholm-Dahlstrand et al., 2019; Schumpeter, 1934).\nThis process is termed as “creative destruction” in the classic\ninnovation literature (Schumpeter, 1934). In “creative destruction” process entrepreneurial firms bring new technologies to\nthe market and out-compete established companies by cannibalizing their market profit (which based on existing technologies)\nand making the value of their accumulated knowledge obsolete.\nThis, in turn,",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "existence novel ideas and technologies as well as reshape markets and value networks across industries (Bzhalava et al.,\n2017; Bzhalava et al., 2022; Lindholm-Dahlstrand et al., 2019;\nSchumpeter, 1934). This process is termed as “creative\ndestruction” in the classic innovation literature (Schumpeter,\n1934). In “creative destruction” process entrepreneurial firms\nbring new technologies to the market and out-compete established\ncompanies by cannibalizing their market profit (which based\non existing technologies) and making the value of their\naccumulated knowledge obsolete. This, in turn, leads shifting\nprofit pools from incumbents to new firms, as well as rearranging\nindustry structures and replacing established businesses\n(Lindholm-Dahlstrand et al., 2019). Hence, by relying on EDP,\nEuropean S3 aims to implement structural economic changes\nacross regions through identifying new domains of future opportunities in which they can have competitive advantages and\nconcentrating resources on t",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "patent abstract. We sum topic probabilities of patent abstracts\nin each EU regions to study which European regions in which\nareas/topics contribute invention activities.\nThe top EU regions with the highest probability distributions\nof patent abstracts in the selected topics are present in Table 8.\nThese probability distributions indicate how the different EU\nregions contribute to each individual topic, demonstrating\nhow they are concentrating their invention activities on specific topics, reflecting R&D priorities. For example, the results\nshow that Paris has the highest regional topic weights in water\ntechnologies (Topic 0) and protein acid (Topic 3), whereas\nMünchen specialize in aircraft/vehicle power systems (Topic 6).\nMoreover, Hauts-de-Seine is strongly presented in the following invention activities such as cell domain/embodiment\n(Topic 1), image display (Topic 2), data systems (Topic 4) and\nsensor-based intelligence systems (Topic 5). By employing\ninterdisciplinary elements of ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F117_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "分析方法透明度",
+    "结论证据",
+    "方法变更合理性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对作者新增应急准备/演练文献和方法解释是否落在后稿，回复中复制整份评审不等于提供独立新增证据。",
+    "评审要求定量支持，须判断这对既定定性内容分析是否必要，不能默认所有定性研究都需追加定量分析才能接受。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The paper concerns the issue of crowd crushes. The specific event of Itaewon Halloween crowd\ncrush, in Korea is focused.\nThe issue is very relevant and the paper is interesting.\nThe current version presents some lacks in terms of literature review and methodology.\nIn relation to the literature review, I suggest the author to consider the proposed emergency\nplanning framework and in particular the ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nCorrado Rindone\nUniversita degli Studi Mediterranea di Reggio Calabria, Reggio Calabria, Calabria, Italy\nThe paper concerns the issue of crowd crushes. The specific event of Itaewon Halloween\ncrowd crush, in Korea is focused.\nThe issue is very relevant and the paper is interesting.\nResponse: Thank you very much for your general comments.\nThe current version presents some lacks in terms of literature review and methodology.\nResponse: O.K. This wa",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nThe Itaewon crowd crush occurred in South Korea (hereinafter KR) during the Halloween festivities on October 29, 2022.\nItaewon is located in the Yongsan-gu district of Seoul. It is known as a foreigner-friendly area owing to its trendy\nrestaurants, nightclubs, and nightlife. On October 29, 2022, many young adults gathered in a downhill alley measuring\n40 meters long and 4 meters wide, to celebrate Halloween. As the alley filled with people, they could not move and thus\nhad no choice but to stand shoulder-to-shoulder, slowly suffocating. This resulted in the death of 158 people (i.e., 132\nKoreans and 26 foreigners), with 196 others injured (Lee et al., 2022).\nThe vast majority of Koreans expressed their sadness at the national tragedy, but a few stakeholders attempted to take\ninappropriate actions. For example, some policymakers refused to use the term “Itaewon crowd crush” and instead called\nit the 10.29 disaster (Kim, 2022). In a sense, they refused to claim responsibilit",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "communities. The key finding is that all stakeholders must try to supplement emergency planning for ordinary events with\ncontingency planning for special events. Further, they must address not only inclusion but also cooperation, timeefficiency, advanced technologies, public awareness, political rationality, education and training, and others.\nLiterature review\nThe subject of crowd crush and related management has been researched extensively in the international community\n(Almutairi et al., 2022: 1-13). Various research areas have examined the issue, such as disaster management, safety\nscience, medical science, transportation, tourism, physics, computer science, economics, laws, police science, geography, and others, each sharing their perspective on the matter and providing tailored management alternatives. For\ninstance, Tracy H. Pearl studied the legal aspects of crowd crush in the United States (Pearl, 2015: 1-45). According to\nPearl, although crowd crushes have occurred across a va",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Once contingency plans are developed for special events in local communities, those should be regularly tested and\nupdated (UN, 2008: 19-22). In general, local communities need to review developed contingency plans once a year.\nHowever, since the emergency environment has rapidly changed in the 21st century regardless of national boundaries,\nstakeholders must gather together, evaluate contingency plans, and flexibly revise them as required. In addition, the\nupdated contingency plans must be consistently and widely distributed to local residents via public communication\nchannels. Further, the implementation of these plans must be kept very simple and realistic to avoid any delay in action\n(Choularton, 2007: 25-30). To this end, the contents of contingency planning for special events should not be overly\ndetailed but just appropriately detailed.\nThe level of public awareness of special events (or safety-first mindset) must be improved. The Itaewon tragedy happened\ndespite KR having a his",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "space because of unlawful construction around those businesses to include multiple buildings. For instance, the Hamilton\nHotel had illegally extended its building toward the alley. Some other small businesses, such as cuisine restaurants,\ndancing clubs, drinking bars, and shops renovated or extended their buildings, without following the Korean building\ncode. These illegal activities partially but surely contributed to the bottleneck phenomenon in Itaewon.\nVoluntary organizations\nJust during or after the occurrence of the Itaewon crowd crush, quite a few spontaneous volunteers played an important\nrole in responding to it (Park, 2022). Spontaneous volunteers were not pre-registered volunteers but were those who\nresponded to urgent and temporary needs without being paid. Without their voluntary activities such as cardiopulmonary\nresuscitation (CPR), the casualty number would have been bigger. They also attempted to translate what foreign visitors\nasked for while cleaning up debris from t",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

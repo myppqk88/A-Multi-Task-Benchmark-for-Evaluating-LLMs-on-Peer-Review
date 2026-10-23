@@ -1,0 +1,2289 @@
+Open Research Europe
+
+O
+
+RESEARCH ARTICLE
+
+Automated news in practice: a cross-n
+[version 1; peer review: 2 approved with reservations]
+
+Samuel Danzon-Chambaud
+
+School of Communications (PhD graduate), Dublin City University, Dublin, Irelan
+
+v1 First published: 14 Jun 2023, 3:95
+
+https://doi.org/10.12688/openreseurope.16040.1
+Second version: 06 Sep 2023, 3:95
+https://doi.org/10.12688/openreseurope.16040.2
+Latest published: 01 Nov 2023, 3:95
+https://doi.org/10.12688/openreseurope.16040.3
+
+Abstract
+Background: This article provides a comprehensive picture of
+automated news’ usage—understood here as the auto-generation of
+journalistic text through software and algorithms, with no human
+intervention in-between except for the initial programming at 18 news
+organisations in Europe, North America and Australia, following a
+strategic sample inspired by Hallin and Mancini’s (2004) media system
+typology.
+Methods: To describe the many ways it is implemented, I rely on
+Actor-network theory (ANT) so as to distinguish situations where
+something more is added to automated news systems from those
+where initial intent is kept and where the software does what it is
+supposed to do. Semi-structured interviews with editorial staff,
+executives and technologists were conducted remotely and elements
+of a netnography were also carried out.
+Results: Overall, my findings show that the main transformations—or
+translations—of automated news systems deal with alternate data
+sources (e.g., news organisations’ internal feeds, crowdsourced
+material), new affordances that are specifically built for journalists
+(e.g., in-house self-editing tools, notification streams) and output
+other than text (e.g., automated audio summaries for voice
+assistants).
+Conclusions: Although these changes lead to greater journalistic
+professionalisation, they could also make news organisations become
+too dependent on Big Tech companies for data acquisition and
+dissemination of automated news products, thus making platforms
+gain the upper hand in future developments of these systems.
+Keywords
+automated news, automated journalism, algorithmic journalism,
+computational journalism, news production, actor-network theory
+
+Open Research Europe
+
+O
+
+This article is included in the Sociology
+gateway.
+
+This article is included in the Marie-SklodowskaCurie Actions (MSCA) gateway.
+
+This article is included in the Horizon 2020
+gateway.
+
+This article is included in the Artificial
+Intelligence and the Social Sciences and
+Humanities collection.
+
+Corresponding author: Samuel Danzon-Chambaud (samuel.danzonchambaud2@m
+
+Author roles: Danzon-Chambaud S: Conceptualization, Formal Analysis, Investigat
+Preparation
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the European Union’s H
+under the Marie Skłodowska-Curie grant agreement No 765140.
+
+Copyright: © 2023 Danzon-Chambaud S. This is an open access article distributed u
+License, which permits unrestricted use, distribution, and reproduction in any med
+
+How to cite this article: Danzon-Chambaud S. Automated news in practice: a cro
+review: 2 approved with reservations] Open Research Europe 2023, 3:95 https://d
+
+First published: 14 Jun 2023, 3:95 https://doi.org/10.12688/openreseurope.16040.1
+
+O
+
+Introduction
+
+In recent years much attention has been given to automated news, a computer process generally understood as the
+auto-generation of journalistic text through software and algorithms, with no human intervention in-between except for the
+initial programming (Carlson, 2015; Graefe, 2016). Automated
+news—which is also sometimes referred to as “automated
+journalism”, “algorithmic journalism” or “robot journalism”—
+relies on a basic utilisation of Natural Language Generation
+(i.e., NLG), a computer technique that has been used for several decades to generate text in areas like sports, finances and
+weather forecasting (Dörr, 2016). In the case of automated
+news, NLG algorithms are used to fetch information on external or internal datasets, this in order to fill in the blanks left
+on pre-written text. This resembles a bit the game “Mad
+Libs” (Diakopoulos, 2019), as programmers or editorial
+staff need to come up with templates that, on the one hand,
+include enough elements that can be predicted in advance and,
+on the other hand, can be connected to a big enough data flow.
+Because of these limitations, only a small range of stories can
+be automated this way, for instance election results, financial news or sports summaries. Although there is little machine
+learning involved at the moment, this is becoming a growing
+area of interest: some machine learning applications of NLG
+production are already being advertised on the websites of companies that specialise in delivering automated content to business, media, and governmental organisations alike (Narrativa,
+no date 1); the European Union-funded project EMBEDDIA
+is looking at including elements of machine learning in automated news generated using pre-written templates to make
+it less formulaic and nicer to read (see Leppänen, 2023;
+Rämö & Leppänen, 2021); and the Czech news agency
+ČTK has been experimenting with machine learning techniques to generate automated news templates, with the
+help of a research team at the University of West Bohemia
+(Stefanikova, 2019).
+Automated news started to be more discussed in the 2010s as
+The Los Angeles Times began covering homicides in an automated fashion (Young & Hermida, 2015) and launched a
+tool to generate earthquake alerts (Schwencke, 2014), while The
+Associated Press partnered with the firm Automated Insights
+to automate corporate earnings stories (Colford, 2014). Proponents of automated news typically develop their technology in-house, outsource it to an external content provider or use
+third-party solutions that let journalists design their own automated stories. For instance, the Washington Post developed
+an in-house tool to produce short automated pieces during the
+2016 Rio Olympics (WashPost PR Blog, 2016a); Le Monde
+collaborated with the firm Syllabs to automatically cover the
+results of the 2015 regional elections in France (Rédaction
+du Monde.fr, 2015); and the BBC subscribed to an online platform, Arria NLG Studio, that lets journalists template out
+their own automated stories using a type of No-code language
+that makes it accessible to editorial staff with little computing experience (Molumby & Whitwell, 2019). As for its types
+of usage, automated news can be used to publish simultaneously
+
+at scale, as
+eration of a
+come of a
+first drafts
+seems to b
+(Willens, 20
+
+In this artic
+2023)1, I w
+automated
+for this. To
+news organ
+concepts to
+added to a
+direction th
+from those
+it is suppo
+18 organisa
+tive of thr
+newspapers
+inspired by
+ogy as I
+ranean, No
+COVID-19
+interviews
+2020 and
+up until 20
+rate. Eleme
+screenshots
+to these rese
+
+An ANT th
+Before star
+concepts us
+which ess
+perspective,
+nificant act
+2019; Craw
+elements th
+dane object
+environmen
+speaks to th
+as thinking
+cut out fro
+that stretch
+which actio
+p. 384). To
+phor about
+my comput
+my telepho
+ering lectu
+quite other
+ANT is th
+
+1: Except for
+thesis.
+
+O
+
+(Plesner, 2009); in the case of journalism, it helps account
+for all the “tools of the trade” (e.g., web searches, databases,
+smartphones) that make it as it is today, and can be used to
+document journalistic innovation, including automated news
+(Primo, 2019, p. 2).
+Another marker of ANT is the concept of translation: not to
+be confused with language translation, ANT’s translations
+rather speak to a phenomenon whereby heterogeneous entities
+(Law, 1984) or actants come together to form an actornetwork, thus potentially disengaging themselves from other
+structures they belong to2. In his study depicting how a scallop species (Pecten Maximus), local fishermen, the scientific
+community and a team of biologists engaged into forming an
+actor-network whose goal is to replenish scallops beds in the
+Saint-Brieuc bay, in France, Callon (1984) described how
+each of these entities translated their interests so that they
+pass through an obligatory point of passage—a common
+objective—which makes the network hold; in this case, it is
+the biologists’ novel research programme, who then become
+spokespersons for the group. As Callon (ibid., p. 224) put
+it: “Translation is the mechanism by which the social and
+natural worlds progressively take form. The result is a situation in which certain entities control others.” That being said,
+for the actor-network to be able to last in time, successful
+enrolment, or (ibid., p. 211) “the device by which a set of
+interrelated roles is defined and attributed to actors who
+accept them”, needs to be sustained, making it a structure
+where relational power is always up for negotiations
+(Michael, 2017a). If robust enough, though, it may give rise
+to a macro actor that is able to restructure society as whole
+(Cooren, 2009; Czarniawska, 2016).
+In ANT, the process through which entities undergo translations and become stabilised enough to form an actor-network
+comes under terms like simplification, black-boxing or
+punctualisation (Crawford, 2005; Michael, 2017a). Once
+firmly established, they become set structures passing on the
+same type of predictable output based on any given input, and
+are also able to act at distance (Law, 1984). In ANT, stabilised
+actor-networks like these are known as immutable mobiles or
+inscriptions when they concern textual or graphical material
+(Crawford, 2005; Hassard & Alcadipani, 2010; Latour, 2005;
+Michael, 2017b; Nikolova, 2008). Latour (2005), on his
+end, makes a distinction between two modes of acting: first,
+as intermediaries, where meaning is maintained and where
+outputs can be predicted by inputs; second, as mediators,
+where meaning is changed and where inputs are never a good
+predicator of outputs. Drawing on Callon (1990) and Latour
+(1992), Sayes (2014, p. 138) specifies that “an intermediary is a placeholder in the sense in which it merely does what
+anything else in its position would do”, whereas “a mediator
+
+is somethin
+ments, it is
+tion or an
+the followin
+
+	A
+a
+ba
+ch
+at
+a
+m
+in
+pr
+st
+
+(L
+
+Latour (200
+translations
+associations
+ing these c
+(Primo, 201
+
+	To
+ra
+th
+In
+fo
+be
+ne
+as
+m
+
+(L
+
+Even thoug
+to study au
+atic literatu
+(Danzon-Ch
+oriented sc
+2020. Alth
+other publi
+have very
+while repre
+investigated
+(see Ryfe,
+arching soc
+(see Benso
+be used to
+tions that
+
+3: For instan
+
+2: The use of the term translation in ANT can be better understood when
+looking at its Latin roots: here, translation rather refers to trans-latio,
+which makes reference to a change in location (Czarniawska, 2016).
+
+the idea of s
+ing that med
+from the mac
+and auto-pub
+student work
+(2018) on the
+
+O
+
+mediators—point out to the overall direction that the “actornetwork of automated journalism” is taking. My research
+questions (RQ) therefore go as follows:
+RQ1. Using ANT’s lenses, what is the overall direction that
+automated news systems seem to be taking?
+RQ2. What are the implications of these developments for
+journalistic professionalisation?
+
+Methods
+
+To answer these questions, I will follow a multiple case study
+design spanning across groups of countries, so as to have a
+diverse range of news organisations included in this research.
+According to Yin (1994), the rationale for case selection in
+multiple case studies is linked to the development of a rich
+theoretical framework, so that findings can be generalised
+to new cases. To reflect this, I have chosen a sampling strategy
+inspired by Hallin and Mancini’s (2004) media system typology so as to be able to ground this case study on their theoretical understanding of differentiation and de-differentiation4
+in Western news media. Hallin and Mancini—which has often
+been used as a guiding framework to draw strategic samples of news organisations that spread across groups countries
+(see Cornia et al., 2019; Cornia et al., 2020; Menke et al.,
+2018; Sehl et al., 2019; Sehl & Cornia, 2021; Sehl et al., 2021;
+Van den Bulck & Moe, 2018)—distinguish three types of
+media systems, based on their analysis of a set of dimensions
+that range from the structure of media markets to professionalisation and the role of State. These are: the “Mediterranean”
+or “Polarised Pluralist Model”, which includes countries
+such as France, Spain and Italy and is characterised, among
+others, by a low level of journalistic professionalisation—not
+dissimilar to political activism—and by strong connections
+with the State given delayed liberalisation in these countries (even if commercial influences have progressively
+grown in importance); the “North/Central European” or “Democratic Corporatist Model”, which concerns countries like
+the Nordics, Germany and Switzerland and where the media
+are considered social institutions that need to be protected by
+the State due to the pluralistic and consensus-based nature
+of these democracies, but still have a high degree of commercialisation and journalistic professionalisation; and the “North
+Atlantic’’ or “Liberal Model”, which extends to countries like
+Canada, the United States and the United Kingdom, where
+commercialisation and journalistic professionalisation are
+relatively high and the role of the State moderated, even if sometimes commercial influences can circumscribe journalistic
+independence.
+Following the logic of differentiation, Hallin and Mancini
+argued that the North Atlantic model of journalism sits the
+furthest away from social and political structures while the
+
+Mediterrane
+and politics
+overlap. Fi
+situated so
+observed th
+forces seem
+European
+ences to
+values foun
+these medi
+in national
+similar. Th
+though Hal
+and politic
+their existin
+towards a
+to be disc
+tion in the
+(Nechushtai
+
+As for cho
+agencies, n
+lowing rea
+agencies is
+2017); seco
+likely to en
+model that
+them to be
+mercial bro
+revenues an
+third, publi
+viding “th
+(see Borge
+as data jou
+lic service
+and as pu
+own in-hou
+can let us
+use in data
+automated n
+
+For this ca
+select 18
+a different
+(see Table
+interviews
+gists were
+April 2021
+ing place u
+rent and ac
+from my u
+interviewee
+to thanks t
+Interviewee
+gatekeeper’s
+
+4: Differentiation is a sociological concept that assimilates modernity
+with “dividing society into stratified subsystems with specific specializations” (West, 2021). By contrast, de-differentiation is a process that runs
+counter to it, as it implies that these specialised structures return to a more
+homogeneous form (ibid.).
+
+5: These “ga
+
+and advertisin
+
+O
+
+Table 1. News organisations studied based on media systems and m
+Media systems
+
+News agencies
+
+Newspapers
+
+North Atlantic
+
+Associated Press (United States)
+
+Washington Post (U
+
+Reuters (United Kingdom)
+
+The Times (United
+
+STT (Finland)
+
+Stuttgarter Zeitung
+
+NTB (Norway)
+
+Tamedia (Switzerlan
+
+AFP (France)
+
+El Confidential (Spa
+
+ANSA (Italy)
+
+Rossel/Sudpresse (
+
+North/Central
+
+Mediterranean
+
+6: There are a few shortcomings in this selection: first, Australia is not examined in Hallin a
+
+that both Australia and New Zealand have close connections to Western European countries; s
+that sits between the Democratic Corporatist (i.e., North/Central) and the Polarised Pluralist
+under the latter category as Rossel and its subsidiary Sudpresse own titles in France and in
+myself to Western news organisations, as discussed in my literature review and also in subse
+finally, even if the Spanish newspaper El Confidential does not have a print edition, it defines
+is included here.
+
+were not divulged so that they could speak more freely,
+although it is most likely that their hierarchy knew that
+they were participating in this research project. Written
+informed consent was obtained from each of the participants,
+and they were given the opportunity to review some of their
+statements that dealt with potentially sensitive or unclear information, but not my own interpretation over what they shared.
+My exchanges were rather smooth, my interviewees generally knowing what I was asking about and not being caught
+off-guard (they were given an indication of what will be
+discussed, but were not handed the interview questions in
+advance). I asked for clarifications in follow-up emails when
+needed. Finally, sex and gender were not considered to be
+particularly relevant in this study: as such, interviewees were
+not asked to disclose their gender, but in a strictly binary sense
+it turned out that 23 of them were male and 5 were female,
+thus reflecting a gender gap that could be further investigated.
+To complement these interviews, I also analysed material published online (e.g., blog posts, trade publications, etc.) so as
+to have a better overview of the way automated journalism is
+implemented: these are linked to or referenced as such in my
+findings section; otherwise, information comes from statements collected over the course of my interviews. In addition,
+screenshots of automated news software or material that was
+found online or forwarded to me by research participants are
+also featured there: because these elements exclusively dealt
+with online collection, it is then appropriate to speak of a
+netnography, which is understood (Kozinets, 2016) as a “specific
+approach to conducting ethnographic research that uses
+the archival and communications functions of contemporary
+Internet-based technologies such as mobile phones, tablets, and
+
+laptop com
+photographi
+
+Last but n
+are repres
+differentiati
+as breaking
+preconceive
+being said
+“companion
+of analysis
+stressed the
+in the med
+supplement
+
+Results
+
+As describ
+cross-nation
+media syst
+organisation
+and public
+comprehens
+the media
+is impleme
+of ANT to
+mated new
+where it do
+mated new
+existing pra
+tions where
+which sho
+helping me
+
+O
+
+Predictable uses as intermediaries
+First, based on some of the most prominent examples that are
+developed in the introduction, it can be said that automated
+news is used as intermediaries when private or public service
+datasets are being used as sources, when there is no journalistic involvement other than through the affordances already
+provided for by third-party tools and—for now—when text
+only is generated, sometimes with visualisations. Such an
+assemblage can be observed at news organisations outsourcing
+automated news to external content providers, like at the
+Associated Press, where teams collaborate with firms like
+Automated Insights and Data Skrive to come up with templates
+so that these companies can automate corporate earnings
+stories and sports recaps7, based on private data (see Colford,
+2014). Likewise, Italy’s news agency ANSA publishes weather
+forecasts that are sometimes generated using automation and
+data provided by a weather forecast company, but also national
+and regional accounts of the spread of COVID-19, using
+public data collected through Narrativa’s COVID-19 tracker
+initiative8 and put together by the firm Applied XL
+(Redazione ANSA, 2020; Narrativa, no date 2). As for Spain’s
+national public service broadcaster RTVE, it collaborated with
+Narrativa to run trials on less watched football competitions
+in Spain using private data and also prepared for generating stories on election results in small municipalities based
+on government data (Corral, 2021). This is similar to what
+the French public radio broadcaster France Bleu and French
+newspapers belonging to the Belgian media group Rossel
+(e.g., La Voix du Nord, L’Union) have been doing during recent
+elections in France with automated news generated by the
+firms Syllabs (France Bleu) and LabSense (Rossel), based on
+governmental data. Besides, the Belgian newspapers group
+Sudpresse (owned by Rossel) and LabSense also collaborated
+on automating amateur football games in Belgium, sourcing
+data from a sports association.
+
+and financi
+data for this
+
+Automated news used as intermediaries is also visible when
+it is designed internally. As such, Reuters’ data team has
+been developing automated news the usual way while setting
+up stories on sports, financial news and COVID-19, relying both
+on private and public data. This was also true of The Times’ automated journalism project on COVID-19 (see Danzon-Chambaud,
+2021b), which was based on public data and programmed
+in-house. As for the Norwegian news agency NTB, it relied
+on a select few editorial developers with both a journalistic
+and technical background so as to be able to automate the same
+type of pandemic-related content as well as sports, election
+
+Using auto
+in the use
+of No-code
+programmin
+own. This
+Labs team
+A&E waiti
+using publi
+The Swiss
+mated Insig
+accessible
+2015)—to d
+tion results
+2019) and
+COVID-19
+ice datasets
+ABC, it s
+to create a
+ice data to
+Elvery, 201
+maries, we
+Hutchinson
+
+7: The data team at the Associated Press is also involved in setting up
+automated news for smaller scale projects, like polling results for each of
+the 50 American States or when transforming an exclusive dataset into
+local stories.
+
+8: The Spanish public service broadcaster RTVE was also part of this
+initiative, mostly as an information provider, but is not mentioned here
+as it did not necessarily used automated news produced this way in a
+systematic manner.
+
+On their e
+Zeitung pr
+German ele
+data, while
+broadcaster
+and electio
+ice data an
+Moreover,
+recaps open
+unfair com
+other organ
+code for th
+partner wa
+news, as in
+collaboratio
+mate match
+Research N
+came in p
+Danzon-Ch
+results as w
+public healt
+data for sp
+with their
+pics, the
+and high sc
+2016a; Was
+the Washin
+Northweste
+cal journali
+tions (Schm
+models tha
+election tim
+
+O
+
+Figure 1. An example of an automated football game recap that was genera
+with permission, under a CC-BY NC 4.0 license.
+
+Transformations as mediators
+In contrast to automated stories being used as intermediaries, mapping their roles as mediators requires carefully thinking
+about additional meaningful translations that new human and
+non-human actants could bring: this could be whenever these
+changes concern using sources other than private and public
+service data, deploying systems that are specifically built for
+journalists—other than through the affordances already provided
+for by third-party self-editing tools—and, lastly, generating
+outputs other than text. First, with regards to additional sources,
+a noticeable translation occurs as news organisations turn
+to their own internal feed, proceed to their own data collection or use archival material, thus avoiding the need to rely on
+third-party private or public service datasets. An example of this is the BBC’s and ABC’s efforts to connect their
+automated news system to an internal election results
+feed (see Danzon-Chambaud, 2021c for the BBC), which
+in the case of ABC is linked to the corporation’s own
+psephologist:
+	We're mostly looking at the data sources we use for
+broadcast to start with, or that are at that level. (...)
+The election one is coming from the Australian electoral commission or the State electoral commissions,
+but then it's going through our election expert's
+
+sy
+hi
+pu
+th
+
+(M
+
+In a few in
+own in ord
+Reuters’ st
+which wer
+were manu
+Reuters thi
+As for tapp
+STT collab
+Southern F
+machine le
+trained on
+(see Figure
+that conten
+standards t
+them should
+
+	It
+en
+
+O
+
+was further
+gency prep
+put to con
+be able to
+putational a
+Spanish pu
+with the Un
+football sto
+opinions (d
+one team,
+news, and,
+ball match’
+News Trace
+Twitter fee
+detection, c
+then goes
+on to jo
+from the arX
+
+Figure 2. A daily news brief delivered by the Australian
+Broadcasting Corporation (ABC) through its conversational
+chatbot platform. This figure has been reproduced from ABC with
+permission, under a CC-BY NC 4.0 license.
+
+all the data and more and more and more… And
+it wasn't enough for the AI to learn enough. And
+the second thing was that there was too much human…
+well, too much human in them. So there was, like,
+adjectives and things that weren't in the data that the
+machine was fed. (...) For example, in ice hockey
+there was, like, standings that weren't in the data
+that the machine was given. So we ended up using
+some manual work to go through, not all, but a lot of
+the stories.
+(Executive, STT, Finland)
+Additional translations that related to source type were also
+visible in situations where crowdsourced material and social
+media feeds were used. The German newspaper Stuttgarter
+Zeitung relied on crowdsourced material to automate its
+air quality reports in the Stuttgart area, which were generated using AX Semantics’ self-editing tool and connected
+to open data sourced from a network of community sensors
+(Plavec, 2017; Toporoff, 2017). In Australia, the ABC used
+opinion data collected through a polling exercise that is
+habitually done during election time so as to come with answers
+for its messenger bot (Gee & Prior, 2018), an approach that
+
+Another ar
+force relat
+cally built
+already pro
+can be, fi
+self-editing
+access to a
+Lynx Insig
+own stories
+those of t
+Teams noti
+the data tea
+look for a
+the subject t
+
+The online
+example of
+team set u
+mated story
+work right
+they could
+ferent cond
+final article
+newspaper.
+grounders,
+Northweste
+that lets jo
+on the 2
+(see Figure
+number and
+given coun
+2020a). As
+relied on S
+cover the 2
+automated n
+
+Finally, one
+with genera
+content. Th
+efforts to
+
+O
+
+Figure 3. The interface on which ice hockey stories were generated using m
+internal archives, which covered games that were held since the 1990s. This
+under a CC-BY NC 4.0 license.
+
+content suited to help with vision impairment. Automated
+audio stories generated this way could then be tailored to a
+listener’s location as in the Washington Post’s election updates
+that were inserted in the newspaper’s political podcasts
+(WashPost PR Blog, 2020b) or be accessed via virtual assistants (e.g., Amazon’s Alexa) as in the ABC’s diffusion of emergency alert summaries that were created using its own NLG tool
+(Collett, 2021; Collett, 2022).
+In this section, I highlighted how automated news is being
+used at 18 news organisations that were selected based on
+Hallin and Mancini’s (2004) media system typology (i.e.,
+North Atlantic, North/Central and Mediterranean models)
+and that featured different media types (i.e., news agencies,
+newspapers, public service broadcasters). Using ANT, I
+demonstrated that some of them used automated news as
+intermediaries, where initial intent is kept and where it does
+what it is supposed to do, while others considered it more as
+mediators while bringing in additional meaningful translations, which go as follows: first, enrolling alternate data sources
+
+while relyin
+collection o
+material or
+while puttin
+internally l
+and/or sea
+and, third,
+to-audio c
+are summa
+conclusion
+de-different
+
+Conclusio
+
+Using ANT
+pointed ou
+through the
+organisation
+election re
+AFP’s man
+in STT’s u
+
+O
+
+Figure 4. On Reuters’ Lynx Insight platform, journalists can template out t
+code language that makes it accessible to news staff with little programmin
+Reuters with permission, under a CC-BY NC 4.0 license.
+
+Figure 5. At the Washington Post, a query system was set up in collaboratio
+could access automated backgrounders that would help them cover the 20
+figure has been reproduced from [Diakopoulos et al., 2020] with permission, under
+
+O
+
+Table 2. Automated news as mediators: areas with additional transl
+NORTH ATLANTIC
+
+Sources
+
+Interfaces
+
+Outputs
+
+News agencies
+
+Newspa
+
+Internal feed
+
+–
+
+–
+
+Own data collection
+
+Reuters
+
+–
+
+Archives
+
+–
+
+–
+
+Crowdsourced material
+
+–
+
+–
+
+Social media feeds
+
+Reuters
+
+–
+
+In-house self-editing tool
+
+Reuters
+
+–
+
+Notification stream
+
+Reuters
+
+–
+
+Automated backgrounders
+
+Reuters
+
+Washing
+
+NLG-to-audio
+
+–
+
+Washing
+NORTH/CENTRAL
+
+Sources
+
+Interfaces
+
+Outputs
+
+News agencies
+
+Newspa
+
+Internal feed
+
+–
+
+–
+
+Own data collection
+
+–
+
+–
+
+Archives
+
+STT
+
+–
+
+Crowdsourced material
+
+–
+
+Stuttgar
+
+Social media feeds
+
+–
+
+–
+
+In-house self-editing tool
+
+–
+
+–
+
+Notification stream
+
+–
+
+–
+
+Automated backgrounders
+
+–
+
+–
+
+NLG-to-audio
+
+–
+
+–
+MEDITERRANEAN
+
+Sources
+
+Interfaces
+
+Outputs
+
+News agencies
+
+Newspa
+
+Internal feed
+
+–
+
+–
+
+Own data collection
+
+AFP
+
+–
+
+Archives
+
+–
+
+–
+
+Crowdsourced material
+
+–
+
+–
+
+Social media feeds
+
+–
+
+–
+
+In-house self-editing tool
+
+–
+
+El Confid
+
+Notification stream
+
+–
+
+–
+
+Automated backgrounders
+
+–
+
+–
+
+NLG-to-audio
+
+–
+
+–
+
+models—as well as crowdsourced material like Stuttgarter
+Zeitung’s use of community sensor data or, else, social media
+feeds as in RTVE’s automated football stories that reflect
+readers’ own preferences), the enticement of journalists while
+
+putting them
+nally like s
+fication stre
+access auto
+
+O
+
+and, finally, the enlistment of vocal elements as in NLG-toaudio output (e.g., ABC, The Washington Post). This makes
+the movement of what can be considered the “actor-network
+of automated journalism” discernible to the researcher’s
+eye and gives an indication as to where it is heading, thus
+answering RQ1.
+All in all, this testifies of a growing journalistic professionalisation in the way automated news is being employed, as
+it is drifting away from political and commercial influences
+(i.e., public service data, data brokers, automated content
+providers and third-party self-editing tools) to become more
+under journalists’ control, but also in citizens’ hand (i.e., using
+crowdsourced material as a source). As shown in Table 2,
+North Atlantic media organisations (i.e., Reuters, The Washington Post, ABC, BBC) clearly lead the way in this process of differentiation, in accordance with Hallin and Mancini’s
+(2004) typology: as they write (ibid., p. 80), “the Liberal
+Model is characterized by a high degree of differentiation of
+the media from other “other social bodies,” particularly those
+historically active in the political sphere”, which in this case
+also applies to techno-commercial influences. Hence, BBC’s
+and ABC’s use of internal feeds, Reuters’ own in-house
+self-editing tool and the Washington Post’s providing access to
+automated backgrounders—to name a few—all contribute to
+greater journalistic professionalisation by ensuring independence
+from all these forms of external influences.
+That being said, a process of de-differentiation could also be at
+play in that compliance with platforms’ terms and conditions
+is generally needed to be able to connect to social media APIs
+(see van Dijck et al., 2018) and matching their technical standards is necessary to have automated audio stories featured
+on voice assistants (e.g., Amazon’s Alexa, Google Assistant).
+The question as to whether platforms or news organisations
+will act as spokespersons in this growing actor-network of automated journalism—and by extension RQ2—then remains
+open: should news media take on this role, for instance while
+developing their own self-editing solutions or relying on
+internal feeds, this could be interpreted as reinforcing the
+autonomy of the journalistic field, whereas—should they become
+too dependent on Big Tech companies for data acquisition and
+dissemination of automated news products—this may result
+in making the field even more porous to techno-commercial
+influences.
+One limitation to this study has to do with a very much
+Western-centric selection of media organisations: at the time
+I reached out to interviewees, automated news was still a relatively new development that seemed to concern mostly news
+organisations based in the West, as well as some Asian newsrooms that could not efficiently research because of my own
+language limitations. This meant I could not document the use
+of automated news in certain regions, like South America or
+
+East Asia.
+now lookin
+on the way
+agency ČTK
+news media
+
+Another lim
+what remai
+breakthroug
+could be h
+a couple o
+external co
+mated new
+started offe
+Automated
+tion of aut
+them base
+providers, i
+could be do
+
+Other than
+ANT to de
+“automated
+or platform
+into a mac
+whole. To
+gaining the
+which are
+to be quite
+analysis w
+ships likely
+products.
+
+Ethical ap
+
+The Dublin
+this study
+number: DC
+
+Data ava
+
+Zenodo. O
+practice”: ex
+
+This project
+
+•	A
+na
+in
+
+Data are a
+Attribution
+
+Acknowled
+This study f
+
+O
+
+Appendix A. Details of interviewees’ news organisations, roles and gende
+Interview
+
+Organisation
+
+Country
+
+Position
+
+1
+
+The Times
+
+United Kingdom
+
+Computational jou
+
+2
+
+Stuttgarter Zeitung
+
+Germany
+
+Editor
+
+3
+
+France Bleu
+
+France
+
+Manager
+
+4
+
+YLE
+
+Finland
+
+Senior technologis
+
+5
+
+AP
+
+United States
+
+Executive
+
+6
+
+BBC
+
+United Kingdom
+
+Manager
+
+7
+
+NTB
+
+Norway
+
+Editor; Executive
+
+8
+
+Tamedia
+
+Switzerland
+
+Senior computation
+
+9
+
+Bayerischer Rundfunk
+
+Germany
+
+Senior technologis
+
+10
+
+Washington Post
+
+United States
+
+Executive
+
+11
+
+STT
+
+Finland
+
+Executive
+
+12
+
+Rossel/Sudpresse
+
+Belgium/France
+
+Executive
+
+13
+
+El Confidencial
+
+Spain
+
+Executive; Technolo
+
+14
+
+RTVE
+
+Spain
+
+Executive
+
+15
+
+ABC
+
+Australia
+
+Manager
+
+16
+
+BBC
+
+United Kingdom
+
+Senior technologis
+
+17
+
+BBC
+
+United Kingdom
+
+Computational jou
+
+18
+
+BBC
+
+United Kingdom
+
+Journalist
+
+19
+
+BBC
+
+United Kingdom
+
+Assistant editor
+
+20
+
+ANSA
+
+Italy
+
+Executive
+
+21
+
+BBC
+
+United Kingdom
+
+Technologist (1)
+
+22
+
+AFP
+
+France
+
+Manager; Senior jo
+
+23
+
+BBC
+
+United Kingdom
+
+Technologist (2)
+
+24
+
+Reuters
+
+United Kingdom
+
+Editor
+
+25
+
+BBC
+
+United Kingdom
+
+Editor
+
+9: Positions are based on my own understanding of interviewees’ roles and skills, and do not nec
+
+References
+Archer L: Nine things we’ve learnt in one month on Facebook Messenger.
+[Medium], December 16, 2016; (Accessed: 14 August 2022).
+Reference Source
+Blok A: Actor-network theory, actants. In: George Ritzer (ed.) The Blackwell
+Encyclopedia of Sociology. Hoboken, NJ: Wiley-Blackwell, 2019.
+Publisher Full Text
+Beiler M, Irmer F, Breda A: Data journalism at German newspapers and
+public broadcasters: a quantitative survey of structures, contents and
+
+percepti
+Publishe
+
+Benson R
+explanat
+Anderson
+in the Dig
+Publishe
+
+Borges-R
+
+O
+
+practice in British newsrooms. Journalism Practice. 2016; 10(7): 833–843.
+Publisher Full Text
+
+French-s
+Publishe
+
+Callon M: Some elements of a sociology of translation: domestication of
+the scallops and the fishermen of St Brieuc Bay. Sociol Rev. 1984; 32(S1):
+196–233.
+Publisher Full Text
+
+Diakopou
+Media. M
+23(6): 968
+Publishe
+
+Callon M: Techno-economic networks and irreversibility. In: John Law (ed.)
+A Sociology of Monsters: Essays on Power, Technology and Domination.
+Abingdon-on-Thames: Routledge, 1990; 38(1_suppl): 132–161.
+Publisher Full Text
+
+Diakopou
+leads for
+2020. Bos
+Referenc
+
+Carlson M: The Robotic Reporter. Digital Journalism. 2015; 3(3): 416–431.
+Publisher Full Text
+Clark N: What can go wrong when people become interested in the nonhuman? In: Anders Blok, Ignacio Farías and Celia Roberts (eds) The Routledge
+Companion to Actor-Network Theory. Abingdon-on-Thames: Routledge, 2020;
+158–167.
+Reference Source
+Colford P: A leap forward in quarterly earnings stories. The Associated Press.
+30 June, 2014; (Accessed: July 29 2021).
+Reference Source
+Collett M: Hyperdraft: The natural language generation tool powering the
+ABC Emergency voice app. ABC. 10 June, 2021; (Accessed: 14 August 2022).
+Reference Source
+Collet M: Delivering hyperlocal news on demand with ABC Emergency. ABC.
+11 March, 2022; (Accessed: 14 August 2022).
+Reference Source
+Cooren F: Actor-network theory. In: Stephen W. Littlejohn and Karen A. Foss
+(eds) Encyclopedia of Communication Theory: Vol. 1. Thousand Oaks, CA: SAGE,
+2009; 17–18.
+Publisher Full Text
+Cornia A, Sehl A, Nielsen RK: Comparing legacy media responses to the
+changing business of news: Cross-national similarities and differences
+across media types. Int Commun Gaz. 2019; 81(6–8): 686–706.
+Publisher Full Text
+Cornia A, Sehl A, Nielsen RK: ‘We no longer live in a time of separation’: A
+comparative analysis of how editorial and commercial integration became
+a norm. Journalism. 2020; 21(2): 172–190.
+Publisher Full Text
+Corral D: Algoritmos, precisión y detalle en una cobertura electoral. RTVE. 8
+April, 2021; (Accessed: 12 August 2022).
+Reference Source
+Couldry N: Actor-network theory. In: Klaus Bruhn Jensen, Eric W.
+Rothenbuhler, Jefferson D. Pooley and Robert T. Craig (eds) The International
+Encyclopedia of Communication Theory and Philosophy. Hoboken, NJ: Wiley, 2016.
+Publisher Full Text
+Couldry N: Recovering critique in an age of datafication. New Media & Society.
+2020; 22(7): 1135–1151.
+Publisher Full Text
+Crawford CS: Actor Network Theory. In: George Ritzer (ed.) Encyclopedia of
+Social Theory. Thousand Oaks, CA: SAGE, 2005; 1–3.
+Publisher Full Text
+Czarniawska B: Actor-network theory. In: Ann Langley and Haridimos Tsoukas
+(eds) The SAGE Handbook of Process Organization Studies. Thousand Oaks, CA:
+SAGE, 2016; 160–172.
+Publisher Full Text
+Danzon-Chambaud S: A systematic review of automated journalism
+scholarship: guidelines and suggestions for future research [version 1;
+peer review: 2 approved]. Open Research Europe. 2021a; 1(4).
+Publisher Full Text
+Danzon-Chambaud S: Covering COVID-19 with Automated News. Tow Center
+for Digital Journalism report. 2021b; (Accessed: 6 May 2023).
+Reference Source
+Danzon-Chambaud S: Automated News at the BBC. BBC Research and
+Development white paper, 2021c; (Accessed: 6 May 2023).
+Reference Source
+Danzon-Chambaud S: Automated news in practice: changing the
+journalistic doxa during COVID-19, at the BBC and across media
+organisations. PhD thesis, Dublin City University, 2023; (Accessed: 6 May
+2023).
+Reference Source
+de-Lima-Santos MF, Schapals AK, Bruns A: Out-of-the-box versus in-house
+tools: how are they affecting data journalism in Australia? Media Int Aust.
+2021; 181(1): 152–166.
+Publisher Full Text
+del Rey García C: Desarrollo y uso de un software de generación de noticias
+deportivas con sentimiento en la mejora de procesos en el ámbito
+periodístico. Bachelor thesis, University Carlos III of Madrid, 2020; (Accessed: 8
+September 2022).
+Reference Source
+De Maeyer J, Libert M, Domingo D, et al.: Waiting for data journalism: a
+qualitative assessment of the anecdotal take-up of data journalism in
+
+Dörr KN:
+2016; 4(6
+Publishe
+
+Elvery S:
+election
+Referenc
+
+Emerging
+gathers
+Referenc
+
+Falk Eriks
+Danish N
+and Ham
+
+Fanta A: P
+News Ag
+2017; (Ac
+Referenc
+
+Ford H, H
+relations
+Publishe
+
+García-Pe
+journalis
+Understa
+Algorithm
+Referenc
+
+Gee S, Pr
+in world
+(Accessed
+Referenc
+
+Graefe A:
+report, 20
+Publishe
+
+Hallin DC
+Politics.
+Referenc
+
+Hallin DC
+Cambridg
+Publishe
+
+Hassard
+Durepos
+Oaks, CA
+Publishe
+
+Kanerva
+of Finnis
+Computa
+Linköping
+Referenc
+
+Kozinets
+Sociology
+Publishe
+
+Latour B:
+artifacts
+Society: S
+225–258.
+Referenc
+
+Latour B:
+Theory. O
+Referenc
+
+Law J: On
+Portugu
+Publishe
+
+Law J: No
+heteroge
+Publishe
+
+Leppäne
+reports.
+Referenc
+
+Liu X, No
+producti
+Conferenc
+Publishe
+
+O
+
+Marchand V: Tamedia utilisera le robot “Tobi” pour couvrir les élections
+fédérales. Cominmag. 7 October, 2019; (Accessed: 14 August 2022).
+Reference Source
+
+Schneide
+Bayerisch
+Referenc
+
+Menke M, Kinnebrock S, Kretzschmar S, et al.: Convergence culture in
+European newsrooms. Journal Stud. 2018; 19(6): 881–904.
+Publisher Full Text
+
+Schwenc
+Los Angel
+Referenc
+
+Michael M: Actor-Network Theory: Trials, Trails and Translations. Thousand
+Oaks, CA: SAGE, 2017a.
+Publisher Full Text
+Michael M: Actor Network Theory. In: Bryan S. Turner (ed.) The Wiley-Blackwell
+Encyclopedia of Social Theory. Hoboken, NJ: Wiley-Blackwell, 2017b.
+Publisher Full Text
+Molumby C, Whitwell J: General election 2019: semi-automation makes it a
+night of 689 stories. BBC News Labs, 13 December, 2019; (Accessed: 12 August
+2022).
+Reference Source
+Moravec V, Macková V, Sido J, et al.: The robotic reporter in the Czech news
+agency: automated journalism and augmentation in the newsroom.
+Communication Today. 2020; 11(1): 36–52.
+Reference Source
+Mullin B: With new product, Automated Insights hopes to make ‘robot
+journalism’ cheaper and more plentiful. Poynter, 20 October, 2015;
+(Accessed: 11 August 2022).
+Reference Source
+Narrativa: Narrativa’s Advanced Natural Language Technology. (no date 1);
+(Accessed July 29 2021).
+Reference Source
+Narrativa: ANSA Agency uses Narrativa AI for news on COVID-19. (no date 2);
+(Accessed: 12 August 2022).
+Reference Source
+Nechushtai E: From Liberal to Polarized Liberal? Contemporary U.S. news in
+Hallin and Mancini’s typology of news systems. Int J Press Polit. 2018; 23(2):
+183–201.
+Publisher Full Text
+Nikolova N: Actor-network theory. In: Stewart R. Clegg and James R. Bailey
+(eds) International Encyclopedia of Organization Studies. Thousand Oaks, CA:
+SAGE, 2008; 28–31.
+Publisher Full Text
+Plavec JG: Feinstaubradar Stuttgart: so viel feinstaub ist an ihrem ort in
+der luft. Stuttgarter Zeitung, 2 November, 2017; (Accessed: 14 August 2022).
+Reference Source
+Plattner T, Orel D: Addressing micro-audiences at scale. Computation +
+Journalism Symposium 2019. Miami, FL, 1–2 February 2019; (Accessed: July 29
+2021).
+Reference Source
+Plesner U: An actor-network perspective on changing work practices:
+communication technologies as actants in newswork. Journalism. 2009;
+10(5): 604–626.
+Publisher Full Text
+Primo A: Actor-network theory. In: Tim P. Vos, Folker Hanusch, Dimitra
+Dimitrakopoulou, Margaretha Geertsema-Sligh and Annika Sehl (eds)
+International Encyclopedia of Journalism Studies. Hoboken, NJ: Wiley, 2019.
+Publisher Full Text
+Rämö M Leppänen L: Using contextual and cross-lingual word embeddings
+to improve variety in template-based NLG for automated journalism.
+Proceedings of the EACL Hackashop on News Media Content Analysis and
+Automated Report Generation. 2021; (Accessed: 12 September 2022).
+Reference Source
+Rédaction du Monde.fr: Des robots au « Monde » pendant les élections
+départementales ? Oui... et non. Le Monde. 23 March, 2015; (Accessed: July 29
+2021).
+Reference Source
+Redazione ANSA: Coronavirus: Ansa e Applied XLab producono notizie
+sull’epidemia grazie all’intelligenza artificiale. ANSA. 27 April, 2020;
+(Accessed: 12 August 2022).
+Reference Source
+Ryfe D: Actor-network theory and digital journalism. Digital Journalism. 2022;
+10(2): 267–283.
+Publisher Full Text
+Sayes E: Actor-Network Theory and methodology: Just what does it mean
+to say that nonhumans have agency? Soc Stud Sci. 2014; 44(1): 134–149.
+PubMed Abstract | Publisher Full Text
+Schmidt C: How to cover 11,250 elections at once: here’s how The
+Washington Post’s new computational journalism lab will tackle 2020.
+Nieman Lab, 25 July, 2019; (Accessed: 12 August 2022).
+Reference Source
+Schneider C: Neu: Automatisierte Marktberichte im Börsenticker.
+Bayerischer Rundfunk. February 21, 2022; (Accessed: 12 August 2022).
+Reference Source
+
+Sebis Res
+for autom
+2022).
+Referenc
+
+Sehl A, Co
+challeng
+Publishe
+
+Sehl A, Co
+product
+1469–148
+Publishe
+
+Sehl A, Co
+legacy sh
+of Public
+Journal. 2
+Publishe
+
+Stefaniko
+Journalism
+Referenc
+
+Toporoff
+7 Decem
+Referenc
+
+Van den
+personal
+dilemma
+PubMed
+
+van Dijck
+Connect
+Referenc
+
+WashPos
+storytell
+5 August
+Referenc
+
+WashPos
+cover ne
+2016b; (A
+Referenc
+
+WashPos
+to cover
+(Accessed
+Referenc
+
+WashPos
+for 2020
+August 2
+Referenc
+
+WashPos
+updates
+(Accessed
+Referenc
+
+West B: D
+Sociology
+Publishe
+
+Willens M
+January, 2
+Referenc
+
+Winthere
+Ignacio F
+Theory. A
+
+Wu S, Tan
+human–m
+news pro
+Publishe
+
+Yin RK: C
+Oaks, CA
+
+Young M
+computa
+Digit Jour
+Publishe
+
+Zeisler A,
+March, 2
+Referenc
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 1
+Reviewer Report 24 July 2023
+
+https://doi.org/10.21956/openreseurope.17320.r33320
+
+© 2023 Maitra J. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+Julian Maitra
+
+Department of Communication and Media Research, Uni
+
+Summary:
+The study addresses a highly relevant topic in jour
+news automation technology across media system
+research design combines empirical and theoretica
+author conducted 18 semi-structured interviews w
+countries between 2020 and 2021. The interviewee
+agencies (e.g., AFP), public service broadcasters (e.
+Stuttgarter Zeitung). Additional empirical insights
+“netnography”.
+○
+
+○
+
+○
+
+○
+
+On the other hand, the author applied a theoretica
+findings. This lens is inspired by actor-network the
+system typology (2004), and sociological notions o
+
+A key finding using ANT terminology is that news a
+adopted in two distinct ways: First, as intermediarie
+use may include cases where “private or public ser
+when there is no journalistic involvement other tha
+provided for by third-party tools” (p. 7). For examp
+Automated Insights, to provide template-based so
+reports.
+
+Second, the author identified cases of a more “tran
+automation when the technology mediates journal
+is described as “drifting away from political and co
+party tech platforms and NLG firms]… to become m
+This occurred, for example, when the BBC autonom
+automation technology that relied on its proprieta
+platforms).
+
+Open Research Europe
+
+○
+
+O
+
+The study argues that such a mediating adoption o
+professional autonomy for news organizations. Th
+(another ANT concept) is particularly prevalent am
+Atlantic media system. Nevertheless, dedifferentiat
+network, for example, when journalistic actors gro
+platforms for access to mediating news automatio
+
+Major review points:
+The study could be improved through a more co
+the empirical findings better. The study currently
+Mancini’s media system typology, the sociology of
+(for the latter, see, e.g., p. 13). Each of these frame
+particularly in the context of explaining issues of d
+study, it is less clear how the theory adds explanat
+for example, could be better used to explain the in
+news automation in the analyzed newsrooms. How
+interdependent agencies of journalistic actors, new
+databases, tech platforms, etc., interrelate? In cont
+framework could be more convincingly used to exp
+uses of news automation across media systems. P
+on one theoretical framework and provide a deepe
+○
+
+○
+
+○
+
+Clarify the data collection through semi-structu
+interview questions, which were specifically design
+the Washington Post, raise questions about how th
+interviewees asked the same (or very similar) ques
+respondent, as in the example? It would no longer
+approach in the latter case. The author should clar
+the representativeness of the empirical insights.
+
+Unconvincing generalization of empirical (case
+insights gained in the 18 interviews are valuable, t
+from specific organizations at specific points in tim
+subjective – sampling to construct the dataset (p. 5
+conclusion section, such as “All in all, this testifies o
+professionalization in the way automated news is b
+from political and commercial influence…” (p.13), s
+that news organizations from the North Atlantic m
+news automation based on the interview insights f
+ABC, BBC) is also not convincing. Such generalizati
+comprehensive data collection across much larger
+techniques of random sampling. While the author
+the “field is in flux” (p. 13), the study could be impr
+extent its findings are generalizable.
+
+Minor points:
+Hard to read sentences: While the paper is gener
+○
+
+Open Research Europe
+
+O
+
+too long and sometimes ambiguous, making their
+of the writing could be improved by using topic se
+and by limiting sentences to ca. 25 words. For exam
+one-sentence-paragraph with 135 words (p.9) into
+
+"Another area where additional translations are br
+news systems that are specifically built for journali
+already provided for by third-party self-editing too
+that comes with its own self-editing tool, features n
+to auto-generated background information, as in R
+journalists can template out their own stories usin
+resembles those of third-party tools (see Figure 4),
+once stories generated this way or that the data te
+system as they look for automated news with back
+they are covering."
+○
+
+○
+
+○
+
+Similarly, the following sentence on p.10 is too lon
+"Using ANT, I demonstrated that some of them use
+where initial intent is kept and where it does what
+considered it more as mediators while bringing in
+go as follows: first, enrolling alternate data source
+own internal feed, data collection or archives as a s
+or social media feeds; second, enticing journalists
+interfaces that are designed internally like in-hous
+and/or search features to access automated backg
+elements through generating NLG-to-audio conten
+
+Unclear explanatory value of screenshots: It rem
+Figures 3 and 5) contribute to or exemplify the find
+better explain what they show and how this sustai
+
+Interview date accuracy: Appendix A mentions tw
+were conducted in 2010. Is this information correc
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Partly
+
+Are sufficient details of methods and analysis provide
+Partly
+
+Are all the source data and materials underlying the r
+Partly
+
+If applicable, is the statistical analysis and its interpre
+
+Open Research Europe
+
+O
+
+Not applicable
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: digital journalism, news audiences, m
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 06 Sep 2023
+
+Samuel Danzon-Chambaud
+Dear Dr. Maitra,
+
+Thank you for providing me with helpful feedback, wh
+clearer. Please find below how I addressed your comm
+
+The theoretical focus has been reworked to put less e
+also tried to better detail how this theoretical framew
+paid special attention to better explaining how I work
+and mediators, relying for that on an analogy with line
+to it.
+
+It is true that how automated news connects to the w
+analysis. However, seeing it as mediator (i.e., when int
+this study strives to—opens up new research possibili
+Although I took it out not to overload the conclusion,
+“there exist translations between mediators that may
+
+A brief hint as to what these future translations/negot
+of the article: as there is substantial interference to pl
+playing a journalistic role (making them mediators), m
+happen with automated news.
+
+My use of Hallin and Mancini has also been reworked
+section I explain how my news organisation selection
+theoretical discussion on differentiation and de-differ
+part. That way, it is better integrated with my analysis
+
+My use of semi-structured interviews has been clarifie
+I used essentially the same structure, except for the b
+each interview.
+
+Open Research Europe
+
+O
+
+The point you made about generalisation is an import
+the end that details the limitations I faced, especially g
+investigations on the ground (because of COVID-19). I
+and explain how this impacts the generalisation of my
+speak of an exploratory study.
+
+I also rewrote hard-to-understand sentences and fixe
+screenshots are now part of what I describe as supple
+took out the term “netnography” (which implied a gre
+
+I hope that you see these changes as adequate, and t
+expectations.
+Yours sincerely, Samuel Danzon-Chambaud
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 17 July 2023
+
+https://doi.org/10.21956/openreseurope.17320.r33205
+
+© 2023 Pignard-Cheynel N et al. This is an open access peer review r
+Creative Commons Attribution License, which permits unrestricted us
+medium, provided the original work is properly cited.
+
+Nathalie Pignard-Cheynel
+Academy of Journalism and Media, Faculty of Economics
+Neuchatel, Switzerland
+Andrew Robotham
+Academy of Journalism and Media, Faculty of Economics
+Neuchâtel, Canton of Neuchâtel, Switzerland
+
+Strengths of article:
+This article deals with a highly relevant topic for th
+○
+
+○
+
+○
+
+○
+
+The research questions, which would benefit from
+deserve to be better contextualized.
+
+The empirical work is impressive, both in terms of
+diversity of countries represented. The dataset allo
+journalism studies, in spite of some methodologica
+
+The results are interesting and contribute to resea
+
+Open Research Europe
+
+○
+
+O
+
+The article is well-written and clearly structured.
+
+Points for improvement:
+The paper lacks important details as to how the da
+○
+
+○
+
+○
+
+○
+
+Despite the large number of interviews carried out
+interview, which may prevent generalization and in
+term "case study".
+
+ANT was doubtlessly a key resource in designing th
+how the project was designed and the data analyz
+prominence of ANT theory and terminology obscu
+our opinion, contribute to a better understanding
+reader.
+
+At the very least, we would recommend putting les
+results section according to types of automated ne
+would also free up space to contextualize more, en
+automated news) and better define the concepts a
+specific "Discussion" section would be relevant.
+
+General context, topic and research questions:
+The article’s overall topic of automated news is relevant t
+addresses questions that have become of increasing inte
+past couple of years (in other words since the field data w
+year, notably with the advent of ChatGPT, which has elev
+and AI to become some of the most pressing questions in
+become key strategic considerations in many newsrooms
+media for which data has been collected for this study. A
+addressed with published peer-reviewed research (no do
+underway that will begin to be published over the comin
+discussed in other ways, thereby making your research m
+could hardly be considered a weakness of the paper in its
+a missed opportunity.
+
+The introduction could situate the core problem(s) more
+leap from the topic to the very specific research question
+presentation of the ANT theoretical perspective. Which jou
+research related to and why? Why do we need an answer
+the research field, to industry and to society? Who has tri
+before? This overarching context requires some work.
+
+Regarding the research questions themselves and their f
+“RQ1: Using ANT’s lenses, what is the overall direction
+taking?”
+It does not seem like you have defined “overall dire
+such as “seem” in a research question. In its curren
+guesswork, which cannot be evaluated scientificall
+○
+
+Open Research Europe
+
+O
+
+probably sufficient.
+○
+
+“RQ2. What are the implications of these developmen
+research question is interesting but might benefit
+by being better introduced above, or by being sligh
+which viewpoint you are examining these implicati
+assumptions). Are we interested in how we think jo
+journalistic professionalization related to automate
+their discourses? Are we trying to document curren
+better understanding of how things might evolve?
+
+Literature and theoretical concepts:
+The literature review is well written (as is most of the arti
+research on the topic of automated news. However, som
+news/algorithmic news is a little dated and we would rec
+recent work. The references are good and certainly warra
+since 2015 (there are some references to literature in the
+mention earlier on). The author mostly uses the literature
+automated news but provides little in terms of the result
+context is important, but the author could engage more
+addition, the works cited deserve to be better integrated
+than simply summarizing the state of the art on the issue
+
+The ANT theoretical perspective is very well researched a
+refers to the seminal works of ANT and does well in expla
+perspective that has been used quite a lot in journalism a
+cited in the article), it might make sense to focus a little m
+to introduce those media and journalism studies that hav
+technologies most similar to the research topic.
+
+The author refers to a broad range of ANT concepts, or ra
+language”. Yet, the concepts referred to in the analysis/re
+intermediary, and translation (often without the process
+Thus, we are skeptical of the prominence of ANT in the st
+in the title. Further methodological points related to ANT
+In view of their prominence in the introduction and the c
+explanation of the concepts of differentiation and dediffe
+elements presented in the footnote).
+
+Research design:
+The research design – case studies of the use of automat
+countries – is ambitious.
+The author deserves praise for having managed to acces
+of countries and types of media. The use of Hallin and Ma
+defendable. However, because it only includes one media
+the sampling method offers a strategy to access a very w
+automated news, rather than allowing for any significant
+
+Open Research Europe
+
+O
+
+systems in question. The dataset of 25 semi-structured in
+impressive. However, only the BBC includes more than o
+have conducted multiple case studies based on a single r
+the eight conducted with the BBC) is a bold one. This is n
+since the reference for case study research is Yin (1994),
+not match the criteria for a case study. Using this term in
+therefore problematic.
+
+The use of a combination of semi-structured interviews a
+research is appropriate and certainly not incompatible w
+limitations of the method and data collected should be o
+structured interviews are not best-suited for accessing an
+are more appropriate for constructivist perspectives, or r
+
+It is not clear how either type of data is analyzed (nor how
+nor is it clear how the ANT perspective is concretely appli
+(discussed below).
+One of the criticisms of ANT is that it claims to be more m
+help in terms of practical implementation. However, it wo
+analytical lens was used. One would not know where to b
+different dataset. From the outside, it mainly consists of t
+intermediaries, based on how the automated content is u
+purposes. This is an extremely interesting question. And
+literature was key in obtaining some of the insights, we f
+in fact render the results and discussion less clear. Since
+cited, it should also be noted that the approach is describ
+complex links and associations between entities. Such de
+each case and an in-depth analysis of digital tools and te
+little methodological information and do not have access
+described as complementary.
+
+Despite an in-depth knowledge of ANT literature, we wer
+of the results section. This raises suspicions as to the aut
+hand, it is possible that the points being made are much
+would benefit from much simpler language. In short, the
+provide many useful insights into automated news, but it
+(i.e., 18 ANT case studies of automated news).
+
+Results and conclusions:
+The information provided in the results section is preciou
+wide range of technologies that can be defined as “autom
+discussed previously, we are not certain that using ANT c
+experience. In our view, classifying the different types of
+intended and unintended – would make for a better artic
+confront the results obtained with the rich literature on a
+intelligence in journalism. In this way, the article will find
+literature.
+
+Open Research Europe
+
+O
+
+There are several interesting points made in the conclusi
+However, they a lost among the complexity of the ANT in
+researchers alike, framing the results from the perspectiv
+by extension for society at large) would be much more in
+
+Data:
+Consisting mostly of semi-structured interviews with new
+data is understandable. The examples, tables and screen
+that can be quite abstract. However, unlike the interview
+the netnographical data could have been made available
+the absence of such material, a simple list of the data ana
+transparency.
+
+Is the work clearly and accurately presented and doe
+Partly
+
+Is the study design appropriate and is the work techn
+Partly
+
+Are sufficient details of methods and analysis provide
+No
+
+Are all the source data and materials underlying the r
+Partly
+
+If applicable, is the statistical analysis and its interpre
+Not applicable
+
+Are the conclusions drawn adequately supported by t
+Partly
+
+Competing Interests: No competing interests were disclo
+
+Reviewer Expertise: digital journalism, journalistic practic
+datajournalism
+
+We confirm that we have read this submission and be
+of expertise to confirm that it is of an acceptable scie
+significant reservations, as outlined above.
+Author Response 06 Sep 2023
+
+Samuel Danzon-Chambaud
+Dear Prof. Pignard-Cheynel and Dr. Robotham,
+
+Open Research Europe
+
+O
+
+Thank you for carefully reviewing my work, and for yo
+below how I addressed your recommendations, which
+
+I have put less emphasis on the use of ANT, while also
+theoretical framework informed my data analysis. Ins
+of instances where automated news is used in a linear
+refer to situations where substantial interference to it i
+wrote—to limit the use of ANT’s “infra-language” so as
+
+I have reworked a bit my general overview of ANT so
+the more “passive” role of intermediaries as opposed
+mediators). I also mention some scholarly work that u
+journalism practice.
+
+As you suggested, I have provided a brief explanation
+production (e.g., investigative reporting, fact-checking
+when studying automated news. I have rephrased my
+stressing that automated news should be rather stud
+
+I also briefly touch on generative AI (ChatGPT, Bard) in
+this stage I believe its opacity and unreliability does n
+
+I can see how the use of the term “case study” is prob
+exploratory study and updated the text and title accor
+
+Likewise, the use of the term “netnography” implies a
+envisioned. I am now referring to informative materia
+interviews.
+Limitations to using research inte
+are articulated more clearly at the end of the article, in
+to be able to generalise. Because of the length of th
+definition of differentiation and de-differentiation the
+originates from the work of Parsons and Luhmann). H
+Discussion/Conclusion part where it is better integrat
+autonomy.
+
+I hope that these changes meet your expectations, an
+as a worthful contribution to journalism studies.
+Yours sincerely, Samuel Danzon-Chambaud
+
+Competing Interests: No competing interests were di
+
+

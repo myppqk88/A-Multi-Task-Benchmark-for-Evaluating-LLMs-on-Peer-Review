@@ -1,0 +1,27 @@
+{
+  "task_id": "F031_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "组织学习概念",
+    "扩散与行为改变"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审追问NEXTFOOD会议学习如何进入地方教学与农业生态内容；作者称新增教育实践示例。对照实际案例而非只看组织学习概念出现，不能把网络会议发生当已证明教学转变。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The text has a great strength which is the concept of “organizational learning”. However, it is not\nreflected how this project is linked to practices that have to do with sustainability or how the\ndiscussions and learning that had been shared in the NEXTFOOD´s meetings have been\ntransferred to educational practices and agroecological content of each of the local actors. In the\ntext, we have no rec",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nDear reviewer, Thank you for your valuable comments on the manuscript. In the current\nrevised version, we address the concerns of both reviewers related to how data was\npresented and discussed in relation to current literature. Most importantly, the manuscript\nhas developed to better reflect the results of the network learning process, in particular\nhow the learning was translated into new educational and sustainable practices and\ndiffused among the participating teaching institutions. Examples",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "task_id": "F024_T2_Q01",
+  "paper_id": "F1000:111383",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "complete_report",
+  "input_path": "data/question_bank/T2_回应评价/F024_T2_Q01/input.json",
+  "input_sha256": "d6e5b2ff6e56d752abd735ab14a189d740a367d6eb64cea87e9bd7a596431977",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F024_T2_Q01/input.json",
+      "source_sha256": "d6e5b2ff6e56d752abd735ab14a189d740a367d6eb64cea87e9bd7a596431977",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          3134
+        ]
+      },
+      "quote": "This research aims to gain insights into open science practices in six broad disciplinary areas by\nasking researchers about the potential to practice open science behaviours in relation to a past\nproject. Thirteen different open science behaviours are included, which give a comprehensive view\nof open science rather than just publishing related activities.\nThe rationale for the study is good and asking researchers about past projects, rather than asking\nthem to predict future work, is an interesting and valuable approach to assessing open science\npractices. The range of open science practices included in the survey is broad, which should give a\ngood insight into all activities that contribute to the aims of being open. However, one aspect I\nthink is lacking is the extent to which researchers were mandated by their funder or institution to\ncarry out any of these activities, which would add context to the extent to which they view certain\npractices as applicable.\nIn terms of the demographics of the survey sample, it is good to see balanced sample sizes in the\ndisciplines and the inclusion of whether the researcher's work is quantitative, qualitative or mixed\nmethods. The methodology should include more information on which geographical areas were\ntargeted for respondents and information on career stages of the respondents if possible, as\nthese are both factors in adoption of open science practices.\nI have concerns that the wording used in the Likert scale may have been confusing for\nrespondents. The aim was to get researchers to report on their past research but the question\nabout open science practices was in the present tense (\"To what extent are the following\nbehaviours applicable...\" [emphasis added]). I'm also unsure of how to interpret the \"not at all\napplicable\" response - the codebook seems to suggest a \"N/A\" option was also offered but this\ndoesn't seem to have been used by anyone. For example, were all respondents creating software\nbut not all thought that sharing software openly applied to their project? Or were the respondents\nwho chose \"not at all applicable\" really saying they didn't create software? Including the survey\ninstrument (i.e. a pdf copy of the survey questions as presented to the respondents) might help\nwith understanding this better.\n\n\n\nA couple of other specific points:\n- There is no mention of data handling with respect to GDPR rules.\n- The codebook gives an identical explanation for two variables - osp_sco and osp_cit. Presumable\nthe latter is Citizen Science and not Science Communication.\nThe dataset in Zenodo is well presented and easy to use (aside from the labelling mistake\nmentioned above). As mentioned earlier, I would recommend adding the survey instrument to the\ndataset to aid understanding and also enable others to repeat this approach.\nIs the rationale for creating the dataset(s) clearly described?\nYes\nAre the protocols appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and materials provided to allow replication by others?\nPartly\nAre the datasets clearly presented in a useable and accessible format?\nPartly\n",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F024_T2_Q01/input.json",
+      "source_sha256": "d6e5b2ff6e56d752abd735ab14a189d740a367d6eb64cea87e9bd7a596431977",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          1546
+        ]
+      },
+      "quote": "\nThank you as well for the constructive comments. I will respond to your comments\nchronologically:\n1. We agree that it would have been interesting to have data on the mandates of\nfunders or institutions. Unfortunately, we can't collect this data a posteriori. However,\nthere is first evidence that mandates at the level of the research institution do not\nnecessarily have the greatest impact on researchers' open science practices. For\nexample, the existence of a research data policy at a research institution is not\nrelated to higher data sharing: [external resource identifier omitted]\n2. We agree that information on the geographical areas and career stage of participants\nwould complement the data set. Unfortunately, we had to keep the survey short due\nto financial resources. Therefore, we don’t have these data.\n3. I agree that the wording of the items in the present tense is unfortunate. Participants\n\n\n\nwere encouraged to ask us questions via the survey-internal direct messaging system\nif any questions arose during the course of the questionnaire. The participants did\nindeed use this opportunity, and we received 27 direct messages. However, these\ninquiries were all aimed at the attention check that was placed at the beginning of\nthe questionnaire, no questions arose about the subsequent items.\n4. We have been careful not to collect personalized data in the survey for which the\nGDPR would be relevant.\n5. Thank you for the pointing out the mistake in the codebook. We corrected this and\nuploaded a new version of the codebook.\n",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "judgment": "作者明确没有收集资助/机构要求、地域和职业阶段信息，并解释经费与问卷长度限制；这是对可得信息的交代，不是这些因素没有影响的证据。所引一项外部研究不能直接排除本样本的相关影响；本题不核查该文献外部真伪。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该项回应的依据、推理或结论范围；不按提及点数累加给分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可接受无法追溯补收的限制，但需据缺失背景限定对调查适用性与推广范围的判断。"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    },
+    {
+      "id": "P2",
+      "judgment": "作者承认现在时措辞不理想。27条讯息仅涉及注意力检查，不能推出后续题均被正确理解；审稿人提出not at all applicable与N/A、是否实际生产软件的歧义仍未被这段回复解释。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该项回应的依据、推理或结论范围；不按提及点数累加给分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可以肯定提供了调查互动信息，同时保留测量解释问题；不必断言问卷确已失效。"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    },
+    {
+      "id": "P3",
+      "judgment": "回复声称修正代码本并上传新版，操作明确；未明确答复提供原问卷的建议。关于未收集personalized data的说明是作者陈述，不能仅凭这句话确认合规，也不能反过来指控违规。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "key",
+      "importance_reason": "影响该项回应的依据、推理或结论范围；不按提及点数累加给分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "区分代码本修正承诺、问卷材料缺答、个人信息处理说明三个不同事项；不因T2没给后稿就判全部未回应。"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确识别已解释、声称修正与未答子项",
+      "high_score_conditions": [
+        "准确区分缺背景数据、时态解释、代码本修正与问卷提供缺答，不能概括为所有事项均已解决。",
+        "核清27条讯息的实际主题及N/A歧义；个人信息说明与独立核验分开。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；具体损害按完整回答判断，不按遗漏条数自动扣分。"
+      ],
+      "boundary_2_3": "准确区分缺背景数据、时态解释、代码本修正与问卷提供缺答，不能概括为所有事项均已解决。",
+      "boundary_3_4": "核清27条讯息的实际主题及N/A歧义；个人信息说明与独立核验分开。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "检验回应理由能否消解各项关切",
+      "high_score_conditions": [
+        "说明不收背景变量的现实理由不等于变量不重要，没人提问不等于题意清楚。",
+        "区分能通过补说明改进的解释问题与无法追溯补收的数据；不把外部单项研究或代码本更正当整个测量有效性证明。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；具体损害按完整回答判断，不按遗漏条数自动扣分。"
+      ],
+      "boundary_2_3": "说明不收背景变量的现实理由不等于变量不重要，没人提问不等于题意清楚。",
+      "boundary_3_4": "区分能通过补说明改进的解释问题与无法追溯补收的数据；不把外部单项研究或代码本更正当整个测量有效性证明。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "分项判断文字充分性并限定整体结论",
+      "high_score_conditions": [
+        "可肯定具体纠错与资源限制说明，同时判定测量歧义和问卷提供仍有缺口。",
+        "按缺口对数据解释的重要性权衡，不全盘否定或全盘认可，不对实际修改或合规作已核实结论。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；具体损害按完整回答判断，不按遗漏条数自动扣分。"
+      ],
+      "boundary_2_3": "可肯定具体纠错与资源限制说明，同时判定测量歧义和问卷提供仍有缺口。",
+      "boundary_3_4": "按缺口对数据解释的重要性权衡，不全盘否定或全盘认可，不对实际修改或合规作已核实结论。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。",
+      "主代理再次完整读本题评审和回应，拆分实质子项并核对三维边界；非外部专家验收。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "complete_report_response_bundle"
+}

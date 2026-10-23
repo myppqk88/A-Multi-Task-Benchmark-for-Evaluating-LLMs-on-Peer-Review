@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F097_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "资料与方法透明度",
+    "目标与概念",
+    "主张限缩"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审要求说明更大项目、方法及结论确定性，作者称补roles中的方法并降低语气；核对原文是否真正出现。",
+    "ARIs是研究需要而非已经写好的研究问题这一澄清，不等于实证证明政策研究衔接成效。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This is a very interesting piece, which definitely presents a comprehensive overview of the policy\nand the context of its implementation in a way which is accessible to a general reader. The aim is\ndescriptive, and it does an excellent job of achieving that aim. The development of ARI's, and the\nbarriers and potential facilitators to their use, is an area which will be of great interest to\nresearc",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThis is a very interesting piece, which definitely presents a comprehensive overview of the\npolicy and the context of its implementation in a way which is accessible to a general\nreader. The aim is descriptive, and it does an excellent job of achieving that aim. The\ndevelopment of ARI's, and the barriers and potential facilitators to their use, is an area\nwhich will be of great interest to researchers and practitioners in the UK, but also for ot",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "• Influencing future funding programmes which follow the themes of our knowledge mobilisation events\n(e.g. Just transition/vulnerable communities by BA) or drew on our knowledge of ARI mobilisation to inform\ndesign (ESRC Policy Fellowship scheme)\nThe true value of ARIs may be in illuminating the ways in which the research-policy system is connected, and how we can\nintervene most effectively to support this system.\nWeaknesses of the ARIs: systems challenges\nNot everything can be or is articulated as an ARI: ARIs are not able to articulate the totality of departmental research\nneeds. For some departments, this is due to political or operational sensitivity, and for others, they prefer to only publish\nARIs on topics where they are currently seeking external input. It would be a mistake, therefore, to think of ARIs as a\ncomplete and exhaustive list of the topics on which government is seeking input.\nARIs are not research questions: Academics frequently describe ARIs as poorly written resea",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "ARIs are not research questions: Academics frequently describe ARIs as poorly written research questions. An\nalternative, more useful phrase might be “research needs”, which helps to give the impression that there is a process\nattached to them, that they are valued, and broader than research questions. They are more usefully thought of as topics for\nconversation.\nARIs are difficult to access and analyse: By 2018, most departments had published at least one version of their ARIs,\nwhich then sat on the government website in pdf or html formats. Through the fellowships, the ARI team worked with\nOverton to design, test and launch a searchable database of all ARIs5 by topic, department or year, in 2023. This greatly\nimproved the ability of researchers to identify relevant topics or potential collaborators, and meant departments are easily\nable to identify shared cross departmental areas of interest.\nFinding relevant evidence and expertise takes time and work: While some departments had reso",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "As of summer 2022, all departments and arms-length bodies have published at least one version of their ARIs, with at least\nten updated in the last two years. Over 1500 ARIs have been published which vary greatly in terms of content, production\nand associated activities (Haddon and Sasse, 2018).\nHow do departments produce ARIs?\nFor most departments, the production of ARIs was a primarily internal process. For example, the Departmental Chief\nScientist might task the science and analysis team within a department with drafting a set of ARIs. Some departments\nconnected the development of ARIs with their departmental science strategy which set out projected R&D spending\nfor the financial year, and with policy priorities for the department. Some departments engaged with external experts\nto frame, prioritise and shape their ARIs, for example through their Science Advisory Councils. Others took a highly\nproactive approach. For instance, Defra held a two-day conference in 2018 with representativ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction: what are areas of research interest?\nAlthough governments, funders and researchers often share a desire for more evidence to support social change, there\nare significant organisational and procedural barriers in the way. One often-mentioned barrier to evidence use in policy\nis a lack of policy relevant research (Armstrong et al., 2006; Oliver et al., 2014; Cairney, 2016; Wye et al., 2019).\nOne way of addressing this barrier is to make it easier for researchers to know about policymakers’ research priorities.\nIn the UK, government departments identify priority research gaps called Areas of Research Interest (ARIs). The Nurse\nReview into the UK Research Councils (Nurse, 2015) identified a strategic need across government departments to\n“maintain[] ‘statements of need’, in terms of the most important research questions confronting the Departments”\n(p.3, Nurse, 2015). By enabling other government departments, funders, and researchers to easily view and respond to\ngovernment k",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

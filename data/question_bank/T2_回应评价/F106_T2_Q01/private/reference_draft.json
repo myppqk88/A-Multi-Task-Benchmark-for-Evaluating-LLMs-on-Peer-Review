@@ -1,0 +1,28 @@
+{
+  "task_id": "F106_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "质性编码的情境适应与核验"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "In the \"Data Analysis\" section, the \"Instrument\" used consists of the three mentioned stages\n(emotion coding, identification and/or interpretation of causes of reported emotions, and\nidentification of themes based on emotional geography structure), based on Hargreaves (1998a).\nHowever, it is unclear how these three stages were adapted to the Indonesian context and what\nprocedures were taken to validate these stages. The entire validation process and reliability of\nthese three stages must be clarified to validate the study results effectively.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Thank you very much for your suggestions. I will definitely make an improvement based on\nwhat you suggested.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "作者只有未来改进的总承诺；不把该表述预判成实际已改。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

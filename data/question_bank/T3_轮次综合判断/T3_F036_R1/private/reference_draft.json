@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F036_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究定位与贡献",
+    "比较设计与编码",
+    "证据呈现"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审要求更清晰的研究问题、案例选择和编码流程，作者称拆分文献/概念框架并补充方法。必须在前后稿逐处核对，不能按承诺判完成。",
+    "结果中的访谈引文、讨论中的理论解释及奥地利/希腊比较是不同层次，调整标题不等于加强比较推论。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Introduction and Framing of the Research Question\nThe article would benefit from a stronger framing of its research purpose and contributions within\nthe introduction. Specifically, the authors should clearly articulate the research question early on\nto orient the reader toward the study’s specific aims and relevance. A more explicit statement of\nthe research gap would enhance understanding of why ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for your insightful comments. The introduction has been reworked accordingly\nto articulate the research purpose. The organization of the text has been re-worked to\naccommodate this. With a separate literature review (Section 2) and conceptual framework\n(Section 3). The methodology section has been updated to reflect this comment, regarding\ndata coding, the interview protocol, and the analytical software used. Moreover, a section\nhas be",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "In contrast, coming from an anti-essentialist and relational\nontology inspired by Deleuze and Guattari and Gibson-Graham,\nwe aim to overcome such limitations. Gibson-Graham &\nRoelvink (2009) highlight how a re-reading of the three dimensions of SI (addressing social needs (through the inclusion\nof marginalized groups into society), changing social relations\nand collective empowerment/socio-political transformation)\nthrough Diverse and Community Economies (hereafter DCE)\ncan enrich SI theory. Through a re-conceptualization of the\neconomy as a diverse space of ethical and political action\n“what is usually regarded as ‘the economy’ —wage labor,\nmarket exchange of commodities, and capitalist enterprise”\n(Gibson-Graham, 2008: 69), becomes “just one particular\nset of economic relations situated in a vast sea of economic\nactivity” (Gibson-Graham, 2008: 70). Rather than a dominant\ncapitalist economy, Gibson-Graham (2008) ask us to read\nfor difference over dominance, and understand the diversit",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "“empower people” and “drive societal change” (BEPA, 2014),\nthese connotations also enable the ‘instrumental’ use of SI\nby legitimizing neoliberal politics and further erosion of the\nwelfare state (Marques et al., 2018; Swyngedouw, 2005). On the\ncontrary, SI in its grassroots form has the potential for radical\nchange (Apostolopoulou et al., 2022). According to Moulaert\net al. (2017) SI is i) a way of understanding a wide range of\nactivities and practices oriented to addressing and providing\nsolutions to specific social problems or meeting human needs.\nMoreover, SI ii) involves changing relations through the adoption of new social practices, institutional arrangements and/or\nforms of participation. However, the effects of SI extend beyond\nthe immediate meeting of needs. SI seems to improve long term\nopportunities for individuals and communities, through producing\nmore efficient, effective and sustainable means for society\nto deal with its challenges, and that iii) can have a deeper\ntrans",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "after, as well as building daily competences to leverage social\nchange.” (Chatterton, 2016: 405)”. Moving beyond certainty,\nwe aim to provide one potential pathway of many possibilities towards creating such a future. To do so, we would like\nto infuse Wright’s thinking with that of DCE, understanding\nsocial transformation as post-capitalism, and Wright’s three\ntypes of transformation, as three stages of transformation.\nAs highlighted in the literature review section of the paper,\nWright provides three pathways towards social transformation – ruptural, interstitial and symbiotic. Interstitial transformation may be the social transformation most closely linked\nto grassroots SI, referring to the ‘various kinds of processes\nthat occur in the spaces and cracks within some dominant\nsocial structure of power’ (p. 229). Wright gives examples of\ninterstitial transformations such as various forms of co-ops,\nworkers councils, community based social economy organizations etc., which are also commo",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The paper discussed the role of CWS as initiators and facilitators of SI processes in two community led CWS in two\nrural areas in Austria and Greece. The research methodology\nemployed a qualitative case study approach, utilizing participant\nobservation and semi-structured interviews to explore the multiple sets of relations found in these rural CWS, aiming to\nunderstand how these arrangements cover local needs and foster new social relations. The findings reveal that CWS play a\nsignificant role in addressing social needs and facilitating\ngrassroots SI practices. CWS seem to provide a site where the\nunmet needs of the local people are negotiated, redefined and\nare covered in a co-creative and collective manner. This is happening in a DCE framework, where affective labour mostly\nperforms. They provide opportunities for actors to affect and be\naffected, increasing their agency and assisting them with their\nown desires by providing resources such as space, knowledge,\nmaterials, networks, a",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

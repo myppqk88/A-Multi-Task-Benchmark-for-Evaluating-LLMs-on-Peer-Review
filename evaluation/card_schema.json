@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "required": [
+    "task_id",
+    "paper_id",
+    "task",
+    "split",
+    "unit",
+    "input_path",
+    "input_sha256",
+    "evidence",
+    "reference_points",
+    "dimension_bindings",
+    "severe_error_checks",
+    "read_scope",
+    "expert_queue",
+    "expert_gold",
+    "human_review_status",
+    "publication_status"
+  ],
+  "field_spec": {
+    "evidence": "数组，每项{id,source_path,source_sha256,locator:{json_pointer或text_span:[start,end]},quote,role,model_visible,reference_only}；quote必须逐字等于locator所指字符串或其指定跨度；文本跨度0-based end-exclusive。JSON字符串局部引用可用locator:{json_pointer,text_span:[start,end]}。",
+    "reference_points": "数组，每项{id,judgment,evidence_ids,importance,importance_reason,status,acceptable_alternatives}；status取supported/partly_supported/disputed/unresolved。可额外添加task_specific等字段。 supported等状态仅表示AI基于所引材料的候选判断，不表示人工审核通过。",
+    "dimension_bindings": "对象，三个key=evidence_accuracy/argument_validity/conclusion_appropriateness；每值{rule_ref,focus,high_score_conditions,low_score_risks}，可附逐题锚点。 必须补充boundary_2_3与boundary_3_4，对应具体内容。",
+    "read_scope": "对象，{read,not_read,verification_limits}；区分全文读、定点读、仅索引/自动解析。图像未目视必须明示。",
+    "expert_queue": "数组，每项{question,why_needed,evidence_ids,priority}，只放影响科学裁决的具体问题；无则[]。",
+    "expert_gold": "固定null",
+    "human_review_status": "固定pending",
+    "publication_status": "固定仅研究团队核验稿",
+    "optional": "author_claims、visible_changes、scientific_sufficiency、coverage_limit、source_integrity_checks等可增加。",
+    "image_evidence": "图像证据可用{id,source_path,source_sha256,locator:{page,image_path},observation,role,model_visible,reference_only,evidence_type:image}；observation为实际目视记录，不冒充quote。",
+    "concern_coverage": "T1/T3必需，逐项{concern,disposition或status,reason,reference_evidence_ids或reference_point_ids}。完整阅读实际可得当轮报告后归并重要科学关切；若仅有作者信引述或原件缺失，必须限定覆盖范围，不声称已读独立完整报告。待核和不成立明确标记，不能泛化占位。",
+    "human_reference_use": "T3必需，目标后稿Version组的后评审report IDs、实际读取范围、采用判断及理由/未采用具体原因；reference_only，不以通过状态作真值。",
+    "unit": "规范汇总：T1 original_manuscript；T2 single_concern/complete_report；T3 revision_cycle。source_unit保留原材料单位别名，来源角色不合并。",
+    "scoring_use": "reference_points可标candidate_anchor_subject_to_human_review（候选参照）或pending_concern_only_not_required_defect（仅待核关切，不是必答缺陷、不得直接计分）；后一种必须附verification_requirement。未显式标注也仍是待人工核验的候选，不自动成为金标准。"
+  },
+  "constraints": [
+    "T2的模型可见评分证据仅本题input；后稿/后评审不能作为其充分性判定依据。",
+    "T1外部真人评审可reference_only作定位线索，判断须绑定原稿可见证据。",
+    "T3后评审须目标版本原件校验后方能作reference_only；否则不引用。",
+    "无人工gold；AI候选不是独立专家验收。"
+  ]
+}

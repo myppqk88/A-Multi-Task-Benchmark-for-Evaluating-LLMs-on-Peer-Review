@@ -1,0 +1,27 @@
+{
+  "task_id": "F027_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "检索与纳入范围",
+    "概念论证"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "答复称重构引言、删新石油类比并修正法律区分。核对具体法理和结构改变；正文明确外置的文献目录Table9是综述可追溯性材料，未附不能假称已核全语料。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "I. Overview\nThe paper offers a valuable literature review on Text and Data Mining (TDM), mapping the\ncomplex regulatory framework surrounding these processes and shedding light on what\nconstitutes lawful TDM. However, several areas require improvement for the paper to reach its full\npotential. This report provides some comments and suggestions to strengthen the paper's\nstructure, argumentation, an",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\n\n\n\n\nThank you very much for your constructive and insightful comments. I have thoroughly\nrevised the paper in light of your feedback, and I believe these changes have significantly\nstrengthened the review. Below, I address each of your comments and explain the\nadjustments made.\n1. Introduction: Structure and Clarity\nI have restructured the introduction to improve clarity. The concept of \"big data\" is now\nintroduced with a more thorough explanation of its characteristic elements, including a\ncle",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

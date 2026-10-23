@@ -1,0 +1,63 @@
+{
+  "task_id": "F157_T2_Q01",
+  "paper_id": "F1000:128167",
+  "parent_task": "T3_F157_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F157_R1/input.json",
+  "parent_input_sha256": "e4df8219712fafcdd01c259c1caa811e2bd6b6d8894d6e89f185acc728ec973e",
+  "review_dimension_AI_candidate": "论证结构与政策含义",
+  "selection_scope": "表格拆分及强化文字全部保留；不从增作者这一行动推断论证充分。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/128167_The_road_to_success__drawing_parallels_between__road__and__research_da/v1_manuscript.pdf",
+      "original_sha256": "5425bcec38f7f6d55a1de6bf2d989d134b2683b9e74ec9d423aa0e7923cff7bb",
+      "raw_text_file": "data/question_bank/T2_回应评价/F157_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        16106,
+        16506
+      ],
+      "report_id": "161289",
+      "date": "2023-04-13",
+      "raw_page_numbers": [
+        6
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/128167_The_road_to_success__drawing_parallels_between__road__and__research_da/v1_manuscript.pdf",
+      "original_sha256": "5425bcec38f7f6d55a1de6bf2d989d134b2683b9e74ec9d423aa0e7923cff7bb",
+      "raw_text_file": "data/question_bank/T2_回应评价/F157_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        19972,
+        20367
+      ],
+      "report_id": null,
+      "date": "2023-07-28",
+      "raw_page_numbers": [
+        8
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 2907,
+    "end": 3434,
+    "exact_quote": " chances that consequences of policy decisions are foreseen.\nFor the actual feature comparison, see Table 1.\nPolicy outcomes and implications\nThe comparison between research data infrastructure and road infrastructure has many hooks to support productive\ndiscussions, and decisions, on research infrastructure funding and sustainability governance. Given that we, the\n\nTable 1. Comparable concepts in research data infrastructure and road infrastructure.\nData infrastructure\n\nRoad infrastructure\n\nData service\n\nRoad\n\nUser of a ",
+    "anchor_matches": 3,
+    "anchor": "Table 1"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 5731,
+    "end": 6258,
+    "exact_quote": "ability governance. Some examples of policy\nimplications following from the comparison are given in Table 2.\nGiven that we, the co-authors, all work in research infrastructures, there is an inherent bias in the approach presented, just\nlike when Sutherland et al.4 published their “20 things politicians need to know about science”. However, we hope our\nthoughts have practical use: policymaking is complex and multifaceted, as astutely explained in “20 things scientists\nneed to know about policy”. The comparison tables are s",
+    "anchor_matches": 2,
+    "anchor": "Table 2"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿一张类比表，后稿出现第二张政策含义表并在正文引出；拆表不自动保证推论有效。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

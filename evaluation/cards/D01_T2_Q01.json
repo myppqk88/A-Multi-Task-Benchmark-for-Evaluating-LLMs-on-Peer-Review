@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "D01_T2_Q01",
+  "paper_id": "PeerJ:1604",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D01_T2_Q01/input.json",
+  "input_sha256": "068d7a439545da62f7b50407d8fe61272950c3d0129dc4686815fb50523b7794",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D01_T2_Q01/input.json",
+      "source_sha256": "068d7a439545da62f7b50407d8fe61272950c3d0129dc4686815fb50523b7794",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          119
+        ]
+      },
+      "quote": "Hypothesis. The authors should specify at the end of the introduction the hypothesis\nof mediation and moderation model.",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D01_T2_Q01/input.json",
+      "source_sha256": "068d7a439545da62f7b50407d8fe61272950c3d0129dc4686815fb50523b7794",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          364
+        ]
+      },
+      "quote": "Answer: We thank the reviewer for this comment, and have mentioned the possible mediators and moderators in the revised discussion, but not in the introduction, as our goal was not to determine possible mediators of specific hopes, but rather the perceived importance participants give to the factors constituting the IHS scale on their hoping for specific events.",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；一项关于特质希望与具体事件希望的横断面问卷研究。；回应文字充分性",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_2_3": "2档识别部分事实；3档须准确引用与本点有关的关键材料：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_3_4": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；一项关于特质希望与具体事件希望的横断面问卷研究。；回应文字充分性",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只识别部分要求或复述答复；3档须准确处理：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_2_3": "2档只识别部分要求或复述答复；3档须准确处理：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_3_4": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；一项关于特质希望与具体事件希望的横断面问卷研究。；回应文字充分性",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_2_3": "2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：作者以研究目标为IHS因素的主观重要性而非中介确定来解释不在引言设模型，属于有理范围回应；讨论提及候选因素不等于检验机制。",
+      "boundary_3_4": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：不能强迫横断面研究作中介因果结论；也不能从回复确认原分析与目标一致。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "T2_response_only"
+}

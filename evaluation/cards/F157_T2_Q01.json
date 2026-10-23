@@ -1,0 +1,128 @@
+{
+  "task_id": "F157_T2_Q01",
+  "paper_id": "F1000:128167",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F157_T2_Q01/input.json",
+  "input_sha256": "d2f1182570df8f5e0489ceb1fa40fbe5899f49ca2a7511e946891c10ce123f43",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F157_T2_Q01/input.json",
+      "source_sha256": "d2f1182570df8f5e0489ceb1fa40fbe5899f49ca2a7511e946891c10ce123f43",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Second, the policy options and implications do not come immediately from the description of the\nmain common features, especially for those who are not familiar with both research and more\ntraditional infrastructures. Perhaps the table could be split in two to distinguish the key features\n(first half) from the policy implications on their funding and public justification (second half more\nor less).",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F157_T2_Q01/input.json",
+      "source_sha256": "d2f1182570df8f5e0489ceb1fa40fbe5899f49ca2a7511e946891c10ce123f43",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "We agree with your suggestions on the table. We have split the table as you suggested in\nversion 2 of the article, and have added relevant text in the [now two] tables, which are\nmore readily understandable as a result. We have also invited an additional co-author\n(Elaine Harrison), with science communications specialism, to reformulate and strengthen\nthe text, in line with the your comments.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "答复明确按特征与政策含义拆为两表并补文字，对结构建议有直接响应。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient适用于论证衔接仍待说明；sufficient可对明确的拆表建议成立，但需将论证有效性标未展示而非已验证。"
+    },
+    {
+      "id": "J2",
+      "judgment": "新增传播专业合作者可能改善可读性，但其身份不证明基础设施共同特征可逻辑推出资金/公共正当性政策；回复没有展示新增推导文字。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient适用于论证衔接仍待说明；sufficient可对明确的拆表建议成立，但需将论证有效性标未展示而非已验证。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。答复明确按特征与政策含义拆为两表并补文字，对结构建议有直接响应。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：区分拆表动作和从特征到政策的推理。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：答复明确按特征与政策含义拆为两表并补文字，对结构建议有直接响应。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：区分拆表动作和从特征到政策的推理。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。新增传播专业合作者可能改善可读性，但其身份不证明基础设施共同特征可逻辑推出资金/公共正当性政策；回复没有展示新增推导文字。",
+      "high_score_conditions": [
+        "不能用新增作者专长替代推理支持，同时认可拆表确实针对可读性问题。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：新增传播专业合作者可能改善可读性，但其身份不证明基础设施共同特征可逻辑推出资金/公共正当性政策；回复没有展示新增推导文字。"
+      ],
+      "boundary_2_3": "区分拆表动作和从特征到政策的推理。",
+      "boundary_3_4": "不能用新增作者专长替代推理支持，同时认可拆表确实针对可读性问题。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient适用于论证衔接仍待说明；sufficient可对明确的拆表建议成立，但需将论证有效性标未展示而非已验证。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：不能用新增作者专长替代推理支持，同时认可拆表确实针对可读性问题。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：新增传播专业合作者可能改善可读性，但其身份不证明基础设施共同特征可逻辑推出资金/公共正当性政策；回复没有展示新增推导文字。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：不能用新增作者专长替代推理支持，同时认可拆表确实针对可读性问题。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient适用于论证衔接仍待说明；sufficient可对明确的拆表建议成立，但需将论证有效性标未展示而非已验证。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "区分拆表动作和从特征到政策的推理。",
+    "3_to_4": "不能用新增作者专长替代推理支持，同时认可拆表确实针对可读性问题。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "F115_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原Word回信的核对；AI候选参考，不是人类金标准",
+  "review_dimensions_AI_candidates": [
+    "统计报告规范与合理不采纳"
+  ],
+  "dimension_status": "候选主题，未冻结为专家标签或权重",
+  "atomic_requirements_scope": "一个完整关切及其全部给定答复；多段联合答复时保留全部关联段落",
+  "ai_checks": [
+    "原建议以期刊规范为条件，作者用同刊另一文章解释保留阈值p值；应评价理由与建议条件是否对应，而非强制服从。",
+    "同刊个别文章不自动证明期刊正式规范，本题不检索或假定当前规范，也不据此给定专家标签。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "- Unless it is not the norm for the journal, I would strongly suggest that specific p-values be included rather than simply stated <.05 or >.05. If the norm is otherwise, feel free to ignore this comment.",
+      "role": "原始回信中的评议引文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Considering how the values of p in other articles published in recent articles published in PeerJ (e. g. Cabello, R., and Fernández-Berrocal, P. (2015). Under conditions can introverts Which Achieve happiness? Mediation and moderation effects of the quality of social relationships and emotion regulation Ability on happiness. PeerJ, DOI 10.7717 / peerj.1300), we decided to maintain the values of p as they are indicated in our paper.",
+      "role": "作者的完整对应文字回答"
+    }
+  ],
+  "revision_verification": "not_assessed"
+}

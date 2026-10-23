@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_D08_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "框架操作化",
+    "学习成果与评估"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "主文表1已列40项学习成果，不能因外部Annex I未附误称这40项全部缺失。",
+    "核对后稿对成果的可观察性、可测量性和对应评估的修订；未附Annex I扩展内容不应凭空补入判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The method for creating the competence framework is described, but there are a lot of details\nmissing from this paper. For example, how were the workshops organized, who were the experts\n(as demographics) and how were they selected, how was the validation conducted etc. Also, the\nmethods need to be explained as well: coverage analysis (for example), what did that entail? In the\nend, just the finis",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe thank Dr. Dragomir for the careful review and constructive feedback. We acknowledge\nthat greater methodological transparency is essential for credibility and reproducibility. We\nhave substantially expanded the Methods section to provide comprehensive details on\nworkshop organization, participant and expert selection, validation procedures, and\ncoverage analysis methodology. Below we respond point-by-point to the Reviewer’s\nobservations and li",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "This paper has presented the methodology and results of developing learning outcomes for the European sustainability competence framework (GreenComp) as part of the OpenPass4Climate\nproject. The development process, involving co-design among\neducational stakeholders, validation by an international panel\nof experts, and comprehensive coverage analysis, has produced 40 learning outcomes that operationalize GreenComp’s\ncompetencies while addressing critical gaps in the original\nframework.\nThe resulting learning outcomes represent more than technical specifications for assessment. They embody a vision of\nsustainability education that integrates cognitive understanding, emotional engagement, and behavioral transformation. By\nexplicitly incorporating philosophical dimensions, challenging anthropocentric assumptions, and connecting individual\nand collective action, they point toward a more transformative\napproach to sustainability education than purely skills-based\nframeworks allow.\nThe tensi",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "This paper has presented the methodology and results of developing learning outcomes for the European sustainability competence framework (GreenComp) as part of the OpenPass4Climate\nproject. The development process, involving co-design among\neducational stakeholders, validation by an international panel\nof experts, and comprehensive coverage analysis, has produced 40 learning outcomes that operationalize GreenComp’s\ncompetencies while addressing critical gaps in the original\nframework.\nThe resulting learning outcomes represent more than technical specifications for assessment. They embody a vision of\nsustainability education that integrates cognitive understanding, emotional engagement, and behavioral transformation. By\nexplicitly incorporating philosophical dimensions, challenging anthropocentric assumptions, and connecting individual\nand collective action, they point toward a more transformative\napproach to sustainability education than purely skills-based\nframeworks allow.\nThe tensi",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "assessment across multiple levels (primary, secondary, higher\neducation, and business contexts) with an accompanying mobile\napplication. Their framework emphasizes dialogic assessment through co-creation of rubrics between teachers and students, peer and self-assessment capabilities, and collaborative\ndiscussion of evaluation criteria (Sousa et al., 2024). While\nthis dialogic approach is powerful for fostering student agency\nand formative development, its reliance on context-specific,\nco-created criteria stands in direct tension with the goals of a\nstandardized recognition framework. The method’s pedagogical\nstrength in the classroom, therefore, presents a significant challenge for issuing portable credentials, whose currency depends\non a high degree of comparability and inter-institutional trust.\nThe emergence of Open Badge initiatives represents a particularly promising yet problematic development in GreenComp\noperationalization. The GoGreen - Youth Navigator project’s\nGreen Badges s",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "this trend through its gamified approach, featuring 36 selfreflective questions that award badges and points, creating\nmotivational affordances while formal competence certification\ncalls for established validity and reliability standards.\nProviding a more methodologically robust but more narrowly\nfocused example, the EduCITY project uses mobile augmented\nreality games (MARGs) to assess sustainability competencies\nwithin smart learning city environments. This research-driven\ninitiative demonstrates how a deep and specific assessment\ncan be operationalized, but it also highlights the challenge of\ncomprehensive coverage. Its assessment model, as presented,\nexplicitly targets only one of the four GreenComp competence\nareas: ‘Embodying Sustainability Values’. Within this specific\narea, the project employs a rigorous mixed-methods approach,\ntriangulating data from a validated GreenComp-based questionnaire with automated gameplay performance logs. While its\nscope is partial, the EduCITY mode",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

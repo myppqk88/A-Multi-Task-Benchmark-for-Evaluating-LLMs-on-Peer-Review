@@ -1,0 +1,28 @@
+{
+  "task_id": "F012_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原Word回信的核对；AI候选参考，不是人类金标准",
+  "review_dimensions_AI_candidates": [
+    "概念定义与区分"
+  ],
+  "dimension_status": "候选主题，未冻结为专家标签或权重",
+  "atomic_requirements_scope": "一个完整关切及其全部给定答复；多段联合答复时保留全部关联段落",
+  "ai_checks": [
+    "评审要求界定shame并与guilt区分，原答复仅为Further explanation provided，应评估其文字具体性。",
+    "未给后稿，不能把概念确已澄清当事实，也不把回复简短自动当作没有回复。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Second, the concept of shame might be more explicitly defined and further distinguished from guilt in that the latter involves our own actions but shame is often internalized because of the actions of others (e.g., family member’s drinking) or simply status (e.g., poverty).",
+      "role": "原始回信中的评议引文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Further explanation provided.",
+      "role": "作者的完整对应文字回答"
+    }
+  ],
+  "revision_verification": "not_assessed"
+}

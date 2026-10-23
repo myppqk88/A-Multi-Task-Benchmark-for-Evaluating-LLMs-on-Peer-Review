@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F099_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "概念与技术准确性",
+    "利益关系解释",
+    "科学与形式修改区分"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对ornamental stones、货币单位及温度等文字/技术改动，不能据语言润色推断冲突分析得到实质增强。",
+    "须同时阅读另一份报告的实质要求及对应答复，避免只按第一份多为格式建议的报告评价整体修订。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The paper “Quarry mining or nature conservation: emerging conflicts in Serra de Aire e Candeeiros\nNatural Park (Portugal)” is, overall, well written. The topic addressed is both relevant and timely,\nparticularly in light of the social conflicts that may arise in areas—whether protected or\nnot—affected by extractive activities. The manuscript offers valuable insights into these dynamics.\nSome speci",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe would like to express our sincere gratitude to Reviewer 2 for the positive evaluation of\nour manuscript and for the thoughtful and constructive suggestions, which have helped us\nimprove both the clarity and technical accuracy of the paper. Below we detail how each\ncomment was addressed:\n1.\nGeneral comments: Response:\nA List of Acronyms at the beginning of the paper for reader clarity would be a great\nhelp, we will check with the editors.\nA co",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "roads improved by the companies themselves to transport their\nproduction. This variable is linked to a type of strategy developed by the companies, linked to the relationship with the\npark authorities – as the companies improve roads and routes\nwithin the PNSAC – yet also with the communities living in the\npark, trying to establish trust with the neighbours by improving and maintaining infrastructures. However, at this point,\nit is important to highlight the impacts that the transport of\nproduction generates on the private property adjacent to the\nroads, causing structural damage and air pollution, reducing\nwell-being.\nIn terms of building links with local communities, is one of the\nmost frequently discussed issues in the interviews. However, it\nis important to note that this issue is of comparable significance\nin all of the interviews. On the one hand, there are tensions\nbetween the uses that each group of actors intends to make\nof the territory; for example, companies use the territo",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "adjacent roads improved by the companies themselves to transport their production. This variable is associated with a\nstrategy developed by the companies that focuses on their relationship with the park authorities. These companies\nimprove roads and routes within the PNSAC. Additionally, they aim to build trust with the communities living near the\npark by enhancing and maintaining local infrastructure. However, it is important to highlight the negative impacts of\ntransporting production. This transport can cause structural damage to private properties adjacent to the roads and lead to\nair pollution, ultimately reducing the well-being of residents.\nThe importance of establishing connections with local communities is a recurring theme in our discussions and holds\nconsiderable significance across all interviews conducted. There are inherent tensions among various stakeholders\nregarding their intended use of the territory; for instance, companies utilise the land primarily for economic act",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The term hard-to-reach population refers particularly to populations that do not wish to be contacted or identified based on\nspecific criteria, as well as groups that are considered difficult\nto reach because of their geographical location. 17,21 define\nthe groups of people who are sometimes considered difficult\nto reach or hidden, as those subjects who have no interest in\nbeing found or contacted.\nThe authors state that “In these circumstances, it can be very\ndifficult or expensive to recruit study subjects” recommending the use of snowball sampling method as a reliable referralsbased method, indicating that “initial known subjects to recruit\nnew additional subjects.”21.\nAccordingly, 22 argue that a chain-referral sampling method\nrelies on referrals from initial subjects to generate additional\nsubjects.\nThe sampling decision was made on the basis of three criteria, the first being that the enterprises must operate within\nthe PNSAC, i.e. the selected mining company must be\nlocated with",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Method\nThe nature of this research compelled a specific methodological design consisting of three stages:\n1- The first stage involved the delimitation of the study area and the definition of the subject participants.\n2- The second stage, considered the search for extractive companies operating in the region and data collection\n(semi-structured interviews).\n3- Finally, the third stage consisted of data sorting and analysis.\nThe initial exploration of the study area involved a review of technical literature. This included examining various\ndocuments, such as the Territorial Management Plan of the Serra de Aire e Candeeiros Natural Park, as well as searching\nfor official statistical data published by the Portuguese General Directorate of Energy and Geology (DGEG).\nGeoreferenced information was utilized to create a map of the total area encompassing the PNSAC, the mining zones\nwithin the park and its surrounding boundaries. The mapping was conducted using QGIS version 3.26.1 Buenos Aires.\n",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

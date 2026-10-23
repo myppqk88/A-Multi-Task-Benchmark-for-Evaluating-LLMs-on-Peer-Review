@@ -1,0 +1,27 @@
+{
+  "task_id": "F006_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "权衡概念",
+    "主张强度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑试点分析方法不明、三项权衡选择和项目宣传倾向；作者声称补充分析基础及更谨慎结论。核对具体方法与未解决张力，不能把中性措辞替换当成实证支持增加。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Trade-off hacking: Have the cake and eat it too? Turning competing interests into win-wins\nin data-driven food technology\n\nGeneral comments:\nThe work addresses a real and highly topical problem. It is highly relevant to policy design.\nHowever, there are some areas that need improvement.\n○\n\nAbstract\nIt is not specified how the pilot projects were explicitly analyzed.\n○\n\nIntroduction\nThis section co",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you for the constructive feedback. The manuscript has been revised to improve\nclarity, balance, and critical reflection. Abstract\nThe description of how pilot material was analysed has been clarified by stating the overall\napproach, data basis, and main analytical process more directly. Introduction\nThe tone has been revised to be more neutral and analytical, with less project-affirming\nlanguage. Background (trade-off hacking and trade-off selection)\nThe conceptual discussion of trade-off",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

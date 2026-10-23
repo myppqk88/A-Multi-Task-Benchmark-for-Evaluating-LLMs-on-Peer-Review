@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F008_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "抽样与代表性",
+    "分析框架"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "回应以brief report范围解释文献深度与访谈人数，同时称补框架与文献；范围约束可合理，但不能代替说明取样及理论适用。完整访谈提纲与代码簇需作为原稿附件核验。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The paper focuses on the interplay between top-down and bottom-up processes within local\nenergy transition initiatives. It aims at gaining insights into the ways that a more balanced\napproach can be achieved, by taking into consideration the (mutual) interests, barriers and\nexpectations of the municipality and local citizen initiatives. Needs and expectation gaps in local\nprojects have been identi",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you very much for your insightful feedback and recommendations. We appreciate the\ntime and effort you put into reviewing our brief report and have addressed your comments\nas follows:\nWe have now introduced the framework in the introduction to provide clearer context\nand structure.\nWe would like to kindly clarify that the format of a brief report emphasizes the\ninclusion of only \"essential references.\" As such, we have adhered to this guide",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nThis study focuses on top-down and bottom-up processes within the\nfield of energy transition. It aims at gaining insights into the ways that\na more balanced approach can be achieved, by taking into\nconsideration the (mutual) interests, barriers and expectations of the\nmunicipality and local citizen initiatives. The theoretical framework of\nthe study is the implementation analysis framework, distinguishing\ntop-down and bottom-up approaches. Specifically, this qualitative\n(thematic analysis) research study investigates the mismatch in\nexpectations between a number of local energy initiatives and the\nmunicipality of Groningen regarding their roles within the local\nenergy transition context. To this end, semi-structured interviews\nhave been conducted with members of the municipality of Groningen,\nGrunneger Power (a local energy intermediary), and four local energy\ninitiatives. Need and expectation gaps have been identified and\npotential solutions have been explored. The main findi",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nThis brief report focuses on top-down and bottom-up processes\nwithin the field of energy transition. It aims at gaining a better\nunderstanding of the needs of the local energy initiatives. On this\nbasis, policy recommendations are formulated to help the\nmunicipality of Groningen to facilitate local energy initiatives,\nultimately leading to a more balanced approach of the local energy\ntransition. Thus, this study explored the (mutual) interests, barriers\nand expectations of the municipality and local citizen initiatives. The\ntheoretical framework is the implementation analysis framework,\ndistinguishing top-down and bottom-up approaches. Specifically, this\nqualitative (thematic analysis) research study investigates the\nmismatch in expectations between a number of local energy initiatives\nand the municipality of Groningen regarding their roles within the\nlocal energy transition context. To this end, semi-structured interviews\nhave been conducted with members of the municipality o",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "To catalyse the energy transition, there is a need to broaden\nthe commonly adopted strictly top-down approach, by embracing\nand fostering the roles that local government, entrepreneurs\nand citizens can play together (Allen et al., 2012) (Hargreaves\net al., 2013) (Klösters et al., 2020). In the Netherlands, numerous local grassroot energy initiatives have emerged with the\ngoal of accelerating the local energy transition (Rotmans, 2011).\nThere has been an enormous increase in the number of LEIs\nover the last seven years (HIER; RVO, 2021). In 2020, there\nwere a total of 623 LEIs in almost every municipality in the\nNetherlands. Specifically, LEIs are defined as: “A group of\ncitizens who collectively, with the intention of collaborating on making the local energy supply more sustainable and\ntaking initiatives to that end. This includes activities aimed at\nenergy generation, energy conservation, energy supply,\ncollective purchasing or commissioning and other energy-related\nactivities. The co",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "formulated. A large number of these barriers relate to the role\nof the municipality in facilitating the activities of the local\ninitiatives. Examples vary from barriers in legislation and\nregulations to diverging interests between local initiatives and\nthe municipality.\nDespite the growth in the number of LEIs, the impact of these\ncollectives on the national and international climate objectives is still limited (Wiekens & Germes, 2020). LEIs and\ntop-down energy planning procedures rarely align. The\npractical studies that are mentioned within the literature review\non LEIs, show that the role of the municipality in facilitating\nLEIs is often dominant and top-down oriented (Klösters\net al., 2020; van der Windt et al., 2021). However, according to\nSabatier & Mazmanian (2005), a more balanced approach,\ntaking into account the needs, interests, but also the barriers in\nthe relationship between local energy initiatives (LEIs) and\nmunicipalities could accelerate citizen engagement and result\ni",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

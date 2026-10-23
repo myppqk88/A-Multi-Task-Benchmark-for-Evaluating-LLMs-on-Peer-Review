@@ -1,0 +1,27 @@
+{
+  "task_id": "F108_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "发表偏差与灰色文献",
+    "不良效应讨论的证据边界",
+    "效应异质性与图表解释",
+    "解释范围与合理不采纳",
+    "分类框架与穷尽性",
+    "概念操作化与框架用途"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.manuscript_text",
+      "exact_quote": "Abstract\nBackground\nWe conducted an overview of systematic reviews about the effects of\nteaching strategies that can be used to teach primary and secondary\nschool students to think critically. Our objective was to inform\ndecisions about what teaching strategies to use in resources that we\ndeveloped to teach critical thinking about health in secondary schools.\nMethods\nWe mapped characteristics of systematic reviews of teaching\nstrategies and summarised findings from the most relevant reviews to\nt",
+      "role": "研究内容定位，不是缺陷金标签"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。"
+  ],
+  "revision_verification": "not_in_task",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

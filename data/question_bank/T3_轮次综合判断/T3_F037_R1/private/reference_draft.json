@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F037_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究者位置",
+    "样本描述",
+    "概念说明"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审并未强制要求结构重排，作者自愿移动研究者位置说明；不能将自愿接受建议误当解决核心缺陷。",
+    "核对Bretag模型/SADC的说明和“六人来自所有学院”的修订是否实际出现；该句不意味着覆盖所有个体教员。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The article provides an analysis of staff views about academic integrity, comparing and\ncontrasting academic and professional perspectives. This is a welcome approach, which expands\nprevious studies. The empirical site is also under-represented in previous research, making this\nwork distinctive.\nI really appreciated the care taken in describing the research process, and the clarity about\npositiona",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for taking the time to review the article! I appreciate your input.\nI appreciate the recognition that the empirical site is under-represented – indeed, this is\ntrue for many Global South contexts.\nI carefully read through your comments.\nI moved the section on the researcher’s position closer to the methodology, directly\nfollowing the proposition.\nI deleted the sentence about the value of research being recognised when translated into\np",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Methodology\nExploring the perceptions and practices of academic integrity among professional support staff and academics requires a\ndescriptive phenomenological approach. According to Husserl and Moran (2012), descriptive phenomenology aims to\ndistinguish, understand, and clarify the essential features of a defined phenomenon from the perspective of the persons\ndirectly involved. This approach, enabled through face-to-face focus group interviews, provided a robust way to tease out\nand reveal feelings and experiences by capturing small, time-bound human understanding, which I then translated into\nthemes (Sinfield et al., 2023, p. 2).\nEthical clearance for the research was granted by my institution through the recognized committee\n(2022_CRERC_028_FA) along with permission from the case institution in Mauritius. Data were gathered in October\n2023 through two research focus group sessions. The first focus group was conducted with academic staff members and\nthe second focus group was conduc",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "opportunity, rather than focusing on punishment. The current research proposition is that gaining insight into how\nacademic integrity is perceived by professional support staff and academics offers a deeper understanding of how those\ntasked with implementing it conceptualize and practice it. These insights may be especially valuable given that the case\nstudy institution is a UK institution operating within a developing economy. Research on how academic integrity is\nperceived in a branch campus of a UK university located in an African country is therefore likely to strengthen the\nunderstanding of the concept and play a vital role in driving change and preparing future academics, researchers,\nadministrators, and graduates to lead the universities of tomorrow.\nThe researcher’s position\nAligned with the nature of qualitative research, specifically the descriptive phenomenological approach employed in this\nstudy and the associated practice of reflexive bracketing, I offer a brief descriptio",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "been doing things. So, I think there is something that needs to be realized. It’s okay, we have all these policies, but\nin the context that we are in, there is a lot of education, especially with many of these skill sets in other countries\nthey would have had these types of ideas instilled in them, right from the school level. (Participant 6)\nThe cultural background of the students clearly influences their understanding of academic integrity. As seen in the above\nquotation, students from different educational systems may not have been taught the same values regarding plagiarism\nand collaboration, leading to misunderstandings of what constitutes academic misconduct. There also appears to be a fine\nlink between collaboration and collusion. Again, this was not an unexpected finding, as Davis (2023) reported similar\nresults in another study. Teamwork is encouraged during the semester but is not permitted during examinations.\nTo conclude on the factors that complicate academic integrity pra",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Last year, ChatGPT was launched in November. I think it was the 25th of November. By the 10th of December we\nhad the first case. It was not even available in Mauritius, and this was our first case. (Professional Participant 5)\nThere appears to be support for students using AI in their studies because, as an academic participant explained,\n… the world of work will probably also make use of tools, such as ChatGPT. However, there was a warning: Using\nit as a tool is not bad, but here they are just using it to submit the assignment, and they do not even understand what\nis being written there. (Participant 1)\nA positive association with technological developments also emerged in relation to plagiarism detection tools. On a more\nformative note, I appreciate the descriptions of how these tools are used in teaching. One academic participant explained\nhow she uses Turnitin reports from former students as examples to teach current students what constitutes acceptable and\nunacceptable work. Among",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "task_id": "F014_T2_Q01",
+  "paper_id": "ORE:4-126",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "complete_report",
+  "input_path": "data/question_bank/T2_回应评价/F014_T2_Q01/input.json",
+  "input_sha256": "bbcf6f60433e5cbed7505de815355815081309542fbe963b5f1990f63911be23",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F014_T2_Q01/input.json",
+      "source_sha256": "bbcf6f60433e5cbed7505de815355815081309542fbe963b5f1990f63911be23",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          2198
+        ]
+      },
+      "quote": "I have read this article with great interest. I find this piece very well researched, structured and\nwritten. The article explores a relevant and timely issue, shedding light on important dynamics in\nthe governance of undocumented migration across the Mediterranean. As such, I am convinced\nthat this article makes an important contribution, especially by translating the existing findings\ninto clear policy recommendations.\nMy only concern represents the originality of findings vis-à-vis existing scholarship. In my opinion,\nthe real added valued of the findings presented in this article is that they are the result of a\ncomprehensive study, in which different aspects of the same phenomenon were considered\ntogether. Existing scholarship has already widely addressed the different stages of undocumented\njourneys and the various actors involved, but this has often been done in the context of separate\nstudies, specifically focusing only on one segment (e.g. on the decision to leave; on the decision to\nresort to a facilitator; etc.). What is innovative here is that all these aspects are considered\ntogether, and the whole trajectory is reconstructed.\nAlso in light of the scientific literature review conducted by the authors, I would recommend that\nthey explicitly engage with the most significant works that have dealt with the various aspects\naddressed in their article (e.g. the ethnographic studies conducted by Gabriella Sanchez, Luigi\nAchilli, Julien Brachet and Joris Schapendonk), also by shortly elaborating on how their findings\nsupport/refine/challenge previous research.\nI hope this suggestion can be of help to the authors and I congratulate them on their work.\nIs the work clearly and accurately presented and does it engage with the current literature?\nPartly\nIs the study design appropriate and is the work technically sound?\n\n\n\n\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nNot applicable\nAre all the source data and materials underlying the results available?\nYes\nIf applicable, is the statistical analysis and its interpretation appropriate?\nNot applicable\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F014_T2_Q01/input.json",
+      "source_sha256": "bbcf6f60433e5cbed7505de815355815081309542fbe963b5f1990f63911be23",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          770
+        ]
+      },
+      "quote": "\nDear reviewer, thank you very much for the precious time dedicated to providing\nfeedback on our manuscript. We are grateful for your extremely valuable and insightful\ncomments that led to possible improvements in the updated article. We have carefully\nconsidered them and incorporated in the new version of our article. In particular in the\nIntroduction we added several sentences where we engage more closely with a number of\nboth theoretical and empirical studies that deal with the various phases of undocumented\nmigration across the Mediterranean, trying to provide more details on the overall approach\nand goals that informed our study which can help to better situated the outcomes of our\nresearch as reflected in the subsequent parts. [closing signature omitted]",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "回复称引言增加理论经验研究以定位整体迁移过程，方向切合但未展示与特定研究相支持/修正/挑战的关系。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "读准创新关切及回应内容",
+      "boundary_2_3": "区分评审认可整合全旅程的价值与要求对话既有研究；作者声称新增理论经验研究，未给具体支持/修正/挑战关系。",
+      "boundary_3_4": "不把未点名某几位学者等同毫无回应，也不把增加句子当已证明领域新颖性。",
+      "high_score_conditions": [
+        "区分评审认可整合全旅程的价值与要求对话既有研究；作者声称新增理论经验研究，未给具体支持/修正/挑战关系。",
+        "不把未点名某几位学者等同毫无回应，也不把增加句子当已证明领域新颖性。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；依完整回答判断损害，不按提及点数计分。"
+      ]
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "新增引文为何未必解释贡献",
+      "boundary_2_3": "解释单阶段已有研究不排除整合贡献，但需要说明整体视角怎样增加认识。",
+      "boundary_3_4": "允许其他相关文献或不同贡献定位；评分依据关系是否说清，不按推荐作者命中数或篇幅。",
+      "high_score_conditions": [
+        "解释单阶段已有研究不排除整合贡献，但需要说明整体视角怎样增加认识。",
+        "允许其他相关文献或不同贡献定位；评分依据关系是否说清，不按推荐作者命中数或篇幅。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；依完整回答判断损害，不按提及点数计分。"
+      ]
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "对文字回应作适度结论",
+      "boundary_2_3": "可判方向切合但具体贡献对照仍不足；不直接判论文毫无创新。",
+      "boundary_3_4": "保留实际新段质量与领域新颖性尚未核查，不强制外部检索后才允许评价这份回应。",
+      "high_score_conditions": [
+        "可判方向切合但具体贡献对照仍不足；不直接判论文毫无创新。",
+        "保留实际新段质量与领域新颖性尚未核查，不强制外部检索后才允许评价这份回应。"
+      ],
+      "low_score_risks": [
+        "与本维关键事实或推理边界相反；依完整回答判断损害，不按提及点数计分。"
+      ]
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。",
+      "主代理完整复读本题comment_text与response_text，按三个维度重新明确相邻档边界。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "complete_report_response_bundle"
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "F107_T2_Q02",
+  "paper_id": "F1000:131992",
+  "parent_task": "T3_F107_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F107_R1/input.json",
+  "parent_input_sha256": "4e881145bbd380d241df1df20080976a37c6491f785ab7430917c584d7c4952d",
+  "review_dimension_AI_candidate": "情境机制与解释边界",
+  "selection_scope": "所选要求完整包含多条可能传导机制；答复只报告化肥/香蕉出口，不预定充分性。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/131992_The_economic_effects_of_perceptions_of_the_Russia-Ukraine_war_in_Ecuad/v1_manuscript.pdf",
+      "original_sha256": "f89df214f7c240433e975409bbce2b39c1878f64d8cea0aa28908e8d891ad7b1",
+      "raw_text_file": "data/question_bank/T2_回应评价/F107_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        68231,
+        69595
+      ],
+      "report_id": "204347",
+      "date": "2023-10-10",
+      "raw_page_numbers": [
+        19
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/131992_The_economic_effects_of_perceptions_of_the_Russia-Ukraine_war_in_Ecuad/v1_manuscript.pdf",
+      "original_sha256": "f89df214f7c240433e975409bbce2b39c1878f64d8cea0aa28908e8d891ad7b1",
+      "raw_text_file": "data/question_bank/T2_回应评价/F107_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        71309,
+        71529
+      ],
+      "report_id": null,
+      "date": "2023-10-14",
+      "raw_page_numbers": [
+        20
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 2665,
+    "end": 3196,
+    "exact_quote": " in commodity-exporting countries.\nAs a LAC reference, the Ecuadorian agricultural imports, such as fertilizers and exports, mainly bananas and plantains,\ntuna, fish, and flowers, have decreased in Russia and Ukraine in 2022, while the Ukraine-Ecuador imports have been\nmore volatile.\nPrevious studies have suggested that the public tends to identify internal economic crises that a country may undergo\n(Berry & McDaniel, 2022). However, this judgment largely correlates with economic knowledge, which varies across\nsocio-demograph",
+    "anchor_matches": 1,
+    "anchor": "fertilizers"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 2678,
+    "end": 3209,
+    "exact_quote": " in commodity-exporting countries.\nAs a LAC reference, the Ecuadorian agricultural imports, such as fertilizers and exports, mainly bananas and plantains,\ntuna, fish, and flowers, have decreased in Russia and Ukraine in 2022, while the Ukraine-Ecuador imports have been\nmore volatile. This certainly impacts the Ecuadorian economy, given its role as one of the world’s leading banana\nexporters. In addition, the scarcity and increase in prices of imported fertilizers reduces crop yield and hinders the\nEcuadorian agricultural sect",
+    "anchor_matches": 2,
+    "anchor": "fertilizers"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿已涉及化肥与出口，后稿增加化肥稀缺/涨价影响农业和香蕉出口的论述。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

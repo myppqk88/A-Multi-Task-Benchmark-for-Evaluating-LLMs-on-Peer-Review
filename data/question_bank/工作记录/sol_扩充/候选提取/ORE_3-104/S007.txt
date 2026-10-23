@@ -1,0 +1,78 @@
+Article: Open Research Europe | Open Access Publishing Platform
+DOI: 10.12688/openreseurope.16141.1
+Version: 1
+Reviewer: Dan Dediu
+Status: approved with reservations
+Date: 2023-06-29
+Report ID: 33113
+============================================================
+
+This paper introduces two new ways of computing between-languages distances and provides directly usable datasets for these (plus two “older” methods). Given the general importance of ways of quantifying space in many cross-linguistic (and, more generally, cross-cultural) studies, I think this is an important addition to the literature, especially given the massive computational resources needed to compute one of these new distances, resources that are now readily available to the “average” language scientist.
+However, I do have a few suggestions and questions that might help improve the paper. In their (approximate) order of appearance in the paper:
+Abstract:
+Remove 1
+st
+“We evaluate these distances.” (and, in general, the papers seems to in need of a careful reading).
+After having read the paper, I think the last sentence is a bit misleading, in that it is far from clear to me (and to the authors themselves, in fact) that “topographic distance tends to outperform the other[s]” in a meaningful and general way – I think this should be toned down as the paper is not about results but about the method and the distance matrices IMHO.
+English language:
+Please check prepositions, spelling, plural, etc in: "warranted in some situations"; "leads to bias estimates"; "used for typologists and linguists"; "simplest and fasted distance metric"; "Open Stree Maps"; "show real patterns"; "but we chose Phoibl"; "before in a large scale"; "for the worlds languages"; "The simplest type of distance metric we will discuss here are Euclidean distances" -> “is”?; "the northern most and southern most areas" -> write connected (“northernmost”)?; "distances, faulting to topographic" -> defaulting?; "Euclidean distance build" -> “distances build” or “distance builds”
+P3:
+missing ^2 after (y1-y2) in d_e formula.
+P4:
+Para “Given a DEM…” -> please reformulate to make understanding this process easier the first time one reads this. My suggestion would be to 1
+st
+clarify that you compute the graph between all points in the DEM and then you use these to compute the minimum distance between the points one is actually interested in.
+Same para: please justify why sqrt{h^2 + v^2} as it is not immediately obvious why the h and v dimensions should be treated (a) separately and (b) have equal weight. Naively I would have expected something more like sqrt(x^2 + y^2 + w*v^2} where w is an (empirical) weight qualifying the relative “costs” of vertical vs horizontal displacements?
+Para “However, even at a …“ -> I was wondering if this would not work as a general solution in that maybe one can consider overlapping neighborhoods of the points of interest, but of course defining these neighborhoods brings in assumptions about the relative costs of vertical vs horizontal displacements (see above), but I guess it would be something worth discussing in the paper (if not testing)?
+P5:
+“PGs are built” -> GPs?
+Figure 1 (and figures in general):
+The color palette is atrocious for people with abnormal color perception! It is impossible the distinguish the first 3 distances on the map. Please try to use something like viridis or equivalent.
+Footnote 10:
+Please explain why the triangle inequality is important for the GP and how bad their violation is (to footnote hints but I think this needs a better development).
+Eq 9:
+The “()” after “GP” are meaningful?
+Figure 2:
+That dark red (I guess) for the dots is very hard to see (for me) against the grayscale of the elevation.
+“European” -> “Hindu-Kush”.
+P7 (and elsewhere):
+please justify these cut-off points (here, <10 and >49 – especially 49 seems a bit weird).
+2
+nd
+sentence and following of 1
+st
+para of section 5.4.2 “This metric…” -> this is partially repeating stuff that was already mentioned -> please move above.
+Figure 3:
+could you also use symbols as well as colors? Highlight the 0.5 vertical line. Order the features in a meaningful way? Connect the same-color points by lines as well (resulting in an easier-to-follow “profile” but make it clear this does not imply any “linkage” between features). For the vertical jitter, either use the same jitter for all features and/or draw alternating colored bands by feature to make it clear which point belongs to each feature (now it is pretty hard to see, especially combined with the color scheme).
+P8
+“What this shows is that it is not instantly clear that one distance metric is better than the others in all cases.” -> I think the message is less optimistic here, namely that it really seems to depend on the feature considered, which is interesting in itself.
+Table 1 (and the others): the mean accuracy is hard to judge without some measure of variation (IQR, stddev…) – maybe better show the actual distribution (histogram/density)? (also, they look very similar to my eye – some statistical tsting would be useful?) Also n.times best accuracy is not very informative without knowing by what margin these were “best”.
+Para “One thing which…” I think this is *very* important and should be discussed in the Discussion, together with the idea that languages are not points.
+“languages, we randomly chose only one phoneme inventory for each language.” -> I know this is sometimes done, but it does not mean it is a good idea: sometimes, depending on the question, different inventories for the same language in PHOIBLE give very different answers…
+Again, justify the cut-off points, but here this might be even more important because, as argued for SegBo (see, e.g. Eisen, E. (2019)[ref-1]) when looking at segment borrowing it is the segments with around 50% frequency that might carry the best signal.
+Footnote 16:
+I am confused as I think you mention that for H-K languages there was also some missing data?
+P9:
+“For the Hindu-Kush dataset, the walking distances showed a clear advantage over the other distance metrics” -> I am not sure this is the message I got from the results…
+Figure 6:
+add elevation legend (also make it clear that the legend’s values are *global*).
+Finally, two general comments:
+Language are not points: I clearly agree with the authors’ take in the paper (I do the same myself) but I think this point should at least be discussed and maybe ways of addressing it wrt the two new distances mentioned (if any)?
+The right benchmark for these distances: I agree with the authors that this is not the point of this paper, but still choosing the right benchmark might make the difference between these two new distances being actively embraced by the community or lingering in the literature… Given that *most* actual uses of distances is to *control for* (i.e., remove) contact, maybe this would be a more appropriate benchmark? Also, (balanced) accuracy might not be the best (or, at least, the only) quantification of success here, but instead some sort of formal model comparison as well? And, finally, looking at known linguistic areas (e.g., the Balkans, which has non-trivial topography) might help? These are just ideas (and half-digested at that), of course, but I think the authors might want to at least discuss them given the amount of work (and computational power) already expended on this project?
+
+
+--- Structured Questions ---
+
+Q: Is the rationale for creating the dataset(s) clearly described?
+A: Yes
+
+Q: Are the protocols appropriate and is the work technically sound?
+A: Yes
+
+Q: Are sufficient details of methods and materials provided to allow replication by others?
+A: Yes
+
+Q: Are the datasets clearly presented in a useable and accessible format?
+A: Yes
+
+Areas of research: Linguistic diversity, cross-linguistic studies, statistics

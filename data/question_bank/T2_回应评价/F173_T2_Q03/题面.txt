@@ -1,0 +1,83 @@
+F173_T2_Q03
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+{
+  "task_id": "F173_T2_Q03",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_independent_report",
+  "input": {
+    "comment_text": "3. Neglect of Non-Shannonian Computation\nThe author assumes a somewhat abstract, symbolic notion of computation. However, recent\nresearch by Miguel Nicolelis challenges the dominance of Shannon-based signal processing\nmodels and introduces the notion of two complementary modes of neural computation:\nShannonian: signal-based, channel-like transmission;\n○\n\n○\n\nBoolean-like: emergent logical operations within distributed neural ensembles.\n\nThis framework supports the author’s relator/operator distinction but grounds it in empirically\nobserved computational structures of the brain.\nSuggestion: Reference Nicolelis’ theory of dual computation to substantiate the distinction\nbetween transformational (operator) and optimization (relator) mechanisms in embodied systems.",
+    "response_text": "I was unaware of Nicolelis’ theory. I introduced in the revision this brief reference:\nWho’s afraid of the Organismus Oeconomicus hypothesis?\n…\n5. New models of brain computation highlight that Shannon-like computations, i.e.,\ninformation inputs to produce signal outputs, capture only one mode of neural\ncomputation. For example, Nicolelis’ (2020) theory registers that neural computation\nprocesses consists of two modes. The first is Shannon-like computation, which, similar\nto engineers, treats information as communication—corresponding to a binary\noperator (cognitive capacity or technology). The second is Gödelian/Boolean-like\ncomputation, which assembles networks of cells to organize structures to solve\nproblems or make decisions—corresponding to a binary relator. While the two modes\n\n\n\ndiffer, Nicolelis and collaborators find that they intermingle as they are\ncomplementary (see also Lebedev & Nicolelis, 2017); Pais-Vieira et al., 2015). This dual\nbrain computation theory substantiates the proposed binary operator/relator\ndistinction. More importantly, the two modes of computation are not limited to\nhuman brains. Insofar as non-human organisms are also motivated to evaluate and\nmake decisions, their neural processes must also encompass the Gödelian/Booleanlike computation mode.",
+    "necessary_context": "理性是否为认知能力的哲学与认知理论论证。 原关切来自独立当轮评审；只评价这一完整关切。结构化答复保留全部对应段落；作者统一回复时完整保留总回复，可能含其他事项。实际修改不在本题判断范围。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "F013_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "立场与研究目标",
+    "证据与论证"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑Open Letter偏项目宣传、作者立场不清与文献综述位置太晚；作者称明确外部分析者身份并前移批判文献。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Thank you for the opportunity to review this open letter entitled, “Integrating ethical and legal\nframeworks in multi hazard disaster risk management.” As it is an open Letter not a research article,\nit therefore has a different focus. I provide this feedback based on the criteria and guidelines for\nreviewing an open letter.\n1. Is the rationale for the Open Letter provided in sufficient detail?\nTh",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nDear reviewer, Thank you very much for your insightful and constructive feedback, which I\nfound highly valuable in revising the Open Letter. Here is how I have addressed your\ncomments:\nClarifying the Objective and Standpoint: I revised the Introduction to make the\ncritical stance clearer, explaining that the Open Letter offers a preliminary critical\nreflection on MEDiate's ambitions and early development, while noting my\ninvolvement as an external analyst (not as a DSS system developer).\nRestru",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

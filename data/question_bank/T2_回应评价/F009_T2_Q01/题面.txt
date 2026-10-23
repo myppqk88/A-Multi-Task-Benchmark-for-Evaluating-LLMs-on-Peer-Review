@@ -1,0 +1,85 @@
+F009_T2_Q01
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+以下为完整题内材料和输出结构；相对图像路径须实际加载为图像，不读取private。
+
+{
+  "task_id": "F009_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "focal_concern_response_author_letter",
+  "input": {
+    "comment_text": "The manuscript provides details of the dissemination of the questionnaire online.1. To clarify the number of students. On page 11, it is stated that 60 students are in the course, and then the same-sized target was set at 163.",
+    "response_text": "The total number of eligible students enrolled in the 4th and 5th years of the pharmacy program was 280. The sample size was calculated using the Raosoft sample size calculator (margin of error 5%, confidence level 95%), yielding a target of 163 participants. Although one of the courses used for initial recruitment included 60 students, invitations were extended to all eligible students across both years through Blackboard announcements and reminders.",
+    "necessary_context": "沙特药学生的AI态度、教育与执业认知调查，属于医学教育/社会心理研究。 本关切为作者签署回信中的原评审引用；不是独立完整原评审报告。仅评价给定的这项建议及完整对应答复。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

@@ -1,0 +1,20 @@
+题号：D10_T2_Q01
+任务：作者回应充分性评价（仅回应文本）
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+
+研究背景：三个实验比较引导盲人方向的振动模式。
+
+【完整原关切】
+The sample size is relative small in this study. There is a need to provide a priori power analysis for three experiments, separately.
+
+【整个对应作者答复】
+We have calculated the power analysis. We used the Cohen’s approach:
+Cohen, Jacob. 1988. Statistical power analysis for the behavioral sciences. 2nd ed. Hillsdale, N.J: L. Erlbaum Associates.
+We use contingency table in experiment 1. Therefore, we used the approach for Chi-square tests: Cohen’s w (effect size). In experiments 2 and 3 we use anova, therefore we apply the Cohen’s f for measuring the effect size. Cohen suggests that effect size index values of 0.1, 0.3, and 0.5 represent small, medium, and large effect sizes respectively.
+Experiment 1: Considering w=0.5, with N=12 observations the power is 0.3. The power is not high. Power of 0.8 would need 38 observations.
+Experiment 2: The power of test is 0.8 for the left direction, and 0.9 for the right direction. This levels of power can be considered as good.
+Experiment 3: The power of test is 0.5. Power of 0.8 would need 14 subjects, instead of 8.
+Regarding differences between blind and sighted people, the results are not conclusive and more research is needed with more subjects
+
+输出格式：请按input.json中的output_format输出。相同材料亦保存在materials/。

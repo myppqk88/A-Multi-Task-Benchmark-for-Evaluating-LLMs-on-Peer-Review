@@ -1,0 +1,61 @@
+{
+  "task_id": "F036_T2_Q01",
+  "paper_id": "ORE:4-205",
+  "parent_task": "T3_F036_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F036_R1/input.json",
+  "parent_input_sha256": "5d71a8ac616c331d017bc33220e64c9aa7032deb91ca1599a116c2c20e600fd3",
+  "review_dimension_AI_candidate": "质性分析过程透明度",
+  "selection_scope": "只选资料编码、访谈协议和分析工具的程序透明度；比较案例情境与选择不混入该题。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/4-205_Transformative_social_innovation_and_rural_collaborative_workspace_ass/v1_manuscript.pdf",
+      "original_sha256": "f98246886105da0397c23dc0c49bf6ca84414dadd2b4e1243ae21ac0fc64a4a6",
+      "raw_text_file": "data/question_bank/T2_回应评价/F036_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        92588,
+        92935
+      ],
+      "report_id": "44830",
+      "date": "2024-10-25",
+      "raw_page_numbers": [
+        18
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/4-205_Transformative_social_innovation_and_rural_collaborative_workspace_ass/v1_manuscript.pdf",
+      "original_sha256": "f98246886105da0397c23dc0c49bf6ca84414dadd2b4e1243ae21ac0fc64a4a6",
+      "raw_text_file": "data/question_bank/T2_回应评价/F036_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        98156,
+        98302
+      ],
+      "report_id": null,
+      "date": "2024-12-19",
+      "raw_page_numbers": [
+        19
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "MaxQDA",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 30028,
+    "end": 30554,
+    "exact_quote": "ions can be found in Table 1 below.\nThe interviews were transcribed and analysed thematically\nusing MaxQDA whereby patterns within qualitative data sets\nare identified and subsequently analysed (Braun & Clarke,\n2006). Due to language restrictions, not every desired participant\n(e.g. representative from the municipality) could be interviewed, which represents a limitation of the study. The interview\ncontent varied depending on the role of the participant.\n\nTable 1. List of interview participants.\nSite\n\nPseudonym\n\nRole\n\nDe",
+    "anchor_matches": 1,
+    "anchor": "MaxQDA"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿无MaxQDA，后稿明确转录、主题分析与MaxQDA及语言限制；不能等同已验证编码质量。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

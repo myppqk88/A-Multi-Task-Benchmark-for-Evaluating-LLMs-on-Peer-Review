@@ -1,0 +1,116 @@
+{
+  "task_id": "D05_T2_Q01",
+  "paper_id": "ORE:5-13",
+  "dev_id": "D05",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/round_1/v1_review_04_APPROVED_WITH_RESERVATIONS_Aduwati_Sali_2025-04-08.txt",
+      "sha256": "9f802e96198626760b08a97b09f65793d441e6a21bac4a76da26687d80aff4a2",
+      "locator_lines": [
+        13,
+        13
+      ],
+      "locator_chars_half_open": [
+        535,
+        771
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/round_1/v1_review_04_author_response_1_author.txt",
+      "sha256": "c7443e50d281624c2884753a8a0c10244ae47a04c6dd7f4fe0689d1732e4b612",
+      "locator_lines": [
+        9,
+        9
+      ],
+      "locator_chars_half_open": [
+        645,
+        1063
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/round_1/v1_review_04_APPROVED_WITH_RESERVATIONS_Aduwati_Sali_2025-04-08.txt",
+      "source_sha256": "9f802e96198626760b08a97b09f65793d441e6a21bac4a76da26687d80aff4a2",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "9f802e96198626760b08a97b09f65793d441e6a21bac4a76da26687d80aff4a2",
+      "source_char_range_half_open": [
+        535,
+        771
+      ],
+      "source_line_range_inclusive": [
+        13,
+        13
+      ],
+      "selected_text_before_cleaning": "2. Can the results be correlated with any awareness programs in each country? It will be interesting to see what are the exposures in terms of awareness campaign by relevant bodies in the country which may affect the perception results.",
+      "input_segment_after_cleaning": "2. Can the results be correlated with any awareness programs in each country? It will be interesting to see what are the exposures in terms of awareness campaign by relevant bodies in the country which may affect the perception results.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/round_1/v1_review_04_author_response_1_author.txt",
+      "source_sha256": "c7443e50d281624c2884753a8a0c10244ae47a04c6dd7f4fe0689d1732e4b612",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "c7443e50d281624c2884753a8a0c10244ae47a04c6dd7f4fe0689d1732e4b612",
+      "source_char_range_half_open": [
+        645,
+        1063
+      ],
+      "source_line_range_inclusive": [
+        9,
+        9
+      ],
+      "selected_text_before_cleaning": "Regarding your second question: As the scope of our study was specifically to investigate the effects of precautionary information with a focus on personal relevance, we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey. Therefore, it isn’t possible to correlate the results with this kind of knowledge, even though this could be an interesting topic for future research.",
+      "input_segment_after_cleaning": "Regarding your second question: As the scope of our study was specifically to investigate the effects of precautionary information with a focus on personal relevance, we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey. Therefore, it isn’t possible to correlate the results with this kind of knowledge, even though this could be an interesting topic for future research.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [
+    {
+      "pdf_source": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/v1_manuscript.pdf",
+      "pdf_sha256": "847b4c3e2e1bdf15cfcb43a2c1270eabd2ef613c5b187f2777eec997fb8534ae",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_5-13/private/extracted/S008.txt",
+      "matched_response_start": 80189,
+      "author_header_start": 79610,
+      "author_header": "Author Response 19 May 2025 Marie Eggeling-Böcker Dear reviewer 2, Thank you very much for your review and the helpful feedback! Regarding ",
+      "pdf_page_at_match": [
+        21
+      ],
+      "author_block_end": 81375,
+      "match_context": "neral knows little details about RF-EMF exposure (e.g.,\nfrequencies).\nRegarding your second question: As the scope of our study was specifically to investigate\nthe effects of precautionary information with a focus on personal relevance, we didn’t ask\nfor knowledge about media content, institutions, or awareness campaigns in the survey.\nTherefore, it isn’t possible to correlate the results with this kind of knowledge, even though\nthis could be an interesting topic for future research.\nRegarding your third question, there is no literature (we know of) that compares exposure\nmeasurements in Germany and Greece. According to experts, this would be very difficult to\ndo, because exposure varies a lot and depends on many factors. As the public usually knows\nlittle about field intensity values and possible differences, this is very unlikely to have\ninfluenced our results. However, we have added literature showing that in Greece (where\nrisk perception was higher) th"
+    },
+    {
+      "pdf_source": "data/originals/ore/social_sciences/5-13_Open_Research_Europe___Open_Access_Publishing_Platform/v2_manuscript.pdf",
+      "pdf_sha256": "cc751f77eb82854364e8f40bd553d9c4c1302bf301f2b7e632056121a059d118",
+      "pdf_extracted": "legacy/local_assets/实验重建_20261022/开发题集_20261022/T3/ORE_5-13/private/extracted/S009.txt",
+      "matched_response_start": 85001,
+      "author_header_start": 84325,
+      "author_header": "Author Response 19 May 2025 Page 22 of 25 Open Research Europe Open Research Europe 2025, 5:13 Last updated: 23 AUG 2025 Marie Eggeling",
+      "pdf_page_at_match": [
+        23
+      ],
+      "author_block_end": 86089,
+      "match_context": "neral knows little details about RF-EMF exposure (e.g.,\nfrequencies).\nRegarding your second question: As the scope of our study was specifically to investigate\nthe effects of precautionary information with a focus on personal relevance, we didn’t ask\nfor knowledge about media content, institutions, or awareness campaigns in the survey.\nTherefore, it isn’t possible to correlate the results with this kind of knowledge, even though\nthis could be an interesting topic for future research.\nRegarding your third question, there is no literature (we know of) that compares exposure\nmeasurements in Germany and Greece. According to experts, this would be very difficult to\ndo, because exposure varies a lot and depends on many factors. As the public usually knows\nlittle about field intensity values and possible differences, this is very unlikely to have\ninfluenced our results. However, we have added literature showing that in Greece (where\nrisk perception was higher) th"
+    }
+  ],
+  "role_verification": "已读完整所选原关切与整个对应答复。与原PDF附后有日期的Author Response区块核对，未只凭TXT文件名判角色。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "c07deca57087597fb3776128cce6eb80cb000367dcf292364399d80288fdedee",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.323859+08:00"
+}

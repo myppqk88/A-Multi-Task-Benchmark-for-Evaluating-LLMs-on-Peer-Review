@@ -1,0 +1,140 @@
+{
+  "task_id": "F054_T2_Q04",
+  "paper_id": "ORE:5-343",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F054_T2_Q04/input.json",
+  "input_sha256": "a49db044ac0d05138196802b44985f8fecdd9ae0d11662010d35eec0b1c4b15b",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F054_T2_Q04/input.json",
+      "source_sha256": "a49db044ac0d05138196802b44985f8fecdd9ae0d11662010d35eec0b1c4b15b",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "2. The study is based on a very small sample, and it seems that only limited follow-up and\nevaluation activities took place. Again, sample and methodology are appropriate for H2020\nproject of this type, but it makes it difficult to claim that “This study shows that welldesigned training programs can help researchers use Living Labs more successful, which\ncould lead to better innovations that are more connected to society’s needs.”, as a general\nstatement as this one would require more evidence, both in terms of participants and time.\n3. Similarly to the point above, drawing broader conclusions (such as the statement in the\nConclusion paragraph) would require not only a more systemic approach but also the\nprovision of baseline figures and benchmarks. Moreover, if the study focussed only on the\nhealthcare domain, how can we ensure that the outcomes are replicable and generalisable?\nThis requires justification.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F054_T2_Q04/input.json",
+      "source_sha256": "a49db044ac0d05138196802b44985f8fecdd9ae0d11662010d35eec0b1c4b15b",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Response: We have now adjusted this claim in the Plain Language summary to more\n\n\n\n\naccurately represent study outcomes: “This study suggests that researchers find a carefully\ndesigned and modular training programs useful to provide more insight into Living Lab\nmethodologies.” The title has also been changed, and the limitations were expanded so as\nto not to overstate results.\nReviewer:\nSimilarly to the point above, drawing broader conclusions (such as the statement in the\nConclusion paragraph) would require not only a more systemic approach but also the\nprovision of baseline figures and benchmarks. Moreover, if the study focussed only on the\nhealthcare domain, how can we ensure that the outcomes are replicable and generalisable?\nThis requires justification.\nResponse: We have adjusted the language in the manuscript to better reflect the nature of\nour findings. We have also added to the limitations that: “The study used a small sample\n(not including all training participants which implies vulnerability for self-selection) and was\nsituated within the healthcare domain. It would be beneficial to continue training initiatives\nand continuously evaluate and improve the content, especially when transferring to\ndifferent contexts.”. In the newly added section on economic sustainability, we have also\nbriefly indicated that some time might be needed to familiarize oneself with the content and\nreflect on experience within the trainer’s own field.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复给出新措辞，将促进更好创新的强主张收缩为研究者认为培训对理解LL方法有用。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient或partially_sufficient均可，取决于是否认为新主张足够收缩；两者都需说明没有新增客观/长期证据。"
+    },
+    {
+      "id": "J2",
+      "judgment": "引用新增限制明确小样本、未包含全部参训者的自选择及医疗情境，覆盖样本与跨领域推广关切。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient或partially_sufficient均可，取决于是否认为新主张足够收缩；两者都需说明没有新增客观/长期证据。"
+    },
+    {
+      "id": "J3",
+      "judgment": "没有补充基线或长期结果，但通过改成有限自评发现可合理避免承担原强推断；不能说已证明可复制或普适。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient或partially_sufficient均可，取决于是否认为新主张足够收缩；两者都需说明没有新增客观/长期证据。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复给出新措辞，将促进更好创新的强主张收缩为研究者认为培训对理解LL方法有用。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须覆盖连在一起的第2、3点，不能只看新摘要句。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复给出新措辞，将促进更好创新的强主张收缩为研究者认为培训对理解LL方法有用。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：须覆盖连在一起的第2、3点，不能只看新摘要句。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。没有补充基线或长期结果，但通过改成有限自评发现可合理避免承担原强推断；不能说已证明可复制或普适。",
+      "high_score_conditions": [
+        "把小样本、自选择、医疗情境和主张收缩联系起来，说明新增限制不等于获得基线或可推广证据。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：没有补充基线或长期结果，但通过改成有限自评发现可合理避免承担原强推断；不能说已证明可复制或普适。"
+      ],
+      "boundary_2_3": "须覆盖连在一起的第2、3点，不能只看新摘要句。",
+      "boundary_3_4": "把小样本、自选择、医疗情境和主张收缩联系起来，说明新增限制不等于获得基线或可推广证据。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient或partially_sufficient均可，取决于是否认为新主张足够收缩；两者都需说明没有新增客观/长期证据。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：把小样本、自选择、医疗情境和主张收缩联系起来，说明新增限制不等于获得基线或可推广证据。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：没有补充基线或长期结果，但通过改成有限自评发现可合理避免承担原强推断；不能说已证明可复制或普适。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：把小样本、自选择、医疗情境和主张收缩联系起来，说明新增限制不等于获得基线或可推广证据。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient或partially_sufficient均可，取决于是否认为新主张足够收缩；两者都需说明没有新增客观/长期证据。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "须覆盖连在一起的第2、3点，不能只看新摘要句。",
+    "3_to_4": "把小样本、自选择、医疗情境和主张收缩联系起来，说明新增限制不等于获得基线或可推广证据。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

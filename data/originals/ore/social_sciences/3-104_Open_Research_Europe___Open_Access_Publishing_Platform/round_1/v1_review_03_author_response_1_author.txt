@@ -1,0 +1,64 @@
+Author Response to Review 3 (v1)
+Author: author
+Date: 
+============================================================
+
+We have carried out most of the corrections the reviewer suggests. Several formulas were miss-formatted, and several descriptions of the results were not correct, as the reviewer pointed out. We have fixed these. We have also improved several figures according to the reviewer's suggestions. There is one major point the reviewer mentions with which we're not in agreement. Below some specifics:
+
+* Regarding the comparison with Euclidean distances:
+
+-> There are two things important here. First, and minor, some of the studies like Ranacher et al. do use in practice euclidean distance computations on a particular projection (personal communication with Gereon Kaiping), and in the case of Verkerk and Di Garbo, using the linear latitude and longitude independently, should be equivalent to using euclidean distances as linear predictors on each dimension. There are also some new studies that came out recently that use linear distances like Guzmán Naranjo and Mertner (2022), we have added this reference. 
+
+The Second point is technical and comes from two issues we see. First, because brms is gaining popularity as a library for fitting models, it is becoming more and more common for researchers to use the in-built gp() function. This function can only compute euclidean distances. There is no alternative yet. To use other types of distances the researcher needs to write stan code directly, which is still not very widespread. The second factor that plays a role are what’s called approximate Gaussian Processes, which are used for efficiency purposes. While fitting an exact GP to 1000 data points is slow but feasible, it is not possible to fit an exact GP to 2000 data points (at least not in normal research times and consumer hardware). Approx GPs are an alternative that comes very close to estimating the parameters of an exact GP, at the cost of minor exactness. However, approx GPs require covariance functions which are only defined for Euclidean distances (there are also some covariance functions for periodic kernels, but that’s something else). Until someone defines an approx GP for geodesic distances (which is hard), Euclidean distances are the only real alternative here.
+
+So, to sum up. We think Euclidean distances are still used, and we do not really see a good reason to not include them in the study. We do not see that comparison as detracting from our main results. We even find that they are an ok approximation in some cases.
+
+* Regarding cross-comparisons:
+
+-> We do not expect these different features to behave the same way. We are also not trying to compare these features across areas. We only want to illustrate one of several possible uses for the calculated distances, and one of several ways of comparing them with respect to how well they capture the geographic distribution of linguistic features. We have clarified.
+
+* Regarding the formula for horizontal and vertical distance:
+
+->  It’s correct. It is possible to use different formulas, but the distances take too long to compute to make this process feasible, at least for us. Additionally, you would actually need to use the angle because steepness is the key factor influencing speed and difficulty of travel. Finding better topographic-style distance is an ongoing project.
+
+* Regarding how walking distances calculated on modern pathways may not be valid for past contact:
+
+-> Indeed. As mentioned in the paper, we believe this might be one of the reasons that walking distances work so poorly for Europe. We have added a note at this point.
+
+* Regarding triangle inequality and OSRM:
+
+-> We have expanded a bit. The problem is very technical. The issue comes from how OSRM works internally. The routing algorithm in OSRM follow road constraints like allowed direction of travel as well as vehicular type allowed on the roads. This leads to a combination of factors which result in non-triangular inequality situations. For example, very often going from A to B requires following a single direction road on which there is no sidewalk, and thus, the direction of the road must be respected, which means that A->B and B->A cannot be done on that same route. This sort of situation can be corrected on small matrices with well understood algorithms, but these did not work on our larger matrices. What seems to be happening is that there are too many interacting edges, and if we fix A-B-C, some new issue arises for A-B-D and A-B-E, etc.
+
+ 
+
+The algorithm (and script) we tried:
+
+ 
+
+/*
+
+ * Triangle fixing algorithm - implementation of algorithm 3.1
+
+ * (Metric_Nearness_L2) in Brickell, J., Dhillon, I., Sra, S., and
+
+ * Tropp, J. (2008). The Metric Nearness Problem. SIAM. J. Matrix
+
+ * Anal. & Appl. 30, 375-396.
+
+ *
+
+ * (c) Toni Giorgino  2016
+
+ * Distributed under GPL-2 with NO WARRANTY.
+
+ *
+
+ * $Id: triangleFixing.c 424 2016-08-25 19:45:42Z tonig $
+
+ *  
+
+ */
+
+* Regarding or ME plots:
+
+-> The model uses the GP to predict the expected value of a feature at some point, given the distance of that point to the points the model was trained on. It is the same thing with the CV, the difference is that for the CV we predict locations of languages we left out of the training, and for the ME we predict a dense grid of points.

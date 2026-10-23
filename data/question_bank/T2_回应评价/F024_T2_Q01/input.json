@@ -1,0 +1,80 @@
+{
+  "task_id": "F024_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。\n本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。",
+  "input": {
+    "comment_text": "This research aims to gain insights into open science practices in six broad disciplinary areas by\nasking researchers about the potential to practice open science behaviours in relation to a past\nproject. Thirteen different open science behaviours are included, which give a comprehensive view\nof open science rather than just publishing related activities.\nThe rationale for the study is good and asking researchers about past projects, rather than asking\nthem to predict future work, is an interesting and valuable approach to assessing open science\npractices. The range of open science practices included in the survey is broad, which should give a\ngood insight into all activities that contribute to the aims of being open. However, one aspect I\nthink is lacking is the extent to which researchers were mandated by their funder or institution to\ncarry out any of these activities, which would add context to the extent to which they view certain\npractices as applicable.\nIn terms of the demographics of the survey sample, it is good to see balanced sample sizes in the\ndisciplines and the inclusion of whether the researcher's work is quantitative, qualitative or mixed\nmethods. The methodology should include more information on which geographical areas were\ntargeted for respondents and information on career stages of the respondents if possible, as\nthese are both factors in adoption of open science practices.\nI have concerns that the wording used in the Likert scale may have been confusing for\nrespondents. The aim was to get researchers to report on their past research but the question\nabout open science practices was in the present tense (\"To what extent are the following\nbehaviours applicable...\" [emphasis added]). I'm also unsure of how to interpret the \"not at all\napplicable\" response - the codebook seems to suggest a \"N/A\" option was also offered but this\ndoesn't seem to have been used by anyone. For example, were all respondents creating software\nbut not all thought that sharing software openly applied to their project? Or were the respondents\nwho chose \"not at all applicable\" really saying they didn't create software? Including the survey\ninstrument (i.e. a pdf copy of the survey questions as presented to the respondents) might help\nwith understanding this better.\n\n\n\nA couple of other specific points:\n- There is no mention of data handling with respect to GDPR rules.\n- The codebook gives an identical explanation for two variables - osp_sco and osp_cit. Presumable\nthe latter is Citizen Science and not Science Communication.\nThe dataset in Zenodo is well presented and easy to use (aside from the labelling mistake\nmentioned above). As mentioned earlier, I would recommend adding the survey instrument to the\ndataset to aid understanding and also enable others to repeat this approach.\nIs the rationale for creating the dataset(s) clearly described?\nYes\nAre the protocols appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and materials provided to allow replication by others?\nPartly\nAre the datasets clearly presented in a useable and accessible format?\nPartly\n",
+    "response_text": "\nThank you as well for the constructive comments. I will respond to your comments\nchronologically:\n1. We agree that it would have been interesting to have data on the mandates of\nfunders or institutions. Unfortunately, we can't collect this data a posteriori. However,\nthere is first evidence that mandates at the level of the research institution do not\nnecessarily have the greatest impact on researchers' open science practices. For\nexample, the existence of a research data policy at a research institution is not\nrelated to higher data sharing: [external resource identifier omitted]\n2. We agree that information on the geographical areas and career stage of participants\nwould complement the data set. Unfortunately, we had to keep the survey short due\nto financial resources. Therefore, we don’t have these data.\n3. I agree that the wording of the items in the present tense is unfortunate. Participants\n\n\n\nwere encouraged to ask us questions via the survey-internal direct messaging system\nif any questions arose during the course of the questionnaire. The participants did\nindeed use this opportunity, and we received 27 direct messages. However, these\ninquiries were all aimed at the attention check that was placed at the beginning of\nthe questionnaire, no questions arose about the subsequent items.\n4. We have been careful not to collect personalized data in the survey for which the\nGDPR would be relevant.\n5. Thank you for the pointing out the mistake in the codebook. We corrected this and\nuploaded a new version of the codebook.\n",
+    "necessary_context": "跨学科已完成项目的开放科学实践可适用性调查数据论文。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

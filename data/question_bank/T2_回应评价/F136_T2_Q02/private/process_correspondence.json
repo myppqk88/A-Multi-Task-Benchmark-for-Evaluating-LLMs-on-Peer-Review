@@ -1,0 +1,76 @@
+{
+  "task_id": "F136_T2_Q02",
+  "paper_id": "F1000:158461",
+  "parent_task": "T3_F136_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F136_R1/input.json",
+  "parent_input_sha256": "ce05e2ada21bd8ff71a1cc06c7223838293770330e6f7ede91a62dc32c369b16",
+  "review_dimension_AI_candidate": "假设表述与理论检验",
+  "selection_scope": "保留作者将三类关系分组以形成假设的具体说明；不自动认定已经实际检验。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/158461_Financial_inclusion_and_stability_in_Ethiopia_using_bank-level_data__A/v1_manuscript.pdf",
+      "original_sha256": "f531ca97f2eaea4037c80c42cdbded0034323e4857ccb1804b9b8cf32cdd6d37",
+      "raw_text_file": "data/question_bank/T2_回应评价/F136_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        90071,
+        90307
+      ],
+      "report_id": "362882",
+      "date": "2025-02-14",
+      "raw_page_numbers": [
+        22
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/158461_Financial_inclusion_and_stability_in_Ethiopia_using_bank-level_data__A/v1_manuscript.pdf",
+      "original_sha256": "f531ca97f2eaea4037c80c42cdbded0034323e4857ccb1804b9b8cf32cdd6d37",
+      "raw_text_file": "data/question_bank/T2_回应评价/F136_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        92190,
+        92602
+      ],
+      "report_id": null,
+      "date": "2025-02-14",
+      "raw_page_numbers": [
+        23
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/158461_Financial_inclusion_and_stability_in_Ethiopia_using_bank-level_data__A/v1_manuscript.pdf",
+      "original_sha256": "f531ca97f2eaea4037c80c42cdbded0034323e4857ccb1804b9b8cf32cdd6d37",
+      "raw_text_file": "data/question_bank/T2_回应评价/F136_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        94034,
+        94464
+      ],
+      "report_id": null,
+      "date": "2025-03-04",
+      "raw_page_numbers": [
+        24
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "H1:",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 23861,
+    "end": 24384,
+    "exact_quote": " In light of the above empirical literature reviewed, this study proposes the following\nhypothesis:\nH1: Financial inclusion has a positive impact on bank stability\n2.2.2 Non-linear relationship between financial inclusion and bank stability\nA significant limitation of existing empirical research is its predominant focus on the mean effects of FI on financial\nstability, often overlooking the variation in this relationship across different levels of stability (Damane & Ho, 2024).\nDespite the mean impact of FI on bank st",
+    "anchor_matches": 1,
+    "anchor": "H1:"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿未见H1/H2，后稿明确列出金融包容正效应和倒U关系假设；是否适当检验另判。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

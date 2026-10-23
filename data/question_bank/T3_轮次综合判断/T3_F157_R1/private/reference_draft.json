@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F157_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "类比与概念准确性",
+    "核心表格",
+    "论证边界"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称拆分核心表格并补充文字，核对两表是否确实提高运营、资助、服务角色的区分。",
+    "道路及其他公共基础设施类比可以辅助解释，但不能代替科研数据基础设施成本与效益的经验证据。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This article sheds light on the important and often poorly understood world of research\ninfrastructures providing data and other research services to scientific communities around the\nworld to perform excellent science. It does so by showing the features a research infrastructure\nhas with a road infrastructure, with the aim of making clear why and how public funding must be\nunderstood and justifie",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe thank you very much for this accurate and positive description of our work. You make a\nvery good suggestion relating to expanding the analogies to other public service\ninfrastructures. Along this line and during the writing process, we had actually been\ntempted to introduce a climate change element to some of the analogies, e.g. how mass\n\n\n\ntransit (train) may not satisfy all the specific transportation needs of all users, just like an\nintern",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "co-authors, all work in research infrastructures, there is an inherent bias in the approach presented, just like when\nSutherland et al.4 published their “20 things politicians need to know about science”. Yet, we also do not intend to be\ncounterproductive: policymaking is complex and multifaceted, as astutely explained in “20 things scientists need to know\nabout policy”. The comparison table is simply our contribution to fostering longer-term sustainability of infrastructures\nthat already exist, that are widely used across the world, and that have typically received significant public financing over\nthe years.\nFurthermore, the comparison table is likely to support efforts of both research infrastructure operators and policymakers\nin more accurately conveying to taxpayers the public value of research infrastructures, in addition to their role as enablers\nof scientific discovery and applications of societal benefit. The word ‘enablers’ is perhaps the most important message to\nconvey: jus",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "infrastructures that already exist, that are widely used across the world, and that have typically received significant public\nfinancing over the years.\nFurthermore, the comparison tables are likely to support efforts of both research infrastructure operators and policymakers in more accurately conveying to taxpayers the public value of research infrastructures, in addition to their role as\nenablers of scientific discovery and applications of societal benefit. The word ‘enablers’ is perhaps the most important\nmessage to convey: just like a road enables travel (and a research infrastructure enables research), it is questionable\nwhether it is right to ask the road construction/maintenance company (and the research infrastructure operator) whether\nthe road (and the research infrastructure) brings value to society. Economists and evaluation specialists are very well\nplaced and qualified (and likely unbiased) to answer complex questions around the public value of financing roads and\nresearc",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nData-intensive research depends on data and data services, such as databases, software and tools, and standards. These are\noften made available to end-users through research infrastructure. Such a research infrastructure for biological data and\nbioinformatics service in Europe is ELIXIR.1\nAs is common for many types of infrastructure (especially those that are free at the point of use), the existence of research\ninfrastructure, like the services provided by ELIXIR, is often taken for granted by their users. Their importance is only\nnoticed when they are (temporarily) unavailable, or worse, could disappear due to discontinued funding.2,3 In the Kano\nmodel, infrastructure services are must-be qualities: their proper functioning does not make the users happy, but service\ndisruptions are strong dissatisfiers.\nAs research infrastructures and their services are typically funded through the public purse, it is essential that policy\nmakers, research funders, experts reviewing fund",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nData-intensive research depends on data and data services, such as databases, software and tools, and standards. These are\noften made available to end-users through research infrastructure. Such a research infrastructure for biological data and\nbioinformatics service in Europe is ELIXIR.1\nAs is common for many types of infrastructure (especially those that are free at the point of use), the existence of research\ninfrastructure, like the services provided by ELIXIR, is often taken for granted by their users. Their importance is only\nnoticed when they are (temporarily) unavailable, or worse, when they disappear due to discontinued funding.2,3 In the\nKano model, infrastructure services are must-be qualities: their proper functioning does not make the users happy, but\nservice disruptions are strong dissatisfiers.\nAs research infrastructures and their services are typically funded through the public purse, it is essential that policy\nmakers, research funders, experts reviewing ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

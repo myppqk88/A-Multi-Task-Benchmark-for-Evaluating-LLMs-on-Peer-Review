@@ -1,0 +1,39 @@
+Author Response to Review 3 (v1)
+Author: author
+Date: 
+============================================================
+
+We would like to thank the reviewer for constructive comments and suggestions, which helped us considerably to improve the manuscript. Below we provide responses to the reviewer's comments:
+The authors present a novel approach to predicting signals. In order to show that their methodology is better or more sophisticated, the authors should explain how their methodology is different from the existing methodologies.
+Author Response: We included a more substantiate explanation of how the methodology proposed in the research is different from the previous ones.
+In the methodology section, the authors write that they merge two REGPAT databases by the address of the authors. Since one of the indicators measures the impact of patents after a lag of a few years, I wonder if the addresses in the two databases are kept the same at the point of publication or if they update it later? If the latter is true, then how did the authors account for the cases where authors changed their address?
+Author Response:
+Addresses of patents are defined by OECD. We just matched OECD patent data and European Patent full text database. We made no changes or updates to addresses of patents.
+It is not clear to me how the term “tw” is used. If it is kept fixed at 0.05 then what purpose does it serve? My guess is that the value of “tw” is conditional on the time elapsed since publication. Whatever the case might be, it needs better clarification.
+Author Response:
+Terms associated with weak signal topics usually have a low absolute occurrence frequency and a high time-weighted increasing rates. On the contrary, terms related to strong signal topics are likely to have a high absolute occurrence frequency and a high time-weighted increasing rates. In line with Yoon (2012), we study the occurrence of keywords and uses a time-weighted method (combination of time weights (tw), total number of periods (n) and specific period (j) in which term frequencies are counted) to put recent appearances of keywords more important than past appearances. For instance, in this part of  formula:
+1-tw × (n-j) ,
+lets calculate:  1 - 0.05 x (10-1) = 1 - 0.05 x (9)= 1 - 0.45 = 0.55 1 - 0.05x(10-2)= 1 - 0.05x(8)= 1 – 0.4 = 0.6 … 1 - 0.05x(10-10)= 1 - 0.05x(0)= 1
+I guess there are typos in Equations 1 and 2. “NNij” should be “NNj”.
+Author Response:
+Yes, there were typos in Equations 1 and 2. We corrected them. Thank you for pointing it out.
+For those who are new to text mining, it would be helpful to know how the authors dealt with synonyms. For instance, “playing”, “lighting”, etc. can have several meanings when used as keywords. How did the authors ensure that they selected the correct patents?
+​​​​​​​​​​​​​​
+Author Response:
+Previous research on text mining suggests that synonym replacement on a one-to-one word level is very likely to produce errors. We first extract only noun and adjective keywords as they represent technology concepts, and then use word2vec algorithm to group weak signal keywords. Afterward, the manual selection is used to group synonymous and to pick up main keywords associated with different sectors. After grouping weak and strong signal keywords, we use them as anchor words and utilize Correlation Explanation (CorEx) topic modelling to identify related invention activities across EU regions for the period 2010-2018.
+How can weak signals be more likely to transform into high-impact innovations? Authors need to explain it better and relate it with theory.
+​​​​​​​​​​​​​​​​​​​​​
+Author Response: We included a more substantiate explanation of how the weak signals are more likely to transform into high-impact innovations.
+Data is merged inside the methodology section. Either make a different section or rename this section as “Data and Methodology”.
+​​​​​​​
+Author Response:
+We renamed the section as “Data and Methodology”.
+The theoretical section does not present an established theory. I would instead rename it as “Conceptual Framework”.
+​​​​​​​​​​​​​​​​​​​​​
+Author Response:
+We renamed it as “Conceptual Framework” and also
+extended literature review.
+I really appreciate the depth in the analysis of this paper. However, since this tool is for policymakers, I wonder if it is feasible for the policymakers to merge so many datasets and do all these steps every time they sit for a policy meeting?
+​​​​​​​
+Author Response:
+Once data analyses are done and Python programming codes are written, most of the parts can be automated so that policymakers to have automated knowledge management tools.

@@ -1,0 +1,24 @@
+{
+  "task_id": "F005_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者不接受延长题名，解释避免让人误以为文章来自ISMPP，同时称已在摘要和引言具体化资料来源。评价替代处理是否对应题名明确性诉求，不把不照字改标题判成无回应。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Suggest title change to be more specific ie, include “the International Society for Medical Publication Professionals experience”.",
+      "role": "作者信中完整所选原关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Thank you for this suggestion.  We would prefer to keep the title concise and avoid the risk of readers inferring the article came from International Society for Medical Publication Professionals (ISMPP).  We have, however, included more specific details about ISMPP in the introduction and the abstract specifies that the data came from the ISMPP Annual Meetings.",
+      "role": "完整对应作者答复"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

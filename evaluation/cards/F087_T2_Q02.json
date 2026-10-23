@@ -1,0 +1,128 @@
+{
+  "task_id": "F087_T2_Q02",
+  "paper_id": "ORE:5-246",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F087_T2_Q02/input.json",
+  "input_sha256": "8f3df2d59816baa3a5e38cbe20ff887d72d5390763c2384c6cb831d369231990",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F087_T2_Q02/input.json",
+      "source_sha256": "8f3df2d59816baa3a5e38cbe20ff887d72d5390763c2384c6cb831d369231990",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "the authors are encouraged to clarify\nthe methodological positioning of the review as a theoretical or integrative synthesis,",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F087_T2_Q02/input.json",
+      "source_sha256": "8f3df2d59816baa3a5e38cbe20ff887d72d5390763c2384c6cb831d369231990",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "1. Methodological positioning of the review and support for factual statements\nWe fully agree. In the revised manuscript we have clarified, at a higher level of prominence,\nthat the paper is an integrative theoretical synthesis rather than an exhaustive mapping or a\nformal “systematic review” in the strict PRISMA sense. As follows:\nAbstract (methodological positioning): We added an explicit statement positioning\nthe article as an integrative theoretical synthesis and clarifying that it combines a\nstructured search and thematic synthesis without claiming exhaustive coverage.\nMethodological approach (early signposting): We added a short “positioning”\nsubsection that explains the rationale for an integrative synthesis in relation to model\nconstruction and conceptual re-organization.\nSupporting methodological references: To avoid reliance on authorial assertion, we\nincorporated established methodological sources on integrative/theoretical reviews\nand review typologies, which justify the approach adopted.\nBecause the main contribution of the manuscript is conceptual (i.e., the construction and\narticulation of an interdependent model linking teacher knowledge and teacher identity), an\nintegrative theoretical synthesis is the most appropriate methodological form. The revised\nwording is intended to align the reader’s expectations with the actual goals and procedures\nof the review.\n\n3. About the assessment of the discussion in the context of the literature\nWe acknowledge this evaluation and have revised the manuscript to ensure that the\nintended goal is explicit: the article is an integrative synthesis aimed at conceptual model\nconstruction rather than an exhaustive mapping of all perspectives. To address the\nunderlying concern, we (i) strengthened the scope statement and delimitations, and (ii)\nclarified the methodological positioning so that the manuscript is assessed against the\n○\n\n○\n\n○\n\n○\n\n○\n\n○\n\n\n\n\nappropriate standard for integrative theoretical reviews.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复明确整合性理论综合、结构化检索与主题综合，不声称穷尽或严格PRISMA系统综述。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient合理；仅凭未给PRISMA流程而扣分不成立。"
+    },
+    {
+      "id": "J2",
+      "judgment": "给出摘要、方法定位段及概念模型建构目的的对应理由，充分回应本题狭窄的方法定位要求；无需把本题扩为完整系统综述质量审查。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient合理；仅凭未给PRISMA流程而扣分不成立。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复明确整合性理论综合、结构化检索与主题综合，不声称穷尽或严格PRISMA系统综述。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：说明何种综述及为何适合概念建构，而不是只说已改方法。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复明确整合性理论综合、结构化检索与主题综合，不声称穷尽或严格PRISMA系统综述。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：说明何种综述及为何适合概念建构，而不是只说已改方法。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。给出摘要、方法定位段及概念模型建构目的的对应理由，充分回应本题狭窄的方法定位要求；无需把本题扩为完整系统综述质量审查。",
+      "high_score_conditions": [
+        "区分非穷尽整合综合的合法目标与其实际检索/引用仍未核实，不以重新命名免除所有方法透明性责任。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：给出摘要、方法定位段及概念模型建构目的的对应理由，充分回应本题狭窄的方法定位要求；无需把本题扩为完整系统综述质量审查。"
+      ],
+      "boundary_2_3": "说明何种综述及为何适合概念建构，而不是只说已改方法。",
+      "boundary_3_4": "区分非穷尽整合综合的合法目标与其实际检索/引用仍未核实，不以重新命名免除所有方法透明性责任。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient合理；仅凭未给PRISMA流程而扣分不成立。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分非穷尽整合综合的合法目标与其实际检索/引用仍未核实，不以重新命名免除所有方法透明性责任。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：给出摘要、方法定位段及概念模型建构目的的对应理由，充分回应本题狭窄的方法定位要求；无需把本题扩为完整系统综述质量审查。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分非穷尽整合综合的合法目标与其实际检索/引用仍未核实，不以重新命名免除所有方法透明性责任。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient合理；仅凭未给PRISMA流程而扣分不成立。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "说明何种综述及为何适合概念建构，而不是只说已改方法。",
+    "3_to_4": "区分非穷尽整合综合的合法目标与其实际检索/引用仍未核实，不以重新命名免除所有方法透明性责任。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

@@ -1,0 +1,140 @@
+{
+  "task_id": "F007_T2_Q01",
+  "paper_id": "PeerJ:12078",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F007_T2_Q01/input.json",
+  "input_sha256": "1a9c481b7afeb7d9493c4d311615cd8abd5d80ccb464ab73ef54e611301c9cb2",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F007_T2_Q01/input.json",
+      "source_sha256": "1a9c481b7afeb7d9493c4d311615cd8abd5d80ccb464ab73ef54e611301c9cb2",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "The survey need to be described very well in order to facilitate repeatability. It is mandatory to indicate if the survey was validated or not and whether it was used before, include appropriate references for this.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F007_T2_Q01/input.json",
+      "source_sha256": "1a9c481b7afeb7d9493c4d311615cd8abd5d80ccb464ab73ef54e611301c9cb2",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "This particular survey has not been validated, although it is modelled on the Australian National Health Survey, with physical activity questions based on the IPAQ (SF) (Craig et al. 2003). This is described in lines 70 to 73 of the review PDF. Reference has been made to the IPAQ-SF in the Survey description section, lines 104 to 114 of the review PDF. The survey was piloted among staff and then students prior to administration; this statement has been added to line 114 of the review PDF. This survey has been administered to first year students every year since 2015 and was adapted to include the COVID-19-specific questions. A detailed description of the survey questions is provided in the methods section, and the response tables (Tables 1-4) provide an indication of the questions that were asked, and responses provided. Others wishing to replicate the survey could do so from those tables. Beyond this, the survey was provided to the reviewers as a supplementary file & we will make it available for readers, as a supplementary file. This statement has been added to line 114 of the review PDF.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者明确本问卷未验证，但借鉴澳洲国家健康调查和IPAQ-SF并给参考文献，不能把借鉴有效量表等同整个新问卷验证。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；关键是诚实区分试测/使用与验证。"
+    },
+    {
+      "id": "J2",
+      "judgment": "说明员工/学生试测、自2015年反复使用及COVID题项改编，直接回答既往使用情况。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；关键是诚实区分试测/使用与验证。"
+    },
+    {
+      "id": "J3",
+      "judgment": "承诺完整问卷作为补充材料，配合方法和响应表定位支持复现；题内没附问卷不等于回复不充分，但不能声称已检查每个题项。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；关键是诚实区分试测/使用与验证。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者明确本问卷未验证，但借鉴澳洲国家健康调查和IPAQ-SF并给参考文献，不能把借鉴有效量表等同整个新问卷验证。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需涵盖未验证、既往使用和提供问卷三项。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者明确本问卷未验证，但借鉴澳洲国家健康调查和IPAQ-SF并给参考文献，不能把借鉴有效量表等同整个新问卷验证。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需涵盖未验证、既往使用和提供问卷三项。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。承诺完整问卷作为补充材料，配合方法和响应表定位支持复现；题内没附问卷不等于回复不充分，但不能声称已检查每个题项。",
+      "high_score_conditions": [
+        "区分原工具证据与改编问卷效度，并接受清楚提供材料的回应而不假称附件已验证。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：承诺完整问卷作为补充材料，配合方法和响应表定位支持复现；题内没附问卷不等于回复不充分，但不能声称已检查每个题项。"
+      ],
+      "boundary_2_3": "需涵盖未验证、既往使用和提供问卷三项。",
+      "boundary_3_4": "区分原工具证据与改编问卷效度，并接受清楚提供材料的回应而不假称附件已验证。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient为合理主判；关键是诚实区分试测/使用与验证。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分原工具证据与改编问卷效度，并接受清楚提供材料的回应而不假称附件已验证。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：承诺完整问卷作为补充材料，配合方法和响应表定位支持复现；题内没附问卷不等于回复不充分，但不能声称已检查每个题项。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分原工具证据与改编问卷效度，并接受清楚提供材料的回应而不假称附件已验证。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient为合理主判；关键是诚实区分试测/使用与验证。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "需涵盖未验证、既往使用和提供问卷三项。",
+    "3_to_4": "区分原工具证据与改编问卷效度，并接受清楚提供材料的回应而不假称附件已验证。"
+  },
+  "source_unit": "focal_concern_response_author_letter"
+}

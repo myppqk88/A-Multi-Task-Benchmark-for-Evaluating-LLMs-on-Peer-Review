@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "D16_T2_Q01",
+  "paper_id": "F1000:151777",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D16_T2_Q01/input.json",
+  "input_sha256": "3bf46f27d0a37f9f4237c1bd18c456c65c2efb84a3b24dd98a66bb0a2e38c45f",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D16_T2_Q01/input.json",
+      "source_sha256": "3bf46f27d0a37f9f4237c1bd18c456c65c2efb84a3b24dd98a66bb0a2e38c45f",
+      "locator": {
+        "json_pointer": "/input/comment_text",
+        "text_span": [
+          0,
+          489
+        ]
+      },
+      "quote": "The methodology section is sufficiently detailed in terms of the data collection process, participant demographics, and how Chinese checkers was integrated into the curriculum. However, more specific details on the measures of “enthusiasm” and “engagement” could enhance reproducibility.\nThe study’s results can largely be replicated based on the description, but certain subjective measurements (e.g., student enthusiasm) require further clarification to ensure reproducibility by others.",
+      "role": "comment_text",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D16_T2_Q01/input.json",
+      "source_sha256": "3bf46f27d0a37f9f4237c1bd18c456c65c2efb84a3b24dd98a66bb0a2e38c45f",
+      "locator": {
+        "json_pointer": "/input/response_text",
+        "text_span": [
+          0,
+          1287
+        ]
+      },
+      "quote": "The authors appreciate the thorough review and constructive feedback provided. We have made substantial revisions to address the key concerns, particularly regarding effect size interpretation, measurement clarity, and cultural influence documentation. The revised manuscript now presents a more balanced discussion of the intervention's impact, acknowledging the modest yet significant effects while providing clearer context for their practical implications in educational settings.\nSpecial attention has been given to strengthening the methodology section, especially regarding the measurement of student engagement and enthusiasm. We have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility. The revised version also provides more robust evidence for cultural influences on strategic thinking by incorporating additional quantitative data and theoretical frameworks from Newton (2014) and Ho (2020).\nAdditionally, we have expanded the discussion section to include comparisons with other pedagogical approaches and provided a more nuanced interpretation of the statistical findings, particularly regarding their educational significance and practical applications in political science education.",
+      "role": "response_text",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "importance": "key",
+      "importance_reason": "影响该关切的事实核对、推理或结论范围；只在相关维度计分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可给出不同程度结论，但须逐项说明证据及未核范围；不以同意真人为准。"
+      ],
+      "judgment": "关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "scoring_use": "candidate_anchor_subject_to_human_review"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分原关切、回复所说和可见稿件事实；将跳棋用于比较政治课程的教学干预研究；提供作者完整一段整体回复。；回应文字充分性",
+      "high_score_conditions": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。",
+      "low_score_risks": "在evidence_accuracy维度忽略以下边界：2档识别部分事实；3档须准确引用与本点有关的关键材料：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_2_3": "2档识别部分事实；3档须准确引用与本点有关的关键材料：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_3_4": "3档容许不影响主判断的小遗漏；4档所有改变判断的重要角色、限定与未知均准确，包括：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "说明证据为何支持或不支持本判断；将跳棋用于比较政治课程的教学干预研究；提供作者完整一段整体回复。；回应文字充分性",
+      "high_score_conditions": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。",
+      "low_score_risks": "在argument_validity维度忽略以下边界：2档只识别部分要求或复述答复；3档须准确处理：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_2_3": "2档只识别部分要求或复述答复；3档须准确处理：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_3_4": "3档主要推理成立；4档还处理本题会改变推论的条件：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "结论程度和任务可知范围相称；将跳棋用于比较政治课程的教学干预研究；提供作者完整一段整体回复。；回应文字充分性",
+      "high_score_conditions": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。",
+      "low_score_risks": "在conclusion_appropriateness维度忽略以下边界：2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_2_3": "2档方向部分合理但程度/范围失配；3档需根据以下实质点限制结论强度：关于热情与参与的具体操作定义、行为指标、标准协议仅被宣称已加入，回复未展示任何定义或测量步骤；核心可复现性关切只能算部分或未充分回应。",
+      "boundary_3_4": "3档总体结论合理；4档明确可判断与仍未知的边界，不把未知当错误：3档允许次要遗漏；4档还应明确：区分明确提到测量问题与提供可复用的测量办法；文化/效应量扩展不能抵偿这一缺口。"
+    }
+  },
+  "severe_error_checks": [
+    "捏造决定性证据或版本角色错置：依据公共S1处理。",
+    "不以平台通过、作者采纳、后评审沉默代替科学真值。"
+  ],
+  "read_scope": {
+    "read": [
+      "完整阅读本题comment_text与response_text，必要上下文；本卡所有E1/E2逐字保留。"
+    ],
+    "not_read": [
+      "未用后稿、后评审或其他题私有材料评分。"
+    ],
+    "verification_limits": [
+      "revision_verification=not_assessed；事实外部真实性未独立核验。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "reference_author": "Astra candidate; not human gold",
+  "coverage_limit": "本卡为非穷尽候选；新增有效意见须据题内材料独立审查，不因未命中扣分。",
+  "source_unit": "T2_response_only"
+}

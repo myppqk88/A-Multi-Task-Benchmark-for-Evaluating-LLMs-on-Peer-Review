@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F102_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "文献与历史定位",
+    "群体与动机解释",
+    "实践建议"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对将2018年事件写成首次受关注的问题是否改正，避免把历史遗漏解释成仅需增加引用。",
+    "282名从业者自报的直接/目击经历与骚扰动机、健康后果要分开；后稿的支持策略建议不能反过来证明其干预效果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This study employs an online survey of 282 gamesworkers to assess their direct and witnessed\nexperiences with harassment. It breaks down the types and prevalence of harassment they have\nexperienced or witnessed, the perceived motivations of harassers, and the impacts harassment\nhas had on themselves and others in terms of mental and physical health. Overall, this study is\nclearly conducted and wri",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nReviewer's comment: First, the literature review could benefit from slightly clearer\norganization and attention to the broader history of harassment directed at gamesworkers.\nThe piece opens with recent examples of harassment (pg. 1-2), stating, “The harassment of\ngame makers first made its way into the spotlight when former Guild Wars 2 narrative\ndesigner Jessica Price’s was fired from ArenaNet after engaging in a Twitter exchange with a\nplayer",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "As noted in the previously mentioned quote from Price, there are often blurred lines between player and creator; making\nit difficult to negotiate social boundaries. One aspect of this is a lack of formal delineation between the professional and\npersonal social media accounts of game makers. This is, at least partially, because many studios do not have formal social\nmedia policies and, if they do, the policies are often unclear about the boundaries between one’s personal and professional\nonline presence. Today, whilst there remain many different guides available online about the best way for game makers\nto engage with game players online, very few (if any) discuss the role of personal and professional boundaries.\nOrganizational climate can also contribute to the harassment of game makers. Some scholars argue that game companies\nthemselves are fundamentally toxic within their organizational structure (Bourdreau, 2022) and the games they create\nreinforce toxicity through in-game narrative",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Why these incidents happen is a multifaceted question. We know from previous work from online harassment that there\nare many interpersonal and environmental reasons someone may be motivated to harass another person online – including\nlower levels of empathy, the online disinhibition effect, a lack of formal punishment, etc. (Cook, 2019; Cook et al., 2018,\n2019; March, 2019). However, there are additional variables to be considered specifically within the context of the\nharassment of game makers, such as the lack of clear boundaries between professional and personal social media accounts\nbelonging to game makers, toxic gaming cultures within the gaming industry, and a lack of diversity within gaming\ncontent and cultures. There has also been research exploring a potential cycle of exclusion in gaming cultures (Fron et al.,\n2007; Kowert et al., 2017) and the role of masculinity in studio culture may specifically play in creating a culture of\nharassment (Johnson, 2013; 2014).\nAs noted in t",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "harassment through these platforms. Future work should aim to recruit samples through studios directly to obtain a\nmore representative sample. Secondly, most participants within the sample worked in core creation or development roles\nwithin the studio. However, we know harassment towards industry professionals can happen to those in any role and at\nany level. Future work should aim to sample more professionals in different areas of the gaming industry to better evaluate\nthe frequency and impact of these behaviors across job functions. Lastly, this work was developed to be exploratory, with\nthe aim of providing a broad overview of what harassment via social media looks like for game industry professionals.\nFuture work should build upon these findings to evaluate any potential points of intersectionality between harassment\nexperiences, mental health impact, role within the industry, and demographic factors.\nConclusions\nHarassment of game industry professionals is a large problem with mos",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Game Developers Association: 2022 State of the Game Industry. 2022.\nGood OS: Bungie sues Destiny 2 streamer alleged to cheat, harass\nemployees. Polygon. 2022, July 18.\nReference Source\nGrayson N: For streamers dealing with stalkers, Twitch’s solutions fall\nshort. Kotaku. 2019.\nReference Source\nHernandez P: Overwatch artist says Sigma’s bare feet meant to ‘sell\nthe asylum look’. Polygon. 2019.\nReference Source\nInternational Game Developers Association: Developer Satisfaction Survey\n2021. 2021.\nJohnson RS: Toward greater production diversity: Examining social\nboundries at a video game studio. Games Cult. 2013; 8(3): 136–160.\nPublisher Full Text\nJohnson RS: Hiding in plain sight: Reproducing masuline culture at a\nvideo game studio. Communication. Cult. Crit. 2014; 7(4): 578–594.\nPublisher Full Text\nKowert R, Crevoshay E: Game Developers Social Media Experience Survey. 2021.\nReference Source\nKowert R, Breuer J, Quandt T: Women are from FarmVille, Men are from\nViceCity: The cycle of exclusi",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

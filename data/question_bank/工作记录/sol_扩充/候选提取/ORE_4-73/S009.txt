@@ -1,0 +1,1176 @@
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+DATA NOTE
+
+Introducing the Democratic Electoral Systems data,
+1919-1945
+[version 2; peer review: 3 approved]
+
+Nils-Christian Bormann
+
+1, Lea Kaftan
+
+2
+
+1Department of Philosophy, Politics & Economics, Witten/Herdecke University, Witten, North Rhine-Westphalia, 58455, Germany
+2GESIS Leibniz Institute for the Social Sciences, Cologne, North Rhine-Westphalia, 50667, Germany
+
+v2 First published: 18 Apr 2024, 4:73
+
+https://doi.org/10.12688/openreseurope.17264.1
+Latest published: 06 Sep 2024, 4:73
+https://doi.org/10.12688/openreseurope.17264.2
+
+Open Peer Review
+Approval Status
+1
+
+Abstract
+This data note introduces an update to the widely-used Democratic
+Electoral Systems (DES) data that encompasses the period from 1919
+to 1945. The data include 243 legislative lower house and presidential
+elections in 34 interwar democracies. Information on these elections
+falls into four categories: first and foremost, DES contains variables
+that capture the institutional rules that define how elections are
+organized. Second, the data captures the consequences of electoral
+rules in the form of summary statistics of electoral outcomes. Third,
+we include democracy classifications for four major democracy
+datasets so that users can choose their preferred democracy
+definition when working with the data. Finally, the DES dataset
+contains multiple identification variables that allow linking the DES
+data to a wide variety of other datasets. This update to the DES data is
+fully compatible with prior releases for the post-war period 1–3 .
+Plain language summary
+We provide information on electoral rules between 1919 and 1945. We
+focus on parliamentary and presidential elections in democracies. We
+collect information on these rules in a dataset of 243 elections. Many
+rules exist. Some describe how many members a parliament has.
+Others determine where politicians are elected. Again others decide
+how individual votes a party needs to get a seat. We also describe the
+consequences of elections, for example, how many parties make it
+into parliament. There are different ways to think about what
+democracy is. Our dataset uses four different approaches to
+determine whether or not a country is a democracy so users can
+decide which elections to consider democratic. Our data can also be
+linked to many other data sources.
+
+2
+
+3
+
+version 2
+(revision)
+
+view
+
+06 Sep 2024
+
+version 1
+18 Apr 2024
+
+view
+
+1. Düzgün Arslantas
+
+view
+
+view
+
+, University of Cologne,
+
+Koln, Germany
+2. Pedro Riera
+
+, University Carlos III of
+
+Madrid, Madrid, Spain
+3. Daniela Pastarmadzhieva
+
+, University of
+
+Plovdiv "Paisii Hilendarski", Plovdiv, Bulgaria
+Any reports and responses or comments on the
+article can be found at the end of the article.
+
+Keywords
+electoral rules, parliamentary elections, presidential elections,
+democracy, proportional representation, majoritarian systems
+
+Page 1 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+This article is included in the Political Science
+gateway.
+
+This article is included in the Horizon 2020
+gateway.
+
+This article is included in the European
+Research Council (ERC) gateway.
+
+Corresponding author: Nils-Christian Bormann (nils.bormann@uni-wh.de)
+Author roles: Bormann NC: Conceptualization, Project Administration, Supervision, Validation, Visualization, Writing – Original Draft
+Preparation, Writing – Review & Editing; Kaftan L: Conceptualization, Data Curation, Project Administration, Supervision, Validation,
+Writing – Review & Editing
+Competing interests: No competing interests were disclosed.
+Grant information: This project has received funding from the European Research Council (ERC) under the European Union’s Horizon
+2020 research and innovation programme (Grant agreement No. 950359).
+The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+Copyright: © 2024 Bormann NC and Kaftan L. This is an open access article distributed under the terms of the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly
+cited.
+How to cite this article: Bormann NC and Kaftan L. Introducing the Democratic Electoral Systems data, 1919-1945 [version 2; peer
+review: 3 approved] Open Research Europe 2024, 4:73 https://doi.org/10.12688/openreseurope.17264.2
+First published: 18 Apr 2024, 4:73 https://doi.org/10.12688/openreseurope.17264.1
+
+Page 2 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+REVISED Amendments from Version 1
+     
+We made two major changes in response to reviewer requests.
+First, we added a global map that depicts the global distribution
+of electoral families (majoritarian, proportional, mixed) in the first
+election in our sample (Figure 4). Second, we collected a new
+variable that records the constitutionally prescribed inter-election
+times, so that users now how many elections are typical for a
+country. Finally, we clarified minor issues throughout the text.
+Any further responses from the reviewers can be found at
+the end of the article
+
+Introduction
+
+We are introducing an update to the widely-used Democratic
+Electoral Systems (DES) data that encompasses the period
+from 1919 to 1945. The data include 243 legislative and presidential elections in 34 interwar democracies. Information on
+these elections falls into four categories: first and foremost,
+the DES data contains variables that capture the institutional
+rules that define how elections are organized. Second, the data
+captures the consequences of electoral rules in the form of summary statistics of electoral outcomes. Third, we include democracy classifications for four major democracy datasets so that
+users can easily choose their preferred democracy definition
+when working with the data. Finally, the DES dataset contains multiple identification variables that allow linking the
+DES data to a wide variety of other datasets.
+In addition to a new variable on the constitutionally prescribed
+length of time between elections, this release of the historical
+DES data contains all variables of prior releases for the postwar period, and is thus fully compatible with them1–3. These
+DES versions have been used to analyse a broad range of questions in political science, economics, sociology, and related disciplines. Most recently, social scientists employed the data to
+explore outcomes such as affective polarization4, voting preferences in general5, for left and right-wing parties in particular6, and
+public participation in policy-making7. Prior versions of the
+data on electoral rules entered analyses of party systems8,
+party breakdown9, foreign direct investment10, ethnic coalitions11,
+the development of legislatures in Africa12, and elite reactions
+to far right challengers13. All these studies are highly pertinent
+to studying the future of democracy.1
+Although this release of the DES data covers a historical
+period, studies of the tumultuous interwar years might be able
+to teach us something about the fate of democracies today14.
+Studying electoral choices and reforms during the interwar
+period can inform debates about contemporary institutional
+changes. Historical party systems are relevant comparison
+cases for studies of the effects of party fragmentation today15,16.
+Finally, the DES 1919–1945 release will prove a valuable
+R
+1
+
+Overall, the the dataset has been cited 1439 times according to a Google
+Scholar query on 26 August 2023.
+
+resource for scholars who study the origins of electoral
+systems, for example, to explore the diffusion of electoral
+rules across Europe and the Americas17.
+In the following, we describe how we collected the data, how we
+ensure data quality, and provide a range of summary statistics
+that describe the data.
+
+Materials & methods
+
+The DES data assembles and harmonizes previously scattered and analogue sources into one data set18. Whenever possible, we rely on primary sources, such as official election returns
+from statistical or government agencies, and electoral laws.
+Edited volumes that unite case studies on electoral systems
+and electoral returns constitute crucial secondary sources19–22.
+We cross-referenced different sources to ensure data validity.
+When sources disagreed, we provide the information given by a
+majority of sources or contacted country experts.
+Data collection relies on the experiences made in three previous rounds of post-World War II DES releases1–3 and proceeded
+in six steps:
+1. We defined the sample of elections to be included in
+the data. All elections must be democratic according
+to one of four major democracy indices: the
+dichotomous measure by Boix, Miller & Rosato23,
+the dichotomous Democracy and Dictatorship (DD)
+classification24,25, the ordinal Polity5 index26, and
+the continuous Varieties of Democracy (V-Dem)
+Polyarchy scale27. Since the original DD classification
+only starts in 1946, we classified all elections in the
+data according to its rules.
+2. We trained student research assistants (RAs) on the
+coding rules of the DES data1,3. The training involved a
+theoretical overview of electoral rules, the introduction
+of relevant source material, and example classifications
+of two elections.
+3. Each RA classified the same set of ten randomly
+selected elections. We compared RA classifications to
+our own classification of these elections, and provided
+individual performance feedback to each RA.
+4. We divided the election sample between RAs according
+to linguistic expertise. Between ourselves and the RAs,
+we were able to read source material in Dutch, English,
+Finnish, French, German, Italian, Serbo-Croatian, Spanish, and Swedish. In total, we spoke the languages used
+in 26 out of the 34 countries included in the dataset. For
+the remaining eight countries, we relied on secondary
+sources or contacted country experts. We encouraged
+RAs to contact us with questions when they were
+uncertain how to classify a particular variable or election. When our reading of sources could not provide
+an answer to unclear cases, we contacted other
+leading experts on electoral systems and/or particular
+countries to help us reach a decision.
+Page 3 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+5. We randomly re-sampled about 10% of elections and
+reclassified them to see if systematic errors occurred,
+and corrected them where necessary.
+6. Specific variables are automatically created. For example, we compute the effective number of electoral
+parties (ENEP) at each election through an algorithm
+that summarises election results into the overall
+index. For most elections, we link DES elections to
+electoral results collected by the authors in a different dataset, the Actions by Elites and Leaders (ABEL)
+data16. For all other elections, we collected raw
+electoral results from the sources described above.
+7. In a final step, we ran an automated script across
+the entire data to check each variable for its consistency with the coding rules, which identifies typos
+and other data entry mistakes. The script also ensures
+inter-variable consistency and thereby guarantees
+that two variable values do not contradict each other.
+For example, if the variable legislative_type
+indicates the use of proportional representation (PR) in
+a particular election, we checked that the variables
+elecrule and tier1_formula indicate specific
+PR sub-types but not sub-types of any other electoral
+family.
+The dataset comes with several identification variables that
+make it interoperational with other scientific and public-use
+datasets. Most users of the DES data are likely to link it to
+other country-level datasets. Thus, next to a unique variable
+that identifies each election (elec_id), the dataset provides
+several country-identifiers, including the country name, the
+country abbreviation, the Alvarez, Limongi, Cheibug &
+Przeworski country codes (aclp_code)24 along with the
+widely-used Correlates of War (COW) country codes (ccode)28
+and the Gleditsch & Ward (GW) country IDs (ccode2)29.
+Unlike identification systems of country names and different ISO country abbreviations, the COW and GW identification
+variables accurately trace the historical development of the
+international system.2
+
+Democratic Electoral Systems, 1919–1945
+
+To accommodate different views of democracy, we identify
+democratic elections according to four different democracy
+definitions. Each election in the DES 1919–1945 has been
+classified as democratic by at least one of four datasets. Two
+inclusive classifications identify almost all 243 elections in
+the dataset as democratic. Boix, Miller & Rosato’s (BMR) Complete Data of Political Regimes and Pzeworski et al.’s Democracy and Dictatorship (DD) data. The former consider all but
+two Spanish parliamentary elections in 1919 and 1920 as
+democratic23. DD neither classifies the two Spanish elections
+R
+2
+
+The two slightly differ in how they identify ancestor and successor states.
+For example, the COW system sees unified Germany after 1990 as a
+successor to Imperial/Nazi Germany before 1945, whereas GW classify
+unified Germany as a successor of West Germany.
+
+as democratic, nor three elections in San Marino24.3 The
+more complex V-Dem and Polity5 indices categorize 185 and
+173 elections respectively as democratic. Users of our data
+thus have the choice to pick their preferred definition of democracy and the associated sample of elections, or to take an
+inclusive approach by picking all elections that have been
+classified as democratic by at least one democracy indicator. In the following, we present descriptive statistics for all
+election recognized as democratic by at least one of the four
+democracy indicators.
+Our data includes information on 213 legislative, lower-house
+and 30 presidential elections in 34 democracies between
+January 1st, 1919 and December 31st, 1945. Figure 1
+shows the distribution of regime types across the globe. 26
+states featured a parliamentary regime (light grey), two a
+semi-presidential form of government (black), and four were
+presidential (dark grey).4 Geographically, the majority of
+democratic states were situated in Europe (25), while the rest
+clustered in Latin America and the Caribbean (5), in North
+America (2), and in the Pacific (2).5
+Figure 2 depicts the frequency of legislative and presidential
+elections per decade.6 The declining number of elections
+tracks the breakdown of democracy in many European
+states. Notably, the steeper decline in legislative compared to
+presidential elections contrasts with the greater instability of
+presidential systems in the post-World War II period30. This
+observation raises theoretical questions regarding the stability
+of presidential versus parliamentary systems, which we would
+not be able to investigate further without data from the interwar
+period.
+To enable users to compare the frequency of elections between
+different democracies, we added a new variable that describes
+the constitutionally prescribed duration in years between
+legislative and presidential elections. For example, members
+of the United States’ House of Representatives run for office
+every two years, while parliamentarians in interwar Czechoslovakia only faced voters every six years. We record the
+R
+3
+
+Both BMR and DD do not consider the Spanish elections as democratic
+because the unelected Spanish monarch could dismiss governments and revoke
+laws. The DD rules further dismiss the San Marino elections because the
+country did not experience an alternation in executive power in the period
+1906–1922.
+4
+
+Parliamentary regimes feature no popular presidential elections. In semipresidential regimes, the president is head of state but not head of the
+government. In presidential regimes, the president is both, head of state and
+head of government. Only Ireland changed its democratic regime type from
+parliamentary to semi-presidential when adopting a new constitution in
+1937.
+5
+
+The sample includes elections from Austria, Belgium, Czechoslovakia,
+Denmark, Estonia, Finland, France, Germany, Greece, Iceland, Ireland, Italy,
+Latvia, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal,
+San Marino, Spain, Sweden, Switzerland, United Kingdom, Yugoslavia,
+Argentina, Chile, Colombia, Cuba, Uruguay, United States of America,
+Canada, Australia, and New Zealand.
+6
+
+We omit 14 elections in 1919 from the graph.
+Page 4 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Figure 1. Regime types across the world. First election per country depicted.
+
+Figure 2. Democratic elections per decade, 1920–1945.
+
+longest electoral cycle in our data for presidential elections in
+Germany, which took place every seven years. Moreover, we
+also collected information on the partial renewal of parliament. For example, lower house elections in Argentina take
+place every two years for 50% of MPs. These on term lengths
+do not only allow users to compare another characteristic
+of electoral rules but also facilitate weighting the number of
+units per country in cross-country quantitative comparisons.
+We publish them in a separate data sheet to ease merging the
+interwar data with its post-World War II counterparts.
+
+Legislative elections
+Most of the information in the DES data focuses on legislative
+elections. The included variables provide different classifications
+of electoral families, electoral rules, their application and
+combination within or across different levels of aggregation
+or electoral tiers, the number and average size of districts,
+and the resulting number of parties at each election.
+Figure 3 displays the distribution of legislative electoral
+families per decade. During the interwar period, electoral rules
+that translate votes proportionally into seats were roughly
+Page 5 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Figure 3. Legislative families per decade, 1920–1945.
+
+twice as common as majoritarian systems which award
+seats to the candidate(s) with the highest vote total(s) in a
+district. Combinations of proportional and majoritarian rules,
+so-called mixed systems, were uncommon during the interwar
+period, and only used in France and Iceland.
+Figure 4 shows that list PR systems were the most popular
+proportional rule with the D’Hondt divisor as the most common way to allocate votes into seats (49\% of all PR elections).
+The remaining PR elections employed various quota systems,
+such as the Hare (17.27\%), Hagenbach-Bischoff (15.83\%),
+or Droop quota (7.19\%) (see Figure 4). Single-member district pluralities or first-past-the-post elections constituted
+the preferred choice within the majoritarian electoral family
+(54.69\%).
+Geographically, all Anglo-Saxon states ran their elections
+under majoritarian rules as Figure 4 shows. Spain, during
+its first democratic spell in the early 1920s, also operated a
+first-past-the-post system. The other two majoritarian states,
+Argentina and Portugal, used the limited vote---an electoral system with multi-member districts, in which voters have fewer
+votes than there are seats. Besides the majoritarian United
+Kingdom and France, all other European countries had adopted
+PR in the early 1920s. Among the PR states, only Ireland
+departed from the list-PR consensus, and used the Single
+Transferable Vote (STV) instead. France was the only continental European state that held two of its five elections under
+mixed electoral rules. The only other mixed electoral system
+in our sample was employed in Iceland. During the interwar period, the country was part of a union with Denmark
+and not yet internationally recognized, which is why it is not
+depicted in Figure 4. Its voters elected four MPs by D’Hondt
+in the Reijkjavik constituency in addition to 12 seats in six
+
+two-member districts and 20 seats in single-member constituencies by plurality. In the 1919 and 1924 elections, France
+employed a mixed fusion system in multi-member districts.
+Voters had as many votes as there were seats in a given district (Borda Count) and candidates were elected if they
+received more votes than there were voters in a given district.
+Candidates were also part of lists. In a second stage, list votes
+were distributed by the Hare formula. If turnout in a constituency was lower than 50% or if no list passed the electoral quota a second round was to take place 14 days later in
+which a relative majority of votes was sufficient.
+Two democracies used electoral systems that have not been
+used by any other state in national elections during the time
+period covered by any previous DES data release (1946–2020),
+and thus enter the DES data for the first time. Germany used
+the fixed quota system that distributed one seat for 60,000
+votes31,73–81. Unlike most quota systems, which fix the number
+of parliamentary seats and determine the quota after counting the votes, the fixed quota system reverts this relationship.
+It sets the quota first and then determines the number of parliamentary seats. This practise led to an ever larger parliament as
+Germany’s population and electoral participation grew. The size
+of the German Reichstag swelled from 459 deputies in 1920
+to 647 members after the final election in March 1933. The second unique system, the cumulative vote, was employed in Chile
+until 192132. It is similar in all but one respect to the majoritarian block vote system, in which voters have as many votes as there
+are seats in multi-member districts. However, voters can award
+more than one vote to a candidate under the cumulative vote.
+Next to detailed information on legislative electoral rules,
+the DES data also provide insight into the consequences of
+these rules in the form of party system size figures. Figure 5
+Page 6 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Figure 4. Legislative types across the world. First election per country depicted.
+
+Figure 5. Party system size by electoral system family, 1919–1945.
+Page 7 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+presents box plots of the effective number of electoral (enep)
+and parliamentary parties (enpp) across electoral families (top) and within familes over time (bottom).7 In line with
+theoretical predictions33, majoritarian systems are associated
+with the smallest number of parties while PR systems are
+most permissive. From 1920 to 1940, the effective number of
+parties in PR systems decreases more steeply than in majoritarian systems (bottom panels). In part, this may be a
+selection effect where countries with more parties where
+more likely to fail. For example, four of the five democracies
+with the highest (enep) scores failed in the interwar period.8
+
+Presidential elections
+Presidential elections constitute just over 12% of all elections
+in the DES, 1919–1945 data. As shown in Figure 1 presidential
+regimes clustered in the Americas. European democracies were
+overwhelmingly of parliamentary types with semi-presidential
+exceptions in Finland, Germany, and Ireland after 1937.
+R
+7
+
+The effective number of parties measure summarizes the number of
+parties after an election by weighting each parties influence by its size. The
+weights in the electoral parties measure are vote shares, while the weights in
+n 2
+the parliamentary party index are seat shares: 1/
+s , where s captures
+i i
+vote or seat shares and n is the number of parties.
+
+∑
+
+8
+
+These are Latvia, Estonia, Yugoslavia, and Germany. Czechoslovakia
+is the fifth country that we classify as having survived until the German
+occupation began.
+
+This low share contrasts markedly with the post-World War
+II period, when more than a quarter of all elections were
+presidential1,3.
+Mirroring the early post-World War II decades, the electoral
+college was the most common electoral system used in presidential elections during the interwar period, closely followed
+by plurality elections (see Figure 6). Absolute majority
+systems and the alternative vote, that was only used in Ireland,
+were employed in less than 20% of all presidential elections.
+Finally, we do not find any notable association between
+presidential electoral rules and the number of candidates.
+Whereas plurality systems are associated with a smaller and less
+variable number of presidential candidates relative to absolute majority systems in the 20th and 21st centuries3,34,35, we
+find virtually no differences between electoral rules in
+the period 1919–1945. This null finding may in part be
+explained by the small number of elections observed during
+the period that does not result in sufficient variation. Another
+factor could be the relatively young age of interwar democracies. Out of ten states that held presidential elections, only the
+United States had been a democracy for more than a decade
+before 1919, when our dataset starts recording elections.
+Candidates and voters might have had too little time to learn
+about the mechanical and strategic effects of electoral rules.
+This difference in the associations between different features
+of electoral systems for periods before and after 1945 is of
+
+Figure 6. Presidential electoral rules, 1919–1945.
+Page 8 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+• Codebook: “es-1919-1945_codebook.pdf”
+
+theoretical relevance. We want to encourage researchers to
+explorer these differences further.
+
+Conclusion
+
+In this data note, we described an update to the Democratic
+Electoral Systems (DES) data that extends the coverage to the
+period 1919–1945. Recently, concerns about the quality and
+survival of contemporary European and other long-established
+democracies are on the rise. Our new data can help answer questions about the association of parliamentary and presidential
+institutions as well as party system fragmentation on one hand,
+and the fate of democracies in another troubled period on the
+other. The DES 1919–1945 data might also be of use to
+scholars interested in the origins of electoral rules or long-term
+institutional legacies.
+
+• Summary file: “readme.txt”
+Data are available under the terms of the Creative Commons
+Zero “No rights reserved” data waiver (CC0 1.0 Public domain
+dedication).
+
+Replication files
+To replicate the figures in this study unpack the zip archive and
+• R replication file: “data-es_interwar-master-231204.R”
+• R replication file for Figure 1: “des_figure_regimetype.R”
+• R replication file for Figure 2: “des_figure_elecdec.R”
+• R replication file for Figure 3: “des_figure_elecfamdec.R”
+
+Data availability
+
+• R replication file for Figure 4: “des_figure_elecfam_
+map.R”
+
+All figures and reported statistics can be replicated with
+R scripts contained in the dataverse. The authors ran the scripts
+on R version 4.3.1 (“Beagle Scouts”) and used the R packages
+colorspace36, cshapes37, and ggplot238.
+
+Underlying data
+Harvard Dataverse: Replication Data for: Introducing the
+Democratic Electoral Systems data, 1919–1945. https://doi.
+org/10.7910/DVN/FWLXHM18
+This project contains the following underlying data:
+• Electoral rules data: “es-1919-1945-231204.csv”
+• Electoral period data: ``es-1919-1945-term-lengths-240826.
+csv’’
+• Electoral results data: “es-1919-1945-results-231204.csv”
+
+• R replication file for Figures 5, 5a & 5b: “des_figure_
+enep_enpp.R”
+• R replication file for Figure 6: “des_figure_preselecrule.R”
+
+Acknowledgements
+We are grateful to superb research assistance by Esmirna
+Jimenez Medina, Franziska Knubel, Oliver Köninck, Maximilian
+Salzer, Lara Werdehausen, and Ana Luisa Ibarra Portillo. Jani
+Korhonen and Matthew Shugart provided their expertise on
+specific elections and electoral rules. Matt Golder initiated the
+DES data project, drafted the coding rules, and gave important
+feedback.
+
+References
+1.
+
+Golder M: Democratic Electoral Systems around the world, 1946–2000. Elect
+Stud. 2005; 24(1): 103–121.
+Publisher Full Text
+
+2.
+
+Bormann NC, Golder M: Democratic Electoral Systems around the world:
+1946–2011. Elect Stud. 2013; 32(2): 360–9.
+Publisher Full Text
+
+3.
+
+Bormann NC, Golder M: Democratic Electoral Systems around the world,
+1946-2020. Elect Stud. 2022; 78(3): 102487.
+Publisher Full Text
+
+4.
+
+Tichelbaecker T, Gidron N, Horne W, et al.: What do we measure when we
+measure affective polarization across countries? Public Opin Q. 2023; 87(3):
+803–815.
+Publisher Full Text
+
+5.
+
+Stegmaier M, Linek L, Marcinkiewicz K: Heterogeneity in the effects of
+resources, proximity, and identity on preference voting in PR systems. East
+Eur Polit. 2024; 40(2): 239–255.
+Publisher Full Text
+
+6.
+
+Bol D, Hunter A, Fernandez GA: The psychological partisan effect of electoral
+systems: How ideology correlates with strategic voting. Party Politics. 2023;
+30(4).
+Publisher Full Text
+
+7.
+
+De Francesco F, Tosun J: The enactment of public participation in
+rulemaking: A comparative analysis. Swiss Polit Sci Rev. 2023; 29(1): 21–36.
+Publisher Full Text
+
+8.
+
+Clark WR, Golder M: Rehabilitating duverger’s theory: testing the
+
+mechanical and strategic modifying effects of electoral laws. Comp Polit
+Stud. 2006; 39(6): 679–708.
+Publisher Full Text
+9.
+
+Lupu N: Party brands in crisis: partisanship, brand dilution, and the
+breakdown of political parties in Latin America. Cambridge University Press:
+New York, NY, 2016.
+Reference Source
+
+10.
+
+Choi S, Furceri D, Yoon C: Policy uncertainty and foreign direct investment.
+Rev Int Econ. 2021; 29(2): 195–227.
+Publisher Full Text
+
+11.
+
+Bormann NC: Uncertainty, cleavages, and ethnic coalitions. J Polit. 2019;
+81(2): 471–486.
+Publisher Full Text
+
+12.
+
+Ochieng’ Opalo K: Legislative development in Africa: politics and
+postcolonial legacies. Cambridge University Press: New York, NY, 2019.
+Publisher Full Text
+
+13.
+
+Spoon JJ, Klüver H: Responding to far right challengers: does
+accommodation pay off? In: Domestic Contestation of the European Union.
+Routledge, 2021; 113–131.
+Reference Source
+
+14.
+
+Cornell A, Møller J, Skaaning SE: The real lessons of the interwar years.
+J Democr. 2017; 28(3): 14–28.
+Publisher Full Text
+
+15.
+
+Valentim V, Dinas E: Does party-system fragmentation affect the quality of
+democracy? Br J Polit Sci. Forthcoming.
+
+Page 9 of 18
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+16.
+
+Kaftan L, Bormann NC: Polarization, fragmentation, and democratic
+deconsolidation in interwar europe. Paper Presented at the Annual Meeting of
+the American Political Science Association. August 31st to September 3rd. 2023 in
+Los Angeles, CA, 2023.
+
+17.
+
+Boix C: Setting the rules of the game: the choice of electoral systems in
+advanced democracies. Am Polit Sci Rev. 1999; 93(3): 609–624.
+Publisher Full Text
+
+18.
+
+Bormann NC, Kaftan L: Replication Data for: Introducing the Democratic
+Electoral Systems data, 1919–1945. [Dataset], Harvard Dataverse, v1, 2023.
+http://www.doi.org/10.7910/DVN/FWLXHM
+
+19.
+
+Mackie TT, Rose R: The international almanac of electoral history.
+Macmillan: Basingstoke, UK, 3rd edition, 1991.
+
+20.
+
+Nohlen D: Elections in the Americas - A Data Handbook Volume 1: North
+America, Central America, and the Caribbean. Oxford University Press:
+Oxford, UK, 2005.
+Reference Source
+
+21.
+
+Nohlen D: Elections in the Americas - A Data Handbook Volume 2: South
+America. Oxford University Press: Oxford, UK, 2005.
+Reference Source
+
+22.
+
+Nohlen D, Stöver P: Elections in Europe. Nomos: Baden-Baden, DE, 2010.
+Publisher Full Text
+
+23.
+
+Boix C, Miller M, Rosato S: A complete Data Set of political regimes,
+1800–2007. Comp Polit Stud. 2012; 46(12): 1523–1554.
+Publisher Full Text
+
+24.
+
+Przeworski A, Alvarez ME, Cheibub JA, et al.: Democracy and development:
+political institutions and well-being in the world, 1950–1990. Cambridge
+University Press, Cambridge, MA, 2000.
+Reference Source
+
+27.
+
+Coppedge M, Gerring J, Knutsen CH, et al.: V-dem country-year dataset v13.
+Varieties of Democracy (V-Dem) Project. 2023.
+Publisher Full Text
+
+28.
+
+Singer JD, Small M: Correlates of war project: international and civil war
+data, 1816–1992. Inter-University Consortium for Political and Social Research
+Ann Arbor, Michigan, 1994.
+Publisher Full Text
+
+29.
+
+Gleditsch KS, Ward MD: Interstate system membership: A revised list of the
+independent states since 1816. Int Interact. 1999; 25: 393–413.
+
+30.
+
+Cheibub JA: Presidentialism, parliamentarism, and democracy. Cambridge
+University Press, 2007.
+Reference Source
+
+31.
+
+Ziegler DJ: Prelude to democracy: A study of proportional representation
+and the heritage of weimar Germany, 1871–1920. Papers from the University
+Studies series (The University of Nebraska). 1958; 67.
+Reference Source
+
+32.
+
+Gamboa R, Morales M: Deciding on the electoral system: chile’s adoption of
+proportional representation in 1925. Lat Am Politics Soc. 2015; 57(2): 41–66.
+Publisher Full Text
+
+33.
+
+Duverger M: Political parties. Methuen, London, 1963.
+
+34.
+
+Cox G: Making votes count: strategic coordination in the world’s electoral
+systems. Cambridge University Press, New York, 1997.
+Reference Source
+
+35.
+
+Golder M: Presidential coattails and legislative fragmentation. Am J Political
+Sci. 2006; 50(1): 34–48.
+Publisher Full Text
+
+36.
+
+Zeileis A, Fisher JC, Hornik K, et al.: colorspace: A toolbox for manipulating
+and assessing colors and palettes. J Stat Softw. 2020; 96(1): 1–49.
+Publisher Full Text
+
+25.
+
+Cheibub JA, Gandhi J, Vreeland JR: Democracy and dictatorship revisited.
+Public Choice. 2010; 143(1): 67–101.
+Publisher Full Text
+
+37.
+
+26.
+
+Marshall MG, Gurr TR: Polity5 - political regime characteristics and
+transitions, 1800–2018. Technical report, Center for Systemic Peace, 2020.
+Reference Source
+
+Schvitz G, Girardin L, Rüegger S, et al.: Mapping the international system,
+1886-2019: the cshapes 2.0 dataset. J Conflict Resol. 2022; 66(1): 144–161.
+Publisher Full Text
+
+38.
+
+Wickham H: ggplot2. Wiley Interdiscip Rev Comput Stat. 2011; 3(2): 180–185.
+Publisher Full Text
+
+Page 10 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 25 September 2024
+
+https://doi.org/10.21956/openreseurope.19960.r44003
+© 2024 Riera P. This is an open access peer review report distributed under the terms of the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the
+original work is properly cited.
+
+Pedro Riera
+University Carlos III of Madrid, Madrid, Spain
+The authors have properly addressed all my main concerns and the data note can be accepted as
+it stands. I would like to thank and congratulate the authors on this nice and extremely useful
+addition to the state of the start. In my view, the dataset will be massively employed by experts in
+electoral systems all over the world.
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: Comparative politics, electoral systems, voting behaviour.
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard.
+
+Version 1
+Reviewer Report 14 August 2024
+
+https://doi.org/10.21956/openreseurope.18659.r40564
+© 2024 Pastarmadzhieva D. This is an open access peer review report distributed under the terms of the
+Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any
+medium, provided the original work is properly cited.
+
+Daniela Pastarmadzhieva
+1 University of Plovdiv "Paisii Hilendarski", Plovdiv, Bulgaria
+2 University of Plovdiv "Paisii Hilendarski", Plovdiv, Bulgaria
+
+Page 11 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+The article „Introducing the Democratic Electoral Systems data, 1919-1945“, presents the most
+recent addition to the Democratic Electoral Systems around the world data. As the authors
+pointed out it encompasses the period from 1919 to 1945 and consists of 243 legislative lower
+house and presidential elections in 34 interwar democracies. The structure of the article is
+standard, consisting of an introduction, a description of the materials and methods, a substantial
+part, and a conclusion. The introduction is well structured and determines the framework and
+focus of the article. The methodology is described step-by-step, it is relevant for the goal of the
+study and is reproducible. The inclusion of regime types along with the electoral systems (and
+their sub-types) provides more options for analysis. The application of different conceptual
+frameworks to define democracy is another benefit for the users.
+Substantially, the new addition to the DES dataset has a wide range of benefits for scholars and
+for all interested in the elections. The historical background is rather significant in the explanation
+of the contemporary state in a given national context, tracing the origins of transformations. Of
+particular importance is the collection of information for a historical period, which enables
+researchers to expand the range of analyses. Thanks to the addition to the database, it is now
+possible to compare the period before and after the Second World War, institutional
+transformations (in particular electoral legislation), and changes in societies. It is possible to
+examine the dynamics in a country’s electoral rules from 1919 to the present by relating them to
+the dynamics in society. Alongside, associations between the structure of parliaments determined
+by the electoral rules and the decisions of states regarding the Second World War events might be
+identified. The above-mentioned are only part of the huge potential that the new database
+provides. In summary, current challenges cannot be fully understood without knowledge of the
+historical context, and DES 1919-1945 provides this opportunity to have accessible data on
+processes regarding the elections in contemporary democracies.
+The submitted article can be indexed as is, both structurally and substantively. However,
+concerning the DES, I would like to make a suggestion. Some of the countries that do not appear
+in the database are democracies nowadays. It seems to me that following the evolution of their
+electoral rules would contribute to a better understanding of the processes of democratization.
+Thus, if DES can be supplemented with more European countries although if not defined as
+democratic in the examined period, it will have a greater contribution to the comparative politics.
+Is the rationale for creating the dataset(s) clearly described?
+Yes
+Are the protocols appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and materials provided to allow replication by others?
+Yes
+Are the datasets clearly presented in a useable and accessible format?
+Yes
+Competing Interests: No competing interests were disclosed.
+
+Page 12 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Reviewer Expertise: Elections and electoral systems, comparative politics, political culture
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard.
+Author Response 26 Aug 2024
+
+Nils-Christian Bormann
+Dr. Daniela Pastarmadzhieva suggested to extend the DES 1919-1945 to countries which are
+democracies today but have not been democracies during the interwar period.
+Response: We agree with Dr. Daniela Pastarmadzhieva that this would be interesting and
+relevant. Unfortunately, we do not have the resources and time to extend the DES as of now
+but will keep this suggestion in mind for future extensions.
+Competing Interests: No competing interests were disclosed.
+
+Reviewer Report 10 June 2024
+
+https://doi.org/10.21956/openreseurope.18659.r40572
+© 2024 Riera P. This is an open access peer review report distributed under the terms of the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the
+original work is properly cited.
+
+Pedro Riera
+1 University Carlos III of Madrid, Madrid, Spain
+2 University Carlos III of Madrid, Madrid, Spain
+
+This is a much-needed article (dataset) on electoral systems in democratic countries in the
+interwar period. The authors have managed to compile an immense quantity of reliable and useful
+data that I expect to be widely employed by comparativists of all over the world in the coming
+years. For this main reason, I support indexing of the article. Having said that, I am listing in the
+next paragraphs a battery of ideas that, in my view, could improve the dataset and the resulting
+article.
+1. My main concern about the article is that electoral systems per se should play a bigger role
+in it. Let me offer a couple of examples:
+1. Figure 1 displays information on regime types across the world. However, a similar
+graph with information on electoral system in use in each country does not exist.
+Electoral systems are the main object of the article and, as such, they should occupy a
+more prominent position when offering descriptive information.
+2. The article starts by very briefly explaining the main elements of the new dataset (i.e.,
+electoral rules, consequences of electoral rules, democracy indices and ID variables).
+However, I was missing some extra focus on the electoral rules variables. Which ones
+are included in the article? One can imagine that these are going to be the same that
+
+Page 13 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+appear in the “sequel”, the widely acclaimed Bormann et al.’s “Democratic Electoral
+Systems around the world, 1946-2020” dataset, but this needs to be explicitly said. On
+top of that, I have always considered the omission of an “electoral thresholds”
+variable in the original dataset as one its main mistakes. The reader wonders if this is
+also the case here and, if so, why the authors have not included information on this
+important element of democratic electoral systems.
+2. Elections as unit of analysis. In the previous Electoral Studies articles, the authors use as unit
+of analysis the election rather than the country. This sometimes can result misleading
+because the number of elections a country holds depends, among others, on the
+constitutional inter-election period. In order to be sure that the latter is not entirely
+responsible for this effect, I suggest that the authors include a new variable in the dataset
+that captures the duration of the constitutional inter-election period.
+3. Dubious theoretical claims:
+1. In page 5, the article argues that the steeper decline of the number of elections in PR
+countries is due to the geographical clustering of these countries in Europe rather
+than the type of system of government in place in these countries. However, the
+reader wonders how the geographical clustering of parliamentary systems in Europe
+can lead to this result. What is the (theoretical) mechanism linking these two variables
+(that is, geography and democratic survival)? I am aware of several ideas in this
+regard, the existence of domino/diffusion effects being the most prominent ones, but
+these points need to be made clearer in the article.
+2. In page 9, when talking about the effects of formulas in presidential elections, the
+authors allude to the “relatively young age of many democracies” to justify the
+existence of null effects in this regard. However, these effects do exist when
+examining the role of formulas in legislative elections (see previous pages). How can
+it be this discrepancy whether democracies are of relatively the same age?
+4. Small points (page 6):
+1. When talking about how uncommon mixed systems were in the interwar period,
+provide examples (for example, Denmark).
+2. Why not including a figure about frequency of types of PR electoral formulas?
+Is the rationale for creating the dataset(s) clearly described?
+Yes
+Are the protocols appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and materials provided to allow replication by others?
+Yes
+Are the datasets clearly presented in a useable and accessible format?
+Yes
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: Comparative politics, electoral systems, voting behaviour.
+
+Page 14 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard, however I have
+significant reservations, as outlined above.
+Author Response 26 Aug 2024
+
+Nils-Christian Bormann
+Pedro Riera’s main concern has been that electoral systems per se play a minor role in the
+description of the dataset.
+Response: We appreciate this feedback. In addition to the Figures and descriptive analyses
+we had already included in the first version of the manuscript, we have now added Figure 4
+and a corresponding description, providing more details about the distribution of electoral
+systems across the world.
+Pedro Riera has also wandered whether the DES data 1919-1945 contains information on the
+electoral thresholds, and if not, why this is the case.
+Response: The DES 1919-1945 data does not contain information on electoral thresholds
+because it went beyond the resources of this research project. Consider the following
+historical and contemporary examples: In Romania, ethnic minority representatives have a
+lower threshold to reach than their ethnic majority colleagues. In Poland, the threshold is
+lower for parties than for alliances of parties. In New Zealand and Germany, the electoral
+threshold only applies to parties that do not win a seat directly. Unlike in countries where
+thresholds are typically based on the percentage of votes a party gained, Slovenia bases its
+threshold on the number of seats won. In interwar Czechoslovakia, the threshold was based
+the absolute number of votes won, not the percentage – only determining whether a party
+could participate in distribution of votes on the second tier. Thus, deciding which electoral
+threshold to code and how to deal with many exceptional cases would have taken
+considerable time. We therefore kept the focus on the original DES coding instructions.
+Pedro Riera suggested to include information on the constitutional inter-election periods.
+Response: As collecting data on on inter-election periods was fairly straight forward, we
+added two new variables to the DES 1919-1945: one indicates the length of the term for
+presidents and parliaments (in years), respectively, the other indicates the intervals in which
+elections are held (in years) in case parliaments are only renewed partially. For example,
+Argentina’s members of parliament were elected for four years, but elections took place
+every two years for half of the parliament.
+Pedro Riera furthermore raised some concerns regarding two “dubious theoretical claims”: The
+first is about the effect of the geographical clustering of parliamentary systems in Europe on their
+survival, and the second refers to the non-existing difference between the number of candidates
+running for presidential elections in plurality vs. absolute majority systems between 1919 and
+1945.
+Response: We want to thank Pedro Riera for carefully reading our manuscript. We deleted
+the first theoretical claim, mostly because this note is supposed to present the dataset, and
+not to defend novel theoretical arguments. We now claim that the discrepancy between the
+interwar and post-World War II periods “raises important theoretical questions regarding
+
+Page 15 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+the stability of presidential versus parliamentary systems.” Regarding the second claim: We
+added that this is a claim about presidential elections. The p residential and semipresidential regimes in our sample are younger on average than parliamentary ones. For
+example, parliamentary Denmark, France, Norway, Switzerland, the UK had been
+democratic for more than ten years when our data starts recording elections in 1919.
+Among presidential democracies, only the US had been democratic for more than ten years.
+Pedro Riera furthermore suggested to provide examples, primarily when speaking about how
+uncommon mixed systems were in the interwar period.
+Response: We added France and Iceland as examples in the text. Denmark only ran one
+mixed election in 1918, a year that does not fall into our sampling period.
+Finally, Pedro Riera wondered why we did not include a figure about the frequency of PR electoral
+formulas.
+Response: The main reason is that such a graph is hard to read. There are 19 different PR
+electoral formulas, several of them with very few elections. We find it more informative to
+describe the frequency of the main formulas in the text.
+Competing Interests: No competing interests were disclosed.
+
+Reviewer Report 31 May 2024
+
+https://doi.org/10.21956/openreseurope.18659.r40566
+© 2024 Arslantas D. This is an open access peer review report distributed under the terms of the Creative
+Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,
+provided the original work is properly cited.
+
+Düzgün Arslantas
+1 Cologne Center for Comparative Politics,, University of Cologne, Koln, Germany
+2 Cologne Center for Comparative Politics,, University of Cologne, Koln, Germany
+
+The Democratic Electoral Systems (DES) dataset is an important addition to the existing
+scholarship on the electoral systems. The dataset includes a wide-range of information on 243
+legislative lower house and presidential elections in 34 interwar democracies. The merit of the
+dataset stems from several factors. First, the paper covers a highly unique period in world history,
+i.e., the interwar years. Not only did this era witness the emergence and the spread of the most
+destructive political ideologies historically, but it also manifested the fragility of the so-called
+“established democracies” under non-democratic parties and leaders – even if they assumed
+power for a short period of time. Second, the dataset provides valuable insights into the trajectory
+of global electoral system changes, forming a foundational basis for future electoral engineering
+practices. Third, the dataset bridges a wide range of datasets through multiple identification
+variables. This allows researchers to make comparisons across different datasets and select the
+most suitable dataset for strengthening the empirical analysis. Fourth, the interdisciplinary nature
+of the DES dataset allows for the verification of proposed arguments against other aspects of
+
+Page 16 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+electoral politics.
+Despite these merits, some deficiencies should be stated. To begin with, first-hand sources are
+crucial for historical analysis, as few scholars possess sufficient resources to re-evaluate this
+period. This means that most scholars will possibly adopt the findings of this research without
+detailed investigation. From this perspective, the fact that some of the languages of the countries
+analyzed are not spoken by the research assistants may limit the reliability of the findings. Second,
+in which respect the DES dataset improves the understanding of the diffusion of electoral rules
+across Europe and the Americas is unclear. Historically, most of the colonized countries adopted
+the electoral systems of their imperial rulers. It remains to be seen whether such kind of diffusion
+can be mentioned for democracies as well. Third, additional information on how many elections
+are classified as “democratic” based on this reductionist account of the “democracy-dictatorship”
+classification would be beneficial. As widely noted, a binary classification overlooks the increasing
+prevalence of regimes that fall between these extremes. Finally, I am not fully convinced whether
+using the sub-title “democratic electoral systems” is conceptually appropriate. If we mention
+“democratic electoral systems,” then are there also “authoritarian” electoral systems or even
+“totalitarian” ones? How do they look like? Imagine an electoral authoritarian regime with little or
+no ethnic and religious pluralism. If this country adopts an electoral system that maximizes
+descriptive representation of the society, can we call the electoral system “democratic”?
+Is the rationale for creating the dataset(s) clearly described?
+Yes
+Are the protocols appropriate and is the work technically sound?
+Yes
+Are sufficient details of methods and materials provided to allow replication by others?
+Yes
+Are the datasets clearly presented in a useable and accessible format?
+Yes
+Competing Interests: No competing interests were disclosed.
+Reviewer Expertise: comparative politics
+I confirm that I have read this submission and believe that I have an appropriate level of
+expertise to confirm that it is of an acceptable scientific standard.
+Author Response 26 Aug 2024
+
+Nils-Christian Bormann
+First, Düzgün Arslantas has raised the concern that our research team did not speak all
+languages spoken in the countries included in the dataset, potentially introducing bias.
+Response: We agree that this may be a problem, although it is a common in cross-national
+research. We would like to highlight that our research team was able to read source
+material in Dutch, English, Finnish, French, German, Italian, Serbo-Croatian, Spanish, and
+
+Page 17 of 18
+
+Open Research Europe
+
+Open Research Europe 2024, 4:73 Last updated: 26 JUN 2025
+
+Swedish. Thus, we spoke the languages of 26 of the 34 countries included in the dataset.
+Moreover, we also relied on data compiled by others in a comparative manner such as
+Mackie and Rose (1991), Nohlen (2005), and Nohlen and Stöver (2010). There compilations
+are predominantly authored by country experts, who speak the language and know the
+cultural specificities of “their” country. We are confident that this allowed us to minimize
+bias as much as possible. We have clarified this point in the main text (see point 4 in the
+Section “Materials & Methods”).
+Second, Düzgün Arslantas pointed out that it remains to be seen whether the DES dataset can
+improve our understanding of the diffusion of electoral rules across Europe and the Americas.
+Response: We agree and apologize for the unprecise wording. We have clarified our
+statement. We now say: “Finally, the DES 1919-1945 release will prove a valuable resource
+for scholars who study the origins of electoral systems, for example to explore the role of
+diffusion of electoral rules across Europe and the Americas.”
+Third, Düzgün Arslantas asked for additional information on how many elections are classified as
+democratic, given the increasing prevalence of regimes that fall between the two extremes of
+authoritarian and democratic systems.
+Response: We apologize for not having been clear enough. We include all elections that
+have been classified as democratic by any of the following datasets: Boix, Miller, and Rosato
+(2012), the dichotomous Democracy and Dictatorship classification (DD), V-Dem, and Polity5.
+We did not include elections that took place in periods coded as undemocratic by all four
+datasets listed above. We have chosen this approach to allow researchers themselves to
+select elections that they deem to be “democratic enough” for their research interest. We
+have rewritten the first paragraph of the Section “Democratic Electoral Systems, 1919-1949”
+to clarify our approach.
+Forth, Düzgün Arslantas mentions conceptual issues with the term “democratic electoral system”
+since this suggests that there are also undemocratic elections.
+Response: We carefully disagree here but believe that this disagreement is rooted in a
+misunderstanding of our position due to a lack of clarity in the previous version of the
+manuscript. There are indeed elections taking place in non-democratic systems (e.g., Russia
+as of today), and there is a large body of literature surrounding these elections (see for
+example Gandhi and Lust-Okar, 2009). But of course, we do not claim that political systems
+such as Russia are democracies only because they have elections. This is why we fall back on
+the four datasets listed above to define our universe of cases: elections that happen in a (at
+least minimally) democratic environment. We ignore elections that take place in nondemocratic systems.
+Competing Interests: No competing interests were disclosed.
+
+Page 18 of 18
+
+

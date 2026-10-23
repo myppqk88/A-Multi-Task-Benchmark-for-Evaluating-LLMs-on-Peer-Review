@@ -1,0 +1,2244 @@
+Open Research Europe
+
+O
+
+RESEARCH ARTICLE
+
+Copilot in service: Exploring the
+
+language model-based chatbots for fo
+culture in preventing and countering
+[version 2; peer review: 2 approved]
+
+Irina van der Vet
+
+1,2, Leena Malkki3
+
+1Centre for European Studies, University of Helsinki Faculty of Social Sciences, H
+
+2Vrije Universiteit Brussel Institute for European Studies, Brussels, Brussels, 105
+
+3Centre for European Studies, University of Helsinki Faculty of Social Sciences, H
+
+v2 First published: 07 Mar 2025, 5:65
+
+https://doi.org/10.12688/openreseurope.19612.1
+Latest published: 17 Apr 2025, 5:65
+https://doi.org/10.12688/openreseurope.19612.2
+
+Abstract
+Background
+The rapid advancement in artificial intelligence (AI) technology has
+introduced the large language model (LLM)-based assistants or
+chatbots. To fully unlock the potential of this technology for the
+preventing and countering violent extremism (P/CVE) field, more
+research is needed. This paper examines the feasibility of using
+chatbots as recommender systems to respond to practitioners’ needs
+in evaluation, increase their knowledge about the key evaluation
+aspects, and provide practical guidance and professional support for
+the evaluation process. At the same time, the paper provides an
+overview of the limitations that such solution entails.
+Methods
+To explore the performance of the LLM-based chatbots we chose a
+publicly available AI assistant called Copilot as an example. We
+conducted a qualitative analysis of its responses to 50 pre-designed
+prompts of various types. The study was driven by the analysis
+questions established to explore accuracy and reliability, relevance
+and integrity, as well as readability and comprehensiveness of the
+responses. We derived the key aspects of evidence-based evaluation
+along with practitioners’ needs from the results of the H2020 INDEED
+project.
+
+Open Research Europe
+
+O
+
+Results
+Our findings indicate that Copilot demonstrated significant proficiency
+in addressing issues related to evidence-based evaluation in P/CVE.
+Most generated responses were factually accurate, relevant, and
+structurally sound, i.e. sufficient to kick-start and deepen internal
+evidence-based practise. At the same time, biases and data security
+issues inherent in LLM-based chatbots should be carefully explored by
+practitioners.
+Conclusions
+This study underscored both the potential and limitations of LLMbased chatbots in fostering evaluation culture in P/CVE. While Copilot
+can effectively generate accessible, informative and encouraging
+recommendations, it still requires a professional oversight to manage
+and coordinate the evaluation process, as well as address more fieldspecific needs. The future research should focus on more rigorous
+and user-centred assessment of such systems for P/CVE use based on
+multidisciplinary efforts.
+Keywords
+Artificial intelligence (AI), large language model (LLM), recommender
+system, evidence-based evaluation, evaluation culture, and preventing
+and countering violent extremism (P/CVE).
+
+This article is included in the Horizon 2020
+gateway.
+
+Corresponding author: Irina van der Vet (irina.vandervet@helsinki.fi)
+Author roles: van der Vet I: Investigation; Malkki L: Investigation
+Competing interests: No competing interests were disclosed.
+
+Grant information: This project has received funding from the European Union’s H
+under grant agreement No. 101021701
+The funders had no role in study design, data collection and analysis, decision to publish
+
+Copyright: © 2025 van der Vet I and Malkki L. This is an open access article distribu
+Attribution License, which permits unrestricted use, distribution, and reproduction
+cited.
+
+How to cite this article: van der Vet I and Malkki L. Copilot in service: Exploring t
+chatbots for fostering evaluation culture in preventing and countering violent
+Open Research Europe 2025, 5:65 https://doi.org/10.12688/openreseurope.19612.2
+
+First published: 07 Mar 2025, 5:65 https://doi.org/10.12688/openreseurope.19612.
+
+O
+
+REVISED
+
+Amendments from Version 1
+
+1. We included a brief introduction to AI, NLP, and LLM at the
+beginning of the Introduction section.
+2. The changes were introduced in this section: “Tech companies
+have been mitigating “bullshitting” and hallucinations that have
+been of a great concern since the early development of AI, by
+taking mitigation and optimisation measures (Lei et al., 2025;
+Zhao et al., 2023). However, the issue is far from being entirely
+resolved and LLMs in general still hallucinate and produce
+inaccurate content. The answers produced by chatbots still pose
+some challenges, especially when trusted by humans (Steyvers
+et al., 2025) and this is especially evident in educational contexts
+where students expect to find rich information and use them
+explicitly for learning (Rudolph et al., 2023).”
+3. We added the version of Copilot that was used for this study:
+“We have chosen to utilise the Copilot chatbot by Microsoft
+(version from January 2025) because it has already been already
+used in classrooms and corporate settings rather successfully;
+and because it is openly available, and displays all the
+functionalities of similar LLM-based chatbots”.
+4. In Method section we added that the study was conducted by
+domain experts.
+5. New references were added: Chow & Li, 2024; Chow & Li,
+2025; Lei et al., 2025; Ooi et al., 2025; Routray et al., 2023;
+Steyvers et al., 2025)
+Any further responses from the reviewers can be found at
+the end of the article
+
+Introduction
+
+The advancement of artificial intelligence (AI) and, specifically,
+generative AI has impacted all sectors of our lives. AI-based
+technologies have integrated into everyday life through innovations such as chatbots, virtual assistants, voice recognition
+systems, or image generators. However, it is still often misunderstood what AI acctually means. In general terms, AI is seen
+as a system that simulates human behavior to perform tasks
+requiring intelligence (Banh & Strobel, 2023; Ooi et al., 2025).
+The European Union’s AI Act defines an AI system as “a
+machine-based system designed to operate with varying levels
+of autonomy, that may exhibit adaptiveness after deployment
+and that, for explicit or implicit objectives, infers, from the
+input it receives, how to generate outputs such as predictions,
+content, recommendations, or decisions that can influence
+physical or virtual environments” (EU 2024/1689). This definition particularly highlights the operational mechanism of these
+systems and the far-reaching impacts they can have on both
+digital and real-world contexts.
+Natural language processing (NLP) is a critical component
+for grasping the current development of generative AI, as it
+enables human-like language comprehension and generation.
+This includes understanding, interpreting, and producing
+human-written or spoken language, as well as discerning
+context within interactions (Segura, 2023). NLP have been significantly improved in the recent years due to the large language models (LLMs), a type of generative AI that is built upon
+statistical algorithms and trained on extensive datasets from
+
+diverse sou
+2023).
+
+Since the r
+November
+– part of b
+sively in v
+preventing
+far, discussi
+how these
+viduals or
+they can
+extremist co
+
+This article
+using chatb
+in P/CVE.
+chatbots to
+ing or enh
+about P/CV
+purposes in
+yet been uti
+
+The article
+policy and
+a prelimina
+as one of t
+ation in the
+provide for
+Public chat
+domain-spe
+of this tech
+how these
+about evalu
+both the be
+practitioner
+
+The article
+the state of
+how a chat
+and practice
+of research
+bots for P
+advancemen
+recommend
+lar uses of
+based on p
+we present
+50 relevant
+methodolog
+and integri
+in Copilot
+P/CVE. Imp
+and formula
+methodolog
+1
+
+Chatbots are
+
+O
+
+Finally, we discuss the potential benefits and challenges
+associated with utilising chatbots for capacity-building and
+strengthening an evidence-based approach in the P/CVE field.
+While the primary focus of the article is on evidence-based
+evaluation, the findings can be valuable for mapping broader
+possibilities for using chatbots in counselling or trainings
+in the P/CVE field.
+
+State of art in evaluations and evaluation culture in
+P/CVE field and potential contribution of LLM-based
+chatbots
+The origins and motivation for this study derive from the
+well-documented lack of evidence-based evaluations in the
+P/CVE field (Silva & Kordaczuk-Wąs, 2025) and analyses on
+what can be done to improve the situation. P/CVE is a relatively
+new field which is, in many respects, still taking shape. There
+are currently no established standards or models for how P/CVE
+initiatives could or should be evaluated. Evaluations remain
+rather uncommon, and their results are often not widely shared. At
+the same time, there is a broad consensus that more evaluations
+are needed. Evaluation is a key part of evidence-based policymaking and practice, as it provides an opportunity for P/CVE
+stakeholders to assess their own programmes and policies critically, learn from the findings, and utilise the results to improve
+the effectiveness of their work. Cumulatively, evaluations help
+establish what kind of policies and programmes work to prevent
+and counter violent extremism and under what conditions.
+Furthermore, previous research and experience has shown that
+a key to successful and productive evaluations is to consider
+them a systemic part of organisational processes (Ibid.). Instead
+of separate, one-time events, they should be seen as an integral
+part of the programme development and implementation cycle.
+Ideally, evaluations are supported by evaluation culture, which
+is characterised by a commitment to utilise evaluation as an
+instrument for learning and an active search for such evidence
+to further improve the processes and practices. This also means
+that evaluation is not only something that an evaluator does.
+Successful planning, implementation and utilisation of evaluations also requires good knowledge of the basic principles
+and practices of evaluation from those who plan and implement
+programmes and policies. This is because successful evaluation depends on good advance planning to ensure that all data
+and documentation needed for the eventual evaluation are
+collected and produced at different points of the implementation.
+One initiative to improve the current state of affairs in the
+P/CVE field was the Horizon 2020 funded INDEED project
+(2021–2024), which engaged a wide group of European P/CVE
+stakeholders representing law enforcement, the prison sector,
+non-governmental organisations, policymakers, and academic
+researchers in finding ways to advance evidence-based evaluation
+in various segments of P/CVE. The gap analysis at the beginning
+of the project, as well as several workshops throughout its duration, provided helpful insights into why evaluations have
+not been more common in the field. There are several reasons for this, for example, a lack of resources and funding, lack
+of trust towards evaluators, and the fear that the results of the
+
+evaluation m
+or policy. M
+ers and po
+and experti
+like to enga
+to begin. T
+evaluations
+cymakers w
+and policies
+
+Numerous
+produced t
+awareness
+IMPACT E
+ing in the
+the INDEE
+(INDEED),
+organisation
+web-based
+information
+policymake
+questions.
+a basic un
+but they d
+P/CVE prof
+environmen
+general-leve
+more tailore
+depending o
+groups. Thi
+cannot prov
+information
+and policie
+sensitivities
+affect) vuln
+generate res
+sensitivities
+and affect t
+professiona
+bersome to
+so simply
+resource ba
+of the curr
+resources to
+if the resour
+
+To meet th
+ful to com
+cific inform
+professiona
+mation on
+could poten
+to meet the
+question, sc
+ient time a
+sionals wou
+their situati
+sult on thei
+encouraged
+
+O
+
+“know” enough about evidence-based evaluation and P/CVE
+and “understand” who the user is, as well as to produce reliable,
+well-organised, and comprehensive information. At the same
+time, when relying on such solutions, it is also important to
+know all their limitations.
+
+LLMs and research on their use in the P/CVE field
+Before exploring the LLM chatbot Copilot, it is worth saying
+a few more words about what LLMs are and going through
+previous studies on their relevance and application to P/CVE.
+LLMs are advanced AI systems capable of processing and
+understanding human language through interactions, allowing
+them to engage in conversations that simulate human dialogue
+(Mohamed & Kumar, 2024). The LLM functions by “feeding”
+an AI with a large amount of existing digital data (mainly from
+internet sources), which then allows it to understand human
+language and respond to prompts (questions and tasks) by generating new text or an image based on the inputted and disposed
+data or a description (Zhao et al., 2023). Most recent models
+are generative pre-trained transformer (GPT) models (Carugati,
+2023). They can serve as the basis for many tools that require
+Natural Language Processing (NLP). OpenAI Inc. released a
+publicly available ChatGPT in November 2022 and currently
+GPT is widely used as a “foundation model” for creating
+cost-effective AI innovations (Ibid.). The model can be used
+for generating “text, image, video, code, sound, and other
+produced content” (Banh & Strobel, 2023) in multidisciplinary
+and multimodal domains.
+To date, the most popular generative AI chatbots include
+ChatGPT2, Google’s Gemini (previously called Bard), chatbot
+Claude, built by Anthropic, and Microsoft Copilot, but more
+and more solutions have appeared in the market recently. Even
+though all the chatbots are different and there are different
+opinions about their usefulness for various use cases, they are
+still gaining popularity among both the general population and
+professionals. While chatbots’ usability in different tasks has
+been actively studied over the last two years, more multidisciplinary research across different fields is needed to analyse the
+capabilities and potential functions of such systems and
+extract the lessons learnt.
+The potential and actual uses of chatbots (and generative AI
+in general) have also been studied in the P/CVE field. The
+research so far has centred mainly around two themes. The first
+group of studies speaks about the capability of LLM-based
+chatbots to detect and track radical content and misinformation online. The second group of studies focuses on misuse
+cases of such systems for generating radical content and misinformation, which can (potentially and more realistically)
+increase the risk of escalation in violent extremism.
+The first group includes studies that explore the potential of
+LLMs for detection of extremist propaganda and terrorism,
+for example the study by Dong et al. (2024), in which they
+2
+
+For ChatGPT use case, see Ratten and Jones (2023).
+
+use LLM
+extremist a
+posts on so
+ate the perf
+engineering
+input instru
+specific tas
+better the p
+better the L
+
+Another sim
+formed an
+DistilRoBE
+through cla
+with curate
+cuss the ef
+propaganda
+great poten
+texts. What
+approach is
+measures w
+or increasin
+
+Another tea
+have also
+trained LLM
+of cost effe
+content. Th
+different da
+(statements/
+of thought
+to show the
+featured ex
+utilising a f
+queries to
+The genera
+the help o
+Although th
+not as effec
+further adv
+evaluation s
+
+At the sam
+that prove
+propaganda
+detection o
+in social m
+initially dem
+P/CVE, ev
+are needed
+sector.
+
+The second
+LLM-chatb
+sions betw
+warnings a
+chatbots (eg
+to purpose
+
+O
+
+commit extremism-related crime. One of the reasons behind
+this is the acknowledged securitisation of AI3. These systems
+have been associated with risks mainly because it is possible
+to customise these models to generate any desired content more
+efficiently. McGuffie & Newhouse (2020) argue that GPT-3
+API could be “weaponized” by extremists who could use it for
+spreading their ideologies and recruiting new members. The
+authors then utilise trained machines based on GPT2 and GPT3
+models for their experiment with inputting different prompts.
+The data for training included a dataset of extremist manifestos
+and a wide range of data of different styles, covering different
+spectrums of extremism. The results demonstrated the ability
+of both systems to generate content that can potentially lead
+to online recruitment. The authors indicated the need for
+policymakers and all of society to define social and political
+mechanisms against “machine-generated disinformation and
+propaganda” (Ibid., p. 1).
+It is important to note that it is challenging to establish the fact
+and collect evidence that these technologies are actually used
+by radicalised and criminal groups because it requires specific
+infrastructure, as well as a set of appropriate skills, methods,
+and expertise. However, in the past two years or so more
+evidence has begun to arrive from research and practice about
+actual cases where generative AI and LLM systems have been
+misused. Nelu (2024) notes that terrorist organisations (eg.
+Islamic State) have started producing guidelines about how
+to use generative AI technologies to spread misinformation
+and propaganda, which work as tutorials for their followers.
+The authors pointed out that AI chatbots in particular could be
+used effectively for recruiting and indoctrination by building
+human-like personal relationships (ibid.). Another paper (Allchorn,
+2024) explored the online posts of far-right extremists in the
+US, UK, Australia, and New Zealand. The paper discussed how
+extremist groups within the global far-right used AI methods
+for their own purposes. The author conducted an analysis of content from 12 violent and non-violent far-right groups, finding
+that they were exploring ways to utilise AI to stay ahead of
+counter-terrorism efforts. For example, AI’s LLMs themselves,
+as has been shown, were misused to spread violent ideas for
+“recruitment and kinetic attacks” (Ibid., p.13). The paper also
+mentioned that these far-right groups are concerned about the
+alleged liberal bias in current AI models and are seeking
+alternative models that align with their own libertarian or
+conservative values. They propose using clones of popular
+AI models such as ChatGPT (eg. RightWing, Freedom & Truth
+GPT and HuggingFace), which have been tailored to promote
+right-wing agendas.
+
+Pros and cons of using LLM chatbots as a recommender
+system
+While the two groups of studies mentioned previously are prominent in the research arena, a third emerging group explores
+LLM’s full linguistic potential, including its application in
+providing recommendations, explanations, and guidance – as seen
+
+3
+
+More on securitisation of AI, see Burton (2023).
+
+in conversa
+speech as “
+when a ch
+detailed m
+reveals its p
+but also a
+mendations
+the use of
+professiona
+underline k
+with using
+ited use in
+applications
+
+So what a
+come from
+evolved ov
+cognitive sc
+puter-based
+to readers
+preferences
+about its u
+system dem
+mender sys
+that filter a
+searching fo
+system is a
+erally, mov
+erences and
+and provide
+
+Recommend
+make predi
+gestions (Z
+bles recom
+adapt to c
+recommend
+
+As Lloyd
+as “random
+from a te
+indeed mak
+by chatbot
+significant
+generate co
+is often stil
+provided, p
+purposes. It
+are rapidly
+been mitig
+been of a g
+taking mit
+2025; Zhao
+being entir
+and produc
+bots still p
+humans (St
+in educatio
+
+O
+
+information and use them explicitely for learning (Rudolph
+et al., 2023).
+Since 2020 there has been an increasing number of studies on
+how to govern the interaction between humans and machines.
+A relatively new concept, “human-in-the-loop”, highlights
+the crucial role of humans in controlling AI output and assessing its usability (Mosqueira-Rey et al., 2023; Xu, 2019). We
+argue that another important consideration is the need for a
+“professional-in-the-loop”, who not only applies common sense
+to AI-generated content but also brings solid knowledge and
+expertise to verifying accuracy and informing decision-making
+based on independent judgements.
+The current recommender systems are largely advanced by LLMs.
+Furthermore, LLM-based recommendations produced by chatbots
+have shown promising results in the accuracy, relevance,
+and usability of provided recommendations (see Dehbozorgi
+et al., 2024), when based on Retrieval Augmented Generation
+(RAG). RAG is a working principle of LLMs that enhances
+their reliability through the utilisation of an external knowledge
+base (Gao et al., 2023). The advantage of RAG is that it
+reduces the chances of receiving irrelevant results in response
+to one’s query. However, the answers produced might still not
+be 100% accurate (Ibid). This principle holds promise when
+implemented for chatbots. Complementing an LLM with a
+reliable local dataset can lead to more rigorous and nuanced
+responses in relation to professional fields via the chat. Overall,
+it seems realistic to expect that AI chatbots will function
+increasingly independently and with fewer factual errors
+and hallucinations in the near future.
+There are also several ethical questions that need to be kept in
+mind when using LLM-based chatbots (see Chow & Li, 2024).
+When LLMs “learn” from the training data, they also learn the
+biases inherent in that data. In the case of RAGs, when the data
+from the knowledge base is polluted with biases, the results
+could be consequential. Gover (2023) exemplifies various biases
+that LLM models produces, such as gender, racial, or religious
+biases. It is therefore important to consider how to detect
+and correct these actual and potential biases so that they are
+not reflected in the recommendations provided by LLM chatbots.
+Another question relates to privacy and data security. Even
+if developers claim that LLMs are not trained with personal
+information, users might still include personal or sensitive data
+in the queries. It becomes important to define how users’ data is
+secured from unauthorised access (Piñeiro-Martín et al., 2023).
+Furthermore, it is not always clear what happens to inputted
+data, where it is stored, and how it is used. There is a common
+explanation in the terms of use or terms and conditions that
+the data inputted by users is used for further training or finetuning
+of AI chatbots, but in reality this is difficult to check. Such
+practices often depend on corporate ethics, which can take a
+back seat to the desire for customisation and profitable solutions.
+It is crucial to inform those who entirely rely on technology
+systems about the importance of not only reading the terms and
+conditions carefully to understand how their inputted data is used
+but also critically evaluating any new AI-based services before
+
+using them
+P/CVE pra
+private data
+
+A whole h
+are used to
+lives or wh
+involvemen
+
+Finally, the
+regulation
+openly ava
+and only in
+such mater
+ongoing lit
+legally use
+Gynbaum &
+to be awar
+duce direct
+et al., 2023)
+
+The AI act
+sents a sign
+This regula
+models, wh
+new transp
+and manda
+While this
+to training
+to assess the
+
+Method
+a. Our app
+
+The purpo
+LLM-based
+this, we w
+increasing
+identified ne
+
+We have c
+(version fro
+in classroo
+because it i
+of similar
+integrated
+it more fu
+website6 pr
+
+4
+
+One helpfu
+enforcement i
+which has bee
+ai-lawenforce
+5
+
+Please note
+this study doe
+https://copilot
+6
+
+Microsoft we
+soft-copilot/pe
+https://www.m
+
+O
+
+support you whenever and wherever you need it”. Our task in
+this part is to explore whether it may be true.
+Copilot functions similarly to ChatGPT but with some key
+distinctions. It is powered by GPT-47 (Chin, 2023) and Bing
+search. This setup aligns with the RAG principle, which enables
+Copilot to provide references to sources, potentially increasing
+its reliability, usefulness, and transparency. Marais et al. (2024)
+highlight that this feature is particularly advantageous for students as it allows them to verify “the credibility of the sources
+from which Copilot pulled information” (p. 2). These features
+are crucial when using Copilot to inform professionals. However,
+it is also important to recognise that Copilot also displays the
+limitations of LLM-based chatbots in general (Aaron et al., 2024).
+The key question in this study is what Copilot currently
+“knows” about evidence-based evaluation and how it can
+perform, given the specifications of the P/CVE field. To be useful
+to professionals, the chatbot should respond readily to the
+questions and queries prompted by professionals and provide
+reliable, relevant, comprehensive replies that are also easy to
+understand.
+Several methodologies have been used to assess the performance of LLM chatbots, depending on exactly what is being
+evaluated. The aforementioned studies assessing chatbots’ capability to provide reliable and comprehensive medical information typically use base prompts (asking separate questions).
+The answers have then been evaluated for their reliability and
+comprehensibility. Sometimes these answers were compared to
+the same questions answered by professionals or information
+provided by patient organisations. Another design involved asking
+professionals to distinguish between responses from the chatbot
+and those given by someone knowledgeable about the topic.
+In this study, we adopt a user-centred and qualitative approach
+to explore the potential of the chatbot for P/CVE professionals. Specifically, we simulate how these professionals would
+use the chatbot when seeking information about evidencebased evaluation, focusing on prompts that someone with little
+prior knowledge might use to gain an initial understanding
+of the evaluation principles and procedures. These include
+learning how to plan evaluations, how they are conducted,
+and what considerations are specific to their cases. To achieve
+these goals, we, the authors of this paper, as domain
+experts, engaged in a series of dialogues with the chatbot,
+observing what kind of knowledge it is able to provide. Similar
+qualitative, dialogue-based designs have been used to explore
+whether and what kinds of extremist material can be produced
+with the help of LLMs (See eg., McGuffie & Newhouse, 2020).
+We designed and inputted 50 prompts in January 20258. Ein-Dor
+et al. (2024) note that to “maximize the capabilities of LLMs,
+crafting effective prompts is essential. The prompts should clearly
+
+define the t
+erences, an
+medical stu
+(see eg., M
+and unpro
+questions le
+
+Our study c
+40 pre-defin
+applied typ
+sciences rev
+drawing on
+by purpose
+
+Box 1. Lis
+
+1.     What
+to P/C
+
+2.     Pleas
+evalu
+
+3.     Can y
+witho
+
+4.     Is usi
+
+5.     What
+meth
+
+6.     Do I n
+do it.
+
+7.     What
+
+8.     What
+impa
+impa
+
+9.     Can y
+
+10.   If my
+sense
+
+11.   When
+
+12.   I wou
+meth
+
+13.   What
+14.   How
+15.   How
+
+16.   Can y
+
+    a. What
+
+17.   Can y
+
+18.   Can y
+and h
+
+19.   Do yo
+CVE?
+if the
+
+20.   Can y
+more
+
+21.   How
+recom
+
+22.   What
+7
+
+23.   And h
+
+8
+
+25.   Any r
+group
+
+GPT-4 is a proprietary model that is controlled and owned by OpenAI. There
+are alternative open source models available in the market, such as llama, DeepSeek, or Teuken.
+We have been prompted Copilot since late 2023 but the present article is
+based on the latest 2025 dataset consisting of 50 prompts. Some earlier observation will also be shared in this article together with the link to the earlier
+dataset. The 2025 dataset is available in open access at: https://doi.org/10.5281/
+zenodo.14869752 (Zenodo: Copilot’s responses, January 2025)
+
+24.   I have
+
+26.   How
+
+27.   Shall
+inform
+
+O
+
+28.   I am unsure what is best to have, an internal or external
+evaluator?
+29.   What evaluation is less biased?
+30.   What is a good evaluation and what is a bad evaluation?
+31.   How to make a good quality evaluation?
+32.   Is there anyone who can help me with my evaluation?
+33.   I need more examples of evaluation in P/CVE, can you
+provide them?
+34.   How can I increase my skills in evaluation?
+35.   Can you recommend any training in evaluation for P/CVE
+professionals?
+36.   Do you know of any evaluation tools for P/CVE?
+37.   Can you explain the advantages and disadvantages
+(limitations) of each of them?
+38.   Do you know any evaluation models? Can you visualise
+them or send the link to those?
+39.   Can you recommend any other useful resources?
+40.   Please suggest a literature list for my level of knowledge
+about evaluation in P/CVE.
+
+in which professionals seek information, recommendations,
+specific tasks through requested actions, and even emotional
+support. Thus we can define four categories:
+• Information-seeking prompts: These explored the whys
+and hows of the evaluation process.
+• Recommendation-seeking prompts aimed to solicit
+guidance, advice, or resources to resolve a problem.
+These prompts were guided by phrases such as “can
+you tell me more about”, “can you recommend”, “what is
+your opinion about”, “shall I”, and so on.
+• Task-specific prompts directly requested Copilot’s
+assistance in certain actions, such as visualising
+information, providing examples, or offering suggestions.
+Phrases used in these prompts included “can you
+
+visu
+mor
+
+• Emo
+for
+(emo
+any
+aske
+
+Secondly, w
+for receivin
+
+• Base
+tions
+prom
+info
+
+• Cha
+prom
+text
+whic
+used
+resp
+
+The discus
+session (wi
+for
+holdi
+conclusively
+provide com
+and draw up
+
+The key a
+address we
+tool10. How
+would be fa
+but rather t
+could unfold
+
+In the seco
+based prom
+
+Table 1. Key aspects of evidence-based evaluation in P/CVE.
+
+9
+
+Aspect
+
+Explanation
+
+Definition of evidencebased evaluation and
+evidence
+
+Evidence-based evaluation is “a process of planning and i
+integrates available external evidence, professional exper
+preferences and circumstances” (INDEED D1.2).
+
+Methods, biases,
+quality
+
+The methods and evaluation designs are crucial for evalu
+programs. These are applied to identify the structure for
+analyse data (INDEED E-guidebook 1).
+
+Types of evaluation
+
+The INDEED E-guidebook 1 states that “[t]here are countl
+from each other in terms of objectives, methods, timing a
+proposed three types – formative, process, and outcome
+not only for planning and conducting evaluations per se b
+programmes.
+
+Internal and external
+evaluators
+
+INDEED E-guidebook 1 defines internal and external evalu
+choosing an evaluator as follows: “[a]n external evaluator
+role in or a significant existing relationship with the initiat
+consultants or academic researchers. An internal evaluato
+the initiative or the organisation/ institution responsible f
+
+See INDEED E-guidebook 1 and E-guidebook 2 https://www.toolkit.indeedproject.eu/EbooksView
+
+10
+
+See INDEED evaluation tool: https://www.toolkit.indeedproject.eu/EbemToolView (INDEED eva
+
+11
+
+For more information about the scenario-based prompts (or “system- 2” prompt), see Ekin (2023)
+
+O
+
+Aspect
+
+Explanation
+
+Evaluation process
+and evaluation model
+
+One can find different stages of the evaluation process in
+E-guidebook 2 defined four: preparation, design, executio
+presupposes several steps, explaining to P/CVE practition
+planning P/CVE evaluations (p. 27–36).
+Because no previously known evaluation model had been
+designed one to define the principle and processes of evi
+also aimed to learn whether Copilot can generate any mo
+
+Theory of change
+
+Both the INDEED e-guidebook and Tool note the importa
+evaluation. The components of the theory were described
+approach the ToC, practitioners would need more guidan
+P/CVE field.
+
+Ethics, data protection
+and gender in
+evaluation
+
+The ethical and legal dimensions are essential for evaluat
+the E-guidebooks and the tool. Copilot was expected to c
+to incorporate these aspects into evaluations (for exampl
+collection process, monitoring and securing storage of da
+Tool).
+
+Other useful aspects related to the challenges in the field
+Trainings and capacity
+building
+
+Although these issues were not specifically described in t
+analysis revealed a lack of trainings on evaluation. Here w
+Copilot to this question and what it could suggest.
+
+Fear of evaluation
+
+The issue of fear of evaluation also came from the gap an
+P/CVE practitioners. It was important to investigate wheth
+emotionally and encourage practitioners to take the first
+
+Examples
+
+The examples of evaluations and practical procedures are
+E-guidebooks collected many useful examples. It was imp
+refer to any, and how useful these were.
+
+Local communities
+and cultural realities
+
+The value of inclusion of local communities in the evaluat
+practise towards cultural sensitivities have been discusse
+the evaluation procedures are somewhat standard, the u
+through the understanding of local practises.
+
+P/CVE professionals would ask the chatbot for context-specific
+advice (Box 2). Our scenario-based prompts were provided as
+one-shot prompts. They included specific details about each
+professional context, such as policy, social work, policing,
+and NGO work, to reflect current realities. Some prompts also
+accounted for various geographical settings and problem types,
+drawing from the unique challenges faced by P/CVE practitioners
+in these areas.
+
+Box 2. List of prompts for Discussion 2 with Copilot
+
+41.   I work for the police. We urgently need to evaluate our
+ad-hoc response as part of a P/CVE case. We have no
+experience with evaluation, we just know the main lines
+of it. Our management is very supportive, but we do not
+know where to start. Our resources are limited, and we
+also have a lot of sensitive data. Can you provide any
+recommendations about how we can do the evaluation?
+Would it be better to engage an internal or external
+evaluator?
+
+12
+
+See INDEED, evidence-based evaluation model: https://www.toolkit.indeedproject.eu/EbemView
+
+42.   I am r
+peop
+difficu
+conta
+progr
+
+43.   I am w
+a pro
+The a
+and p
+we ev
+resou
+
+44.   Our o
+progr
+to rad
+the g
+not w
+gang
+we de
+will b
+
+45.   Our o
+collec
+The d
+of sen
+evalu
+store
+
+O
+
+46.   Our NGO is in Sweden. We are involved in the
+implementation of a three-year P/CVE project. The project
+is aimed at facilitating the reintegration of radicalised
+individuals previously convicted of crime into society. We
+work with a large number of local actors, and cooperation
+is challenging. We would like to evaluate our project. What
+kind of data do we need to perform an evaluation? What
+shall we start with?
+47.   My team is preparing for the evaluation of P/CVE strategy
+at the national level. The strategy is very complex, and it is
+based on national and local multi-stakeholder partnerships.
+We work with around 50 partners. How should we organise
+our evaluation? How can we make sure that our evaluation
+is ethical?
+48.   Our small NGO in the UK promotes depolarisation and
+anti-radicalisation through a sport project for the members
+of the local community. Our members are both males and
+females, and different activities ae organised for both. We
+need to evaluate our programme to re-apply for funding.
+How can we evaluate our programme by considering
+different genders?
+49.   Our external evaluator is currently planning an evaluation
+of the exit strategy in the field of P/CVE that is being
+implemented by our team. We feel insecure about
+sharing our data and working methods. Do we need to
+share everything? What will help us prepare and plan the
+evaluation together with the evaluator?
+50.   As part of the Horizon project, we would like to evaluate a
+small-scale pilot project in P/CVE. We have not yet started
+planning it and would already like to prepare all the
+colleagues for the future evaluation now. The evaluation
+will be performed by an external agency. What do we need
+to prepare at this stage to make the evaluation happen?
+Is there anything good to know at this stage? How can we
+design our pilot project so that it will be easier to evaluate?
+None of us have previous experience with evaluation.
+
+Currently available general resources for P/CVE professionals
+often fail to offer tailored guidance, neglecting (or avoiding
+for the reason of complexity) the specific needs of practitioners
+working in diverse contexts. Our aim was to find out
+whether Copilot can fill in this gap by providing responses
+and recommendation that speak specifically to their unique
+situations.
+By combining the results from both stages, our study aimed to
+gain a deeper understanding of Copilot’s capacity for engaging in meaningful and practical discussions with P/CVE
+professionals.
+At this stage, we reviewed Copilot responses as those of a
+recommender system, which are usually evaluated based on
+parameters such as personalised information and tailored
+recommendations (Lin & Li, 2024). Our assessment of the
+chatbot’s performance was guided by three criteria and a list
+of predetermined analysis questions. The criteria of: 1) accuracy
+and reliability; 2) relevance and integrity; as well as 3) readability and comprehensibility were deemed most relevant for
+understanding Copilot’s usability and limitations in this context.
+These criteria were informed by literature and domain expertise.
+The analysis questions were meant to better explain the limits
+
+of these cri
+ous testing
+aim was no
+vide a prac
+for a P/CV
+determine w
+
+b. Limitati
+It is essen
+and outline
+
+Firstly, our
+chatbot can
+to explore
+information
+own P/CVE
+not to asse
+field or eva
+its potential
+
+A further
+explore Co
+lot without
+on our stu
+Office 365
+tional func
+tion or voi
+available in
+broaden the
+to be consid
+bots mainly
+more studie
+bots, espec
+the system
+bot. To add
+bots in var
+better explo
+
+There are
+One key
+inputting th
+variability o
+ibility if no
+prompts in
+necessary to
+ducted a sim
+and did not
+Given the
+chatbots, in
+beyond the
+performanc
+complexity
+
+The discuss
+engineered
+13
+
+See Zenod
+org/10.5281/ze
+responses, Ma
+
+O
+
+Prompt engineering refers to the techniques used to guide
+conversations with LLM-based chatbots to yield effective and
+relevant responses (Ekin, 2023; Giray, 2023; White et al., 2023).
+This study drew upon the authors’ extensive interactions with
+European and non-European practitioners and policymakers
+in the field of P/CVE, providing insight into their perspectives
+on evidence-based evaluation and the needs of the field. It is
+well established that unlocking the full potential of chatbots
+and achieving optimal results from queries requires the user
+to know how to formulate effective prompts. However, not all
+users possess this knowledge, which can impact the quality of
+interactions with these systems. Furthermore, involving real
+practitioners in such a study would have added richness and
+depth to the research findings. This would be even more so if we
+were able to detect more nuances in the usage of these systems
+through studying interactions of different P/CVE professionals
+with chatbots.
+
+c. Criteria for analysis
+This section outlines the criteria developed for evaluating Copilot responses. Although these criteria may appear to overlap to some degree, we have identified them as distinct and
+separately explained their borders in Table 2. These criteria
+were established to provide clarity on how Copilot or similar
+LLM systems can potentially support P/CVE practitioners by
+providing knowledge, recommendations, and some other forms
+of support.
+1. Accuracy and reliability. There are reports about inaccuracies and lack of reliability of LLM-based chatbots across different fields. Such errors can have significant consequences for
+users, leading to discussions about accountability for these mistakes. For example, one paper (see Aaronson, 2024) and an
+earlier BBC article (see Yagoda, 2024) described the repercussions of an error in an airline’s AI chatbot for travelers, and
+the response from the management was that the chatbot was
+“responsible for its own actions”. In the human-driven field of
+
+P/CVE, suc
+affect indiv
+(2024) refe
+produce in
+factual erro
+important
+tinuously im
+different lev
+cal studies
+have great
+good accur
+Kamminga
+(2024) con
+– Google
+– in the me
+greater reli
+revealed th
+and had a
+criteria hav
+relation to
+and focuse
+these categ
+and equally
+of LLMs.
+
+2. Relevanc
+evance and
+categories
+these crite
+individually
+produced is
+and, second
+14
+
+The experi
+information,
+mark criteria
+(FRES) and gr
+
+Table 2. Analysis questions.
+Category
+
+Analysis q
+
+Accuracy and reliability
+
+  1.    Are the responses (definitions and conce
+  2.    If there are inaccuracies, how consequen
+professional in significant ways?
+  3.    Is there deviation in responses, for examp
+sectors?
+4.    Are there references to the relevant litera
+
+Relevance and integrity
+
+  1.    Do the responses show that Copilot unde
+  2.    Do the responses cover key issues related
+Does Copilot talk about specifications in P
+ethics and sensitivity?
+  3.    How practical and useful is the informatio
+recommendations, tips, and know-how, a
+
+Readability and
+comprehensibility
+
+  1.    Are things explained in an easily accessib
+  2.    Is there a large number of specific terms
+their meaning? Or is the meaning clear fr
+  3.    Is the response logically structured?
+
+O
+
+perspective, we are eager to explore whether Copilot answers
+include diverse segments of knowledge that contribute to
+the overall picture of P/CVE evaluation. In this regard, we
+acknowledge that relevance could be classified as both
+contextual, referring to the connection between different parts
+of responses related to P/CVE, and practical, meaning the
+applied and hands-on value of the information to professionals
+in correspondence with the purpose of the query. We will
+focus especially on the key aspects outlined in Table 1 above.
+Several prompts were specifically designed to examine these
+knowledge segments.
+3. Readability and comprehensiveness. A comprehensive understanding of the text is primary associated with its readability. The
+Flesch-Kincaid Grade Level is one qualitative tool that measures
+the readability level of texts, aiming to ensure they are accessible to at least college students or graduates (see Gupta et al.,
+2024). There are many other tests designed to evaluate text readability, particularly in educational contexts (see eg., Nikolayeva,
+2024). Readability depends on a system’s ability to introduce
+and explain terminology effectively. This includes insuring
+that the content is clear and comprehensive for its intended
+audience. Unlike students, P/CVE stakeholders also operate
+within specialised language that includes both organisational and
+professional jargon, terminology, and a set of acronyms specific
+to different contexts such as intelligence, policymaking, not to
+mention prison or social work. Copilot is expected to produce
+texts that are readable by all these professionals and should
+explain new terms from the evaluation sector clearly. Additionally, the system should provide pathways for further materials,
+such as literature sources, or suggest additional questions to
+improve understanding without relying on traditional web
+searches. Structure enhances the comprehensibility of the text by
+breaking down complex content into more digestible chunks,
+thereby impacting readability. It is important to explore how well
+Copilot responses are structured and whether recommendations
+can be extracted easily from these responses.
+To explore Copilot’s performance as a recommender system in addressing these issues, a list of detailed analysis questions was prepared for both parts of the study (see Table 2). The
+analysis questions are qualitative and open-ended. They were
+designed to lead to a more detailed understanding by identifying specific aspects or patterns in Copilot’s responses. The
+findings will be described in the next chapter and will be
+based on these questions. At this stage, it is most important
+to understand what the limits of Copilot’s capabilities and
+knowledge are and how well Copilot can understand P/CVE
+evaluation-related prompts.
+
+Findings
+The section below will outline our findings based on our
+review of Copilot responses. To structure this section, we
+broke it down by previously defined criteria for analysis and
+the analysis questions.
+1. Accuracy and reliability. The prompts designed for Copilot
+were targeted to find out whether key topics and definitions
+from the field of evaluation in P/CVE are accurate enough
+
+and make
+domain kno
+can lead p
+information
+tion of term
+might work
+provide qu
+when asked
+prisingly re
+project bas
+important b
+fields such
+where other
+Moreover,
+evaluation p
+when Cop
+various term
+distinctions
+explained t
+assessment
+evaluation
+somewhat p
+the definit
+Copilot pro
+by a contex
+
+Beside defi
+professiona
+the answer
+accurate be
+and works
+relatively fe
+information
+Similar co
+existing ev
+Copilot pro
+useful reso
+degree of
+established
+evaluations
+
+There wer
+imprecise,
+participator
+(Prompt 2)
+involved co
+and a type
+7. This mig
+in which si
+are relative
+by practitio
+performanc
+in these ca
+required mo
+
+15
+
+The promp
+sion of Copilo
+most likely oc
+
+O
+
+In our simulation case, where we posed as practitioners
+with limited knowledge of the filed, we explored whether an
+understanding of evaluation could be built up gradually through
+a series of prompts. The chain of thought prompt provided a
+clear pathway to key knowledge and opened up additional pathways for further exploitation within each suggested category. It
+is worth noting that in older versions of Copilot (2023–2024) the
+chatbot in the open-access version could suggest follow-up
+questions to continue and drive the discussion, which is no
+longer the case in the latest version. Such follow-up questions
+could be instrumental for newcomers to the topic but might
+also stifle creative and active thinking during learning, potentially turning users into passive learners. This limitation would
+probably restrict Copilot’s ability to truly “learn” from user
+behaviour and predict preferences and interests.
+Finally, the original answers sometimes lacked references
+and sources. However, users can request references as part
+of their prompts but not retroactively. The sources offered
+by Copilot were based on a mix of American and European
+open-source materials available online. There is still room
+for more precise quotations and references that can be easily
+accessed within the same webpage rather than requiring users to
+visit external websites.
+2. Relevance and integrity. Our analysis of relevance and integrity includes the study of responses from all 50 pre-designed
+prompts. By carefully reviewing the answers, we established
+that Copilot is capable of leading conversations about basic
+topics related to evidence-based evaluation in the field P/CVE.
+As previously noted, establishing a more thematically rich
+dialogue with Copilot requires a session where all prompts
+are produced sequentially. If all the prompts are generated
+within one session, Copilot readily captures the thematic context, behavioural preferences, and interests of the user, providing
+an immersive and engaging dialogue within the topic limits.
+We also received promising results from scenario-based prompts,
+where the context is described directly in the prompt rather
+than extracted from the ongoing dialogue. Therefore, both
+techniques—sequential prompting and scenario-based prompting—
+are effective for obtaining meaningful recommendations from
+Copilot.
+All key aspects of evidence-based P/CVE evaluation from
+Table 1 were included in the prompts. Copilot’s responses in
+relation to relevance and integrity were generally much better
+than satisfactory. For instance, by prompts no. 22 and 22,
+which asked about gender and ethics without directly mentioning evaluation or P/CVE (presumably because the context was
+already established), we received valuable information. The
+response to prompt 22 provided insights on the importance of
+considering gender in P/CVE evaluations, offered relevant recommendations, included practical examples for gender-sensitive
+evaluations, and supplied external links to sources. Similarly, in
+prompt no. 23, Copilot emphasised the significance of human
+
+rights in e
+a human-ri
+resources.
+guiding in
+access almo
+ations, enri
+by external
+
+Copilot dem
+tem by pro
+one-shot an
+assistance
+(since start
+crete tips o
+18, and 4
+tions. Each
+objectives b
+
+Copilot wa
+instance, in
+mendations
+evaluator fo
+sitivity of
+evaluator. T
+to emphasis
+dations are
+independen
+accountabil
+
+In session
+onstrated a
+dict our su
+we asked
+Copilot pro
+ing our nex
+anticipate f
+conversation
+
+Scenario-ba
+communica
+tiveness of
+preparednes
+In scenario
+was unfam
+programme
+programme
+“P/CVE” o
+discuss eva
+did not ex
+on specific
+assessment.
+expert mig
+ess evaluati
+relevant giv
+remains a g
+about some
+
+O
+
+Understanding how relevant and integral Copilot’s responses
+are under complex scenarios was one of the main intentions
+of this study. In the second session, each prompt contained
+a significant amount of information delivered in a single shot
+without building pre-context through prior prompts. We wondered whether Copilot could orient itself effectively to the initial
+data and respond comprehensively to all the details provided.
+We were particularly interested in how well Copilot would
+incorporate specific details such as geographical data or programme focus into its responses, producing more tailored and
+context-specific answers. As a result, we discovered that
+geographical details in our prompts (Prompts no. 42, 43, 46,
+and 48) were not consistently taken up to produce more tailored responses. On the other hand, Copilot provided more
+contextualised information when it was given specific organisational specialisations, such as working with returnees or young
+people. This suggests that while Copilot can handle complex
+prompts, not all the details provided can lead to a more precise
+and tailored answer.
+Surprisingly, Copilot acted as a rather emotional, supportive, and understanding mentor throughout our interactions.
+For example, in prompt no. 49, the scenario described the fear
+of evaluations and insecurities about external evaluators. In
+response, Copilot was empathetic but also very encouraging, offering practical advice to help overcome these fears and
+resolve the issue constructively. Copilot provided reassurance
+while emphasising the importance of preparing the team for the
+evaluation process. This included suggesting ways to familiarise
+the team with the evaluation methods and objectives, ensuring transparency and open communication, and providing
+training or workshops to build confidence and competence.
+By doing so, Copilot helped create a supportive environment
+that encouraged the team to face their fears head-on.
+
+Secondly,
+tively brok
+Figure 1 a
+used (witho
+ity and col
+we believe
+alisations. N
+throughout
+Thirdly, at
+marised re
+for us to ret
+
+These met
+tion into si
+marising r
+tailored pro
+lay a strong
+
+Conclusio
+
+In contrast
+ated with A
+the instrum
+examined C
+an LLM w
+tool to enh
+The study i
+responses t
+preliminary
+Copilot. Al
+
+3. Readability and comprehensibility. We all know how
+overwhelming it can be to absorb new information. The language
+used to explain this information, along with visual aids,
+plays a crucial role in learning as they affect both readability
+and comprehensibility. We explored these criteria primarily through the first 40 prompts in Session 1 and several
+scenario-based prompts in Session 2. To investigate these criteria, we repeatedly informed Copilot that we were practitioners
+who lacked extensive knowledge about evaluation and sought
+guidance and assistance.
+During the first session, Copilot effectively gauged our level
+of knowledge through a number of prompts. To enhance readability and comprehensibility, Copilot employed several
+techniques to adapt its responses to our level of expertise.
+Firstly, as we had already concluded during the analysis of
+relevance, Copilot excelled in breaking down complex queries into simpler parts and addressing each part separately for
+better comprehension. This approach was particularly evident
+when we explicitly positioned ourselves as novices in evaluation.
+
+Figure 1. V
+(screensho
+
+O
+
+definitions,
+was particu
+ation pathw
+tial steps t
+whether Co
+the process
+relevant lite
+deepen pra
+to ensure
+rigorously
+reliably con
+
+At this stag
+racy and r
+ity and div
+trustworthin
+vided by C
+expertise to
+to keep no
+in-the-loop
+responses.
+more diver
+P/CVE fie
+mechanisms
+another way
+
+Figure 2. Visualisation produced by Copilot in prompt no. 16a
+(screenshot).
+
+benefit from more rigorous multi-method approaches, it demonstrated that Copilot can serve primarily as an educational tool
+for P/CVE practitioners. Crucially, Copilot can also function
+as a companion and mentor in P/CVE work by offering emotional support through natural language dialogues. By engaging
+users in meaningful conversations, Copilot can inspire and
+encourage them to acquire new knowledge about the subject matter. This approach can help overcome barriers such as fear of
+the unknown and foster positive planning and utilisation of new
+information within organisations.
+In this study, we investigated how useful Copilot can be in
+understanding complex processes, models, and approaches
+related to planning and conducting evaluations. Our findings
+demonstrated that chatbots like Copilot can provide comprehensive knowledge on key aspects of evaluation, including
+
+According
+weigh the c
+to break co
+pieces, help
+mation wit
+and review
+tional way.
+optimising
+practitioner
+voice funct
+make this ex
+
+The overa
+tinue influe
+enhancing
+models im
+multipurpos
+However, it
+approaches
+ing the use
+both the po
+for evidenc
+chatbots ar
+tunities tha
+work. Regu
+opportunitie
+their applica
+
+Ethics an
+
+Ethical appr
+
+O
+
+Data availability
+Underlying data
+
+Zenodo: Copilot’s responses, January 2025. https://doi.
+org/10.5281/zenodo.14869752 [Van der Vet & Malkki (2025).
+Copilot’s responses, January 2025 [Data set].
+Zenodo: Copilot’s responses, March and April 2024. https://doi.
+org/10.5281/zenodo.14814720 [Van der Vet & Malkki (2025).
+Copilot’s responses, March and April 2024 [Data set].
+
+Data are ava
+
+the terms o
+data waiver
+
+the terms o
+license (CC
+
+Acknowled
+N/A
+
+References
+Aaron L, Abbate S, Allain NM, et al.: Strategies for student input. In: Optimizing
+AI in higher education: SUNY FACT guide, Second Edition. State University of New
+York Press, 2024; 77–79.
+Reference Source
+Aaronson SA: Introduction: what hath generative Artificial Intelligence
+wrought? In: Data Disquiet: Concerns about the Governance of Data for Generative
+AI. Centre for International Governance Innovation, 2024; 1–4.
+Reference Source
+Allchorn W: Global far-right extremist exploitation of Artificial Intelligence
+and Alt-Tech: the cases of the UK US, Australia and New Zealand. Counter
+Terrorist Trends and Analyses. 2024; 16(3): 13–18.
+Reference Source
+Banh L, Strobel G: Generative Artificial Intelligence. Electron Mark. 2023; 33:
+63.
+Publisher Full Text
+Benirschke RC, Wodskow J, Prasai K, et al.: Assessment of a Large Language
+Model’s utility in helping pathology professionals answer general
+knowledge pathology questions. Am J Clin Pathol. 2024; 161(1): 42–48.
+PubMed Abstract | Publisher Full Text
+Burton J: Algorithmic extremism? The securitization of Artificial
+Intelligence (AI) and its impact on radicalism, polarization and political
+violence. Technol Soc. 2023; 75: 102262.
+Publisher Full Text
+Carugati C: Competition in generative Articifial Intelligence foundation
+models. Bruegel, 2023.
+Reference Source
+Chin C: Navigating the risks of Artificial Intelligence on the digital news
+landscape. Center for Strategic and International Studies (CSIS), 2023.
+Reference Source
+Chow JCL, Li K: Developing effective frameworks for Large Language
+Model–based medical chatbots: insights from radiotherapy education with
+ChatGPT. JMIR Cancer. 2025; 11: e66633.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Chow JCL, Li K: Ethical considerations in human-centered AI: advancing
+oncology chatbots through Large Language Models. JMIR Bioinform
+Biotechnol. 2024; 5: e64406.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Dang H, Mecke L, Lehmann F, et al.: How to prompt? Opportunities and
+challenges of zero- and few-shot learning for human-AI interaction in
+creative applications of generative models. arXiv.org. 2022.
+Publisher Full Text
+Dehbozorgi N, Kunuku MT, Pouriyeh S: Personalized pedagogy through
+a LLM-Based recommender system. In: Olney, A.M., Chounta, IA., Liu Z.,
+Santos, O.C., Bittencourt, I.I. (eds) Artificial Intelligence in Education. Posters and
+Late Breaking Results, Workshops and Tutorials, Industry and Innovation Tracks,
+Practitioners, Doctoral Consortium and Blue Sky. AIED 2024. Communications in
+Computer and Information Science. Springer, Cham, 2024; 2151.
+Publisher Full Text
+Dong B, Lee JR, Zhu Z, et al.: Assessing Large Language Models for online
+extremism research: identification, explanation, and new knowledge.
+2024.
+Publisher Full Text
+Ein-Dor L, Toledo-Ronen O, Spector A, et al.: Conversational Prompt
+Engineering. 2024.
+Publisher Full Text
+
+systems
+81–173.
+Publishe
+
+EU 2024/
+(Artificia
+Referenc
+
+EUROPO
+enforcem
+Referenc
+
+Gao Y, Xio
+Languag
+Publishe
+
+Ghaswall
+surround
+Referenc
+
+Giray L: P
+Ann Biom
+PubMed
+
+Gover L:
+Commons
+Referenc
+
+Gupta S,
+accurate
+and repa
+overall t
+Publishe
+
+Gynbaum
+copyrigh
+Referenc
+
+IMPACT E
+Referenc
+
+INDEED
+Referenc
+
+INDEED
+Referenc
+
+INDEED,
+Referenc
+
+INDEED d
+recomm
+based ev
+and othe
+Referenc
+
+INTERPO
+toolkit, 2
+Referenc
+
+Kamming
+chatbots
+in answe
+Dermatol
+PubMed
+
+Karamole
+Models.
+Publishe
+
+Ekin S: Prompt engineering for ChatGPT: a quick guide to techniques, tips,
+and best practices. TechRxiv. 2023.
+Publisher Full Text
+
+Lakomy M
+the pote
+activitie
+Publishe
+
+Ekstrand MD, Riedl JT, Konstan JA: Collaborative filtering recommender
+
+Lei H, We
+
+O
+
+Language Models: principles, taxonomy, challenges, and open questions.
+ACM Trans Inf Syst. 2025; 43(2): 42.
+Publisher Full Text
+Li L, Fan L, Atreja S, et al.: “HOT” ChatGPT: the promise of ChatGPT in
+detecting and discriminating hateful, offensive, and toxic comments on
+social media. ACM Trans Web. 2024; 18(2): 1–36.
+Publisher Full Text
+Lin TC, Li YM: Recommender system powered by Large Language Models.
+16th IIAI international congress on Advanced Applied Informatics (IIAI-AAI).
+Takamatsu, Japan, 2024; 476–481.
+Publisher Full Text
+Lloyd D: What is it like to be a bot?: The world according to GPT-4. Trinity
+College Faculty Scholarship. Trinity College Digital Repository, 2023.
+Reference Source
+Malkki L, van der Vet I, Prokic M: Evidence-based evaluation of P/CVE and
+de-radicalisation initiatives. INDEED e-guidebook 1, H2020 INDEED, 2023a.
+Reference Source
+Malkki L, van der Vet I, Prokic M: How to design PVE/CVE and deradicalisation initiatives and evaluations according to the principles of
+evidence-based practice. INDEED e-guidebook 2, H2020 INDEED, 2023b.
+Reference Source
+Marais E, Marais-Botha R, Coertzen F: Constructing an Artificial-Intelligence
+higher education environment: guidelines for the future. In: L. Wood &
+O. Zuber-Skerritt (Eds.), Shaping the future of higher education: positive and
+sustainable frameworks for navigating constant change. Helsinki University Press,
+2024; 173–192.
+Publisher Full Text
+McGuffie K, Newhouse A: The radicalization risks of GPT-3 and advanced
+neural language models. [cs.CY] September 15, 2020.
+Publisher Full Text
+Meskó B: Prompt engineering as an important emerging skill for medical
+professionals: tutorial. J Med Internet Res. 2023; 25: e50638.
+PubMed Abstract | Publisher Full Text | Free Full Text
+Microsoft Copilot introduction website.
+Reference Source
+Mohamed T, Kumar S: Artificial Intelligence and its applications. Leilani Katie
+Publication, 2024.
+Reference Source
+Mosqueira-Rey E, Hernández-Pereira E, Alonso-Ríos D, et al.: Human-in-theloop machine learning: a state of the art. Artif Intell Rev. 2023; 56:
+3005–3054.
+Publisher Full Text
+Nelu C: Exploitation of generative AI by Terrorist groups. ICCT, 2024.
+Reference Source
+Nikolayeva L: Exploring the efficacy of ChaTGPT in adapting reading
+materials for undergraduate students. 8th international conference on Higher
+Education Advances (HEAd’ 22). 2024.
+Publisher Full Text
+Ooi KB, Tan GWH, Al-Emran M, et al.: The potential of generative Artificial
+Intelligence across disciplines: perspectives and future directions. J Comput
+Inform Syst. 2025; 65(1): 76–107.
+Publisher Full Text
+Piñeiro-Martín A, García-Mateo C, Docío-Fernández L, et al.: Ethical challenges
+in the development of virtual assistants powered by Large Language
+Models. Electronics. 2023; 12(14): 3170.
+Publisher Full Text
+Ratten V, Jones P: Generative Artificial Intelligence (ChatGPT): implications
+for management educators. Int J Manag Educ. 2023; 21(3): 100857.
+Publisher Full Text
+
+Rich E: U
+Publishe
+
+Routray S
+and real
+Technolog
+Publishe
+Roy D, Du
+recomm
+Publishe
+Rudolph
+assessm
+Publishe
+Segura E
+technolog
+Publishe
+Shah MS
+commun
+offensive
+Publishe
+Silva TC,
+extremis
+Bristol Un
+Publishe
+Steyvers
+and wha
+Publishe
+Stroop A,
+Intellige
+spinal su
+PubMed
+Szwoch J,
+in propa
+Publishe
+USAID: C
+Referenc
+Van der V
+2025.
+http://w
+Van der V
+[Data set
+http://w
+Warren C
+Large La
+Sex Med.
+PubMed
+White J, F
+engineer
+Referenc
+Xu W: Tow
+interacti
+Publishe
+Yagoda M
+- what th
+Referenc
+Zhang Q,
+Intell Syst
+Publishe
+Zhao WX
+2023.
+Referenc
+
+Open Research Europe
+
+O
+
+Open Peer Review
+Current Peer Review Status:
+Version 2
+Reviewer Report 08 May 2025
+
+https://doi.org/10.21956/openreseurope.21801.r53273
+
+© 2025 Pushpanathan K. This is an open access peer review report d
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Krithi Pushpanathan
+National University of Singapore, Singapore, Singapore
+No further comments, thank you.
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: AI, LLM, Ophthalmology
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Reviewer Report 26 April 2025
+
+https://doi.org/10.21956/openreseurope.21801.r53274
+© 2025 Chow J. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+James C L Chow
+University Health Network, Toronto, Ontario, Canada
+The authors have addressed all my concerns.
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: AI, LLM, ML, Chatbot, Radiotherapy,
+
+I confirm that I have read this submission and believe
+
+Open Research Europe
+
+O
+
+expertise to confirm that it is of an acceptable scienti
+
+Version 1
+Reviewer Report 25 March 2025
+
+https://doi.org/10.21956/openreseurope.21215.r51988
+
+© 2025 Pushpanathan K. This is an open access peer review report d
+Commons Attribution License, which permits unrestricted use, distrib
+provided the original work is properly cited.
+
+Krithi Pushpanathan
+National University of Singapore, Singapore, Singapore
+
+This manuscript makes a significant and timely contribut
+large language models (LLMs) for preventing and counte
+the qualitative analysis of its responses to 50 pre-designe
+as a recommender system, providing valuable insights in
+based policy and practice within the P/CVE field. Overall,
+contributes meaningfully to the ongoing conversation on
+That said, I have a few minor suggestions that could furth
+1. The authors assert that "limitations such as ‘bullsh
+developments (Zhao et al., 2023) are no longer a p
+research (e.g., Steyvers et al., 2025) continues to de
+significant issue and that users tend to overestima
+responses. Given these findings, I would caution a
+longer a primary concern. (see: Steyvers, M., Tejed
+language models know and what people think the
+https://doi.org/10.1038/s42256-024-00976-7)
+2. Section C in Methods, Criteria for Analysis, provide
+framework and methodology. However, it does no
+assessment of Copilot’s responses. Were these eva
+researchers, or practitioners in P/CVE? Additionally
+multiple evaluators participated, were any measur
+inter-rater reliability assessments? Providing this in
+transparency and credibility of the evaluation proc
+3. The Findings section presents key results, but give
+manual updates and user interactions, it is unlikely
+in future replications of this study. To facilitate lon
+transparency, I strongly recommend that the auth
+Copilot’s responses alongside the corresponding e
+This would allow future researchers to assess impr
+and strengthen the reproducibility of the study’s fi
+
+Open Research Europe
+
+O
+
+References
+1. Steyvers M, Tejeda H, Kumar A, Belem C, et al.: What la
+people think they know. Nature Machine Intelligence. 2025
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Partly
+
+Are all the source data and materials underlying the r
+Partly
+
+If applicable, is the statistical analysis and its interpre
+Not applicable
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: AI, LLM, Ophthalmology
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+significant reservations, as outlined above.
+Author Response 02 Apr 2025
+
+Irina van der Vet
+
+Dear Krithi Pushpanathan, Thank you very much for y
+Below please find our responses to your points, wher
+each one.
+1. “The authors assert that "limitations such as ‘bu
+AI developments (Zhao et al., 2023) are no long
+recent research (e.g., Steyvers et al., 2025) cont
+hallucinations remain a significant issue and th
+accuracy of LLM-generated responses. Given th
+the claim that hallucinations are no longer a pr
+Tejeda, H., Kumar, A. et al. What large language
+they know. Nat Mach Intell 7, 221–231 (2025). h
+00976-7)”
+Author Response: Thank you for this comment. By statin
+
+Open Research Europe
+
+O
+
+primary concern, we meant to suggest that efforts have b
+the introduction of early chatbots, using various measure
+changed the wording and added an additional reference
+that accuracy issues still persist, even with these measure
+recommendation and revised the statement to provide m
+our changes in the text reflect your point.
+1. “Section C in Methods, Criteria for Analysis, pro
+evaluation framework and methodology. Howe
+the qualitative assessment of Copilot’s respons
+by domain experts, researchers, or practitioner
+evaluators were involved? If multiple evaluators
+taken to ensure consistency, such as inter-rater
+information would enhance the transparency a
+process”.
+Author Response: Thank you very much for this useful c
+recommendation, in section A, we clarified that we are do
+please see whether this brings more clarity. In addition, i
+version that: “This study drew upon the authors’ extensive
+European practitioners and policymakers in the field of P
+perspectives on evidence-based evaluation and the needs
+based on our earlier publications on evaluation in P/CVE,
+expertise. From the beginning of this paper, we have bee
+“evaluation” but rather referred to it as “mapping” and “r
+aim was not to conduct a multidimensional evaluation, w
+approach with experts from different domains. Instead, o
+existing research possibilities and share our initial observ
+practitioners, policymaker and researchers in P/CVE.
+1. “The Findings section presents key results, but
+through manual updates and user interactions,
+will be obtained in future replications of this stu
+and ensure transparency, I strongly recommen
+of raw data (i.e., Copilot’s responses alongside t
+supplementary table. This would allow future re
+LLM performance over time and strengthen the
+findings”.
+Author Response: Thank you for this comment. Indee
+with sustainable research practices. As per the Open R
+initially have made our full datasets (prompts + the ch
+access to support the principle of reproducibility. Thes
+paper and listed in the references section. Since we ref
+found it redundant to duplicate them inside our paper. P
+Van der Vet I, Malkki L: Copilot's responses, Jan
+http://www.doi.org/10.5281/zenodo.14869752
+Van der Vet I, Malkki L: Copilot's responses, Ma
+set].2025. http://www.doi.org/10.5281/zenodo.
+Thank you again for your review, Authors
+○
+
+○
+
+Open Research Europe
+
+O
+
+Competing Interests: No competing interests were di
+
+Reviewer Report 12 March 2025
+
+https://doi.org/10.21956/openreseurope.21215.r51991
+© 2025 Chow J. This is an open access peer review report distributed
+Attribution License, which permits unrestricted use, distribution, and
+original work is properly cited.
+
+James C L Chow
+University Health Network, Toronto, Ontario, Canada
+
+This study evaluated the effectiveness of an LLM-based C
+countering violent extremism. After reviewing the work,
+However, I have a few minor concerns:
+1. The authors should include a brief introduction to
+Introduction section.
+2. The authors need to justify why they chose to test
+popular bots such as Gemini and ChatGPT. Additio
+Copilot used in this study.
+3. When discussing the medical applications of LLM-b
+recent studies, such as Chow et al. (JMIR Cancer, 20
+Bioinformatics and Biotechnology, 2024, 5, e64406
+4. In the discussion of ethical issues related to the ch
+important references such as Chow et al. (Front Ar
+5. Before the conclusion, there should be a section o
+highlighting the limitations of this evaluation study
+research.
+
+Is the work clearly and accurately presented and doe
+Yes
+
+Is the study design appropriate and is the work techn
+Yes
+
+Are sufficient details of methods and analysis provide
+Yes
+
+Are all the source data and materials underlying the r
+Yes
+
+If applicable, is the statistical analysis and its interpre
+
+Open Research Europe
+
+O
+
+Yes
+
+Are the conclusions drawn adequately supported by t
+Yes
+
+Competing Interests: No competing interests were disclo
+Reviewer Expertise: AI, LLM, ML, Chatbot, Radiotherapy,
+
+I confirm that I have read this submission and believe
+expertise to confirm that it is of an acceptable scienti
+Author Response 02 Apr 2025
+
+Irina van der Vet
+
+Dear James C L Chow, Thank you very much for review
+improvements, as well as for sharing valuable resourc
+to the points raised:
+1. “The authors should include a brief introduction to
+the Introduction section”. Following your recommendat
+Introduction section.
+
+2. “The authors need to justify why they chose to test
+popular bots such as Gemini and ChatGPT. Additional
+Copilot used in this study”. We explained our choice o
+Method section. Since the versions of the chatbot con
+to the specific date when Copilot was used for data co
+employed. We also referred to the datasets by mentio
+which correspond with the version of Copilot used. Ple
+changes.
+
+3. “When discussing the medical applications of LLM-b
+recent studies, such as Chow et al. (JMIR Cancer, 2025
+Bioinformatics and Biotechnology, 2024, 5, e64406”). T
+included the reference.
+
+4. “In the discussion of ethical issues related to the ch
+important references such as Chow et al. (Front Artif I
+the suggestion! We included the reference.
+
+5. “Before the conclusion, there should be a section on
+highlighting the limitations of this evaluation study an
+research”. Thank you for the comment. We have incor
+Method section to better emphasise the connections
+limitations, and future research.
+Sincerely, Authors
+
+Open Research Europe
+
+O
+
+Competing Interests: No competing interests were di
+
+

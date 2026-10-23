@@ -1,0 +1,62 @@
+{
+  "task_id": "F140_T2_Q01",
+  "paper_id": "F1000:108822",
+  "parent_task": "T3_F140_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F140_R1/input.json",
+  "parent_input_sha256": "32dd6fce615f9f1d7f23cac3cb8f2718c0fc1ace83f89634f9204b5f3958a3bf",
+  "review_dimension_AI_candidate": "数据库覆盖与选择偏差",
+  "selection_scope": "作者具体解释模型方法偏差，同时不独立确认这一解释。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/108822_Building_a_database_for_energy_sufficiency_policies/v1_manuscript.pdf",
+      "original_sha256": "a45c7691a35aea534aaab155e6e96480af05582286232958e4d6723a6438ecd5",
+      "raw_text_file": "data/question_bank/T2_回应评价/F140_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        33636,
+        33971
+      ],
+      "report_id": "127903",
+      "date": "2022-04-14",
+      "raw_page_numbers": [
+        11
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/108822_Building_a_database_for_energy_sufficiency_policies/v1_manuscript.pdf",
+      "original_sha256": "a45c7691a35aea534aaab155e6e96480af05582286232958e4d6723a6438ecd5",
+      "raw_text_file": "data/question_bank/T2_回应评价/F140_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        35283,
+        35786
+      ],
+      "report_id": null,
+      "date": "2022-06-30",
+      "raw_page_numbers": [
+        11,
+        12
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "biases",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 13492,
+    "end": 14018,
+    "exact_quote": "ndicate the number\nof instruments.\n\nexplanation for the prevalance of fiscal instruments are limits/biases of the underlying literature, as economic models and\nscenarios are driven by price assumptions. For the industry/production sector, mostly regulatory instruments are included\nwhile cross-sectoral policy instruments are mostly financial incentives through taxation and subsidies as well as\nregulation. For the other sectors, fewer instruments of all types are included.\nAs a step towards model inclusion of sufficiency p",
+    "anchor_matches": 1,
+    "anchor": "biases"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增财政工具偏多可能来自价格驱动建模文献偏差的讨论；未验证此解释为真。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

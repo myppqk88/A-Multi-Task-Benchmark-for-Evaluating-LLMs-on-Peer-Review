@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F039_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "检索与纳入范围",
+    "理论覆盖",
+    "局限性"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者因政策理论纳入规则未覆盖部分气候伦理文献，答复承认并限定综述范围；核对摘要、方法与局限性是否一致。",
+    "补充对遗漏领域的解释不等于重新检索并完整纳入该领域；需要区分合理限缩和仍然过宽的概括。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This is a systematic review of interdisciplinary literature around climate justice. It is clearly\nstructured, with a solid method (barring the oversight described below) and informative\nsummaries of the reviewed articles. The overall objective of the article – to connect this literature\nto research on policy processes – is well chosen, relevant and important.\nHowever, a major flaw of the manuscrip",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe thank Brandstedt (2023) for a highly constructive review that prompts us to address key\naspects of our article. We summarise the key points as follows:\n1. Address the omission of a field of research – ‘climate justice’ or ‘climate ethics’ – that\nshould be seen as essential.\nResponse: We clarify our scope in the Abstract, to describe inclusion in relation to policy\nconcepts/ theories. We also make a more explicit statement about the limitation",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Third, as with education, we included articles that: (1) cite policy theories indirectly via reference to the discipline-specific\nliterature (such as ‘political ecology’ described by scholars including Sovacool, or the ‘Earth System Governance’\nnetwork) and/or (2) produced relevant work with reference to\ncritical or interpretive approaches to policy discourse (generally\nwith reference to Hajer or Dryzek) or to approaches\nthat would be relevant to our other reviews (such as feminist research), and/or (3) where an insistence on citing mainstream policy theories from the Global North would exclude\nuseful articles produced in the Global South. In other words,\nwe do not exclude texts engaging with anti-mainstream sources\nwhen we seek to understand engagement with mainstream\npolicy theories. These choices helped to secure a substantive\ncoverage of key themes - such as the competition between ‘\necological modernization’ (EM) and ‘civic environmentalism’\n(CE) – and highlight (albeit in a small",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Third, as with the education review, we included articles that: (1)\ncite policy theories indirectly via reference to the discipline-specific\nliterature (such as ‘political ecology’ described by scholars including Sovacool, or the ‘Earth System Governance’\nnetwork) and/or (2) produced relevant work with reference to\ncritical or interpretive approaches to policy discourse (generally\nwith reference to Hajer or Dryzek) or to approaches\nthat would be relevant to our other reviews (such as feminist research), and/or (3) where an insistence on citing mainstream policy theories from the Global North would exclude\nuseful articles produced in the Global South. In other words,\nwe do not exclude texts engaging with anti-mainstream sources\nwhen we seek to understand engagement with mainstream\npolicy theories. These choices helped to secure a substantive\ncoverage of key themes - such as the competition between\n‘ecological modernization’ (EM) and ‘civic environmentalism’\n(CE) – and highlight (albeit ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "References\nAcosta M, Bommel SV, Wessel MV, et al.: Discursive translations of gender\nmainstreaming norms: The case of agricultural and climate change\npolicies in Uganda. Womens Stud Int Forum. 2019; 74: 9.\nPublisher Full Text\nAlexander M, Doorn N, Priest S: Bridging the legitimacy gap-translating\ntheory into practical signposts for legitimate flood risk governance. Reg\nEnviron Change. 2018; 18(2): 397–408.\nPubMed Abstract | Publisher Full Text | Free Full Text\nAlverio GN, Hoagland SH, Coughlan de Perez E, et al.: The role of international\norganizations in equitable and just planned relocation. J Environ Stud Sci.\n2021; 11(3): 511–522.\nPubMed Abstract | Publisher Full Text | Free Full Text\nAnderson C, Schirmer J: An Empirical Investigation of Social Capital\nand Networks at Local Scale through Resistance to Lower-Carbon\nInfrastructure. Soc Nat Resour. 2015; 28(7): 749–765.\nPublisher Full Text\nAudet R: Climate justice and bargaining coalitions: a discourse analysis. Int\nEnviron Agreem Pol",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Burley JG, McAllister RR, Collins KA, et al.: Integration, synthesis and climate\nchange adaptation: a narrative based on coastal wetlands at the regional\nscale. Reg Environ Change. 2012; 12(3): 581–593.\nPublisher Full Text\nButler C, Parkhill KA, Luzecka P: Rethinking energy demand governance:\nExploring impact beyond ‘energy’ policy. Energy Res Soc Sci. 2018; 36: 70–78.\nPublisher Full Text\nCairney P: The Politics of Policy Analysis. (London: Palgrave Pivot), 2021a.\nReference Source\nCairney P: The Concept of a Sectoral Policy Style. In: (eds) Jale Tosun and\nMichael Howlett Routledge Handbook of Policy Styles. (London: Routledge),\n2021b.\nCairney P: Understanding Public Policy. (London: Red Globe), 2020.\nCairney P, Keating M, Kippin S, et al.: Public Policy to Reduce Inequalities\nAcross Europe: hope versus reality. (Oxford: Oxford University Press), 2022b.\nPublisher Full Text\nCairney P, Kippin S: The future of education equity policy in a\nCOVID-19 world: a qualitative systematic review of ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

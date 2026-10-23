@@ -1,0 +1,24 @@
+{
+  "task_id": "F004_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "区分QH作为工具、概念或隐喻与auxiliary hypotheses的关系，作者逐点解释并称新增实例。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Review of “Qualitative hypotheses”\nThis very brief paper attempts both a conceptual history, and an operationalization of the concept\nof the “qualitative hypothesis” (QH).\nIn the first section (“Conceptual background”), the author immediately makes the connection to\nthe concept of the auxiliary hypothesis and commits to discussing the QH outside of the “testing\nframe”. In its simplest form, any hy",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you for engaging with the manuscript in such depth and providing constructive\nsuggestions, which helped to improve the work. I have revised the structure and content of\nthe essay significantly; however, in order to maintain the encyclopedic format and keep the\ntext informative for a wide range of readers, some of the solutions are light and would\ndeserve further discussion in a separate context. Below, I respond to the main comments\none by one and elaborate on some of those topics.\n1. “Th",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

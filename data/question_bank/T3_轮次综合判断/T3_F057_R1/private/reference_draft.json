@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F057_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "结果操作化",
+    "研究目标变更",
+    "新增分析"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对SROI改为一般social impact的题名/目标修订，以及NGO Advisor排名能否支持这一结果概念；排名不自动等于社会影响。",
+    "作者称补基层机构数据和另一统计分析，须在后稿方法和结果中核对真实新增，不按承诺计完成。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The author examines whether a common claim that concentrating investments (rather than\nbuilding a portfolio of activities) leads to better social return on investment (SROI). This is an\ninteresting question and, as is often the case in the nonprofit sector, involves considering the\nappropriateness of using corporate (profit-maximizing) techniques in nonprofit organizations. In\nthis example, financ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you very much for your valuable reviewing. I will revise this manuscript as soon as\npossible.\n\n\n[Next author response post]\n\n\nThank you very much for your comments. Your comments were helpful for the revision.\nParagraph 1\nThis paper’s title was changed. This paper’s focus moved from SROI to social impact in\ngeneral.\n\n\n\nParagraph 2\nMore explanations of the data source were added in “methods”.\nParagraph3\nAdditional data were collected and an",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Sustainable Development Goals (SDGs) with the cooperation of profit-oriented entities. However, it is doubtful that the\nMarkowitz model is really bloodless.\nRegarding methodology, Clark et al. (2022) show that simple methodologies sometimes bring interesting findings on\neconomics. Flori et al. (2019) is an influential paper stating that the Herfindahl-Hirschman index (HHI) can be used to\nquantify concentration of investments. Basu et al. (2009), a somewhat older study, used non-parametric tests extensively,\nshowing that accounting researchers can adopt not only parametric tests but non-parametric tests as well.\nIt is difficult to foresee the results of statistical methods, because of the difference between NFPs and profit-oriented\nentities. Angerer et al. (2015) shows that higher risk tolerance among contributors relates to higher contributions.\nSome contributors may be even risk-lovers. In contrast, mainstream investors in profit-oriented entities are obviously\nrisk-averse.\nMethods\nDu",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "B means net social impact and C means costs, while T means the number of years of an NFP project and t is the particular\nfinancial year.\nGargani uses a model in which only the NFP with the highest SROI ratio is selected. Yates and Marra (2017) indicate the\nweak points of SROI and warn that SROI may lead to radical concentration of donations in the real world. Speaking not of\nsocial impact in general but of SROI itself, whether the concentration is positive or negative for contributors is\ncontroversial and beyond the scope of this study.\nMacAskill (2015) is a typical and practical example of literature on effective altruism based on rationality. The basis of\nSROI is utilitarianism, as Maier et al. (2015) states, and utilitarianism is a philosophical thought based on rationality.\nSome supporters of effective altruism are utilitarian. Singer (2015) in particular is clearly based on utilitarianism and is\nalso widely read. MacAskill is not written from the viewpoint of an extreme risk-lover",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nSocial return on investment (SROI) is a hot topic in accounting; in practice, a not-for-profit organization (NFP) can\ncalculate its SROI ratio annually, the way a profit-oriented entity calculates return on equity (ROE).\nThe Wall Street Journal (Feb. 2, 2022) stated that Melinda French Gates will not concentrate her donations within the Bill\n& Melinda Gates Foundation, but instead spread her donations across various philanthropic endeavors. We know from\nTuan (2008) that this foundation has been interested in measuring SROI and other forms of social impact.\nThe frequently quoted MacAskill (2015) insists that NFPs should concentrate on a few activities and suggests that Oxfam\nand WorldVision are involved in too wide a variety of activities. Moreover, some scholars use fictional examples in which\ncontributors concentrate their donations within one NFP with the highest SROI ratio, which would maximize the\nexpected SROI ratio; however, some NFPs unfortunately fail to achieve th",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nNFPs generally attempt to generate high social impact. Social return on investment (SROI) is a particularly hot topic in\naccounting; in practice, a not-for-profit organization (NFP) can calculate its SROI ratio annually, the way a profitoriented entity calculates return on equity (ROE). Adoption of SROI shows the NFP pays attention to the utilitarian aspect\nof this. Although utilitarianism usually considers all stakeholders utility, this study’s ultimate aim is to find a way to\nmaximize contributors’ utility through maximizing utility of their agents, namely executives of NFPs.\nThe Wall Street Journal (Feb. 2, 2022) stated that Melinda French Gates will not concentrate her donations within the Bill\n& Melinda Gates Foundation, but instead spread her donations across various philanthropic endeavors. We know from\nTuan (2008) that this foundation has been interested in measuring SROI and other forms of social impact.\nThe frequently quoted MacAskill (2015) insists that NFPs sho",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

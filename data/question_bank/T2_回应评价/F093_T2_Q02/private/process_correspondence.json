@@ -1,0 +1,61 @@
+{
+  "task_id": "F093_T2_Q02",
+  "paper_id": "ORE:3-182",
+  "parent_task": "T3_F093_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F093_R1/input.json",
+  "parent_input_sha256": "9bf925f0316a4e09e61164aec62d8c5a55c21ab5cbaa54f357e882e69e09d5c9",
+  "review_dimension_AI_candidate": "招募机构与选择偏差",
+  "selection_scope": "完整保留大学样本可能高估信任及GP/医院比较这一限定，不能截断反向证据。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/3-182_Parent_attitudes_towards_data_sharing_in_developmental_science/v1_manuscript.pdf",
+      "original_sha256": "5f8cc40e3289bda58523386af3ab2cbc5fcdb3664cd952b74602cfa2904d3d48",
+      "raw_text_file": "data/question_bank/T2_回应评价/F093_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        82502,
+        82812
+      ],
+      "report_id": "35776",
+      "date": "2023-11-10",
+      "raw_page_numbers": [
+        21
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/3-182_Parent_attitudes_towards_data_sharing_in_developmental_science/v1_manuscript.pdf",
+      "original_sha256": "5f8cc40e3289bda58523386af3ab2cbc5fcdb3664cd952b74602cfa2904d3d48",
+      "raw_text_file": "data/question_bank/T2_回应评价/F093_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        87776,
+        88679
+      ],
+      "report_id": null,
+      "date": "2024-04-23",
+      "raw_page_numbers": [
+        23
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "overestimation",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 41071,
+    "end": 41605,
+    "exact_quote": "ild’s data with the same type of organisations.\nAs such, it may be that we are observing a possible overestimation of trust in universities and research centres by virtue of\nthe sample that completed the questionnaire. Though, importantly, parents reported similar levels of trust in GPs and hospitals\nas that of universities (25% vs 32% of parents that trusted\nthe respective organisations completely with their child’s\ndata).\nGeographical location of a sharing partner was also relevant.\nAlthough 55% of this UK sample said they wou",
+    "anchor_matches": 1,
+    "anchor": "overestimation"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿新增大学招募可能高估信任的讨论，并保留GP/医院相近信任这一限定。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

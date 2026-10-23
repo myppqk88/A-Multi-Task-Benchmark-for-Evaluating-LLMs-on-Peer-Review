@@ -1,0 +1,28 @@
+{
+  "task_id": "F153_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "研究定位与批判性分析"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "More importantly, I think that the objectives of the problematizing review approach have not been\nachieved. The article offers a content review in which the main findings are grouped within a few\nthemes in this current version. There is no critical reasoning on the dominant paradigms,\nconceptual assumptions, and conventions within the work-nonwork literature. We learn what we\nalready know, i.e., that academic work is characterized by blurred boundaries that undermine\nwork-life balance for many academics (importantly, some more than others, e.g., not only women\nbut also women with children and even more so young and precarious women with children -\n\n\n\n\nintersectional reading should also be included!). This reading of the texts problematizes little and\ndoes not explore alternative perspectives as stated in the method's description.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "More importantly, we critically evaluated the dominant paradigms and\nconceptual assumptions within the review to better align with the goals of the\nproblematization review method. We propose an alternative approach that emphasizes\nboth experiential and contextual perspectives.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留主导范式、交叉性和替代视角的原要求，不能仅凭称批判评价就认定达到问题化综述。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

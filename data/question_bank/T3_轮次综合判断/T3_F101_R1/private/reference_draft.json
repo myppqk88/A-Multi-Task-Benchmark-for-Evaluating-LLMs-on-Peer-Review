@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F101_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "样本偏差与外推",
+    "统计呈现",
+    "混合方法解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对约6比1女性/男性样本在摘要和局限中的披露，以及15年音乐训练均值所指子样本；不把两者混同为全部样本。",
+    "区分自报关系体验、量化关联与质性解释；新增局限不能自动解决性别和音乐经验对外推的限制。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "OVERALL IMPRESSION AND RECOMMENDATION\nIt was a pleasure to read this informative and clearly communicated analysis of music in the\ncontext of normative human pair bonding. The length of my review reflects my thorough reading\nof the text and suggestions to improve it, rather than an abundance of problems with the paper.\nThat said, I have several more substantive criticisms having to do with limitat",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nThank you very much for taking the time to read our article and for providing such helpful\nand detailed comments, all of which we have tried to address in our revisions. We have\nsubmitted a revised version of the manuscript, which should be available online soon.\n\n\n\n\nBelow, we summarise the issues you raised and explain how we addressed each comment,\nalongside the corresponding changes to the manuscript.\nResponses to general crit",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "associated with accelerated bonding processes (Pearce et al.,\n2015). Collective musical activities, such as drumming and\nimprovisation, were further associated with prosocial behaviour, feelings of belonging, and commitment (Kokal et al.,\n2011; Kokotsaki & Hallam, 2007; Verneert et al., 2021). These\neffects are often attributed to the synchronisation involved, as\nengaging in synchronised actions commonly leads to increased\nfeelings of social affiliation, trust, and prosocial behaviour\n(Bamford et al., 2023; Hove & Risen, 2009; Mogan et al., 2017;\nRennung & Göritz, 2016; Vicaria & Dickens, 2016). Music\nprovides a temporal scaffolding that makes it easier to coordinate actions in time (Tarr, 2017), while also creating a social\nspace that aligns the intentions of participants (Cross, 2014).\nHowever, while there is substantial research on the capacity\nof music to foster bonding between groups or strangers, there\nis little work specifically looking at how music might influence partner choic",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "However, while there is substantial research on the capacity of\nmusic to foster bonding between groups or strangers, there is\nlittle work specifically looking at how music-related experiences\nmight influence partner choice or enhance feelings of intimacy,\npassion, or commitment in romantic relationships. Exploring\nthese questions is particularly interesting from an evolutionary\nperspective, given that the evolutionary function of music has\nbeen linked not only to social bonding and coalition signalling in groups (Mehr et al., 2021; Savage et al., 2021), but also\nto the mating context. Specifically, it has been suggested that\nmusic serves to attract potential partners by signalling fitness\nor compatibility (e.g., Miller, 2000). In many species, including birds and gibbons, vocalisations and musical displays are\nassociated with pair bonding (e.g., Fitch, 2005; Geissmann,\n2000). This supports the theory that music evolved, at least\nin part, through sexual selection.\nSome research has alre",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Procedure\nThe study was conducted as an online survey using the open\naccess software LimeSurvey (Limesurvey GmbH, 2022).\nParticipants were recruited through email invitations sent to\nall students at the University of Innsbruck (Austria) and the\nUniversity of Jyväskylä (Finland). In addition, the study invitation was shared on social media platforms, including Facebook\nand Instagram. The only inclusion criterion was that participants had to have experienced at least one romantic relationship\nof any kind (e.g. monogamous, polyamorous, open, heterosexual, homosexual or bisexual) at some point in their lives.\nAfter giving informed consent and completing demographic\nquestions, participants were explained the three relationship\nphases (attraction, building and maintenance) and aspects of\nlove (intimacy, passion, and commitment). They were then\nasked to provide qualitative information about their experiences\nwith music in the context of romantic relationships, answering quantitative and quali",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Data analysis\nAll analyses were conducted using R Studio (version\n2025.05.0), and both the data and the analysis code are available\nin the OSF repository.\nQuantitative analysis. We conducted quantitative analyses to\naddress the first two research questions concerning participants’ perceptions of the role of music in romantic relationships\nand its association with personal characteristics. Two repeated\nmeasures ANOVAs assessed whether the importance of music\noverall and in strengthening different components of love varied across relationship stages or love aspects. We tested the\nsphericity assumption using Mauchly’s test and, where violated,\napplied Greenhouse-Geisser corrections (evident from decimal degrees of freedom). The first analysis predicted the perceived positive contributions of music based on aspects of love\n(intimacy, passion, commitment; see Table 1 for item wordings),\ndifferent relationship stages (attraction, building, maintaining),\nand their interactions. The second ana",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

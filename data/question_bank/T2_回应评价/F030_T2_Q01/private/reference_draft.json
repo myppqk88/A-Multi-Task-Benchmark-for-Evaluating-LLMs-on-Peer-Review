@@ -1,0 +1,27 @@
+{
+  "task_id": "F030_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "编码可靠性",
+    "证据透明度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "答复称补质性文献、组织情境和需求分析阶段定位，且更正员工数。核对原稿所报κ=.63与70%代码重叠的定义，不能以两项数值代替完整编码树或推断统计不一致。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Thank you for the opportunity to review this paper which focuses on workplace mental health\npromotion in a large state organisation. The paper is an interesting read, but I believe some\nadditional work/adjustments could be made to the manuscript to make it more comprehensive. I\nhope you find this feedback helpful; my suggestions are made below.\nThe majority of the studies in the introduction seem ",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you for this comment. We have added a section on previous qualitative research in\nthe field of workplace health promotion to the theory section (line 129-162). We have\nprovided an explanation of how the needs analysis is embedded in the project context: “The\nfirst project step is the needs analysis, the results of which are reported here, aims to\nexplore the needs for interventions to promote mental health in the workplace from the\nperspective of employees and managers on the basis of int",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

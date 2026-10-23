@@ -1,0 +1,24 @@
+{
+  "task_id": "F017_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "完整答复涉及共同控制责任和判例、并明确某点不采纳；需判断论证是否回应原要求，不能因不同意评审自动扣分。题内未附的外部判例不默认已独立验证；晚于后稿的答复不能放入T3该轮。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "This is a well-articulated and well-researched article on the concept of joint controllership in\nbiomedical research consortia.\nOverall, I wholeheartedly agree with both the legal analysis made, and the proposed model of\n\"funnel\" analysis.\nOne nuance in the literature, however, appears not to have been addressed. Namely, the authors\nstate that the test for controllership has not changed from the D",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\n\n\n\n\n1. Introduction\nFirst of all, we would like to thank the reviewers for their time and comments. In general,\nthese are positive. Especially Anne Barth gave comments which should lead to textual\nchanges. For example, she was completely correct that we forgot a ‘not’ when stating that a\nlarge group of controllers does not add to the protection of the data subjects. In bold the\nomission which Bahr showed and in italics what would made the sentence clearer to\nreviewer Chen. Given those and other",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

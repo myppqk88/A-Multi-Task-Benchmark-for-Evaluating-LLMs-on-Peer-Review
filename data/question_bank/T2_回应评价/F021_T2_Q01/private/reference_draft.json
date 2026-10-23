@@ -1,0 +1,27 @@
+{
+  "task_id": "F021_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "调查设计",
+    "结论外推"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认小样本与匿名调查限制并主张受访角色多样；多样性不能单独证明代表性。问卷完整内容需附入；文字解释充分性与后稿是否准确限缩建议应分开。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "Summary of the article\nThe article explores the challenges faced by Passenger Information Units (PIUs) regarding the\ncollection, handling and use of Passenger Name Record (PNR) data following the implementation\nof the EU PNR Directive (EU) 2016/681. According to the authors, it employs a combination of\nresearch and survey methodologies to gather data from PIUs.\nThe study identifies two main obstac",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\n\n\n\nChristiana Aposkiti\nThank you for your feedback.\n1. In response to your comments regarding the limitations of the methodology, we\nhave revised the article to more explicitly acknowledge the constraints of our\nresearch, particularly regarding the sample size and the anonymous nature of the\nsurvey. We now provide a detailed explanation of the representativeness of the\nsample, highlighting the diverse roles of the respondents and how this diversity helps\nmitigate the impact of the limited numbe",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

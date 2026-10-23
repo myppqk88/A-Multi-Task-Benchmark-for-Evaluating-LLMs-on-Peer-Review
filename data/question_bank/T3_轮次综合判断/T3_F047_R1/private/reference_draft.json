@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F047_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "概念一致性",
+    "工具开发流程",
+    "解释与呈现"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审指出目标、步骤与术语不一致，作者逐点回应；核对题名从research integrity向responsible conduct的改动及正文目标是否一起调整。",
+    "不能因研究者说四层结构可以反映理解就默认已证明培训效果或量表效度；核对改写后的用途强度。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Outline of the article\nBackground and aim\nResearch integrity training aims to foster responsible conduct of research by providing students\nwith knowledge and skills needed to uphold research integrity principles, as outlined in, for\ninstance, the European Code of Conduct (ECoC). An important question is whether research\nintegrity training actually leads to better knowledge and skills of students, ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nReviewer Comments in italics\nThe goal of the paper is important and the steps taken are relevant. Yet, the structure of the\npaper is not fully clear, and the aim and the steps taken are described in various, not always\ncongruent ways. Concepts are introduced without explanation. Some core terms are not\ncommon, which makes it not easy to follow the argument. Also, the text is difficult to read, with\nmisspellings and sentences which do not flow na",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Status quo and gaps in evaluating successes of RI/RCR\ntraining\nAs mentioned above, there are different qualitative instruments\nfor measuring the successes of RI/RCR training. For example,\nRissanen & Löfström (2014) use vignettes, Vehviläinen et al. (2018)\nconduct qualitative semi-structured interviews, Poom-Valickis\n& Löfström (2019) administer interviews, Sarauw et al. (2019)\nuse observations, and Berling et al. (2019) combine toolbox\ndiscussions with self-assessment.\nQuantitative tools to assess RI/RCR training’s successes derive\nmainly from ethics education because of overlapping training content and similar learning methods. Three of the most\nfrequently used tests are the Defining Issues Test (DIT) (Rest,\n1979), its revised version, the DIT-2 (Rest et al., 1999), and the\nsensemaking approach by Mumford and colleagues (Mumford\net al., 2006). While the DIT aims to assess cognitive moral\nreasoning schemes, which focus on dilemma situations, the\nsensemaking approach assesses specific m",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Defining Issues Test (DIT) (Rest, 1979), its revised version,\nthe DIT-2 (Rest et al., 1999), and the sensemaking approach\n(Mumford et al., 2006).\nWhile the DIT aims to assess cognitive moral reasoning\nschemes, which focus on dilemma situations, the sensemaking\napproach assesses specific metacognitive reasoning strategies\n(Mumford et al., 2008). Although both aspects are demonstrably\nrelevant in RCR training, they are derived from ethics\neducation and do not capture the RCR training core theme as\ndescribed in the ECoC (2017): RCR training aims to enable\nparticipants to become a part of the research community,\nincluding “the principles of research, … the criteria for proper\nresearch behaviour, [and] … the quality and robustness of\nresearch” (ECoC, 3).\nWhat does that mean in particular? There are different ways\nto transform this overall aim to become part of the research\ncommunity – into a training. Prieß-Buchheit et al. (2020a)\ndescribe that Path2Integrity’s approach to training is to\nle",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "the government and public”. Following Jordan’s statements\nabove, learning RI/RCR is not about blindly following rules.\n(History taught society many times the consequences of such\nattempts.) Instead, learning RI/RCR can be integrated into what\nHabermas (1990) and Gethmann (2010) say. Learning RI/RCR\nis about following rules due to a discourse based on rational\narguments that legitimises all statements that claim normative\nvalidity and must be agreed to by individuals. Such a perspective emphasises the individual’s personal responsibility regarding research integrity (Frankel et al., 2015), which is (only)\ncompatible with RI/RCR training but not sufficient for fostering\na culture of research integrity (Valkenburg et al., 2021).\nThe ECoC (2017) names the following scientific practice fields:\nResearch Environment, Research Procedures, Safeguards,\nCollaborative Working, Publication and Dissemination, Data\nManagement, Mentoring, and Reviewing, Evaluating and\nEditing. The P2I questionnaire as",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "in consistency with external rules” (p. 1087) and aimed to\nassess what practices testees choose in research settings and\nhow they argue in favour of these practices.\nTo identify what content should be included in the questionnaire,\nwe clarified what common ground we expect all RCR\ntrainings to have. In a nutshell, Jordan (2013, 245–6)\ndifferentiates ethics from integrity. She describes ethics as\n“the standards of moral behaviors expected of autonomous\nhumans living in a community, often through reference to\na coherent system of thought or an ethical theory (e.g.,\ndeontology). [In opposition to that,] integrity describes how\nan individual or institution brings their moral positions and\nbehaviors together in a logically coherent position that is\nbrought into daily practice.” This corresponds with Steneck\n(2006, 56), who describes research integrity as the “quality of\npossessing and steadfastly adhering to high moral principles\nand professional standards, as outlined by professional\norgan",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

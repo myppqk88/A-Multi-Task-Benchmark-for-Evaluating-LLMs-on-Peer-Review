@@ -1,0 +1,24 @@
+{
+  "task_id": "F009_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "答复区分280名符合条件者、一个招募课程60人及目标样本163，解释覆盖两个年级的邀请。不能把单门课程人数误当整项调查总人群；文字解释与真实执行仍是不同判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The manuscript provides details of the dissemination of the questionnaire online.1. To clarify the number of students. On page 11, it is stated that 60 students are in the course, and then the same-sized target was set at 163.",
+      "role": "作者信中完整所选原关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "The total number of eligible students enrolled in the 4th and 5th years of the pharmacy program was 280. The sample size was calculated using the Raosoft sample size calculator (margin of error 5%, confidence level 95%), yielding a target of 163 participants. Although one of the courses used for initial recruitment included 60 students, invitations were extended to all eligible students across both years through Blackboard announcements and reminders.",
+      "role": "完整对应作者答复"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

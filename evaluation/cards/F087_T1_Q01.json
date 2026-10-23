@@ -1,0 +1,262 @@
+{
+  "task_id": "F087_T1_Q01",
+  "paper_id": "ORE:5-246",
+  "task": "T1",
+  "split": "provisional_formal",
+  "unit": "original_manuscript",
+  "input_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+  "input_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          179,
+          248
+        ]
+      },
+      "quote": "Based on a systematic review of\nnational and international approaches",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          10874,
+          10948
+        ]
+      },
+      "quote": "the absence of a formal systematic review protocol may limit replicability",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E3",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          9772,
+          9846
+        ]
+      },
+      "quote": "A total of 68 sources were initially identified, of which 43\nwere selected",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E4",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          8238,
+          8304
+        ]
+      },
+      "quote": "The search was\nlimited to articles published between 2015 and 2025",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E5",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          49612,
+          49686
+        ]
+      },
+      "quote": "A strong self-efficacy judgment promotes a\ncommitment to lifelong learning",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E6",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          2444,
+          2498
+        ]
+      },
+      "quote": "it can\nsignificantly improve teacher training programs",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E7",
+      "source_path": "data/question_bank/T1_生成评审/F087_T1_Q01/input.json",
+      "source_sha256": "4ba3a44800c0c8408ef4fa41a61a4ebf841821599cf53ec0fc07ef497c7c24dc",
+      "locator": {
+        "json_pointer": "/input/manuscript_text",
+        "text_span": [
+          52315,
+          52376
+        ]
+      },
+      "quote": "teacher profile and teacher identity in mathematics education",
+      "role": "前稿",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "原稿摘要称systematic review，方法自述理论/主题综合且承认无正式系统协议；应澄清是有结构检索的整合理论综合，不能以无PRISMA直接否定概念论文。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持概念贡献但要求方法定位/认识地位澄清；不以非实证研究为由强制因果试验。"
+    },
+    {
+      "id": "J2",
+      "judgment": "已有2015—2025、Scopus/WoS、英西语、68→43选择信息，评审不能说完全未报告范围；但从43篇到具体知识—身份关系如何形成的编码/比较链条仍需更清楚，尤其区分经典背景引文与正式语料。",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "partly_supported",
+      "acceptable_alternatives": "可支持概念贡献但要求方法定位/认识地位澄清；不以非实证研究为由强制因果试验。"
+    },
+    {
+      "id": "J3",
+      "judgment": "自我效能促进终身学习等模型关系可能合理，但该文提出而非直接验证，应标概念命题和可检验路径；不能当已建立因果机制。",
+      "evidence_ids": [
+        "E5"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持概念贡献但要求方法定位/认识地位澄清；不以非实证研究为由强制因果试验。"
+    },
+    {
+      "id": "J4",
+      "judgment": "教师培训显著改善属于应用期待，概念综合未测培训效果；保留共同分析知识与身份的价值，同时收缩效果保证并用导读减轻术语密度。",
+      "evidence_ids": [
+        "E6",
+        "E7"
+      ],
+      "importance": "major",
+      "importance_reason": "影响该稿核心论断的证据支持或本轮修订问题是否实质解决",
+      "status": "supported",
+      "acceptable_alternatives": "可支持概念贡献但要求方法定位/认识地位澄清；不以非实证研究为由强制因果试验。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "已有方法信息与理论主张",
+      "boundary_2_3": "承认已有68→43和时间范围，不能把方法不够透明写成零方法。",
+      "boundary_3_4": "准确区分系统检索、系统综述和概念综合，识别模型命题的认识地位。",
+      "high_score_conditions": [
+        "准确区分系统检索、系统综述和概念综合，识别模型命题的认识地位。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：承认已有68→43和时间范围，不能把方法不够透明写成零方法。"
+      ]
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "综述到模型证据链",
+      "boundary_2_3": "说明语料主题如何支持关系尚不充分而非只要更多引用。",
+      "boundary_3_4": "允许理论综合的解释性推理，同时要求关键关系可追溯而非必须新做效果实验。",
+      "high_score_conditions": [
+        "允许理论综合的解释性推理，同时要求关键关系可追溯而非必须新做效果实验。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：说明语料主题如何支持关系尚不充分而非只要更多引用。"
+      ]
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "创新与应用边界",
+      "boundary_2_3": "把共同框架视为概念贡献，避免宣称已证明培训改进。",
+      "boundary_3_4": "允许提出不同整合/图式，不能以是否同意真人肯定决定分数；新颖性未外部深核。",
+      "high_score_conditions": [
+        "允许提出不同整合/图式，不能以是否同意真人肯定决定分数；新颖性未外部深核。"
+      ],
+      "low_score_risks": [
+        "未达到以下具体边界：把共同框架视为概念贡献，避免宣称已证明培训改进。"
+      ]
+    }
+  },
+  "severe_error_checks": [
+    "将作者声称修改与可见修改混同",
+    "将评审认可、批准、后续沉默当作科学真值",
+    "忽略证据边界作超出材料的强结论"
+  ],
+  "read_scope": {
+    "read": [
+      "完整当轮R1报告和答复作定位线索；前稿摘要/通俗摘要、方法、专业知识起始、模型关系/讨论及结论定点阅读。"
+    ],
+    "not_read": [
+      "中间全部理论综述未逐字审；模型图未目视，不判断图式正确性；外部43篇语料/引用未核验"
+    ],
+    "verification_limits": [
+      "依据已读原稿形成独立候选；不把后稿概念标签倒填前稿。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "coverage_limit": "非穷尽参考；新有效意见及证据充分的不同结论可高分。",
+  "concern_coverage": [
+    {
+      "concern": "R1综述定位",
+      "status": "已核",
+      "reference_point_ids": [
+        "J1"
+      ]
+    },
+    {
+      "concern": "R1范围与方法透明",
+      "status": "已核",
+      "reference_point_ids": [
+        "J2"
+      ]
+    },
+    {
+      "concern": "R1概念命题引用",
+      "status": "已核",
+      "reference_point_ids": [
+        "J3"
+      ]
+    },
+    {
+      "concern": "R1可读性和应用",
+      "status": "已核",
+      "reference_point_ids": [
+        "J4"
+      ]
+    }
+  ],
+  "source_unit": "full_original_manuscript"
+}

@@ -1,0 +1,86 @@
+F027_T2_Q01
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。
+
+以下为完整题内材料和输出结构；相对图像路径须实际加载为图像，不读取private。
+
+{
+  "task_id": "F027_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "input": {
+    "comment_text": "I. Overview\nThe paper offers a valuable literature review on Text and Data Mining (TDM), mapping the\ncomplex regulatory framework surrounding these processes and shedding light on what\nconstitutes lawful TDM. However, several areas require improvement for the paper to reach its full\npotential. This report provides some comments and suggestions to strengthen the paper's\nstructure, argumentation, and use of sources.\nII. Comments\n1) Introduction\n○\n\n○\n\nStructure improvement: The introduction could be better structured to present the study's\nsubject matter clearly. The first two paragraphs are not sufficiently clear, particularly in\nintroducing the concept of \"big data.\" It would be beneficial to discuss the characteristic\nelements of big data and differentiate between structured, unstructured, and semistructured data. This is crucial for readers to grasp the subject thoroughly. For reference,\nsee Jonathan Grossman and Ami Pedahzur, [Ref:1]\nClarification of concepts: The sentence ‘data “is the new oil and lifeblood of economic\ndevelopment” and just as oil needs to be burnt for it to be useful, raw data must be\nprocessed to realise its true potential’ is problematic and contested. This analogy\noversimplifies the complexities of data processing in the digital economy. See, e.g., Clemens\nMewald, ‘Why Data Is *Not* the New Oil and Data Marketplaces Have Failed Us’ (Medium,\n13 July 2023) [external resource identifier omitted] David Moschella, ‘Data Isn’t the New Oil; That\nMight Be a Good Thing’ (2023) [external resource identifier omitted]\n\n\n\n\n2) Regulatory Framework\nA broader perspective is needed: The paper should more comprehensively address the regulatory\nchallenges of TDM, particularly from a data protection standpoint. This includes not only the\ntechnical challenges of big data processing but also the legal issues associated with scraping and\nmining of publicly available data. Including opinions from public agencies and supervisory bodies\nwould offer a more holistic view of the regulatory landscape. These perspectives could be\ninstrumental in identifying the main challenges to individual rights and public interests.\n3) Data Protection Issues\n○\n\n○\n\n○\n\n○\n\n○\n\nInsufficient coverage of GDPR issues: The paper does not sufficiently address the\ncomplexities and challenges that data mining poses for data subjects. The paper relies on\nsome sources of questionable quality. It would benefit from a more careful selection of\nreferences, particularly those recognised as authoritative in the field. I recommend citing\nmore reliable sources, especially when describing the fundamental elements of GDPR, such\nas Christopher Kuner and others (eds), [Ref:2],A Commentary (New York, 2020; online edn,\nOxford Academic); Indra Spiecker genannt Döhmann and others (eds), General Data\nProtection Regulation: Article-by-article Commentary (München, 2023; Beck).\nConcept of \"meaningful research\": The paper should elaborate on the idea of \"meaningful\nresearch\" and how data protection regulations address data processing for scientific,\nresearch, or statistical purposes. This is a critical aspect that currently needs more depth.\nData Protection by Design and Default: When discussing the implementation of the\nprinciple of data protection by design and default, it is important to reference guidelines\nissued by supervisory authorities. For instance, the EDPB Guidelines 4/2019 on Article 25\nData Protection by Design and by Default [Ref 5]; Commission Nationale d’Informatique et\ndes Libertés (CNIL), GDPR guide for developers (2022); Agencia Española de Protección de\nDatos (AEPD), A Guide to Privacy by Design (2019).\nData mining, profiling and inferences: The paper should more comprehensively address the\nchallenges and risks of data mining, especially concerning profiling and the processing of\ninferred data. The relevance of purpose limitation and data minimisation principles needs\nmore emphasis. Key references include Bart Custers and others (eds), [Ref:3,4]\nMissing legal aspects. Data scraping: The paper currently lacks a discussion on the legal\naspects of data scraping at scale and text mining of publicly available data, which are\nincreasingly relevant, especially for training AI models. It would be beneficial to incorporate\nan analysis of the legal challenges posed by these practices, e.g., Benjamin Bremert, Legal\nAspects of Text Mining Publicly Available Data, Unabhängiges Landeszentrum für Datenschutz\n(ULD), 2017; Zuzanna Gulczynska, ‘Scraping personal data from internet pages - a\ncomparative analysis of the Polish Bisnode decision and the US hiQ Labs v LinkedIn Corp\njudgment’, European Law Review, vol. 45, no. 6, pp. 857–869, 2020; Catherine Altobelli and\nothers, ‘To Scrape or Not to Scrape? The Lawfulness of Social Media Crawling under the\nGDPR’, in Jean Herveg (ed), Deep Driving into Data Protection: 1979-2019: Celebrating 40 Years\nof Privacy and Data Protection at the CRIDS (Larcier, 2021); Autoriteit Persoonsgegevens,\nRichtlijnen scraping door private organisaties en particulieren (2024)\n\n\n\n\n4) TDM and fundamental rights\nEffectively addressing bias and discrimination in data mining is critical to safeguarding\nfundamental rights. Failure to do so can result in inequitable outcomes that disproportionately\nharm marginalised groups, perpetuating existing social inequalities. See Bettina Berendt and\nSören Preibusch, ‘Toward Accountable Discrimination-Aware Data Mining: The Importance of\nKeeping the Human in the Loop-and Under the Looking Glass’, Big Data. 2017 Jun;5(2):135-152;\nSolon Barocas and Andrew Selbst, ‘Big Data's Disparate Impact’, 104 California Law Review 671\n(2016); Solon Barocas, ‘Data Mining and the Discourse on Discrimination’, Conference on\nKnowledge Discovery and Data Mining (2014).\n5) Several footnotes and cross-references need to be revised and improved for accuracy and\nclarity.\nReferences\n1. Grossman J, Pedahzur A: Political Science and Big Data: Structured Data, Unstructured Data, and\nHow to Use Them. Political Science Quarterly. 2020; 135 (2): 225-257 Publisher Full Text\n2. The EU General Data Protection Regulation (GDPR). 2020. Publisher Full Text\n3. Discrimination and Privacy in the Information Society /authors.\n4. A Right to Reasonable Inferences: Re-Thinking Data Protection Law in the Age of Big Data and\nAI/authors.\nIs the topic of the review discussed comprehensively in the context of the current\nliterature?\nYes\nAre all factual statements correct and adequately supported by citations?\nPartly\nIs the review written in accessible language?\nPartly\nAre the conclusions drawn appropriate in the context of the current research literature?\nPartly\n",
+    "response_text": "\n\n\n\n\nThank you very much for your constructive and insightful comments. I have thoroughly\nrevised the paper in light of your feedback, and I believe these changes have significantly\nstrengthened the review. Below, I address each of your comments and explain the\nadjustments made.\n1. Introduction: Structure and Clarity\nI have restructured the introduction to improve clarity. The concept of \"big data\" is now\nintroduced with a more thorough explanation of its characteristic elements, including a\nclearer distinction between structured and unstructured data. I have also reconsidered the\nanalogy of data being “the new oil,” and, following your advice, I have removed such\nstatements.\n1. Regulatory Framework: Broader Perspective\nThe section on the regulatory framework has been expanded to offer a broader and more\ncomprehensive discussion of the legal challenges associated with TDM, particularly from a\ndata protection standpoint. I have added references to opinions from public agencies and\nsupervisory bodies to provide a more holistic view of the regulatory landscape. Data\nProtection Issues: More Depth and Careful Source Selection The data protection section\nhas been substantially reworked to include more authoritative and recognised sources, as\nyou recommended. Additionally, I have expanded on the concept of \"meaningful research,\"\nelaborating on how data protection regulations address the processing of data for scientific,\nresearch, or statistical purposes. I have also incorporated references to the EDPB Guidelines\n4/2019 on Article 25 (Data Protection by Design and Default), as you suggested. Data\nMining, Profiling, and Inferences I have significantly expanded the discussion on the\nchallenges and risks of data mining, particularly regarding profiling and the processing of\ninferred data. Legal Aspects of Data Scraping I have added a paragraph discussing the\nlegal aspects of data scraping citing the sources that you had recommended.\n1. Fundamental Rights: Bias and Discrimination\nI have reworked the section on fundamental rights to more thoroughly address\nthe critical issues of bias and discrimination in data mining.\n2. Footnotes and Cross-References\nI have revised the footnotes and cross-references to improve their accuracy\nand clarity. This includes correcting any inconsistencies and ensuring that all\nreferences are properly cited and linked to the relevant sections of the paper.\nOnce again, thank you for your detailed feedback. I am confident that the revisions made in\nresponse to your comments have strengthened the paper both in terms of structure and\nsubstantive content.\n○\n\n○\n\n",
+    "necessary_context": "合法文本与数据挖掘的规制框架与法律文献综述。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

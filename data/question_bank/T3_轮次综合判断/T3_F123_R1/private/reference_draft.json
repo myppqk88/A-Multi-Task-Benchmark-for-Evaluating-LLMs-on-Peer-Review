@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F123_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "问卷与分类规则",
+    "统计解释",
+    "测量局限"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认问卷未直接问是/否，改用问题2/3去重得到99/183；核对112减13的计数定义、分母及中立回答处理。",
+    "增加问卷缺陷的局限说明不等于追溯修复原始测量；自报帮助不能直接识别IDP因果效果。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "As noted by Review 1, the manuscript is well written and easy to follow. However, I would agree\nwith both of the other reviews that problems arise from both the survey questions and decisions\non method of analysis. The first 3 questions about completing an IDP don’t really lead to a clean\nnumber of how many people do and do not complete one. A person could answer no to being\nrequired to complete a",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nWe thank you for your review, which has guided our revisions. We respond to your major\ncomments below.\nIn retrospect, we agree with your comments regarding our survey questions related to\ndiscerning a number and percentage of respondents who completed an IDP. Looking back,\nwe could have asked a simple yes/no question(s). That said, what we have done in our\nanalysis is to use the unique responses to questions 2 and 3 within our su",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Discussion\nCompared to the 2014 study in which 19% of postdoctoral\nresearchers used the IDP and 71% of users found it valuable4,\nthe current data suggests that there has been a general increase\nin IDP usage among postdoctoral researchers with 54.1% of\nrespondents in this study indicating that they are required to\ncomplete an IDP while its perceived value has decreased to less\nthan 40%.\nIn general, the trends presented here for postdoctoral researchers\nare similar to our recent findings on use and effectiveness of the\nIDP in PhD students5, but there are some nuanced differences.\nFor example, compared to the rates in PhD students, the rates\nof required completion of the IDP among this study’s postdoctoral researchers are lower; the rates of completing the IDP but\nnot discussing it with a PI/advisor are higher; and the rates of\nreporting that the IDP process is helpful to one’s career development are lower. The correlation of IDP effectiveness and\nmentorship relationships and use of caree",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "researchers with 54.1% of respondents in this study indicating that they completed an IDP while its perceived value seems\nto have decreased to less than 40% of the tool’s users. Additional\nstudies should further understand the overall usage rates and\nperceived value of the IDP.\nIn general, the trends presented here for postdoctoral researchers\nare similar to our recent findings on the use and effectiveness\nof the IDP in PhD students5, but there are some nuanced\ndifferences. For example, compared to the rates in PhD students,\nthe rates of required completion of the IDP among this study’s\npostdoctoral researchers are lower; the rates of completing the\nIDP but not discussing it with a PI/advisor are higher; and the\nrates of reporting that the IDP process is helpful to one’s career\ndevelopment are lower. The correlation of IDP effectiveness\nand mentorship relationships and use of career development\nresources are similar between PhD students and postdoctoral\nresearchers. It will be importan",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Results\nAmong 183 total postdoctoral respondents, 45.4% reported being\nrequired to complete an IDP, 27.5% reported completing the tool\nwith their PI/advisor, and 33.9% completed the IDP, at some\npoint, without discussing it with their PI/advisor (Figure 1 and\nSupplementary File 2). In total, 54.1% of respondents actually\ncompleted the IDP with or without their advisor (Supplementary\nFile 2 and Supplementary File 3). Further, 24.3% of all respondents reported being able to have an honest conversation with\ntheir PI/advisor in the context of the IDP process and 22.4%\nof all respondents found the IDP helpful to their career development (Figure 1 and Supplementary File 2). Of the respondents that completed an IDP, 38.4% found the tool helpful to\ntheir career development (Supplementary File 3).\nAs we have recently shown with PhD students5, the effectiveness\nof the IDP among its users is associated with positive mentorship relationships (Figure 2 and Supplementary File 3). For\nexample, 62.2% ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nThe individual development plan (IDP) is a career planning tool that\naims to assist PhD trainees in self-assessing skills, exploring career\npaths, developing short- and long-term career goals, and creating\naction plans to achieve those goals. The National Institutes of Health\nand many academic institutions have created policies that mandate\ncompletion of the IDP by both graduate students and postdoctoral\nresearchers. Despite these policies, little information exists regarding\nhow widely the tool is used and whether it is useful to the career\ndevelopment of PhD trainees. Herein, we present data from a multiinstitutional, online survey on the use and effectiveness of the IDP\namong a group of 183 postdoctoral researchers. The overall IDP\ncompletion rate was 54% and 38% of IDP users reported that the tool\nwas helpful to their career development. Positive relationships with\none’s advisor, confidence regarding completing training, trainees’\nconfidence about their post-training caree",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

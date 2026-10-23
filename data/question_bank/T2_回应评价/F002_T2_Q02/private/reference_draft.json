@@ -1,0 +1,28 @@
+{
+  "task_id": "F002_T2_Q02",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "理论解释与评审前提"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "2. The ethics of care is invoked as a guarantor of effectiveness against discrimination and\nconcentration of power, but it is not explicitly detailed as a pragmatic way to adapt AI ethics\nto concrete contexts.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "2. We are not sure what might have given the impression that we ‘invoke’ the ethics of\ncare as ‘a guarantor of effectiveness against discrimination and concentration of\npower’. The contribution of the ethics of care here is that it makes it possible to\napproach the ethics of AI differently from the currently dominating approach which is\ncharacterised by “principlism”. The ethics of care gives theoretical tools to challenge\nthis dominant approach and to develop a new approach (new approach that is then\n\n\n\n\ncomplemented by more practical recommendations). As indicated in the paper, we\nsee the ethics of care as having ‘developed resources to move beyond the principled\napproach to ethics’, and the ‘view from nowhere’ that characterizes this approach. We\nsee value in the ethics of care as it invites to ‘pay closer attention to relations of power\nand inequalities.’",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "原意见质疑保证有效性的说法，作者否认该前提并解释理论工具角色；保留完整回应。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

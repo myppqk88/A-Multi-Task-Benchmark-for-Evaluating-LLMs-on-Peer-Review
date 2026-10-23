@@ -1,0 +1,128 @@
+{
+  "task_id": "F108_T2_Q05",
+  "paper_id": "F1000:158087",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F108_T2_Q05/input.json",
+  "input_sha256": "56e16a1c9e3ac3e632c535cfba0d6a7bd4d32daa620cafaf7216d34143205a61",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q05/input.json",
+      "source_sha256": "56e16a1c9e3ac3e632c535cfba0d6a7bd4d32daa620cafaf7216d34143205a61",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "2. One of the objectives of this overview is to \"inform the development of a framework for types of\nteaching strategies.\" However, pre-specifying teaching strategies could present potential issues.\nFor instance, what if the included SRs identify additional teaching strategies? How can you check\nthat the teaching strategies considered are comprehensive? What criteria were used to develop\nthe list of teaching strategies, particularly given that some may overlap?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q05/input.json",
+      "source_sha256": "56e16a1c9e3ac3e632c535cfba0d6a7bd4d32daa620cafaf7216d34143205a61",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "RESPONSE: Thank you. We used a common taxonomy from Beck (that was based on a\nreview of teacher education textbooks) to initially develop a list of potentially relevant\nteaching strategies. We further developed this list iteratively based on literature review and\nstakeholder engagement. The protocol provides a comprehensive overview of how the\nsearch strategy and methods were developed.\n[external resource identifier omitted]\nWe agree that there is inherent uncertainty about whether our framework is useful and fully\ncomprehensive, which is why we stated in the discussion: “…It would be helpful for users of\nthis research if researchers studying the effects of teaching strategies could reach a\nconsensus on a taxonomy.”\nIt was beyond the scope of this review to report on additional teaching strategies that were\nnot aiming to teach critical thinking.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复说明从Beck分类起步，经文献与利益相关者参与迭代，并承认分类完整性不确定；这些回应来源及可修订性。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient稳妥；sufficient必须解释上述操作缺口为何不影响原要求，不可调用外链协议补证。"
+    },
+    {
+      "id": "J2",
+      "judgment": "未清楚说明遇到新的批判思维教学策略如何纳入、重叠类别如何处理；排除非批判思维策略不能解答范围内新策略与重叠问题。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "partially_sufficient稳妥；sufficient必须解释上述操作缺口为何不影响原要求，不可调用外链协议补证。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复说明从Beck分类起步，经文献与利益相关者参与迭代，并承认分类完整性不确定；这些回应来源及可修订性。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能只抓承认不确定性，需审查预设策略、新策略和重叠三个要求。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复说明从Beck分类起步，经文献与利益相关者参与迭代，并承认分类完整性不确定；这些回应来源及可修订性。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能只抓承认不确定性，需审查预设策略、新策略和重叠三个要求。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。未清楚说明遇到新的批判思维教学策略如何纳入、重叠类别如何处理；排除非批判思维策略不能解答范围内新策略与重叠问题。",
+      "high_score_conditions": [
+        "在承认分类依据和范围声明有效的同时，精确指出范围内迭代与重叠处理尚未交代。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：未清楚说明遇到新的批判思维教学策略如何纳入、重叠类别如何处理；排除非批判思维策略不能解答范围内新策略与重叠问题。"
+      ],
+      "boundary_2_3": "不能只抓承认不确定性，需审查预设策略、新策略和重叠三个要求。",
+      "boundary_3_4": "在承认分类依据和范围声明有效的同时，精确指出范围内迭代与重叠处理尚未交代。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。partially_sufficient稳妥；sufficient必须解释上述操作缺口为何不影响原要求，不可调用外链协议补证。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：在承认分类依据和范围声明有效的同时，精确指出范围内迭代与重叠处理尚未交代。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：未清楚说明遇到新的批判思维教学策略如何纳入、重叠类别如何处理；排除非批判思维策略不能解答范围内新策略与重叠问题。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：在承认分类依据和范围声明有效的同时，精确指出范围内迭代与重叠处理尚未交代。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "partially_sufficient稳妥；sufficient必须解释上述操作缺口为何不影响原要求，不可调用外链协议补证。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "不能只抓承认不确定性，需审查预设策略、新策略和重叠三个要求。",
+    "3_to_4": "在承认分类依据和范围声明有效的同时，精确指出范围内迭代与重叠处理尚未交代。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

@@ -1,0 +1,80 @@
+{
+  "task_id": "F032_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。\n本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。",
+  "input": {
+    "comment_text": "The article “Identifying entrepreneurial discovery processes with weak and strong technology\nsignals: a text mining approach” is a relevant contribution to the literature on smart specialization.\nIt is centered in the textual analysis of patent abstracts from 2000 to 2009 provided by EPO and\nuses a mining approach to collect technology weak and strong signals, linking these signals to\ninvention activities for the period 2010–2018.\nThe article presents several good ideas. Nevertheless, I recommend some corrections for the\nconsideration of authors.\nFirst, smart specialization is a process that is far from being centered in technological\ndiversification. It is anchored in the development of domains where a specific region can\nexcel for its structural change. These domains can be technological intensive or not. This\nstandpoint means that the paper only addresses the entrepreneurial discovery processes\nthat are highly connected with domains where patenting is key – usually more\ntechnological. Domains where DUI learning modes are dominant are neglected in this way.\nAnd they are crucial, especially in peripheral and/or lagging regions. This limitation should\nbe discussed and referenced in the text.\n○\n\n○\n\n○\n\nSecondly, being the text about the EDP, few lines are spent in clarifying the concept or\ngiving evidence of the many (disparate) ways regions have tried to engage to actively direct\nthe EDPs. Sometimes EDPs were directly related with findings using quantitative evidencebased approaches but were also inspired by participatory and qualitative approaches. A\nsmall summary of these practices can be presented to justify the pertinence and gap that\nthis specific approach intends to solve.\nThirdly, S3 is commonly referred to as a place-based strategy. There is room to\naccommodate a stronger regional focus is this article. In two ways. In a theoretical way,\nmany contributions from the evolutionary geography of innovation, are directly aligned\n\n\n\n\nwith this approach, focusing patent portfolios, please cf. many recent contributions of Ron\nBoschma and co-authors and about relatedness. In the empirical way, the results (that are\nalready presented) could emphasize this matter of regional smart specializations and\nregional diversification in EU.\nFinally, the option concerning the selection of periods is not clear. It deserves more\njustification.\nRevise the word “citied”.\n○\n\nConsolidate the decimals in the tables, in particular ANOVA.\nTables referring topics should revised. Instead of “Topic 1, Topic …” insert the full name of the\nTopics: (Topic 0), cell domain/embodiment (Topic 1), image display (Topic 2), protein acid (Topic 3),\ndata systems (Topic 4), sensor-based intelligence systems (Topic 5) and aircraft/vehicle power\nsystems (Topic 6).\nGood luck!\nIs the work clearly and accurately presented and does it engage with the current literature?\nYes\nIs the study design appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nPartly\nAre all the source data and materials underlying the results available?\nYes\nIf applicable, is the statistical analysis and its interpretation appropriate?\nYes\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+    "response_text": "\n\n\n\nLevan Bzhalava\nDear reviewer, \nWe would like to thank you for the effort and expertise that you contributed towards\nreviewing the manuscript. We [closing signature omitted]\n\n[Next author response post]\n\n\nWe would like to thank the reviewer for constructive comments and suggestions, which helped us\nconsiderably to improve the manuscript. Below we provide responses to the reviewer's\ncomments:\nFirst, smart specialization is a process that is far from being centered in technological\ndiversification. It is anchored in the development of domains where a specific region\ncan excel for its structural change. These domains can be technological intensive or\nnot. This standpoint means that the paper only addresses the entrepreneurial\ndiscovery processes that are highly connected with domains where patenting is key –\nusually more technological. Domains where DUI learning modes are dominant are\nneglected in this way. And they are crucial, especially in peripheral and/or lagging\nregions. This limitation should be discussed and referenced in the text.\nAuthor Response: We included discussion regarding limitations of the research in the Discussion\nand Conclusion section.\nSecondly, being the text about the EDP, few lines are spent in clarifying the concept\nor giving evidence of the many (disparate) ways regions have tried to engage to\nactively direct the EDPs. Sometimes EDPs were directly related with findings using\nquantitative evidence-based approaches but were also inspired by participatory and\nqualitative approaches. A small summary of these practices can be presented to\njustify the pertinence and gap that this specific approach intends to solve.\n○\n\n○\n\nThirdly, S3 is commonly referred to as a place-based strategy. There is room to\naccommodate a stronger regional focus is this article. In two ways. In a theoretical\nway, many contributions from the evolutionary geography of innovation, are directly\naligned with this approach, focusing patent portfolios, please cf. many recent\ncontributions of Ron Boschma and co-authors and about relatedness. In the empirical\nway, the results (that are already presented) could emphasize this matter of regional\nsmart specializations and regional diversification in EU.\nAuthor Response: We extended the literature review and provided more in-depth discussion\nregarding entrepreneurial discovery processes (EDPs) and a place-based innovation strategy as\n○\n\n\n\n\nwell as presented quantitative and qualitative approaches concerning many different ways\nregions have tried to engage to actively direct EDPs (please see the Conceptual Framework section\n)\nFinally, the option concerning the selection of periods is not clear. It deserves more\njustification.\nAuthor Response: We included an explanation regarding the selection of periods.\n○\n\n",
+    "necessary_context": "专利文本挖掘、弱强技术信号与区域创业发现/智能专业化策略。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

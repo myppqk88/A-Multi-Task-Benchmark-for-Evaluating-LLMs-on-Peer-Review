@@ -1,0 +1,140 @@
+{
+  "task_id": "F062_T2_Q01",
+  "paper_id": "ORE:5-59",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F062_T2_Q01/input.json",
+  "input_sha256": "03872ddcc695d2ceb6915941dcdfbd10557e7ffee3ec7d5c6e989bd29ad8b997",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F062_T2_Q01/input.json",
+      "source_sha256": "03872ddcc695d2ceb6915941dcdfbd10557e7ffee3ec7d5c6e989bd29ad8b997",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "6. Finally, the article, also in Section 2, includes the following quote in the second paragraph:\n“Twenty countries, representing approximately 50% of the global population, account for over\n80% of the estimated global excess mortality for the January 2020 to December 2021 period.\nThese countries are Brazil, Colombia, Egypt, Germany, India, Indonesia, the Islamic Republic of\nIran, Italy, Mexico, Nigeria, Pakistan, Peru, the Philippines, Poland, the Russian Federation, South\nAfrica, the United Kingdom of Great Britain and Northern Ireland, Turkey, Ukraine, and the United\nStates of America (USA).”\nI do not believe that Nigeria's inclusion among the countries representing 80% of global excess\nmortality due to COVID-19 is accurate. Firsthand experience suggests that Nigeria was one of the\nAfrican nations that experienced significantly fewer deaths from the virus.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F062_T2_Q01/input.json",
+      "source_sha256": "03872ddcc695d2ceb6915941dcdfbd10557e7ffee3ec7d5c6e989bd29ad8b997",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Dear reviewer, Thank you very much for your thorough feedback. Though we understand\nthat your first-hand experience of Nigeria's excess mortality due to COVID-19\nmaybe different, the text quoted in our article, in the sub-section 'The emergence of COVID19 in late 2019', is directly from this WHO (2022) article: Global excess deaths associated\nwith COVID-19: January 2020-December 2021. World Health Organisation. Available from\nhere: [external resource identifier omitted] We will address the invaluable comments you have made in a\nrevised version of this paper.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "答复将争议数字明确追溯到WHO 2022、2020—2021超额死亡报告，比个人经历提供了可核查来源。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可基于来源回应成立；partially_sufficient可指出尚未解释超额死亡口径和估计误差。"
+    },
+    {
+      "id": "J2",
+      "judgment": "评审把估计超额死亡与亲身观察到的病毒直接死亡相对照，口径不相同；20国合计占80%也不意味着尼日利亚单独高比例。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可基于来源回应成立；partially_sufficient可指出尚未解释超额死亡口径和估计误差。"
+    },
+    {
+      "id": "J3",
+      "judgment": "本题未提供WHO全文或估计方法，不可断言来源数字已核实或估计没有不确定性。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可基于来源回应成立；partially_sufficient可指出尚未解释超额死亡口径和估计误差。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。答复将争议数字明确追溯到WHO 2022、2020—2021超额死亡报告，比个人经历提供了可核查来源。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能机械接受个人经历推翻总体估计，也不能只因WHO权威认定数字必真。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：答复将争议数字明确追溯到WHO 2022、2020—2021超额死亡报告，比个人经历提供了可核查来源。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能机械接受个人经历推翻总体估计，也不能只因WHO权威认定数字必真。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。本题未提供WHO全文或估计方法，不可断言来源数字已核实或估计没有不确定性。",
+      "high_score_conditions": [
+        "识别群体合计、单国份额、超额/直接死亡不同口径，并明确出处可追踪不等于本轮核验来源。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：本题未提供WHO全文或估计方法，不可断言来源数字已核实或估计没有不确定性。"
+      ],
+      "boundary_2_3": "不能机械接受个人经历推翻总体估计，也不能只因WHO权威认定数字必真。",
+      "boundary_3_4": "识别群体合计、单国份额、超额/直接死亡不同口径，并明确出处可追踪不等于本轮核验来源。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient可基于来源回应成立；partially_sufficient可指出尚未解释超额死亡口径和估计误差。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：识别群体合计、单国份额、超额/直接死亡不同口径，并明确出处可追踪不等于本轮核验来源。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：本题未提供WHO全文或估计方法，不可断言来源数字已核实或估计没有不确定性。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：识别群体合计、单国份额、超额/直接死亡不同口径，并明确出处可追踪不等于本轮核验来源。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient可基于来源回应成立；partially_sufficient可指出尚未解释超额死亡口径和估计误差。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "不能机械接受个人经历推翻总体估计，也不能只因WHO权威认定数字必真。",
+    "3_to_4": "识别群体合计、单国份额、超额/直接死亡不同口径，并明确出处可追踪不等于本轮核验来源。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

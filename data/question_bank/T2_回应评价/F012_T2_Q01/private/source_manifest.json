@@ -1,0 +1,72 @@
+{
+  "task_id": "F012_T2_Q01",
+  "paper_id": "PeerJ:737",
+  "split": "provisional_formal",
+  "original_candidate_group": "provisional_formal",
+  "condition": "focal_concern_response_author_letter",
+  "packaging_status": "material_verified_by_current_6.1_sol_not_expert_gold",
+  "disciplinary_eligibility": "羞耻与青年物质使用关系的文献综述。",
+  "source_docs": [
+    {
+      "source_id": "H001",
+      "original_path_private": "data/originals/PeerJ/psychiatry-and-psychology/737_The_association_between_shame_and_substance_use_in_young_people__a_systematic_re/version_v0.2/737_v0.2_2014-12-15_response_letter.doc",
+      "source_file": "private/original_response_letter.doc",
+      "source_sha256": "3caa13712638d044d47a53367fb6762b41da152b778961d82f2439232331386e",
+      "extracted_file": "private/source.txt",
+      "extracted_sha256": "bab9e0bbcbb912eda53000153068e16ff1e48e537e79d6cf4d5d14728f7b0dd0",
+      "page_map": [],
+      "conversion": "macOS textutil -convert txt -stdout; preserved output bytes; no model/API"
+    }
+  ],
+  "source_to_input_mapping": [
+    {
+      "input_field": "input.comment_text",
+      "source_id": "H001",
+      "source_span": [
+        1103,
+        1377
+      ],
+      "source_to_input_map": [
+        {
+          "input_start": 0,
+          "input_end": 274,
+          "source_start": 1103,
+          "source_end": 1377,
+          "kind": "verbatim"
+        }
+      ],
+      "combined_field_offset": 0,
+      "cleaning_edits": [],
+      "role": "author_quoted_review",
+      "paragraph_index": 16
+    },
+    {
+      "input_field": "input.response_text",
+      "source_id": "H001",
+      "source_span": [
+        1379,
+        1408
+      ],
+      "source_to_input_map": [
+        {
+          "input_start": 0,
+          "input_end": 29,
+          "source_start": 1379,
+          "source_end": 1408,
+          "kind": "verbatim"
+        }
+      ],
+      "combined_field_offset": 0,
+      "cleaning_edits": [],
+      "role": "author_signed_response",
+      "paragraph_index": 17
+    }
+  ],
+  "source_read_scope": "已核对原回信的角色说明、所选完整关切、全部对应答复及相邻边界；未宣称独立原评审存在，未执行模型实验。",
+  "role_proof": "原回信中评审段与作者逐项答复的显式标签/交替结构；来源旧Word文件的正文而非历史模型CSV",
+  "date_scope": "文件名中的投稿日期不单独用作T3时序证明；本题T2仅评给定文字",
+  "input_sha256": "5172337592f2e6211a2f6adfb484378ca31c4e447e4be9381469edced594eee7",
+  "expert_gold_status": "not_started",
+  "model_or_judge_API_called": false,
+  "created_at": "2026-10-23T13:43:44.984107+08:00"
+}

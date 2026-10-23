@@ -1,0 +1,27 @@
+{
+  "task_id": "F020_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "实验设计与对照",
+    "主张强度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称新增非社会箭头控制的第二实验并扩展理论，且承认尚未预注册。核对第二实验的实体方法/结果，不把新数据收集误写为预注册；完整刺激与任务说明是关键附件。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "This study aimed to investigate whether socially relevant cues modulate working memory for\nverbalizable information, in a similar way to what has been previously reported for colour stimuli\n(Gregory & Jackson, 2017). In an online experiment, participants were first presented with a\ncentral schematic face looking straight ahead, which subsequently shifted its gaze to the left or\nright along the hor",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nDear reviewer, \nMany thanks for your thorough and helpful comments on the original version of our\nmanuscript. We have changed the manuscript according to your comments, all of which\nalso align with the comments by the other reviewers. This refers to two main aspects,\nnamely the inclusion of a second experiment that tests the effects of both social cues (gaze\ncue) and non-social cues (arrow cue) on recall of verbal items in working memory, and the\nexpansion of the theoretical discussions in this",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

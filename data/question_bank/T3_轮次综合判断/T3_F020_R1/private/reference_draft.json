@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F020_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "实验设计与对照",
+    "主张强度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称新增非社会箭头控制的第二实验并扩展理论，且承认尚未预注册。核对第二实验的实体方法/结果，不把新数据收集误写为预注册；完整刺激与任务说明是关键附件。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This study aimed to investigate whether socially relevant cues modulate working memory for\nverbalizable information, in a similar way to what has been previously reported for colour stimuli\n(Gregory & Jackson, 2017). In an online experiment, participants were first presented with a\ncentral schematic face looking straight ahead, which subsequently shifted its gaze to the left or\nright along the hor",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, \nMany thanks for your thorough and helpful comments on the original version of our\nmanuscript. We have changed the manuscript according to your comments, all of which\nalso align with the comments by the other reviewers. This refers to two main aspects,\nnamely the inclusion of a second experiment that tests the effects of both social cues (gaze\ncue) and non-social cues (arrow cue) on recall of verbal items in working memory, and th",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The physiology of human eyes with their large white sclera\nand dark iris helps provide a clear signal of the direction in\nwhich an individual is looking (Kobayashi & Kohshima, 1997).\nA large body of research using manipulations to face and eye\nstimuli that reflect shifts in the iris position relative to the\nsclera have demonstrated that humans are remarkably sensitive to the direction of another’s gaze. Already 3-month old\ninfants shift their own attention in the direction signalled by\nimages of eyes looking to the left or right placed on an image\nof a face (Hood et al., 1998). For adults, such shifts in attention appear to have some degree of automatization, appearing\nin situations where gaze fails to predict a target’s location and\nwhen participants are placed under cognitive load (Friesen &\nKingstone, 1998; Visser & Roberts, 2018).\nThis sensitivity to the direction of another’s gaze further allows\ntwo individuals to coordinate their attention toward the same\nexternal stimulus. The b",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "recalling items stored in long-term memory was assessed, and in the latter, accuracy in recalling items in working memory\nwas assessed. Critically - based on a wider debate within the gaze cueing literature regarding the specificity of the\nunderlying mechanism (Capozzi & Ristic, 2020; Chacón-Candia et al., 2023; Hietanen et al., 2008; Marotta et al., 2012;\nRistic et al., 2002) - both studies also tested whether a non-social stimulus that can orient attention, namely an arrow cue,\nwould improve participants’ recall (Experiment 4 in Dodd et al., 2012; Experiment 2 in Gregory & Jackson, 2017).\nIn both cases, the accuracy of recall was not affected, suggesting that the effect on recall may be specific to social cues\nsuch as gaze.\nFollowing these two original studies investigating cueing effects on recall of items in long-term memory and in working\nmemory, several follow-up studies have extended the initial findings and some of them employed further tests of the\nspecificity of the gaze cuei",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nBackground\nPrevious studies have shown that stimuli that another individual looks\nat are better remembered than stimuli that are not looked at,\nsuggesting that joint attention improves memory. However, these\nprevious studies have differed in the type of memory being tested and\nthe type of content that is to-be-remembered: while effects of joint\nattention on long-term memory were tested with verbalizable stimuli,\neffects on working memory have only been tested with visual stimuli\nsuch as colour. Thus, the aim of the current study is to extend these\nprevious findings and investigate whether joint attention improves\nworking memory for verbalizable stimuli.\nMethods\nParticipants were first presented with an image of a face with eyes\nthat gazed either to the left or to the right, after which a grid of 4\nletters (2x2) was shown. On half of trials, this grid with letters was\nshown in the same direction that was gazed at, and in the other half\nof the trials, in the other direction. Aft",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nBackground\nPrevious studies have shown that items that another individual looks\nat are better remembered than items that are not looked at, whereas\nthe same effect has rarely been observed for non-social cues such as\narrows. This pattern of results has been taken as an indication that\njoint attention improves memory. However, these previous studies\nhave differed in the type of memory being tested and the type of\ncontent that is to be remembered: while effects of joint attention on\nlong-term memory were tested with verbal items and non-verbal\nitems, effects on working memory have only been tested with nonverbal items such as colour. Thus, the aim of the current study was to\nextend these previous findings and investigate whether joint attention\ninfluences working memory for verbal items.\nMethods\nIn Experiment 1, participants were first presented with an image of a\nface with eyes that gazed either to the left or to the right. A grid of 4\nletters (2x2) was then shown either on the",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

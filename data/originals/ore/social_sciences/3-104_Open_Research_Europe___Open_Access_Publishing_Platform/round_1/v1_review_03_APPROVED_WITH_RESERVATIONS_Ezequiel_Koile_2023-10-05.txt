@@ -1,0 +1,135 @@
+Article: Open Research Europe | Open Access Publishing Platform
+DOI: 10.12688/openreseurope.16141.1
+Version: 1
+Reviewer: Ezequiel Koile
+Status: approved with reservations
+Date: 2023-10-05
+Report ID: 33111
+============================================================
+
+This paper explores different methods measuring geographic distances, calculates these distances for all pairs of languages at a global scale, and tests their correlation with linguistic features. It provides a valuable resource for the researchers in linguistic and cultural evolution, and discusses which of these definitions are more suitable for studying different geographic areas and linguistic features.
+I think this is an interesting study which should be indexed after considering the following comments.
+Major comments
+1 - Euclidean distance
+I do not understand why Euclidean distance is considered here, at least with the current definition. I would understand Euclidean distance as a rectangular distance on a plane, where both coordinates (x,y) are defined in the same units. On a spherical surface, the closest equivalent to Euclidean would be geodesic/great-circle distance. Calculating distances like in Eq. (1), just as the squared sum of latitude and longitude in degrees, treating them as distances, is simply wrong. I understand that this calculation is computationally non-intensive, but so is geodesic distance, and much more exact.
+Euclidean distance as defined here can be useful at relatively short scales, especially near the equator (and it is used in this way inside each area studied in the present paper, except for Northern Europe), but there should be at least some approximation such as the haversine formula, or UTM projection, as mentioned in Footnote 4.
+I disagree with the first statement in the sentence “Euclidean distances assume that the earth is flat, and geodesic distances assume that the surface of the earth is a smooth sphere.” for Euclidean distance as defined in Eq. (1) does not (only?) assume a flat surface of the earth, but a deformed one, where the E-W extension of Greenland at its maximum, from Etah at (long = -72°, lat = +78° ) to Danmarkshavn (long = -18°, lat = +77°) is larger than the maximal E-W extension of South America, from Piura in Peru (long = -80°, lat = -5°) to Natal in Brazil  (long = -35°, lat = -5°), while the first is 1,300km (54°) and the second one 5,000km (45°).
+The authors acknowledge this factː “However, for larger distances, and distance far away from the Equator, Euclidean distance can produce results which are very different from actual distances along the surface of the Earth.”, but still use these metrics.
+The authors mention 4 references, two using either Euclidean or geodesic distances, and then two more using Euclidean distances either explicitly or implicitly. The first two do not use Euclidean distance as far as I understand. Murawaki and Yamauchi (2018) mentionsː
+“Languages were found to be associated with single-point geographical coordinates (longitude and latitude), as shown in Fig. 1. We constructed a spatial neighbor graph by linking all language pairs that were located within a distance of R km.”
+Which I understand as geodesic distances, since these are measured in km.
+In Ranacher et al (2021):
+“Distance is modelled as a cost function C, which assigns a non-negative value ci,j to each pair of locations i and j. Costs can be expressed by the Euclidean distance, great-circle distance, hiking effort, travel times, or any other meaningful property quantifying the effort to traverse geographical space.”
+It is not clear to me what they mean by Euclidean distance here, but could not find this used as in Eq.(1) in the further calculation of costs.
+As for the other references, it is true that Guzmán Naranjo and Becker (2021) use it, although pointing out that this is a simplification:
+“For simplicity, we use Euclidean distances between languages. This is, of course, a simplification. It would be fairly easy to use other distance metrics with a GP, e.g. geodesic distances or walking distances (Wichmann and Hammarström 2020).”
+Finally, in Verkerk and Di Garbo (2022), I do not see this so clearly. Latitude and longitude are used as independent predictors (one would expect that latitude is more determinant for it is more directly related with temperature differences), e.g.ː
+“The languages with the four different types of gender system differ in their mapping onto these four nonlinguistic variables, with the differences between types being larger for longitude and current forest overlap, and smaller for number of L1 speakers and latitude.”
+In addition, these measures are used in the African continent, which is relatively close to the equator.
+2 - Cross-comparison of case-studies
+I understand that the data available is not completely homogeneous for different areas, but I find it confusing that different linguistic measures are used in the different geographic areasː
+“In terms of types of linguistic features, the Hindu-Kush data combines phonology, lexical and syntactic features; the South America data exclusively comprises word order features; and the European data is made up of phoneme inventories.”
+I do not see why these different features would be expected to behave in the same way. If there are divergences from the expected correlations with geographic distance, is this because of the topography of the region or because the features studied are affected to a greater/lesser extent by language contact? It would be interesting to test at least one group of features in all 3 geographic scenarios, or split the features in a comparable way (e.g. those in the Hindu-Kush into phonological, lexical and syntactic, to check which ones are more affected by contact).
+More generally, the use of vocabulary like “...topographic distance tends to
+outperform
+the other distance metrics…” gives the idea of one distance being “better” than others in general. It should be clear in the writing that this outperformance is always a correlation with linguistic features, assuming that shorter geographic distances (in any of its flavors) is responsible for higher similarity among these features among languages.
+3 - Report of main results
+I do not agree with statements such as (Abstract)ː
+“We evaluate these distance metrics on three case studies and show that topographic distance tends to outperform the other distance metrics, but geodesic distances can be used as an adequate approximation in some cases.”
+Or, more specific outputs for each case study such asː
+“For the Hindu-Kush dataset, the walking distances showed a clear advantage over the other distance metrics…”
+This is not so clear to me from Table 1. It seems to have performed as well as topographic and geodesic distances.
+“However, for the European dataset, these results are reversed. Both the topographic and Euclidean distances performed considerably better than the walking distance and geodesic distance.”
+This is also not clear from Table 2. Geodesic distances perform clearly better than the other 3, which perform approximately equally in all 3 metrics.
+Minor comments
+General:
+Numbering of sections: this is a little confusing along the paper. All sections start with the number 5: 5.1, 5.2,... Unless this is the fifth chapter of a collection, please correct. At the end of the paper, Sections 6-8 appear for Data and Software availability, Author contributions, and Acknowledgments respectively.
+As for the subsections (sections after the 5.), it seems that some of them are incorrectly labeled. For example, at the end of the Introduction, Sections 5.2, 5.4, and 5.7 are mentioned only, while all should be referred: 5.3 is Materials and methods, and I believe 5.4-5.6 should be sub-sections of the same section (Case studies 1, 2, and 3).
+Abstract:
+Delete the first instance of “We evaluate these distances.” and its corresponding line break.
+Page 3, left column (in the following, P3L):
+Last paragraph Introduction: Rephrase according to new numeration (see above).
+First paragraph Section 5.2:
+(x1,y1) and (x2,y2) : replace 1 → a, 2 → b for consistency with Eq. (1)
+Eq.(1): missing exponent 2 in the second term on the right hand side
+P3R:
+Footnote 3: why is the formula for computing the geodesic distance convoluted? Clarify and add a reference to its definition.
+Last line: “but we include” → “considering”
+P4L:
+First paragraph:
+“northern most” → “northernmost” (same for southernmost)
+“ram” → “RAM”
+Second paragraph:
+Is this formula correct, symmetric for horizontal and vertical distances? It would be more realistic to add a factor, v → a.v (a >1), and probably test the case studies with different values of a, compared to a = 1?
+Complete the symbol for square root inline (if typographically possible).
+Last paragraph:
+“... but it attempts to calculate the travel time using a function to approximate hiking times, instead of taking the actual distance directly”. Related to the previous comment, there is only a dimensional factor between time and distance, the latter weighted by a higher cost of moving vertically.
+“77 languages in the Americas” → “languages spoken in 77 villages in the Caucasus”
+P4R:
+1st paragraph:
+“For the purposes of this paper, the walking distance between two points is the distance along mapped roads, walkways and paths that connect those two points. The idea is that road networks are a close representation of the spatial separation between populations because they are the actual pathways used for communication between communities.”
+This might be reasonable for current language contacts, but be aware that in any study involving historic changes, even recent ones, these mapped pathways can differ to a great extent
+2nd paragraph:
+Open Stree Maps → Open Street Maps
+OSRM = Open Street Routing Machine. Define this when first introduced.
+Footnote 4ː Explain the meaning of UTM.
+P5:
+Figure 1:
+It should have a different caption, such as “Example of distances’ comparison for three Hindu-Kush languages”
+Figure 2ː
+The caption should be “Hindu-Kush languages”.
+Figures 1 and 2 (and probably 4 and 5):
+Add an inset map, it is not very clear what part of the world we are considering beyond the lat and long values.
+Add units for elevation (meters?)
+P5L:
+Last paragraph: “The choice of dataset was…”: dataset → datasets
+P6L:
+First paragraph:
+“...a logistic regression with a GP as predictor.” → as a/the predictor ?
+Footnote 10:
+“...the walking distances do not necessarily satisfy the triangle inequality.”
+Could you please expand on this? If d(A,C) < d(A,B) + d(B,C), why not move from A to C through B instead, reducing the magnitude of  d(A,C) and satisfying the triangle inequality always?
+P6R:
+“from phonology to syntax” → “from phonology and syntax”.
+P7L:
+Top: feature → features
+Figures 3, 7, and 9:
+Add a dashed vertical line at balanced accuracy = 0.5 (all figures have different x-axis scale, so this would help comparability as well).
+Rename the x axis as “balanced accuracy”.
+The coloured dots are not easily readable in the current format. Even in Fig 9, where there are few features in the y-axis, the jittering applied does not help to understand which dot belongs to each feature. I suggest trying a different visualization, e.g. horizontal lines matching all 4 dots for each feature, and different icon shapes for these 4 dots (the colors can be kept besides the shapes). Also, reordering the y-axis by their value in the x-axis (see next item) can help in cases such as Fig 7, with a great proportion of dots on the x=0.5 line.
+Features in each case are ordered in (inverse) alphabetical order. It might be easier to read if they were ordered differently, either by (average? minimum?) value of accuracy, or by some meaningful grouping (e.g. phoneme types in Fig 7).
+Tables 1-3:
+The row order seems arbitrary. Reorder either from simpler to more complex (euclidean, geodesic, topographic, walking) or by some of the values featured, e.g. “n. Times best accuracy”).
+P8L:
+Last paragraph:
+“from 69 to 77.5 longitude…” add “degrees” or the degrees symbol.
+“Because walking distances are sensitive to there being an accessible road from the point in question,” → “Because walking distances are sensitive to the existence of an accessible road from the point in question,”
+P8R:
+“These are shown in Figure 4 and Figure 5”: I think this sentence belongs to the previous paragraph.
+“...Euclidean distance build…” → “...Euclidean distances build …”
+Figures 4 and 5:
+It is not very straightforward to understand these figures. Why would conditional effects give predictions on presence or absence of a feature? Shouldn’t they only predict similarity among closer locations? If they are based on the distances to each language, isn’t it circular?
+Also, why is the value “Indeterminate” present in Fig 5 but not in Fig 4? If it means NA, it should be included in Fig 4 as well (unless there are no NA’s in this variable). If this is a third category, is this not a binary feature? Also, please be consistent in the choice of symbols (the triangle means present in Fig 4 and indeterminate in Fig 5).
+P8R:
+“...in the upper left quadrant for Eurasia…” Do you mean in the Northwestern quadrant of Eurasia? If so, according to Fig 6, this looks more like Western Eurasia (= Europe mostly).
+Footnote 15: Phoibl → Phoible
+“It is clear in this case that most features are hard to predict, and that they do not show real patterns.” Do you mean areal patterns?
+P9R:
+“...for the worlds languages.” → world’s.
+
+
+--- Structured Questions ---
+
+Q: Is the rationale for creating the dataset(s) clearly described?
+A: Yes
+
+Q: Are the protocols appropriate and is the work technically sound?
+A: Yes
+
+Q: Are sufficient details of methods and materials provided to allow replication by others?
+A: Yes
+
+Q: Are the datasets clearly presented in a useable and accessible format?
+A: Yes
+
+Areas of research: Linguistic diversity, quantitative methods.

@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F167_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "资料覆盖与选择偏差",
+    "创新中介概念",
+    "回应与实际修改"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑文献与桌面研究过度依赖欧盟资助项目，作者简要称加入建议文献；核对后稿是否扩大视角而非只加参考。",
+    "桌面资料、调查和访谈的不同证据来源须分开，补创新中介定义不自动解决需求结论的覆盖限制。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This is a much-needed and clearly well-developed contribution to the field of innovation\nintermediation in the (European) space industry.\nThe article is using desk analysis, surveys and interview data to build a picture of the existing\nprovision and skills in innovation intermediation across Europe (especially focusing on central and\nsouth-eastern Europe). The findings support existing research po",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe would like to thank the reviewer for their comments and recommendations\nthat helped us improve our paper. The manuscript has been revised accordingly in an effort\nto address them. The revised manuscript has been resubmitted.\nIn more detail, the manuscript has been revised to include valuable references from the\nreviewer.\n",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "intermediaries and consultants need different capabilities\nto be able to effectively and successfully support a customer.\nA key component of the existing literature that is currently missing, to the authors’ knowledge, is a dedicated analysis of the\nknowledge and skill levels that innovation intermediaries believe\nthey possess when they provide business support services.\nIn parallel, it is also interesting to investigate the intermediaries’ skills needed by the corresponding counterparts who act\nas receivers of these skills and services (innovators). Intermediaries’ knowledge and skill levels in certain business areas\nexert a key influence on the quality of the services they provide\ntowards innovators.\nMotivated by this, Gassman et. al. (2011)10 have analysed\n107 European manufacturing companies and six collaborative\ncross-industry innovation projects to reveal the core skills and\nexpertise an effective intermediary should possess in supporting cross-industry innovation. Based on their",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The role of innovation intermediaries in bridging the knowledge gaps is widely discussed internationally, either via bringing together different actors of the innovation ecosystem (e.g.,\ninnovators, investors, funding providers, advisors, policymakers,\netc.) or via supporting the diffusion of technology and novel\nideas across different industries and technological domains. An\nintermediary facilitates the knowledge exchange and knowledge transfer to a customer through various channels such as\n(i) direct knowledge transfer; (ii) exchange of experience; (iii)\nnetworking; and (iv) consulting on companies’ innovation needs\nand available solutions9. After all, technology transfer is a timebased process involving multiple actors10, while innovation\nintermediaries and consultants need different capabilities to be\nable to effectively and successfully support a customer.\nA key component of the existing literature that is currently missing, to the authors’ knowledge, is a dedicated analysis of th",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The European space sector is on the rise, introducing a rapidly growing market with a lot of expanding opportunities for\ninnovative space products, applications and services, even in\nnon-space sectors. In order to exploit these opportunities,\nentrepreneurs need substantial business support, in order to\nbuild the knowledge and skills required to effectively benefit\nfrom this erupting New Space era. This is even more intense in\nCentral-Eastern (CE) and South-Eastern (SE) Europe, where\nonly 30% of Europe’s space support innovation intermediaries\nare established. In this article, we investigate the skill levels\nof innovation intermediaries that provide support to innovators (i.e., start-ups, scale-ups and SMEs) of the SE and CE\nEuropean space sector. Our objective is to identify: (i) the available competences and (ii) missing skills (potential areas for\nimprovement) of innovation intermediaries in the EU space\nsector, investigating their skill levels from two main points\nof view: (a) the p",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "By analysing of 15 semi-structured interviews and 104 survey\nresponses, several interesting insights for the future of European\nspace innovation have been identified and are highlighted in the\npresent manuscript.\nConclusion\nWe conclude that innovation intermediaries in the space sector have\nthe adequate capacity to effectively train and support innovators in\nimproving, primarily, their organisational skills and soft skills. Trainers\nare also competent at assessing the investment readiness levels of\ninnovators, their pitching skills, and they can provide tailored business\nsupport services to innovators. In parallel, space innovators need to\nreceive better training to improve their business modelling skills,\nbetter support the management of Intellectual Property, and\nunderstand key technologies and market characteristics of the space\nmarket.\nPlain language summary\nThe European space sector is on the rise, introducing a rapidly\ngrowing market with a lot of expanding opportunities for inno",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "F069_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "观察编码与可靠性"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "2. Detail Observer Training and Reliability: Describe how observers were trained and whether\ninter-rater reliability was measured (e.g., percentage agreement or Cohen’s kappa).",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Observer Training and Reliability\nTo ensure accuracy, consistency, and credibility in applying the Modified Flanders\nInteraction Analysis (MFIA) instrument during classroom observations, two observers\nunderwent a structured training programme prior to data collection. The training process\nwas conducted over two weeks and consisted of three sequential phases designed to\nfamiliarise observers with the MFIA categories and strengthen their coding precision.\nPhase 1: Familiarisation with MFIA Categories\nObservers were introduced to the ten behavioural categories adapted for the study, with\nemphasis on distinguishing verbal and non-verbal behaviours. They reviewed sample video\nlessons, practised identifying teacher and student behaviours, and discussed coding\nboundaries to ensure shared understanding of all category definitions.\nPhase 2: Guided Practice and Calibration Exercises\nObservers independently coded the same set of practice lessons at one-minute intervals\nand later compared results. Discrepancies were discussed and resolved collaboratively,\nenabling the observers to refine their decision rules and achieve a uniform interpretation of\nthe MFIA categories. Calibration continued until agreement was consistently above the\nacceptable threshold for observational studies.\nPhase 3: Certification and Field Simulation\nBefore proceeding to live classroom observations, each observer completed a certification\nexercise by coding two additional mathematics lesson videos. These were compared against\na master coding guide prepared by an experienced MFIA user. Only after demonstrating\nacceptable accuracy were they approved for field data collection.\nInter-Rater Reliability\nTo quantify agreement between observers during the pilot stage, percentage agreement\nand Cohen’s kappa (κ) were computed. Across all MFIA categories, observers achieved:\n• Percentage Agreement: 87%\n• Cohen’s Kappa (κ): 0.81\nA kappa coefficient above 0.80 indicates strong inter-rater reliability, confirming that the\nobservers consistently applied the MFIA coding scheme. Any minor inconsistencies\nidentified were resolved prior to the commencement of formal data collection. This process\nensured that the observational data collected during classroom visits were both reliable and\nvalid for analysis.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "培训、校准、κ和百分比一致性完整保留，不仅摘两个数字。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

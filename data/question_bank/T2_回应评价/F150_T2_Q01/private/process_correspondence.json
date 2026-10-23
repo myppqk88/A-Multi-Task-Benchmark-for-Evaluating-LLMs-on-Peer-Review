@@ -1,0 +1,61 @@
+{
+  "task_id": "F150_T2_Q01",
+  "paper_id": "ORE:3-220",
+  "parent_task": "T3_F150_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F150_R1/input.json",
+  "parent_input_sha256": "0822dcb8cb63915e8ee3dc7b048ec91fe425e8505b90323ea15e15e94048f67d",
+  "review_dimension_AI_candidate": "文献覆盖与时效",
+  "selection_scope": "保留完整总答复，核对是否提供明确新增研究或仅笼统承诺。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/ore/social_sciences/3-220_A_child-centred_intercultural_approach_to_the_socio-educational_inclus/v1_manuscript.pdf",
+      "original_sha256": "8fc0ba1443e6ba62436fb5f094921a315f494d1c3fea2ac2e2e4ab068074e662",
+      "raw_text_file": "data/question_bank/T2_回应评价/F150_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        61610,
+        62679
+      ],
+      "report_id": "37719",
+      "date": "2024-09-14",
+      "raw_page_numbers": [
+        11
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/ore/social_sciences/3-220_A_child-centred_intercultural_approach_to_the_socio-educational_inclus/v1_manuscript.pdf",
+      "original_sha256": "8fc0ba1443e6ba62436fb5f094921a315f494d1c3fea2ac2e2e4ab068074e662",
+      "raw_text_file": "data/question_bank/T2_回应评价/F150_T2_Q01/private/S001_source.txt",
+      "source_span_cover": [
+        63527,
+        64539
+      ],
+      "report_id": null,
+      "date": "2024-10-03",
+      "raw_page_numbers": [
+        12
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "anchor": "2023",
+    "anchor_matches": 0,
+    "finding": "在该版完整科学文字未匹配该明确词组；不等同未讨论相关概念"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 23785,
+    "end": 24309,
+    "exact_quote": "t have\nany staff to offer psycho-social support or personal counselling\nto students (Martin et al., 2023).\nEffective leadership is crucial in schools for all children, and\nit can have major implications for culturally diverse students\nsuch as migrant and refugee children. Inclusive education\ndemands culturally responsive leadership dedicated to achieving\nequity, inclusion, and equal opportunities for all students\nwhile embracing the local school culture’s agendas (Khalifa\net al., 2016). This can only be achieved throug",
+    "anchor_matches": 5,
+    "anchor": "2023"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "前稿无2023字样，后稿出现Martin等2023及Eurostat2024的相关论述；不等于已核引文准确性或覆盖充分。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

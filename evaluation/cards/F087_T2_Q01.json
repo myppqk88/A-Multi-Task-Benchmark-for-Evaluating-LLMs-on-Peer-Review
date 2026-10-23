@@ -1,0 +1,128 @@
+{
+  "task_id": "F087_T2_Q01",
+  "paper_id": "ORE:5-246",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F087_T2_Q01/input.json",
+  "input_sha256": "f29928daf659f1f29e627275baf7489042549eb5d5979cf03ec88e1f85a22cee",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F087_T2_Q01/input.json",
+      "source_sha256": "f29928daf659f1f29e627275baf7489042549eb5d5979cf03ec88e1f85a22cee",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Factual statements are generally accurate and supported by relevant and\nup-to-date citations; however, some higher-level interpretive claims and model-specific\npropositions rely primarily on authorial synthesis and would benefit from clearer signaling as\nconceptual in nature or from the addition of supporting references where available.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F087_T2_Q01/input.json",
+      "source_sha256": "f29928daf659f1f29e627275baf7489042549eb5d5979cf03ec88e1f85a22cee",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Furthermore, Reviewer #1 (Dr. Carlit Casey) states that the manuscript could benefit from\nclearer signaling as conceptual in nature or from additional references where available. This\nis because of a couple of ungrounded statements. So, we agree and have implemented two\ncomplementary improvements (a) and (b):\n(a) Clearer signaling of epistemic status\nEpistemic-status paragraph for the model: We added an explicit statement\nclarifying that the relational links within the model are conceptual propositions\n○\n\n○\n\n○\n\n○\n\n\n\n\nderived from comparative synthesis, intended as testable hypotheses rather than\nempirically established causal claims.\n(b) Additional supporting references where feasible\nFor claims about the integration of disciplinary, didactic, and contextual\nknowledge—and the role of situated cognitive skills in practice—we reinforced\ncitation support with widely recognized international and Spanish scholarship.\nWe also reviewed several interpretive passages and refined the language to avoid\nover-strong generalizations (e.g., replacing categorical formulations with\nappropriately modalized phrasing where the claim is interpretive).\nThese changes maintain the manuscript’s theoretical contribution while aligning the\npresentation of claims with standard scholarly expectations: statements are supported with\ncitations, and conceptual claims are transparently framed as propositions emerging from\nsynthesis.\n○\n\n○\n\n4. About the assessment of the support on citations\nSome statements were not supported by citations. We addressed this by (i) strengthening\ncitation support for selected high-level claims (particularly those concerning integrated\nprofessional profiles and situated cognitive skills), and (ii) explicitly labeling model links as\nconceptual propositions where the claim is interpretive. We also revised language in a small\nnumber of passages to avoid any unintended implication of empirically established\ncausality.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "回复明确模型关系为比较综合形成的概念命题、可检验假设，而非已确立因果关系，正面回应认识地位问题。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可基于概念定位已明确；原关切允许概念标识或补引文，不能仅因未展示具体引文而降分。"
+    },
+    {
+      "id": "J2",
+      "judgment": "回复称加强整合知识/情境技能的引文并弱化概括，但未列出具体引用或所有修改句，因此不能验证事实支持完备。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient可基于概念定位已明确；原关切允许概念标识或补引文，不能仅因未展示具体引文而降分。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。回复明确模型关系为比较综合形成的概念命题、可检验假设，而非已确立因果关系，正面回应认识地位问题。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需区别概念命题标识与引用真实性核验。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：回复明确模型关系为比较综合形成的概念命题、可检验假设，而非已确立因果关系，正面回应认识地位问题。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：需区别概念命题标识与引用真实性核验。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。回复称加强整合知识/情境技能的引文并弱化概括，但未列出具体引用或所有修改句，因此不能验证事实支持完备。",
+      "high_score_conditions": [
+        "认可能力边界的实质澄清，同时不把新增引文的声明写成已验证全部事实。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：回复称加强整合知识/情境技能的引文并弱化概括，但未列出具体引用或所有修改句，因此不能验证事实支持完备。"
+      ],
+      "boundary_2_3": "需区别概念命题标识与引用真实性核验。",
+      "boundary_3_4": "认可能力边界的实质澄清，同时不把新增引文的声明写成已验证全部事实。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient可基于概念定位已明确；原关切允许概念标识或补引文，不能仅因未展示具体引文而降分。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可能力边界的实质澄清，同时不把新增引文的声明写成已验证全部事实。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：回复称加强整合知识/情境技能的引文并弱化概括，但未列出具体引用或所有修改句，因此不能验证事实支持完备。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：认可能力边界的实质澄清，同时不把新增引文的声明写成已验证全部事实。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient可基于概念定位已明确；原关切允许概念标识或补引文，不能仅因未展示具体引文而降分。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "需区别概念命题标识与引用真实性核验。",
+    "3_to_4": "认可能力边界的实质澄清，同时不把新增引文的声明写成已验证全部事实。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

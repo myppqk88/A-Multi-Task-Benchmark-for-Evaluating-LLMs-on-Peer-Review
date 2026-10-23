@@ -1,0 +1,57 @@
+Author Response to Review 2 (v1)
+Author: author
+Date: 
+============================================================
+
+I mainly have minor comments (see below), but also struggle with the authors’ conclusion that participants were surprised by the ‘blocking’ trials. This interpretation seems unlikely to me, based on the fact that blocking trials were 2 times more likely (n = 140) than win trials (n = 70). Also, surprise was only measured retrospectively, at the end of the experiment (it is thus memory about feeling surprised).
+Reply
+:
+We have added this to the discussion about the results on the surprise ratings (p.18):
+“In the outcome phase, blocking trials were more likely than win trials. However, each schedule contained varying number of trials, and the participants did experience many correct trials on those schedules where they were eventually blocked. From Figure 1, one can compute that the whole design contains 350 correct arrow trials, and 140 ‘blocked’ arrow trials (the probability of being blocked after an arrow trial was therefore around 28%). This probability of correct responses potentially influenced the participants expectation to win on the next trial. Thus, this surprise might have induced an orienting response (Notebaert et al., 2009; Wessel, 2018) leading to slower response times in the confirm task after getting blocked at a later schedule stage.”
+_clarify that the following results were unexpected: “participants were slower in confirming an outcome when they were blocked closer to the reward”
+Reply
+:
+We have done that.
+_the phrase “confirm RT” is unclear to the naïve reader
+Reply
+:
+We have changed the wording to ‘the time taken to confirm the outcome’.
+_p. 4: “In each schedule, some parts of the coin were already given to participants for ’free’, so the number of ’trials’ varied from one (i.e., only one quarter of the coin was missing) to four (i.e., the whole coin was missing).” - this sentence suggests that the experiment included schedules in which all parts of the coin were missing, but Figure 1 suggests otherwise. Similarly, text in the first paragraph on page 6 is not compatible with this scenario (“Depending on how many trials needed to be completed, parts of the coin were visible as well (e.g., if participants had to complete three trials, a quarter of the coin was already visible).” – how can parts of the coin be visible in schedules with all coin quarters missing?). Please clarify or correct if necessary.
+Reply
+:
+All schedules in which participants had to complete four trials to receive the coin started without any part of the coin given. We have now revised the texts throughout the manuscript to make this clearer.
+Figure 1 only indicates the outcome trials, but not the progression of trials within a schedule. We have now also clarified this in the figure caption. For further information, see the video of the trial procedure on OSF:
+https://osf.io/z28b4
+.
+_p. 6-7 explains that participants were told that at the end of the experiment “the program would randomly pick 10 schedules. For each win outcome, they would receive 2 euros. For each blocked outcome, they would receive no extra money. […] the results of these 10 selected schedules would be added up, to determine their final bonus (with 10 euros as the maximum)”. If I understand this correctly, participants were first told they could potentially earn 20 euros (10 win schedules x 2 euros), but then that they would maximally receive half of that? If that is correct, I would find it rather disappointing (and confusing) for participants.
+Reply
+:
+Indeed, participants were told that they could receive extra bonus and that this bonus would be the added results of the 10 chosen trials with 2€ per win. At the same time, they were informed that the maximum payout was 10€. They received this information before the experiment started and it is a common way of keeping the payout somewhat equal in gambling like tasks where the experimenter does not have control over the outcome. In this case, all participants received the 10€ maximum payout in addition to the 15€ reimbursement for their participation. None of the participants complained about this payout structure and in fact, most of them were pleasantly surprised that they would leave the experiment with 10€ extra.
+_p. 7: the word “filter” is missing after “We applied a 20-200 Hz band pass”
+Reply
+:
+We have corrected this.
+_p.7: trials with an RT of 0 ms were removed from analyses, but how come trials with very fast (i.e. < 100 or 200 ms) RTs were kept in the analyses? It would also seem implausible to answer that fast.
+Reply
+:
+Yu et al. (2014) did not report any exclusion criterion for RT analyses. To be consistent with their analysis approach, we therefore also did not implement any exclusion criterion, except for RTs of 0 which might indicate premature responses that were initiated before the stimulus presentation. However, considering this comment, we repeated the ANOVA analysis as in the original analysis, but with RTs below 200 ms excluded. For the confirmation RT, this led to the exclusion of 0.03% of the trials. For the arrow RT, this led to the exclusion of 0.18% of the trials. Importantly, all results reported in the manuscript remain the same. Since (1) only a small number of trials had an RT below 200ms, (2) the results remain the same with and without excluding RTs below 200ms, and (3) Yu and colleagues did not use such an exclusion criterion, we decide to report the results without excluding RTs below 200 ms, as they currently are, in the manuscript.
+_Figure 2: please number the panels (also given that the caption refers to the 5 panels by number), improve the y-axis label in panel 1 (change to “confirm RT (ms)”), either make all x-axis ticks the same or explain why the differ (some include blocked trials, some do not), and clarify which of these analyses are on win/block trials only or on both types of trials. Finally, is it possible to indicate significant effects (e.g. with a star)?
+Reply
+:
+We have added letters to the panels, improved the y-axis of the confirm RT and added explanations to the schedule stages. As explained on p. 9, we only included blocked trials in the analyses (and correct trials for the arrow task). We are however not able to add indications of significance since the effects we looked at are not reflected in the descriptives (effort vs. proximity effect p. 9/10 for further explanation). We have added the original plots for better comparison.
+_Figure 4: please add a ribbon around the EMG lines to show some measure of variance (e.g. SEM or 95% CI)
+Reply:
+We have added 95% CI as a ribbon around the EMG lines in Figure 4 and Figure 6.
+_Figures 5 and 7 are interesting but not necessary in the main text, I would move them to the supplementary materials
+Reply
+:
+We think it is important to highlight the substantial differences across participants, which is often not shown when only group averages are presented. We also refer to these individual differences in the manuscript when discussing the fEMG results. For these reasons, we think it is more convenient to have Figures 5 and 7 in the manuscript.
+_no significant effects were found in the facial EMG. However, this could be due to the somewhat unusual analysis, which included all time points and then applied a correction for multiple comparisons. Instead, you could average over time windows of 250 or 500 ms, and then include the factor time (with 4 or 8 levels).
+Reply
+:
+Thank you for this suggestion. When analyzing the fEMG data, we followed an analysis approach that is often used to analyze EEG data. Although not pre-registered, we decided on this approach before looking at the data. While the proposed analysis can be a viable alternative, the selection of time windows (250, 500, or other durations) can be somewhat arbitrary. More importantly, we are concerned that trying out an alternative analysis because our original analysis did not yield significant results, may come close to “p-hacking”. Furthermore, Figures 5 and 7 show large variations across participants. Even if the proposed analysis shows significant results, these results should still be treated with caution.
+For all these reasons, we would like to transparently report the results from our originally planned analysis.
+_p10: missing ‘s’ after ‘participant’: “For this, participant completed multi-trial schedules”
+Reply
+:
+We have corrected this.

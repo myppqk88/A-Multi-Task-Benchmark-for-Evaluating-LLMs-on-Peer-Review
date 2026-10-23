@@ -1,0 +1,24 @@
+{
+  "task_id": "F153_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "综述分析过程透明度",
+    "研究定位与批判性分析",
+    "概念范围与纳入依据"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.manuscript_text",
+      "exact_quote": "Abstract\nThe interplay between work and non-work in academic settings has\nbeen the subject of extensive research, particularly in relation to worklife balance and work-nonwork conflict. However, much of this\nliterature has tended to overlook the specific dynamics of worknonwork boundaries. Moreover, while prior research has explored\ngeneral patterns of conflict and balance, it has not sufficiently\naddressed the unique pressures that academics face, such as high\nautonomy, irregular working hours,",
+      "role": "研究内容定位，不是缺陷金标签"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。"
+  ],
+  "revision_verification": "not_in_task",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

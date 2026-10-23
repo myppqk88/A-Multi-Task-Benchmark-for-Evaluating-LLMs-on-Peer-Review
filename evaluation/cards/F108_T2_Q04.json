@@ -1,0 +1,128 @@
+{
+  "task_id": "F108_T2_Q04",
+  "paper_id": "F1000:158087",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F108_T2_Q04/input.json",
+  "input_sha256": "5ee931a62eb0f28fe919df48acb2986a7a1088522732697007259db3d39900cf",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q04/input.json",
+      "source_sha256": "5ee931a62eb0f28fe919df48acb2986a7a1088522732697007259db3d39900cf",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "8. While including countries and educational levels as categories to describe the current state of\nSR in critical thinking instruction is useful, it would be beneficial to discuss the possible reasons for\nthese patterns. For example, why are critical thinking teaching reviews more or less prevalent in\ncertain countries?",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F108_T2_Q04/input.json",
+      "source_sha256": "5ee931a62eb0f28fe919df48acb2986a7a1088522732697007259db3d39900cf",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "RESPONSE: Thank you. We believe this is very interesting, but is beyond the scope of this\nreview and would require either speculation or a deep understanding of multiple countries\nand their sociocultural perspectives and values connected to critical thinking, media literacy,\nhealth literacy and/or trust in government for example",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "作者说明解释国家差异需跨国社会文化知识，超出本综述范围；这直接回应为何不展开原因分析。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理判断；若判部分充分，应指明必要而非想象的缺失。"
+    },
+    {
+      "id": "J2",
+      "judgment": "拒绝避免把描述性地域分布当成有证据的机制解释；并未提供新机制证据，也不应该被要求无依据补写原因。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理判断；若判部分充分，应指明必要而非想象的缺失。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。作者说明解释国家差异需跨国社会文化知识，超出本综述范围；这直接回应为何不展开原因分析。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能把未新增国家原因分析机械判不足，须处理合理范围限制。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：作者说明解释国家差异需跨国社会文化知识，超出本综述范围；这直接回应为何不展开原因分析。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能把未新增国家原因分析机械判不足，须处理合理范围限制。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。拒绝避免把描述性地域分布当成有证据的机制解释；并未提供新机制证据，也不应该被要求无依据补写原因。",
+      "high_score_conditions": [
+        "区分有根据的拒绝解释与证明国家差异成因；不要求执行另一项研究。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：拒绝避免把描述性地域分布当成有证据的机制解释；并未提供新机制证据，也不应该被要求无依据补写原因。"
+      ],
+      "boundary_2_3": "不能把未新增国家原因分析机械判不足，须处理合理范围限制。",
+      "boundary_3_4": "区分有根据的拒绝解释与证明国家差异成因；不要求执行另一项研究。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient为合理判断；若判部分充分，应指明必要而非想象的缺失。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分有根据的拒绝解释与证明国家差异成因；不要求执行另一项研究。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：拒绝避免把描述性地域分布当成有证据的机制解释；并未提供新机制证据，也不应该被要求无依据补写原因。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：区分有根据的拒绝解释与证明国家差异成因；不要求执行另一项研究。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient为合理判断；若判部分充分，应指明必要而非想象的缺失。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "不能把未新增国家原因分析机械判不足，须处理合理范围限制。",
+    "3_to_4": "区分有根据的拒绝解释与证明国家差异成因；不要求执行另一项研究。"
+  },
+  "source_unit": "focal_concern_response_independent_report"
+}

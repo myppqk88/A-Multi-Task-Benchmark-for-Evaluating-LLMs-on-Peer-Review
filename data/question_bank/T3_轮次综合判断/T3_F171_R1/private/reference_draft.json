@@ -1,0 +1,36 @@
+{
+  "task_id": "T3_F171_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "质性主题与证据",
+    "研究对象与外推",
+    "教师属性解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对新增teacher attributes and guidance主题及文化融入引文，区分重新组织分析与新增访谈数据。",
+    "36名两校教师的视角不能直接等同国际学生总体体验或执照考试因果效果，后稿的外推应与样本一致。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The study's objectives are clearly outlined and underscore the importance of investigating the\nacademic success of international medical students within Chinese universities. The direct\ninfluence of this success on licensing exams and future job prospects adds solid motivation for the\nresearch. Moreover, the study aims to address a noted research gap regarding the awareness of\nteaching-related fac",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nResponses to the comments from F1000 paper:\nReviewer #2\nComment: 1.The study's objectives are clearly outlined and underscore the importance of\ninvestigating the academic success of international medical students within Chinese\nuniversities. The direct influence of this success on licensing exams and future job prospects\nadds solid motivation for the research. Moreover, the study aims to address a noted\nresearch gap regarding the awareness of te",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "demotivated to teach international students because of a lack of emotional, material, and career incentives. Lacking\nincentives seems a prevalent phenomenon, as reported by other universities in different provinces in China—to name a\nfew, Liaoning Medical College (Ding, 2016), Three Gorges University (Zeng & Sheng, 2019), and Zhengzhou\nUniversity (Zhang, 2016). This problem was also found in a study in Sweden (Stenfors-Hayes, 2010). This suggests\nthat university policy makers need to be attentive to the opinions and needs of academics if they aim to formulate an\nappropriate reward system that can promote teaching quality for student success.\nThe finding concerning supervision and guidance for students and its effect on student success is new to the literature.\nChinese academics subconsciously assumed a parental role to discipline international students, which implies their\ncommitment to education. Moreover, moral and ethical education for international students during and outside lectu",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "teaching orthopaedics with more than ten years’ experience of teaching international students shared how he successfully\ndeveloped a good relationship with students by incorporating aspects of their culture into his class.\nOnce, as soon as I finished watching the Indian film Dangal, I quoted ten classic sentences in my slides to motivate\nmy students in class. They became very interested when they saw these quotes. “Wow, this is our Indian movie.”\nSometimes, I talk about my feelings about Nepalese festivals in class. They feel excited and think the teacher\nacknowledges their culture... If students like you, they will learn your course well. (P18)\nAn academic teaching anaesthesiology mentioned that those who taught clinical subjects generally knew less about their\nstudents, and thus they failed to establish a good rapport. This made their lectures seem rigid and lacking attention to the\nstudents as individuals. Those who taught clinical medicine suggested that universities should arrange",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

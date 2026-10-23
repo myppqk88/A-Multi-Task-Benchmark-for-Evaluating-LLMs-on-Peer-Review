@@ -1,0 +1,24 @@
+{
+  "task_id": "F001_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "回应称补便利抽样理由、招募来源、场所和评估时长/频率。文字上逐项对照这些要求；不能仅有“加强说明”就当已验证样本代表性。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The use of convenience sampling needs more justification (The source of participants, data collection settings, and method are unclear, and the duration and frequency of assessment need to be stated.",
+      "role": "作者信中完整所选原关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "We have provided a stronger justification for using convenience sampling, and clarified the recruitment process, specifying the participant source, data collection method, and setting. We also stated the duration and frequency of the assessment.",
+      "role": "完整对应作者答复"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

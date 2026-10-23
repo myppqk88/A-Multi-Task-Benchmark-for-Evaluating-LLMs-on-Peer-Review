@@ -1,0 +1,22 @@
+{
+  "task_id": "F152_T1_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "样本范围与合理不采纳"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.manuscript_text",
+      "exact_quote": "Abstract\nThis data note introduces an update to the widely-used Democratic\nElectoral Systems (DES) data that encompasses the period from 1919\nto 1945. The data include 243 legislative lower house and presidential\nelections in 34 interwar democracies. Information on these elections\nfalls into four categories: first and foremost, DES contains variables\nthat capture the institutional rules that define how elections are\norganized. Second, the data captures the consequences of electoral\nrules in the ",
+      "role": "研究内容定位，不是缺陷金标签"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。"
+  ],
+  "revision_verification": "not_in_task",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

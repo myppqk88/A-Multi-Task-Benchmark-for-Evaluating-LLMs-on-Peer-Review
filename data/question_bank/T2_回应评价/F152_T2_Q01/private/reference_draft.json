@@ -1,0 +1,28 @@
+{
+  "task_id": "F152_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "样本范围与合理不采纳"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The submitted article can be indexed as is, both structurally and substantively. However,\nconcerning the DES, I would like to make a suggestion. Some of the countries that do not appear\nin the database are democracies nowadays. It seems to me that following the evolution of their\n\n\n\n\nelectoral rules would contribute to a better understanding of the processes of democratization.\nThus, if DES can be supplemented with more European countries although if not defined as\ndemocratic in the examined period, it will have a greater contribution to the comparative politics.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "Dr. Daniela Pastarmadzhieva suggested to extend the DES 1919-1945 to countries which are\ndemocracies today but have not been democracies during the interwar period.\nResponse: We agree with Dr. Daniela Pastarmadzhieva that this would be interesting and\nrelevant. Unfortunately, we do not have the resources and time to extend the DES as of now\nbut will keep this suggestion in mind for future extensions.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留审稿人建议性质和作者资源、时间限制；T2不以采纳为充分的必要条件。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

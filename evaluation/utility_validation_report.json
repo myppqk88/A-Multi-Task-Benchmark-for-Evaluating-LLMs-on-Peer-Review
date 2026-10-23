@@ -1,0 +1,35 @@
+{
+  "scope": "Synthetic software fixtures only; no model outputs, benchmark grades, or human reliability estimates",
+  "aggregation_paper_weighting_passed": true,
+  "kappa_edge_cases_passed": true,
+  "invalid_score_rejection_passed": true,
+  "cli_checks": [
+    {
+      "script": "summarize_scores.py",
+      "expected_acceptance": true,
+      "passed": true
+    },
+    {
+      "script": "summarize_scores.py",
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "script": "summarize_scores.py",
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "script": "check_rating_agreement.py",
+      "expected_acceptance": true,
+      "passed": true
+    },
+    {
+      "script": "check_rating_agreement.py",
+      "expected_acceptance": false,
+      "passed": true
+    }
+  ],
+  "temporary_fixtures_deleted": true,
+  "models_evaluated": false
+}

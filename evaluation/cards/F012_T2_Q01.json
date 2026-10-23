@@ -1,0 +1,128 @@
+{
+  "task_id": "F012_T2_Q01",
+  "paper_id": "PeerJ:737",
+  "task": "T2",
+  "split": "provisional_formal",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/F012_T2_Q01/input.json",
+  "input_sha256": "5172337592f2e6211a2f6adfb484378ca31c4e447e4be9381469edced594eee7",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/F012_T2_Q01/input.json",
+      "source_sha256": "5172337592f2e6211a2f6adfb484378ca31c4e447e4be9381469edced594eee7",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Second, the concept of shame might be more explicitly defined and further distinguished from guilt in that the latter involves our own actions but shame is often internalized because of the actions of others (e.g., family member’s drinking) or simply status (e.g., poverty).",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/F012_T2_Q01/input.json",
+      "source_sha256": "5172337592f2e6211a2f6adfb484378ca31c4e447e4be9381469edced594eee7",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "Further explanation provided.",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "关切要求定义羞耻并区别内疚；Further explanation provided未给任一定义、区别或举例。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient；不应仅因承诺补解释判充分。"
+    },
+    {
+      "id": "J2",
+      "judgment": "评审所给自己行为/他人行为区别也只是其建议框架，回复未提供足以评估概念边界的内容，不能自动以该二分当完整理论真值。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "insufficient；不应仅因承诺补解释判充分。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。关切要求定义羞耻并区别内疚；Further explanation provided未给任一定义、区别或举例。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：明确缺定义与比较两项内容。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：关切要求定义羞耻并区别内疚；Further explanation provided未给任一定义、区别或举例。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：明确缺定义与比较两项内容。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。评审所给自己行为/他人行为区别也只是其建议框架，回复未提供足以评估概念边界的内容，不能自动以该二分当完整理论真值。",
+      "high_score_conditions": [
+        "不把一句修改声明当实际理论澄清，也不无依据断定羞耻只能由他人行为导致。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：评审所给自己行为/他人行为区别也只是其建议框架，回复未提供足以评估概念边界的内容，不能自动以该二分当完整理论真值。"
+      ],
+      "boundary_2_3": "明确缺定义与比较两项内容。",
+      "boundary_3_4": "不把一句修改声明当实际理论澄清，也不无依据断定羞耻只能由他人行为导致。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。insufficient；不应仅因承诺补解释判充分。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：不把一句修改声明当实际理论澄清，也不无依据断定羞耻只能由他人行为导致。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：评审所给自己行为/他人行为区别也只是其建议框架，回复未提供足以评估概念边界的内容，不能自动以该二分当完整理论真值。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：不把一句修改声明当实际理论澄清，也不无依据断定羞耻只能由他人行为导致。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "insufficient；不应仅因承诺补解释判充分。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "明确缺定义与比较两项内容。",
+    "3_to_4": "不把一句修改声明当实际理论澄清，也不无依据断定羞耻只能由他人行为导致。"
+  },
+  "source_unit": "focal_concern_response_author_letter"
+}

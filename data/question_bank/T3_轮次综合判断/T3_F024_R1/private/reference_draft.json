@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F024_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "测量与变量",
+    "结论外推"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者承认不能追补资助方要求、地理与职业阶段资料，并称修正代码本。不能强迫补采无法追回的信息，但应限制外推；核对新旧代码本及停止规则而非照“已更新”判断。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This research aims to gain insights into open science practices in six broad disciplinary areas by\nasking researchers about the potential to practice open science behaviours in relation to a past\nproject. Thirteen different open science behaviours are included, which give a comprehensive view\nof open science rather than just publishing related activities.\nThe rationale for the study is good and as",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you as well for the constructive comments. I will respond to your comments\nchronologically:\n1. We agree that it would have been interesting to have data on the mandates of\nfunders or institutions. Unfortunately, we can't collect this data a posteriori. However,\nthere is first evidence that mandates at the level of the research institution do not\nnecessarily have the greatest impact on researchers' open science practices. For\nexample, the e",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Table 2. Continued\nPublicly sharing data analyses\nResearchers make the procedure of the data analyses and their scripts (“code”) publicly available so that others are\nable to reach the same results as are claimed in scientific outputs.\n“Open Code/Open Script”\nPublicly sharing research data\nResearchers publicly provide the data generated in the research process free of cost and accessible so that if can\nbe used, reused and distributed provided that the data source is attributed.\n“Open Data”\nGenerating open educational resources\nResearchers produce and release teaching, learning and research materials in any medium that reside in the\npublic domain or have been released under an open license that permits no-cost access, use, adaptation and\nredistribution by others with no or limited restrictions. Open educational resources include full courses, course\nmaterials, modules, textbooks, streaming videos, tests, images, software, and any other tools, materials, or\ntechniques used to support acc",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "survey, access to the survey closed for participants from that discipline (“cell closed”). For two broad classifications we\nexceeded the stopping rule (Natural Sciences, Social Sciences), as cells only closed after the last participant from that cell\nfinished the survey, while further participants from that cell were still able to begin the survey (see Table 1). In addition,\nwe were only able to recruit 42 participants for the agricultural and veterinary sciences despite several postings on prolific.\nThis may not be surprising, since agricultural and veterinary sciences is a narrower field compared to the other broad\nclassifications. This is also the reason why the data collection is spread over a longer period of time. After the start of\ndata collection, participants of the other broad classifications could be collected within a few weeks. Due to the repeated\ninvitation of researchers from the agricultural and veterinary sciences, the period of data collection stretched out,\nunfortuna",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\n“Open science” is not a new term in the repertoire of academic disciplines, it has developed over the last several decades.\nHowever, what researchers understand by open science and which open science practices they refer to in particular varies\ngreatly between research projects. In some research projects, open science practices are closely related with aspects of the\nresearch paradigm’s philosophy of science (e.g., preregistration in critical rationalism), in other research projects, they are\nat odds (e.g., replicability in constructivism). Accordingly, the implementation of open science practices naturally varies\nin degree of implementation and stage of development. The purpose of this data collection was to reveal the extent to\nwhich subcommunities have emerged that share a common profile of implementing open science practices and how they\nare related to research paradigms and disciplines.\nMaterials and methods\nData collection protocol\nThe study was conducted as a cross-",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\n“Open science” is not a new term in the repertoire of academic disciplines, it has developed over the last several decades.\nHowever, what researchers understand by open science and which open science practices they refer to in particular varies\ngreatly between research projects. In some research projects, open science practices are closely related with aspects of the\nresearch paradigm’s philosophy of science (e.g., preregistration in critical rationalism), in other research projects, they are\nat odds (e.g., replicability in constructivism). Accordingly, the implementation of open science practices naturally varies\nin degree of implementation and stage of development. The purpose of this data collection was to reveal the extent to\nwhich subcommunities have emerged that share a common profile of implementing open science practices and how they\nare related to research paradigms and disciplines.\nMaterials and methods\nData collection protocol\nThe study was conducted as a cross-",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

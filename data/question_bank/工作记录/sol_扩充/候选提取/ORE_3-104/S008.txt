@@ -1,0 +1,42 @@
+Author Response to Review 4 (v1)
+Author: author
+Date: 
+============================================================
+
+We have corrected most issues the reviewer highlights, and added further explanation where things were not clear, as well as reformulated claims which were too strong/not quite in line with the results. We have also redone the plots to make them more color-blind friendly. There are a couple of things where we do not quite agree on with the reviewer's suggestions, or consider it to be for future work.
+
+Here the concrete points:
+
+* Regarding ways of calculating travel times/distances:
+
+-> There are, of course, many alternative methods to calculate travel costs over a surface with elevation differentials. The formula we use is just Pythagoras theorem, it assumes that to go between two adjacent points, one has to travel in a straight line between them (the hypotenuse). It effectively reduces a complex surface to a surface made up of triangles. The result is a distance that approximates the real total distance traveled. The quality of the approximation depends on the resolution of the DEM. There are alternatives using formulas that approximate walking times which look similar to what you propose. We chose this solution because it avoids having to justify some value for w, which will inevitably change depending on a multitude of factors like terrain unevenness, steepness, flora, etc..
+
+Testing travel time/travel cost metrics is an interesting idea we do plan to pursue in the future.
+
+* Regarding the suggestion of overlapping neighbors:
+
+-> Our guess is that the reviewer means something like what Kaiping did for the Americas? It’s an alternative method, but then you lose resolution for the distance between the neighbors. Depending on the purpose of the distance, that would make the calculation faster, but we already did most of the heavy lifting here. We are not sure that such an approach would help with higher resolution DEMs. Increasing DEM resolution even by a few arcseconds makes the data unmanageably large.
+
+* Regarding statistical testing of the tables:
+
+-> We’ve added sd to the tables but we’re not sure adding statistical testing would make much sense. We could add some credible intervals to the plot, but that would only clutter and, we believe, send the wrong message on what we’re trying to do with the paper. Proper, exhaustive comparisons of how these distances would require a whole different paper with a lot more tests.
+
+* Regarding randomly chosen phoneme inventories:
+
+-> The reviewer is correct. If one is interested in exploring some concrete linguistic question, then randomly choosing inventories might not be the best approach. However, we are only using these datasets as illustration of what can be done with our distances, and do not really think it is worth it to try to find the best dataset choices within phoible in this paper.
+
+* Regarding cutoff points:
+
+-> That’s precisely what we chose, phonemes which are neither too frequently present nor too frequently absent.
+
+* Regarding polygons and points:
+
+-> We agree. Languages are not points. Dealing with polygons is part of ongoing research by the first author, and it is still unclear how distances should be measured in such cases (from the centroid? on average? what about overlaps? etc.). But, however one wants to resolve that question, the technical question of how to then measure distances will be related to the methods we suggest here.
+
+* REgarding benchmarks and "controlling for":
+
+-> Well, technically, “controlling for” and “estimating” are the same thing when building a model. So when comparing model performance, if a distance produces better accuracy in a model like ours, it means it will ‘control for’ contact better, in the sense that it will capture a larger amount of variance due to spatial correlations. 
+
+-> In other words. Imagine you’re interested in feature F for some group of languages. You have two options, geodesic distances and topographic distances. If you test the distance metric on its own, topographic distances achieve an accuracy of 0.8 while geodesic distances an accuracy of 0.6. This means that topographic distances capture more information about the spatial distribution and spatial relations in your data.
+
+-> What we present *is* formal model comparison, we are just using acc as a metric. We could also use something like ELPD instead, which is often preferred for these types of models. The downside of ELPD is that it’s hard to interpret and not sound given the issues with walking distances and model sampling. This is the mean reason we think accuracy is a better choice in our case.

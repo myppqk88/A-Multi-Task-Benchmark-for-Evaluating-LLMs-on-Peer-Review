@@ -1,0 +1,86 @@
+F014_T2_Q01
+
+评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。
+本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。
+
+以下为完整题内材料和输出结构；相对图像路径须实际加载为图像，不读取private。
+
+{
+  "task_id": "F014_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "input": {
+    "comment_text": "I have read this article with great interest. I find this piece very well researched, structured and\nwritten. The article explores a relevant and timely issue, shedding light on important dynamics in\nthe governance of undocumented migration across the Mediterranean. As such, I am convinced\nthat this article makes an important contribution, especially by translating the existing findings\ninto clear policy recommendations.\nMy only concern represents the originality of findings vis-à-vis existing scholarship. In my opinion,\nthe real added valued of the findings presented in this article is that they are the result of a\ncomprehensive study, in which different aspects of the same phenomenon were considered\ntogether. Existing scholarship has already widely addressed the different stages of undocumented\njourneys and the various actors involved, but this has often been done in the context of separate\nstudies, specifically focusing only on one segment (e.g. on the decision to leave; on the decision to\nresort to a facilitator; etc.). What is innovative here is that all these aspects are considered\ntogether, and the whole trajectory is reconstructed.\nAlso in light of the scientific literature review conducted by the authors, I would recommend that\nthey explicitly engage with the most significant works that have dealt with the various aspects\naddressed in their article (e.g. the ethnographic studies conducted by Gabriella Sanchez, Luigi\nAchilli, Julien Brachet and Joris Schapendonk), also by shortly elaborating on how their findings\nsupport/refine/challenge previous research.\nI hope this suggestion can be of help to the authors and I congratulate them on their work.\nIs the work clearly and accurately presented and does it engage with the current literature?\nPartly\nIs the study design appropriate and is the work technically sound?\n\n\n\n\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nNot applicable\nAre all the source data and materials underlying the results available?\nYes\nIf applicable, is the statistical analysis and its interpretation appropriate?\nNot applicable\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+    "response_text": "\nDear reviewer, thank you very much for the precious time dedicated to providing\nfeedback on our manuscript. We are grateful for your extremely valuable and insightful\ncomments that led to possible improvements in the updated article. We have carefully\nconsidered them and incorporated in the new version of our article. In particular in the\nIntroduction we added several sentences where we engage more closely with a number of\nboth theoretical and empirical studies that deal with the various phases of undocumented\nmigration across the Mediterranean, trying to provide more details on the overall approach\nand goals that informed our study which can help to better situated the outcomes of our\nresearch as reflected in the subsequent parts. [closing signature omitted]",
+    "necessary_context": "意大利与地中海无证迁移的政策、访谈与生命史研究。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

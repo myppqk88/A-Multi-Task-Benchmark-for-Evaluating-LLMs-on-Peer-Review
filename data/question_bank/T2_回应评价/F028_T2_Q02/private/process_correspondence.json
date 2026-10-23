@@ -1,0 +1,63 @@
+{
+  "task_id": "F028_T2_Q02",
+  "paper_id": "F1000:13760",
+  "parent_task": "T3_F028_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F028_R1/input.json",
+  "parent_input_sha256": "c6e2cf54bc5c50de6492ba48ade1365593d0778b6fa7d773d657144a5e73e5a6",
+  "review_dimension_AI_candidate": "职业资格与概括边界",
+  "selection_scope": "保留作者全部回答及参考文献，不能把存在专业组织等同所有从业者胜任。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/13760_Improving_the_biomedical_research_literature__insights_from_authors__e/v1_manuscript.pdf",
+      "original_sha256": "c4b6c5224eea2a985878ebbb0dc7434a6c4a461870f4ed9d38a3f6f67987920b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F028_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        26261,
+        26874
+      ],
+      "report_id": "30325",
+      "date": "2018-02-05",
+      "raw_page_numbers": [
+        8
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/13760_Improving_the_biomedical_research_literature__insights_from_authors__e/v1_manuscript.pdf",
+      "original_sha256": "c4b6c5224eea2a985878ebbb0dc7434a6c4a461870f4ed9d38a3f6f67987920b",
+      "raw_text_file": "data/question_bank/T2_回应评价/F028_T2_Q02/private/S001_source.txt",
+      "source_span_cover": [
+        27731,
+        29508
+      ],
+      "report_id": null,
+      "date": "2018-02-19",
+      "raw_page_numbers": [
+        9
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 4407,
+    "end": 4942,
+    "exact_quote": "s.\nLike journal editors, authors’ editors are taking steps to critically\nevaluate and improve their working methods. A growing body of\nliterature9 facilitates knowledge transfer to colleagues in different\nsettings. PhD degrees have been awarded to authors’ editors for\napplied linguistics research based on their work practices in the\nNetherlands22, Spain23 and China (Luo24 and unpublished; available\nupon request). Continuing professional development for authors’\neditors is available through national and international associations\n",
+    "anchor_matches": 1,
+    "anchor": "working methods"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 4943,
+    "end": 5478,
+    "exact_quote": "s.\nLike journal editors, authors’ editors are taking steps to critically\nevaluate and improve their working methods, considering that,\nfor this profession too, there is no single agreed-upon academic\ndegree or CC-inspired training program. Among these efforts, a\ngrowing body of literature9 facilitates knowledge transfer to colleagues in different settings. PhD degrees have been awarded to\nauthors’ editors for applied linguistics research based on their\nwork practices in the Netherlands22, Spain23 and China (Luo24 and\nunpublished;",
+    "anchor_matches": 1,
+    "anchor": "working methods"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿正文明确该职业没有统一学位或CC培训标准，不仅在回信中声称添加。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

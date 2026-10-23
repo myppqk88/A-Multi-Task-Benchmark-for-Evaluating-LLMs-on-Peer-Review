@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F172_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与性别视角",
+    "模型选择",
+    "因果与政策解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称加强女性主义经济学和劳动力分割理论，核对其是否与变量、TFP性别分解和随机效应理由对应。",
+    "女性密集企业的生产率关联不能直接证明女性雇员导致效率提升，政策建议须尊重样本分类与行业覆盖限制。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The study “Productivity, Real Wages, and Gender: An Analysis of the Colombian Manufacturing\nIndustry” presents an adequate structure in relation to its objectives and the results obtained. It\nconcludes that companies with female employees show better productivity outcomes, positioning\nthis as a relevant and original study. However, there are several areas for improvement that\nshould be addressed t",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you for your comments and feedback on our manuscript. Next, we provide detailed\nresponses to each of your observations and describe how we have addressed them in the\nrevised version of the paper.\nComment 1: The literature review needs to be reinforced with a broader theoretical\napproach, clearly defining the frameworks that influence productivity.\nReply 1: We have substantially expanded the literature review to integrate a broader set of\nt",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nThe economic literature, particularly within the industrial organization, suggests that firm wages depend on several\nfactors, including firm size (Carlsson, et al. 2016), employee education and skills (Mincer, 1974; Schultz, 1961),\neconomic subsector (Suhányi, et al. 2023), geographic location (Méjean & Patureau, 2010), and the presence or\nabsence of unions (Card, et al. 2017). Nevertheless, productivity is the most critical factor influencing wages\n(Feldstein, 2008).\nBased on the neoclassical microeconomic theory, increases in labor productivity positively affect real wage growth in the\nlong-run (Mankiw, 2015). In line with this, industrial organization literature acknowledges that firm productivity\nsignificantly influences employees’ wages. Although empirical evidence supporting this hypothesis varies in strength\ndepending on the country and industries analyzed, productivity is widely recognized as a key determinant of wages,\nwhether at the individual or firm level (Meag",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "total factor productivity using the two-stage method proposed by Wooldridge (2009), and for the first time, we\ndisaggregate the workforce into male and female to obtain gender- a gender-specific productivity estimate rather than\nan aggregate measure of TFP as the tradition.\nIn this regard, we implement the methodology in two steps. First, we use the two-equation system proposed by\nWooldridge (2009) to obtain consistent estimates of input elasticities and unbiased TFP estimates. This system is jointly\nestimated under the Generalised Method of Moments (GMM) framework. As a novelty, we separate employees by\ngender to estimate TFP. Second, we implement a dynamic random effect generalized least squares model (GLS) with\npanel data to address endogeneity. Moreover, we also include industrial organization covariates, such as exports or\ninnovations, along with wage persistence; that is, firms with higher (or lower) wages in the past tend to continue those\nwage levels in the present. In addition",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Where lwit signifies the firms wages; findxq,r\nit\u00021 represents the female firm’s index with q ∈ continuous index and r ∈\ndichotomous index. Besides, lprod h,j,p\ndenotes firms productivity; with h ∈ full TFP; j ∈ TFP by gender; and p ∈ APL.\nit\nh,j,p\nSupported in Roberts and Tybout (1997), we introduce the term lprod it\u00021\nto capture firm’s wages persistence, that is,\nfirms with higher (lower) wages in the past; currently continue to show higher (lower) wages. In this sense, here\npersistence aims to capture potential gender discrimination. That is, it examines whether firms that paid lower salaries in\nfemale firms in the past continue to do so in the present.\nThe vector Zit\u00021 includes firm’s control variables according to industrial organisation. It includes the firm’s classification\nas SMEs (SMEs), to capture if a firm's size influences wages. In line with Schultz (1961), Mincer (1974), and others, we\nincorporate employee skills (skills) as a proxy for human capital, as higher levels of ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "research, the random effects model provides a more suitable framework for capturing the interaction between firm\nproductivity, workforce gender composition, and wage outcomes.\nResults\nTable 3 shows the estimates of the empirical modelling. Columns (1), (2), and (3) display TFP results for the full industry,\nfemale firms, and male firms, respectively. Columns (4), (5), and (6) present TFP results classified by workforce gender,\nwhilst the final three columns analyze the average product of labor (APL). Each scenario includes continuous and\ndichotomous indices for female firms and wage persistence.\nThe results are notable. Firstly, all productivity measures positively and statistically significantly impact firm wages.\nSecondly, the TFP measure without gender differentiation (first three columns) yields lower figures than the genderspecific TFP scenario (columns 4, 5, and 6). Thirdly, as we expected, in this latter scenario, the impact on male-dominated\nfirms is more significant than on fe",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

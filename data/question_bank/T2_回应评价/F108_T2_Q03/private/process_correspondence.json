@@ -1,0 +1,63 @@
+{
+  "task_id": "F108_T2_Q03",
+  "paper_id": "F1000:158087",
+  "parent_task": "T3_F108_R1",
+  "parent_input_file": "data/question_bank/T3_轮次综合判断/T3_F108_R1/input.json",
+  "parent_input_sha256": "495ac4ae2253e6dbfcce2ba623518a35365625102c1aa1a4e69abb7a2bf88a35",
+  "review_dimension_AI_candidate": "效应异质性与图表解释",
+  "selection_scope": "只评改图题的回应充分性；后稿是否仍误导另核，不预设已解决。",
+  "source_locations": [
+    {
+      "input_field": "input.comment_text",
+      "original_file": "data/originals/f1000/social_sciences/158087_The_effects_of_teaching_strategies_on_learning_to_think_critically_in/v1_manuscript.pdf",
+      "original_sha256": "1b6ae8ebaa66698b7ffd8946508dec516eb68cea46f8dff820ffd62752fed1fe",
+      "raw_text_file": "data/question_bank/T2_回应评价/F108_T2_Q03/private/S001_source.txt",
+      "source_span_cover": [
+        93321,
+        93658
+      ],
+      "report_id": "360693",
+      "date": "2025-02-22",
+      "raw_page_numbers": [
+        25
+      ]
+    },
+    {
+      "input_field": "input.response_text",
+      "original_file": "data/originals/f1000/social_sciences/158087_The_effects_of_teaching_strategies_on_learning_to_think_critically_in/v1_manuscript.pdf",
+      "original_sha256": "1b6ae8ebaa66698b7ffd8946508dec516eb68cea46f8dff820ffd62752fed1fe",
+      "raw_text_file": "data/question_bank/T2_回应评价/F108_T2_Q03/private/S001_source.txt",
+      "source_span_cover": [
+        104995,
+        105162
+      ],
+      "report_id": null,
+      "date": "2025-04-09",
+      "raw_page_numbers": [
+        29
+      ]
+    }
+  ],
+  "before": {
+    "input_field": "materials.manuscript_before.text",
+    "start": 43451,
+    "end": 44001,
+    "exact_quote": "\n\nUncertain\n\n40\n35\n30\n25\n20\n15\n10\n5\n0\n< 0.1\n\n0.1 - 0.29\n\n0.3 - 0.39\n\n0.4 - 0.59\n\n0.6 . 0.69\n\n> 0.7\n\nFigure 3. Average effect sizes from meta-analyses included in summaries of the most relevant teaching\nstrategies.\n\nTable 8. Bottom-line statements for the most relevant teaching strategies*.\nStrategy\n\nBottom line\n\nDidactic strategies\nDidactic strategies are instruction in which information is presented directly from the teacher or authors of\ninstructional material to the student, in which the teacher or authors selects the topic and controls what",
+    "anchor_matches": 1,
+    "anchor": "Figure 3. Average effect sizes"
+  },
+  "after": {
+    "input_field": "materials.manuscript_after.text",
+    "start": 43330,
+    "end": 43880,
+    "exact_quote": "\n\nUncertain\n\n40\n35\n30\n25\n20\n15\n10\n5\n0\n< 0.1\n\n0.1 - 0.29\n\n0.3 - 0.39\n\n0.4 - 0.59\n\n0.6 . 0.69\n\n> 0.7\n\nFigure 3. Average effect sizes from meta-analyses included in summaries of the most relevant teaching\nstrategies vary greatly.\n\nTable 8. Bottom-line statements for the most relevant teaching strategies*.\nStrategy\n\nBottom line\n\nDidactic strategies\nDidactic strategies are instruction in which information is presented directly from the teacher or authors of\ninstructional material to the student, in which the teacher or authors selects the topic and ",
+    "anchor_matches": 1,
+    "anchor": "Figure 3. Average effect sizes"
+  },
+  "process_check_code": "V",
+  "process_check_status": "已核可见文字或图示变化",
+  "observed_process_note": "后稿图题增加vary greatly；警示文字不自动消除异质效应比较误导。",
+  "scientific_sufficiency_label": null,
+  "expert_gold_label": null,
+  "not_for_T2_scoring": true
+}

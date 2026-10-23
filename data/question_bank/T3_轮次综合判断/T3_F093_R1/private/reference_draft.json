@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F093_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "样本与分析分母",
+    "数据共享概念",
+    "图表透明度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对195份完整问卷、73个有神经发育状况家庭的分组及词云图注是否一致；不要照录答复就认定分母已澄清。",
+    "区分共享接收方、共享形式和可更改同意的偏好，不能把对特定受控共享的支持外推为无条件公开儿童数据。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This article investigates parental opinions on data sharing in developmental science. This is an\nimportant and rarely addressed topic with clear implications for funders’ and publishers’ data\nsharing policy. Data is presented from 195 parents who responded to a survey designed by the\nauthors. The data suggests that parents are generally supportive of curated data sharing, with\nincreased willingnes",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nReviewer 2 comments: This article investigates parental opinions on data sharing in\ndevelopmental science. This is an important and rarely addressed topic with clear\nimplications for funders’ and publishers’ data sharing policy. Data is presented from 195\nparents who responded to a survey designed by the authors. The data suggests that\nparents are generally supportive of curated data sharing, with increased willingness to\nshare their child’s dat",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "running analyses on existing data. Further, the needs and wishes\nof participants are often not the primary focus of many efforts\nto improve transparency and visibility, in part because such\nefforts are often driven by researchers who are not working\ndirectly with the communities from whom data is collected.\nConcurrent with these efforts, there has increasing concern\nabout privacy, security and the values of those accessing\nresearch data. The introduction of GDPR legislation in Europe\nhas highlighted the need to provide a purpose for which personal information is shared or collected; in the context of\nresearch, any data linked to an individual through an ID is\nconsidered to be personal information. There is meaningful\nconcern that GDPR is hampering sharing of data for research\nor medical purposes far more than the use of data by companies that it was primarily designed to restrict (Vukovic et al.,\n2022). Widely publicised scandals such as the misuse of\nFacebook data by Cambridge Analyti",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "shown that parents are generally supportive of data sharing,\nbut with concerns around privacy, security and shared values\nbetween themselves and experimenters (Manhas et al., 2015).\nFor example, an interview study with 19 interviewees and\n18 focus-group participants selected from participants in an\nexisting birth cohort study found generally strong support for\ndata sharing (Manhas et al., 2016). However, the study found\nthat altruism has limits. Participants had remaining concerns\nabout privacy and security and some areas of divergence in\nopinion, including on sharing data with industry and the nature\nand composition of data access panels. Although one study\nindicated support for broad consent for data sharing (Manhas\net al., 2016), another indicated that families were much more\nlikely to refuse sharing for their child’s biological data than\ntheir own (Burstein et al., 2014) and would select restricted\nsharing options if given the choice (Burstein et al., 2014).\nIn a survey of families",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Variation by location and sector\nTrust and willingness to share data varied by key factors such\nas geographical location and sector. Overall, whilst 96%\nof parents said they would be happy to share their child’s data\nwith universities and research centres, only 17% of participants\nwould be happy to share their child’s data with private companies and industry. This lack of trust in the private sector\nhas been previously noted (Manhas et al., 2015) and indicates substantial barriers to collaborative projects that include\nindustrial partnerships. Further work is required to determine\nthe reasons for mistrust, but high-profile concerns around the\napproach of companies such as Cambridge Analytica (Berghel,\n2018) and mistrust of the profit motives of private companies\nand their contribution to (for example) the opioid crisis (Marks,\n2020) are likely contributory factors. Outreach events in which\ncompanies can discuss their approach to research with parents are important, as well as maintaini",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "published studies or press releases undermine these efforts\n(e.g., Feldman & Mann, 2019).\nOne point of note to the question of trust in organisations is\nthat parental ratings may well have been influenced by the\norganisation conducting the research. For example, it is possible that if parents are willing to take part in research for\ncertain organisations (in this case, completing questionnaires for a university), they may also be more willing to share\ntheir/their child’s data with the same type of organisations.\nAs such, it may be that we are observing a possible overestimation of trust in universities and research centres by virtue of\nthe sample that completed the questionnaire. Though, importantly, parents reported similar levels of trust in GPs and hospitals\nas that of universities (25% vs 32% of parents that trusted\nthe respective organisations completely with their child’s\ndata).\nGeographical location of a sharing partner was also relevant.\nAlthough 55% of this UK sample said they",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

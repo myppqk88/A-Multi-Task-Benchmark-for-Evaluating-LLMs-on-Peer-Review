@@ -1,0 +1,27 @@
+{
+  "task_id": "F014_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究贡献",
+    "访谈与编码透明度"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审重视相对既有迁移研究的原创增量；答复称引言补理论与经验文献。核对是否说明多阶段综合如何构成新增认识，不把增加引文等同证明原创性。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "I have read this article with great interest. I find this piece very well researched, structured and\nwritten. The article explores a relevant and timely issue, shedding light on important dynamics in\nthe governance of undocumented migration across the Mediterranean. As such, I am convinced\nthat this article makes an important contribution, especially by translating the existing findings\ninto clear",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nDear reviewer, thank you very much for the precious time dedicated to providing\nfeedback on our manuscript. We are grateful for your extremely valuable and insightful\ncomments that led to possible improvements in the updated article. We have carefully\nconsidered them and incorporated in the new version of our article. In particular in the\nIntroduction we added several sentences where we engage more closely with a number of\nboth theoretical and empirical studies that deal with the various phases",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

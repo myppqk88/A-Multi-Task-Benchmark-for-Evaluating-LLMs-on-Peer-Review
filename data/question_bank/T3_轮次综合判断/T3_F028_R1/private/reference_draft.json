@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F028_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "能力框架与范围",
+    "证据与回应",
+    "角色及时间对应"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "两份当轮评审均有2018-02-19完整答复；2018-01-26普通作者帖子早于相关报告，不能强配为其回复，已单列排除。",
+    "核对后稿对作者编辑能力边界、期刊语言标准与持续专业发展的可见改动；未同意所有建议不自动判文字回应不足。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "In this correspondence, two well-known European authors’ editors, Dr. Valerie Matarese and Ms.\nKaren Shashok, raise two very interesting points to enhance the core competencies (CC) list for\nbiomed journal editors in Moher et al (2017). They aptly argue that the perspective from authors\nis essential to define journal editor CC and thus inappropriate to be overlooked. Then they indicate\nthat author",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe concur with Dr. Luo’s understanding of language and writing in the current globalized\ncontext of research publishing, including some EAL scholars’ recourse to text re-use to\nproduce acceptable English. We also agree that suggestions by journal editors on where\nauthors could obtain help is a competency that researchers are likely to value, and have\nnoted this in version 2. Many journals already list commercial editing service providers on\nthei",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "and style (language editing), and appearance and format (e.g. compliance with journals’ instructions)9,11. In addition, many authors’\neditors train researchers in publication skills12–17 and help authors\nnavigate editorial processes18–21. Authors’ editors’ knowledge\nof the publication process and their close interactions with the\nproducers, distributors and consumers of research information\nmake them qualified to help define CC for journal editors and\nidentify deficiencies in current practices8.\nAuthors’ editors are often more familiar with researchers’ local\ncircumstances and challenges than journal editors are. Although\nthe writers of the consensus statement and their informants are\nthemselves researchers and therefore authors, they were perhaps\nnot representative of the wider population of “real-world”\nresearchers who have limited contact with English-speaking\nopinion leaders in biomedical publishing. In contrast, many\nauthors’ editors work with researchers whose first language is\nn",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Authors’ editors are often more familiar with researchers’ local\ncircumstances and challenges than journal editors are. Although\nthe writers of the consensus statement and their informants are\nthemselves researchers and therefore authors, they were perhaps\nnot representative of the wider population of “real-world”\nresearchers who have limited contact with English-speaking\nopinion leaders in biomedical publishing. In contrast, many\nauthors’ editors work with researchers whose first language is\nnot English or who are based outside the global North and West.\nFamiliarity with other languages and cultures gives authors’ editors\ninsights into the types of competencies researchers from diverse\ngeographical, cultural and linguistic backgrounds would value in\njournal editors.\nLike journal editors, authors’ editors are taking steps to critically\nevaluate and improve their working methods, considering that,\nfor this profession too, there is no single agreed-upon academic\ndegree or CC-inspired tra",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "In our experience, reviewers and journal editors increasingly cite\n“problems with the English” as a reason for rejection, even of\nmanuscripts free from language errors. Meanwhile, biomedical journals publish an ever-increasing proportion of articles that\nwere judged by reviewers to have “acceptable English” but which\ncontain awkwardly worded statements that defy comprehension\nand undermine reproducibility9(pp5–9). To avoid these problems,\njournal editors should be able to either provide authors with\nuseful feedback on the language (e.g. by endorsing or overruling\nreviewers’ complaints) or delegate this responsibility to an\nappropriately skilled reviewer or editorial staffer. Relying solely\non blanket “acceptable/unacceptable” assessments of the writing\ncontributes, in our experience, to cynicism among authors\nregarding the fairness and quality of peer review, and to the\nproliferation of poorly written articles. Although we realize that\nskills in “dealing with language issues” and knowl",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "plagiarism featured in two of the 23 highly ranked statements in\nthe Delphi process2. While working with authors on manuscripts,\nauthors’ editors sometimes encounter re-used text and inadequate\ncitation, and use these opportunities to explain why these\npractices may be inappropriate and how to avoid them25. But\nthese individual efforts are not enough to stop the global spread of\nplagiarism in published research, which journal editors may inadvertently facilitate if they do not check manuscripts carefully\nenough before publication. Journal editors should be able to\ninterpret the results of “plagiarism-detection” software and deal\nsensitively with the manuscripts these tools single out (as proposed by the Committee on Publication Ethics, publicationethics.\norg/files/u2/02A_Plagiarism_Submitted.pdf). Setting a maximum\nallowable percentage of text overlap, without considering the\ncontext of the non-original text, may send inconsistent messages\nabout appropriate and inappropriate text re-us",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

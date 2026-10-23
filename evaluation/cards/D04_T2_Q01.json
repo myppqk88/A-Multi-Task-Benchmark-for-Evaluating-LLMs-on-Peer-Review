@@ -1,0 +1,140 @@
+{
+  "task_id": "D04_T2_Q01",
+  "paper_id": "ORE:5-107",
+  "task": "T2",
+  "split": "development",
+  "unit": "single_concern",
+  "input_path": "data/question_bank/T2_回应评价/D04_T2_Q01/input.json",
+  "input_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T2_回应评价/D04_T2_Q01/input.json",
+      "source_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+      "locator": {
+        "json_pointer": "/input/comment_text"
+      },
+      "quote": "Coding (methods section)\n: You depart from grounded theory and the article of Saldaña 2021 to describe your open coding. Did you stop at this stage or have further steps of integration, like axial or selective coding, been employed? Consider adding some more information about how you developed a red threat or categories, i.e. broader topics emerging from single codes.",
+      "role": "当轮评审关切",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T2_回应评价/D04_T2_Q01/input.json",
+      "source_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+      "locator": {
+        "json_pointer": "/input/response_text"
+      },
+      "quote": "In the subsection 'data analysis' it is now explained that we undertook a second coding step following Saldana's axial coding process:\n\"Subsequent to open coding, we engaged in a second cycle of analysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we examined relationships among the codes, explored underlying patterns, and grouped them into higher-order categories. Through this process, it became evident that participants consistently described their activities in chronological sequences, structuring their accounts around distinct stages of tool development and dissemination.Based on this, we identified four phases of the tool development and dissemination process, as described in the consequent section of this paper. The 46 codes that were created during the previous analysis step were then assigned to one or more of the stages.\"",
+      "role": "作者当时回应",
+      "model_visible": true,
+      "reference_only": false
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "J1",
+      "judgment": "答复明确开放编码后进行第二轮轴心编码，考察代码关系并组织高阶范畴，回答是否停在开放编码。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；不得因未给原关切未必需的完整映射表而降分。不同判断须指出原关切必要且确未回答的信息。"
+    },
+    {
+      "id": "J2",
+      "judgment": "答复给出从受访者按时间叙述到四个工具开发传播阶段、46个代码分配到一个或多个阶段的路径；这比仅补术语有实质说明。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；不得因未给原关切未必需的完整映射表而降分。不同判断须指出原关切必要且确未回答的信息。"
+    },
+    {
+      "id": "J3",
+      "judgment": "仍没有展示完整代码—范畴表或具体案例，但原关切是补充整合过程说明，不宜无限追加新的审计要求。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "importance": "major",
+      "importance_reason": "直接决定该关切的文字回应是否完成及可支持的结论范围",
+      "status": "supported",
+      "acceptable_alternatives": "sufficient为合理主判；不得因未给原关切未必需的完整映射表而降分。不同判断须指出原关切必要且确未回答的信息。"
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "准确区分本题关切与作者实际说出的解释、声明和未给出的证据。答复明确开放编码后进行第二轮轴心编码，考察代码关系并组织高阶范畴，回答是否停在开放编码。",
+      "high_score_conditions": [
+        "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能仅凭出现axial coding术语给充分，需提到时间模式、四阶段与46代码映射。"
+      ],
+      "low_score_risks": [
+        "错认角色、捏造本题没有的数值/方法或把声称修改写成已验证。"
+      ],
+      "boundary_2_3": "从只转述主题到准确区分评审所问和回复所给具体内容：答复明确开放编码后进行第二轮轴心编码，考察代码关系并组织高阶范畴，回答是否停在开放编码。",
+      "boundary_3_4": "在事实引用准确基础上，不把回复内引用的评审话语、改稿声明或外链名称误当作者已展示的科学证据；核准本题关键边界：不能仅凭出现axial coding术语给充分，需提到时间模式、四阶段与46代码映射。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "逐项判断回应是否解决要求，不能把修改声明当作展示论据。仍没有展示完整代码—范畴表或具体案例，但原关切是补充整合过程说明，不宜无限追加新的审计要求。",
+      "high_score_conditions": [
+        "明确程序解释已满足核心要求，同时不把描述视为编码质量或实际执行独立验证。"
+      ],
+      "low_score_risks": [
+        "未建立关切要求与回应理由的对应：仍没有展示完整代码—范畴表或具体案例，但原关切是补充整合过程说明，不宜无限追加新的审计要求。"
+      ],
+      "boundary_2_3": "不能仅凭出现axial coding术语给充分，需提到时间模式、四阶段与46代码映射。",
+      "boundary_3_4": "明确程序解释已满足核心要求，同时不把描述视为编码质量或实际执行独立验证。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "只判当时回复文字充分性，revision_verification=not_assessed。sufficient为合理主判；不得因未给原关切未必需的完整映射表而降分。不同判断须指出原关切必要且确未回答的信息。",
+      "high_score_conditions": [
+        "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：明确程序解释已满足核心要求，同时不把描述视为编码质量或实际执行独立验证。"
+      ],
+      "low_score_risks": [
+        "评价程度超出本题理由，或断言修改已核验、科学主张已证实。"
+      ],
+      "boundary_2_3": "从笼统接受/否定转为与本题具体未完成要求相称的文字充分性结论：仍没有展示完整代码—范畴表或具体案例，但原关切是补充整合过程说明，不宜无限追加新的审计要求。",
+      "boundary_3_4": "结论明确限定于当时回应，不把要求落实与实际研究有效性混同；处理会影响结论的边界：明确程序解释已满足核心要求，同时不把描述视为编码质量或实际执行独立验证。"
+    }
+  },
+  "severe_error_checks": [
+    "以修订承诺或声称已修改推出实际修改已验证",
+    "以评审身份、礼貌、批准或字数替代本题充分性理由",
+    "用后稿或后评审填补本题回应中缺失的论据"
+  ],
+  "read_scope": {
+    "read": [
+      "本题完整comment_text与response_text，逐题判断"
+    ],
+    "not_read": [
+      "不为T2调用后稿、后评审、外链或图像"
+    ],
+    "verification_limits": [
+      "仅文字充分性；没有核实作者所称修改、分析数值或引文原文。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "adequacy_reference": {
+    "acceptable_alternatives": "sufficient为合理主判；不得因未给原关切未必需的完整映射表而降分。不同判断须指出原关切必要且确未回答的信息。",
+    "revision_verification": "not_assessed"
+  },
+  "middle_boundary": {
+    "2_to_3": "不能仅凭出现axial coding术语给充分，需提到时间模式、四阶段与46代码映射。",
+    "3_to_4": "明确程序解释已满足核心要求，同时不把描述视为编码质量或实际执行独立验证。"
+  },
+  "source_unit": "T2_response_only"
+}

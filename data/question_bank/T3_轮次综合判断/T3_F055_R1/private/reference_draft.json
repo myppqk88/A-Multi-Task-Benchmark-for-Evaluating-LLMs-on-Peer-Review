@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F055_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "指标定义与计算",
+    "理论与文献"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者声称删除成本比率、只留FTE指标；须核对后稿公式、分母和文字，不能仅凭新增引文认定计算透明。",
+    "文献更新与多方治理的后续研究建议不同于新增效果证据；核对逻辑模型适用范围。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "An overview of the article:\nThe Logic Model can be used to design and execute performance management systems (PMSs) in\nexport promotion agencies, as outlined in the article \"Logic model-based performance\nmanagement systems for export promotion agencies.\" The article demonstrates how the Logic\nModel enhances accountability, transparency, and adaptive management while drawing on\nseveral case studies",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nWe thank the reviewer for their encouraging and constructive review. Below, we outline\nhow we have addressed the points for improvement.\nComment: Expand interaction with recent research in export promotion and public sector\nperformance management (last 3–5 years).\nResponse:\nWe have significantly enriched the manuscript’s literature review by incorporating recent\nsources (2021–2025), including:\nBauer & Greiling (2024) on public sector sustainabil",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The findings highlight that while some EPAs, particularly at the\nnational and European levels, have advanced in structuring their\nPMSs around the Logic Model principles, others, especially\nat the regional and provincial levels, continue to rely on more\ninformal, output-focused approaches. Institutional factors such\nas funding stability, external accountability pressures, human\nresource capabilities, and evaluation culture significantly influence the adoption and sophistication of PMSs (Hatry, 2006;\nPollitt & Bouckaert, 2011; Poister, 2015).\nAt the same time, the research confirms that applying the Logic\nModel in the export promotion field presents specific challenges, particularly regarding the attribution of outcomes, the\nmeasurement of soft and relational results, and the long-time\nframes needed for export development impacts to materialize\n(Freixanet, 2012; Rose, 2007). The experience of the regional\nEPA belonging to a network shows that these challenges can\nbe mitigated through str",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "First, how are PMSs designed in EPAs?\nThe findings show significant variation in sophistication and\nformality across agencies. National and European-level EPAs,\noperating under strong accountability requirements and with\naccess to stable resources, have advanced in structuring their\nPMSs around the Logic Model principles (Hatry, 2006;\nMcLaughlin & Jordan, 2015; Poister, 2015). In contrast, regional\nand provincial agencies often rely on output-focused measurement systems along with informal practices. Nonetheless, the\nLogic Model proved to be a coherent and flexible methodology for linking resources, activities, and outcomes, while also\nencouraging strategic learning and stakeholder engagement\n(Coryn et al., 2010).\nSecond, how can PMSs be particularised to the needs\nand realities of EPAs using the Logic Model framework?\nThe case studies demonstrate that successful PMS implementation depends on a set of enabling conditions. These include:\n(i) stable and long-term funding frameworks, (ii)",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "The regional EPA belonging to a network case illustrates both\nthe potential and the limitations of Logic Model-based PMSs\nwhen applied to complex business support networks. The network’s node structured client journeys, personalized action\nplans, and multi-level monitoring practices represent best practices in aligning service delivery with strategic objectives.\nHowever, even within the network, challenges persist in standardizing performance indicators across diverse contexts, capturing soft outcomes, and attributing results in multi-causal\nenvironments.\nIn light of these challenges, this study emphasizes the urgent\nneed for further research focused specifically on PMSs in business support networks. As many researchers noted (Costumato,\n2021; Herranz, 2010; Radnor & Barnes, 2007), the application of performance management in networked environments\nintroduces additional complexities compared to traditional hierarchical organizations. Coordination among diverse actors, harmonization of ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Future research should address several priority areas. First, more\nwork is needed on how to adapt Logic Models to multi-actor\ngovernance (Costumato, 2021; Herranz, 2010). Research could\ninvestigate methods for developing shared theories of change\nacross network partners, ensuring alignment while respecting\norganizational diversity (Pollitt & Bouckaert, 2011).\nSecond, there is a critical need to develop and validate indicators that can capture soft, relational, and knowledge-based outcomes, which are often the first observable effects of export\npromotion services (Freixanet, 2012; Freixanet & Churakova,\n2018). In addition, future studies could expand data collection to build a comparative table of KPIs, ratios, and indicators.\nThis would make differences in PMS formality and orientation\nclearer, revealing how agencies vary between basic activity tracking and more advanced outcome or efficiency measures, and\nclarifying the role of the Logic Model in shaping performance\nmanagement maturit",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

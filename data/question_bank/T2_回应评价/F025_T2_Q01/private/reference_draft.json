@@ -1,0 +1,27 @@
+{
+  "task_id": "F025_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "参与者与抽样",
+    "工作坊分析"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称明确SPPI工具/方法映射目标并细化漏斗分析，同时将欧洲以外适用性留待后续。核对研究目标、材料到建议的推导与外推边界，不把参与人数多当机制成立。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "The article proposes a structured approach for rethinking science-policy-practice interaction\n(SPPI) to support transformative sustainability research and innovation in Europe. The authors\ncombine insights from a large set of workshops and activities (~300 participants across 20+\nEuropean countries) with a “funnelling” analytical process to identify key challenges, gaps, and\nopportunities in SPPI ",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you for the insightful and constructive review. We have revised the manuscript based\non the advice. The revisions include several additions and clarifications addressing the\nreview comments.\nFurthermore, some overlapping or wordy expressions have been removed or shortened to\nkeep the manuscript concise. Please find point-by-point responses below.\n1. Response: As rightly pointed out, the aim of the study should have been more clearly\nstated. We have reformulated the aims statement in the s",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

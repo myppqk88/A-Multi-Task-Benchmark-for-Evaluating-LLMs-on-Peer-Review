@@ -1,0 +1,28 @@
+{
+  "task_id": "F108_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "发表偏差与灰色文献"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "3. Does the overview account for publication bias, particularly with studies that remain\nunpublished? If not, this should be acknowledged in the limitations section. Additionally, it would\nbe useful to discuss whether and how the inclusion of grey literature could alter your findings.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "RESPONSE: Thank you. We have added the following limitation under the Discussion section\n“We did not consider publication bias in the included reviews. It is uncertain whether\npublication bias affected the results of the included reviews. To the extent it did, the results\nmay overestimate the effects of the interventions.”\nERIC and Education Research Complete include some grey literature. We did not otherwise\nconduct any specific searches for grey literature. The detailed search strategies are in\nAppendices A and B.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "完整保留可能高估、两库含部分灰文献和未专门检索的限定。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}

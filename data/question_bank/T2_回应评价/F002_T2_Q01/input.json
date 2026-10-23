@@ -1,0 +1,80 @@
+{
+  "task_id": "F002_T2_Q01",
+  "condition": "T2_response_only",
+  "unit": "complete_report_response_bundle",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。\n本题原关切为一份评审报告的完整实质要求，作者答复为该报告下给定的完整答复帖子。请逐项评价覆盖，不把整份报告误当一个原子要求。",
+  "input": {
+    "comment_text": "The article develops a materialist perspective to consider the socio-political relations through the\nethics of Artificial Intelligence (AI). Against the ideological discourses of AI promoters (immaterial\nnarrative), the authors adopt a realist position based on attention to context.\nThey emphasize the fact that the ethics of AI is always to be remade according to social, political\nand environmental aspects. In order to improve the ethics of AI, they suggest shifting from a topdown ideological approach to a bottom-up materialist approach.\nThe main merit of the article is therefore to highlight the ineffectiveness of abstract \"ethical\"\nprinciples promoted by AI industry. However, the article takes the form of a statement of intent\nrather than a useful tool for implementing a new AI ethics.\n1. The exhaustive list of “practical recommendations”, at the end of the article, suffers from\nthe same defect as abstract and formal theories of ethics: it proposes a list of moral\nprecepts and recommendations (ensure diversity, inclusion of social scientist, take into\nconsideration the environmental impact...) without methods of implementation. The\nauthors are, in a way, victims of what they denounce.\n2. The ethics of care is invoked as a guarantor of effectiveness against discrimination and\nconcentration of power, but it is not explicitly detailed as a pragmatic way to adapt AI ethics\nto concrete contexts.\n3. There is no specific evidence in the article demonstrating the relevance of materialist ethics\nor ethics of care to improving the practices of data science, data-driven decision making, AI\ndesign or social applications of AI. How do we make ethics an implemented capability in the\npractice of citizens, engineers and organizations developing and using AI?\nIn order to improve the article, I suggest that the authors:\n1. Explain more specifically how to implement the “practical recommendations” through\neffective ethical capabilities in the design and use of AI. This includes case studies that\n\n\n\n\ndemonstrate the relevance of these recommendations to ethically improving decision and\naction in context.\n2. Detail the pragmatic basis and method of their materialist perspective by considering what\nthe practice of ethics is in an AI application setting.\n3. Clarify the need for interdisciplinarity to improve the design and adaptation of AI to diverse\nsocial and cultural contexts.\n4. Indicate which disciplines and methods are most relevant to participate in this heuristic\ninnovation.\nIs the topic of the essay discussed accurately in the context of the current literature?\nYes\nIs the work clearly and cogently presented?\nYes\nIs the argument persuasive and supported by appropriate evidence?\nNo\nDoes the essay contribute to the cultural, historical, social understanding of the field?\nPartly\n",
+    "response_text": "\nMany thanks for the detailed review and comments. Please find below a response to each of\nthem. On the first 3 comments:\n1. There might be some confusion regarding the scope of this article. We added a note\non Endnote 50 to clarify and hope that this helps sort this out.\n2. We are not sure what might have given the impression that we ‘invoke’ the ethics of\ncare as ‘a guarantor of effectiveness against discrimination and concentration of\npower’. The contribution of the ethics of care here is that it makes it possible to\napproach the ethics of AI differently from the currently dominating approach which is\ncharacterised by “principlism”. The ethics of care gives theoretical tools to challenge\nthis dominant approach and to develop a new approach (new approach that is then\n\n\n\n\ncomplemented by more practical recommendations). As indicated in the paper, we\nsee the ethics of care as having ‘developed resources to move beyond the principled\napproach to ethics’, and the ‘view from nowhere’ that characterizes this approach. We\nsee value in the ethics of care as it invites to ‘pay closer attention to relations of power\nand inequalities.’\n3. This comment might relate to the overall objective and scope of this article. The main\nobjective of this article is twofold: 1. Critically present the current landscape of AI\nethics and where/how we think it might be failing/ineffective (this is done in 1st\nsection). 2. Provide a different approach to thinking about the ethics of AI (through\nethics as attention to context) (this is done in the 2nd section). The Practical\nrecommendations at the end highlight some practical steps to operationalise this\ndifferent approach to ethics. Hence, we believe we started looking into the\nimplementation of this approach in this last section; however, it is not the core\nobjective of this article and is therefore not developed further. Developing this\nfurther would require another article, that could draw on the theoretical foundations\nlaid down in the present article.\nRegarding the suggestions to improve the article: Points 1 and 2: Here too, we see this as\nbeing outside the scope of this article. We trust the responses above will help clarify the\nscope. A case study would certainly be highly valuable but falls outside the scope of the\npresent article. Points 3 and 4: We are slightly unsure what the suggestions are about and\nwhat they try to achieve. The article is interdisciplinary and draws from philosophy, ethics\nand social sciences (as made obvious in this paper). It also draws from discussions with\nexperts coming different disciplines consulted as part of the SIENNA Horizon 2020 project,\nas explicitly stated in the paper. Hence, we do not see the need for further clarifications on\nthis in the article.\n",
+    "necessary_context": "AI伦理、权力与社会不平等的规范性社会科学论证。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}

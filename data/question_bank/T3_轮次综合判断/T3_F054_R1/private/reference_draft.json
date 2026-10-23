@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F054_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "培训评价设计",
+    "参与者与测量",
+    "效果主张"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对作者逐点答复中对培训设计、对象、评价工具的澄清是否在后稿出现。",
+    "参与者偏好不同培训模块只能支持体验差异，不能直接证明能力提高或培训的因果效应。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "The manuscript presents the design, implementation, and evaluation of a fast-track training\nprogramme developed within the Horizon 2020 VITALISE project, aimed at enhancing researchers’\ncompetencies in Living Lab methodologies. The topic is relevant and timely, particularly in the\ncontext of European research infrastructures, user-centred innovation, and Responsible Research\nand Innovation (RRI).\n",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you very much for your thorough reading of the manuscript and\nyour suggestions. We have made the necessary changes to the manuscript and have\nprovided a point-by-reply below.\nReviewer: The manuscript presents the design, implementation, and evaluation of a fasttrack training programme developed within the Horizon 2020 VITALISE project, aimed at\nenhancing researchers’ competencies in Living Lab methodologies. The topic is rel",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "of tailoring the content and delivery of the program to learners’ levels of expertise is acknowledged. However, given that\nLiving Labs have faced challenges in economic sustainability\n(Fauth et al., 2024; Paskaleva & Cooper, 2021), careful attention\nmust be paid to the cost-effectiveness of the FTT program.\nA significant challenge in the effective implementation of\nLiving Labs lies in the lack of unified evaluation frameworks,\nwhich has been widely recognized in the literature (Chen\n& Chou, 2010; Kovács, 2015). A set of harmonized criteria for\nLiving Lab evaluation have been recently proposed and put into\npractice by ENoLL (Vervoort et al., 2022). Aligning the training aspects and modules with these criteria is crucial for the systematic advancement of Living Lab research. The FTT program\npresented in this study incorporates training components that\nemphasize not only the theoretical foundations but also practical aspects such as governance, participant engagement, and\nmethodological a",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Participants also differed in which specific training blocks they appreciated most, which illustrates that not all participants\nhad the same needs in terms of training. These findings underscore the importance of offering flexible and tailored\ntraining programs that address both fundamental knowledge and practical application, ensuring relevance to the diverse\nneeds of researchers in Living Lab environments. For example, while the introduction to Living Labs received the highest\nrelevance scores before the training, it received a lower relative preference post-training since it was also the block that\nmost participants selected to remove when they had to. This appears to relate to the fact that this is the most general block\nand other blocks will extend insights from this block hereby potentially making it somewhat redundant when the\ncomplete training is provided. This ‘on demand’ choice of training blocks based on the researcher’s needs was very much\nappreciated. To enhance the traini",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Over the last decades, Living Labs have emerged as resilient research infrastructures and facilitate the transition from\nresearch outcomes to market implementation (Fauth et al., 2024;\nLeminen & Westerlund, 2016). Living Labs can be defined\nas open innovation ecosystems in real-life operational environments which put citizens and/or end-users at the centre of the\ninnovation process (European Network of Living Labs, 2025).\nThey promote a systematic user co-creation approach that\nintegrates research and innovation activities in communities and/or multi-stakeholder environments. Beyond their role\nas co-creation environments, Living Labs act as orchestrators\nwithin regional innovation ecosystems, facilitating collaboration across stakeholders and aligning innovation activities with\nsocietal challenges (Fauth et al., 2024). These ecosystems reflect\nthe principles of the Quadruple Helix innovation model, where\ncollaboration between academia, industry, government, and civil\nsociety drives kno",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "reflection to connect learnings to prior understanding, supporting knowledge through reflection, and helping students\napply the knowledge (Kang et al., 2022).\nHowever, trainee profile can influence learning. Students and practicing professionals differ in baseline competence,\nmotivation, and opportunities to apply skills, which affects both learning and transfer to practice (Blume et al., 2009).\nAdditionally, as (digital) innovations become embedded in routine healthcare, there is growing recognition that\nhealthcare professionals need competencies that go beyond adoption, including co-design and participatory approaches\nthat account for workflows and organisational context (WHO, 2021; Greenhalgh et al., 2017).\nHowever, students in healthcare disciplines (e.g., nursing, healthcare management, occupational therapy) are rarely\nexposed to participatory design methodologies during their education. Therefore, training initiatives must extend beyond\nstudent education to include active researc",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

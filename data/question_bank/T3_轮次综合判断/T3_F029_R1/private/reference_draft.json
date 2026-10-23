@@ -1,0 +1,41 @@
+{
+  "task_id": "T3_F029_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "理论与概念",
+    "媒介与记忆解释"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者称删media theory/medium theory区分、重写引言并提前说明遗忘论点。核对概念连贯性及理论主张强度，不强求理论文章做不适用的经验试验。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "This article is an important intervention into the topic of the digital turn. It is an extremely rich\npaper. It is well-grounded theoretically and addresses the digital turn in an original and\ninteresting manner.\nThe author opposes Hosking’s idea that digital memory is a new form of memory that represents\nthe end of collective memory. Whereas the idea of a digital “turn” of memory studies implies ",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nThank you very much for your helpful comments and valuable suggestions. Following your\nremarks, I have made the following changes:\nI have removed the paragraph about the distinction between media theory and\nmedium theory. Following your insightful remarks, I think that this distinction\ndeserves a separate section, and I have chosen to rewrite the introduction to clarify\nmy argument instead of delving into the debate on the status of the digital ",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Digital memory is not a new form of memory and, far from representing the end of collective memory, it materializes and\nputs into practice the characteristics with which we have\ndefined collective memory since the inception of the field.\nIn fact, we could argue that what we have always advocated\nabout collective memory finds its true realization in the digital\nera.\nBut before presenting the arguments that support my hypothesis,\nI would like to clarify what I understand by digital memory\nand in what sense I affirm that this memory is not new.\nTo clarify the meaning of digital memory, it is helpful to recall\nthe distinction between ‘medium theory’ and ‘media theory’.\n‘Medium theory’ focuses on the medium as a material communication channel, while ‘media theory’ emphasizes the notion\nof medium as a social practice. The different approaches of\nboth theories correspond to two different ways of understanding a medium. As Baetens asserts, “In the narrow sense of the\nword, a medium is a channe",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Maurice Halbwachs laid the foundation in the field of\nmemory studies by theorizing the existence of a collective\nmemory —shared representations of a common past— that\nguides our understanding of the present. However, despite the\nconsensus that Halbwachs occupies a foundational place, the\nconcept of collective memory inherited from Halbwachs has\nbeen criticized for its imprecision, stemming from its disembodied, homogeneous, and abstract conceptualization of the\nsocial. The digital era represents an exceptional opportunity to\nrethink the conception of the social inherited from Halbwachs\nbecause it reveals that an organic, homogeneous, and stable\ncommunity associated with a specific territory and defined in\ngenerational terms does not adequately describe ‘the social’\nas it manifests today. Does this mean that we need to abandon\nthe term collective memory? No. The term collective\nmemory defines the social, cultural and political dimension of\nshared memory that goes beyond the individual. ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "bytes involves its translation into protocols and codes that are\nthen updated again when we request the image or text to read it\nthrough the interface. The dynamism of digital objects lies in\nthese algorithmic operations formed by constant regenerations, updates and affordances. Archives are “dynamic living\nsystems, constantly transformed and updated” (Røssaak, 2017,\n202–4). Or as Blom puts it: “The conflation of memory with\nstorage is, in other words, undermined by a technical emphasis\non dynamic processes of memorizing. To the extent that computer memory exists, it is essentially activity; virtual as well\nas actual, and its images are electronic events (Blom, 2017, 12).\nSecondly, the archive as place. The spatial arrangement of\nan archive within a public building has been replaced by the\n‘placelessness’ of documents distributed along multiple sites.\nDigital memories are often perceived as ‘placeless’, meaning\nthat one notable change brought about by digital media is the\ndiminished co",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "interpretation. However, in the present era, this connection fades\naway, leading to memories that are fluid, detached, fragmented,\nand omnipresent, constantly shifting without precise spatial\nreferences. The loss of a meaningful bond with place connotes,\nin this imaginary, a loss of meaning, given the centrality that\nthe category of place plays in the shaping, preservation, and\ntransmission of collective memory. The idea of placelessness\nis linked to the changing traits of the archive and the database as the privileged cultural forms of the digital era. The\nnotion of the traditional archive as static, selective, organised,\nand restricted to a particular place, has been replaced by a\ndynamic, non-selective, and multimedia online archive, whose\nlogic is fluidity and ubiquity, and which is always ‘in becoming’\n(Mandolessi, 2021)\nHowever, this imaginary has been questioned by highlighting\nhow digital memory practices actively engage in place-making,\nrather than succumbing to the logic of h",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

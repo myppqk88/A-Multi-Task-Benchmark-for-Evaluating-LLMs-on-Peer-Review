@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F106_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "研究目标",
+    "方法与分析透明度",
+    "承诺与实际修改"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "作者回复主要是感谢并承诺改进，不等于没有回复，也不等于已逐项解决；实际修改须直接比较后稿。",
+    "核对摘要目标标题、情感地理框架和分析程序的改写；文字重复减少不同于方法充分性增强。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Dear reviewer, \nHere are some suggestions to make the article clearer, more objective, and of excellence:\nAbstract\nThe objectives of the study should be more explicitly stated in the summary, as they are currently\ndiluted between the \"Context\" and \"Method\" sections, and there should be a specific heading –\n\"Objectives\".\nIntroduction\n- Rewrite the underlined text to avoid repeating \"Hargreaves, 200",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\n\n\nFamala Eka Sanhadi Rahayu\nThank you very much for your suggestions. I will definitely make an improvement based on\nwhat you suggested.\n",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Introduction\nTeacher education can mold the personalities of a nation’s future generations. Therefore, high-quality teacher education\naims to develop qualified, competent teachers in order to shape a country’s education future, which requires relevant\nteacher education courses that build and strengthen teacher competencies. One such program is a practicum, which is a\nrequired teacher education component from which preservice teachers can acquire professional growth and apply\ntheoretical learning to practical situations (Hascher & Hagenauer, 2016). Preservice teachers refer to teaching candidates\nenrolled in post-secondary education-related degree programs who are receiving their initial training before practicing\nand have not yet taught in a classroom (Milner et al., 2003). In Indonesia, preservice teacher practicums are defined under\nthe Ministry of Research, Technology, and Higher Education Regulation No. 55 of 2017 on Teacher Education\nStandards, paragraph 9, which states that all t",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Introduction\nTeacher education can mold the personalities of a nation’s future generations. Therefore, high-quality teacher education\naims to develop qualified, competent teachers in order to shape a country’s education future, which requires relevant\nteacher education courses that build and strengthen teacher competencies. One such program is a practicum, which is a\nrequired teacher education component from which preservice teachers can acquire professional growth and apply\ntheoretical learning to practical situations (Hascher & Hagenauer, 2016). Preservice teachers refer to teaching candidates\nenrolled in post-secondary education-related degree programs who are receiving their initial training before practicing\nand have not yet taught in a classroom (Milner et al., 2003). In Indonesia, preservice teacher practicums are defined under\nthe Ministry of Research, Technology, and Higher Education Regulation No. 55 of 2017 on Teacher Education\nStandards, paragraph 9, which states that all t",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "These late student episodes made the GPSTs feel that teachers should be rigorous when abiding by class regulations and\nthat students should understand the implications of their tardiness and its effect on class activities. Consequently, the\nGPST participants chose to enforce stringent time limits and advised students that they would be unable to follow the class\nif they arrived late (Prasetyarini et al., 2021). Therefore, the GPSTs discovered that tight classroom regulations were\nnecessary to ensure student punctuality.\nThe GPSTs felt moral distance when their aims differed from those of the students. Teachers may encounter student\nignorance, excessive noise, silence (Ragawanti, 2015), and even poor behavior (Karunagaran & Saimin, 2019). The\nGPSTs said that they experienced feelings of moral distance when they observe that students’ attention was more focused\non their phones than on their lessons, which they felt was disrespectful behavior. They admitted to being enraged,\nagitated, and",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Limitation and implication\nThe study has several limitations. First, the sample was drawn from one class of master’s degree students, resulting in a\nrelatively homogeneous group that may not capture the full variance of emotional experiences. Second, data collection\nvia Zoom introduced challenges (e.g., poor internet connectivity) that occasionally led to misunderstandings during\ninterviews, rendering some responses partially unusable. Consequently, future research should adopt a mixed-method\napproach—beginning with a survey followed by face-to-face interviews—to capture a broader range of experiences and\nclarify responses immediately. Additionally, further studies should explore the coping strategies (self-regulation)\nemployed by graduate preservice teachers to provide richer insights into their professional development. On the basis\nof this constraint, the researchers suggest that future studies conduct face-to-face interviews with the participants in order\nto clarify any misconcepti",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

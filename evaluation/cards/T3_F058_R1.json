@@ -1,0 +1,528 @@
+{
+  "task_id": "T3_F058_R1",
+  "paper_id": "ORE:5-65",
+  "task": "T3",
+  "split": "provisional_formal",
+  "unit": "revision_cycle",
+  "input_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+  "input_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+  "evidence": [
+    {
+      "id": "E1",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/reviews/R1",
+        "text_span": [
+          0,
+          3205
+        ]
+      },
+      "quote": "This manuscript makes a significant and timely contribution to the ongoing discourse on utilizing\nlarge language models (LLMs) for preventing and countering violent extremism (P/CVE). Through\nthe qualitative analysis of its responses to 50 pre-designed prompts, this study evaluates Copilot\nas a recommender system, providing valuable insights into its potential to enhance evidencebased policy and practice within the P/CVE field. Overall, the manuscript is well-written and\ncontributes meaningfully to the ongoing conversation on AI-assisted decision-making in P/CVE.\nThat said, I have a few minor suggestions that could further refine the manuscript:\n1. The authors assert that \"limitations such as ‘bullshitting’ and hallucinations in early AI\ndevelopments (Zhao et al., 2023) are no longer a primary concern.\" However, recent\nresearch (e.g., Steyvers et al., 2025) continues to demonstrate that hallucinations remain a\nsignificant issue and that users tend to overestimate the accuracy of LLM-generated\nresponses. Given these findings, I would caution against the claim that hallucinations are no\nlonger a primary concern. (see: Steyvers, M., Tejeda, H., Kumar, A. et al. What large\nlanguage models know and what people think they know. Nat Mach Intell 7, 221–231 (2025).\n[external resource identifier omitted]\n2. Section C in Methods, Criteria for Analysis, provides a clear overview of the evaluation\nframework and methodology. However, it does not specify who conducted the qualitative\nassessment of Copilot’s responses. Were these evaluations performed by domain experts,\nresearchers, or practitioners in P/CVE? Additionally, how many evaluators were involved? If\nmultiple evaluators participated, were any measures taken to ensure consistency, such as\ninter-rater reliability assessments? Providing this information would enhance the\ntransparency and credibility of the evaluation process.\n3. The Findings section presents key results, but given that LLMs evolve continuously through\nmanual updates and user interactions, it is unlikely that identical responses will be obtained\nin future replications of this study. To facilitate longitudinal research and ensure\ntransparency, I strongly recommend that the authors provide the full set of raw data (i.e.,\nCopilot’s responses alongside the corresponding evaluations) as a supplementary table.\nThis would allow future researchers to assess improvements in LLM performance over time\nand strengthen the reproducibility of the study’s findings.\n\n\n\n\nReferences\n1. Steyvers M, Tejeda H, Kumar A, Belem C, et al.: What large language models know and what\npeople think they know. Nature Machine Intelligence. 2025; 7 (2): 221-231 Publisher Full Text\nIs the work clearly and accurately presented and does it engage with the current literature?\nYes\nIs the study design appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nPartly\nAre all the source data and materials underlying the results available?\nPartly\nIf applicable, is the statistical analysis and its interpretation appropriate?\nNot applicable\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+      "role": "当轮评审R1",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E2",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/reviews/R2",
+        "text_span": [
+          0,
+          1611
+        ]
+      },
+      "quote": "This study evaluated the effectiveness of an LLM-based Copilot chatbot in preventing and\ncountering violent extremism. After reviewing the work, I found it both topical and timely.\nHowever, I have a few minor concerns:\n1. The authors should include a brief introduction to AI, NLP, and LLM at the beginning of the\nIntroduction section.\n2. The authors need to justify why they chose to test the Copilot chatbot instead of other\npopular bots such as Gemini and ChatGPT. Additionally, they should specify the version of\nCopilot used in this study.\n3. When discussing the medical applications of LLM-based chatbots, please reference more\nrecent studies, such as Chow et al. (JMIR Cancer, 2025, 11(1), e66633 and JMIR\nBioinformatics and Biotechnology, 2024, 5, e64406).\n4. In the discussion of ethical issues related to the chatbot, the authors should include\nimportant references such as Chow et al. (Front Artif Intell, 2023, 6, 1166014).\n5. Before the conclusion, there should be a section on limitations and future prospects,\nhighlighting the limitations of this evaluation study and suggesting areas for future\nresearch.\nIs the work clearly and accurately presented and does it engage with the current literature?\nYes\nIs the study design appropriate and is the work technically sound?\nYes\nAre sufficient details of methods and analysis provided to allow replication by others?\nYes\nAre all the source data and materials underlying the results available?\nYes\nIf applicable, is the statistical analysis and its interpretation appropriate?\n\n\n\n\nYes\nAre the conclusions drawn adequately supported by the results?\nYes\n",
+      "role": "当轮评审R2",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E3",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/responses/R1",
+        "text_span": [
+          0,
+          4614
+        ]
+      },
+      "quote": "\nDear reviewer, Thank you very much for your review; it was very helpful.\nBelow please find our responses to your points, where we have done our best to address\neach one.\n1. “The authors assert that \"limitations such as ‘bullshitting’ and hallucinations in early\nAI developments (Zhao et al., 2023) are no longer a primary concern.\" However,\nrecent research (e.g., Steyvers et al., 2025) continues to demonstrate that\nhallucinations remain a significant issue and that users tend to overestimate the\naccuracy of LLM-generated responses. Given these findings, I would caution against\nthe claim that hallucinations are no longer a primary concern. (see: Steyvers, M.,\nTejeda, H., Kumar, A. et al. What large language models know and what people think\nthey know. Nat Mach Intell 7, 221–231 (2025). [external resource identifier omitted]\n\n\n\n\n00976-7)”\nAuthor Response: Thank you for this comment. By stating that hallucinations are no longer a\nprimary concern, we meant to suggest that efforts have been made to manage this issue since\nthe introduction of early chatbots, using various measures. To highlight this point better, we\nchanged the wording and added an additional reference. At the same time, we agree with you\nthat accuracy issues still persist, even with these measures in place. We followed your\nrecommendation and revised the statement to provide more explanation. Please kindly see if\nour changes in the text reflect your point.\n1. “Section C in Methods, Criteria for Analysis, provides a clear overview of the\nevaluation framework and methodology. However, it does not specify who conducted\nthe qualitative assessment of Copilot’s responses. Were these evaluations performed\nby domain experts, researchers, or practitioners in P/CVE? Additionally, how many\nevaluators were involved? If multiple evaluators participated, were any measures\ntaken to ensure consistency, such as inter-rater reliability assessments? Providing this\ninformation would enhance the transparency and credibility of the evaluation\nprocess”.\nAuthor Response: Thank you very much for this useful comment. Following your\nrecommendation, in section A, we clarified that we are domain experts (evaluation in P/CVE) please see whether this brings more clarity. In addition, it was specified already in the earlier\nversion that: “This study drew upon the authors’ extensive interactions with European and nonEuropean practitioners and policymakers in the field of P/CVE, providing insight into their\nperspectives on evidence-based evaluation and the needs of the field.” Our methodology was\nbased on our earlier publications on evaluation in P/CVE, which also demonstrates our\nexpertise. From the beginning of this paper, we have been careful not to call our study an\n“evaluation” but rather referred to it as “mapping” and “review.” This is important because our\naim was not to conduct a multidimensional evaluation, which would require a more holistic\napproach with experts from different domains. Instead, our goal was to provide a snapshot of\nexisting research possibilities and share our initial observations for our taregt audience:\npractitioners, policymaker and researchers in P/CVE.\n1. “The Findings section presents key results, but given that LLMs evolve continuously\nthrough manual updates and user interactions, it is unlikely that identical responses\nwill be obtained in future replications of this study. To facilitate longitudinal research\nand ensure transparency, I strongly recommend that the authors provide the full set\nof raw data (i.e., Copilot’s responses alongside the corresponding evaluations) as a\nsupplementary table. This would allow future researchers to assess improvements in\nLLM performance over time and strengthen the reproducibility of the study’s\nfindings”.\nAuthor Response: Thank you for this comment. Indeed, providing the full datasets aligns\nwith sustainable research practices. As per the Open Research Europe requirements, we\ninitially have made our full datasets (prompts + the chatbots’ responses) available in open\naccess to support the principle of reproducibility. These datasets were mentioned in the\npaper and listed in the references section. Since we referred to these published datasets, we\nfound it redundant to duplicate them inside our paper. Please see our datasets here:\nVan der Vet I, Malkki L: Copilot's responses, January 2025. Zenodo. [Data set].2025.\n[external resource identifier omitted]\nVan der Vet I, Malkki L: Copilot's responses, March and April 2024. Zenodo. [Data\nset].2025. [external resource identifier omitted]\n○\n\n○\n\n\n\n\nThank you again for your review, Authors\n",
+      "role": "作者答复R1",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E4",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/responses/R2",
+        "text_span": [
+          0,
+          1936
+        ]
+      },
+      "quote": "\nDear reviewer, Thank you very much for reviewing our paper and suggesting\nimprovements, as well as for sharing valuable resources. Please find below our responses\nto the points raised:\n1. “The authors should include a brief introduction to AI, NLP, and LLM at the beginning of\nthe Introduction section”. Following your recommendation, we made revisions to the\nIntroduction section.\n2. “The authors need to justify why they chose to test the Copilot chatbot instead of other\npopular bots such as Gemini and ChatGPT. Additionally, they should specify the version of\nCopilot used in this study”. We explained our choice of Copilot at the beginning of the\nMethod section. Since the versions of the chatbot constantly evolve, we provided references\nto the specific date when Copilot was used for data collection, indicating the exact version\nemployed. We also referred to the datasets by mentioning the dates of data collection,\nwhich correspond with the version of Copilot used. Please kindly find the introduced\nchanges.\n3. “When discussing the medical applications of LLM-based chatbots, please reference more\nrecent studies, such as Chow et al. (JMIR Cancer, 2025, 11(1), e66633 and JMIR\nBioinformatics and Biotechnology, 2024, 5, e64406”). Thank you for the suggestion! We\nincluded the reference.\n4. “In the discussion of ethical issues related to the chatbot, the authors should include\nimportant references such as Chow et al. (Front Artif Intell, 2023, 6, 1166014)”. Thank you for\nthe suggestion! We included the reference.\n5. “Before the conclusion, there should be a section on limitations and future prospects,\nhighlighting the limitations of this evaluation study and suggesting areas for future\nresearch”. Thank you for the comment. We have incorporated these sections as part of the\nMethod section to better emphasise the connections between the chosen methodology, its\nlimitations, and future research.\nSincerely, Authors\n\n\n\n",
+      "role": "作者答复R2",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E5",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_before/text",
+        "text_span": [
+          26000,
+          26700
+        ]
+      },
+      "quote": "t is often\nstill required to verify the accuracy of the information provided,\nparticularly when using chatbots for professional purposes.\nIt is worth to mention here that AI-based technologies are rapidly improving in terms of accuracy. Limitations such as “bullshitting” and hallucinations in early AI developments (Zhao et al.,\n2023) are no longer a primary concern. Nevertheless, the answers\nproduced by chatbots still pose some challenges, especially\nin educational contexts where students expect to find rich\ninformation (Rudolph et al., 2023).\n\nAnother question relates to privacy and data security. Even if\ndevelopers claim that LLMs are not trained with personal information, users might stil",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E6",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          25000,
+          27900
+        ]
+      },
+      "quote": "ate\nrecommendations over time.\nAs Lloyd (2023) notes, despite initial perception of chatbots\nas “random arrangements of letters floating in alphabet soup”\nfrom a technological perspective, what they produce does\nindeed make sense (p.5). Hence, the recommendations produced\nby chatbots could potentially sound valuable. However, one\nsignificant limitation of LLM chatbots is their inability to\ngenerate content that is 100% factually reliable. Human effort\nis often still required to verify the accuracy of the information\nprovided, particularly when using chatbots for professional\npurposes. It is worth to mention here that AI-based technologies\nare rapidly improving in terms of accuracy. Tech companies have\nbeen mitigating “bullshitting” and hallucinations that have\nbeen of a great concern since the early development of AI, by\ntaking mitigation and optimisation measures (Lei et al.,\n2025; Zhao et al., 2023). However, the issue is far from\nbeing entirely resolved and LLMs in general still hallucinate\nand produce inaccurate content. The answers produced by chatbots still pose some challenges, especially when trusted by\nhumans (Steyvers et al., 2025) and this is especially evident\nin educational contexts where students expect to find rich\n\n\ninformation and use them explicitely for learning (Rudolph\net al., 2023).\nSince 2020 there has been an increasing number of studies on\nhow to govern the interaction between humans and machines.\nA relatively new concept, “human-in-the-loop”, highlights\nthe crucial role of humans in controlling AI output and assessing its usability (Mosqueira-Rey et al., 2023; Xu, 2019). We\nargue that another important consideration is the need for a\n“professional-in-the-loop”, who not only applies common sense\nto AI-generated content but also brings solid knowledge and\nexpertise to verifying accuracy and informing decision-making\nbased on independent judgements.\nThe current recommender systems are largely advanced by LLMs.\nFurthermore, LLM-based recommendations produced by chatbots\nhave shown promising results in the accuracy, relevance,\nand usability of provided recommendations (see Dehbozorgi\net al., 2024), when based on Retrieval Augmented Generation\n(RAG). RAG is a working principle of LLMs that enhances\ntheir reliability through the utilisation of an external knowledge\nbase (Gao et al., 2023). The advantage of RAG is that it\nreduces the chances of receiving irrelevant results in response\nto one’s query. However, the answers produced might still not\nbe 100% accurate (Ibid). This principle holds promise when\nimplemented for chatbots. Complementing an LLM with a\nreliable local dataset can lead to more rigorous and nuanced\nresponses in relation to professional fields via the chat. Overall,\nit seems realistic to expect that AI chatbots will function\nincreasingly independently and with fewer factual errors\nand hallucinations in the near fu",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E7",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_before/text",
+        "text_span": [
+          29035,
+          34100
+        ]
+      },
+      "quote": "Method\na. Our approach\n\nThe purpose of this study is to explore the usability of\nLLM-based chatbots for advising P/CVE professionals. To achieve\nthis, we will focus on the potential of these chatbots in\nincreasing knowledge on evidence-based evaluation (as one\nidentified need in the P/CVE field) by using the Copilot chatbot5.\nWe have chosen to utilise the Copilot chatbot by Microsoft\nbecause it has been already used in classrooms and corporate\nsettings rather successfully; and because it is openly available,\nand displays all the functionalities of similar LLM-based\nchatbots. Additionally, Copilot is now integrated into Microsoft Office’s 365 applications, making it more functional for\nprofessional use. As the Microsoft website6 promises, “Copilot,\nyour AI companion, is ready to support you whenever and\nwherever you need it”. Our task in this part is to explore\nwhether it may be true.\n\nCopilot functions similarly to ChatGPT but with some key distinctions. It is powered by GPT-47 (Chin, 2023) and Bing search.\nThis setup aligns with the RAG principle, which enables Copilot to provide references to sources, potentially increasing its\nreliability, usefulness, and transparency. Marais et al. (2024)\nhighlight that this feature is particularly advantageous for students as it allows them to verify “the credibility of the sources\nfrom which Copilot pulled information” (p. 2). These features\nare crucial when using Copilot to inform professionals. However,\nit is also important to recognise that Copilot also displays the\nlimitations of LLM-based chatbots in general (Aaron et al., 2024).\nThe key question in this study is what Copilot currently\n“knows” about evidence-based evaluation and how it can perform, given the specifications of the P/CVE field. To be useful\nto professionals, the chatbot should respond readily to the questions and queries prompted by professionals and provide\nreliable, relevant, comprehensive replies that are also easy to\nunderstand.\nSeveral methodologies have been used to assess the performance of LLM chatbots, depending on exactly what is being\nevaluated. The aforementioned studies assessing chatbots’ capability to provide reliable and comprehensive medical information typically use base prompts (asking separate questions).\nThe answers have then been evaluated for their reliability and\ncomprehensibility. Sometimes these answers were compared to\nthe same questions answered by professionals or information\nprovided by patient organisations. Another design involved asking professionals to distinguish between responses from the\nchatbot and those given by someone knowledgeable about the\ntopic.\nIn this study, we adopt a user-centred and qualitative approach\nto explore the potential of the chatbot for P/CVE professionals. Specifically, we simulate how these professionals would\nuse the chatbot when seeking information about evidencebased evaluation, focusing on prompts that someone with little prior knowledge might use to gain an initial understanding\nof the evaluation principles and procedures. These include learning how to plan evaluations, how they are conducted, and what\nconsiderations are specific to their cases. To achieve these\ngoals, we engaged in a series of dialogues with the chatbot,\nobserving what kind of knowledge it is able to provide. Similar\nqualitative, dialogue-based designs have been used to explore\nwhether and what kinds of extremist material can be produced\nwith the help of LLMs (See eg., McGuffie & Newhouse, 2020).\nWe designed and inputted 50 prompts in January 20258. Ein-Dor\net al. (2024) note that to “maximize the capabilities of LLMs,\ncrafting effective prompts is essential. The prompts should clearly\n\n4\n\nOne helpful source for navigating the key questions related to AI in law\nenforcement is the Toolkit for Responsible AI Innovation in Law Enforcement,\nwhich has been developed by INTERPOL and UNICRI (2023), see: [external resource identifier omitted]\nai-lawenforcement.org/.\n5\n\nPlease note that the openly available version of the chatbot that was used for\nthis study does not require access to Microsoft 365 account. It can be found here:\n[external resource identifier omitted]\n6\n\nMicrosoft website presenting Copilot: [external resource identifier omitted] (see Microsoft Copilot introduction website:\n[external resource identifier omitted]\n\n7\n\nGPT-4 is a proprietary model that is controlled and owned by OpenAI. There\nare alternative open source models available in the market, such as llama, DeepSeek, or Teuken.\n8\n\nWe have been prompted Copilot since late 2023 but the present article is\nbased on the latest 2025 dataset consisting of 50 prompts. Some earlier observation will also be shared in this article together with the link to the earlier\ndataset. The 2025 dataset is available in open access at: [external resource identifier omitted]\nzenodo.14869752 (Zenodo: Copilot’s responses, January 2025)\n\n\ndefine the task and desired outcomes, conveying nuances, preferences, and important output requirements” (p. 1). Some\nmedical studies have also favoured wel",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E8",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          31012,
+          35500
+        ]
+      },
+      "quote": "Method\na. Our approach\n\nThe purpose of this study is to explore the usability of\nLLM-based chatbots for advising P/CVE professionals. To achieve\nthis, we will focus on the potential of these chatbots in\nincreasing knowledge on evidence-based evaluation (as one\nidentified need in the P/CVE field) by using the Copilot chatbot5.\nWe have chosen to utilise the Copilot chatbot by Microsoft\n(version from January 2025) because it has been already used\nin classrooms and corporate settings rather successfully; and\nbecause it is openly available, and displays all the functionalities\nof similar LLM-based chatbots. Additionally, Copilot is now\nintegrated into Microsoft Office’s 365 applications, making\nit more functional for professional use. As the Microsoft\nwebsite6 promises, “Copilot, your AI companion, is ready to\n\n4\n\nOne helpful source for navigating the key questions related to AI in law\nenforcement is the Toolkit for Responsible AI Innovation in Law Enforcement,\nwhich has been developed by INTERPOL and UNICRI (2023), see: [external resource identifier omitted]\nai-lawenforcement.org/.\n5\n\nPlease note that the openly available version of the chatbot that was used for\nthis study does not require access to Microsoft 365 account. It can be found here:\n[external resource identifier omitted]\n6\n\nMicrosoft website presenting Copilot: [external resource identifier omitted] (see Microsoft Copilot introduction website:\n[external resource identifier omitted]\n\n\nsupport you whenever and wherever you need it”. Our task in\nthis part is to explore whether it may be true.\nCopilot functions similarly to ChatGPT but with some key\ndistinctions. It is powered by GPT-47 (Chin, 2023) and Bing\nsearch. This setup aligns with the RAG principle, which enables\nCopilot to provide references to sources, potentially increasing\nits reliability, usefulness, and transparency. Marais et al. (2024)\nhighlight that this feature is particularly advantageous for students as it allows them to verify “the credibility of the sources\nfrom which Copilot pulled information” (p. 2). These features\nare crucial when using Copilot to inform professionals. However,\nit is also important to recognise that Copilot also displays the\nlimitations of LLM-based chatbots in general (Aaron et al., 2024).\nThe key question in this study is what Copilot currently\n“knows” about evidence-based evaluation and how it can\nperform, given the specifications of the P/CVE field. To be useful\nto professionals, the chatbot should respond readily to the\nquestions and queries prompted by professionals and provide\nreliable, relevant, comprehensive replies that are also easy to\nunderstand.\nSeveral methodologies have been used to assess the performance of LLM chatbots, depending on exactly what is being\nevaluated. The aforementioned studies assessing chatbots’ capability to provide reliable and comprehensive medical information typically use base prompts (asking separate questions).\nThe answers have then been evaluated for their reliability and\ncomprehensibility. Sometimes these answers were compared to\nthe same questions answered by professionals or information\nprovided by patient organisations. Another design involved asking\nprofessionals to distinguish between responses from the chatbot\nand those given by someone knowledgeable about the topic.\nIn this study, we adopt a user-centred and qualitative approach\nto explore the potential of the chatbot for P/CVE professionals. Specifically, we simulate how these professionals would\nuse the chatbot when seeking information about evidencebased evaluation, focusing on prompts that someone with little\nprior knowledge might use to gain an initial understanding\nof the evaluation principles and procedures. These include\nlearning how to plan evaluations, how they are conducted,\nand what considerations are specific to their cases. To achieve\nthese goals, we, the authors of this paper, as domain\nexperts, engaged in a series of dialogues with the chatbot,\nobserving what kind of knowledge it is able to provide. Similar\nqualitative, dialogue-based designs have been used to explore\nwhether and what kinds of extremist material can be produced\nwith the help of LLMs (See eg., McGuffie & Newhouse, 2020).\nWe designed and inputted 50 prompts in January 20258. Ein-Dor\net al. (2024) note that to “maximize the capabilities of LLMs,\ncrafting effective prompts is essential. The prompts should clearly\n\ndefine the task and desired outcomes, conveying nuances, preferences, ",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E9",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_before/text",
+        "text_span": [
+          49900,
+          54800
+        ]
+      },
+      "quote": "comprehensibility were deemed most relevant for\nunderstanding Copilot’s usability and limitations in this context.\nThese criteria were informed by literature and domain expertise.\nThe analysis questions were meant to better explain the limits\nof these criteria. It is important to note that while more rigorous testing methodologies exist for exploring each criterion, our\naim was not to delve deeply into each category but instead provide a practical overview of Copilot’s potential as a prototype\nfor a P/CVE tool, with the help of analysis questions, and\ndetermine whether chatbots are worth further exploration.\n\nb. Limitations and suggestions for further research\nIt is essential to acknowledge the limitations of this study\nand outline the prospective next steps in similar research.\nFirstly, our primary objective was not to find out whether the\nchatbot can serve as a fully functional evaluator but rather\nto explore whether a P/CVE professional can obtain the key\ninformation and support necessary to plan and implement their\nown P/CVE work with evaluation in mind. Our purpose was also\nnot to assess the chatbot’s overall performance in the P/CVE\nfield or evaluation, but instead to create the first mapping of\nits potential as of an AI tool for professionals.\nA further limitation concerns access to the chatbot. To\nexplore Copilot, we utilised the open-access version of Copilot without logging in, which can be regarded as a constraint\non our study. Accessing the full version, which requires an\nOffice 365 account, would have enabled us to leverage additional functionalities, such as, for instance, image generation or voice communication (in some regions). These are not\navailable in the open-access version but exploring them would\nbroaden the spectrum of use-cases for P/CVE. This is something\nto be considered in further studies. We also explored LLM chatbots mainly as a knowledge-based recommender system but\nmore studies could be done to explore other functions of chatbots, especially task-specific ones, by using the full access to\nthe system and exploring the new agentic features of the chatbot. To add further to research on the performance of such chatbots in various languages, functions such as usability could be\nbetter explored.\n\nThere are also several technical limitations worth noting. One key limitation concerns the number of iterations for\ninputting the prompts. There is an ongoing discussion about the\nvariability of responses from chatbots, which can impact credibility if not managed effectively. In this study we inputted our\nprompts in one iteration, whereas multiple iterations might be\nnecessary to explore the stability of responses. In 2024, we conducted a similar review of Copilot responses13 in three iterations\nand did not spot a significant divergence in the answers received.\nGiven the rapidly improving performance of LLMs and chatbots, including their stability, such an evaluation was deemed\nbeyond the scope of this study. Moreover, the differences in performance between various LLMs and chatbots highlight the\ncomplexity of assessing these models’ capabilities.\nThe discussion with Copilot was based on a range of prompts\nengineered by the authors, aimed at simulating user experience. Prompt engineering refers to the techniques used to guide\nconversations with LLM-based chatbots to yield effective and\nrelevant responses (Ekin, 2023; Giray, 2023; White et al., 2023).\nThis study drew upon the authors’ extensive interactions with\nEuropean and non-European practitioners and policymakers\nin the field of P/CVE, providing insight into their perspectives\non evidence-based evaluation and the needs of the field. It is\nwell established that unlocking the full potential of chatbots\nand achieving optimal results from queries requires the user\nto know how to formulate effective prompts. However, not all\nusers possess this knowledge, which can impact the quality of\ninteractions with these systems. Furthermore, involving real\npractitioners in such a study would have added richness and\ndepth to the research findings. This would be even more so if we\nwere able to detect more nuances in the usage of these systems\nthrough studying interactions of different P/CVE professionals\nwith chatbots.\n\nc. Criteria for analysis\nThis section outlines the criteria developed for evaluating Copilot responses. Although these criteria may appear to overlap to some degree, we have identified them as distinct and\nseparately explained their borders in Table 2. These criteria\nwere established to provide clarity on how Copilot or similar\nLLM systems can potentially support P/CVE practitioners by\nproviding knowledge, recommendations, and some other forms\nof support.\n1. Accuracy and reliability. There are reports about inaccuracies and lack of reliability of LLM-based chatbots across different fields. Such errors can have significant consequences for\n",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E10",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          51700,
+          57300
+        ]
+      },
+      "quote": "system, which are usually evaluated based on\nparameters such as personalised information and tailored\nrecommendations (Lin & Li, 2024). Our assessment of the\nchatbot’s performance was guided by three criteria and a list\nof predetermined analysis questions. The criteria of: 1) accuracy\nand reliability; 2) relevance and integrity; as well as 3) readability and comprehensibility were deemed most relevant for\nunderstanding Copilot’s usability and limitations in this context.\nThese criteria were informed by literature and domain expertise.\nThe analysis questions were meant to better explain the limits\n\nof these criteria. It is important to note that while more rigorous testing methodologies exist for exploring each criterion, our\naim was not to delve deeply into each category but instead provide a practical overview of Copilot’s potential as a prototype\nfor a P/CVE tool, with the help of analysis questions, and\ndetermine whether chatbots are worth further exploration.\n\nb. Limitations and suggestions for further research\nIt is essential to acknowledge the limitations of this study\nand outline the prospective next steps in similar research.\nFirstly, our primary objective was not to find out whether the\nchatbot can serve as a fully functional evaluator but rather\nto explore whether a P/CVE professional can obtain the key\ninformation and support necessary to plan and implement their\nown P/CVE work with evaluation in mind. Our purpose was also\nnot to assess the chatbot’s overall performance in the P/CVE\nfield or evaluation, but instead to create the first mapping of\nits potential as of an AI tool for professionals.\nA further limitation concerns access to the chatbot. To\nexplore Copilot, we utilised the open-access version of Copilot without logging in, which can be regarded as a constraint\non our study. Accessing the full version, which requires an\nOffice 365 account, would have enabled us to leverage additional functionalities, such as, for instance, image generation or voice communication (in some regions). These are not\navailable in the open-access version but exploring them would\nbroaden the spectrum of use-cases for P/CVE. This is something\nto be considered in further studies. We also explored LLM chatbots mainly as a knowledge-based recommender system but\nmore studies could be done to explore other functions of chatbots, especially task-specific ones, by using the full access to\nthe system and exploring the new agentic features of the chatbot. To add further to research on the performance of such chatbots in various languages, functions such as usability could be\nbetter explored.\nThere are also several technical limitations worth noting.\nOne key limitation concerns the number of iterations for\ninputting the prompts. There is an ongoing discussion about the\nvariability of responses from chatbots, which can impact credibility if not managed effectively. In this study we inputted our\nprompts in one iteration, whereas multiple iterations might be\nnecessary to explore the stability of responses. In 2024, we conducted a similar review of Copilot responses13 in three iterations\nand did not spot a significant divergence in the answers received.\nGiven the rapidly improving performance of LLMs and\nchatbots, including their stability, such an evaluation was deemed\nbeyond the scope of this study. Moreover, the differences in\nperformance between various LLMs and chatbots highlight the\ncomplexity of assessing these models’ capabilities.\nThe discussion with Copilot was based on a range of prompts\nengineered by the authors, aimed at simulating user experience.\n13\n\nSee Zenodo: Copilot’s responses, March and April 2024. [external resource identifier omitted]\norg/10.5281/zenodo.14814720 [Van der Vet & Malkki (2025). Copilot’s\nresponses, March and April 2024 [Data set].\n\n\nPrompt engineering refers to the techniques used to guide\nconversations with LLM-based chatbots to yield effective and\nrelevant responses (Ekin, 2023; Giray, 2023; White et al., 2023).\nThis study drew upon the authors’ extensive interactions with\nEuropean and non-European practitioners and policymakers\nin the field of P/CVE, providing insight into their perspectives\non evidence-based evaluation and the needs of the field. It is\nwell established that unlocking the full potential of chatbots\nand achieving optimal results from queries requires the user\nto know how to formulate effective prompts. However, not all\nusers possess this knowledge, which can impact the quality of\ninteractions with these systems. Furthermore, involving real\npractitioners in such a study would have added richness and\ndepth to the research findings. This would be even more so if we\nwere able to detect more nuances in the usage of these systems\nthrough studying interactions of different P/CVE professionals\nwith chatbots.\n\nc. Criteria for analysis\nThis section outlines the criteria developed for evaluating Copilot responses. Although these criteria may appear to overlap to some degree, we have identified them as distinct and\nseparately explained their borders in Table 2. These criteria\nwere established to provide clarity on how Copilot or similar\nLLM systems can potentially support P/CVE practitioners by\nproviding knowledge, recommendations, and some other forms\nof support.\n1. Accuracy and reliability. There are reports about inaccuracies and lack of reliability of LLM-based chatbots across different fields. Such errors can have significant consequences for\nusers, leading to discussions about accountability for these mistakes. For example, one paper (see Aaronson, 2024) and an\nearli",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E11",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_before/text",
+        "text_span": [
+          80030,
+          80800
+        ]
+      },
+      "quote": "Data availability\nUnderlying data\n\nZenodo: Copilot’s responses, January 2025. [external resource identifier omitted]\norg/10.5281/zenodo.14869752 [Van der Vet & Malkki (2025).\nCopilot’s responses, January 2025 [Data set].\nZenodo: Copilot’s responses, March and April 2024. [external resource identifier omitted]\norg/10.5281/zenodo.14814720 [Van der Vet & Malkki (2025).\nCopilot’s responses, March and April 2024 [Data set].\nData are available under Both:\nthe terms of the Creative Commons Zero “No rights reserved”\ndata waiver (CC0 1.0 Public domain dedication).\nthe terms of the Creative Commons Attribution 4.0 International\nlicense (CC-BY 4.0).\n\nReferences\nAaron L, Abbate S, Allain NM, et al.: Strategies for student input. In: Optimizing\nAI in higher education: SUNY",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E12",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          82261,
+          83100
+        ]
+      },
+      "quote": "Data availability\nUnderlying data\n\nZenodo: Copilot’s responses, January 2025. [external resource identifier omitted]\norg/10.5281/zenodo.14869752 [Van der Vet & Malkki (2025).\nCopilot’s responses, January 2025 [Data set].\nZenodo: Copilot’s responses, March and April 2024. [external resource identifier omitted]\norg/10.5281/zenodo.14814720 [Van der Vet & Malkki (2025).\nCopilot’s responses, March and April 2024 [Data set].\n\nData are available under Both:\nthe terms of the Creative Commons Zero “No rights reserved”\ndata waiver (CC0 1.0 Public domain dedication).\nthe terms of the Creative Commons Attribution 4.0 International\nlicense (CC-BY 4.0).\n\nReferences\nAaron L, Abbate S, Allain NM, et al.: Strategies for student input. In: Optimizing\nAI in higher education: SUNY FACT guide, Second Edition. State University of New\nYork Press, 202",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E13",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          2300,
+          4300
+        ]
+      },
+      "quote": "es. AI-based\ntechnologies have integrated into everyday life through innovations such as chatbots, virtual assistants, voice recognition\nsystems, or image generators. However, it is still often misunderstood what AI acctually means. In general terms, AI is seen\nas a system that simulates human behavior to perform tasks\nrequiring intelligence (Banh & Strobel, 2023; Ooi et al., 2025).\nThe European Union’s AI Act defines an AI system as “a\nmachine-based system designed to operate with varying levels\nof autonomy, that may exhibit adaptiveness after deployment\nand that, for explicit or implicit objectives, infers, from the\ninput it receives, how to generate outputs such as predictions,\ncontent, recommendations, or decisions that can influence\nphysical or virtual environments” (EU 2024/1689). This definition particularly highlights the operational mechanism of these\nsystems and the far-reaching impacts they can have on both\ndigital and real-world contexts.\nNatural language processing (NLP) is a critical component\nfor grasping the current development of generative AI, as it\nenables human-like language comprehension and generation.\nThis includes understanding, interpreting, and producing\nhuman-written or spoken language, as well as discerning\ncontext within interactions (Segura, 2023). NLP have been significantly improved in the recent years due to the large language models (LLMs), a type of generative AI that is built upon\nstatistical algorithms and trained on extensive datasets from\n\ndiverse sources for generating human-like output (Routray et al.,\n2023).\nSince the release of Open AI’s openly available ChatGPT in\nNovember 2022, the potential uses of LLM-based chatbots1\n– part of broader generative AI – have been explored extensively in various diciplines. This trend includes the field of\npreventing and countering violent extremism (P/CVE). So\nfar, discussions in this field have focused primarily on two areas:\nhow these chatbots can be, or are already being, used by indivi",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E14",
+      "source_path": "data/question_bank/T3_轮次综合判断/T3_F058_R1/input.json",
+      "source_sha256": "ffda7cd6434940b09dfba041337e48473479e37ae5deeedcaea20a10ee00f87f",
+      "locator": {
+        "json_pointer": "/materials/manuscript_after/text",
+        "text_span": [
+          58000,
+          58950
+        ]
+      },
+      "quote": "and accuracy. Several recent medical studies on LLM chatbots have concluded that these systems\nhave great potential for professional use, due to their generally\ngood accuracy (Benirschke et al., 2024; Chow & Li, 2025;\nKamminga et al., 2025; Stroop et al., 2024). Gupta et al.\n(2024) conducted rigorous scientific testing14 of three chatbots\n– Google Gemini, Microsoft Copilot, and OpenAI ChatGPT\n– in the medical domain. They found that Copilot demonstrated\ngreater reliability compared to other systems. The study also\nrevealed that Copilot made reference to more scientific sources\nand had a higher number of citations than Gemini. These\ncriteria have not yet been reviewed in P/CVE research in\nrelation to evaluation, indicating a need for a more structural\nand focused approach. Therefore, our goal here is to explore\nthese categories through analysis questions and observations,\nand equally evaluate any potential negative impact from the use\nof",
+      "role": "稿件定点阅读",
+      "model_visible": true,
+      "reference_only": false
+    },
+    {
+      "id": "E15",
+      "source_path": "data/question_bank/工作记录/sol_扩充/候选提取/ORE_5-65/S008.txt",
+      "source_sha256": "e514776b7e9cbb2d20d4d33f0c00ee571534ea91dccf8bfabbcc2a0e4a9be8b6",
+      "locator": {
+        "text_span": [
+          100099,
+          101661
+        ]
+      },
+      "quote": "\nReviewer Report 08 May 2025\n\nhttps://doi.org/10.21956/openreseurope.21801.r53273\n© 2025 Pushpanathan K. This is an open access peer review report distributed under the terms of the Creative\nCommons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,\nprovided the original work is properly cited.\n\nKrithi Pushpanathan\nNational University of Singapore, Singapore, Singapore\nNo further comments, thank you.\nCompeting Interests: No competing interests were disclosed.\nReviewer Expertise: AI, LLM, Ophthalmology\nI confirm that I have read this submission and believe that I have an appropriate level of\nexpertise to confirm that it is of an acceptable scientific standard.\nReviewer Report 26 April 2025\n\nhttps://doi.org/10.21956/openreseurope.21801.r53274\n© 2025 Chow J. This is an open access peer review report distributed under the terms of the Creative Commons\nAttribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the\noriginal work is properly cited.\n\nJames C L Chow\nUniversity Health Network, Toronto, Ontario, Canada\nThe authors have addressed all my concerns.\nCompeting Interests: No competing interests were disclosed.\nReviewer Expertise: AI, LLM, ML, Chatbot, Radiotherapy, Computer simulation.\nI confirm that I have read this submission and believe that I have an appropriate level of\n\nPage 19 of 25\n\n\fOpen Research Europe\n\nOpen Research Europe 2025, 5:65 Last updated: 08 MAY 2025\n\nexpertise to confirm that it is of an acceptable scientific standard.\n\n",
+      "role": "后稿Version2真人评审53273/53274",
+      "model_visible": false,
+      "reference_only": true
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "P1",
+      "judgment": "R1质疑幻觉不再主要。前稿确有该断言；后稿明确承认问题远未完全解决、仍产生不准内容并加入使用者信任风险。因此核心过强断言已纠正；邻段仍预期未来少幻觉，是预测而非本研究证实。",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "importance": "high",
+      "importance_reason": "控制高风险应用中的准确性主张。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可支持修订基本充分，同时建议标明未来改善预测的不确定性；不要求证明所有模型当前错误率。"
+      ]
+    },
+    {
+      "id": "P2",
+      "judgment": "后稿增加作者为领域专家并亲自对话，解释研究是初步mapping而非多维评价。这明确了参与者身份，但仍未说明谁逐条作质量判断、各自独立/联合、分歧如何处理。范围声明不能自动豁免判断过程透明；也不能强制所有定性研究必须报κ。",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E7",
+        "E8",
+        "E9",
+        "E10"
+      ],
+      "importance": "high",
+      "importance_reason": "领域经历与实际评价程序是不同证据。",
+      "status": "partly_supported",
+      "acceptable_alternatives": [
+        "可接受共识性专家反思而非独立双评；前提是交代实际工作流，不能从两位作者署名推断双盲/独立评分已做。"
+      ]
+    },
+    {
+      "id": "P3",
+      "judgment": "R1请求完整原始回复及对应评价。前稿已经列出2025和2024两组Zenodo数据，后稿继续保留；作者合理指出不必在正文重复。现有题内声明仅确认提示/回复开放定位，不能验证库中是否包含逐条评价或可访问性。应把“没有任何数据共享”判为不成立，而对应评价链是否齐全保留未知。",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E11",
+        "E12",
+        "E7"
+      ],
+      "importance": "high",
+      "importance_reason": "数据已开放的声明与评价记录可审计性须分开。",
+      "status": "unresolved",
+      "acceptable_alternatives": [
+        "可以接受外部库作为合适载体；若要判断逐条评价可复查，需查看已存数据而非依据后评审沉默。"
+      ]
+    },
+    {
+      "id": "P4",
+      "judgment": "Copilot选择理由（公开、专业环境、引用/搜索功能）及2025年1月采集日期在前稿已出现。后稿仅在名称旁加version from January 2025；不能说新增了全套选择理由或唯一固定模型版本。日期/访问方式便于描述服务快照，但不足保证重复生成相同结果。",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E7",
+        "E8"
+      ],
+      "importance": "high",
+      "importance_reason": "防止把已有说明误记为修订，以及把日期当不可变模型ID。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "动态服务未公开版本ID时可接受日期作为可行记录，但须保留精度和稳定性限制；不要求作者提供不可得的内部版本。"
+      ]
+    },
+    {
+      "id": "P5",
+      "judgment": "R2要求局限/未来方向。前稿已有专门b节，包含免费未登录、单次运行、2024三次对话、提示模拟/未实际用户等，后稿基本保留；不是首次新增局限。方法内安排有合理联系，不必机械移至结论前。",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E9",
+        "E10"
+      ],
+      "importance": "high",
+      "importance_reason": "完整过程核查要识别原有信息，不能随作者“加入”叙述误计贡献。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可认可既有局限已满足大部分要求，但单次运行和无真实使用者仍限制实际效用外推。"
+      ]
+    },
+    {
+      "id": "P6",
+      "judgment": "后稿新增AI/NLP/LLM说明，所读医学与伦理段可见Chow相关引文。增加指定文献属于背景更新，不自动使P/CVE效用或伦理安全得到验证；无需把评审指定的每一参考文献列为必需真值。",
+      "evidence_ids": [
+        "E2",
+        "E4",
+        "E13",
+        "E14",
+        "E6"
+      ],
+      "importance": "high",
+      "importance_reason": "区分引用增补与证据提升，避免引文服从式评分。",
+      "status": "supported",
+      "acceptable_alternatives": [
+        "可以认为部分医学类比对P/CVE价值有限；只要说明领域迁移边界，不因未采纳全部推荐文献判科学失败。"
+      ]
+    }
+  ],
+  "dimension_bindings": {
+    "evidence_accuracy": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/evidence_accuracy",
+      "focus": "识别真正新增与前稿既有选择理由/数据/局限。",
+      "high_score_conditions": [
+        "准确定位幻觉改写及专家身份补充，承认原有局限和数据链接。",
+        "不把January2025当固定模型版本，不把库声明当逐条评价已查验，覆盖两份报告核心要求。"
+      ],
+      "low_score_risks": [
+        "声称从未共享任何数据",
+        "声称后稿新增整段原有局限"
+      ],
+      "levels": {
+        "0": "核心证据捏造、对象/版本颠倒或与题内材料直接矛盾，导致主要判断失效。 确认有效作答尝试但无实质回答时该维记0，并标记nonresponse。运行失败或材料不足本身不按0处理；有依据地限定判断仍可高分。",
+        "1": "引用零散或错配，主要判断缺少可定位支持；把作者声称当已核事实。",
+        "2": "识别部分问题但遗漏重要边界：须识别至少选择理由、局限、数据的前稿存在。",
+        "3": "准确定位幻觉改写及专家身份补充，承认原有局限和数据链接。",
+        "4": "不把January2025当固定模型版本，不把库声明当逐条评价已查验，覆盖两份报告核心要求。"
+      },
+      "boundary_2_3": "须识别至少选择理由、局限、数据的前稿存在。",
+      "boundary_3_4": "关键四环事实全可追踪，并发现作者叙述与实际新增范围差异。"
+    },
+    "argument_validity": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/argument_validity",
+      "focus": "mapping范围如何影响方法透明和实用性推论。",
+      "high_score_conditions": [
+        "区分领域专家身份与评分工作流，解释日期快照/单次对话/无真实用户的限制。",
+        "接受范围澄清和合理不重复数据，但不因此消除评价链缺口；新增引用不等同安全/效用验证。"
+      ],
+      "low_score_risks": [
+        "两作者等于独立双评",
+        "无固定版本ID必判无效"
+      ],
+      "levels": {
+        "0": "主要推论无效或依赖错误科学前提，无法支撑判断。 确认有效作答尝试但无实质回答时该维记0，并标记nonresponse。运行失败或材料不足本身不按0处理；有依据地限定判断仍可高分。",
+        "1": "主要靠断言、权威/平台状态或服从评审；未建立证据到判断的关系。",
+        "2": "识别部分问题但遗漏重要边界：从已补文字提升到核心问题是否得到必要信息。",
+        "3": "区分领域专家身份与评分工作流，解释日期快照/单次对话/无真实用户的限制。",
+        "4": "接受范围澄清和合理不重复数据，但不因此消除评价链缺口；新增引用不等同安全/效用验证。"
+      },
+      "boundary_2_3": "从已补文字提升到核心问题是否得到必要信息。",
+      "boundary_3_4": "不强制κ等无条件统计规则，也不把mapping当免于透明性的理由。"
+    },
+    "conclusion_appropriateness": {
+      "rule_ref": "../公共五级评分规则.json#/dimensions/conclusion_appropriateness",
+      "focus": "幻觉表述修复、评价程序部分未明、数据状态未核。",
+      "high_score_conditions": [
+        "按项区分解决/已有/部分/未知，不因后评审全满意合并成完全解决。",
+        "总体判断限定于服务快照探索性观察，不宣称真实用户收益已证实或全面安全。"
+      ],
+      "low_score_risks": [
+        "把理论实用前景等同效果"
+      ],
+      "levels": {
+        "0": "总判断与已核关键证据相反或严重越过任务可知范围。 确认有效作答尝试但无实质回答时该维记0，并标记nonresponse。运行失败或材料不足本身不按0处理；有依据地限定判断仍可高分。",
+        "1": "结论过度确定/泛化，忽略决定性缺口，或用拒绝作答回避可判断部分。",
+        "2": "识别部分问题但遗漏重要边界：不得从后续认可反推原始评价记录齐全。",
+        "3": "按项区分解决/已有/部分/未知，不因后评审全满意合并成完全解决。",
+        "4": "总体判断限定于服务快照探索性观察，不宣称真实用户收益已证实或全面安全。"
+      },
+      "boundary_2_3": "不得从后续认可反推原始评价记录齐全。",
+      "boundary_3_4": "兼顾实际改进与未变限制，未知有明确具体对象。"
+    }
+  },
+  "severe_error_checks": [
+    "不把前稿已有信息计为全新",
+    "不将日期当固定模型版本",
+    "不以批准作为充分性真值"
+  ],
+  "read_scope": {
+    "read": [
+      "完整读两份当轮报告及作者回复；定点读前后方法/标准、选择理由、局限、幻觉段、数据声明、结论及新增简介/医学伦理段；完整读后轮两报告并核原PDF分组。"
+    ],
+    "not_read": [
+      "未读全部50提示和原始Copilot答案；未访问Zenodo；未目视表/图。"
+    ],
+    "verification_limits": [
+      "不评图1生成路径正确性，不声称重算模型准确率或核真实使用效用。"
+    ]
+  },
+  "expert_queue": [],
+  "expert_gold": null,
+  "human_review_status": "pending",
+  "publication_status": "仅研究团队核验稿",
+  "concern_coverage": [
+    {
+      "report": "R1",
+      "concern": "幻觉无主要担忧",
+      "check_status": "已核",
+      "point_id": "P1",
+      "finding": "明确撤回过强断言"
+    },
+    {
+      "report": "R1",
+      "concern": "谁评价/人数/一致性",
+      "check_status": "部分解决",
+      "point_id": "P2",
+      "finding": "身份补充，逐条评价程序仍未透明"
+    },
+    {
+      "report": "R1",
+      "concern": "原始回复与评价共享",
+      "check_status": "部分不成立/待核",
+      "point_id": "P3",
+      "finding": "前稿已有数据链接；逐条评价和库可访问性未核"
+    },
+    {
+      "report": "R2",
+      "concern": "AI/NLP/LLM简介",
+      "check_status": "已核",
+      "point_id": "P6",
+      "finding": "新增可见"
+    },
+    {
+      "report": "R2",
+      "concern": "为何Copilot/版本",
+      "check_status": "已有说明加日期标签",
+      "point_id": "P4",
+      "finding": "理由原已在，日期非唯一版本ID"
+    },
+    {
+      "report": "R2",
+      "concern": "医学/伦理推荐文献",
+      "check_status": "部分核验",
+      "point_id": "P6",
+      "finding": "所读段落可见引文，未逐一核外文献真实性/相关性"
+    },
+    {
+      "report": "R2",
+      "concern": "局限及未来",
+      "check_status": "原有信息",
+      "point_id": "P5",
+      "finding": "前稿已有b节，不能记为全部新加"
+    }
+  ],
+  "author_claims": [
+    {
+      "report": "R1",
+      "evidence_ids": [
+        "E3"
+      ]
+    },
+    {
+      "report": "R2",
+      "evidence_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "visible_changes": [
+    {
+      "point_id": "P1",
+      "change": "幻觉断言收窄"
+    },
+    {
+      "point_id": "P2",
+      "change": "作者领域专家身份新增"
+    },
+    {
+      "point_id": "P4",
+      "change": "January2025版本标签新增，原选择理由在先"
+    },
+    {
+      "point_id": "P5",
+      "change": "局限节原已有"
+    }
+  ],
+  "scientific_sufficiency": "表述校正明确；逐条质量判断流程仍需说明，开放数据与评价记录内容未核，实际效用仅探索。",
+  "human_reference_use": {
+    "scope": "完整读Version2两报告，原PDF19–20页核Version2及53273/53274，下一边界Version1；均真人报告",
+    "use": "一份无更多意见、一份称全部回应；没有逐项科学论证，不作为原问题解决真值。"
+  },
+  "source_integrity_checks": {
+    "original_pdf_sha256": "f6f83a76ff0bc44f6231a3ba60f1b285b2f7dad0f2fc6878d1041fb13075c93e"
+  },
+  "source_unit": "one_complete_revision_cycle"
+}

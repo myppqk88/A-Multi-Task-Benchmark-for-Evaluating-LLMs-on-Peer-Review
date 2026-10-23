@@ -1,0 +1,89 @@
+{
+  "task_id": "D03_T2_Q01",
+  "paper_id": "PeerJ:125",
+  "dev_id": "D03",
+  "split": "development",
+  "condition": "T2_response_only",
+  "packaging_status": "packaged_semantic_material_verified_by_current_session_AI",
+  "expert_gold_status": "not_started",
+  "sources": [
+    {
+      "role": "review",
+      "path_private": "data/originals/PeerJ/psychiatry-and-psychology/125_Physical_fighting_among_Egyptian_adolescents__social_and_demographic_correlates/version_v0.2/125_v0.2_2013-06-04_decision.txt",
+      "sha256": "22b629fde8ec88264a0924804494d961dcb31bb9f422a034cd742b0a639024cd",
+      "locator_lines": [
+        5,
+        5
+      ],
+      "locator_chars_half_open": [
+        312,
+        798
+      ]
+    },
+    {
+      "role": "response",
+      "path_private": "data/originals/PeerJ/psychiatry-and-psychology/125_Physical_fighting_among_Egyptian_adolescents__social_and_demographic_correlates/version_v0.2/125_v0.2_2013-07-16_response_letter.docx",
+      "sha256": "dd5369378876793e6250e4ded7e84453860cf629b5ca0e163c62443768db50ea",
+      "locator_lines": [
+        39,
+        39
+      ],
+      "locator_chars_half_open": [
+        1327,
+        1768
+      ]
+    }
+  ],
+  "source_to_input_map": [
+    {
+      "input_field": "input.comment_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/psychiatry-and-psychology/125_Physical_fighting_among_Egyptian_adolescents__social_and_demographic_correlates/version_v0.2/125_v0.2_2013-06-04_decision.txt",
+      "source_sha256": "22b629fde8ec88264a0924804494d961dcb31bb9f422a034cd742b0a639024cd",
+      "extracted_path_private": "private/review_source_1.txt",
+      "extracted_sha256": "22b629fde8ec88264a0924804494d961dcb31bb9f422a034cd742b0a639024cd",
+      "source_char_range_half_open": [
+        312,
+        798
+      ],
+      "source_line_range_inclusive": [
+        5,
+        5
+      ],
+      "selected_text_before_cleaning": "Data used in this study is quite old (2006). Since then several social, economic and political changes have been occurred in Egypt. I suggest actualizing data to better reflect present social situation in Egypt I order to better understand situation of Egyptian adolescents. This opinion is supported by the fact that the authors used actualize references (i.e.: 2012, 2013), and therefore is quite difficult to accept present results obtained at so long time ago from the present time.",
+      "input_segment_after_cleaning": "Data used in this study is quite old (2006). Since then several social, economic and political changes have been occurred in Egypt. I suggest actualizing data to better reflect present social situation in Egypt I order to better understand situation of Egyptian adolescents. This opinion is supported by the fact that the authors used actualize references (i.e.: 2012, 2013), and therefore is quite difficult to accept present results obtained at so long time ago from the present time.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    },
+    {
+      "input_field": "input.response_text",
+      "segment_index": 0,
+      "original_path": "data/originals/PeerJ/psychiatry-and-psychology/125_Physical_fighting_among_Egyptian_adolescents__social_and_demographic_correlates/version_v0.2/125_v0.2_2013-07-16_response_letter.docx",
+      "source_sha256": "dd5369378876793e6250e4ded7e84453860cf629b5ca0e163c62443768db50ea",
+      "extracted_path_private": "private/response_source_1.txt",
+      "extracted_sha256": "9df23161bfaaecc024bd57ebddd5ec781cbf084d1f1fbe85b5ce40b785eda1e2",
+      "source_char_range_half_open": [
+        1327,
+        1768
+      ],
+      "source_line_range_inclusive": [
+        39,
+        39
+      ],
+      "selected_text_before_cleaning": "The authors very much agree with the fact that the data used in this study is dated and does not reflect recent social and political changes in Egypt. Upon careful review of the literature however, there were no peer-reviewed studies which treated the subject of interpersonal violence among Egyptian adolescents or related risk behaviors. This paucity in literature was a problem until relatively recently hence the use of recent citations.",
+      "input_segment_after_cleaning": "The authors very much agree with the fact that the data used in this study is dated and does not reflect recent social and political changes in Egypt. Upon careful review of the literature however, there were no peer-reviewed studies which treated the subject of interpersonal violence among Egyptian adolescents or related risk behaviors. This paucity in literature was a problem until relatively recently hence the use of recent citations.",
+      "cleaning_edits": [],
+      "boundary_judgement": "该独立关切/对应答复的全部段落已经当前会话AI逐段阅读；分开角色；未把下条关切或重复拷贝并入"
+    }
+  ],
+  "pdf_role_proofs": [],
+  "role_verification": "已读完整所选原关切与整个对应答复。PeerJ作者签署回复信内逐点引述评审；不是独立完整评审文件。",
+  "duplicate_removal": [],
+  "correction_notes": [
+    "原TXT日期可能为抓取/副本日期；以PDF Author Response日期为作者回复依据；模型输入不含平台结果或未来版本。"
+  ],
+  "scope": "文字回应评价；没有将片段当整轮，也不验证真实修订行为",
+  "input_sha256": "99351d39e7f30a0ed9fe26c3e3a82fe93aac2d32407cec7e8fd0c3297bbfb61f",
+  "license_status": "pending_individual_source_check_local_research_only",
+  "created_at": "2026-10-22T12:26:17.320386+08:00"
+}

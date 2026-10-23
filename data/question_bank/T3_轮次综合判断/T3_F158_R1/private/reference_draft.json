@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F158_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "检索与质性综合",
+    "理论参照",
+    "政策推论"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对HiAP比较背景、主流政策理论、沉浸/归纳编码和综合流程的实际扩充。",
+    "两位评审的回复可能重复一封总说明，不能把重复文字当两次修改；结果主题与政策理论推论仍须分别对证。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Are the rationale for and objectives of the systematic review clearly stated?\nThe authors have provided a thorough and well-sounded rationale for their systemic review. To\nbegin with, the authors explain that their review draws upon their previously carried out review in\nthe ‘Health in All Policies’ (HiAP) field. However, it would have been helpful for the reader, if the\nauthors had provided a bri",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nPaul Cairney and Sean Kippin 22.12.21 [external resource identifier omitted] Notes on the revision of ‘The\nfuture of education equity policy in a COVID-19 world: a qualitative systematic review of\nlessons from education policymaking’ [external resource identifier omitted] We thank both reviewers for their thorough and constructive reviews, which helped\nus to improve our review. We summarise how the article has changed in response, then\nprovide a",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "(Kippin & Cairney, 2021). The COVID-19 response has also\nhighlighted the wider socio-economic context where some\npopulations have the ability to live and learn safely while\nothers do not.\nThis new international experience could prompt a major\nreboot of global and domestic education equity initiatives. It is\ntempting to assume that high global attention to inequalities\nwill produce a ‘window of opportunity’ for education equity\ninitiatives. However, policymaking research warns against\nthe assumption that major and positive policy change is likely.\nFurther, equity policy research shows that policy processes\ncontribute to a major gap between vague expectations and\nactual practices and outcomes (Cairney & St Denny, 2020). Crises could prompt policy choices that exacerbate the problem.\nIndeed, the experience of health equity policy is that the\nCOVID-19 response actually undermined a long-term focus\non the social and economic causes of inequalities (Cairney\net al., 2021).\nTherefore, advocate",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "of equity before identifying a moral imperative to pursue it,\nalthough most find that policymakers do not share their views\n(Cairney et al., 2021).\nIn education, the exercise of power is a central feature of research:\nequity is highly contested, there is no equivalent agreement\nthat all inequalities are unfair, and fewer studies examine the\n‘social determinants’ of education inequalities. Far more studies criticise how policymakers (a) ignore ‘social determinants’\nand (b) defend a more limited definition of equity as the equal\nopportunity to access a high-quality public service (the meaning of terms such as ‘quality’ are also contested – see Ozga et al.,\n2011).\n3. Explore critiques of ‘neoliberal’ approaches to education\nequity.\nCommon descriptions of neoliberalism refer to two related\nfactors. First, policymaking based on a way of thinking that\nfavours individualism and non-state solutions, and therefore prioritises individual over communal or state responsibility, market over state a",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "comparable search terms, but there is no direct equivalent to\nHiAP or the WHO as its champion. UNESCO is broadly equivalent to the WHO, but to focus on a UNESCO initiative alone\nwould be misleading: the WHO features in almost-all HiAP\nstudies, but UNESCO is discussed less frequently than the\nWorld Bank or OECD in education studies.\nWe used similar search criteria for inclusion as Cairney\net al. (2021). The article had to: be published in a peer reviewed\njournal in English (research and commentary articles), and\nprovide at least one reference to a conceptual study of policymaking in its bibliography (including articles that cite education policymaking texts rather than the original policy theory\nsource). This focus on articles alone seems more problematic in education, so we used snowballing to identify 31 exemplar texts described as foundational. Education research has\nits own frames of reference regarding: ‘policy sociology’ (half\nof the included articles feature Ball, e.g., Ball, 199",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "it? What policy theories do they use when describing\npolicymaking?\nIn that context, each review’s guiding question is: How does\nequity research use policy theory to understand policymaking?\nOriginally, we identified five sub-questions to guide article\ninclusion (Q1) and analysis (Q2-5):\n1. \u0007How many studies provide a non-trivial reference to\npolicymaking concepts or theories?\n2. \u0007How do these studies describe policymaking?\n3. \u0007How do these studies describe the ‘mechanisms’ of policy change that are vital to equity strategies (although\nCairney et al., 2021 show that very few studies answer\nthis question)?\n4. \u0007What transferable lessons do these studies provide? For\nexample, what lessons for other governments do case\nstudies provide?\n5. \u0007How do these studies relate educational equity to\nconcepts such as spatial justice?.\nWe answer that full set of questions elsewhere, in relation\nto inequalities policies across the EU (Cairney et al., 2022).\nHere, we focus on making sense of the general p",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

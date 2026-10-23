@@ -1,0 +1,43 @@
+{
+  "task_id": "T3_F062_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "机制与因果解释",
+    "证据来源",
+    "回应与修改"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审质疑居家限制为何反而减少线上志愿，作者首帖主要解释WHO来源并承诺修订；核对后稿是否真的补了机制而非只改措辞。",
+    "区分引用的死亡统计、作者经验叙述和项目参与数据，不能把评审个人经验或作者引用任一方当作默认事实标准。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Thank you for the opportunity to review the article entitled “Force majeure impact on citizen\nscience: Perspective from an EU funded project”. The article addresses a significant topic of\norganisational and societal relevance by analysing challenges and solutions to conducting citizen\nscience and research innovation activities during a pandemic. More specifically, it focuses on an\nEU-funded intern",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you very much for your thorough feedback. Though we understand\nthat your first-hand experience of Nigeria's excess mortality due to COVID-19\nmaybe different, the text quoted in our article, in the sub-section 'The emergence of COVID19 in late 2019', is directly from this WHO (2022) article: Global excess deaths associated\nwith COVID-19: January 2020-December 2021. World Health Organisation. Available from\nhere: [external res",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "This paper presents a case study of challenges and solutions to\nconducting citizen science research and innovation activities\nthroughout a 21st century force majeure. During the execution\nof a project funded under the EU Horizon2020 ‘Science with\nand for Society’ (SwafS) theme (grant agreement GA 873169)\n(EU Cordis (2019)), ‘Citizen Scientists Investigating Cookies\nand Apps GDPR Compliance’ (CSI-COP), restrictions on\nmobility and public gatherings in project partner countries seriously affected the organisation and hosting of the many planned\nface-to-face activities. Originally an eleven-partner project\nbacked by volunteer expert Advisory Board members, CSI-COP\nproject successfully concluded with nine partners, produced\nan extra deliverable in the form of ‘Guidelines for the EU on\nimproving GDPR compliance’, and an industry award for the\n‘Best Innovative Privacy Project’ in the inaugural Piccaso\nPrivacy awards in December 2022. The topic of the CSI-COP\nproject concerned raising awarene",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "The WHO (2022) recorded the global excess mortality associated\nwith COVID-19 in the twenty-four months from January\n2020 to December 2021 as 14.91 million. This number\nrepresents “9.49 million more deaths than those globally reported\nas directly attributable to COVID-19” (WHO, 2022). In defining\n‘excess mortality’, the WHO stated this is “the difference\nbetween the total number of deaths that have occurred and\nthe number of deaths that would have been expected in the\nabsence of the pandemic i.e., a no-COVID-19 scenario.”\n(2022). The WHO reported the corona pandemic’s “several\nwaves” impacting different countries according to their “unique\nregional distributions, mortality levels and drivers” (2022):\n\u0007“Twenty countries, representing approximately 50% of the\nglobal population, account for over 80% of the estimated\nglobal excess mortality for the January 2020 to December\n2021 period. These countries are Brazil, Colombia, Egypt,\nGermany, India, Indonesia, the Islamic Republic of Iran,\nItal",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Abstract\nBackground\nManagement of citizen science engagement during a force majeure\nneeds very careful consideration in order not to lose precious time.\nThis paper serves as a guide for pro-action in the event of another\nvirus-enforced stay-at-home, movement-control order and presents\nnecessary changes undertaken by an international collaboration\nduring a once-in-a-hundred years’ pandemic that reduced face-to-face\npublic interactions. Overcoming challenges imposed under force\nmajeure conditions, a citizen science project funded under the EU\nHorizon2020 research and innovation scheme SwafS15-2019,\nrethought experiential learning through volunteering screen time.\nMethods\nMitigation measures, to limit the handicap of moving to online\nworking reducing potential for learning through synchronous live\nengagement, included creation of an interactive multilingual informal\nfive-step learning resource (CSI-COP MOOC: ‘Your Right to Privacy\nOnline’), adapting Greenpeace’s ‘Big Plastic Count’ to an ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Abstract\nBackground\nManagement of citizen science engagement during a force majeure\nneeds very careful consideration in order not to lose precious time.\nThis paper serves as a guide for pro-action in the event of another\nvirus-enforced stay-at-home, movement-control order and presents\nnecessary changes undertaken by an international collaboration\nduring a once-in-a-hundred years’ pandemic that reduced face-to-face\npublic interactions. Overcoming challenges imposed under force\nmajeure conditions, a citizen science project funded under the EU\nHorizon2020 research and innovation scheme SwafS15-2019, required\nre-thinking provision of experiential learning through volunteering\nscreen time.\nMethods\nMitigation measures, to limit the handicap of moving to online\nworking reducing potential for learning through synchronous live\nengagement, included creation of an interactive multilingual informal\nfive-step learning resource (CSI-COP MOOC: ‘Your Right to Privacy\nOnline’), adapting Greenpeace’s ‘B",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

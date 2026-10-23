@@ -1,0 +1,42 @@
+{
+  "task_id": "T3_F084_R1",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "操作化与规范框架",
+    "样本外推"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "核对开放科学协议步骤与FAIR/TRUST及调查结果的对应是否明示，不把框架名称罗列当实施证据。",
+    "作者承认团队样本未覆盖全部观点，核对讨论中面向整个IAM社群的建议是否保留这一边界。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "materials.reviews.R1",
+      "exact_quote": "Summary of the article:\nThis paper presents an Open Science Protocol specifically tailored for the Integrated\nAssessment Modeling (IAM)community, based on a survey of IAM teams. The protocol is\ndesigned to improve the transparency, accessibility, and reusability of IAM models and outputs\nby aligning with the FAIR (Findable, Accessible, Interoperable, Reusable) and TRUST\n(Transparency, Responsibili",
+      "role": "评审主张，应结合整份报告"
+    },
+    {
+      "input_field": "materials.responses.R1",
+      "exact_quote": "\nDear reviewer, Thank you so much for the time devoted to the manuscript and your\ninsightful comments. They have been a key resource in improving the manuscript and\nstudy. Detailed responses below:\nSummary of the article: This paper presents an Open Science Protocol specifically tailored\nfor the Integrated Assessment Modeling (IAM)community, based on a survey of IAM teams.\nThe protocol is designed to improve the transparency, accessibility, and r",
+      "role": "作者主张，非修改事实"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Based on the collected results, we propose an Open Science\nProtocol for the IAM community to encourage and support\nthe adoption of open science practices (Figure 2). The protocol\n18",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Based on the collected results, we propose an Open Science\nProtocol for the IAM community to encourage and support\nthe adoption of open science practices (Figure 2). The protocol\nstructure aligns with the survey sections, with each stage\ndesigned to adhere to the FAIR and TRUST principles. It\nfocuses on the key steps of IAM studies, offering detailed guidance and practical strategies to address the challenges identified through the survey. This protocol aims to ensure full\ntransparency and thorough documentation of models, while\nmaking outcomes accessible, interoperable, reusable, reproducible, and reliable for a wide range of audiences, including both scientific and non-expert communities, serving as a\ndependable resource for informed decision-making.\nThe first stage of the protocol emphasizes the documentation\nand harmonization of models and data. It is crucial to ensure\ntransparency in model assumptions, inputs, and outputs so\nthat models developed by different teams can be interope",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    },
+    {
+      "before_field": "materials.manuscript_before.text",
+      "before_quote": "Open science has developed into a major area of policy interest for academic institutions and a common approach for many\nresearchers. The IAM community is rapidly adhering to these\nprinciples since IAM results hold particular significance for\na wide range of stakeholders and policymakers. IAM models\nhave traditionally faced criticism for their lack of transparency and the difficulty in fully testing their assumptions\ndue to the complexity of the underlying code51. This has led to\nperceptions of IAMs as “black box” models, diminishing their\nreliability in the eyes of some decision-makers41. Embracing\nopen science practices would greatly benefit the IAM community\nby demystifying these models and making their methods\nand procedures far more transparent and accessible. This is a\ncrucial step in translating model insights into real-world policy\nactions.\nAs in other scientific communities, the adoption of open\nscience principles faces several challenges, such as limited\nawareness, knowledge ",
+      "after_field": "materials.manuscript_after.text",
+      "after_quote": "Open science has developed into a major area of policy interest for academic institutions and a common approach for many\nresearchers. The IAM community is rapidly adhering to these\nprinciples since IAM results hold particular significance for\na wide range of stakeholders and policymakers. IAM models\nhave traditionally faced criticism for their lack of transparency and the difficulty in fully testing their assumptions\ndue to the complexity of the underlying code66. This has led to\nperceptions of IAMs as “black box” models, diminishing their\nreliability in the eyes of some decision-makers50. Embracing\nopen science practices would greatly benefit the IAM community\nby demystifying these models and making their methods\nand procedures far more transparent and accessible. This is a\ncrucial step in translating model insights into real-world policy\nactions.\nAs in other scientific communities, the adoption of open\nscience principles faces several challenges, such as limited\nawareness, knowledge ",
+      "role": "真实文本差异候选；包含重排/提取差异，须在页图核验，不自动当实质解决"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

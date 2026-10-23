@@ -1,0 +1,27 @@
+{
+  "task_id": "F010_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前6.1-sol材料阅读与候选核查点；非人类金标准，未运行被测或裁判模型",
+  "review_dimensions_AI_candidates": [
+    "概念操作化",
+    "研究范围"
+  ],
+  "dimension_status": "AI候选主题，未冻结为专家标签或评分权重",
+  "ai_checks": [
+    "评审要求解释新闻选择如何边缘化全球议题，并联系资源民族主义；答复只概括声称在国族化与结论两节处理。"
+  ],
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "This is a well argued and objective analysis of the US, Greek, Dutch, and Israeli ministries of\nforeign affairs websites. It illustrates the way information is articulated, circulated and\ndisseminated through official channels and networks. The use of content analysis is possibly\nadequate to the aims and goals of the article as it stresses the choice of specific sets of news\nagainst other news. Th",
+      "role": "完整报告中的要求，应继续阅读全文"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "\nThank you very much for your review. Your points have been taken into consideration,\ndiscussed and addressed in 'the naitonalization of all spaces' and 'conclusions' sections.\n",
+      "role": "作者的文字主张，不能当实际修订证据"
+    }
+  ],
+  "scope": "候选锚点非穷尽，不代表所有问题已被发现；T2仅文字回应评价，不据后稿给文字标签。"
+}

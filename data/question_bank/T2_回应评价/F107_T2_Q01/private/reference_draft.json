@@ -1,0 +1,28 @@
+{
+  "task_id": "F107_T2_Q01",
+  "gold_label": null,
+  "expert_gold_status": "not_started",
+  "reference_origin": "当前sol对本地原件/既有净化输入逐段核对；非独立专家验收",
+  "review_dimensions_AI_candidates": [
+    "替代解释与群体差异"
+  ],
+  "dimension_status": "AI候选主题；未冻结为专家标签或权重",
+  "source_evidence_candidates": [
+    {
+      "input_field": "input.comment_text",
+      "exact_quote": "In terms of the attitudes, I am no statistician to check the validity of the argument in drawing the\nstatistical and regression analysis, and I have noted this. I can say that the attitudes are somewhat\nwhat I'd expect, it's worth adding that women may be have a lower income and thus due to their\nlower socioeconomic position they may feel more worried about poverty and inflation, so this is\ncould be mentioned in terms of analysing the results.",
+      "role": "完整所选原评议关切"
+    },
+    {
+      "input_field": "input.response_text",
+      "exact_quote": "We also have added a reference\nexplaining how income differences between males and females may influence their\ndifferent perceptions regarding poverty and inflation because of the war.",
+      "role": "全部给定对应答复，不是实际修改证据"
+    }
+  ],
+  "ai_checks": [
+    "维度与过程定位供专家核对，不是预定正确答案。",
+    "保留低收入解释女性感知差异的评审限制与作者引文承诺。"
+  ],
+  "revision_verification": "not_assessed",
+  "scope": "T2只按给定文字回应评价；私有修改关联不得混入T2评分。T1无唯一标准评审。"
+}
