@@ -129,6 +129,24 @@ def clean_peerj_review(text):
     return text[start:end if end != -1 else None].strip()
 
 
+def clean_response_letter(text, title):
+    """Drop identifying text: salutation naming the editor, an author-name heading, reviewer names in
+    headings, the paper title, and a closing signature (only near the end, since some letters put a
+    signed cover note before the point-by-point replies)."""
+    text = re.sub(r'\A\s*Dear [^\n]*\n', '', text)
+    text = re.sub(r'\A\s*Response to Reviewers?\b[^\n]*\n', 'Response to Reviewers\n', text, flags=re.I)
+    text = re.sub(r'(Reviewer\s*#?\s*\d+)\s*\([^)\n]*\)', r'\1', text)
+    text = re.sub(re.escape(title.strip()), '[title removed]', text, flags=re.I)
+    closing = r'^[ \t]*(Kind regards|Best regards|Sincerely|Yours sincerely|Regards)\b[^\n]*\n'
+    tail = len(text) * 0.85
+    ends = [m for m in re.finditer(closing, text, re.M | re.I) if m.start() >= tail]
+    if ends:
+        text = text[:ends[-1].start()]
+    # A signed cover note before the replies: drop the closing line and the short name lines under it.
+    text = re.sub(closing + r'(?:[ \t]*[^\n]{1,120}\n){0,3}', '', text, flags=re.M | re.I)
+    return text.strip()
+
+
 def pdf_supplement(pdf, dest_dir, key):
     """Text and page images of a supplement, with DOI/attribution footer lines redacted in both."""
     doc = pymupdf.open(pdf)
@@ -270,7 +288,7 @@ def build_t3_peerj(sample, pid, ledger, intake_fill):
     responses, response_src = {}, []
     for r in meta['responses']:
         path = ROOT / r['file'] if r.get('existing_repository_file') else intake_fill / r['file']
-        responses['combined'] = docx_text(path)
+        responses['combined'] = clean_response_letter(docx_text(path), ledger['题名'])
         response_src.append({'file': str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else r['file'],
                              'sha256': sha(path), 'answers': r['answers'], 'date': r['date']})
     version_dir = (ROOT / ledger['修改稿原件']).parent
@@ -293,7 +311,8 @@ def build_t3_peerj(sample, pid, ledger, intake_fill):
                                   'date': r['date']} for r in meta['reviews'] if r['on_version'] == 'v1'],
                      'responses': response_src, 'editor_decision': str(decision[0].relative_to(ROOT)) if decision else None,
                      'editor_name_line_removed': bool(editor),
-                     'review_cleaning': 'reviewer name/permalink header and citation block (title, DOI) removed'}
+                     'review_cleaning': 'reviewer name/permalink header and citation block (title, DOI) removed',
+                     'response_cleaning': 'salutation, reviewer names in headings and signature removed'}
 
 
 def main():
