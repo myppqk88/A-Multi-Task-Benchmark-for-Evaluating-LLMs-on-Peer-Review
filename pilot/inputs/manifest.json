@@ -1069,12 +1069,18 @@
    "pilot_role": "calibration",
    "task": "T3",
    "input_path": "pilot/inputs/T3_D08_R1/input.json",
-   "input_sha256": "82eeb6671c3125a58c4f00014351d3add7255a082dafed777ccebfda72fb1569",
+   "input_sha256": "72fefcee24454a7fd1481281a64c4112327e2a1850bcc1cc9c6481849baf78b0",
    "lineage": {
     "copied_from": "data/question_bank/T3_轮次综合判断/T3_D08_R1/input.json",
     "sha256": "09992401f3023e2b8acdd205ec57259eeebede9eeb821bf63a14bd230e4778a7",
     "changes": [
      "v0.2 output schema with issue_type"
+    ],
+    "post_draft_fixes": [
+     {
+      "note": "reviewer name removed from the response opening",
+      "previous_sha256": "82eeb6671c3125a58c4f00014351d3add7255a082dafed777ccebfda72fb1569"
+     }
     ]
    },
    "assets": {
@@ -1365,7 +1371,7 @@
    "pilot_role": "calibration",
    "task": "T3",
    "input_path": "pilot/inputs/T3_D17_R1/input.json",
-   "input_sha256": "a294bf8bb32add6ed43b8e14aad41976be88ba6dd4a0bacaf1f49342a140ec27",
+   "input_sha256": "5e7407cdeec7b5c3953d92709851dcb5f2a706476ab93873559f5d4d6c1b0419",
    "lineage": {
     "built_new": true,
     "manuscript_before": {
@@ -1472,7 +1478,13 @@
     "editor_decision": "data/originals/PeerJ/psychiatry-and-psychology/5414_Mindfulness_and_autonomous_sensory_meridian_response__ASMR/version_v0.2/5414_v0.2_2018-05-11_decision.txt",
     "editor_name_line_removed": true,
     "review_cleaning": "reviewer name/permalink header and citation block (title, DOI) removed",
-    "response_cleaning": "salutation, reviewer names in headings and signature removed"
+    "response_cleaning": "salutation, reviewer names in headings and signature removed",
+    "post_draft_fixes": [
+     {
+      "note": "response letter re-extracted in document order (table rows in place); author-name heading and signature removed",
+      "previous_sha256": "a294bf8bb32add6ed43b8e14aad41976be88ba6dd4a0bacaf1f49342a140ec27"
+     }
+    ]
    },
    "assets": {
     "assets/manuscript_after_p004.png": "469efe189e3ef3ab0de3eee253c24b47388f359b8f584a28cfc46b83ec5e924d",

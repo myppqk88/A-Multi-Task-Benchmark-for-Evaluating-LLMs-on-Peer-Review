@@ -37,7 +37,7 @@ def section(title, text):
 
 def readable(task_id):
     data = json.loads((INPUTS / task_id / 'input.json').read_text(encoding='utf-8'))
-    parts = [f'题号：{task_id}\n（这是模型看到的全部文字材料；图表原图见同名题目文件夹中的图片。）']
+    parts = [f'题号：{task_id}\n（这是模型看到的全部文字材料。表格和图片是从 PDF 抽取的文字，可能不完整；需要看原图时请联系协调人。）']
     if 'input' in data and 'comment_text' in data['input']:
         parts += [section('审稿意见', data['input']['comment_text']), section('作者回应', data['input']['response_text'])]
     elif 'input' in data:
@@ -82,29 +82,50 @@ def write_row(ws, row, values, fill_from, bold_cols=()):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--reveal', action='store_true')
+    parser.add_argument('--tasks', nargs='*', help='only these tasks (e.g. the second-adjudication sample)')
+    parser.add_argument('--out', help='output path relative to the repository root')
     args = parser.parse_args()
     key = json.loads((ROOT / 'pilot/blinding_key.json').read_text())['tasks'] if args.reveal else {}
     merged = [json.loads(p.read_text(encoding='utf-8')) for p in MERGE.glob('*_*.json')]
+    if args.tasks:
+        merged = [m for m in merged if m['task_id'] in args.tasks]
     merged.sort(key=lambda m: (ORDER[m['X']['task']], m['task_id']))
 
     wb = Workbook()
     guide = wb.active
     guide.title = '说明'
     lines = [
-        ('怎么做（只有三步）', True),
-        ('1. 打开这道题的材料：pilot/materials_readable/题号.txt', False),
-        ('2. 每一行，X 和 Y 是两位起草者对同一个问题的说法。对照材料，在黄色"选择"列选：X对 / Y对 / 都对 / 都不对。', False),
-        ('3. 只有选"都不对"时，在"备注"写一句正确说法。每题做完，在该题第一行填用时（分钟）。', False),
+        ('这张表要你做什么', True),
+        ('两位起草者（X 和 Y）各自读了同一批论文和审稿意见，写下了"这篇稿子有哪些科学问题"。每一行是他们对同一个问题的说法。', False),
+        ('你的任务：对照原始材料，判断谁说得对。你的判断就是最后的参照答案，模型将来要和它比。', False),
         ('', False),
-        ('小提示', True),
-        ('· 只有一方提出的问题（另一方显示"—"）：问题成立就选那一方"对"，不成立选"都不对"。', False),
-        ('· 标 ★ 的是没有审稿人来源、起草者自己发现的问题，请对照原文核实。', False),
-        ('· 结论行：选你同意的那一方；都不同意就选"都不对"并在备注写你的结论。', False),
-        ('· 题目按从短到长排：先做回应评价（T2），再做原稿评审（T1），最后做修订评审（T3）。', False),
+        ('每一行只做一件事：在黄色的"选择"列下拉选一项', True),
+        ('X对 —— X 的说法成立，Y 的说法不成立或明显更差', False),
+        ('Y对 —— Y 的说法成立，X 的说法不成立或明显更差', False),
+        ('都对 —— 两个说法都成立（措辞不同、详略不同都没关系）', False),
+        ('都不对 —— 两个说法都不成立；或者这个问题虽然存在，但太细、不值得在审稿中提出', False),
+        ('', False),
+        ('只有一方写了的行（另一格显示"—"）', True),
+        ('问题成立、值得提 → 选写了的那一方"对"。问题不成立，或者没必要提 → 选"都不对"。', False),
+        ('', False),
+        ('最后一行"结论"（只有回应评价和修订评审题有）', True),
+        ('X 和 Y 对"作者的回应/修改是否到位"下的总结论。选你同意的一方；两边都能接受就选"都对"。', False),
+        ('', False),
+        ('示例', True),
+        ('X：【高】样本只有 4 人且没有对照组，不能说教具"显著提高"了理解。　Y：—', False),
+        ('→ 你翻材料确认确实只有 4 人、没有对照组，问题成立且重要，选"X对"。', False),
+        ('', False),
+        ('几点说明', True),
+        ('· 材料在 题目材料 文件夹里，文件名就是题号，例如 D04_T1_Q01.txt。', False),
+        ('· 【高】【中】【低】是起草者认为的重要程度，仅供参考；你认为没必要提的，选"都不对"即可。', False),
+        ('· 标 ★ 的是审稿人没提、起草者自己发现的问题，请对照原文看一下。涉及数字计算的，不用自己算，按你的专业判断它是否重要即可。', False),
+        ('· 备注不是必填。只有当你选"都不对"、并且觉得有一个正确说法时，可以写一句。', False),
+        ('· 做完每道题，在这道题的第一行"本题用时"里填大概的分钟数。', False),
+        ('· 请独立判断，不要和其他裁决员讨论。', False),
     ]
     for i, (text, bold) in enumerate(lines, 1):
         guide.cell(row=i, column=1, value=text).font = Font(name='Arial', size=11, bold=bold)
-    guide.column_dimensions['A'].width = 100
+    guide.column_dimensions['A'].width = 110
 
     ws = wb.create_sheet('裁决表')
     heads = ['题号', '材料文件', 'X 的说法', 'Y 的说法', '选择', '备注', '本题用时(分)']
@@ -144,7 +165,7 @@ def main():
     col = chr(64 + fill_from)
     choice.add(f'{col}2:{col}{row - 1}')
     wb.active = 0
-    out = ROOT / ('pilot/unblinded/裁决表_揭盲版.xlsx' if args.reveal else 'pilot/裁决表_盲评版.xlsx')
+    out = ROOT / (args.out or ('pilot/unblinded/裁决表_揭盲版.xlsx' if args.reveal else 'pilot/裁决表_盲评版.xlsx'))
     out.parent.mkdir(parents=True, exist_ok=True)
     wb.save(out)
     print(out.relative_to(ROOT), row - 2, 'rows')
