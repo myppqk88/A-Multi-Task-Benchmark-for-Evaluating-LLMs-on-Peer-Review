@@ -1,0 +1,241 @@
+{
+ "task_id": "D11_T1_Q01",
+ "paper_id": "ORE:5-286",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "5fd462d347a08081dca9763eb7529e45d7784fd4b029f3fe6e24c4df44569dfa",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "核心贡献（图3三层框架）如何由数据得出不透明：文中声称采用溯因推理和三阶段编码，但没有展示从编码类别到框架的推导证据，框架看起来更像经验总结或咨询产品。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "论文的主要理论贡献缺乏可追溯的证据链。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "it is not extensively clarified in the paper how the study of underlying documents leads to these outcomes"
+    },
+    {
+     "report_id": "R3",
+     "exact_quote": "The Figure 3 does not show the evolutionary phases with links to the contextual triggers in a convincing way."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The abductive moves described above provided the interpretive logic that transformed the coded categories of Table 2 into the three-layered framework"
+    }
+   ],
+   "match_criteria": "指出框架与数据之间的推导不透明（\"黑箱\"），或缺乏证据展示。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "一手资料（备忘录、田野笔记、会议观察）的来源、数量和使用方式没有交代清楚，结果中也很少引用；发现主要呈现为描述或作者经验，缺少引文或观察实例支撑。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "影响发现的证据基础。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "The authors claim to use memos, field notes and observations in various meetings. However, this type of data is not sufficiently referenced or used to support the findings."
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "the findings sometimes appear mainly descriptive or based on the authors’ insights and experience"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "These constitute primary ethnographic style data"
+    }
+   ],
+   "match_criteria": "指出一手资料未被说明或未用于支撑发现，或缺少引文/实例。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "编码过程由谁完成、如何保证分析的可信度没有说明（单人还是多人编码、有无复核）。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "质性分析的可信度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Who conducted the data analysis? Only one researcher? Or multiple researchers?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Coding was conducted in iterative stages—open, axial, and selective—to identify recurrent dynamics"
+    }
+   ],
+   "match_criteria": "指出编码者身份或复核机制未说明。",
+   "acceptable_alternatives": [
+    "认为质性研究不必报告编码者间信度，但应说明编码者与复核方式，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "研究问题过于描述性（\"PMS在公共部门网络中如何演化\"），没有借助文献聚焦到网络中的行动者差异、治理变化或权力动态，因而也难以清楚说明理论贡献。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "研究问题与贡献的清晰度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The research question is very descriptive"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "consequently poses the following research question"
+    }
+   ],
+   "match_criteria": "指出研究问题过于描述性或与文献脱节。",
+   "acceptable_alternatives": [
+    "认为探索性溯因研究用描述性问题合理，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "EEN的网络结构与行动者不清：谁是网络的行动者（成员组织、协调机构、欧盟委员会）、各自承担什么角色，文中没有说明。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "\"网络\"分析单位的界定。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "What are here the actors: the individual members, the coordinating institutions of EEN, or the representatives of the EU commission."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "the world’s largest public network supporting small and medium enterprises (SMEs)"
+    }
+   ],
+   "match_criteria": "指出网络行动者或治理层级未界定。",
+   "acceptable_alternatives": [
+    "指出R1把EEN误认为60个成员的协会，而文中称其为全球最大的公共网络，前提有误，也合理。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "缺少关键行动者访谈来揭示PMS修订背后的动机；各阶段之间为何修订PMS解释不足。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "影响\"变化触发因素\"结论。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "What I missed was interviews with key actors for unravelling motives behind decisions made about the PMS"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Data were collected over several years through document analysis, direct observation, and memo writing"
+    }
+   ],
+   "match_criteria": "指出缺少访谈或阶段转换的原因解释不足。",
+   "acceptable_alternatives": [
+    "认为会议观察可以替代访谈、只需说明理由，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "概念上主要分析了\"测什么\"（绩效测量），而对\"如何使用测量结果\"（绩效管理）着墨不多，与题目和框架的\"绩效管理系统\"定位不一致。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "核心概念的界定。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "the analysis focuses primarily on the performance measurement – that is, on what to measure – rather than on the performance management"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "offering new insights into PMS as socio-technical systems"
+    }
+   ],
+   "match_criteria": "指出测量与管理的混淆。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "推广过度：基于单一案例，却称框架是适用于\"任何类型公共部门网络\"的可迁移模型；局限部分虽承认单一案例，但正文的推广表述没有相应限定。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "核心结论的适用范围。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "it may partially limit the scientific robustness of the work, particularly regarding its generalizability and replicability"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "This framework provides a transferable model for understanding PMS evolution in any type of public sector network"
+    }
+   ],
+   "match_criteria": "指出单一案例不足以支持\"适用于任何公共网络\"的主张。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "研究者是网络的内部人：主要研究者长期在EEN工作，既采集资料又完成编码；文中列举了三角互证、审计轨迹和反思性备忘录，但没有任何独立编码或外部核查，内部人视角可能塑造对PMS演化的解释。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "影响解释的中立性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "the lead researcher’s extended professional experience within the network afforded access to archives and meetings"
+    }
+   ],
+   "match_criteria": "指出内部人研究者带来的偏差风险及缺乏独立核查。",
+   "acceptable_alternatives": [
+    "认为文中已有反思性策略、只需补充独立复核，也算命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "要求统计检验或大样本比较作为单案例质性研究的必要条件。",
+  "坚持EEN只有60个成员（文中称其为大型公共网络）。"
+ ],
+ "draft_notes": "三份v1报告。作者回应中对审稿人的编号有混淆（对R1的回应写成\"Reviewer 3\"）。P9为起草者自行发现。"
+}

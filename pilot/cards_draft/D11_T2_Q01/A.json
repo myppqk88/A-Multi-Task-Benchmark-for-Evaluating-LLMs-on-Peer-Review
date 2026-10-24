@@ -1,0 +1,102 @@
+{
+ "task_id": "D11_T2_Q01",
+ "paper_id": "ORE:5-286",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "84ee72f9ee29c68b12982a07a001a4a7975ece2055646196e3876c9743d25336",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切包含三项要求：说明一手资料（备忘录、田野笔记、会议观察）并在结果中实际引用；用直接引文或观察实例支撑主要发现；说明谁做了分析、是否有编码者间一致性的做法。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "界定三项要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Also, inter-coder reliability practices should be explained."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "The primary data sources must be clarified."
+    },
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "direct quotes from the interviews/ meetings or short illustrative examples"
+    }
+   ],
+   "match_criteria": "完整拆出三项要求。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应逐项对应：说明第3节区分一手与二手资料，第4节和表2加入了具体资料摘录，方法部分说明编码由第一作者完成、合作者复核编码结构与类别定义。三项要求都得到直接回应。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "决定回应的主要充分性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Who conducted the data analysis?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Section 4 and Table 2 now include concrete empirical excerpts"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "open, axial and selective coding were conducted by the first author and how the co-authors reviewed coding structures and category definitions"
+    }
+   ],
+   "match_criteria": "识别出三项要求都得到回应。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "\"合作者复核编码结构\"并不等于编码者间一致性检验，回应却称这已回答了编码者间信度的问题；此外，回应的大部分篇幅讨论图3框架和政策含义，与本条关切无关，结尾还把审稿人写错了（\"Reviewer 1\"）。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "限制回应的严谨程度。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "This addresses the reviewer’s question regarding inter-coder reliability"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "directly addresses Reviewer 1’s concerns"
+    }
+   ],
+   "match_criteria": "指出合作者复核不等于编码者间信度，或回应夹杂无关内容。",
+   "acceptable_alternatives": [
+    "认为质性研究中协商式复核是可接受的替代做法、回应充分，也可接受。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "sufficient",
+  "acceptable_set": [
+   "sufficient",
+   "partially_sufficient"
+  ],
+  "rationale": "三项要求均有具体回应；把协商式复核等同于编码者间信度略有夸大，判部分充分也有依据。"
+ },
+ "known_invalid_patterns": [
+  "把回应所述的表2摘录当作已核实存在。",
+  "因没有报告kappa系数就判不充分（质性研究不一定需要）。"
+ ],
+ "draft_notes": ""
+}

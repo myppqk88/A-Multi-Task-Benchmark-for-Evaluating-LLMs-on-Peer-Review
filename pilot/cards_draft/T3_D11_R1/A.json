@@ -1,0 +1,167 @@
+{
+ "task_id": "T3_D11_R1",
+ "paper_id": "ORE:5-286",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "e8dd921465b51b63e85fd1d5ff2ed99199bad228265122970b12aedf2661e316",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "partially_resolved：表2扩充为从开放编码到主轴、选择性编码的推导表，并附资料摘录；图3也有修订。框架与数据的联系更可追溯，但框架的\"可迁移性\"仍主要来自作者推理。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "核心贡献的证据链。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the data analysis largely remains a black box"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "showing how specific data excerpts informed the identification of broader conceptual categories"
+    }
+   ],
+   "match_criteria": "判为已解决或部分解决，并指出表2的推导展示。",
+   "acceptable_alternatives": [
+    "判为已解决也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "resolved / partially_resolved：方法部分说明了一手资料的来源（KPI工作组、指导委员会、技术委员会等会议备忘录），并解释为何不做访谈；编码由第一作者完成、合作者定期复核。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "对应R2、R3的资料与分析关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Who conducted the data analysis? Only one researcher? Or multiple researchers?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The coding and analysis were conducted by the first author, who was directly involved in the archival and observational data collection."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Although complementary interviews could have added additional perspectives"
+    }
+   ],
+   "match_criteria": "指出资料与编码说明已补充；可同时指出单一编码者问题仍在。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "reviewer_request_not_warranted / declined：研究问题保持描述性，作者说明这符合溯因探索设计；R1把EEN当作约60个成员的协会，作者澄清其为约600个区域伙伴组成的多层网络。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "检验模型是否机械要求改写研究问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "It seems to be an organization with 60 members in various countries, so it is manly an association."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Although descriptive in form, this research question is appropriate for an abductive and exploratory design"
+    }
+   ],
+   "match_criteria": "不把保留描述性研究问题判为未解决；能识别R1对EEN规模的误解。",
+   "acceptable_alternatives": [],
+   "status": "disputed"
+  },
+  {
+   "id": "P4",
+   "judgment": "resolved：引入了绩效测量与绩效管理的区分（Bititci），并讨论了与Garengo和Biazzo自下而上方法的相似之处。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "对应R2的概念关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "the analysis focuses primarily on the performance measurement"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The analysis treats the PMS not only as a measurement architecture but also as a managerial process"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "bottom-up PMS development logic described by Garengo and Biazzo (2012)"
+    }
+   ],
+   "match_criteria": "判为已解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "unresolved：修订稿仍称框架是适用于\"任何类型公共部门网络\"的可迁移模型，单一案例的推广限定没有落实到正文。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "结论范围。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "particularly regarding its generalizability and replicability"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "This framework provides a transferable model for understanding PMS evolution in any type of public sector network"
+    }
+   ],
+   "match_criteria": "指出推广表述未修改。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "unresolved（部分由审稿人涉及）：资料采集与编码都由身为网络内部人的第一作者完成，合作者复核不是独立编码；内部人偏差的风险仍在。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "解释的中立性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "who was directly involved in the archival and observational data collection"
+    }
+   ],
+   "match_criteria": "指出单一内部人编码的偏差风险仍未通过独立核查缓解。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "acceptable_under_rubric",
+  "acceptable_set": [
+   "acceptable_under_rubric",
+   "needs_substantive_revision"
+  ],
+  "rationale": "多数方法透明度关切得到实质修订；残留的推广过度与内部人单人编码若被视为实质问题，可判仍需实质修改。"
+ },
+ "known_invalid_patterns": [
+  "因作者没有补做访谈就判未解决（作者给出了理由）。",
+  "把回应中的审稿人编号混淆当作实质问题。"
+ ],
+ "draft_notes": ""
+}
