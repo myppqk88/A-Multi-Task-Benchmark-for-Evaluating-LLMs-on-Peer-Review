@@ -1,0 +1,93 @@
+{
+ "task_id": "D06_T2_Q01",
+ "paper_id": "ORE:4-24",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "0c73e5686caf00ba1c6b434bb9d55757b8d08ad671470329277552057e8e412e",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切：方法部分给出了三个平台的受众结构，但没有用这些数据来分析各平台的参与度指标。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "界定要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "This demographic data has not been used to evaluate the 'measures of engagement' on this different platforms."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "This demographic data has not been used to evaluate"
+    }
+   ],
+   "match_criteria": "准确复述关切。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应称这不是研究目标，但承认受众特征对参与度重要，并在讨论中把它补写为局限和未来研究方向。\"不是研究目标\"本身不是充分理由；但承认局限是对关切的部分回应。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "决定部分充分。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "structural characteristics"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "This was not the goal of our study"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "We rewrote the Discussion section in order to enhance this aspect as a limitation of our study"
+    }
+   ],
+   "match_criteria": "指出回应以\"非研究目标\"拒绝分析、仅以局限说明处理，判部分充分。",
+   "acceptable_alternatives": [
+    "若认为平台数据本来无法支持这种分析、作者以局限说明是恰当做法，判充分也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "回应没有说明为什么不能做这一分析（例如平台分析工具是否提供逐帖受众数据），所述修改在本题中也无法核实。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "限制回应的说服力。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "we provided a description of the audience at the InnoRenew CoE social media channels"
+    }
+   ],
+   "match_criteria": "指出回应缺少不可行性的具体理由，或修改无法核实。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": "拒绝补做分析的理由较弱（\"非研究目标\"），但以局限说明作出了部分回应。"
+ },
+ "known_invalid_patterns": [
+  "把回应所述修改当作已核实。"
+ ],
+ "draft_notes": ""
+}

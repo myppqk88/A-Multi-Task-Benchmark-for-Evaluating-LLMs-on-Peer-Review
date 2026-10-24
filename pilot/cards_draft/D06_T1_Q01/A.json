@@ -1,0 +1,164 @@
+{
+ "task_id": "D06_T1_Q01",
+ "paper_id": "ORE:4-24",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "fcbf78a14d1f2782766c6eb6b6db7a835584548a60a23d63482693e08c4291de",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "\"用户可能不愿评论可持续建筑话题、或无意通过社交媒体建立关系\"这一解释没有本研究数据支持：评论和分享太少，未进入分析，研究也没有测量用户动机。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "对低互动的解释超出了数据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "As far as the paper is concerned, this correlation is now based on any evidence."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "These findings indicate that users may not be comfortable commenting on topics connected to sustainable construction"
+    }
+   ],
+   "match_criteria": "指出该解释缺乏数据支持。",
+   "acceptable_alternatives": [
+    "认为作者引用了既有文献、可作为推测保留但需明确标注为推测，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "对科学传播与社交媒体相关文献的讨论很少，引言主要讲一般传播模型，没有梳理科研机构社交媒体传播的实证研究，讨论也缺乏与文献的对照。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "影响研究定位与结果解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "There is very little engagement with the literature."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The field of communication witnessed many changes over time."
+    }
+   ],
+   "match_criteria": "指出文献综述不足，或指出未与科学传播的社交媒体研究对话。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "方法部分给出了各平台的受众结构，但分析中没有使用；参与度差异可能部分来自各平台受众规模和构成的不同。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "影响平台间比较的解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "This demographic data has not been used to evaluate the 'measures of engagement' on this different platforms."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "InnoRenew CoE is active on Facebook with 1953 followers, Twitter (X) with 1430 followers and LinkedIn with 2571 followers."
+    }
+   ],
+   "match_criteria": "指出受众特征未纳入分析，或指出平台间受众差异影响比较。",
+   "acceptable_alternatives": [
+    "认为平台分析工具无法提供逐帖受众数据、只能作为局限说明，也合理。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "结构建议：引言更像理论背景，宜分开；研究问题实际类似可检验的假设，可按问题组织理论背景。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "写作组织问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "My suggestion is to have different sections between Introduction and Theoretical Background (Literature Review)."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "the research questions resemble specific and testable hypotheses"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "In order to follow the main objective of this study, we formulated the following research questions (RQ):"
+    }
+   ],
+   "match_criteria": "提到引言与理论背景未分开，或研究问题的组织。",
+   "acceptable_alternatives": [
+    "认为探索性研究用研究问题更合适、不必改为假设，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "因果推断与推广过度：每类帖子只有约10条（共30条），帖子类型与内容主题、发布周次混在一起，且只来自一个机构账号，却得出\"人物图片+短文字是吸引社交媒体受众的最有效方式\"这一一般性结论。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "核心结论的设计基础薄弱。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "suggesting that using images of people in combination with short text captions is the most effective way to engage social media audiences"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "we had a small sample size (30 posts)"
+    }
+   ],
+   "match_criteria": "指出样本小、类型与主题/时间混淆或单一机构，不足以支持\"最有效方式\"的一般结论。",
+   "acceptable_alternatives": [
+    "只指出单一机构不能推广，也算部分命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "统计模型适用性存疑：展示量等计数通常远大于小计数且离散度大，用泊松回归而未检查过度离散（或改用负二项模型）；同一帖子跨平台的重复测量如何处理也说得很简略。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响显著性结论的可靠性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "For the analysis we applied Poisson regression as our data was count data of relatively low values"
+    }
+   ],
+   "match_criteria": "指出泊松回归的过度离散问题，或重复测量的处理不清。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "要求做逐帖受众人口学分析而不考虑平台数据是否可得。"
+ ],
+ "draft_notes": "两份v1报告；P5、P6为起草者自行发现。文本抽取中RQ4出现在RQ列表之前，属版式问题。"
+}

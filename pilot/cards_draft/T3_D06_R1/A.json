@@ -1,0 +1,133 @@
+{
+ "task_id": "T3_D06_R1",
+ "paper_id": "ORE:4-24",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "dc99e564ef5a4c243e4626492067fe1bf7ec3391bf3a5dfe7f5913f7a3fd198f",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "partially_resolved：作者为\"用户不愿评论\"的解释辩护，认为与既有文献一致，修订稿中原句保留；该解释仍没有本研究数据支持。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "检验模型能否区分\"引用文献\"与\"本研究证据\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "As far as the paper is concerned, this correlation is now based on any evidence."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "These findings indicate that users may not be comfortable commenting on topics connected to sustainable construction"
+    }
+   ],
+   "match_criteria": "指出原句仍在、解释缺乏本研究数据，判部分解决或未解决。",
+   "acceptable_alternatives": [
+    "认为作者已以文献支持、属合理推测，判已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "resolved / partially_resolved：讨论部分补充了大量文献对照，局限部分扩充了受众特征、跨平台可比性和算法变化等说明。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "对应R2的文献与受众关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "There is very little engagement with the literature."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Knowing the exact characteristics of our audience and understanding the potential for audience overlap and relapse is a significant limitation."
+    }
+   ],
+   "match_criteria": "指出文献与局限说明已补充。",
+   "acceptable_alternatives": [
+    "认为引言部分的科学传播文献仍未补充，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "reviewer_request_not_warranted / declined：R1的结构建议（分开引言和理论背景、按假设组织）作者未采纳，理由是研究为探索性、以研究问题引导。这些是可选的写作建议，不采纳不构成实质缺陷。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "检验模型是否机械要求照办可选建议。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "My suggestion is to have different sections between Introduction and Theoretical Background (Literature Review)."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "In our study we were guided by research questions as our research is exploratory"
+    }
+   ],
+   "match_criteria": "不把未采纳结构建议判为实质未解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "unresolved（审稿人未提），且有所加重：修订稿新增\"无论哪个平台，带人物图片的帖子表现最好\"的表述，而样本仅30帖、类型与主题和时间混淆、来自单一机构。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "核心结论的推广在修订中被加强。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "as our study revealed that regardless of the social media channel, posts containing an image with people, performed the best"
+    }
+   ],
+   "match_criteria": "指出新增的\"无论平台\"结论超出证据。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "unresolved（审稿人未提）：泊松回归的过度离散和重复测量问题未处理。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "统计问题未修正。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "For the analysis we applied Poisson regression as our data was count data of relatively low values"
+    }
+   ],
+   "match_criteria": "指出统计模型问题仍在。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision",
+   "acceptable_under_rubric"
+  ],
+  "rationale": "审稿人的关切多以局限说明处理；核心结论的推广在修订中被加强，统计与设计问题未处理。若只按审稿人关切衡量，判可接受也有依据。"
+ },
+ "known_invalid_patterns": [
+  "因作者声称\"已用修订模式标注所有修改\"就判已解决。",
+  "要求作者采纳R1的结构建议。"
+ ],
+ "draft_notes": ""
+}
