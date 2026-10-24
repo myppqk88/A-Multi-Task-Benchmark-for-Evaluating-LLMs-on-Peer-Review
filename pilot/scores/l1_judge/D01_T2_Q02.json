@@ -1,0 +1,164 @@
+{
+ "task_id": "D01_T2_Q02",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Accurately credits the claimed IHS sample-level 'internal validity' addition as partial. It correctly notes that no index type or values are given."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correctly describes the reliance on the published Schrank structure, the total-score/VAS justification and the conditional CFA offer."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correct that 'each measures' is unmet and the VAS is not addressed or explained. This is substantive; R01 is assigned to the reliability claim."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies that the 'internal validity' claim gives no internal consistency coefficients, separately from the factor-structure rationale."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Valid point: the structure was not tested in this sample, and subscale use weakens the total-score justification. The context confirms subscales are used."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct but minor: offering a conditional CFA does not resolve the request."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Accurately notes the factor structure is justified by citing the published structure."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Accurately captures the total-score/VAS rationale for not running a CFA, framed as only partial."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Points out that no internal consistency values appear in the response text, the core R01 gap. The factor-structure rationale is evaluated separately."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correct: only the IHS is mentioned, and the VAS is not addressed despite 'each measures'."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Terminology confusion between 'internal validity' and internal consistency reliability is supported by the material and noted in the card's rationale."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correct: there is no sample-level evidence that the borrowed structure holds."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Deferring the CFA decision to the reviewer is a minor, correct observation."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "True that the revision cannot be verified, but this is a scope note rather than a substantive gap in the response."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Accurately credits the stated location of the IHS 'internal validity' information as a partial response on reliability."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correctly describes the use of the published factor structure and the rationale for not running a CFA."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correct: the VAS and other measures are not addressed, and no inapplicability is explained."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Notes the ambiguous 'internal validity' wording and the absence of any reliability values, matching the R01 internal consistency gap."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Valid: there is no sample-level structure evidence, and neither applicability nor limitations are discussed."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Deferring the CFA decision to the reviewer is a minor, correct point."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Accurately credits the claimed IHS sample-level 'internal validity' addition as partial. It correctly notes that no index type or values are given.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correctly describes the reliance on the published Schrank structure, the total-score/VAS justification and the conditional CFA offer.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correct that 'each measures' is unmet and the VAS is not addressed or explained. This is substantive; R01 is assigned to the reliability claim.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies that the 'internal validity' claim gives no internal consistency coefficients, separately from the factor-structure rationale.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Valid point: the structure was not tested in this sample, and subscale use weakens the total-score justification. The context confirms subscales are used.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct but minor: offering a conditional CFA does not resolve the request.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Accurately notes the factor structure is justified by citing the published structure.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Accurately captures the total-score/VAS rationale for not running a CFA, framed as only partial.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Points out that no internal consistency values appear in the response text, the core R01 gap. The factor-structure rationale is evaluated separately.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correct: only the IHS is mentioned, and the VAS is not addressed despite 'each measures'.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Terminology confusion between 'internal validity' and internal consistency reliability is supported by the material and noted in the card's rationale.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correct: there is no sample-level evidence that the borrowed structure holds.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Deferring the CFA decision to the reviewer is a minor, correct observation.\"},{\"claim_index\":5,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"True that the revision cannot be verified, but this is a scope note rather than a substantive gap in the response.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Accurately credits the stated location of the IHS 'internal validity' information as a partial response on reliability.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correctly describes the use of the published factor structure and the rationale for not running a CFA.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correct: the VAS and other measures are not addressed, and no inapplicability is explained.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Notes the ambiguous 'internal validity' wording and the absence of any reliability values, matching the R01 internal consistency gap.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Valid: there is no sample-level structure evidence, and neither applicability nor limitations are discussed.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Deferring the CFA decision to the reviewer is a minor, correct point.\"}]}}"
+}

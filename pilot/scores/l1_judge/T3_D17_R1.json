@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D17_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Judges ASMR verification partially resolved. Notes it still rests on self-report and that the two groups were screened asymmetrically."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Decentering α=.60, the divergent factor structure and the modified state-scale instructions do raise untested invariance for Curiosity. The material supports this and the card lacks it."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Says the 'regular internet users' sentence does not remove Reddit-versus-panel selection bias. Partially resolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Says 'strongly supports' and the other overclaims remain, judged unresolved. The rationale notes the exploratory note was added."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "Raises the 284/173 analytic N, unknown exclusions and the Table 2 footnote. Partially resolved."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially resolved. Checklist confirmation is still self-report, and screening differs between groups."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R16",
+     "reason": "Notes that only controls had pre-exposure to the ASMR video, which contradicts the authors' bias rationale. Judged unresolved, as on the card."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "'Strongly supports' is retained despite weak correlations. Partially resolved, consistent with R03."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "Raises the 284 versus 173 inconsistency and the dual Ns in the Table 2 footnote. Partially resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Simple effects in a two-way ANOVA properly use the pooled error df (559), so the df-mismatch claim is wrong. The mechanism sentence was deleted, so the issue is resolved."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "The added sentence reframes recruitment bias without removing it. Partially resolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Overclaims retained, judged unresolved. The 'suggest'→'indicate' strengthening is correctly verified."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "N inconsistency (F df 559, r(284) versus the 173 note) is partially resolved. The added Table 2 star error and the p=.059 wording are correct."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "ASMR status rests on self-report checklist, and only controls had explicit screening questions. Partially resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Modified state-scale instructions are not reported and invariance was not tested before comparing Curiosity means. The material supports this and the card lacks it."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Judges ASMR verification partially resolved. Notes it still rests on self-report and that the two groups were screened asymmetrically.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Decentering α=.60, the divergent factor structure and the modified state-scale instructions do raise untested invariance for Curiosity. The material supports this and the card lacks it.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Says the 'regular internet users' sentence does not remove Reddit-versus-panel selection bias. Partially resolved.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Says 'strongly supports' and the other overclaims remain, judged unresolved. The rationale notes the exploratory note was added.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R14\", \"reason\": \"Raises the 284/173 analytic N, unknown exclusions and the Table 2 footnote. Partially resolved.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Partially resolved. Checklist confirmation is still self-report, and screening differs between groups.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R16\", \"reason\": \"Notes that only controls had pre-exposure to the ASMR video, which contradicts the authors' bias rationale. Judged unresolved, as on the card.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"'Strongly supports' is retained despite weak correlations. Partially resolved, consistent with R03.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R14\", \"reason\": \"Raises the 284 versus 173 inconsistency and the dual Ns in the Table 2 footnote. Partially resolved.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"invalid\", \"point_id\": null, \"reason\": \"Simple effects in a two-way ANOVA properly use the pooled error df (559), so the df-mismatch claim is wrong. The mechanism sentence was deleted, so the issue is resolved.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"The added sentence reframes recruitment bias without removing it. Partially resolved.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Overclaims retained, judged unresolved. The 'suggest'→'indicate' strengthening is correctly verified.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R14\", \"reason\": \"N inconsistency (F df 559, r(284) versus the 173 note) is partially resolved. The added Table 2 star error and the p=.059 wording are correct.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"ASMR status rests on self-report checklist, and only controls had explicit screening questions. Partially resolved.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Modified state-scale instructions are not reported and invariance was not tested before comparing Curiosity means. The material supports this and the card lacks it.\"}]}}"
+}

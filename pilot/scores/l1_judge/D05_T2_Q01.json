@@ -1,0 +1,150 @@
+{
+ "task_id": "D05_T2_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly notes the direct answer that correlation isn't possible because the data wasn't collected. Overlaps with claim 1, which is the better match for R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies both the study-scope rationale and that awareness campaigns weren't surveyed, which is the basis for the refusal."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Accurate that it is framed as future research, but this is non-substantive. Politeness earns no credit."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Requires external campaign background beyond the study design. The scope-based refusal for uncollected data is adequate per the material."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Limitation suggestion is an acceptable alternative but does not undermine the sufficiency of the scope explanation."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "With only two countries, a country-level correlation is not meaningful. 'Not possible' with the study's data is justified, so the criticism over-accepts the reviewer's premise."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "A reasonable refusal needs no revision commitment. Lack of a revision mention is not a gap in a T2 text-level evaluation."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that the response directly states correlation is impossible. Claim 1 better matches R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies the scope rationale and the uncollected campaign data as a valid reason the correlation can't be done."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Future-research framing is accurate but non-substantive."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Noting unmeasured exposure as a possible confounder is a reasonable limitation point, but per the card it does not negate sufficiency."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Speculates about proxy variables such as survey timing that are not in the material. The reviewer didn't ask for this, and it isn't supported."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The limitation-section suggestion matches an acceptable alternative but is not a substantive deficiency."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Recognises that campaign knowledge wasn't measured, so correlation is impossible, consistent with scope. Explicitly calls this a reasonable refusal."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Future-research acknowledgement is accurate but non-substantive."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Splits off a demand for secondary-source country context. This over-reads the comment and treats a justified scope refusal as deficient."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The confounder/limitation suggestion is an acceptable alternative but does not render the refusal inadequate."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "No revision is required for a justified refusal. Revision verification is out of scope for T2."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "```json\n{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly notes the direct answer that correlation isn't possible because the data wasn't collected. Overlaps with claim 1, which is the better match for R01.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies both the study-scope rationale and that awareness campaigns weren't surveyed, which is the basis for the refusal.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Accurate that it is framed as future research, but this is non-substantive. Politeness earns no credit.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Requires external campaign background beyond the study design. The scope-based refusal for uncollected data is adequate per the material.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Limitation suggestion is an acceptable alternative but does not undermine the sufficiency of the scope explanation.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"With only two countries, a country-level correlation is not meaningful. 'Not possible' with the study's data is justified, so the criticism over-accepts the reviewer's premise.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"A reasonable refusal needs no revision commitment. Lack of a revision mention is not a gap in a T2 text-level evaluation.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that the response directly states correlation is impossible. Claim 1 better matches R01.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies the scope rationale and the uncollected campaign data as a valid reason the correlation can't be done.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Future-research framing is accurate but non-substantive.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Noting unmeasured exposure as a possible confounder is a reasonable limitation point, but per the card it does not negate sufficiency.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Speculates about proxy variables such as survey timing that are not in the material. The reviewer didn't ask for this, and it isn't supported.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The limitation-section suggestion matches an acceptable alternative but is not a substantive deficiency.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Recognises that campaign knowledge wasn't measured, so correlation is impossible, consistent with scope. Explicitly calls this a reasonable refusal.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Future-research acknowledgement is accurate but non-substantive.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Splits off a demand for secondary-source country context. This over-reads the comment and treats a justified scope refusal as deficient.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The confounder/limitation suggestion is an acceptable alternative but does not render the refusal inadequate.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"No revision is required for a justified refusal. Revision verification is out of scope for T2.\"}]}}\n```"
+}

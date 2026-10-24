@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D08_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "sonnet",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Judged partially_resolved because only 'at least' minimums are reported. This fits R01's acceptable alternative, and the claim cites the specific new Phase 1 content."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Partially_resolved because geographic distribution is still missing. This is an accepted R02 alternative, and the new gender and institution breakdown is identified."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The added any-objection rule conflicts with the retained 'near-unanimous approval' wording, and the unit of rating (one binary choice vs four criteria) is unclear. Both are verifiable in the revised text."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Calling coverage 'unresolved' ignores the visible added purpose sentence that answers R1's 'what did that entail'. R03 expects resolved or partially resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Notes that the claim of measurability and validation rests only on expert content judgement, with field-testing deferred to future work."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Validation procedure judged partially_resolved: the Forms and round-2 process were added, but item-level results are not shown. Matches R02's accepted alternative."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Partially_resolved: a purpose sentence was added, but the denominators, criteria and matrix are still not presented. Matches R03's alternative."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially_resolved: the participant and synthesis details were added, but actual participant counts are missing. Matches R01's alternative."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The 'eight' vs 3+4=7 count mismatch is real. The other sub-claims about the 13/9/9/9 split and outcome numbering are muddled or wrong, so the issue is minor."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N03",
+     "reason": "Distinguishes expert content review from actual assessment evidence and notes that the authors defer field-testing."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially_resolved with specific additions identified (Teams/Miro, 'at least' minimums). Matches R01's alternative."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The conservative-rule vs near-unanimous contradiction and the four-criteria vs single-binary ambiguity are both supported by the revised text."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The non-anonymous round 2 departs from Delphi practice, and panel independence and conflicts of interest (GreenComp manager, related projects) are not discussed. Both are supported by the text."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Partially_resolved: the purpose sentence is added, but the criteria, denominators and agreement data are still missing. Matches R03's alternative; the 8 vs 7 count note is also correct."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Notes that the claims of measurability and assessability lack empirical assessment evidence, with field-testing listed as future work."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "```json\n{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Judged partially_resolved because only 'at least' minimums are reported. This fits R01's acceptable alternative, and the claim cites the specific new Phase 1 content.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Partially_resolved because geographic distribution is still missing. This is an accepted R02 alternative, and the new gender and institution breakdown is identified.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The added any-objection rule conflicts with the retained 'near-unanimous approval' wording, and the unit of rating (one binary choice vs four criteria) is unclear. Both are verifiable in the revised text.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Calling coverage 'unresolved' ignores the visible added purpose sentence that answers R1's 'what did that entail'. R03 expects resolved or partially resolved.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Notes that the claim of measurability and validation rests only on expert content judgement, with field-testing deferred to future work.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Validation procedure judged partially_resolved: the Forms and round-2 process were added, but item-level results are not shown. Matches R02's accepted alternative.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Partially_resolved: a purpose sentence was added, but the denominators, criteria and matrix are still not presented. Matches R03's alternative.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Partially_resolved: the participant and synthesis details were added, but actual participant counts are missing. Matches R01's alternative.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The 'eight' vs 3+4=7 count mismatch is real. The other sub-claims about the 13/9/9/9 split and outcome numbering are muddled or wrong, so the issue is minor.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N03\",\"reason\":\"Distinguishes expert content review from actual assessment evidence and notes that the authors defer field-testing.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Partially_resolved with specific additions identified (Teams/Miro, 'at least' minimums). Matches R01's alternative.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The conservative-rule vs near-unanimous contradiction and the four-criteria vs single-binary ambiguity are both supported by the revised text.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The non-anonymous round 2 departs from Delphi practice, and panel independence and conflicts of interest (GreenComp manager, related projects) are not discussed. Both are supported by the text.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Partially_resolved: the purpose sentence is added, but the criteria, denominators and agreement data are still missing. Matches R03's alternative; the 8 vs 7 count note is also correct.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Notes that the claims of measurability and assessability lack empirical assessment evidence, with field-testing listed as future work.\"}]}}\n```"
+}

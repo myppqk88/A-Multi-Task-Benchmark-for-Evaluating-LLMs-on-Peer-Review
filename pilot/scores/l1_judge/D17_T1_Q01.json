@@ -1,0 +1,129 @@
+{
+ "task_id": "D17_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "opus",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The paper reports Decentering alpha .60 and a different factor structure in the ASMR group, then retains only Curiosity. This selective reporting and non-equivalence point is supported but not on the card; R14's video-exposure element is absent."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Identifies the Reddit versus Qualtrics recruitment confound, which is selection bias arising from different recruitment sources."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Notes uncorrected multiple tests and the marginal p=.059 being treated as an effect. It also touches the sex-mechanism overreach, but R06 fits best."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Criticises 'strongly supports' given small effects and a cross-sectional design."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Points to unreported exclusions, missing data and the reduction to 173. The one-versus-two video inconsistency is also correct."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Recruitment-source confound between the Reddit community and the commercial panel."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Unreported modified TMS instructions, post hoc dropping of Decentering and no invariance test are all supported by the text. The video pre-exposure point needed for R14 is missing."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Covers no multiplicity correction and marginal results interpreted as effects. The Table 2 asterisk and N inconsistencies are also verified."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Criticises 'strongly supports' given ηp² of .02–.03 and small correlations."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Verified: the 'invested in just watching' item is a Curiosity example in Methods but is listed among Decentering items in the PCA results. This contradicts the rationale for retaining Curiosity."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Recruitment differences between groups, plus the unaddressed openness confound."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Inconsistent Ns and df across the text and Table 2. Some side assertions are overstated: the pooled error term in the simple-effects test is standard."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Selective retention of Curiosity even though Decentering items also load on factor 1 in both groups. The text supports this."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Criticises 'strongly supports' and the causal and mechanistic overreach in a cross-sectional design."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Uncorrected multiple correlations and a marginal result treated as meaningful. It also raises a valid part-whole point."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The paper reports Decentering alpha .60 and a different factor structure in the ASMR group, then retains only Curiosity. This selective reporting and non-equivalence point is supported but not on the card; R14's video-exposure element is absent.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Identifies the Reddit versus Qualtrics recruitment confound, which is selection bias arising from different recruitment sources.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Notes uncorrected multiple tests and the marginal p=.059 being treated as an effect. It also touches the sex-mechanism overreach, but R06 fits best.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Criticises 'strongly supports' given small effects and a cross-sectional design.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Points to unreported exclusions, missing data and the reduction to 173. The one-versus-two video inconsistency is also correct.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Recruitment-source confound between the Reddit community and the commercial panel.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Unreported modified TMS instructions, post hoc dropping of Decentering and no invariance test are all supported by the text. The video pre-exposure point needed for R14 is missing.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Covers no multiplicity correction and marginal results interpreted as effects. The Table 2 asterisk and N inconsistencies are also verified.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Criticises 'strongly supports' given ηp² of .02–.03 and small correlations.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Verified: the 'invested in just watching' item is a Curiosity example in Methods but is listed among Decentering items in the PCA results. This contradicts the rationale for retaining Curiosity.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Recruitment differences between groups, plus the unaddressed openness confound.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Inconsistent Ns and df across the text and Table 2. Some side assertions are overstated: the pooled error term in the simple-effects test is standard.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Selective retention of Curiosity even though Decentering items also load on factor 1 in both groups. The text supports this.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Criticises 'strongly supports' and the causal and mechanistic overreach in a cross-sectional design.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Uncorrected multiple correlations and a marginal result treated as meaningful. It also raises a valid part-whole point.\"}]}}"
+}

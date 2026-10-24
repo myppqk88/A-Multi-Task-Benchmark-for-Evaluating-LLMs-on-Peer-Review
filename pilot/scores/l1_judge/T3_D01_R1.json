@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D01_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Flags χ2=2.632/P=0.004 mismatch and the Kendall W inconsistency between Results and Discussion as unresolved. Also correctly notes the Table 3 direction error (N04)."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Locates the optimism/ambition proxy mapping and the four-factor ranking, judged partially resolved. Adds a valid point that Kendall W does not test individual congruency."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Notes 'mediated' replaced 'moderated' with no analysis, and the abstract still says moderated. Unresolved; the stability claim (R02) is also covered."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Aims clarified but no formal hypotheses, partially resolved. Reasonably deems the mediation-model request unnecessary."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Only combined α reported, no subscale reliability; CFA question deferred. Partially resolved. Order confound for workers adds a valid point."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Discussion now says 'mediated' with no mediation or moderation analysis; response claims hypotheses were clarified but none appear. Unresolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Only combined α; no per-group or subscale reliability. Partially resolved, consistent with the card."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Kendall W 0.024–0.117 vs 0.002–0.15, and χ2/P mismatch, retained unchanged. Unresolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Age, sex, setting and occupation confound the group comparison while age/family explanations are asserted untested. The Austria comparison lacks reported scores. Supported by the text."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Table 3 runs many uncorrected chi-square tests with sparse cells. Coding is undescribed and the n differs from the sample size. Substantive and supported by the table."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Proxy mapping and ipsative ranking are well argued, and low W does not imply non-IHS determinants. Judged unresolved vs the card's partial, so not a match."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "'most likely mediated' with no test, replacing 'moderated', unresolved. Also covers the R02 stability claim."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "χ2=2.632/P=0.004 inconsistent under 3 df, and Kendall W ranges differ between Results and Discussion. Unresolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Aims reworded but no model or hypotheses; partially resolved. Treating the suicide wording as a weakness is debatable but minor."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Notes only combined α, no per-group or subscale reliability, and reformulated items. Partially resolved; sampling-confound points are supported."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R08\", \"reason\": \"Flags χ2=2.632/P=0.004 mismatch and the Kendall W inconsistency between Results and Discussion as unresolved. Also correctly notes the Table 3 direction error (N04).\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Locates the optimism/ambition proxy mapping and the four-factor ranking, judged partially resolved. Adds a valid point that Kendall W does not test individual congruency.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Notes 'mediated' replaced 'moderated' with no analysis, and the abstract still says moderated. Unresolved; the stability claim (R02) is also covered.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Aims clarified but no formal hypotheses, partially resolved. Reasonably deems the mediation-model request unnecessary.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Only combined α reported, no subscale reliability; CFA question deferred. Partially resolved. Order confound for workers adds a valid point.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Discussion now says 'mediated' with no mediation or moderation analysis; response claims hypotheses were clarified but none appear. Unresolved.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Only combined α; no per-group or subscale reliability. Partially resolved, consistent with the card.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R08\", \"reason\": \"Kendall W 0.024–0.117 vs 0.002–0.15, and χ2/P mismatch, retained unchanged. Unresolved.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Age, sex, setting and occupation confound the group comparison while age/family explanations are asserted untested. The Austria comparison lacks reported scores. Supported by the text.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Table 3 runs many uncorrected chi-square tests with sparse cells. Coding is undescribed and the n differs from the sample size. Substantive and supported by the table.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Proxy mapping and ipsative ranking are well argued, and low W does not imply non-IHS determinants. Judged unresolved vs the card's partial, so not a match.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"'most likely mediated' with no test, replacing 'moderated', unresolved. Also covers the R02 stability claim.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R08\", \"reason\": \"χ2=2.632/P=0.004 inconsistent under 3 df, and Kendall W ranges differ between Results and Discussion. Unresolved.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Aims reworded but no model or hypotheses; partially resolved. Treating the suicide wording as a weakness is debatable but minor.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Notes only combined α, no per-group or subscale reliability, and reformulated items. Partially resolved; sampling-confound points are supported.\"}]}}"
+}

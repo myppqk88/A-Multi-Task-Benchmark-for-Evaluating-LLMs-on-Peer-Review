@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D04_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Recognises the added axial-coding step and the coding tree mapping codes to phases. Judging this resolved is an accepted alternative under R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Notes the non-exclusivity sentence was added but there is no project-to-approach mapping. Partially_resolved is an accepted alternative for R03."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Cites the added thematic-saturation sentence and notes no comparative evidence. Partial resolution is accepted under R02."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Correctly says the new post-project examples are mostly explorations or possibilities, not proven uptake, so partially resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Correctly treats the 'lines of code' request as a misreading of qualitative codes and the authors' clarification as adequate."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Treats the reasonable refusal of a business stakeholder-management section as a deficit. The card judges the added Freeman/RRI background and retained scope as resolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The 'Appendix 2' vs OSF wording mismatch is real, but the guide and coding tree are provided. This is a non-substantive inconsistency, not a central partial gap."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Notes only a clarifying paragraph was added while Table 3 stays binary and no matrix was provided. Partial resolution is accepted under R03."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Identifies the new cases as planned or exploratory, not realised uptake, so partially resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Notes the cross-domain/saturation claim lacks supporting evidence, which R02 accepts as partial. It also correctly notes the abstract count already existed."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R09",
+     "reason": "Cites manual coding with no machine learning, plus the added axial cycle, and judges this resolved, consistent with R09."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Points to the added saturation sentence and notes no per-sector comparison. Partial resolution is accepted under R02."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Notes the non-exclusivity sentence was added while Table 3 is unchanged and there is no matrix. Partial resolution is accepted under R03."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Notes the Methods generalisability caveat and the retained broad conclusion wording. R07's alternative accepts this concern."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Notes the interview guide and coding tree are supplied (A01–A04) via OSF and judges this resolved."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Recognises the added axial-coding step and the coding tree mapping codes to phases. Judging this resolved is an accepted alternative under R01.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Notes the non-exclusivity sentence was added but there is no project-to-approach mapping. Partially_resolved is an accepted alternative for R03.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Cites the added thematic-saturation sentence and notes no comparative evidence. Partial resolution is accepted under R02.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Correctly says the new post-project examples are mostly explorations or possibilities, not proven uptake, so partially resolved.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"neutral\", \"point_id\": \"N01\", \"reason\": \"Correctly treats the 'lines of code' request as a misreading of qualitative codes and the authors' clarification as adequate.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"invalid\", \"point_id\": null, \"reason\": \"Treats the reasonable refusal of a business stakeholder-management section as a deficit. The card judges the added Freeman/RRI background and retained scope as resolved.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"valid_minor\", \"point_id\": null, \"reason\": \"The 'Appendix 2' vs OSF wording mismatch is real, but the guide and coding tree are provided. This is a non-substantive inconsistency, not a central partial gap.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Notes only a clarifying paragraph was added while Table 3 stays binary and no matrix was provided. Partial resolution is accepted under R03.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Identifies the new cases as planned or exploratory, not realised uptake, so partially resolved.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Notes the cross-domain/saturation claim lacks supporting evidence, which R02 accepts as partial. It also correctly notes the abstract count already existed.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R09\", \"reason\": \"Cites manual coding with no machine learning, plus the added axial cycle, and judges this resolved, consistent with R09.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Points to the added saturation sentence and notes no per-sector comparison. Partial resolution is accepted under R02.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Notes the non-exclusivity sentence was added while Table 3 is unchanged and there is no matrix. Partial resolution is accepted under R03.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Notes the Methods generalisability caveat and the retained broad conclusion wording. R07's alternative accepts this concern.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R08\", \"reason\": \"Notes the interview guide and coding tree are supplied (A01–A04) via OSF and judges this resolved.\"}]}}"
+}

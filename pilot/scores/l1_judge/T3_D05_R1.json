@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D05_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Notes the visible distinction between legally enforced limits and voluntary precaution and judges it resolved, consistent with R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Judges the campaign/exposure-comparison requests beyond scope (data not collected), which R03's alternative accepts as reviewer_request_not_warranted; also notes the frequency text was added."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The attention check follows the treatment text and exclusion is immediate, but Table 1 gives no exclusions by condition. This is a real post-randomization attrition concern supported by the material."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Flags the duplicated Table 9 H1c label ('CR2 precaution = CR2 precaution') and its inconsistent Reject H0, left unresolved. The Table 8 p-value and equation typo are correct extras."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The 'good news' trust claim and the CR2 'no difference' rest on non-significant tests without equivalence testing or multiplicity control. Substantive and supported by the text."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Identifies the duplicate H1c row marked Reject H0 despite a non-significant CR2 effect, unresolved. The H3a argument is weak, since that interaction ran opposite to the directional hypothesis."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Judges R1 only partially resolved because the abstract sentence is unchanged. That sentence already correctly describes voluntary advice; the reference judges the issue resolved."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The wording-strength mismatch between the response ('much lower') and the text ('not fully utilized') is real but peripheral to the core claims."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Identifies the balanced relevance quota limiting the country comparison and leaves it unresolved, consistent with R08."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The Greece trust effect appears only in the adjusted model (p=.047; p=.06 unadjusted) yet is used as mechanism support. A valid overinterpretation concern."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Effects visible only after covariate adjustment, with no multiplicity control, are interpreted substantively. Supported by Tables 6, 8 and 9."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The 'good news' trust inference rests on non-significance without equivalence testing; the self-efficacy account is untested. Substantive and supported."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Cites the relevance quota and older underrepresentation as limits on generalization, unresolved, consistent with R08."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Treats the limits-versus-voluntary distinction as visibly implemented and resolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Contains misreadings. The males=1 coding with negative coefficients is consistent with 'females higher'. The Table 1 page image matches the text, so there is no swap."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Notes the visible distinction between legally enforced limits and voluntary precaution and judges it resolved, consistent with R01.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Judges the campaign/exposure-comparison requests beyond scope (data not collected), which R03's alternative accepts as reviewer_request_not_warranted; also notes the frequency text was added.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The attention check follows the treatment text and exclusion is immediate, but Table 1 gives no exclusions by condition. This is a real post-randomization attrition concern supported by the material.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"Flags the duplicated Table 9 H1c label ('CR2 precaution = CR2 precaution') and its inconsistent Reject H0, left unresolved. The Table 8 p-value and equation typo are correct extras.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The 'good news' trust claim and the CR2 'no difference' rest on non-significant tests without equivalence testing or multiplicity control. Substantive and supported by the text.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"Identifies the duplicate H1c row marked Reject H0 despite a non-significant CR2 effect, unresolved. The H3a argument is weak, since that interaction ran opposite to the directional hypothesis.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Judges R1 only partially resolved because the abstract sentence is unchanged. That sentence already correctly describes voluntary advice; the reference judges the issue resolved.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The wording-strength mismatch between the response ('much lower') and the text ('not fully utilized') is real but peripheral to the core claims.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Identifies the balanced relevance quota limiting the country comparison and leaves it unresolved, consistent with R08.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The Greece trust effect appears only in the adjusted model (p=.047; p=.06 unadjusted) yet is used as mechanism support. A valid overinterpretation concern.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Effects visible only after covariate adjustment, with no multiplicity control, are interpreted substantively. Supported by Tables 6, 8 and 9.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The 'good news' trust inference rests on non-significance without equivalence testing; the self-efficacy account is untested. Substantive and supported.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Cites the relevance quota and older underrepresentation as limits on generalization, unresolved, consistent with R08.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Treats the limits-versus-voluntary distinction as visibly implemented and resolved.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Contains misreadings. The males=1 coding with negative coefficients is consistent with 'females higher'. The Table 1 page image matches the text, so there is no swap.\"}]}}"
+}
