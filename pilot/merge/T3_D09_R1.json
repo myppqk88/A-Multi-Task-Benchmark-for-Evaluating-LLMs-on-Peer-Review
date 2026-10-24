@@ -1,0 +1,858 @@
+{
+ "task_id": "T3_D09_R1",
+ "X": {
+  "task_id": "T3_D09_R1",
+  "paper_id": "PeerJ:10705",
+  "task": "T3",
+  "unit": "revision_cycle",
+  "input_sha256": "ad951bae29ac140232d9bfbf03d1720fa716555534d0a733fffe9114aea4275c",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "partially_resolved：修订稿承认分组可能忽略不同隔离情形的差异，并说明测的是主观感知的隔离；这是承认局限而非改进测量，分组效度问题依然存在。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "检验模型区分\"承认局限\"与\"解决问题\"。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the definition of isolation and quarantine is ambiguous"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "We acknowledge that this grouping may overlook important differences in contexts between different forms of isolation"
+     }
+    ],
+    "match_criteria": "判为部分解决，并指出只是作为局限承认。",
+    "acceptable_alternatives": [
+     "认为预注册设计无法事后改变、承认局限已是恰当处理，判已解决，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "resolved：补充了数据收集日期（2020年4月7–9日）与各国疫情管控背景，并新增分国描述表（年龄、性别、样本量）。",
+    "issue_type": "V2",
+    "importance": "medium",
+    "importance_reason": "对应R2的国家混淆与日期关切。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "could the authors clearly state the date(s) on which the survey was run"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Data were collected between the 7th and the 9th of April 2020 (inclusive)."
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Table 1. Sample demographics split by country."
+     }
+    ],
+    "match_criteria": "判为已解决或基本解决（未做分国分析也可指出）。",
+    "acceptable_alternatives": [
+     "指出分国分析或国家作为协变量仍未做，判部分解决，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "resolved（作者自查修正）：作者在补充描述统计时发现v1把K-10的组间差异方向写反，修订稿已改为非隔离组更高；另有部分相关误用未换算的消费数据，也已更正。",
+    "issue_type": "V3",
+    "importance": "medium",
+    "importance_reason": "检验模型是否注意到修订中纠正的实质错误。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "it would be great to see the means / SDs"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "psychological distress was actually higher among people not in self- isolation or quarantine"
+     },
+     {
+      "input_field": "materials/responses/combined",
+      "exact_quote": "we were mistaken about the direction of the K-10 scores"
+     }
+    ],
+    "match_criteria": "指出K-10方向错误已被纠正。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P4",
+    "judgment": "partially_resolved：作者把类别与连续分析的不一致解释为分类造成的变异损失，并删除了\"small but important\"等表述；但\"调节\"仍出现在预注册假设的表述中，核心发现的稳健性仍依赖相关差异检验。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "核心阳性结果的稳健性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "these 'discrepant' analyses are being conducted on the same data"
+     },
+     {
+      "report_id": "R1",
+      "exact_quote": "the study is all about moderation, but they haven’t really tested for moderation"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "may reflect a loss of variability in PGSI scores when this continuous measure is devolved into a categorical variable"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "will moderate the relationship between PGSI category and"
+     }
+    ],
+    "match_criteria": "判为部分解决，并指出核心结果仍不稳健或\"调节\"措辞未完全调整。",
+    "acceptable_alternatives": [
+     "认为解释合理、判已解决，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P5",
+    "judgment": "resolved：增加了污染担忧量表的状态/特质局限说明；PGSI按Currie修订标准分级的理由已写明。",
+    "issue_type": "V1",
+    "importance": "medium",
+    "importance_reason": "对应R2与R1的测量关切。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "whether these constructs are state or trait related"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "it is unknown whether participants were responding to the Padua Contamination Concern index as a state or trait based measure"
+     }
+    ],
+    "match_criteria": "判为已解决。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P6",
+    "judgment": "partially_resolved：摘要仍称考察隔离的\"影响\"（effects），横断面设计的因果措辞未完全调整，但讨论中\"导致增加\"的表述已删除。",
+    "issue_type": "V2",
+    "importance": "medium",
+    "importance_reason": "结论措辞。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "the verb “increased” here implies some longitudinal component"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "we examined the effects of self- isolation and quarantine on excessive gaming and loot box spending"
+     }
+    ],
+    "match_criteria": "指出摘要仍有因果措辞，判部分解决。",
+    "acceptable_alternatives": [
+     "认为\"effects\"在自然实验语境下可接受，判已解决，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P7",
+    "judgment": "unresolved（审稿人未提）：两组人数之和（447+619=1,066）与总样本1,144仍不一致，修订稿未说明。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "报告错误未修正。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "quarantined or self- isolating (n = 447) or not (n = 619)"
+     }
+    ],
+    "match_criteria": "指出人数不一致仍未说明。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "acceptable_under_rubric",
+   "acceptable_set": [
+    "acceptable_under_rubric",
+    "needs_substantive_revision"
+   ],
+   "rationale": "修订覆盖了绝大多数关切并纠正了作者自身的错误；残留的分组效度、核心结果稳健性与样本数不一致若被视为实质问题，可判仍需实质修改。"
+  },
+  "known_invalid_patterns": [
+   "因作者重排假设顺序就认为违背预注册。",
+   "忽视修订中K-10方向的更正。"
+  ],
+  "draft_notes": "作者回信经清理（去除签名、标题）；回信较长，逐条引用了审稿意见。"
+ },
+ "Y": {
+  "task_id": "T3_D09_R1",
+  "paper_id": "PeerJ:10705",
+  "task": "T3",
+  "unit": "revision_cycle",
+  "input_sha256": "ad951bae29ac140232d9bfbf03d1720fa716555534d0a733fffe9114aea4275c",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "resolved：后稿改WHO建议背景、重排措辞和结尾，逻辑更连贯；科学因果界限另行判断。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "摘要逻辑清楚性影响主要结果能否被准确理解。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "writing and argumentative flow is a bit clunky"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "\n24\nAbstract\n25\nCOVID-19 has prompted widespread self-isolation and citywide/countrywide lockdowns. The World \n26\nHealth Organisation (WHO) has encouraged increased digital social activities such as video game play to \n27\ncounteract social isolation during the pandemic. However, there is active debate about the potential for \n28\nvideo game overuse, and some video games contain randomised purchases (loot boxes) that may \n29\npsychologically approximate gambling. In this pre-registered study, we examined the effects of self-\n30\nisolation and quarantine on excessive gaming and loot box spending. We recruited 1,144 (619 Male, 499 \n31\nFemale, 26 Other) Australian, Aotearoa New Zealand, and US residents who were quarantined or self-\n32\nisolating (n = 447) or not (n = 619) during the COVID-19 pandemic to a cross-sectional natural \n33\nexperiment. We compared the associations between problem gambling symptomology, excessive \n34\ngaming and loot box spending for isolated and non-isolated participants. Participants completed the \n35\nKessler-10 Psychological Distress Scale, Problem Gambling Severity Index, Internet Gaming Disorder \n36\nChecklist, a measure of risky engagement with loot boxes, concern about contamination, and reported \n37\nmoney spent on loot boxes in the past month, as well as whether they were quarantined or under self-\n38\nisolation during the pandemic. Although, in our data,"
+     }
+    ],
+    "match_criteria": "在摘要定位疫情—游戏—开箱/PGSI衔接和结尾，评价清楚性但不预断隔离导致过度游戏。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P1"
+   },
+   {
+    "judgment": "partially_resolved：后稿补问题赌博者的暴露/购买机会及既有移除研究理由，支持可检验预测；尚未直接测接触机制，不能称它已被验证。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "均值与相关强度的区分支撑预设关系假设。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "why would you expect relationships to get stronger?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "eased need for online social activities may have the potential to exacerbate \n86\nthis relationship. Spending on loot boxes therefore appears to be more common among video game \n87\nplayers with problem gambling symptoms (Garea et al., 2020). The apparent increase in the number of \n88\npeople engaging with video games during the pandemic may result in increased exposure to, and hence \n89\nopportunities for the purchasing of, loot boxes. This has prompted concerns about increased spending \n90\non loot boxes for certain user groups (Department for Digital, Cultural, Media & Sport., 2020; Harris, \n91\n2020). One study suggests that reducing exposure to loot boxes by removing them from a game appears \n92\nto reduce spending only among those with higher problem gambling symptoms (Zendle, 2019). Thus it \n93\nappears that spending by problem gamblers may be specifically impacted by the presence of loot boxes \n94\nin video games while playing. This led us to predict that the social isolation of the pandemic might result \n95\nin an increase in either overall spending on loot boxes, or, a specific increase in spending on loot boxes \n96\nfor problem gamblers. Thus, here we examined whether the established association between problem \n97\ngambling symptomology was stronger for isolated gamers, compared to their non-isolated peers. As we \n98\nthought that people who were more concerned about contaminati"
+     }
+    ],
+    "match_criteria": "解释消费均值不决定相关强度，核问题赌博者接触/购买机会理论链与其尚未直接测量的界限。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P2"
+   },
+   {
+    "judgment": "partially_resolved：后稿明确是受访者最佳理解下的perceived isolation，承认误差和情境差别；没有客观分型或新游戏接触数据，不能当医学隔离/政策强度实验。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "隔离分组含义直接影响全部组间比较。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "definition of isolation and quarantine is ambiguous."
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "pre-reg materials do not indicate that definitions were provided to participants"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "orted isolation status, resulting in our decision to group all isolated \n232\nparticipants together. Second, the self-isolation questions allowed participants to report whether they \n233\nwere in self-isolation or quarantine to their best understanding of these terms. This may result in some \n234\nmeasurement error in reporting. However, we expected that variations in the accessibility of \n235\nparticipants’ usual social activities would be the primary driver of increased digital media exposure. \n236\nThus, we believe our approach offers a valid way to investigate the effects of increased perceived \n237\nisolation. A more fine-grained study investigating whether effects are similar across different kinds of \n238\nisolation using objective measures of such isolation would no-doubt be worthwhile. Nonetheless, our \n239\nresults provide early evidence that participants’ perceived isolation status was associated with changes \n240\nin some gaming-gambling relationships.\n241\nWe also pre-registered comparisons between those who were under lockdown orders (specified \n242\nto participants as “including mandated social distancing, business closures, curfews, stay home orders or \n243\nother movement restrictions”) in cities where movement and gathering restrictions were in place) and \n244\nthose who were not. However, very few participants were not in lockdown (n = 69, ~6% of our total \n245\ndata). Thu"
+     }
+    ],
+    "match_criteria": "区分自报隔离、医学隔离、封锁及酒店/居家情境；T3承认主观perceived定义但不能当客观政策实验。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P3"
+   },
+   {
+    "judgment": "resolved：后稿显式说明采用修订阈值及并发效度理由；原数值未改，不能说纠正为3–7，外部效度优劣未独立验证。",
+    "issue_type": "V1",
+    "importance": "medium",
+    "importance_reason": "阈值依据决定PGSI类别可解释性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "moderate risk based on scores of 5-7"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "be used to categorize participants into discrete groups \n201\nof varying risk for gambling problems. In accordance with Currie et al.,’s (2013) revised criteria for the \n202\nPGSI which display better concurrent validity to the original scoring criteria, participants who score 0 on \n203\nthe scale are considered non-problem gamblers; low-risk gamblers score 1–4 on the PGSI; moderate-risk \n204\ngamblers = 5–7 on the PGSI and problem gamblers score 8 or higher on the PGSI. \n205\nProcedure\n206\nParticipants completed the Kessler-10 Psychological Distress Scale (K-10; Slade et al., 2011), \n207\nProblem Gambling Severity Index (PGSI; Currie et al., 2013; Holtgraves, 2009), Internet Gaming Disorder \n208\nChecklist (IGDC; Przybylski et al., 2017), a measure of risky engagement with loot boxes (Risky Loot Box \n209\nIndex; RLI; Brooks & Clark, 2019), and reported money spent on loot boxes in the past month. \n210\nParticipants reported contamination concern on the Revised Padua Inventory-10 (Burns et al., 1996), \n211\nand their isolation status: self-isolation (n = 250), quarantine (n = 197), or neither (n = 697). This created \n212\na natural-groups experiment to examine whether self-isolation or quarantine affected outcomes. We \n213\nadvertised our study on Prolific Academic as a study investigating video games and gambling. Data were \n214\ncollected between the 7th and the 9th of April 2020 (inclusi"
+     }
+    ],
+    "match_criteria": "核PGSI原已引用Currie修订0/1–4/5–7/8+，不能仅据经典阈值判错；T3是澄清依据而非改分。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立：前稿已引用修订阈值，不必机械改为经典3–7；可要求清楚说明依据和不同阈值的敏感性。"
+    ],
+    "status": "disputed",
+    "id": "P4"
+   },
+   {
+    "judgment": "partially_resolved：后稿明确2-way ANOVA并称分类交互无证据，连续变量报告相关强弱差；讨论仍用moderator/inflating，需避免当成已估计因果调节。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "检验类型决定可声称的统计异质性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "they haven’t really tested for moderation."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "loot box spending and PGSI scores, split by isolation status.\n287\nWhen classified into risk groups, a 2-way ANOVA showed a main effect of problem gambler \n288\nstatus, such that problem gamblers spent more than lower risk gamblers on loot boxes (Figure 2). \n289\nHowever, there was no evidence that self-isolation or quarantine altered this relationship. Finally, loot \n290\nbox spending was weakly associated with psychological distress, rs = .103, p < .001.  \n291\nDiscussion\n292\nWe investigated whether self-isolation or quarantine, or contamination concerns were \n293\nassociated with greater excessive gaming, loot box spending or psychological distress. Contrary to \n294\npredictions, compared to those not self-isolated or quarantined, participants in self-isolation or \n295\nquarantine showed negligiblly lower psychological distress, but no differences in loot box spending, loot \n296\nbox engagement, or excessive gaming. We found no evidence that self-isolation resulted in greater \n297\nexcessive gameplay or expenditure on loot boxes generally. It is unclear why lower psychological distress \n298\nscores were observed for those in self-isolation or quarantine. Perhaps those in self-isolation or \n299\nquarantine may perceive their health risks to be lower due to their isolation, and this offset any distress \n300\nassociated with isolation. Nonetheless, the effect size was negligible in magnitud"
+     }
+    ],
+    "match_criteria": "区分连续相关差异与斜率交互，识别分类两因素ANOVA确可检验交互，避免一概说没做调节。",
+    "acceptable_alternatives": [
+     "可将组间相关差异称统计关联的异质性，但应与回归斜率交互及因果调节区分；分类ANOVA确有交互检验。"
+    ],
+    "status": "partly_supported",
+    "id": "P5"
+   },
+   {
+    "judgment": "partially_resolved：后稿表1补国别N、年龄和众数性别，并给总体游戏习惯/支出；仍非隔离×国别完整交叉分布或组内游戏画像。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "分组与国别人口画像影响样本比较解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "demographic composition, gaming habits of the two groups; country"
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "can the authors add descriptives split by the 3 jurisdictions?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "tion checks (n = 2), our final sample was 1,144 participants (619 \n148\nMale, 499 Female, 26 Other). Table 1 shows the descriptive statistics of the sample by country. \n149\nThe majority of participants were from the US (n = 930), with 173 participants coming from \n150\nAustralia, and 41 coming from Aotearoa New Zealand. Age ranged from 19 to 80 years old (M = 31 .4 \n151\nyears, SD = 10.5 years). Participants gave informed consent to participate in the study by proceeding to \n152\nthe questionnaire after reading the information sheet which advised them to cease participation if they \n153\ndid not consent to participate in the study. Ethics approval was obtained for human data collection for \n154\nthis study from Massey University’s Human Ethics Southern B Committee, Approval number SOB 19/11.\n155\nMeasures\n156\nOur study followed the same design as an earlier study protocol with the inclusion of some \n157\nadditional measures (Drummond et al., 2020). We employed a variety of standardised psychiatric \n158\nmeasurement tools to assess participants’ wellbeing, problem gambling symptomology, excessive \n159\ngaming, risky loot box use and concern about contamination. These measures are detailed below.\n160\nPsychological distress. The Kessler (K-10) Psychological Distress Scale assessed psychological \n161\ndistress of participants (Slade et al., 2011) and was employed as previously described in Dr"
+     }
+    ],
+    "match_criteria": "核国别N/年龄/性别与隔离分组可比信息，T3总体游戏习惯不能代替隔离×国别完整分布。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P6"
+   },
+   {
+    "judgment": "partially_resolved：后稿讨论承认传统赌博、购物和流媒体等替代活动，但未收集这些资料，不能排除共同应对或选择效应。",
+    "issue_type": "V2",
+    "importance": "medium",
+    "importance_reason": "替代应对活动限制赌博转移的机制归因。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "People could have also increased their online gambling"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "ith video games to manage their contamination concerns about the COVID-19 pandemic. Of course, \n308\nindividuals may engage in a range of other activities (e.g., conventional gambling, online shopping, \n309\nincreased time streaming movies/ T.V. shows, etc.) as a means of managing contamination concern and \n310\nsocial isolation due to the pandemic. \n311\nThe established relationship between problem gambling symptomology and loot box spending \n312\n(Garea et al., 2020) was stronger for those in self-isolation or quarantine than those not, demonstrating \n313\ncloser agreement between problem gambling symptom scores and loot box spending. Indeed the \n314\nrelationship between problem gambling symptomology and loot box spending was moderate for \n315\nisolated gamers compared to small for non-isolated gamers.\n316\nHowever, when PGSI scores were used to categorise gamblers into discrete risk categories (e.g., \n317\nlow-risk, medium-risk, problem gamblers), average spending within categories was similar for self-\n318\nisolated or quarantined participants and those not in isolation or quarantine. Since average spending did \n319\nnot increase for problem-gamblers in self-isolated or quarantined (vs. non self-isolated or non-\n320\nquarantined), it appears that although the correlation between raw PGSI scores and loot box spending \n321\nbecome more closely aligned for isolated gamers, how much they in"
+     }
+    ],
+    "match_criteria": "定位线下赌博减少—开箱转移解释，指出购物/线上娱乐/线上赌博等替代应对未被测排除。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P7"
+   },
+   {
+    "judgment": "partially_resolved：后稿改为irrespective病因方向，明确研究关联目的，但仍保留WHO“despite”修辞与广泛病理效果推论，不能称已解决IGD争论。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "症状/参与与病因边界影响理论问题定位。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "why the effects of the pandemic on video gaming says anything about the IGD controversy"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "anism for, psychopathological symptoms such \n67\nas depression and anxiety ( van Rooj et al., 2018). Irrespective of whether excessive gaming is a \n68\nsymptom or cause of psychopathology, there is clear theoretical rationale for examining the extent to \n69\nwhich social isolation associated with pandemic control measures contributes to excessive gameplay. \n70\nMoreover, people who are more concerned about being contaminated by the virus might also increase \n71\ngameplay to cope with the anxiety or social isolation due to the pandemic. Here, we examined whether \n72\n(a) socially isolated individuals exhibited higher rates of excessive gameplay than less isolated peers, and \n73\n(b) whether contamination concerns (worry about, and avoidance behaviours of, disease and germs; \n74\nBurns et al., 1996) were significantly associated with excessive gameplay.\n75\nA distinct but related issue is that the inclusion of certain monetisation mechanics within video \n76\ngames might contribute to excessive gameplay or spending (on game-related purchases). Some video \n77\ngames contain randomised purchasable rewards (loot boxes) that some scholars have observed may \n78\npsychologically approximate conventional gambling activities (Drummond & Sauer, 2018; Griffiths, \n79\n2019). Some scholars have also observed that these mechanisms might meet the legal criteria in many \n80\njurisdictions, and could potential"
+     }
+    ],
+    "match_criteria": "区分IGD病因争论、游戏参与与症状/损害，本横断面调查不能裁决病因方向。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P8"
+   },
+   {
+    "judgment": "resolved：后稿先列组差异和污染担忧，再列PGSI连续/分类，结果相应重排；这是呈现重排，不足证实外部预注册内容完全一致。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "假设—结果映射保障确认性报告透明度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "results does not adhere to the same order of hypotheses."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": " whether contamination concerns were significantly associated with spending on loot \n102\nboxes.\n103\nPre-registered hypotheses.\n104\nIn this pre-registered study \n105\n(https://osf.io/f4cvj/?view_only=4643a14cafc34453b05e0041f4156531) we examined participants’ \n106\nexcessive gaming scores, loot box spending, psychological distress, and whether they were self-isolating \n107\n(limiting contact with others) or under quarantine (in mandatory self-isolation). We predicted that1: \n108\n1.\nParticipants who report being in self-isolation or quarantine will have higher \n109\npsychological distress (as measured by the K-10), higher spending on loot boxes, higher \n110\nrisky loot box use scores (as measured by the Risky Loot box Index; RLI), higher excessive \n111\ngaming (as measured by the IGD scale), and higher contamination concern than \n112\nparticipants not in self-isolation or quarantine.\n113\n2.\nThere will be a significant positive correlation between contamination concern (as \n114\nmeasured by the contamination subscale of the Revised Padua Inventory 10) and \n115\npsychological distress as measured by the K-10.\n116\n3.\nThere will be a significant positive correlation between contamination concern and \n117\nspending on loot boxes, risky loot box use, and excessive gaming scores (as measured by \n118\nthe IGD scale). This effect will be stronger for participants currently in self-isolation or \n119\n"
+     }
+    ],
+    "match_criteria": "映射八项假设与结果的顺序，T3承认重排而不等同改动预注册内容或已核验外部登记全文。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P9"
+   },
+   {
+    "judgment": "resolved：后稿补M/SD并明确未隔离K10=24.88高于隔离23.53，方向与前稿相反且回应承认原误；小d并非无任何心理差异。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "描述统计方向决定心理困扰组差异的解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "great to see the means / SDs."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "loot \n261\nboxes (n = 989) in the past month, together with the wide ranges for these variables.\n262\nContrary to predictions, psychological distress was actually higher among people not in self-\n263\nisolation or quarantine (M = 24.88, SD = 8.65) than those in self-isolation or quarantine (M = 23.53, SD = \n264\n8.68), t(1,142) = 2.57, p = .010, d = 0.16, though this was a negligible difference (Ferguson, 2009; Sauer & \n265\nDrummond, 2020). We found no evidence that IGDC scores differed between participants in self-\n266\nisolation/quarantine (M = 7.94, SD = 5.59) and participants not in self-isolation/quarantine (M = 8.28, SD \n267\n= 5.55), t(1,142) = 0.97, p = .330, d = 0.16. We also found no evidence of differences in spending on loot \n268\nboxes between participants in self-isolation/quarantine (M = $3.15 USD, SD = $11.38 USD) and those not \n269\n(M = $2.86 USD, SD = $11.56 USD), t(1,133) = 0.42, p = .678, d = 0.02. There was no evidence of a \n270\ndifference in risky loot box use scores between participants who were isolating (M = 13.53, SD = 8.16) \n271\nand those not (M = 13.52, SD = 8.00), t(1,142) = 0.02, p = .984, d = 0.01. Similarly, contamination concern \n272\nscores were not statistically different between those in self-isolation/quarantine (M = 12.80, SD = 9.55) \n273\nto those not (M = 13.77, SD = 9.72), t(1,142) = 1.66, p = .098, d = 0.10.\n274\nCollapsed across isolation status"
+     }
+    ],
+    "match_criteria": "定位两组M/SD和差异方向，T3明确K10非隔离24.88高于隔离23.53，不能沿用原稿相反方向。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P10"
+   },
+   {
+    "judgment": "resolved：后稿新增图1隔离/非隔离连续PGSI—USD散点图，分类图移为图2；图形存在不等于独立验证原始点。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "连续图形帮助审查主要PGSI关联。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "graph the more interesting effect (or show both)"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "tined, rs = .366, p < \n285\n.001, than those who were not, rs = .209, p < .001, Z = 2.825, p = .005. Figure 1 shows the association \n286\nbetween loot box spending and PGSI scores, split by isolation status.\n287\nWhen classified into risk groups, a 2-way ANOVA showed a main effect of problem gambler \n288\nstatus, such that problem gamblers spent more than lower risk gamblers on loot boxes (Figure 2). \n289\nHowever, there was no evidence that self-isolation or quarantine altered this relationship. Finally, loot \n290\nbox spending was weakly associated with psychological distress, rs = .103, p < .001.  \n291\nDiscussion\n292\nWe investigated whether self-isolation or quarantine, or contamination concerns were \n293\nassociated with greater excessive gaming, loot box spending or psychological distress. Contrary to \n294\npredictions, compared to those not self-isolated or quarantined, participants in self-isolation or \n295\nquarantine showed negligiblly lower psychological distress, but no differences in loot box spending, loot \n296\nbox engagement, or excessive gaming. We found no evidence that self-isolation resulted in greater \n297\nexcessive gameplay or expenditure on loot boxes generally. It is unclear why lower psychological distress \n298\nscores were observed for those in self-isolation or quarantine. Perhaps those in self-isolation or \n299\nquarantine may perceive their health risks to be lo"
+     }
+    ],
+    "match_criteria": "核是否可见按隔离分组的连续PGSI—消费散点图，区分图形展示与原始点的独立复核。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P11"
+   },
+   {
+    "judgment": "partially_resolved：后稿讨论改用分箱损失变异/功效解释两模型差异，改善了原推论；但摘要仍说more problem gamblers may be purchasing，人数/转移解释未完全删除，不能由相关差异确认新增购买者。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "同数据不同编码的功效差异影响核心解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "same hypothesis tested in two ways."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "increase in the strength of the \n325\nassociation between raw PGSI scores and spending may reflect a loss of variability in PGSI scores when \n326\nthis continuous measure is devolved into a categorical variable. \n327\nWhether these effects persist when self-isolation and quarantine periods end is unknown. These \n328\nincreases may plausibly represent temporary coping mechanisms which will abate when the threat of \n329\nCOVID-19 ends. Alternatively, given the prolonged pandemic activity worldwide, they may persist as the \n330\nacquisition of new gambling-like behaviours. Re-examination as the pandemic subsides may be required \n331\nto determine whether any effects are temporary or long lasting. If there are prolonged mental health \n332\neffects of the pandemic, then this may plausibly result in similar long-term changes in the ways people \n333\ninteract with video games.\n334\nMore generally, our results suggest that isolation due to the COVID-19 pandemic may act as a \n335\nmoderator for other relationships in pathological gaming research, inflating the size of some previously \n336\nobserved relationships (Garea et al., 2020). We therefore urge researchers to exercise caution in \n337\nensuring that the potential consequences of the pandemic and associated isolation are considered when \n338\ninterpreting the size of effects from data gathered during the pandemic in these areas of research. \n339"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Gamers might be managing concerns about the pandemic with greater \n44\nvideo game use, and more problem gamblers may be purchasing loot boxes during the pandemic."
+     }
+    ],
+    "match_criteria": "明确连续/分类来自同一数据，分箱可能损失变异与功效；不能由不一致显著性推出购买者人数增加。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P12"
+   },
+   {
+    "judgment": "unresolved：回应解释机构批准默示同意并引信息页结束语，正文也保留流程；题内没有独立信息/同意附件，无法核验期刊上传状态。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "信息/同意文件状态关系伦理过程的可核查性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "consent form should be uploaded"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "m Aotearoa New Zealand. Age ranged from 19 to 80 years old (M = 31 .4 \n151\nyears, SD = 10.5 years). Participants gave informed consent to participate in the study by proceeding to \n152\nthe questionnaire after reading the information sheet which advised them to cease participation if they \n153\ndid not consent to participate in the study. Ethics approval was obtained for human data collection for \n154\nthis study from Massey University’s Human Ethics Southern B Committee, Approval number SOB 19/11.\n155\nMeasures\n156\nOur study followed the same design as an earlier study protocol with the inclusion of some \n157\nadditional measures (Drummond et al., 2020). We employed a variety of standardised psychiatric \n158\nmeasurement tools to assess participants’ wellbeing, problem gambling symptomology, excessive \n159\ngaming, risky loot box use and concern about contamination. These measures are detailed below.\n160\nPsychological distress. The Kessler (K-10) Psychological Distress Scale assessed psychological \n161\ndistress of participants (Slade et al., 2011) and was employed as previously described in Drummond et \n162\nal. (2020). The K-10 includes 10 items assessing how often (0, none of the time– 5, all of the time) over \n163\nthe past 30 days participants experienced various non-specific aspects of psychological distress (e.g., \n164\n“During the last 30 days, about how often did you feel hopele"
+     }
+    ],
+    "match_criteria": "区分正文默示同意流程和信息/同意附件是否上传，不能由附件未见推断没有知情同意。",
+    "acceptable_alternatives": [
+     "可合理接受伦理批准的默示同意机制，不必要求签名表；期刊上传是否齐备仍属未核验。"
+    ],
+    "status": "unresolved",
+    "id": "P13"
+   },
+   {
+    "judgment": "unresolved：回应称第二数据页增加字典和改变量标签，但本题不附该文件，不能仅凭声明说共享复现问题已完全解决。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "变量元数据决定共享数据能否被正确复用。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "no readme file on the variable annotations."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "is underpowered, likely invalidating the results. \nInterested readers can find these results in the online supplementary materials.\n128\nmoderate-risk gamblers, who in turn will spend more on loot boxes than low-risk \n129\ngamblers, who in turn will spend more on loot boxes than non-gamblers.\n130\n7.\nBeing in self-isolation or quarantine will moderate the relationship between PGSI \n131\ncategory and spending on loot boxes, such that problem gambler classification will show \n132\na larger difference in spending for participants currently in self-isolation or quarantine \n133\nthan participants not currently in self-isolation or quarantine.\n134\n8.\nThere will be a significant positive correlation between the amount of money \n135\nparticipants report spending on purchasing loot boxes in the past month and \n136\npsychological distress as measured by the Kessler Psychological Distress Scale (K-10).\n137\n138\nMethods\n139\nParticipants\n140\nUsing Prolific Academic, we employed a natural experimental design to compare those people \n141\nwho were isolated due to the pandemic to those people who had not been isolated by the pandemic. \n142\nThere was no theoretical reason to believe that the pandemic had selectively isolated gamers or \n143\nproblem gamblers at a higher rate than other people, so this created a natural-groups experiment to \n144\nassess the effects of isolation due to the pandemic on the pla"
+     },
+     {
+      "input_field": "materials/responses/combined",
+      "exact_quote": "finitions. \n\nWe thank the reviewer for this point. We have uploaded an updated dataset to OSF which contains (in a second data sheet) a data dictionary. We have also improved the labelling of the variables in this dataset for ease of interpretability. \nExperimental design \nThis manuscript reports an online survey on Prolific of gaming behaviour during the early stage of the COVID pandemic. The focus on loot boxes (both expenditure and the Risky Loot Box index) and excessive video gaming provides important data for dissemination, and the design includes problem gambling (PGSI), distress (K-10) "
+     }
+    ],
+    "match_criteria": "说明变量字典对元数据复现的作用；T3仅回应称第二数据页有字典，未附文件时保持未核验。",
+    "acceptable_alternatives": [],
+    "status": "unresolved",
+    "id": "P14"
+   },
+   {
+    "judgment": "resolved：后稿给2020年4月7–9日及NZ Level4、澳美州级差异；外部政策原件未核查，但题内日期/背景已报告。",
+    "issue_type": "V7",
+    "importance": "high",
+    "importance_reason": "日期和政策情境使隔离比较有可定位的背景。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "clearly state the date(s) on which the survey was run"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "e \n213\nadvertised our study on Prolific Academic as a study investigating video games and gambling. Data were \n214\ncollected between the 7th and the 9th of April 2020 (inclusive). At this time, Aotearoa New Zealand had \n215\nbeen in stringent lock-downs (Level 4 under their COVID-19 Alert system) since the 25th of March 2020 \n216\n(Ardern, 2020). Australia and the US had not enacted a federal lockdown response (though individual \n217\nStates had enacted different lockdown restrictions; Morrison, 2020a; Schuchat, 2020). For context, \n218\nAustralia implemented a national boarder closure (with exemptions for returning citizens, permanent \n219\nresidents, and immediate family members) on 20th March 2020 (Morrison, 2020b), and non-U.S. citizens \n220\ntravelling from China, Iran, The European Schengen Area, The United Kingdom and Ireland were banned \n221\nfrom entering the US by Presidential Proclamations taking effect between 2nd February 2020 and 16th \n222\nMarch 2020 (Liu, 2020; NAFSA, 2020). \n223\nWe pre-registered comparisons between those who reported that they were self-isolating \n224\n(eliminating contact with other people) or quarantined (under mandated self-isolation) and those who \n225\nwere not. We acknowledge that this grouping may overlook important differences in contexts between \n226\ndifferent forms of isolation (e.g., for participants anxiously awaiting test results), however "
+     }
+    ],
+    "match_criteria": "核调查确切日期及地区政策情境，T3定位2020年4月7–9日与NZ/澳/美差异。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P15"
+   },
+   {
+    "judgment": "partially_resolved：后稿承认主观性及政策差异，却仍说无理论理由选择隔离故构成自然实验，未作国别控制/敏感性分析；限制已述不等于混杂已排除。",
+    "issue_type": "V2",
+    "importance": "high",
+    "importance_reason": "组别外生性假设直接关系自然实验因果解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "independent variable (self-isolation Yes/No) simply reflects a cross-jurisdictional effect?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "o were isolated due to the pandemic to those people who had not been isolated by the pandemic. \n142\nThere was no theoretical reason to believe that the pandemic had selectively isolated gamers or \n143\nproblem gamblers at a higher rate than other people, so this created a natural-groups experiment to \n144\nassess the effects of isolation due to the pandemic on the playing and spending habits of isolated (vs \n145\nnon-isolated) gamers. We therefore surveyed 1,200 participants from Australia, Aotearoa New Zealand \n146\nand the US on their video game play and gambling. Excluding those who did not play video games (n = \n147\n54), and participants who failed attention checks (n = 2), our final sample was 1,144 participants (619 \n148\nMale, 499 Female, 26 Other). Table 1 shows the descriptive statistics of the sample by country. \n149\nThe majority of participants were from the US (n = 930), with 173 participants coming from \n150\nAustralia, and 41 coming from Aotearoa New Zealand. Age ranged from 19 to 80 years old (M = 31 .4 \n151\nyears, SD = 10.5 years). Participants gave informed consent to participate in the study by proceeding to \n152\nthe questionnaire after reading the information sheet which advised them to cease participation if they \n153\ndid not consent to participate in the study. Ethics approval was obtained for human data collection for \n154\nthis study from Massey University’s Hum"
+     }
+    ],
+    "match_criteria": "指出主观隔离和国别/恐惧等潜在共同原因，不能以没有理论选择理由便认定组别外生可交换。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P16"
+   },
+   {
+    "judgment": "partially_resolved：主文仍说明69人/约6%及补充结果，回应给1075封锁人数；题内未提供补充原文，不能核实上传内容或所有分析。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "封锁组别不均影响估计精度及分析披露范围。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "number of participants who were in lockdown?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "ties where movement and gathering restrictions were in place) and \n244\nthose who were not. However, very few participants were not in lockdown (n = 69, ~6% of our total \n245\ndata). Thus, estimates for non-lockdown participants are underpowered and, therefore, unreliable. \n246\nRather than report these unreliable estimates in the manuscript, we have included the results for these \n247\npre-registered comparisons between participants in lockdown and participants not in lockdown in the \n248\nonline supplementary materials with appropriate caveats. At the time of data collection, Aoteroa New \n249\nZealand had implemented a Nationwide lockdown which had been in effect for approximately 14 days. \n250\nFederal lockdown responses had not been introduced in Australia, or the US, creating divergent state-\n251\nbased responses (Morrison, 2020a; Schuchat, 2020). We acknowledge that an examination of different \n252\nstringencies of lockdown (e.g., Stage 2 versus Stage 4 lockdowns) would constitute a worthwhile follow-\n253\nup study. \n254\nResults\n255\nParticipants played video games, on average, most days (M = 2.31, SD = 0.83). This was likely \n256\ndue to the fact that the study was advertised as a study on video game use and gambling, and therefore \n257\nattracted participants who played video games. On average, participants reported spending $29.63 USD \n258\n(SD = $56.27 USD; Range = $0 - $500 USD) o"
+     },
+     {
+      "input_field": "materials/responses/combined",
+      "exact_quote": "the supp, can the authors state the number of participants who were in lockdown?\n\nWe now state that 1,075 participants were in lockdown in the supplementary materials “Unexpectedly, very few participants were not in lockdown (n = 69, ~6% of our total data; 1,075 participants were in lockdown).” Page 1 of the supplementary materials. \n\nCurrently, the analysis plan simply collapses by region. If for example NZ had a more restrictive ‘lockdown’ than the US, is it possible that their independent var"
+     }
+    ],
+    "match_criteria": "核69名非封锁与1075封锁及补充分析声明，区分样本不均导致精度限制和补充实物未附。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P17"
+   },
+   {
+    "judgment": "resolved：后稿明确招募以游戏与赌博为题，给19–80岁及国别年龄，不把样本当总体游戏发生率。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "招募广告和年龄限定样本外推。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "How were the survey advertised on Prolific."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "\n212\na natural-groups experiment to examine whether self-isolation or quarantine affected outcomes. We \n213\nadvertised our study on Prolific Academic as a study investigating video games and gambling. Data were \n214\ncollected between the 7th and the 9th of April 2020 (inclusive). At this time, Aotearoa New Zealand had \n215\nbeen in stringent lock-downs (Level 4 under their COVID-19 Alert system) since the 25th of March 2020 \n216\n(Ardern, 2020). Australia and the US had not enacted a federal lockdown response (though individual \n217\nStates had enacted different lockdown restrictions; Morrison, 2020a; Schuchat, 2020). For context, \n218\nAustralia implemented a national boarder closure (with exemptions for returning citizens, permanent \n219\nresidents, and immediate family members) on 20th March 2020 (Morrison, 2020b), and non-U.S. citizens \n220\ntravelling from China, Iran, The European Schengen Area, The United Kingdom and Ireland were banned \n221\nfrom entering the US by Presidential Proclamations taking effect between 2nd February 2020 and 16th \n222\nMarch 2020 (Liu, 2020; NAFSA, 2020). \n223\nWe pre-registered comparisons between those who reported that they were self-isolating \n224\n(eliminating contact with other people) or quarantined (under mandated self-isolation) and those who \n225\nwere not. We acknowledge that this grouping may overlook important differences in contexts between"
+     }
+    ],
+    "match_criteria": "解释Prolific游戏/赌博广告造成的自选边界及年龄，不能由54名非玩家或样本游戏频率推总体发生率。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P18"
+   },
+   {
+    "judgment": "partially_resolved：后稿补标准正态p<.001及引文，已有含离群点不改定性结论声明；消费高度偏态时该规则仍须谨慎，具体金额计算另有冲突。",
+    "issue_type": "V3",
+    "importance": "medium",
+    "importance_reason": "离群规则影响主要消费变量的分析样本。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "why was the loot box outlier cut-off of 3.29 SD used?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "pre-registration we excluded 9 participants (0.8% \n171\nof total data) who spent more than 3.29 SDs (equivalent to a Z-score differing from the mean at p < .001; \n172\nTabachnick, Fidell, & Ullman, 2007)  greater than the mean ($6.08 USD, SD = $42.50 USD) as outliers \n173\nfrom analyses of loot box spending. This resulted in the exclusion of any participant who spent more \n174\nthan $133.58 USD on loot boxes in the past month. Including these participants did not qualitatively \n175\nalter the results. \n176\nRisky Loot Box Index. The Risky Loot Box Index (RLI), is a five item scale designed to examine \n177\nrisky engagement with loot box mechanics (Brooks & Clark, 2019). This scale was employed in the same \n178\nmanner as described in Drummond et al. (2020). The scale asks participants to rate their agreement on a \n179\nstandard 7 point likert scale with items assessing their cognitions associated with opening loot boxes \n180\n(e.g., “Once I open a loot box, I often feel compelled to open another”). \n181\nExcessive gaming. Data were collected as previously described in Drummond et al., (2020). We \n182\nadapted the Internet Gaming Disorder Checklist to assess excessive gaming symptoms (Przybylski et al., \n183\n2017). This checklist was based on the proposed diagnostic criteria for Internet Gaming Disorder (IGD). \n184\nParticipants indicate how true (1, not at all true– 4, very true) statements"
+     }
+    ],
+    "match_criteria": "说明3.29是正态阈值理由并核剔除/敏感性声明，预注册本身不是方法适用性证明。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P19"
+   },
+   {
+    "judgment": "partially_resolved：后稿新增state/trait限制并将both may be true标为speculative；仍有应对解释，仅能作为假说而非本研究验证机制。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "状态/特质差别限定污染担忧的含义。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "state or trait related."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "archers in general carefully consider the potential impact of the pandemic on their \n341\ndata. \n342\nOne limitation of the present study is that it is unknown whether participants were responding \n343\nto the Padua Contamination Concern index as a state or trait based measure. It is thus unclear whether \n344\nthe associations between the contamination concern scale, loot box purchasing,  excessive gaming and \n345\nrisky loot box use measures imply that changes in concerns about contamination are causing changes in \n346\nthese outcomes, or if, more generally, people high in trait contamination concern tend to have higher \n347\nscores on these measures. Our interpretation (and we admit that it is speculative) is that both may be \n348\ntrue. Participants who are concerned about contamination may be particularly likely to engage in \n349\ndistracting behaviours (including spending behaviours) during a global pandemic. Future work should \n350\nexamine this possibility and its alternatives more deeply.\n351\nConclusion\n352\nThis natural groups experiment examined eight hypotheses relating to the effects of the COVID-\n353\n19 pandemic on excessive gaming, psychological distress, problem gambling and loot box spending. Our \n354\ndata suggest that contamination concern is associated with higher excessive gaming and risky loot box \n355\nengagement, and to a lesser extent, loot box spending. Problem gamb"
+     }
+    ],
+    "match_criteria": "比较K10过去月与Padua状态/特质不明，不能把同时相关当疫情引起恐惧进而诱发游戏的机制。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P20"
+   },
+   {
+    "judgment": "partially_resolved：后稿多处改greater并承认后续追踪需要，但仍用自然实验、inflating和temporary coping/increases，核心因果/时序外推尚未完全收束。",
+    "issue_type": "V2",
+    "importance": "high",
+    "importance_reason": "横断面设计决定是否能够推断疫情引发变化。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "verb “increased” here implies some longitudinal component"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "lausibly result in similar long-term changes in the ways people \n333\ninteract with video games.\n334\nMore generally, our results suggest that isolation due to the COVID-19 pandemic may act as a \n335\nmoderator for other relationships in pathological gaming research, inflating the size of some previously \n336\nobserved relationships (Garea et al., 2020). We therefore urge researchers to exercise caution in \n337\nensuring that the potential consequences of the pandemic and associated isolation are considered when \n338\ninterpreting the size of effects from data gathered during the pandemic in these areas of research. \n339\nFurther, we suggest that a moderating effect of COVID-19 may not be limited to these fields, and \n340\nsuggest that researchers in general carefully consider the potential impact of the pandemic on their \n341\ndata. \n342\nOne limitation of the present study is that it is unknown whether participants were responding \n343\nto the Padua Contamination Concern index as a state or trait based measure. It is thus unclear whether \n344\nthe associations between the contamination concern scale, loot box purchasing,  excessive gaming and \n345\nrisky loot box use measures imply that changes in concerns about contamination are causing changes in \n346\nthese outcomes, or if, more generally, people high in trait contamination concern tend to have higher \n347\nscores on these measures. Our "
+     }
+    ],
+    "match_criteria": "指出横断面不同组不测同一人疫情前后变化，核greater替换后是否仍残留inflating或自然实验因果推论。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P21"
+   },
+   {
+    "judgment": "partially_resolved：后稿把important换为clinically significant并加阈值解释，仍未给功能损害或临床结局，需将其限为待评估临床关联。",
+    "issue_type": "V8",
+    "importance": "medium",
+    "importance_reason": "临床重要性表述须与实测结局一致。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "how do Ferguson’s criteria establish that a small effect size is important?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": " likely to bear clinical relevance (Ferguson, 2009), suggesting contamination \n278\nconcern may be a clinically significant contributor to excessive engagement with both gaming and \n279\nmonetized in-game reward mechanisms. We compared correlation strengths using Fischer’s Z-tests \n280\n(Weaver & Wuensch, 2013). Relationships were generally similar for people in self-isolation or \n281\nquarantine though the association between RLI and contamination concern was significantly stronger \n282\nfor participants who were self-isolated or quarantined than those who were not (Table 2). \n283\nProblem gambling symptomology was associated with higher loot box spending, rs = .279, p < \n284\n.001; with a stronger association for participants who were self-isolated or quarantined, rs = .366, p < \n285\n.001, than those who were not, rs = .209, p < .001, Z = 2.825, p = .005. Figure 1 shows the association \n286\nbetween loot box spending and PGSI scores, split by isolation status.\n287\nWhen classified into risk groups, a 2-way ANOVA showed a main effect of problem gambler \n288\nstatus, such that problem gamblers spent more than lower risk gamblers on loot boxes (Figure 2). \n289\nHowever, there was no evidence that self-isolation or quarantine altered this relationship. Finally, loot \n290\nbox spending was weakly associated with psychological distress, rs = .103, p < .001.  \n291\nDiscussion\n292\nWe investigated"
+     }
+    ],
+    "match_criteria": "区分效应量经验阈值与实际临床/功能重要性，不把相关超过.20直接称致病贡献。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P22"
+   },
+   {
+    "judgment": "unresolved：离群阈值与所报参数不符：6.08+3.29×42.50约145.91而非133.58美元；摘要非隔离n=619与程序n=697冲突，须核对规则、分析样本与数值。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "具体算术和样本口径冲突影响统计复核，不能只据p值定结论。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "ivalent to a Z-score differing from the mean at p < .001; \n172\nTabachnick, Fidell, & Ullman, 2007)  greater than the mean ($6.08 USD, SD = $42.50 USD) as outliers \n173\nfrom analyses of loot box spending. This resulted in the exclusion of any participant who spent more \n174\nthan $133.58 USD on loot boxes in the past month. Including these participants did not qualitatively \n175\nalter the results. \n176\nRisky Loot Box Index. The Risky Loot Box Index (RLI), is a five item scale designed to examine \n177\nrisky engagement with loot box mechanics (Brooks & Clark, 2019). This scale was employed in the same \n178\nmanner as described in Drummond et al. (2020). The scale asks participants to rate their agreement on a \n179\nstandard 7 point likert scale with items assessing their cognitions associated with opening loot boxes \n180\n(e.g., “Once I open a loot box, I often feel compelled to open another”). \n181\nExcessive gaming. Data were collected as previously described in Drummond et al., (2020). We \n"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "rns et al., 1996), \n211\nand their isolation status: self-isolation (n = 250), quarantine (n = 197), or neither (n = 697). This created \n212\na natural-groups experiment to examine whether self-isolation or quarantine affected outcomes. We \n213\nadvertised our study on Prolific Academic as a study investigating video games and gambling. Data were \n214\ncollected between the 7th and the 9th of April 2020 (inclusive). At this time, Aotearoa New Zealand had \n215\nbeen in stringent lock-downs (Level 4 under their COVID-19 Alert system) since the 25th of"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "44 (619 Male, 499 \n31\nFemale, 26 Other) Australian, Aotearoa New Zealand, and US residents who were quarantined or self-\n32\nisolating (n = 447) or not (n = 619) during the COVID-19 pandemic to a cross-sectional natural \n33\nexperiment. We compared the associations between problem gambling symptomology, excessive \n34\ngaming and loot box spending for isolated and non-isolated participants. Participants completed the \n35\nKessler-10 Psychological Distress Scale, Problem Gambling Severity Index, Internet Gaming Disorder \n36\nChecklist, a measure of risky engagement with loot boxes, concern about contamination, and reported \n37\nmoney spent on loot boxes in the past month, as well as whether they were quarantined or under self-\n38\nisolation during t"
+     }
+    ],
+    "match_criteria": "给出至少一个可重算冲突，保留误报/换算口径可能，不擅自修改原始阈值或推断捏造。",
+    "acceptable_alternatives": [
+     "可认为有些是文字/复制错误且不改主要定性结果，但必须澄清，不应按声称已有预注册就忽略。"
+    ],
+    "status": "supported",
+    "id": "P23"
+   }
+  ],
+  "label_reference": {
+   "primary": "needs_substantive_revision",
+   "acceptable_set": [
+    "needs_substantive_revision"
+   ],
+   "rationale": "后稿补日期、描述统计和图形，合理澄清修订PGSI阈值与分箱解释，但分组主观性/国别混杂、横断面因果外推及参数/阈值冲突仍需实质澄清。"
+  },
+  "known_invalid_patterns": [
+   "把Currie修订阈值当唯一经典阈值使用错误。",
+   "把同一数据连续与分类显著性差别当人数增加证据。",
+   "由横断面不同组断言疫情前后变化。",
+   "把共享声明当作已经打开字典/同意文件核验。"
+  ],
+  "draft_notes": "已读两份完整报告、全部合并回应、编辑决定及前后稿全部文字/页图。T1与前稿规范化文字相同。按报告键标注R1/R2，编辑建议与两报告重复的不额外计点。题内未含独立补充结果、数据字典、预注册全文或信息同意页，均未联网获取；相关核验状态保留unresolved。统计错误可能为文字/口径问题，不能由此断言数据虚构。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P1;P2",
+   "y": "P3;P15;P18",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P3",
+   "y": "P10",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P4",
+   "y": "P5;P12",
+   "overlap": 1.0,
+   "conflicts": [
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P5;P6",
+   "y": "P2;P4;P6;P7;P8;P9;P11;P13;P14;P19;P20;P21;P22",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P7",
+   "y": "P1;P23",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "importance",
+    "status",
+    "origin"
+   ]
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P16",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P17",
+   "overlap": "",
+   "conflicts": []
+  }
+ ],
+ "label_conflict": true,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

@@ -1,0 +1,9 @@
+task_id,row,kind,X_point,Y_point,overlap,conflicting_fields,decision(keep_X/keep_Y/merge/rewrite/delete/regroup),final_issue_type,final_importance,final_status,final_judgment_if_rewritten,reason,adjudicator,date
+D16_T1_Q01,1,many_to_many_conflict,P1,P11;P14,1.0,issue_type;importance;status,,,,,,,,
+D16_T1_Q01,2,many_to_many_conflict,P2;P6;P7,P7;P8;P9;P10;P13,1.0,issue_type;importance;origin,,,,,,,,
+D16_T1_Q01,3,many_to_many_conflict,P3,P3;P6;P12,0.83,issue_type;importance;status,,,,,,,,
+D16_T1_Q01,4,one_to_one_conflict,P4,P2,1.0,importance,,,,,,,,
+D16_T1_Q01,5,many_to_many_conflict,P5;P8,P4;P15,1.0,issue_type;importance,,,,,,,,
+D16_T1_Q01,6,Y_only,,P1,,,,,,,,,,
+D16_T1_Q01,7,Y_only,,P5,,,,,,,,,,
+D16_T1_Q01,8,Y_only,,P16,,,,,,,,,,

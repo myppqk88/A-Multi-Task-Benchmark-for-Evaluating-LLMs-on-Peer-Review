@@ -1,0 +1,630 @@
+{
+ "task_id": "D20_T1_Q01",
+ "X": {
+  "task_id": "D20_T1_Q01",
+  "paper_id": "F1000:171534",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "b09e3c89a2418d51351061d2f19f34275ca269576ae023d8838bfc35e13132b6",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "引言已经指出视障小学科学材料设计—实施—评价研究不足，但与既有磁学或多感官研究的具体差别仍较宽泛。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "缺口陈述决定研究贡献的定位。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the manuscript needs a more explicit\nidentification of the gap in existing literature."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "However, there is still limited research that systematically explores the process of designing, implementing, and\nevaluating instructional materials specifically intended for students with visual impairment in the context of elementary\nscience education (Ediyanto & Kawai, 2019; Yektyastuti et al., 2024). This study aims to investigate the development of\ntailored instructional activities and materials for teaching the concept of magnetism to elementary students with visual\nimpairments."
+     }
+    ],
+    "match_criteria": "指出已有缺口句及其宽泛性，不能称完全没有文献缺口。",
+    "acceptable_alternatives": [
+     "可认为开发性个案研究的现有缺口定位足够，不必要求系统综述。"
+    ],
+    "status": "partly_supported",
+    "id": "P1"
+   },
+   {
+    "judgment": "引言已有多感官与情境学习说明，但明确的建构主义理论主要在讨论出现，前移是组织完善。",
+    "issue_type": "V6",
+    "importance": "low",
+    "importance_reason": "影响理论与设计选择的早期衔接。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "The theoretical basis for multisensory learning\nshould appear earlier."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Furthermore, based on previous studies, science instruction for students with visual impairments should incorporate\nmultisensory and contextually grounded learning experiences (Bandyopadhyay & Rathod, 2017; Gustiani et al., 2022;\nJunilasari et al., 2019). Multisensory learning allows students to access scientific concepts through tactile exploration\n(Senjam et al., 2020), auditory explanations (Lahav et al., 2016), and hands-on activities (Kizilaslan et al., 2019). When\nthese experiences are embedded within meaningful, real-life contexts—what is known as contextual learning—students\nare more likely to relate scientific concepts to everyday experiences, leading to deeper understanding and long-term\nretention"
+     }
+    ],
+    "match_criteria": "定位引言已有多感官论述及讨论的建构主义，不把前移建议升级为方法错误。",
+    "acceptable_alternatives": [
+     "可接受保留现结构，因为引言已有理论相关解释；无需硬性前移。"
+    ],
+    "status": "partly_supported",
+    "id": "P2"
+   },
+   {
+    "judgment": "主文和A03已经给出口头/触觉题及评分规则，不能称没有适配；但按盲/低视力学生实施的一致性与测验本身效度仍未清楚说明，套件Aiken评价不等于测验验证。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "核心学习增益依赖可访问且可解释的测验。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "Clarify delivery format\n(braille/audio/oral) and how the adapted assessments were validated."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "The teacher\nadministers a verbal test to each student to determine their conceptual understanding of magnets."
+     },
+     {
+      "input_field": "input/supplements/A03/text",
+      "exact_quote": "Instruction:\n1. Questions can be delivered orally.\n2. Performance items require tactile materials from the kit.\n3. Allow up to 2–3 minutes for each performance item.\n4. If clarification is requested, restate neutrally without leading hints."
+     },
+     {
+      "input_field": "input/supplements/A02/text",
+      "exact_quote": "Science Kit for Visual Impairment in Elementary Schools"
+     }
+    ],
+    "match_criteria": "同时识别已有A03操作说明、后稿新增形式与Aiken评价对象是套件而非测试这一界限。",
+    "acceptable_alternatives": [
+     "可在小样本探索研究中接受内容与任务层面的初步效度，但须限定分数不能等同于成熟标准化测量。"
+    ],
+    "status": "partly_supported",
+    "id": "P3"
+   },
+   {
+    "judgment": "原稿已有Aiken公式、六专家十三项和描述统计概要；质性编码步骤、得分合成及增益规则说明仍不充分。",
+    "issue_type": "V7",
+    "importance": "high",
+    "importance_reason": "决定质性主题和量化增益能否复核。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Add a minimally detailed explanation of the instrument and data analysis."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Data were analyzed quantitatively using descriptive\nstatistics to measure learning gains, and qualitatively using thematic analysis of student responses and classroom\ninteractions."
+     }
+    ],
+    "match_criteria": "指出已报告方法，并具体说明后稿增加了何种分析说明及仍欠缺的决策规则。",
+    "acceptable_alternatives": [
+     "可认为附件加主文已满足个案报告基本重现要求，但不把软件名称当作质性可信度证明。"
+    ],
+    "status": "partly_supported",
+    "id": "P4"
+   },
+   {
+    "judgment": "原稿已有三项共享声明，A02/A03实际提供专家评分、Aiken表和前后测题目/成绩；不能认定来源数据一概缺失。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "来源可用性影响复核边界。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Ensure source data is available (grades, rubric, Aiken's V table, etc.)."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Data availability\n• Figshare. Instrument and data from Observation and Interview. DOI: [URL或联系信息隐去] (Yektyastuti, 2025a)\n\n\n\n• Figshare. Instrument and data from expert judgment. DOI: [URL或联系信息隐去]\n(Yektyastuti, 2025b)\n• Figshare. Instrument and data from test of conceptual understanding. DOI: [URL或联系信息隐去] (Yektyastuti, 2025c)\nData are available under"
+     },
+     {
+      "input_field": "input/supplements/A02/text",
+      "exact_quote": "Validation Result Data (Expert Judgment)"
+     },
+     {
+      "input_field": "input/supplements/A03/text",
+      "exact_quote": "Pretest Score\nScore\nQuestion Total\nS1 S2 S3 S4\n1 0 0 0 0 0\n2 0 0 0 1 1\n3 1 1 1 1 4\n4 0 0 0 0 0\n5 0 0 0 0 0\n6 1 1 1 1 4\n7 0 0 0 0 0\n8 0 1 0 1 2\n9 0 1 0 1 2\n10 0 0 0 0 0\nTotal Score 3 4 2 5\n2. Post-Test Score"
+     }
+    ],
+    "match_criteria": "必须区分主文共享声明、本题已附具体数据与数值复算；不得只看回应“已上传”。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立也属合理判断：指出“尚未提供成绩/评分表”的前提不成立，同时要求修正附件内部不一致，可接受。"
+    ],
+    "status": "disputed",
+    "id": "P5"
+   },
+   {
+    "judgment": "原稿已有Limitations，明确四名学生、单校、单主题及无对照，不能称完全没有限制段。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "限制范围决定推广强度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Add a limitations paragraph."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Limitations\nThe study involved a small number of participants (four students and two teachers) from a single special needs school,\nwhich limits the generalizability of the results. The focus on a single science topic—magnetism—means that further\nresearch is required to examine whether similar approaches are effective for other abstract science concepts. In addition,\nthe evaluative case study design provided in-depth insights but did not allow for comparison with a control group. Future\nresearch should consider larger samples, diverse school contexts, and comparative designs to strengthen the external\nvalidity of these findings."
+     }
+    ],
+    "match_criteria": "定位已有Limitations并概括小样本、单校与无对照的真实边界。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立：限制已陈述，合理要求是让结论遵守限制而非再加一段。"
+    ],
+    "status": "disputed",
+    "id": "P6"
+   },
+   {
+    "judgment": "报告没有指出具体引用格式错误，无法把这一笼统要求变成已核实的科学缺陷。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "属于编辑一致性核对。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Improve consistency of citations and references."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "References\nAiken LR"
+     }
+    ],
+    "match_criteria": "只评价可定位的格式一致性，不能猜测某引用错误或补造外部文献信息。",
+    "acceptable_alternatives": [
+     "可将其作为一般编辑核对项而不计实质问题。"
+    ],
+    "status": "unresolved",
+    "id": "P7"
+   },
+   {
+    "judgment": "给定原稿已有图1，展示Analysis、Design/Develop与Implement/Evaluate循环，新增流程图的前提不成立。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "流程可视化属于呈现要求。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Add an ADDIE flowchart to strengthen the visualization of the process."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "A flowchart of the research procedure is presented in Figure 1."
+     }
+    ],
+    "match_criteria": "明确原稿图1已有ADDIE三阶段图，不仅重复作者“已增加”的声明。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立，同时可建议图1进一步标注测量时点，仍算合理判断。"
+    ],
+    "status": "disputed",
+    "id": "P8"
+   },
+   {
+    "judgment": "原稿Stage 1主要列主题总结，缺少用于连接主题与受访者的具体引语。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "质性引语连接主题与材料。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Add sample interview quotes to enrich the qualitative findings."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "These needs were grouped\ninto four main categories as presented in Figure 2"
+     }
+    ],
+    "match_criteria": "定位Stage 1的GKT/SKT引语与A04对应材料，区分需求分析与实施后成效。",
+    "acceptable_alternatives": [
+     "可认为短引语足够示例化主题，仍保留未提供完整编码轨迹的局限。"
+    ],
+    "status": "supported",
+    "id": "P9"
+   },
+   {
+    "judgment": "四名学生的单组前后测只能支持个案中的观察改善，不能据此排除练习、教师关注等替代解释或证明套件的独立因果效果。",
+    "issue_type": "V2",
+    "importance": "high",
+    "importance_reason": "直接限定主要成效结论。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "This study confirms that thoughtfully adapted instructional practices, grounded in the sensory and cognitive needs of\nstudents with visual impairments, can significantly enhance their conceptual understanding of abstract science topics\nsuch as magnetism."
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "did not allow for comparison with a control group."
+     }
+    ],
+    "match_criteria": "把无对照四人前后测与“confirms/significantly enhance”的因果强度对照；不因小样本本身否定开发个案价值。",
+    "acceptable_alternatives": [
+     "可在明确非因果的探索性语言下保留观察增益与课堂可行性结论。"
+    ],
+    "status": "supported",
+    "id": "P10"
+   },
+   {
+    "judgment": "A03逐题分数与汇总有内部不一致：S1前测只有第3、6题各1分，合计2而表记3；后测第2/4/5/7题四人均1但Total列为1/0/0/0，需澄清而不能直接接受平均增益+4.75。",
+    "issue_type": "V3",
+    "importance": "high",
+    "importance_reason": "主要量化增益的计算链存在可见冲突。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/supplements/A03/visual_pages",
+      "page": 4,
+      "observation": "测验附件A03第4页，S1前测第3和6题=1，其余=0，Total Score=3；Post-Test行2/4/5/7的四项均=1，右侧Total分别为1/0/0/0。"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "average pre-test score was 3.5, which increased to 8.25 in the post-test, with an average gain of +4.75"
+     }
+    ],
+    "match_criteria": "必须给出具体逐题—总分冲突，保留错误可能在逐题值或总分之一，不直接把某一套当真值。",
+    "acceptable_alternatives": [
+     "可以判断部分Total列是复制错误，但S1总分仍需原始记录澄清，不能只修横向合计就认为全部数值可靠。"
+    ],
+    "status": "supported",
+    "id": "P11"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "说原稿没有图1或Limitations。",
+   "混同套件专家内容评价与学生前后测的独立效度。",
+   "将观察访谈需求材料当成干预后学习效果数据。",
+   "把附件已提供等同于表内数值已一致。"
+  ],
+  "draft_notes": "已阅读两份报告、全部回应、前后主文及A01–A05全部所列文本和页图。A04含英语译本及印度尼西亚语原文；判断引语以所给英语材料为锚，不声称独立完成语言翻译忠实度验证。A05第3页PNG获用户接受跨平台页脚遮盖渲染差异：提交4ea4df1f749df5ff4d59a87d935b7e75bc6cb8b07f4b9520e8a66f76cc2d9cc1，本地9d4de2b06f649aa6a4d3174bd033b0ef25f756dc323ff4f5d93abaaf056ddaad；该页内容与text一致。T1只使用A01–A03，未使用后稿A04/A05作判定依据。"
+ },
+ "Y": {
+  "task_id": "D20_T1_Q01",
+  "paper_id": "F1000:171534",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "b09e3c89a2418d51351061d2f19f34275ca269576ae023d8838bfc35e13132b6",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "前后测如何为全盲和低视力学生改编、以何种形式施测（盲文、音频或口头），以及改编后的测验如何验证，都没有说明；测验由研究者自编，没有报告效度或信度证据，而概念理解提升的结论完全依赖这份测验。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "主要结果的测量基础。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the study lacks detail on how the pre–post tests were adapted for blind and low-vision students"
+     },
+     {
+      "report_id": "R1",
+      "exact_quote": "Clarify delivery format (braille/audio/oral) and how the adapted assessments were validated."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Instruments included test sheets, observation rubrics, and audio recordings."
+     }
+    ],
+    "match_criteria": "指出测验的改编、施测形式或验证信息缺失。",
+    "acceptable_alternatives": [
+     "只指出自编测验缺少信效度证据，也算命中。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "研究工具和数据分析的描述过于简略：各阶段工具的内容、评分方式、主题分析的编码过程都只有一句话概括。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "影响可复现性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "1. Add a minimally detailed explanation of the instrument and data analysis."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Data were analyzed quantitatively using descriptive statistics to measure learning gains"
+     }
+    ],
+    "match_criteria": "指出工具或分析方法描述不足。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "引言对文献缺口的界定不够明确，多感官学习的理论基础出现得太晚。",
+    "issue_type": "V6",
+    "importance": "low",
+    "importance_reason": "论证结构问题。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the manuscript needs a more explicit identification of the gap in existing literature"
+     },
+     {
+      "report_id": "R1",
+      "exact_quote": "The theoretical basis for multisensory learning should appear earlier."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "It also responds to a notable gap in the literature"
+     }
+    ],
+    "match_criteria": "提到文献缺口界定不清或理论基础位置不当。",
+    "acceptable_alternatives": [
+     "认为文中已有缺口表述（讨论部分）、只是位置靠后，也合理。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P4",
+    "judgment": "源数据可得性：v1的数据可得性部分已列出Figshare上的观察访谈、专家评判和测验数据集，审稿人\"确保数据可得\"的要求只部分成立。",
+    "issue_type": "V7",
+    "importance": "low",
+    "importance_reason": "检验模型是否核对原文。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "2. Ensure source data is available (grades, rubric, Aiken's V table, etc.)."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Figshare. Instrument and data from Observation and Interview."
+     }
+    ],
+    "match_criteria": "若提出数据问题，应承认v1已列出数据集。",
+    "acceptable_alternatives": [
+     "指出数据存放在外部仓储、本题不可见，需注明。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P5",
+    "judgment": "v1已有专门的局限部分（样本小、单一学校、单一主题、无对照组），也已有研究流程图（图1）。R2要求\"增加局限段落\"和\"增加ADDIE流程图\"的前提不成立。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "检验模型是否机械服从审稿人。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "3. Add a limitations paragraph."
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "1. Add an ADDIE flowchart to strengthen the visualization of the process."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "The study involved a small number of participants (four students and two teachers) from a single special needs school"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "A flowchart of the research procedure is presented in Figure 1."
+     }
+    ],
+    "match_criteria": "不把\"缺少局限部分\"或\"缺少流程图\"列为问题；若提及，应指出已存在。",
+    "acceptable_alternatives": [
+     "认为现有局限部分仍不充分（例如未讨论测验效度），并具体说明不足之处，也合理。"
+    ],
+    "status": "disputed"
+   },
+   {
+    "id": "P6",
+    "judgment": "质性发现缺少访谈原话支持，主题分析结果只以图表形式呈现。",
+    "issue_type": "V5",
+    "importance": "low",
+    "importance_reason": "质性证据的呈现。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "2. Add sample interview quotes to enrich the qualitative findings."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Figure 2. Thematic analysis result."
+     }
+    ],
+    "match_criteria": "指出质性发现缺少访谈引文支持。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P7",
+    "judgment": "引文与参考文献格式不一致，例如同一作者被写成\"Kizllaslan\"和\"Kizilaslan\"。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "非实质问题。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "4. Improve consistency of citations and references."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Kizllaslan & Sözbilir, 2020"
+     }
+    ],
+    "match_criteria": "提到引文不一致。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P8",
+    "judgment": "因果与效果结论超出设计：只有4名学生、无对照组的单组前后测，平均分从3.5升到8.25，却在摘要中称教具\"显著提高\"了参与度与理解，并称研究\"证明\"了改编材料的效果；没有统计检验，也无法排除教学本身、练习效应或测验熟悉度的影响。",
+    "issue_type": "V2",
+    "importance": "high",
+    "importance_reason": "核心结论的证据强度不足，而两位审稿人都认为结论有充分支持。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "significantly improved students’ engagement and comprehension of key magnetism concepts"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "with an average gain of +4.75 across the four participants"
+     }
+    ],
+    "match_criteria": "指出n=4、无对照的前后测不能支持\"显著提高\"或\"证明有效\"的结论。",
+    "acceptable_alternatives": [
+     "认为局限部分已承认无对照组、但摘要措辞应改为描述性，也算命中。"
+    ],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "要求增加局限部分或流程图（v1已有）。",
+   "要求做推断统计检验（n=4时不适用），而不是指出结论措辞过强。"
+  ],
+  "draft_notes": "v1的局限部分和图1流程图均已存在，经核对原始PDF确认。P8为起草者自行发现。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P1;P2",
+   "y": "P3",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P3",
+   "y": "P1",
+   "overlap": 1.0,
+   "conflicts": [
+    "status"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P4",
+   "y": "P2",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P5",
+   "y": "P4",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P6;P8",
+   "y": "P5;P8",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "importance",
+    "status",
+    "origin"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P7",
+   "y": "P7",
+   "overlap": 1.0,
+   "conflicts": [
+    "status"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P9",
+   "y": "P6",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance"
+   ]
+  },
+  {
+   "kind": "X_only",
+   "x": "P10",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "X_only",
+   "x": "P11",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  }
+ ],
+ "label_conflict": false,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

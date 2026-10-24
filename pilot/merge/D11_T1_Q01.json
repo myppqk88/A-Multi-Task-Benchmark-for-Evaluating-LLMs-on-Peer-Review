@@ -1,0 +1,664 @@
+{
+ "task_id": "D11_T1_Q01",
+ "X": {
+  "task_id": "D11_T1_Q01",
+  "paper_id": "ORE:5-286",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "5fd462d347a08081dca9763eb7529e45d7784fd4b029f3fe6e24c4df44569dfa",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "核心贡献（图3三层框架）如何由数据得出不透明：文中声称采用溯因推理和三阶段编码，但没有展示从编码类别到框架的推导证据，框架看起来更像经验总结或咨询产品。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "论文的主要理论贡献缺乏可追溯的证据链。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "it is not extensively clarified in the paper how the study of underlying documents leads to these outcomes"
+     },
+     {
+      "report_id": "R3",
+      "exact_quote": "The Figure 3 does not show the evolutionary phases with links to the contextual triggers in a convincing way."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "The abductive moves described above provided the interpretive logic that transformed the coded categories of Table 2 into the three-layered framework"
+     }
+    ],
+    "match_criteria": "指出框架与数据之间的推导不透明（\"黑箱\"），或缺乏证据展示。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "一手资料（备忘录、田野笔记、会议观察）的来源、数量和使用方式没有交代清楚，结果中也很少引用；发现主要呈现为描述或作者经验，缺少引文或观察实例支撑。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "影响发现的证据基础。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "The authors claim to use memos, field notes and observations in various meetings. However, this type of data is not sufficiently referenced or used to support the findings."
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "the findings sometimes appear mainly descriptive or based on the authors’ insights and experience"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "These constitute primary ethnographic style data"
+     }
+    ],
+    "match_criteria": "指出一手资料未被说明或未用于支撑发现，或缺少引文/实例。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "编码过程由谁完成、如何保证分析的可信度没有说明（单人还是多人编码、有无复核）。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "质性分析的可信度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Who conducted the data analysis? Only one researcher? Or multiple researchers?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Coding was conducted in iterative stages—open, axial, and selective—to identify recurrent dynamics"
+     }
+    ],
+    "match_criteria": "指出编码者身份或复核机制未说明。",
+    "acceptable_alternatives": [
+     "认为质性研究不必报告编码者间信度，但应说明编码者与复核方式，也算命中。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P4",
+    "judgment": "研究问题过于描述性（\"PMS在公共部门网络中如何演化\"），没有借助文献聚焦到网络中的行动者差异、治理变化或权力动态，因而也难以清楚说明理论贡献。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "研究问题与贡献的清晰度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "The research question is very descriptive"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "consequently poses the following research question"
+     }
+    ],
+    "match_criteria": "指出研究问题过于描述性或与文献脱节。",
+    "acceptable_alternatives": [
+     "认为探索性溯因研究用描述性问题合理，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P5",
+    "judgment": "EEN的网络结构与行动者不清：谁是网络的行动者（成员组织、协调机构、欧盟委员会）、各自承担什么角色，文中没有说明。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "\"网络\"分析单位的界定。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "What are here the actors: the individual members, the coordinating institutions of EEN, or the representatives of the EU commission."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "the world’s largest public network supporting small and medium enterprises (SMEs)"
+     }
+    ],
+    "match_criteria": "指出网络行动者或治理层级未界定。",
+    "acceptable_alternatives": [
+     "指出R1把EEN误认为60个成员的协会，而文中称其为全球最大的公共网络，前提有误，也合理。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P6",
+    "judgment": "缺少关键行动者访谈来揭示PMS修订背后的动机；各阶段之间为何修订PMS解释不足。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "影响\"变化触发因素\"结论。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "What I missed was interviews with key actors for unravelling motives behind decisions made about the PMS"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Data were collected over several years through document analysis, direct observation, and memo writing"
+     }
+    ],
+    "match_criteria": "指出缺少访谈或阶段转换的原因解释不足。",
+    "acceptable_alternatives": [
+     "认为会议观察可以替代访谈、只需说明理由，也合理。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P7",
+    "judgment": "概念上主要分析了\"测什么\"（绩效测量），而对\"如何使用测量结果\"（绩效管理）着墨不多，与题目和框架的\"绩效管理系统\"定位不一致。",
+    "issue_type": "V1",
+    "importance": "medium",
+    "importance_reason": "核心概念的界定。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "the analysis focuses primarily on the performance measurement – that is, on what to measure – rather than on the performance management"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "offering new insights into PMS as socio-technical systems"
+     }
+    ],
+    "match_criteria": "指出测量与管理的混淆。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P8",
+    "judgment": "推广过度：基于单一案例，却称框架是适用于\"任何类型公共部门网络\"的可迁移模型；局限部分虽承认单一案例，但正文的推广表述没有相应限定。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "核心结论的适用范围。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "it may partially limit the scientific robustness of the work, particularly regarding its generalizability and replicability"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "This framework provides a transferable model for understanding PMS evolution in any type of public sector network"
+     }
+    ],
+    "match_criteria": "指出单一案例不足以支持\"适用于任何公共网络\"的主张。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P9",
+    "judgment": "研究者是网络的内部人：主要研究者长期在EEN工作，既采集资料又完成编码；文中列举了三角互证、审计轨迹和反思性备忘录，但没有任何独立编码或外部核查，内部人视角可能塑造对PMS演化的解释。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "影响解释的中立性。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "the lead researcher’s extended professional experience within the network afforded access to archives and meetings"
+     }
+    ],
+    "match_criteria": "指出内部人研究者带来的偏差风险及缺乏独立核查。",
+    "acceptable_alternatives": [
+     "认为文中已有反思性策略、只需补充独立复核，也算命中。"
+    ],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "要求统计检验或大样本比较作为单案例质性研究的必要条件。",
+   "坚持EEN只有60个成员（文中称其为大型公共网络）。"
+  ],
+  "draft_notes": "三份v1报告。作者回应中对审稿人的编号有混淆（对R1的回应写成\"Reviewer 3\"）。P9为起草者自行发现。"
+ },
+ "Y": {
+  "task_id": "D11_T1_Q01",
+  "paper_id": "ORE:5-286",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "5fd462d347a08081dca9763eb7529e45d7784fd4b029f3fe6e24c4df44569dfa",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "宽泛“如何演化”可适用于溯因探索，但需把参与者、治理、环境和权力等线索与理论框架/分析连接，不一定改为验证假设。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "RQ与框架连接决定探索问题如何被回答。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "more specific research question"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "cal understanding of the evolution\nof PMS within public sector networks, and consequently poses\nthe following research question:\n\u0007How do performance management\nwithin public sector networks?\n\nsystems\n\nevolve\n\nThe study uses a qualitative, longitudinal single-case design\ncentred on the EEN’s PMS. We triangulate extensive archival\nanalysis (calls for proposals, grant agreements, indicator dictionaries, evaluation reports and coordination artefacts over\n15 years) with direct observation of network routines (e.g., thematic groups, representative bodies, and time-bounded working groups tasked with PMS/KPI redesign). Analytically, we\ncombine temporal bracketing to trace how the PMS moved\nfrom activity/output counting to a client-journey logic with\nverifiable achievements and impact, complemented by contribution metrics (for cross-partner production) and quality\nratios (for efficiency and effectiveness). Later, with inductive\ncoding and abductive research logic we build a transferable\ndesign-and-evolution framework for PMS in public networks.\nThe paper contributes to scholarship and practice in two ways.\nConceptually, it reframes network performance management\nas an iterative, governed design process rather than a one-off\ntechnical exercise, specifying the triggers (policy cycles,\nevaluations, IT shifts, stakeholder signals), lifecycle phases\n(design, use, adjustment, consolidation) and building blocks\n(journey–achievement–impact logic, contribution metrics, quality\nratios, data pipeline, and governance arenas) that enable evolution. Empirically, it offers the first longitudinal a"
+     }
+    ],
+    "match_criteria": "区分宽泛探索RQ和缺乏理论连接，说明三层框架如何具体化问题，不强制预设假设或所有建议因素。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P1"
+   },
+   {
+    "judgment": "原稿已写almost 600 network members及多层治理，评审60成员/单纯协会的前提不成立；角色分工仍可更明确。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "网络规模和治理层次关系案例的适切性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "an organization with 60 members"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "The EEN constitutes a single, coherent European network of\nregional business-support organisations (almost 600 network\nmembers) operating across all EU regions and associated countries under the Single Market Programme6. It is co-financed\nby the European Commission through multi-annual grants and\nis mandated to help SMEs innovate, grow, and internationalise,\nwhile contributing to EU objectives on competitiveness, sustainability, digitalisation, resilience, and entrepreneurship. The\nnetwork works through a client-centric logic, integrating\nfirst-level information services and second-level, tailored advisory and partnering services that are expected to generate measurable business impact for SMEs. Its governance includes\nEU-level coordination, a representative body, and an architecture of Sector and Thematic Groups that enable knowledge\nexchange and joint service delivery across consortia.\nEEN is theoretically and empirically suited for a study of\nPMS evolution for three reasons. First, it is the world’s largest public network supporting SMEs, offering a rich setting\nto observe how PMS accommodate multi-actor coordination,\nEU-level steering, and local delivery. Second, the programme\nspans multiple cycles providing temporal depth to trace evolution.\n\nThis temporal structuring allows the research to trace institutional layering and shifts in performance logic over time.\nThird, the lead researcher’s extended professional experience\nwithin the network afforded access to archives and meetings\nthat are typically difficult to observe, while also necessitating explicit reflexive stra"
+     }
+    ],
+    "match_criteria": "定位Case design原有almost 600与多层治理，指出60成员前提错误，仍可要求补分工。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立：成员数量和网络身份原已有约600及多层结构说明；可要求补具体分工而不误称只有60个。"
+    ],
+    "status": "disputed",
+    "id": "P2"
+   },
+   {
+    "judgment": "访谈能补动机，但原稿已给2015–2023会议备忘录和观察；若记录含当时讨论，可合理替代部分回溯访谈，不是必须补访谈。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "动机材料的来源决定观察能否支持过程解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "What I missed\nwas interviews with key actors"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "ssment of the EEN’s performance effectiveness, relevance, and coherence with policy objectives. The researcher\nmemos and field notes — developed between 2015 and\n2023 — are based on participation in internal meetings, working groups, training sessions, and archival analysis, including\ngrants agreements and project reporting. These constitute primary ethnographic style data, capturing practices, conversations,\nconcerns, and interpretations among EEN members. Finally,\nthe complementary sources help contextualize the Network’s\ninstitutional narrative and learning trajectory. All these documents are included as underlying data (Ruiz-Coupeau, 2025),\nensuring transparency and traceability of interpretations.\n\nData analysis\nThe data analysis proceeded in two distinct but complementary\nstages.\nThe first stage aimed at describing the evolution of the PMS\nacross different phases. To achieve this, we employed temporal\nbracketing (Langley, 1999), a processual analysis technique\nthat structures longitudinal data into successive periods separated by identifiable shifts. Temporal bracketing allows the\nresearcher to capture both continuity and change by segmenting a process into analytically meaningful intervals, while\npreserving the temporal ordering of events. This method is particularly suitable for studying evolving organizational systems,\nas it highlights how earlier configurations create the conditions\nand constraints for subsequent developments.\nIn practice, we reconstructed a timeline of the EEN’s PMS by\nbracketing the material into programming phases (2008–2012;\n2012–2015; 2015–20"
+     }
+    ],
+    "match_criteria": "定位2015–2023会议/工作组备忘录，说明可作为当时动机线索而非强制补访谈，保留未覆盖主体视角。",
+    "acceptable_alternatives": [
+     "可合理拒绝补访谈，以可追溯、含当时讨论理由的会议备忘录支持有限机制解释，承认缺少补充视角。"
+    ],
+    "status": "partly_supported",
+    "id": "P3"
+   },
+   {
+    "judgment": "表1已有四类15项材料和备忘录年份，仍需说明观察如何产生、哪些记录支撑关键发现，不能只靠清单证明全链可核查。",
+    "issue_type": "V7",
+    "importance": "high",
+    "importance_reason": "备忘录生成与来源定位影响主要证据可追溯性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "primary data sources must be clarified."
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "specifying the use of documents, memos, field notes, and observations"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "on, and memo writing, enabling both retrospective and real-time insights into the evolving\nPMS.\nThe empirical material is classified into four main categories,\nas summarized in Table 1 below:\n\n6\n\nEuropean Commission’s Single Market Programme [URL或联系信息隐去]\neuropa.eu/funding-tenders/find-funding/eu-funding-programmes/single-marketprogramme/overview_en\n\n7\n\nCESEAND – Enterprise Europe Network node of the region of Andalucia\n(Spain) [URL或联系信息隐去]\n\nTable 1. Underlying data sources used in the study.\nCategory\n\nDocument Title\n\nCode\n\nEU Call for\nproposals\n\nCall for proposals CELEX_C2006_306_07_EN\n\n1.1\n\nTerms of reference EEN 2017–2018_en\n\n1.2\n\nCall for proposals_smp-cosme-2021-een_en\n\n1.3\n\nCall for proposals_smp-cosme-2024-een_en\n\n1.4\n\nEvaluation report_eip_en 2011\n\n2.1\n\nEvaluation report_eaci_2011_en\n\n2.2\n\nEvaluation report_EEN_2008–2014\n\n2.3\n\nMemo PMS used by the EEN period 2008–2025\n\n3.1\n\nMemo CESEAND Plus Period 2015–2016\n\n3.2\n\nMemo CESEAND Plus Period 2019–21\n\n3.3\n\nMemo Working Group on Measurement and KPIs\n\n3.4\n\nMemo Training Improve Your Achievements\n\n3.5\n\nMemo Thematic Group Start-up and Scale-up\n\n3.6\n\nConference proceedings on EEN (2008–2020)\n\n4.1\n\nReport EEN Our Story 2008–2020\n\n4.2\n\nEvaluation\nreports\n\nMemos\n\nComplementary\nsources\n\n\n\nThe calls for proposals provide insight into the formal expectations and design logic underpinning each programming\ncycle. The external evaluation reports, authored by independent contractors on behalf of the European Commission, offer a\nmeta-assessment of the EEN’s performance effectiveness, relevance, and coherence with policy objectives. The"
+     }
+    ],
+    "match_criteria": "在表1/数据收集核15项来源、备忘录场域及日期范围",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P4"
+   },
+   {
+    "judgment": "原稿已有开放/轴心/选择编码步骤，缺谁编码、他人如何审查与分歧处理，不能一概说未报告分析方法。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "编码责任及审查机制决定分析可信度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "inter-coder reliability practices should be\nexplained."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "eralizable\nframework for PMS design and evolution in public sector\nnetworks (Pfister et al., 2023).\nThe first stage of analysis involved open coding, where each\ndocument was read iteratively, and relevant passages were coded\n\nusing descriptive terms. Codes captured three broad domains:\nperformance artefacts (e.g. indicators, dashboards, reporting\nformats, databases); practices and routines (e.g. peer learning,\nmentoring, knowledge sharing, training); and governance mechanisms (e.g. working groups, steering committees, evaluation\nprotocols). This process generated a comprehensive inventory\nof elements that constituted the PMS.\nIn the second stage, axial coding was used to cluster related\ncodes into higher-order categories that expressed the mechanisms of PMS evolution. For instance, “EU calls,” “grant agreements,” and “policy cycles” were grouped under the category\nof policy and funding triggers. Likewise, “external audits,”\n“evaluation recommendations,” and “impact indicators” were\nconsolidated into a category representing evaluations as redesign triggers. Finally, “client journey,” “achievements,” and\n“impact pathways” were grouped into a category of measurement logic. Axial coding thus enabled the identification of\nrecurrent dynamics linking codes across sources and over time.\nThe final stage, selective coding, connected these axial categories into a coherent explanatory model. Here, abductive\nreasoning was central: we sought the most plausible structure\nto integrate the empirical findings with theoretical insights on\nperformance systems, organizational learning, and netw"
+     }
+    ],
+    "match_criteria": "承认三阶段编码原已说明",
+    "acceptable_alternatives": [
+     "无需机械要求κ或人人独立编码；如实给一人编码与同伴审查流程也可满足质性可信度说明。"
+    ],
+    "status": "supported",
+    "id": "P5"
+   },
+   {
+    "judgment": "原稿表2仅码类到层次的对应，缺原始材料片段及来源定位，框架的经验基础仍不够可见。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "材料到类别的证据链支撑主要框架贡献。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "data analysis largely remains a black box."
+     },
+     {
+      "report_id": "R3",
+      "exact_quote": "direct quotes from the\ninterviews/ meetings or short illustrative examples"
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "data analysis process would also benefit from a more comprehensive explanation"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "evelopment, and\nto the technical and institutional components that stabilise\nmeasurement practices.\nTable 2 illustrates the analytical path from open coding to the\nfinal framework. The first four rows group codes relating to\ncontextual triggers. These highlight how PMS in public networks is shaped by forces external to the network itself. The\nnext four rows show how these triggers interact with the PMS\nlifecycle, which we conceptualise as a phase-bounded cycle\nof design, appropriation, evaluation, and renewal. The final\nfive rows describe the building blocks at the core of the PMS.\nTaken together, the table shows the outcome of a grounded\ncoding process. Each element can be traced back to specific\narchival categories and observed practices in the EEN, and their\norganisation into outer triggers, lifecycle phases, and inner\nbuilding blocks reflects the layered nature of PMS evolution\nin public networks. The results of the coding are summarised\nin Table 2, which demonstrates the progression from empirical descriptors (open codes) to analytical clusters (axial\ncategories) and selective codes.\nAbductive construction of the framework. The movement from\nthe coded categories in Table 2 to the layered framework is\nmade possible by abductive reasoning. Abduction differs from\n\nTable 2. From open coding to framework elements.\nOpen coding categories\n\nFramework element\n(axial categories)\n\nFramework layer\n(selective codes)\n\nMultiannual programmes, calls, grant agreements\n\nPolicy & funding cycles\n\nContextual triggers\n\nExternal evaluations, recommendations\n\nEvaluations\n\nContextual triggers\n"
+     }
+    ],
+    "match_criteria": "比较表2从码类映射到来源—经验摘录—类别的证据链，承认改进同时保留原件忠实性未验证。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P6"
+   },
+   {
+    "judgment": "五段历史与四阶段通用生命周期不同，需具体说明各次指标修改的触发与机制，而非仅并列阶段叙述。",
+    "issue_type": "V6",
+    "importance": "high",
+    "importance_reason": "阶段转换机制是纵向演化研究的核心。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "why a PMS was revised from one stage to\nthe other."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "\nsubstantial effort with uncertain regulatory impact, points that\nforeshadowed later PMS redesigns.\nPhase 2 (2012–2015): consolidation and preparation for\nredesign. The second phase consolidated service families and\ndeepened innovation and partnering activities, but the monitoring system remained largely outcome-centric while groundwork was laid for a more explicit logic-model approach as\ncan be seen in Figure 1 where activities, output and outcomes\nare graphically displayed.\nThree of the six standard activities of the Network can be\nunderstood through a logic model approach, where each activity is designed to generate specific outputs that ultimately lead\nto outcomes (SME achievements). Advisory, support, and\ninformation services (activity 1) provide SMEs with direct guidance on EU policies and programs, producing outputs such\nas informed businesses and tailored advice, which in turn\nstrengthen SMEs’ competitiveness and innovation capacity\n(Advisory service outcomes). Cross-border cooperation activities\n(activity 2) generate outputs like business meetings, which\n\nFigure 1. EEN activities, outputs and outcomes. Retrieved from document “1.2 Terms of reference EEN 2017-2018_en” Ruiz-Coupeau\n(2025).\n\n\ntranslate into outcomes such partnerships, technology transfer\nagreements, and research collaborations (Partnership agreements). Similarly, innovation support activities (activity 4)\ndeliver outputs such as diagnostic reports and action plans\nfor SMEs, along with coaching connections through the Key\nAccount Manager system; the outcome is stronger innovation\nmanagement and higher "
+     }
+    ],
+    "match_criteria": "区分五历史阶段与四阶段生命周期，具体核政策、评估、IT和反馈如何解释转换而非只列阶段名。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P7"
+   },
+   {
+    "judgment": "原图三层分隔且主要只有周期内循环，触发如何进入阶段、阶段如何重塑构件不直观。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "图层关系的清晰度影响框架解释与使用。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Figure 3 does not show the evolutionary phases with links to the contextual"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "nsformed the coded categories of Table 2\ninto the three-layered framework represented in Figure 3:\n\nFigure 3. Generic framework for the evolution of PMS in public networks.\n\n\nThis framework provides a transferable model for understanding\nPMS evolution in any type of public sector network:\nOuter layer: contextual tiggers. At the outermost level, PMS\nevolution in public networks is driven by contextual triggers that set both the opportunities and constraints for change.\nThese include policy and funding cycles, which define priorities, allocate resources, and establish the formal architecture\nof performance systems. Evaluations introduce legitimacy pressures, identifying shortcomings and recommending reforms\nthat may be taken up in subsequent cycles. IT and reporting\ninfrastructures provide the technical means through which\ndata are collected, validated, and transmitted, and shifts in\nthese systems can alter what is measurable and comparable.\nFinally, stakeholder feedback (from service users, frontline\norganisations, oversight bodies, and funding agencies) supplies the continuous input necessary to question whether the\nPMS remains meaningful and proportionate. In any public sector network, these triggers act as external forces that\nperiodically compel performance systems to adapt.\nMiddle layer: the PMS lifecycle. Within these triggers, the\nPMS evolves through a patterned lifecycle that repeats across\npolicy or funding cycles. The lifecycle does not involve continuous adjustment of indicators, but rather a phase-bounded\nprocess structured around four stages:\n1. \u0007Design: At the "
+     },
+     {
+      "input_field": "input/page_images",
+      "page": 13,
+      "observation": "图3将外层四类触发、中层四阶段周期和内层五构件分别置于三个框；仅中层显示Design→Appropriation→Evaluation→Renewal循环，层间无对应连线。"
+     }
+    ],
+    "match_criteria": "比较图3层间连线、生命周期回环与构件层",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P8"
+   },
+   {
+    "judgment": "已写治理/培训/学习，但发现更聚焦指标架构，应明确测量与运用信息进行协调/学习的管理过程差别。",
+    "issue_type": "V1",
+    "importance": "high",
+    "importance_reason": "测量/管理边界决定研究所声称的对象。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "performance measurement – that is, on what to measure"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "sessing the efficiency and effectiveness of past actions\n(Neely et al., 1995). Within this context, PMS refers to a coordinated set of performance indicators or metrics used to interpret and understand the performance of an organizational\nentity (Carlsson-Wall et al., 2016). At their core, PMS are\ninformation systems that transform input data into actionable\nperformance metrics, enabling managers to assess progress, provide feedback, and steer future actions (Burney & Matherly,\n2007). These systems also support the implementation of strategy, process control, communication, and the articulation of\norganizational priorities (Kaplan & Norton, 2000; Wouters\n& Sportel, 2005).\nIn the public sector, PMS are designed to enhance efficiency\nand effectiveness across public programmes and institutions.\nWhile primarily intended to support rational decision-making,\nthey may also serve symbolic or ritualistic purposes (Pollitt,\n2013). PMS typically rely on decision-relevant performance\nindicators, often benchmarked against internal standards or\nexternal norms (Blalock, 1999), to inform systematic reporting\nto administrative and political stakeholders (Poister, 2008).\nThe purposes served by these systems are multiple and interrelated, ranging from accountability, learning, and policy\nrevision to planning and operational control (Behn, 2003;\nDeschamps & Mattijs, 2018). Importantly, PMS data is also used\nfor evaluation purposes, though a distinction is made between\nongoing performance management and periodic evaluations\nthat assess the broader relevance and impact of policies (Perrin,\n1998)"
+     }
+    ],
+    "match_criteria": "定位测量与管理使用的概念区别及治理/学习实例，不能把新增管理措辞当管理改善成效已验证。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P9"
+   },
+   {
+    "judgment": "可与循环/自下而上开发理论对话，说明本案例参与式修订与既有模型的共性及公共网络区别，而非只声称全新。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "与既有循环理论对话影响增量贡献定位。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "bottom-up approach proposed by\nGarengo and Biazzo"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "and evolution of PMS in public\nnetworks, which integrates three interconnected layers.\nThrough this abductive process, the framework was not “discovered” inductively as given, but constructed as the most plausible explanatory account of PMS evolution. It is grounded in\nthe detailed coding of EEN documents and observations, yet\nabstracted to a level that renders it transferable to other public sector networks. Thus, abduction provided a bridge between\nempirical richness and theoretical generalisation, strengthening both the explanatory power and practical relevance of the\nframework.\n\n4. Findings\n\nThese findings are presented in two steps: (1) the evolution of\nPMS across the different phases, and (2) the construction of\na generic framework for the design and evolution of PMS in\npublic networks:\n\n4.1. Evolution of PMS in 15 years\nThe findings are structured around distinct phases in the evolution of the EEN (2008–2012; 2012–2015; 2015–2020;\n2021–2025; and a forward-looking phase beyond 2025). These\nphases were identified by the researcher based on shifts in\nPMS structures, with each period characterized by relative\nstability before subsequent changes emerged. The analysis\nindicates that the PMS did not develop along a linear trajectory of technical refinement, but rather evolved through cyclical\npatterns.\nAcross five phases, the EEN’s PMS shifted from an activity/output-oriented dashboard to a networked, client-journey\narchitecture that tracks achievements and impact. The early list\n\n\nof indicators suite primarily counted events, contacts and hours;\nsubsequent cycles introduce"
+     }
+    ],
+    "match_criteria": "说明Garengo/Biazzo循环/自下而上逻辑与EEN的相似性和单企业—公共网络的条件差别。",
+    "acceptable_alternatives": [],
+    "status": "partly_supported",
+    "id": "P10"
+   },
+   {
+    "judgment": "政策段较短，可将合同周期、治理平台、协调贡献与数据设施对应到具体管理建议，同时避免声称改善效果已被测证。",
+    "issue_type": "V8",
+    "importance": "medium",
+    "importance_reason": "政策建议具体化有助于按证据范围使用模型。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "implications for policy should be\nexpanded"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "lic sector\nnetworks. Implications for policy and management\n\nImplications for policy and management\nFor policymakers, the study demonstrates that PMS design\nin networks should be recognised as a policy instrument in\nitself, shaping not only accountability but also collaboration\nand learning. The European Commission’s experience with the\nEEN suggests that mandating outcome-oriented KPIs is necessary but insufficient: equal attention must be given to creating\ngovernance arenas and data infrastructures that allow diverse\nactors to internalise, interpret, and use indicators consistently.\nFor network managers, the findings imply that performance\nmanagement should be treated as a continuous design process rather than a compliance exercise. Managers should invest\nin appropriation mechanisms like training, thematic groups or\npeer learning, to ensure that PMS becomes a shared practice\nrather than a formal reporting burden. The introduction of contribution metrics and quality ratios in the EEN offers a practical template for rewarding collaboration and efficiency in\nmulti-actor settings.\nMore broadly, the framework provides guidance for designing PMS in other public supported networks (e.g., environmental, health and education programmes) where balancing\ncomparability with contextual diversity remains a pressing\nchallenge.\n\nLimitations and venues for future research\nSeveral limitations should be acknowledged. First, the study\nis based on a single-case design. While the EEN represents\na revelatory case, further comparative research across different policy domains (e.g., health, enviro"
+     }
+    ],
+    "match_criteria": "把治理场域、反馈/培训和协作指标对应到政策建议，区分扩充建议与验证这些建议的有效性。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P11"
+   },
+   {
+    "judgment": "单一EEN/CESEAND观察可支持分析性框架，却不足声称适用于任何领域、规模或地域，原稿限制段与普适语句需一致。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "单案迁移边界限定通用框架的适用性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "particularly\n\nregarding its generalizability and replicability."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "to function and give continuity across cycles. This\nconfiguration makes the framework transferable: regardless of\npolicy domain, scale, or geography, public sector networks\nevolve their PMS by responding to contextual pressures,\nfollowing bounded lifecycles, and relying on core building blocks.\nThis framework explains why PMS in networks are stable\nwithin funding cycles but evolve across them, and how technical building blocks interact with governance arenas to ensure\nboth continuity and adaptability. More broadly, the framework\ndemonstrates that PMS in networks should not be conceptualised as static indicator systems nor as continuously adaptable\ntools, but as episodic, socio-technical systems that balance\ncontractual stability with responsiveness to external triggers\nand internal learning. By offering this layered and cyclical\nview, our study extends existing theory and opens new avenues\nfor comparative research across domains such as health,\neducation, innovation, and environmental governance.\n\n5. Discussion\n\nThis study set out to answer the question: How do performance\nmanagement systems (PMS) evolve within public sector networks? Drawing on a longitudinal case study of the Enterprise\nEurope Network (EEN), our findings indicate that PMS in such\nnetworks evolve through episodic cycles rather than continuous adjustment, with contractual boundaries delimiting periods of stability and opportunities for redesign. The generic\nthree-layer framework developed—comprising contextual triggers, lifecycle phases, and building blocks—helps explain\nthese dynamics and provides a transf"
+     }
+    ],
+    "match_criteria": "将regardless of policy domain等普适句与单一EEN/CESEAND证据对照，允许有条件分析性迁移而非全域验证。",
+    "acceptable_alternatives": [],
+    "status": "supported",
+    "id": "P12"
+   },
+   {
+    "judgment": "时间归属尚需澄清：Phase 2标2012–2015，却用2017–2018 Terms of reference的图1说明；备忘录观察主要2015–2023，Phase5为2025以后预期，不能把所有阶段都当同密度的直接观察。需区分回溯档案、当时观察与前瞻设计。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "核心贡献是纵向演化，证据日期与阶段对应关系不可混淆。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "\nsubstantial effort with uncertain regulatory impact, points that\nforeshadowed later PMS redesigns.\nPhase 2 (2012–2015): consolidation and preparation for\nredesign. The second phase consolidated service families and\ndeepened innovation and partnering activities, but the monitoring system remained largely outcome-centric while groundwork was laid for a more explicit logic-model approach as\ncan be seen in Figure 1 where activities, output and outcomes\nare graphically displayed.\nThree of the six standard activities of the Network can be\nunderstood through a logic model approach, where each activity is designed to generate specific outputs that ultimately lead\nto outcomes (SME achievements). Advisory, support, and\ninformation services (activity 1) provide SMEs with direct guidance on EU policies and programs, producing outputs such\nas informed businesses and tailored advice, which in turn\nstrengthen SMEs’ competitiveness and innovation capacity\n(Advisory service outcomes). Cross-border cooperation activities\n(activity 2) generate outputs "
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "tegory\n\nDocument Title\n\nCode\n\nEU Call for\nproposals\n\nCall for proposals CELEX_C2006_306_07_EN\n\n1.1\n\nTerms of reference EEN 2017–2018_en\n\n1.2\n\nCall for proposals_smp-cosme-2021-een_en\n\n1.3\n\nCall for proposals_smp-cosme-2024-een_en\n\n1.4\n\nEvaluation report_eip_en 2011\n\n2.1\n\nEvaluation report_eaci_2011_en\n\n2.2\n\nEvaluation report_EEN_2008–2014\n\n2.3\n\nMemo PMS used by the EEN period 2008–2025\n\n3.1\n\nMemo CESEAND Plus Period 2015–2016\n\n3.2\n\nMemo CESEAND P"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "ound distinct phases in the evolution of the EEN (2008–2012; 2012–2015; 2015–2020;\n2021–2025; and a forward-looking phase beyond 2025). These\nphases were identified by the researcher based on shifts in\nPMS structures, with each period characterized by relative\nstability before subsequent changes emerged. The analysis\nindicates that the PMS did not develop along a linear trajectory of technical refinement, but rather evolved through cyclical\npatterns.\nAcross five phases, the EEN’s PMS shifted from an activity/output-oriented dashboard to a netwo"
+     }
+    ],
+    "match_criteria": "明确指出阶段和支撑材料的日期差异，允许后期文件回顾早期制度，但要求解释其回溯性质而非直接判年份错误。",
+    "acceptable_alternatives": [
+     "若2017文件沿用了早期制度，可作为回溯证据，但需说清，而不是推定所有制度起始时间等于文件日期。"
+    ],
+    "status": "partly_supported",
+    "id": "P13"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "说原稿只有60个成员或完全未报告三阶段编码。",
+   "把一人编码加合作者审查说成独立双编码或已经计算κ。",
+   "要求访谈作为所有质性案例的必要条件。",
+   "把后稿表2引语存在当作已独立核对外部底稿。"
+  ],
+  "draft_notes": "已读三报告、全部回应、前后全部文本及图表。回应R1称Reviewer3、R3称Reviewer1，与内容编号不一致；human_sources按输入reviews真实键R1/R2/R3标注。后稿没有题内独立备忘录附件，未访问Zenodo；表2引语只核对本题主文，不声称其与外部原件逐字一致。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P1;P8",
+   "y": "P6;P8;P10;P11;P12",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P2;P6",
+   "y": "P3;P4;P13",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "status",
+    "origin"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P3",
+   "y": "P5",
+   "overlap": 0.67,
+   "conflicts": [
+    "importance"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P4",
+   "y": "P1",
+   "overlap": 1.0,
+   "conflicts": [
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P5;P9",
+   "y": "P2",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "status",
+    "origin"
+   ]
+  },
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P7",
+   "y": "P9",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P7",
+   "overlap": "",
+   "conflicts": []
+  }
+ ],
+ "label_conflict": false,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

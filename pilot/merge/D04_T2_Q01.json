@@ -1,0 +1,159 @@
+{
+ "task_id": "D04_T2_Q01",
+ "X": {
+  "task_id": "D04_T2_Q01",
+  "paper_id": "ORE:5-107",
+  "task": "T2",
+  "unit": "single_concern",
+  "input_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "关切要求说明开放编码之后是否有轴心/选择性编码等整合步骤，以及类别（\"主线\"）如何从单个编码中形成。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "界定两项要求：是否有进一步编码、类别如何形成。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "Did you stop at this stage or have further steps of integration, like axial or selective coding, been employed?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/comment_text",
+      "exact_quote": "Consider adding some more information about how you developed a red threat or categories"
+     }
+    ],
+    "match_criteria": "拆出两项要求：是否有整合编码步骤；类别如何形成。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "回应直接说明增加了第二轮轴心编码，描述了把编码归为更高层类别、并发现受访者按时间顺序叙述，从而得出四个阶段，46个编码再分配到各阶段。这直接回答了\"是否有进一步编码\"，并说明了阶段类别的来源。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "决定回应的主要充分性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "been employed?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "we engaged in a second cycle of analysis to group these codes into broader conceptual categories"
+     },
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "we identified four phases of the tool development and dissemination process"
+     }
+    ],
+    "match_criteria": "识别出回应给出了具体的轴心编码描述及四阶段的来源。",
+    "acceptable_alternatives": [
+     "认为描述仍较概括（只说\"examined relationships\"），判部分充分，也可接受。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "回应只说明了四个阶段如何产生，没有说明\"项目导向/用户导向\"两种路径这一类别如何从编码中形成；对\"选择性编码\"也未交代。",
+    "issue_type": "V5",
+    "importance": "medium",
+    "importance_reason": "限制回应的完整性。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "The 46 codes that were created during the previous analysis step were then assigned to one or more of the stages."
+     }
+    ],
+    "match_criteria": "指出回应未说明两种路径的分析来源，或未回答选择性编码。",
+    "acceptable_alternatives": [
+     "只指出\"描述仍较简略、缺少示例\"，也算部分命中。"
+    ],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "sufficient",
+   "acceptable_set": [
+    "sufficient",
+    "partially_sufficient"
+   ],
+   "rationale": "直接、具体地回答了是否有进一步编码及阶段如何形成；但两种路径的形成未交代，判部分充分也有依据。"
+  },
+  "known_invalid_patterns": [
+   "把回应引用的段落当作已核实出现在修订稿中（T2不提供修订稿）。",
+   "要求提供编码者间信度系数作为质性研究的必要条件。"
+  ],
+  "draft_notes": ""
+ },
+ "Y": {
+  "task_id": "D04_T2_Q01",
+  "paper_id": "ORE:5-107",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "回应直接说明开放编码后进行了第二轮轴心编码，检查代码关系与模式、合成高阶类别，并把46个代码分配到四个时间阶段，具体回答了是否继续整合及类别如何形成。",
+    "issue_type": "V5",
+    "importance": "high",
+    "importance_reason": "本题核心要求是说明由单个代码到主题类别的整合过程。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "Did you stop at this stage or have further steps of integration"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "Subsequent to open coding, we engaged in a second cycle of analysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we examined relationships among the codes, explored underlying patterns, and grouped them into higher-order categories. Through this process, it became evident that participants consistently described their activities in chronological sequences, structuring their accounts around distinct stages of tool development and dissemination.Based on this, we identified four phases of the tool development and dissemination process, as described in the consequent section of this paper. The 46 codes that were created during the previous analysis step were then assigned to one or more of the stages."
+     }
+    ],
+    "match_criteria": "识别第二轮步骤、关系/模式聚合及四阶段46码映射，不能仅按提到轴心编码术语给分。",
+    "acceptable_alternatives": [
+     "可指出缺少编码片段限制审查细度，但原关切没有强制要求提供完整代码本或实施选择性编码。"
+    ],
+    "status": "supported",
+    "id": "P1"
+   }
+  ],
+  "label_reference": {
+   "primary": "sufficient",
+   "acceptable_set": [
+    "sufficient"
+   ],
+   "rationale": "回应给出具体整合步骤和归类结果，足以回答原要求；本题无法检验实际修订是否落实，revision_verification=not_assessed。"
+  },
+  "known_invalid_patterns": [
+   "声称已经打开修订稿核验。",
+   "把没有选择性编码一项本身当作不足。"
+  ],
+  "draft_notes": "仅使用本题关切、回应与必要背景。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P1;P2;P3",
+   "y": "P1",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance",
+    "origin"
+   ]
+  }
+ ],
+ "label_conflict": true,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

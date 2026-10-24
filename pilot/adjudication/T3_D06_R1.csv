@@ -1,0 +1,7 @@
+task_id,row,kind,X_point,Y_point,overlap,conflicting_fields,decision(keep_X/keep_Y/merge/rewrite/delete/regroup),final_issue_type,final_importance,final_status,final_judgment_if_rewritten,reason,adjudicator,date
+T3_D06_R1,1,one_to_one_conflict,P1,P5,1.0,importance,,,,,,,,
+T3_D06_R1,2,many_to_many_conflict,P2;P4;P5,P4;P7,1.0,issue_type;importance,,,,,,,,
+T3_D06_R1,3,many_to_many_conflict,P3,P1;P2,1.0,issue_type;importance;status,,,,,,,,
+T3_D06_R1,4,Y_only,,P3,,,,,,,,,,
+T3_D06_R1,5,Y_only,,P6,,,,,,,,,,
+T3_D06_R1,label,label_conflict,"{""primary"": ""needs_substantive_revision"", ""acceptable_set"": [""needs_substantive_revision"", ""acceptable_under_rubric""], ""rationale"": ""审稿人的关切多以局限说明处理；核心结论的推广在修订中被加强，统计与设计问题未处理。若只按审稿人关切衡量，判可接受也有依据。""}","{""primary"": ""needs_substantive_revision"", ""acceptable_set"": [""needs_substantive_revision""], ""rationale"": ""新增受众限制有用，但指标口径合并、时间/替代文本不可分与用户动机推断仍保留，须缩小主要解释。""}",,,,,,,,,,

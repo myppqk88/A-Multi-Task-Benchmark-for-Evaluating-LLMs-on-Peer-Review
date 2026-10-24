@@ -1,0 +1,190 @@
+{
+ "task_id": "D12_T2_Q01",
+ "X": {
+  "task_id": "D12_T2_Q01",
+  "paper_id": "ORE:3-166",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "20fe2dde70a3b39e1f43da5ae919ba4bfca41c6a0672997ddd57b29800b64e98",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "回应具体列出五国及四类教育/就业制度，解释法国/德国同时保留的理由，确实回答了样本为何具有跨情境比较价值。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "原关切要求解释联盟样本的可推广范围。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "patterns could be taken to be general"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "These were chosen on the basis that they represent the main educational/employment regimes in Europe: the universalistic of the Nordic countries, the employment-centered of Continental Europe, the sub-protective of the Mediterranean countries, and the post-socialist of Eastern Europe (Pohl & Walther 2007; Farkas, 2011). While both France and Germany fall under the Continental model, they are both analyzed due to their stark differences in terms of their wage structures (Hein & Vogel, 2009) and educational models (O’Reilly et al., 2019)."
+     }
+    ],
+    "match_criteria": "承认制度覆盖是明确且相关的取样理由。",
+    "acceptable_alternatives": [
+     "若只要求说明理论可迁移性，可认为这部分已经充分回应。"
+    ],
+    "status": "supported",
+    "id": "P1"
+   },
+   {
+    "judgment": "回应从覆盖主要制度推到EU整体洞见，未直接承认联盟选择偏差、国内异质性及非代表抽样限制；制度覆盖不等于结果总体代表性。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "决定推广主张与证据强度是否匹配。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "regions/countries that selected themselves into the university initiative?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "Given the research’s geographical scope covering all main European regimes pertaining to employment and skills, its findings can be contextualized more broadly and provide insight into the EU as a whole."
+     }
+    ],
+    "match_criteria": "区分分析性/理论覆盖与统计推广，不否定五国案例比较本身。",
+    "acceptable_alternatives": [
+     "可接受sufficient：若明确将insight/contextualized理解为有限分析性迁移而非EU总体估计，应说明这种窄读法。"
+    ],
+    "status": "partly_supported",
+    "id": "P2"
+   }
+  ],
+  "label_reference": {
+   "primary": "partially_sufficient",
+   "acceptable_set": [
+    "partially_sufficient",
+    "sufficient"
+   ],
+   "rationale": "回应有具体制度取样依据，但未充分处理联盟选择与代表性边界；仅在将推广限为分析性情境洞见时可充分。"
+  },
+  "known_invalid_patterns": [
+   "把覆盖类型自动等同随机代表所有EU地区。",
+   "调用实际地图验证回应的推广主张。"
+  ],
+  "draft_notes": "只用本题输入，revision_verification=not_assessed。"
+ },
+ "Y": {
+  "task_id": "D12_T2_Q01",
+  "paper_id": "ORE:3-166",
+  "task": "T2",
+  "unit": "single_concern",
+  "input_sha256": "20fe2dde70a3b39e1f43da5ae919ba4bfca41c6a0672997ddd57b29800b64e98",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "关切：结果能否推广，还是只是自愿参与大学联盟的地区/国家的特征。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "界定要求：说明推广性及选择偏差。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "are the results a feature of the regions/countries that selected themselves into the university initiative?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/comment_text",
+      "exact_quote": "whether the patterns could be taken to be general"
+     }
+    ],
+    "match_criteria": "准确复述：推广性与自选择问题。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "回应给出了理由：五国覆盖欧洲主要的教育/就业体制（北欧普遍型、欧陆就业型、地中海低保护型、后社会主义型），并说明了法德同时入选的原因；这是有实质内容的回答。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "回应的主要内容。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "whether the patterns could be taken to be general"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "they represent the main educational/employment regimes in Europe"
+     }
+    ],
+    "match_criteria": "识别出回应以体制覆盖作为推广依据。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "但覆盖体制类型不等于区域样本具有代表性，回应据此得出\"可为整个欧盟提供见解\"的结论过强；对\"自选择进入大学联盟\"的偏差没有直接回应。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "限制回应的充分程度。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "selected themselves into the university initiative"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "its findings can be contextualized more broadly and provide insight into the EU as a whole"
+     }
+    ],
+    "match_criteria": "指出体制覆盖不能证明代表性、推广结论过强，或指出自选择偏差未回应。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "partially_sufficient",
+   "acceptable_set": [
+    "partially_sufficient",
+    "sufficient"
+   ],
+   "rationale": "回应给出了有实质内容的推广依据，但从体制覆盖推到\"整个欧盟\"过强，自选择问题未直接回应。"
+  },
+  "known_invalid_patterns": [
+   "认为只要提到五个国家就足以推广。",
+   "因回应拒绝缩小推广范围就判完全不充分（回应有实质理由）。"
+  ],
+  "draft_notes": ""
+ },
+ "suggested_alignment": [
+  {
+   "kind": "one_to_one_conflict",
+   "x": "P1",
+   "y": "P2",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P2",
+   "y": "P1;P3",
+   "overlap": 1.0,
+   "conflicts": [
+    "status"
+   ]
+  }
+ ],
+ "label_conflict": false,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

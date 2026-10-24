@@ -1,0 +1,550 @@
+{
+ "task_id": "D05_T1_Q01",
+ "X": {
+  "task_id": "D05_T1_Q01",
+  "paper_id": "ORE:5-13",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "b57fd4dd915612784083117b66f705eee5039773fddc3794ff7a3168003e5078",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "原稿已经区分政府措施与公民自愿措施，但应更清楚解释限值以下自愿降低暴露；不能认定预防措施只等于限值。",
+    "issue_type": "V6",
+    "importance": "medium",
+    "importance_reason": "决定预防信息操作化是否混同法定限值。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "The precautionary advice to reduce exposure to EMF is the\nprovision of the limits of EMF."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Precautionary measures can be implemented by governments or health authorities, and they can\nalso be shared with the public, giving individuals the option\nto adopt them voluntarily"
+     }
+    ],
+    "match_criteria": "同时提及法定限值与公民自愿减少暴露的区别，而非机械采纳“预防只等于限值”。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立：信息实验研究的是额外自愿行为，并非否认法定限值本身的预防作用。"
+    ],
+    "status": "disputed",
+    "id": "P1"
+   },
+   {
+    "judgment": "研究没有测量伪科学识别，审稿人的个人观察只能作为后续研究线索，不能据此否定随机信息比较。",
+    "issue_type": "V6",
+    "importance": "low",
+    "importance_reason": "伪科学识别属于可研究的传播机制，未构成本研究已验证变量。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the problem of pseudo-science obfuscates strongly the debate."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Furthermore, there\nis no way of knowing why participants responded in a certain\nway, only qualitative research"
+     }
+    ],
+    "match_criteria": "说明伪科学识别未被测量及其未来研究地位，避免假定它解释全部风险差异。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立也属合理判断：指出要求本研究补测伪科学识别不成立，并将其保留为将来问题，可接受。"
+    ],
+    "status": "disputed",
+    "id": "P2"
+   },
+   {
+    "judgment": "原稿给出总体RF-EMF频率范围，没有给两国5G频段及受试者频率知识测量。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "影响读者理解5G背景及公众知识的证据边界。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "1. What are the frequencies for 5G signals in respective countries? Does the public aware on this\nmatter?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Exposure to RF-EMF at frequencies from 100 kHz to 300 GHz\nhas been steadily increasing during the last 70 years"
+     }
+    ],
+    "match_criteria": "区分技术背景补充、外部公众知识文献与本样本实测认知，不能把新增背景当成认知测量。",
+    "acceptable_alternatives": [
+     "接受频段作为背景足够，并说明研究未要求参与者懂技术细节；不强制新增调查。"
+    ],
+    "status": "supported",
+    "id": "P3"
+   },
+   {
+    "judgment": "列出的变量没有认知宣传接触，题内不足以将国家差异与宣传项目建立关联。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "限制对两国既往传播环境的解释。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "2. Can the results be correlated with any awareness programs in each country?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Additional variables. Besides the measures relevant for\nhypothesis testing, more items were included for exploratory research. Self-efficacy regarding precaution and perception\nof consistency of the text were assessed at the end of the\nstudy with one item each by asking how strongly participants\nagree with a statement. Further variables that were measured but are not included in the analyses of the current study"
+     }
+    ],
+    "match_criteria": "指出未测宣传项目接触，并认可范围解释同时保留国家差异的解释限制。",
+    "acceptable_alternatives": [
+     "把未测宣传暴露记为外部效度限制而不要求补收，仍算命中。"
+    ],
+    "status": "supported",
+    "id": "P4"
+   },
+   {
+    "judgment": "随机分配的信息实验不需要通过两国实地辐射测量验证文字操纵效果；国家间感知差异也不能证明剂量差异。",
+    "issue_type": "V2",
+    "importance": "medium",
+    "importance_reason": "防止把感知差异解释成实际辐射剂量差异。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "3. Is there any work by the authors to support the findings in terms of measurement campaign? Is\nthe radiation exposure in one country higher than the other?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "They were randomly assigned to the\ndifferent conditions; the random allocation was done automatically by the platform Unipark."
+     }
+    ],
+    "match_criteria": "区分组内信息效应与非随机国家比较，不能要求用实地剂量研究替代感知实验。",
+    "acceptable_alternatives": [
+     "指出这一要求不成立，同时承认无法排除既往真实暴露/认知影响国家比较，可接受。"
+    ],
+    "status": "disputed",
+    "id": "P5"
+   },
+   {
+    "judgment": "摘要首次使用5G时没有展开，虽正文已有定义，摘要可独立补全。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "影响术语首次出现时的可读性。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Concern: 5G should be defined before the use as an acronym."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Technological advancements, such as the introduction of 5G, offer\nopportunities but also raise concerns."
+     }
+    ],
+    "match_criteria": "核对摘要首次出现5G的定义，不能声称原稿全文都未定义。",
+    "acceptable_alternatives": [
+     "认为正文已定义而将摘要展开视为可选编辑改善，可接受。"
+    ],
+    "status": "supported",
+    "id": "P6"
+   },
+   {
+    "judgment": "原稿没有独立Conclusion标题，但有摘要结论及Implications，不等于没有研究总结。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "结尾小节命名不改变已有讨论内容。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Conclusion section (summarising the research) is missing."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Implications for research and practice\nThe finding that precautionary information did not result\nin lower trust compared to basic information may be good\nnews for institutions that inform about MC and health. Even\nthough the group reading precautionary information indicated\nhigher RP in some measures, one could argue that this is not a\nproblem if it doesn’t go along with lower trust. Furthermore,\nin this study, self-efficacy was higher if receiving the precautionary information, indicating that even though RP may\nbe increased, people felt more that they could control their\npersonal exposure. For communicators, e.g., agencies for\nradiation protection, it is likely a good idea to focus their\n\n\n\nprecautionary recommendations on such measure that citizens have control over, because this might allow them to\nmake informed decisions without undermining trust. Also,\nperceived consistency of the text was higher in the precaution\ngroup, which is an indication against the assumption that\nprecautionary information leads to higher RP because they are\nperceived as inconsistent (Boehmert et al., 2016).\nIt is also important to keep in mind that information may be\nperceived differently depending on how relevant the topic is\nfor recipients. Future researchers on this topic may consider\nincluding a relevance measure in their studies. Finally, it is\nimportant to consider that the perception of risk-related and\nprecautionary information may differ hugely between for\nexample countries, genders, and age groups. Consequently,\none cannot necessarily generalize findings from studies with a\nlimited target group to other populations. More studies on\ncomparisons between countries should be considered to deepen\nour understanding of sociodemographic and intercultural\ndifferences in RP and trust.\n\nEthics and consent"
+     }
+    ],
+    "match_criteria": "指出独立结论小节是否新增，并承认原稿已有总结性内容。",
+    "acceptable_alternatives": [
+     "把单独Conclusion视为组织选择，而不作为科学性必要条件，也可接受。"
+    ],
+    "status": "supported",
+    "id": "P7"
+   },
+   {
+    "judgment": "真人仅在数据可用性选Partly而未说明缺项；正文明确列出材料、代码本、CSV及JASP文件，题内无法核验外部文件齐备性。",
+    "issue_type": "V7",
+    "importance": "medium",
+    "importance_reason": "涉及可复核性，但不能以题内未附外部资源推定不共享。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Are all the source data and materials underlying the results available?\nPartly"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Data availability statement\n\nOpen Science Framework (OSF): Precautionary information\nand personal relevance. [external resource identifier omitted]\n(Eggeling-Böcker et al., 2024).\nThe project contains the following underlying data:\n- \u0007“Experimental material.pdf” (the information texts for all\nconditions used in the study)\n- \u0007“Codebook.docx” (the codebook for the data file)\n- \u0007“Assumption_checks_LMR.pdf” (detailed information\non the assumption checks for the linear multiple\nregression analyses)\n- \u0007“JASP_December24_AnalysisGermany.csv”\nGermany in standard tabular format)\n\n(data\n\nfor\n\n- \u0007“JASP_December24_AnalysisGreece.csv”\nGreece in standard tabular format)\n\n(data\n\nfor\n\n- \u0007“JASP_December24_AnalysisGermany.jasp” (data for\nGermany including statistical analyses in JASP-format,\na free statistics program)\n- \u0007“JASP_December24_AnalysisGreece.jasp”\n(data\nfor\nGreece including statistical analyses in JASP-format, a\nfree statistics program)\nData are available under the terms of the Creative Commons\nAttribution 4.0 International license (CC-BY 4.0).\n\nReporting guidelines"
+     }
+    ],
+    "match_criteria": "同时说明正文已有共享声明和外部内容无法核验，不以Partly直接认定数据缺失。",
+    "acceptable_alternatives": [
+     "可认为现有声明满足报告层面要求，实际仓储完整性保留未核验。"
+    ],
+    "status": "unresolved",
+    "id": "P8"
+   },
+   {
+    "judgment": "表9把CR2相等写为假设并标Reject H0，但非显著差异不能证明相等，表中CR2 precaution = CR2 precaution的比较项也重复。",
+    "issue_type": "V3",
+    "importance": "medium",
+    "importance_reason": "影响H1c的结论表示与零效应解释。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/page_images",
+      "page": 14,
+      "observation": "表9 H1c写CR2 precaution = CR2 precaution，两国均Reject H0；正文称CR2没有差异。"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "As expected, if assuming\nthat precautionary measures are taken, there was no\ndifference."
+     }
+    ],
+    "match_criteria": "具体指出表9 H1c的重复组别及非显著不等于等效，不把它解释成已完成等效检验。",
+    "acceptable_alternatives": [
+     "可判为摘要表的记录错误并要求更正；若认为它承载零效应结论，则可要求置信区间/等效界限。"
+    ],
+    "status": "supported",
+    "id": "P9"
+   },
+   {
+    "judgment": "样本按相关性强行近似均分配额且老年人配额未满，国家间相关性与风险均值不能直接代表各国总体。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "影响人口与跨国推广范围。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "The quota was used to ensure that the\ndistribution of relevance is roughly balanced (about 1/7 on\neach point of the scale)"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "quotas for older people (especially females) were impossible\nto fill, consequently we increased participant numbers for the\nbordering quotas. For interpretation, it therefore needs to be\nconsidered that the older population is underrepresented."
+     }
+    ],
+    "match_criteria": "定位个人相关性均分配额和老年人不足，限定两国总体比较；不否定样本内随机文字效应。",
+    "acceptable_alternatives": [
+     "在明确配额和在线样本边界后保留探索性国家比较，是合理不同判断。"
+    ],
+    "status": "supported",
+    "id": "P10"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "把R1的非社会科学专长当成研究方法正确性的证明。",
+   "把没有两国辐射测量等同于随机信息实验无效。",
+   "声称后稿已测量宣传项目接触或公众频率知识。",
+   "非显著结果直接证明两组相等。"
+  ],
+  "draft_notes": "先读完全部真人报告与回应，再核对前后稿全文及所列页图；两栏文字提取顺序以页图澄清。外部OSF和被引技术文献未访问，数据可用性Partly缺少具体说明，保留unresolved。T1不使用后稿补充内容作为缺陷依据。"
+ },
+ "Y": {
+  "task_id": "D05_T1_Q01",
+  "paper_id": "ORE:5-13",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "b57fd4dd915612784083117b66f705eee5039773fddc3794ff7a3168003e5078",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "对\"预防性信息\"的界定与技术规范的关系表述不清：摘要和背景把预防性建议写成在暴露限值之外的额外措施，而审稿人（技术专家）认为限值本身就是预防措施；需要区分法定限值与机构鼓励的自愿性降低暴露行为。",
+    "issue_type": "V1",
+    "importance": "medium",
+    "importance_reason": "实验操纵的核心概念需要准确界定。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "there seems to be a misunderstanding in the authors' approach to the EMF limits."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure"
+     }
+    ],
+    "match_criteria": "指出需要区分法定暴露限值与自愿性预防建议，或指出\"预防性信息\"的定义不够清楚。",
+    "acceptable_alternatives": [
+     "认为作者的表述本身没有错（德国BfS确实在限值之外提供自愿建议），只需措辞更清楚，也是合理判断。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "两国风险感知差异（希腊高于德国）只作探索性报告，没有考虑两国实际暴露水平、5G部署或公众宣传等背景因素，国家差异的解释依据不足。",
+    "issue_type": "V4",
+    "importance": "low",
+    "importance_reason": "影响探索性国家比较的解释，不影响预注册假设。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "Is the radiation exposure in one country higher than the other?"
+     },
+     {
+      "report_id": "R2",
+      "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Exploratory findings revealed higher risk perception among females compared to males and in Greece compared to Germany."
+     }
+    ],
+    "match_criteria": "指出国家差异可能受暴露水平、宣传或背景知识等未测因素影响，或建议谨慎解释国家比较。",
+    "acceptable_alternatives": [
+     "认为研究本来不以解释国家差异为目标、只需说明为探索性结果，也合理。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P3",
+    "judgment": "未说明两国5G使用的频段，也未说明公众对暴露相关知识的了解程度。",
+    "issue_type": "V7",
+    "importance": "low",
+    "importance_reason": "背景信息补充。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R2",
+      "exact_quote": "What are the frequencies for 5G signals in respective countries?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Technological advancements, such as the introduction of 5G, offer"
+     }
+    ],
+    "match_criteria": "提到缺少5G频段或公众知识背景。",
+    "acceptable_alternatives": [
+     "认为频段信息与本研究的心理学问题关系不大，也合理。"
+    ],
+    "status": "partly_supported"
+   },
+   {
+    "id": "P4",
+    "judgment": "形式问题：5G缩写首次出现未定义；正文缺少单独的结论小节。",
+    "issue_type": "V9",
+    "importance": "low",
+    "importance_reason": "非实质问题。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R3",
+      "exact_quote": "Concern: 5G should be defined before the use as an acronym."
+     },
+     {
+      "report_id": "R3",
+      "exact_quote": "Conclusion section (summarising the research) is missing."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "such as the introduction of 5G"
+     }
+    ],
+    "match_criteria": "提到缩写定义或缺少结论小节。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P5",
+    "judgment": "多重比较未校正：H1–H3在两国分别对3个因变量各做一次回归，只有德国的一个风险感知指标显著，却作为\"预防性信息增加风险感知\"的证据报告；在多次检验下，这一孤立效应可能是偶然结果。",
+    "issue_type": "V3",
+    "importance": "medium",
+    "importance_reason": "影响唯一阳性结果的可信度。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "analyses were conducted separately for each DV"
+     },
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Contrary to expectations, precautionary information increased just one risk perception measure and only in Germany."
+     }
+    ],
+    "match_criteria": "指出多个因变量和两国分开检验而未做多重比较校正，或指出唯一显著结果需谨慎解释。",
+    "acceptable_alternatives": [
+     "认为作者已把该结果表述为有限证据，只需补充校正或敏感性分析，也算命中。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P6",
+    "judgment": "没有操纵检验：只有通用注意力检查，无法确认实验组确实阅读并理解了预防性信息；在主要结果为\"无效应\"的情况下，这使\"预防性信息基本无影响\"的结论难以和\"操纵未生效\"区分。",
+    "issue_type": "V2",
+    "importance": "medium",
+    "importance_reason": "直接影响对零结果的解释。",
+    "origin": "card_author",
+    "human_sources": [],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "attention check items and survey completion time were our only way to control if people paid attention to the questions"
+     }
+    ],
+    "match_criteria": "指出缺少针对信息内容的操纵检验，或指出零结果可能源于操纵强度不足。",
+    "acceptable_alternatives": [
+     "从\"信息文本差异过小、操纵强度弱\"的角度提出，也算命中。"
+    ],
+    "status": "supported"
+   },
+   {
+    "id": "P7",
+    "judgment": "审稿人提出的\"伪科学干扰公众判断\"属于未来研究方向，与本研究的问题无关，不构成稿件缺陷。",
+    "issue_type": "V6",
+    "importance": "low",
+    "importance_reason": "检验模型是否把超出范围的建议当作缺陷。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "R1",
+      "exact_quote": "the problem of pseudo-science obfuscates strongly the debate"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/manuscript_text",
+      "exact_quote": "Different measures for risk perception and trust"
+     }
+    ],
+    "match_criteria": "不把\"未讨论伪科学\"列为实质问题；若提及，应作为可选的未来研究方向。",
+    "acceptable_alternatives": [
+     "明确认为这超出了本研究范围。"
+    ],
+    "status": "disputed"
+   }
+  ],
+  "label_reference": {
+   "primary": "",
+   "acceptable_set": [],
+   "rationale": ""
+  },
+  "known_invalid_patterns": [
+   "把设计当作非实验的相关研究（实际为随机分组的组间实验，摘要称\"cross-sectional\"可能误导，但分组是随机的）。",
+   "要求进行暴露测量——这超出风险传播研究的范围。"
+  ],
+  "draft_notes": "三份报告都较简短，R1、R2来自技术背景审稿人，社会科学方法方面的关切很少；P5、P6为起草者自行发现。预注册偏离已在表3报告。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "one_to_one_agreed",
+   "x": "P2",
+   "y": "P7",
+   "overlap": 1.0,
+   "conflicts": []
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P3;P6;P7",
+   "y": "P3;P4",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P4;P5",
+   "y": "P2",
+   "overlap": 1.0,
+   "conflicts": [
+    "issue_type",
+    "importance",
+    "status"
+   ]
+  },
+  {
+   "kind": "X_only",
+   "x": "P1",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "X_only",
+   "x": "P8",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "X_only",
+   "x": "P9",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "X_only",
+   "x": "P10",
+   "y": "",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P1",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P5",
+   "overlap": "",
+   "conflicts": []
+  },
+  {
+   "kind": "Y_only",
+   "x": "",
+   "y": "P6",
+   "overlap": "",
+   "conflicts": []
+  }
+ ],
+ "label_conflict": false,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

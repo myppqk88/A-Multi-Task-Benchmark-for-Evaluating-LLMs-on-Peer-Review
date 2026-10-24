@@ -1,0 +1,9 @@
+task_id,row,kind,X_point,Y_point,overlap,conflicting_fields,decision(keep_X/keep_Y/merge/rewrite/delete/regroup),final_issue_type,final_importance,final_status,final_judgment_if_rewritten,reason,adjudicator,date
+T3_D09_R1,1,many_to_many_conflict,P1;P2,P3;P15;P18,1.0,issue_type,,,,,,,,
+T3_D09_R1,2,one_to_one_conflict,P3,P10,1.0,importance,,,,,,,,
+T3_D09_R1,3,many_to_many_conflict,P4,P5;P12,1.0,status,,,,,,,,
+T3_D09_R1,4,many_to_many_conflict,P5;P6,P2;P4;P6;P7;P8;P9;P11;P13;P14;P19;P20;P21;P22,1.0,issue_type;importance;status,,,,,,,,
+T3_D09_R1,5,many_to_many_conflict,P7,P1;P23,1.0,issue_type;importance;status;origin,,,,,,,,
+T3_D09_R1,6,Y_only,,P16,,,,,,,,,,
+T3_D09_R1,7,Y_only,,P17,,,,,,,,,,
+T3_D09_R1,label,label_conflict,"{""primary"": ""acceptable_under_rubric"", ""acceptable_set"": [""acceptable_under_rubric"", ""needs_substantive_revision""], ""rationale"": ""修订覆盖了绝大多数关切并纠正了作者自身的错误；残留的分组效度、核心结果稳健性与样本数不一致若被视为实质问题，可判仍需实质修改。""}","{""primary"": ""needs_substantive_revision"", ""acceptable_set"": [""needs_substantive_revision""], ""rationale"": ""后稿补日期、描述统计和图形，合理澄清修订PGSI阈值与分箱解释，但分组主观性/国别混杂、横断面因果外推及参数/阈值冲突仍需实质澄清。""}",,,,,,,,,,

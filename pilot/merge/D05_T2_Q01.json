@@ -1,0 +1,134 @@
+{
+ "task_id": "D05_T2_Q01",
+ "X": {
+  "task_id": "D05_T2_Q01",
+  "paper_id": "ORE:5-13",
+  "task": "T2",
+  "unit": "single_concern",
+  "input_sha256": "c07deca57087597fb3776128cce6eb80cb000367dcf292364399d80288fdedee",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "id": "P1",
+    "judgment": "审稿人希望把结果与各国的宣传活动关联起来，看宣传暴露是否影响风险感知。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "界定要求。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/comment_text",
+      "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+     }
+    ],
+    "match_criteria": "准确复述要求：把感知结果与各国宣传活动相关联。",
+    "acceptable_alternatives": [],
+    "status": "supported"
+   },
+   {
+    "id": "P2",
+    "judgment": "作者以\"调查未测量宣传接触、无法做这种相关\"为由拒绝，并把它列为未来研究方向。这一拒绝有事实依据：这项分析需要研究中没有收集的数据，审稿人的要求超出了研究设计。",
+    "issue_type": "V4",
+    "importance": "high",
+    "importance_reason": "决定\"有理由的拒绝\"是否成立。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "which may affect the perception results"
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey"
+     }
+    ],
+    "match_criteria": "认可这是有依据的拒绝，并指出所需数据不存在。",
+    "acceptable_alternatives": [
+     "认为作者至少应在局限中说明国家层面宣传差异可能影响国家比较，因而判部分充分，也可接受。"
+    ],
+    "status": "supported"
+   }
+  ],
+  "label_reference": {
+   "primary": "sufficient",
+   "acceptable_set": [
+    "sufficient",
+    "partially_sufficient"
+   ],
+   "rationale": "要求依赖未收集的数据，作者给出了具体理由；若期待作者把这一点写入局限，可判部分充分。"
+  },
+  "known_invalid_patterns": [
+   "因作者没有补做分析就判不充分。",
+   "声称作者已在稿件中加入了局限说明（回应未这样说）。"
+  ],
+  "draft_notes": ""
+ },
+ "Y": {
+  "task_id": "D05_T2_Q01",
+  "paper_id": "ORE:5-13",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "c07deca57087597fb3776128cce6eb80cb000367dcf292364399d80288fdedee",
+  "card_version": "0.2",
+  "reference_points": [
+   {
+    "judgment": "回应明确未测宣传/媒体接触，因此不能进行所要求的相关分析，并以研究范围解释拒绝，文字层面充分。",
+    "issue_type": "V4",
+    "importance": "medium",
+    "importance_reason": "决定是否将不可补收变量误作必须完成的分析。",
+    "origin": "human_review",
+    "human_sources": [
+     {
+      "report_id": "comment",
+      "exact_quote": "2. Can the results be correlated with any awareness programs in each country? It will be interesting to see what are the exposures in terms of awareness campaign by relevant bodies in the country which may affect the perception results."
+     }
+    ],
+    "manuscript_evidence": [
+     {
+      "input_field": "input/response_text",
+      "exact_quote": "Regarding your second question: As the scope of our study was specifically to investigate the effects of precautionary information with a focus on personal relevance, we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey. Therefore, it isn’t possible to correlate the results with this kind of knowledge, even though this could be an interesting topic for future research."
+     }
+    ],
+    "match_criteria": "须识别未收集宣传接触以及因此不能关联的理由，不以未执行建议直接判不足。",
+    "acceptable_alternatives": [
+     "可建议将此未测因素写入国家差异的限制，但这不使现有范围解释失去充分性。"
+    ],
+    "status": "supported",
+    "id": "P1"
+   }
+  ],
+  "label_reference": {
+   "primary": "sufficient",
+   "acceptable_set": [
+    "sufficient"
+   ],
+   "rationale": "直接回答能否关联，说明未收集数据及研究范围；无需凭空补收既往接触。实际修订未评估。"
+  },
+  "known_invalid_patterns": [
+   "只因没有执行相关分析就判insufficient。",
+   "把未来研究意向当成已分析宣传效果。"
+  ],
+  "draft_notes": "只使用该T2题的关切与回应；revision_verification为not_assessed。"
+ },
+ "suggested_alignment": [
+  {
+   "kind": "many_to_many_conflict",
+   "x": "P1;P2",
+   "y": "P1",
+   "overlap": 1.0,
+   "conflicts": [
+    "importance"
+   ]
+  }
+ ],
+ "label_conflict": true,
+ "instructions": "Groups are suggestions from evidence overlap; confirm or regroup before deciding."
+}

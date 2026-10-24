@@ -3,9 +3,10 @@
 
 For each task the two drafts are randomly labelled X and Y with a secret seed. The X/Y -> A/B key
 is written to pilot/blinding_key.json, which is git-ignored; only its SHA256 is printed so it can
-be committed now and the key revealed after adjudication. Points are paired by overlap of their
-quoted evidence (human-report quotes first, then manuscript quotes); pairs are suggestions that
-the adjudicator confirms or overrides. Drafter identity fields are removed from the merge output.
+be committed now and the key revealed after adjudication. Points are grouped by overlap of their
+quoted evidence (human-report or manuscript quotes); a group may be one-to-one or link one
+drafter's merged point to several finer points. Groups are suggestions the adjudicator confirms
+or overrides. Drafter identity fields are removed from the merge output.
 Usage: python3 scripts/merge_card_drafts.py [--seed-hex HEX]
 """
 import argparse
@@ -22,7 +23,7 @@ DRAFTS = ROOT / 'pilot/cards_draft'
 OUT = ROOT / 'pilot/merge'
 SHEET = ROOT / 'pilot/adjudication'
 KEY = ROOT / 'pilot/blinding_key.json'
-PAIR_THRESHOLD = 0.35
+PAIR_THRESHOLD = 0.5
 COMPARED = ('issue_type', 'importance', 'status', 'origin')
 
 
@@ -37,25 +38,47 @@ def evidence_tokens(point, field):
 
 
 def similarity(p, q):
+    """Overlap coefficient of quoted evidence, so a short and a long quote of the same passage still match."""
     scores = []
     for field in ('human', 'manuscript'):
         a, b = evidence_tokens(p, field), evidence_tokens(q, field)
-        if a and b:
-            scores.append(len(a & b) / len(a | b))
+        if len(a) >= 3 and len(b) >= 3:
+            scores.append(len(a & b) / min(len(a), len(b)))
     return max(scores) if scores else 0.0
 
 
-def pair_points(xs, ys):
-    """Greedy one-to-one pairing on evidence overlap above the threshold."""
-    candidates = sorted(((similarity(x, y), i, j) for i, x in enumerate(xs) for j, y in enumerate(ys)), reverse=True)
-    used_x, used_y, pairs = set(), set(), []
-    for score, i, j in candidates:
-        if score < PAIR_THRESHOLD or i in used_x or j in used_y:
-            continue
-        used_x.add(i)
-        used_y.add(j)
-        pairs.append((i, j, round(score, 2)))
-    return pairs, [i for i in range(len(xs)) if i not in used_x], [j for j in range(len(ys)) if j not in used_y]
+def group_points(xs, ys):
+    """Link every point to its best partner on the other side (if above threshold) and return connected
+    groups, so one drafter's merged point can align with several of the other drafter's finer points."""
+    links = set()
+    for i, x in enumerate(xs):
+        best = max(((similarity(x, y), j) for j, y in enumerate(ys)), default=(0, None))
+        if best[0] >= PAIR_THRESHOLD:
+            links.add((i, best[1]))
+    for j, y in enumerate(ys):
+        best = max(((similarity(x, y), i) for i, x in enumerate(xs)), default=(0, None))
+        if best[0] >= PAIR_THRESHOLD:
+            links.add((best[1], j))
+    parent = {('x', i): ('x', i) for i in range(len(xs))} | {('y', j): ('y', j) for j in range(len(ys))}
+
+    def find(node):
+        while parent[node] != node:
+            parent[node] = parent[parent[node]]
+            node = parent[node]
+        return node
+
+    for i, j in links:
+        parent[find(('x', i))] = find(('y', j))
+    groups = {}
+    for node in parent:
+        groups.setdefault(find(node), []).append(node)
+    out = []
+    for members in groups.values():
+        gx = sorted(i for side, i in members if side == 'x')
+        gy = sorted(j for side, j in members if side == 'y')
+        score = max((similarity(xs[i], ys[j]) for i in gx for j in gy), default='')
+        out.append((gx, gy, round(score, 2) if score != '' else ''))
+    return sorted(out, key=lambda g: (not (g[0] and g[1]), g[0][:1] or [99], g[1][:1] or [99]))
 
 
 def strip_identity(card):
@@ -82,24 +105,26 @@ def main():
         rng.shuffle(order)
         key['tasks'][task] = {'X': order[0], 'Y': order[1]}
         x, y = strip_identity(drafts[order[0]]), strip_identity(drafts[order[1]])
-        pairs, x_only, y_only = pair_points(x['reference_points'], y['reference_points'])
         rows = []
-        for i, j, score in pairs:
-            px, py = x['reference_points'][i], y['reference_points'][j]
-            conflicts = [f for f in COMPARED if px.get(f) != py.get(f)]
-            rows.append({'kind': 'pair_conflict' if conflicts else 'pair_agreed', 'x': px['id'], 'y': py['id'],
+        for gx, gy, score in group_points(x['reference_points'], y['reference_points']):
+            px = [x['reference_points'][i] for i in gx]
+            py = [y['reference_points'][j] for j in gy]
+            if px and py:
+                conflicts = [f for f in COMPARED if {p.get(f) for p in px} != {p.get(f) for p in py}]
+                kind = ('one_to_one' if len(px) == len(py) == 1 else 'many_to_many') + ('_conflict' if conflicts else '_agreed')
+            else:
+                conflicts, kind = [], 'X_only' if px else 'Y_only'
+            rows.append({'kind': kind, 'x': ';'.join(p['id'] for p in px), 'y': ';'.join(p['id'] for p in py),
                          'overlap': score, 'conflicts': conflicts})
-        rows += [{'kind': 'X_only', 'x': x['reference_points'][i]['id'], 'y': '', 'overlap': '', 'conflicts': []} for i in x_only]
-        rows += [{'kind': 'Y_only', 'x': '', 'y': y['reference_points'][j]['id'], 'overlap': '', 'conflicts': []} for j in y_only]
         label_conflict = x.get('label_reference', {}).get('primary') != y.get('label_reference', {}).get('primary') \
             or set(x.get('label_reference', {}).get('acceptable_set', [])) != set(y.get('label_reference', {}).get('acceptable_set', []))
         merged = {'task_id': task, 'X': x, 'Y': y, 'suggested_alignment': rows, 'label_conflict': label_conflict,
-                  'instructions': 'Pairs are suggestions from evidence overlap; confirm or re-pair before deciding.'}
+                  'instructions': 'Groups are suggestions from evidence overlap; confirm or regroup before deciding.'}
         (OUT / f'{task}.json').write_text(json.dumps(merged, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
         with (SHEET / f'{task}.csv').open('w', newline='', encoding='utf-8') as f:
             w = csv.writer(f)
             w.writerow(['task_id', 'row', 'kind', 'X_point', 'Y_point', 'overlap', 'conflicting_fields',
-                        'decision(keep_X/keep_Y/merge/rewrite/delete/re-pair)', 'final_issue_type', 'final_importance',
+                        'decision(keep_X/keep_Y/merge/rewrite/delete/regroup)', 'final_issue_type', 'final_importance',
                         'final_status', 'final_judgment_if_rewritten', 'reason', 'adjudicator', 'date'])
             for n, r in enumerate(rows, 1):
                 w.writerow([task, n, r['kind'], r['x'], r['y'], r['overlap'], ';'.join(r['conflicts'])] + [''] * 8)
@@ -107,7 +132,7 @@ def main():
                 w.writerow([task, 'label', 'label_conflict' if label_conflict else 'label_agreed',
                             json.dumps(x['label_reference'], ensure_ascii=False), json.dumps(y['label_reference'], ensure_ascii=False),
                             '', ''] + [''] * 8)
-        counts = {k: sum(r['kind'] == k for r in rows) for k in ('pair_agreed', 'pair_conflict', 'X_only', 'Y_only')}
+        counts = {k: sum(r['kind'] == k for r in rows) for k in ('one_to_one_agreed', 'one_to_one_conflict', 'many_to_many_agreed', 'many_to_many_conflict', 'X_only', 'Y_only')}
         summary.append({'task_id': task, **counts, 'label_conflict': label_conflict})
     KEY.write_text(json.dumps(key, indent=1) + '\n')
     key_hash = hashlib.sha256(KEY.read_bytes()).hexdigest()

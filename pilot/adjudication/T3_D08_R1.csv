@@ -1,0 +1,8 @@
+task_id,row,kind,X_point,Y_point,overlap,conflicting_fields,decision(keep_X/keep_Y/merge/rewrite/delete/regroup),final_issue_type,final_importance,final_status,final_judgment_if_rewritten,reason,adjudicator,date
+T3_D08_R1,1,one_to_one_conflict,P1,P1,1.0,issue_type;status,,,,,,,,
+T3_D08_R1,2,many_to_many_conflict,P2,P2;P3,1.0,issue_type;importance;status,,,,,,,,
+T3_D08_R1,3,one_to_one_conflict,P3,P4,1.0,importance;status,,,,,,,,
+T3_D08_R1,4,X_only,P4,,,,,,,,,,,
+T3_D08_R1,5,Y_only,,P5,,,,,,,,,,
+T3_D08_R1,6,Y_only,,P6,,,,,,,,,,
+T3_D08_R1,label,label_conflict,"{""primary"": ""acceptable_under_rubric"", ""acceptable_set"": [""acceptable_under_rubric"", ""needs_substantive_revision""], ""rationale"": ""唯一审稿人的方法透明度关切已得到充分的可核查修订；残留的\""验证\""性质问题若被视为核心主张的缺陷，可判仍需实质修改。""}","{""primary"": ""needs_substantive_revision"", ""acceptable_set"": [""needs_substantive_revision"", ""acceptable_under_rubric""], ""rationale"": ""方法显著扩充，但覆盖率复核和共创筛选链条仍有记录缺口，广泛能力认证的主张须限缩。若将成果严格定位为内容审查后的候选框架，并认为新增方法足够支持开发研究，可接受acceptable_under_rubric；不能声称学习者效度已验证。""}",,,,,,,,,,
