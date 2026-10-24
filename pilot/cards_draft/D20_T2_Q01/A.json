@@ -1,0 +1,99 @@
+{
+ "task_id": "D20_T2_Q01",
+ "paper_id": "F1000:171534",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "955b3858eb6866efc372ba9f2c9edc75253d73be26d52870cfef10f94c10e0b2",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "审稿人提出六项要求：四项\"必须修改\"（补充工具与分析说明、确保源数据可得、增加局限段落、统一引文格式）和两项\"建议修改\"（增加ADDIE流程图、增加访谈引文）。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "界定六项要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "1. Add a minimally detailed explanation of the instrument and data analysis."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "Add sample interview quotes to enrich the qualitative findings."
+    }
+   ],
+   "match_criteria": "完整拆出六项要求。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应逐项对应六项要求，并对多数要求说明了修改位置和内容（工具与Aiken V说明加在Procedure部分、数据列在数据可得性部分、局限放在结论后、图1为流程图、访谈引文加在第一阶段发现中）；文字层面回应直接、具体。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "决定回应的主要充分性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "3. Add a limitations paragraph."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "An ADDIE-based research flowchart has been included as"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Representative interview excerpts from teachers and students have been incorporated into the"
+    }
+   ],
+   "match_criteria": "识别回应逐项回答、并说明了修改位置。",
+   "acceptable_alternatives": [
+    "指出第4项（引文一致性）只是笼统声称已检查，判部分充分，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "所有修改都只是声明，本题不提供稿件，无法核实修改是否真实发生，也无法判断局限部分、流程图是否原本就已存在。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "防止把声明当作已核实修改。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Ensure source data is available"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "A dedicated"
+    }
+   ],
+   "match_criteria": "在判断中注明这些修改无法在本题中核实。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "sufficient",
+  "acceptable_set": [
+   "sufficient",
+   "partially_sufficient"
+  ],
+  "rationale": "文字层面逐项、具体回应了六项要求；第4项较笼统，判部分充分也有依据。T2不提供稿件，不能以\"原本已存在\"为由扣分。"
+ },
+ "known_invalid_patterns": [
+  "声称回应虚构了修改（T2无法核实）。",
+  "因回应礼貌、篇幅长而判充分（应依据逐项对应程度）。"
+ ],
+ "draft_notes": ""
+}
