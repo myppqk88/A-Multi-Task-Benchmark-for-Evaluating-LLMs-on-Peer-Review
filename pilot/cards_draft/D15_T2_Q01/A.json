@@ -1,0 +1,78 @@
+{
+ "task_id": "D15_T2_Q01",
+ "paper_id": "F1000:134799",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "1d23a2898bc1097d3a4b2edf0459dccda3dabc87ecd70d0a2b16e1951f53565f",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切：只收集212人的理由没有说明，要求提供总体背景和样本量的充分依据。审稿人认为方便抽样需要大样本来消除误差和偏差，这一前提有误：样本量能降低抽样误差，但不能消除选择偏差。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "界定要求，并识别其中有误的前提。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "solid justification for collecting only 212 responses"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "Kindly provide a rationale."
+    }
+   ],
+   "match_criteria": "准确复述：要求样本量依据与总体背景。",
+   "acceptable_alternatives": [
+    "指出审稿人关于方便抽样的前提有误。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应没有给出任何具体依据：只说样本\"经计算以平衡可行性与检验力\"，没有说明计算方法、效应量、α或检验力，也没有交代总体背景；大量篇幅是重复声称\"已充分回应\"。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "决定回应不充分。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "It is recommended to provide a background for the population"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "was calculated to achieve a balance between feasibility and statistical power"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "believe that the revisions made to the sample size justification adequately address the concerns raised"
+    }
+   ],
+   "match_criteria": "指出回应缺少具体的计算依据，只是笼统声称。",
+   "acceptable_alternatives": [
+    "认为回应承认了推广局限、属部分回应，也可接受。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "insufficient",
+  "acceptable_set": [
+   "insufficient",
+   "partially_sufficient"
+  ],
+  "rationale": "回应没有提供任何可检验的样本量依据或总体背景；承认需要更大样本只是部分回应。"
+ },
+ "known_invalid_patterns": [
+  "因回应称\"已充分回应\"就判充分。",
+  "要求作者通过扩大方便样本来消除偏差。"
+ ],
+ "draft_notes": ""
+}

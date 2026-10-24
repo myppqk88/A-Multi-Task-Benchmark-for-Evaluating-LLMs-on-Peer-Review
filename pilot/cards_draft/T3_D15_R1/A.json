@@ -1,0 +1,163 @@
+{
+ "task_id": "T3_D15_R1",
+ "paper_id": "F1000:134799",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "a2c8b234b42945a9b2d693b0738423cf05a9ba5075f80331ffdcb56221252d14",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "unresolved：样本量部分只加了\"兼顾检验力与可行性\"\"足以检测中等效应\"等笼统说法，计算依据仍是按比例的95%置信水平和10%误差，没有检验力计算。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "回应声称与修订稿一致，但实质未改善。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "solid justification for collecting only 212 responses"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "This computation was used to maintain a balance between statistical power and feasibility."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "with margin of error of 10%"
+    }
+   ],
+   "match_criteria": "指出样本量依据仍无实质计算，判未解决或部分解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "unresolved，且部分恶化：修订稿补充了各因变量的正态性检验，但把二分变量\"性别\"说成\"呈正态分布\"，并继续把W=0.845当作\">0.05\"。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "统计错误在修订中扩大。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "normality needs to be checked for all three variables"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The data for the independent variable sex showed a normal distribution"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Shapiro-Wilk score of 0.845 (>0.05)"
+    }
+   ],
+   "match_criteria": "指出修订稿对正态性的表述仍错误（二分变量正态、W当p）。",
+   "acceptable_alternatives": [
+    "只承认补充了各因变量的检验、未发现错误，属于未命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "partially_resolved：新增了自我决定理论的理论意义段落和性别化的实践建议，但与本研究结果的联系较泛。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "对应R1的意义关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "specific theoretical and practical implications are missing"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Theoretical implications According to Self-Determination Theory (SDT)"
+    }
+   ],
+   "match_criteria": "指出已补充理论意义。",
+   "acceptable_alternatives": [
+    "判为已解决也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "reviewer_request_not_warranted / declined：R2建议考虑其他变量，作者列为未来研究；这是可选建议。",
+   "issue_type": "V2",
+   "importance": "low",
+   "importance_reason": "可选建议。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "further analysis on the influence of other variables could enrich the discussion"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R2",
+     "exact_quote": "In future research, we plan to explore the influence of variables such as self-esteem"
+    }
+   ],
+   "match_criteria": "不把这一点判为实质未解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "unresolved（审稿人未提）：t(2)、t=0.005或0.028却p=0.05且\"显著\"的统计错误在修订稿中原样保留，主要结果的显著性仍无法核实。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "核心结果的统计报告错误未修正。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "(t(2) = 0.005, p = 0.05)"
+    }
+   ],
+   "match_criteria": "指出修订稿中t值、自由度与p值仍不一致。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "unresolved（审稿人未提）：方法仍把\"Instagram使用\"列为自变量，而全部参与者都是用户，没有变异，也没有对照。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "设计表述问题未修正。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The independent and dependent variables in the study are Instagram usage and Body image"
+    }
+   ],
+   "match_criteria": "指出该问题仍在。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision"
+  ],
+  "rationale": "主要结果的统计报告错误未修正，正态性表述在修订中出现新错误，样本量依据仍无实质内容。"
+ },
+ "known_invalid_patterns": [
+  "依据回应信判定样本量与正态性问题已解决。",
+  "因两位审稿人都给出\"Approved\"而判可接受。"
+ ],
+ "draft_notes": ""
+}

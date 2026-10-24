@@ -1,0 +1,160 @@
+{
+ "task_id": "D15_T1_Q01",
+ "paper_id": "F1000:134799",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "c1138e5e7929eca92433e13fdb64dcdb06a82b608f8f1eba7b72614e4a103ad5",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "样本量依据不清：称\"按95%置信水平、10%误差范围计算\"得到212人，但这种按比例估计精度的算法不适用于组间均值比较，也没有检验力分析；方便抽样、男女各106人的配额方式未说明，推广性受限。R1\"方便抽样需要更大样本来消除误差和偏差\"的说法不完全正确，因为增大样本并不能消除选择偏差。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "影响结果的推广性与检验力。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "solid justification for collecting only 212 responses"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "as the study employed convenience sampling, the number of responses needs to be quite high to eliminate the error and bias"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "A sample size of 212 was calculated, considering a confidence level of 95%, with margin of error of 10%."
+    }
+   ],
+   "match_criteria": "指出样本量计算方法不当或缺少检验力分析，或指出方便抽样限制推广。",
+   "acceptable_alternatives": [
+    "指出\"扩大样本可以消除方便抽样偏差\"的前提有误。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "正态性检验报告有误：只给了一个Shapiro-Wilk值，且把W统计量0.845当作p值与0.05比较（\">0.05\"）；样本量为212时，W=0.845本身提示明显偏离正态。三个因变量应分别检验。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "使用参数检验的依据不成立。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "As there are three dependent variables, normality needs to be checked for all three variables."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The data was normally distributed with Shapiro-Wilk statistic being 0.845 (>0.05)"
+    }
+   ],
+   "match_criteria": "指出只报告一个值，或指出W统计量被误当作p值。",
+   "acceptable_alternatives": [
+    "只要求分别检验三个因变量，也算部分命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "理论与实践意义不足，讨论没有回到所引用的理论。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "讨论深度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "specific theoretical and practical implications are missing"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "These results provide an insight into the sex differences between the variables"
+    }
+   ],
+   "match_criteria": "指出缺少理论或实践意义。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "未考虑其他变量（如自尊、媒介素养、BMI等）对结果的影响。",
+   "issue_type": "V2",
+   "importance": "low",
+   "importance_reason": "混杂因素。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "further analysis on the influence of other variables could enrich the discussion"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "it is impossible to completely rule out the possibility of residual confounding"
+    }
+   ],
+   "match_criteria": "提到未控制其他变量或混杂。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "t检验结果自相矛盾：两组共212人，自由度却写成t(2)；t=0.019对应的p值接近1，却报告p=0.05并称差异显著；而均值差的95%置信区间（−8.77到−0.77）对应的t值约为2.3。统计量、自由度、p值三者不一致，显著性结论无法核实。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "主要结果的统计报告错误。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(t (2) = 0.019, p = 0.05)"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(mean difference = -4.77, 95% CI: -8.77 to -0.77)"
+    }
+   ],
+   "match_criteria": "指出t值、自由度与p值不匹配，或显著性结论无法由所报统计量得出。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "研究设计与表述不符：方法称\"Instagram使用\"是自变量，但所有参与者都是Instagram用户，该变量没有变异，也没有非用户对照；因此只能比较用户中的性别差异，不能把结果归因于Instagram。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "结论归因与设计不符。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The independent and dependent variables in the study are Instagram usage and Body image, Exercise motivation, Social Comparison respectively."
+    }
+   ],
+   "match_criteria": "指出Instagram使用没有变异或缺少对照，不能归因于Instagram。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "认为增大方便样本就能消除选择偏差。"
+ ],
+ "draft_notes": "R2很简短。P5、P6为起草者自行发现；P5的错误在v2中依然存在，详见T3卡。"
+}
