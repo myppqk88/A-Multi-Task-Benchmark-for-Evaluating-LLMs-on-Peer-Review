@@ -1,0 +1,204 @@
+{
+ "task_id": "T3_D09_R1",
+ "paper_id": "PeerJ:10705",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "ad951bae29ac140232d9bfbf03d1720fa716555534d0a733fffe9114aea4275c",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "partially_resolved：修订稿承认分组可能忽略不同隔离情形的差异，并说明测的是主观感知的隔离；这是承认局限而非改进测量，分组效度问题依然存在。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "检验模型区分\"承认局限\"与\"解决问题\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the definition of isolation and quarantine is ambiguous"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "We acknowledge that this grouping may overlook important differences in contexts between different forms of isolation"
+    }
+   ],
+   "match_criteria": "判为部分解决，并指出只是作为局限承认。",
+   "acceptable_alternatives": [
+    "认为预注册设计无法事后改变、承认局限已是恰当处理，判已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "resolved：补充了数据收集日期（2020年4月7–9日）与各国疫情管控背景，并新增分国描述表（年龄、性别、样本量）。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "对应R2的国家混淆与日期关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "could the authors clearly state the date(s) on which the survey was run"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Data were collected between the 7th and the 9th of April 2020 (inclusive)."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Table 1. Sample demographics split by country."
+    }
+   ],
+   "match_criteria": "判为已解决或基本解决（未做分国分析也可指出）。",
+   "acceptable_alternatives": [
+    "指出分国分析或国家作为协变量仍未做，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "resolved（作者自查修正）：作者在补充描述统计时发现v1把K-10的组间差异方向写反，修订稿已改为非隔离组更高；另有部分相关误用未换算的消费数据，也已更正。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "检验模型是否注意到修订中纠正的实质错误。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "it would be great to see the means / SDs"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "psychological distress was actually higher among people not in self- isolation or quarantine"
+    },
+    {
+     "input_field": "materials/responses/combined",
+     "exact_quote": "we were mistaken about the direction of the K-10 scores"
+    }
+   ],
+   "match_criteria": "指出K-10方向错误已被纠正。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "partially_resolved：作者把类别与连续分析的不一致解释为分类造成的变异损失，并删除了\"small but important\"等表述；但\"调节\"仍出现在预注册假设的表述中，核心发现的稳健性仍依赖相关差异检验。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "核心阳性结果的稳健性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "these 'discrepant' analyses are being conducted on the same data"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "the study is all about moderation, but they haven’t really tested for moderation"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "may reflect a loss of variability in PGSI scores when this continuous measure is devolved into a categorical variable"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "will moderate the relationship between PGSI category and"
+    }
+   ],
+   "match_criteria": "判为部分解决，并指出核心结果仍不稳健或\"调节\"措辞未完全调整。",
+   "acceptable_alternatives": [
+    "认为解释合理、判已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "resolved：增加了污染担忧量表的状态/特质局限说明；PGSI按Currie修订标准分级的理由已写明。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "对应R2与R1的测量关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "whether these constructs are state or trait related"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "it is unknown whether participants were responding to the Padua Contamination Concern index as a state or trait based measure"
+    }
+   ],
+   "match_criteria": "判为已解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "partially_resolved：摘要仍称考察隔离的\"影响\"（effects），横断面设计的因果措辞未完全调整，但讨论中\"导致增加\"的表述已删除。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "结论措辞。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "the verb “increased” here implies some longitudinal component"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "we examined the effects of self- isolation and quarantine on excessive gaming and loot box spending"
+    }
+   ],
+   "match_criteria": "指出摘要仍有因果措辞，判部分解决。",
+   "acceptable_alternatives": [
+    "认为\"effects\"在自然实验语境下可接受，判已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "unresolved（审稿人未提）：两组人数之和（447+619=1,066）与总样本1,144仍不一致，修订稿未说明。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "报告错误未修正。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "quarantined or self- isolating (n = 447) or not (n = 619)"
+    }
+   ],
+   "match_criteria": "指出人数不一致仍未说明。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "acceptable_under_rubric",
+  "acceptable_set": [
+   "acceptable_under_rubric",
+   "needs_substantive_revision"
+  ],
+  "rationale": "修订覆盖了绝大多数关切并纠正了作者自身的错误；残留的分组效度、核心结果稳健性与样本数不一致若被视为实质问题，可判仍需实质修改。"
+ },
+ "known_invalid_patterns": [
+  "因作者重排假设顺序就认为违背预注册。",
+  "忽视修订中K-10方向的更正。"
+ ],
+ "draft_notes": "作者回信经清理（去除签名、标题）；回信较长，逐条引用了审稿意见。"
+}

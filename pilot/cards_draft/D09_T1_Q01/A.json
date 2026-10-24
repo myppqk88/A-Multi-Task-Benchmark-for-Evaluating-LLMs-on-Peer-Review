@@ -1,0 +1,267 @@
+{
+ "task_id": "D09_T1_Q01",
+ "paper_id": "PeerJ:10705",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "6b6e3ecc22565c6bc94b0a3803f211c11b08f2fb8f52bdb149c1c8a11596117b",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "核心自变量\"自我隔离/检疫\"界定不清：由参与者自报，把出于担心自愿隔离、等待检测、被强制检疫等不同情形合并为一组；在95%的人处于封锁状态时，\"隔离\"更像主观感受而非客观状态，而这种主观状态本身可能与污染担忧相关。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "全部组间比较都依赖这一分组的效度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the definition of isolation and quarantine is ambiguous"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "to what extent is ‘self-isolation’ within lockdown a subjective or objective status?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "as well as whether they were quarantined or under self-isolation during the pandemic"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "we employed a natural experimental design to compare those people who were isolated due to the pandemic"
+    }
+   ],
+   "match_criteria": "指出隔离/检疫的界定含糊、自报或主观性问题。",
+   "acceptable_alternatives": [
+    "只指出\"自然实验\"的说法不当（非随机分组），也算部分命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "三个国家合并分析，但各国封锁严格程度不同，未报告调查日期、各国样本构成与分国描述统计；隔离组与非隔离组的差异可能只是国家差异。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "可能的混淆变量。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "is it possible that their independent variable (self-isolation Yes/No) simply reflects a cross-jurisdictional effect?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "In a pre-registered study conducted in the midst of the pandemic in Australia, New Zealand, and the United States"
+    }
+   ],
+   "match_criteria": "指出国家/地区混淆或调查日期、分国描述缺失。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "因果与纵向措辞超出横断面设计：标题和摘要称考察隔离的\"影响\"，讨论推测玩家\"以增加游戏来应对\"、隔离\"导致增加\"，但单次横断面调查无法观察变化。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "结论措辞与设计不符。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "the verb “increased” here implies some longitudinal component"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "we examine the effects of self- isolation and quarantine on excessive gaming and loot box spending"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Gamers might be managing concerns about the pandemic with increased game use"
+    }
+   ],
+   "match_criteria": "指出横断面数据不能支持\"影响/增加\"的结论。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "关键发现依赖相关系数差异检验：连续PGSI分析中两组相关有显著差异，而按PGSI类别的分析不显著；同一假设用两种方法检验得出不一致结果，文中对差异的解释是推测性的，更可能源于分组阈值或统计检验力差异。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "核心阳性结果的稳健性存疑。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "these 'discrepant' analyses are being conducted on the same data"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "the study is all about moderation, but they haven’t really tested for moderation"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "We compared correlation strengths using Fischer’s Z-tests"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "more problem gamblers may be purchasing loot boxes during the pandemic"
+    }
+   ],
+   "match_criteria": "指出连续与类别分析结果不一致、或\"调节\"只是相关差异检验，核心结论稳健性不足。",
+   "acceptable_alternatives": [
+    "只指出用相关差异检验代替调节分析、措辞应调整，也算部分命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "PGSI分级：文中明确采用Currie等(2013)的修订标准（低风险1–4，中风险5–7），R1认为中风险应为3–7（原始标准），这一意见的前提不完全成立；但不同阈值会影响类别分析结果，值得说明选择理由。",
+   "issue_type": "V1",
+   "importance": "low",
+   "importance_reason": "检验模型是否核对文中所引标准。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the PGSI is described as classifying people as moderate risk based on scores of 5-7, but it’s actually 3-7?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "moderate-risk gamblers = 5–7 on the PGSI"
+    }
+   ],
+   "match_criteria": "若提及，应承认文中依据Currie修订标准，只要求说明选择理由或做敏感性分析。",
+   "acceptable_alternatives": [
+    "直接指出R1的意见与文中所引标准不符。"
+   ],
+   "status": "disputed"
+  },
+  {
+   "id": "P6",
+   "judgment": "污染担忧量表（Padua）可能测的是稳定特质，而K-10是近一个月的状态；把它们与游戏/开箱的关联解释为疫情应对，需要讨论状态与特质的区别。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "影响对\"应对机制\"解释的依据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "whether these constructs are state or trait related"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Concerns about being contaminated by germs was also significantly associated with increased excessive gaming"
+    }
+   ],
+   "match_criteria": "指出污染担忧的状态/特质问题。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "研究立论逻辑：为什么预期隔离会使问题赌博与开箱消费的关系变强？若多数玩家都增加消费，也可能出现变异减少；此外人们在疫情期间也增加了其他消费，开箱消费增加未必与赌博渠道受限有关。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "假设推导的合理性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "If lots of people start increasing their gambling why would you expect relationships to get stronger?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The relationship will be stronger for participants in self-isolation or quarantine than for those not in self-isolation or quarantine."
+    }
+   ],
+   "match_criteria": "质疑\"关系变强\"假设的理论依据，或提出替代解释。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "报告不完整：缺少各变量的均值与标准差（如称K-10差异\"可忽略\"却不给均值）、年龄信息；结果顺序与预注册假设不对应；\"small but important\"依据Ferguson标准的说法不当；3.29 SD离群值标准未说明来源；伦理同意书与数据说明文件缺失。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "报告透明度问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "it would be great to see the means / SDs"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "I found it confusing that the results does not adhere to the same order of hypotheses."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(a negligible difference)"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "small but important contributor"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "3.29 SDs greater than the mean"
+    }
+   ],
+   "match_criteria": "提到上述任一报告问题。",
+   "acceptable_alternatives": [
+    "认为3.29 SD是常见的z=3.29（p<.001）标准，不成问题，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "样本数前后不一致：总样本1,144人，但隔离组447人加非隔离组619人只有1,066人，78人的去向没有说明；而K-10比较的自由度t(1,142)又对应全部1,144人。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "影响分组分析的可核查性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "quarantined or self- isolating (n = 447) or not (n = 619)"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "t(1,142) = 2.565"
+    }
+   ],
+   "match_criteria": "指出两组人数之和与总样本不符，或自由度与分组人数不一致。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "坚持PGSI中风险必须为3–7分而无视文中所引Currie标准。",
+  "声称研究发现隔离增加了游戏时间（结果显示无差异）。"
+ ],
+ "draft_notes": "两份PeerJ第一轮独立报告与编辑决定信。P9为起草者自行发现。"
+}
