@@ -1,0 +1,207 @@
+{
+ "task_id": "T3_D01_R1",
+ "paper_id": "PeerJ:1604",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "e6bb9b6251188213cc30c936a667f2690e191fb4811d42c23a3b13d7748d4704",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "unresolved：调节/中介结论仍未得到检验。修订稿摘要仍写\"moderated\"，讨论改写为\"most likely mediated\"，两处术语不一致，且都没有对应分析；回应以\"不是研究目标\"拒绝补充假设。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "核心结论仍超出证据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The authors should specify at the end of the introduction the hypothesis"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "specific hopes of individuals are moderated by factors not captured by the IHS trait scale"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "indicates that specific hopes of individuals are most likely mediated by factors that do not"
+    }
+   ],
+   "match_criteria": "判为未解决（或部分解决），并指出修订稿仍作调节/中介推断而无相应分析，或指出摘要与讨论用词不一致。",
+   "acceptable_alternatives": [
+    "认为作者拒绝补假设有理、但要求删除调节/中介措辞，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "unresolved：稳定性推论被加强而非修正。修订稿称结果\"imply its stability through time\"，而研究是横断面设计，两组无显著差异（P=0.065）不能证明随时间稳定。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "针对R2意见的修改反而使过度推论更强。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 158 - could hope be viewed in terms of its stability or just persistent inclusion?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "imply its stability through time"
+    },
+    {
+     "input_field": "materials/responses/combined",
+     "exact_quote": "seems to be a stable construct (trait) in adults"
+    }
+   ],
+   "match_criteria": "指出修订稿的\"随时间稳定\"结论没有纵向数据支持，判为未解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "partially_resolved：研究目标在引言末尾表述得更清楚（新增第二个目标：比较最强IHS因素与自评最重要因素的一致性），但仍无明确假设或理论模型；回应称\"clarified the aims and hypothesis\"与修订稿不完全相符。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "决定\"假设不清\"关切的解决程度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The hypothesis are not clear, authors are invited to add a section to describe the main goal of their paper."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "It was the goal of our research to determine the association of the universal (trait)"
+    },
+    {
+     "input_field": "materials/responses/combined",
+     "exact_quote": "We have also clarified the aims and hypothesis of our study."
+    }
+   ],
+   "match_criteria": "指出目标有所澄清但仍无明确假设，或指出回应声称与修订稿不符。",
+   "acceptable_alternatives": [
+    "认为探索性研究写清目标即可、判为已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "unresolved：测量信息只是把总分α移到\"Sampling and procedures\"末尾，内容未变；未报告分量表信度和因子结构，回应以\"如需可做CFA\"回避。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "分量表相关结论的测量基础未改善。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Instruments. The authors should insert for each measures the factorial structure and internal consistency reliability that measures present in their study."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "IHS for both groups combined was 0.869 (95% CI=0.843-0.892) showing good internal"
+    }
+   ],
+   "match_criteria": "指出修订后仍只有总分α、无分量表信度或因子结构，判未解决或部分解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "unresolved：四个排序因素与IHS分量表的对应问题只做了措辞修改（\"As the stated goals were positive\"），用\"乐观\"代表\"缺乏前景\"的反向仍无依据。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "影响\"因素一致性很低\"这一发现的解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 83 notes 'aiming for positive factors' could this perception that hope is a positive, future oriented practice skew the results?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "the stated goals were positive, we found that ‘optimism’ as a term best captures the inverse of the"
+    }
+   ],
+   "match_criteria": "指出修改只是改写措辞、构念对应问题仍在。",
+   "acceptable_alternatives": [
+    "认为作者解释了只能给正面选项的理由、问题部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "unresolved（审稿人未提）：统计报告错误在修订稿中原样保留——χ2=2.632与P=0.004不可能对应，P=0.09不显著却被当作支持；Kendall W范围结果与讨论不一致。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响次要结论与报告可信度；修订周期中未被发现。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "(χ2=2.632, P=0.004 and χ2=6.438, P=0.09, respectively)"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "(Kendall's W from"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "(Kendall’s W from 0.002 to"
+    }
+   ],
+   "match_criteria": "指出修订稿中卡方与P值不匹配，或Kendall W范围前后矛盾。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "reviewer_request_not_warranted / resolved：R2对\"non-attempts of suicide\"的质疑前提不清，作者解释其对应原研究的测量方式并保留原文，可以接受；格式与小标题等要求已处理。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "用于检验模型是否机械服从审稿人。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The use of hope in non-suicide attempts needs further exploration."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/combined",
+     "exact_quote": "however it does not reflect the actual measurements conducted in that study"
+    }
+   ],
+   "match_criteria": "不把作者保留\"non-attempts of suicide\"判为未解决；或明确认为审稿人要求不必照办。",
+   "acceptable_alternatives": [
+    "认为表述仍可改进但不影响结论，也可接受。"
+   ],
+   "status": "disputed"
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision"
+  ],
+  "rationale": "核心结论的过度推论（调节/中介、稳定性）未解决甚至加重，测量与统计问题未修正。"
+ },
+ "known_invalid_patterns": [
+  "因作者回信称\"已澄清假设\"就判为已解决。",
+  "把格式修改当作实质问题的解决。"
+ ],
+ "draft_notes": "截止时点为v0.2提交后。编辑决定信要求加强理论基础。P6为起草者自行发现。"
+}

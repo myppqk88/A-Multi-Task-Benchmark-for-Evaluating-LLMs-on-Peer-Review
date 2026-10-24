@@ -1,0 +1,256 @@
+{
+ "task_id": "D01_T1_Q01",
+ "paper_id": "PeerJ:1604",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "83a63b8c61295af3105e855178971caebe355393451b8ae3f296cf641b6d25ed",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "结论把特定希望说成\"被IHS未涵盖的因素调节(moderated)\"，但研究既未提出也未检验任何调节/中介模型；这一核心结论超出了相关与一致性分析所能支持的范围。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "这是摘要和讨论的核心结论，直接依赖未做的分析。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Hypothesis. The authors should specify at the end of the introduction the hypothesis of mediation and moderation model."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "specific hopes of individuals are moderated by factors not captured by the IHS trait scale"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "indicates that specific hopes of individuals are moderated and perhaps even more strongly"
+    }
+   ],
+   "match_criteria": "指出\"moderated\"一类的结论没有对应的调节/中介检验（仅有相关和Kendall W），或要求先设定并检验相应模型。",
+   "acceptable_alternatives": [
+    "认为作者本意只是描述性的\"受其他因素影响\"、建议改写措辞而非补做调节分析，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "研究目标虽在引言末尾提及，但没有明确的理论模型和可检验假设，结果部分也未按目标组织，读者难以判断两组比较、相关分析和因素排序各自检验什么。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "影响结果解释的框架，但不推翻描述性发现。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The hypothesis are not clear, authors are invited to add a section to describe the main goal of their paper."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "Authors should refer to a conceptual hope model, in describing their variables, to be able to design the hypotheses."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "it was the goal of our research to determine the"
+    }
+   ],
+   "match_criteria": "指出缺少理论框架或明确假设/研究问题，或指出结果与目标不对应。",
+   "acceptable_alternatives": [
+    "指出研究属于探索性描述研究、因而应明确写成研究问题而非假设，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "测量信效度报告不足：只报告了合并样本的IHS总分α，未报告分量表信度和翻译版的因子结构（翻译中改写了4个题目），而分析使用了分量表得分；VAS为单题测量。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "分量表比较和\"最高分因素\"排序都依赖分量表的信效度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Instruments. The authors should insert for each measures the factorial structure and internal consistency reliability that measures present in their study."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Cronbach’s alpha of the CIHS for both groups"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "reformulated in the process"
+    }
+   ],
+   "match_criteria": "指出缺少分量表信度或克罗地亚语版因子结构证据，或指出改写题目后未做验证。",
+   "acceptable_alternatives": [
+    "只指出\"翻译后未做验证性因子分析\"也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "让被试排序的四个\"正面\"因素（自信、雄心、乐观、社会支持）与IHS四个分量表并不一一对应，尤其用\"乐观\"代替\"缺乏前景\"分量表的反向；以此比较\"自选最重要因素\"与\"IHS最高分量表\"的一致性，构念对应存疑。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "\"因素排序一致性很低\"这一主要发现依赖该对应关系是否成立。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 83 notes 'aiming for positive factors' could this perception that hope is a positive, future oriented practice skew the results?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "best captures the inverse of the"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Following each of the VAS questions we also asked the respondents to"
+    }
+   ],
+   "match_criteria": "指出四个排序因素与IHS分量表的对应（特别是乐观↔缺乏前景）缺乏依据，或指出由此得出的一致性比较不可靠。",
+   "acceptable_alternatives": [
+    "从\"只给正面选项会引导回答\"角度批评，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "讨论由\"两组总分无显著差异\"和弱至中等相关推出希望作为特质\"有效且在成人中稳定\"，但横断面比较的不显著差异（P=0.065）不能证明稳定性，弱相关也不足以\"增强效度\"。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "这是讨论的首要结论，推论方向错误。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 158 - could hope be viewed in terms of its stability or just persistent inclusion?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "imply its stability in adult population"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Together these findings strengthen the"
+    }
+   ],
+   "match_criteria": "指出不能由横断面无显著差异推出稳定性，或指出无显著差异不等于等同、弱相关不能证明效度。",
+   "acceptable_alternatives": [
+    "只指出\"未做纵向测量，不能谈稳定性\"也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "引言对希望与\"未尝试自杀\"关系的表述、量表选择理由以及宗教性等文献铺垫不足，讨论中的宗教解释缺少引言中的文献支撑。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "属于文献与论证完整性问题，不影响主要结果。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The use of hope in non-suicide attempts needs further exploration."
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "Identification of why this hope scale was chosen over others is required"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "references to religiosity and hope (line 164 and beyond) need to be noted in the lit review section."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "and non-attempts of suicide"
+    }
+   ],
+   "match_criteria": "提到上述任一文献/论证缺口（量表选择理由、宗教性文献、自杀相关表述）。",
+   "acceptable_alternatives": [
+    "认为\"non-attempts of suicide\"的表述本身没有问题、R2的意见不成立，也是合理判断。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "格式与组织：表格未按APA格式，结果缺小标题，程序部分位置不当。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "非实质问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Table and figures are not in line with APA style"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "Authors should insert procedure section after measures section."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Statistical analysis"
+    }
+   ],
+   "match_criteria": "提到表格格式、结果分小节或程序部分位置。",
+   "acceptable_alternatives": [
+    "认为期刊格式要求优先于APA、不必修改，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "统计报告前后不一致：χ2=2.632对应P=0.004不可能成立（任何常见自由度下P都远大于0.05），χ2=6.438、P=0.09不显著却被用来支持\"乐观最常被选择\"；Kendall W在结果中为0.024–0.117，在讨论中写成0.002–0.15。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响\"乐观最常被选\"这一次要结论及报告可信度。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(χ2=2.632, P=0.004 and χ2=6.438,"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(Kendall's W from 0.024 to 0.117; Supplementary Table 2)"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "contributed to their levels (intensity) of hope for specific events (Kendall’s W from 0.002 to"
+    }
+   ],
+   "match_criteria": "指出卡方值与P值不匹配、不显著结果被当作支持，或Kendall W范围前后矛盾，任一即算命中。",
+   "acceptable_alternatives": [
+    "只指出P=0.09不显著却作为依据，也算命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "声称研究没有报告任何信度（文中报告了总分α=0.869）。",
+  "要求作者报告人口学常模——作者已说明不以建立常模为目标，且样本为方便样本。"
+ ],
+ "draft_notes": "真人报告为PeerJ第一轮两份独立报告。P8为起草者自行发现，需人工核对卡方自由度（文中未报告df）。"
+}

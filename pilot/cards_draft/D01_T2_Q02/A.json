@@ -1,0 +1,74 @@
+{
+ "task_id": "D01_T2_Q02",
+ "paper_id": "PeerJ:1604",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "c505a0aa44a25996ee41fa877bc4c4f95b3393cb633a3bed2a7c6688e318a7a6",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切要求对每个测量报告本研究数据中的因子结构和内部一致性信度。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "界定要求的两个部分：因子结构、信度；对象是\"每个测量\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "insert for each measures the factorial structure and\ninternal consistency reliability"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "factorial structure and\ninternal consistency reliability"
+    }
+   ],
+   "match_criteria": "拆出两项要求（因子结构、信度）且注意\"每个测量、本研究数据\"。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应只说IHS的\"内部效度\"信息已放到方法部分（实为总分α），未提分量表信度，也未涉及VAS；因子结构沿用原量表，没有用本研究数据检验，只是表示\"如审稿人认为需要可做CFA\"。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "决定部分充分而非充分。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "that measures present in their study"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "we used the factor structure of the developed scale"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Please let us know if the reviewer feels it is necessary for us to conduct a confirmatory factor analysis"
+    }
+   ],
+   "match_criteria": "指出因子结构未在本样本中检验（仅沿用原结构/把CFA推给审稿人），或指出信度只覆盖IHS总体。",
+   "acceptable_alternatives": [
+    "认为沿用已验证量表的因子结构在主要分析只用总分时可以接受、但仍缺分量表信度，判部分充分也算命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient"
+  ],
+  "rationale": "信度部分有所回应（总分），因子结构未用本研究数据回答，VAS未涉及；不是完全无回应，也未完整满足。另：回应把信度称为internal validity，属术语混用。"
+ },
+ "known_invalid_patterns": [
+  "因作者提出可做CFA就判充分。"
+ ],
+ "draft_notes": ""
+}
