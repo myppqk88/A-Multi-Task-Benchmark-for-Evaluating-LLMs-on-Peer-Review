@@ -126,8 +126,9 @@ def check(task_id, drafter, manifest):
                 except (KeyError, IndexError, ValueError, TypeError):
                     errors.append(f"{pid}: unknown input_field {ev['input_field']!r}")
                     continue
-                hay = norm(strip_line_numbers(' '.join(strings(field))))
-                if norm(ev['exact_quote']) not in hay:
+                raw = ' '.join(strings(field))
+                quote = norm(ev['exact_quote'])
+                if quote not in norm(raw) and quote not in norm(strip_line_numbers(raw)):
                     errors.append(f"{pid}: quote not found in {ev['input_field']}: {ev['exact_quote'][:60]!r}")
             elif 'page' in ev:
                 if int(ev['page']) not in pages:
