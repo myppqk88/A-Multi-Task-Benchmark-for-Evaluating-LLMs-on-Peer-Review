@@ -1,0 +1,123 @@
+{
+ "task_id": "D04_T2_Q01",
+ "paper_id": "ORE:5-107",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "0a76e52fbb8c7ee8089e9b1de3357abff243fad19c5ecb8a72b9127ea6fd3b4f",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "关切要求说明开放编码之后是否有轴心/选择性编码等整合步骤，以及类别（\"主线\"）如何从单个编码中形成。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "界定两项要求：是否有进一步编码、类别如何形成。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Did you stop at this stage or have further steps of integration, like axial or selective coding, been employed?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "Consider adding some more information about how you developed a red threat or categories"
+    }
+   ],
+   "match_criteria": "拆出两项要求：是否有整合编码步骤；类别如何形成。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 6,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "回应直接说明增加了第二轮轴心编码，描述了把编码归为更高层类别、并发现受访者按时间顺序叙述，从而得出四个阶段，46个编码再分配到各阶段。这直接回答了\"是否有进一步编码\"，并说明了阶段类别的来源。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "决定回应的主要充分性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "been employed?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "we engaged in a second cycle of analysis to group these codes into broader conceptual categories"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "we identified four phases of the tool development and dissemination process"
+    }
+   ],
+   "match_criteria": "识别出回应给出了具体的轴心编码描述及四阶段的来源。",
+   "acceptable_alternatives": [
+    "认为描述仍较概括（只说\"examined relationships\"），判部分充分，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 6,
+    "from": "X:P2",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "回应只说明了四个阶段如何产生，没有说明\"项目导向/用户导向\"两种路径这一类别如何从编码中形成；对\"选择性编码\"也未交代。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "限制回应的完整性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "The 46 codes that were created during the previous analysis step were then assigned to one or more of the stages."
+    }
+   ],
+   "match_criteria": "指出回应未说明两种路径的分析来源，或未回答选择性编码。",
+   "acceptable_alternatives": [
+    "只指出\"描述仍较简略、缺少示例\"，也算部分命中。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 6,
+    "from": "X:P3",
+    "decision": "X对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": {
+   "X": "直接、具体地回答了是否有进一步编码及阶段如何形成；但两种路径的形成未交代，判部分充分也有依据。",
+   "Y": "回应给出具体整合步骤和归类结果，足以回答原要求；本题无法检验实际修订是否落实，revision_verification=not_assessed。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "把回应引用的段落当作已核实出现在修订稿中（T2不提供修订稿）。",
+   "要求提供编码者间信度系数作为质性研究的必要条件。"
+  ],
+  "Y": [
+   "声称已经打开修订稿核验。",
+   "把没有选择性编码一项本身当作不足。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

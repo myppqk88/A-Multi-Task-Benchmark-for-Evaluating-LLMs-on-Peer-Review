@@ -1,0 +1,121 @@
+{
+ "task_id": "D01_T2_Q01",
+ "paper_id": "PeerJ:1604",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "068d7a439545da62f7b50407d8fe61272950c3d0129dc4686815fb50523b7794",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "关切要求在引言末尾写明中介与调节模型的假设。",
+   "issue_type": "V6",
+   "importance": "high",
+   "importance_reason": "界定本题需回应的要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "The authors should specify at the end of the introduction the hypothesis"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "specify at the end of the introduction the hypothesis"
+    }
+   ],
+   "match_criteria": "准确复述：要求的是\"引言末尾的中介/调节假设\"。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 2,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "回应拒绝在引言中加入，并给出理由：研究目标不是确定中介因素，而是参与者对IHS各因素重要性的主观判断。拒绝本身有理由，在研究设计不含中介/调节检验时可以成立。",
+   "issue_type": "V6",
+   "importance": "high",
+   "importance_reason": "决定回应是否属于\"有理由的拒绝\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "hypothesis\nof mediation and moderation model"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "as our goal was not to determine possible mediators of specific hopes"
+    }
+   ],
+   "match_criteria": "识别出这是带理由的拒绝，并评价理由是否成立。",
+   "acceptable_alternatives": [
+    "认为理由成立、回应充分，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 2,
+    "from": "X:P2",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "回应称已在讨论中\"提及可能的中介与调节因素\"，这只是声明，本题看不到修订稿，无法核实；回应也没有说明研究实际检验的假设是什么。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "限制回应的充分程度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "The authors should specify"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "have mentioned the possible mediators and moderators in the revised discussion"
+    }
+   ],
+   "match_criteria": "指出\"已在讨论中提及\"无法核实，或指出回应未给出任何假设。",
+   "acceptable_alternatives": [
+    "仅指出回应没有说明替代的研究假设，也算命中。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 2,
+    "from": "X:P3",
+    "decision": "X对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": "有理由地拒绝了不适用于本设计的要求（可判充分），但对讨论的修改只是声明、且未澄清研究实际假设（可判部分充分）。判insufficient忽视了拒绝理由的合理性。",
+  "rule": "adjudicator chose X"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "把\"已在讨论中提及\"当作已核实的修改。",
+   "因为作者没有照做就判不充分，而不评价拒绝理由。"
+  ],
+  "Y": [
+   "只因没有补模型而判insufficient。",
+   "引用修订稿断言修改已核验。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

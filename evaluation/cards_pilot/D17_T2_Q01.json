@@ -1,0 +1,129 @@
+{
+ "task_id": "D17_T2_Q01",
+ "paper_id": "PeerJ:5414",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "72ef2b59848adaa463045c1561dcea5b9dac1d2106e6e0bd5b936afe14188193",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "回应进一步给出14刺激的麻刺强度、起始时间及完整填写纳入规则，实质回答了“只是看视频还是确有体验”；但完整填写不严格等于有非零麻刺。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "组别识别关系到后续关联解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "The fact that all participants identified specific ASMR triggers (and the speed with which they elicited tingling sensations) suggests that our ASMR participants did, in fact, have ASMR."
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "These questions included a list of 14 popular ASMR-triggering stimuli that participants rated both on the intensity of tingling sensations experienced, as well as how many seconds after stimulus onset that they would typically experience tingles. Only participants who completed the entirety of the ASMR checklist were included in the ASMR group during the analyses.”"
+    }
+   ],
+   "match_criteria": "同时识别麻刺具体问题这一正面回答及完整填写/实际体验之间的剩余逻辑边界；不得验证原始数据。",
+   "acceptable_alternatives": [
+    "若自报触发体验已足够且不要求独立生理证明，可判sufficient；若要求明确至少一项非零或显式身份问题，可判partially_sufficient。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 31,
+    "from": "Y:P2",
+    "decision": "Y对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "关切：ASMR组只凭在Reddit上的自我认定入组，没有像对照组那样核实是否真的体验刺痛；仅看视频观看频率无法区分体验者与单纯爱看视频的人。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "界定要求：说明如何确认ASMR组成员确实体验ASMR。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Were they asked explicitly whether they experience ASMR (as were the controls)?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "there is no way of knowing whether they indeed experience ASMR"
+    }
+   ],
+   "match_criteria": "准确复述关切的核心（ASMR身份核实与组间不对称）。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 32,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "回应解释不预先诱发ASMR是为避免情绪和两组状态不对称，属于合理方法理由，但它本身不能回答如何识别ASMR。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "避免把对一个替代程序的解释误当组别识别完成。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "This was intentional.  We were concerned that eliciting ASMR tingles prior to the completion of the study could potentially bias the results.  Several items on our questionnaires (in the current study and in Fredborg et al., 2017) related to emotional states.  Inducing ASMR, which is emotionally positive in nature, may have altered participants’ results.  Additionally, having one group of participants experiencing ASMR tingles while the other group (controls) would have introduced an inherent bias into the experimental design."
+    }
+   ],
+   "match_criteria": "须区分避免诱发的理由与ASMR身份的正面佐证。",
+   "acceptable_alternatives": [
+    "可认可不做视频诱发验证而不要求生理诊断，只要另有足够自报佐证。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 33,
+    "from": "Y:P1",
+    "decision": "Y对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": {
+   "X": "回应给出了合理的设计理由和间接核实依据，并修改了方法说明；但核实仍依赖自我报告，筛查不对称未作为局限承认。",
+   "Y": "回应不仅解释拒绝诱发，还具体描述强度和起始时间自报；这可充分回答身份佐证问题。若严格要求明确非零纳入阈值，可接受部分充分；不能把未进行临床/生理诊断直接当作回应失败。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "把回应引用的新增文字当作已核实出现在修订稿中。",
+   "要求作者事后补做视频核实（数据已收集完毕）。"
+  ],
+  "Y": [
+   "只评价没有做视频验证，忽略后半段清单佐证。",
+   "把完成清单逻辑上等同于已验证每人至少有一次麻刺。",
+   "援引修订稿或原始数据宣称执行已验证。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

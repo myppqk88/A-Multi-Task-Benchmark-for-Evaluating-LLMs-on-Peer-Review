@@ -1,0 +1,115 @@
+{
+ "checks": [
+  {
+   "reported": "χ2=2.632, P=0.004",
+   "recomputed": "over df 1–10 the smallest p is 0.105",
+   "contradicts": true,
+   "note": "df not reported; no df in 1–10 makes χ2=2.632 give p≈.004",
+   "quotes_found_in_input": {
+    "D01_T1_Q01": {
+     "χ2=2.632, P=0.004": true
+    },
+    "T3_D01_R1": {
+     "χ2=2.632, P=0.004": true
+    }
+   },
+   "verified": true,
+   "tasks": [
+    "D01_T1_Q01",
+    "T3_D01_R1"
+   ]
+  },
+  {
+   "reported": "text: students hope more for health; Table 3 health: students 46.50%, workers 70.51%",
+   "recomputed": "workers − students = 24.01 percentage points",
+   "contradicts": true,
+   "note": "direction in text is opposite to Table 3",
+   "quotes_found_in_input": {
+    "D01_T1_Q01": {
+     "46.50": true,
+     "70.51": true,
+     "with students hoping more for health": true
+    }
+   },
+   "verified": true,
+   "tasks": [
+    "D01_T1_Q01"
+   ]
+  },
+  {
+   "reported": "Table 4 t=1.560, Sig.(2-tailed)=.120; text reports a significant difference using .028 (Levene); text t(2)=0.005, p=0.05",
+   "recomputed": "t=1.560 gives p≈0.120 for large df (consistent with .120, i.e. not significant); t(2)=0.005 gives p=0.996",
+   "contradicts": true,
+   "note": ".028 is the Levene test for equal variances, not the test of the mean difference",
+   "quotes_found_in_input": {
+    "D15_T1_Q01": {
+     "1.560": true,
+     ".120": true,
+     "4.899": true,
+     ".028": true
+    },
+    "T3_D15_R1": {
+     "1.560": true,
+     ".120": true,
+     "4.899": true,
+     ".028": true
+    }
+   },
+   "verified": true,
+   "tasks": [
+    "D15_T1_Q01",
+    "T3_D15_R1"
+   ]
+  },
+  {
+   "reported": "Table 2: t=2.05, p=.042 (N 93/86, M 4.38/3.87, SD .18/.13); Table 3: MS 1.06/.128, df 2/261, F=3.78; 179 students",
+   "recomputed": "pooled t=21.6, Welch t=21.8; F=MS_between/MS_within=8.28; SS check 2.12/2=1.06, 33.34/261=0.128; total df 263 implies N=264, not 179",
+   "contradicts": true,
+   "note": "reported statistics cannot be produced from the table values",
+   "quotes_found_in_input": {
+    "D16_T1_Q01": {
+     "4.38 0.18 2.05 0.042": true,
+     "3.87 0.13": true,
+     "33.34 261 0.128": true,
+     "1.06 3.78 0.026": true
+    },
+    "T3_D16_R1": {
+     "4.38 0.18 2.05 0.042": true,
+     "3.87 0.13": true,
+     "33.34 261 0.128": true,
+     "1.06 3.78 0.026": true
+    }
+   },
+   "verified": true,
+   "tasks": [
+    "D16_T1_Q01",
+    "T3_D16_R1"
+   ]
+  },
+  {
+   "reported": "outlier rule: 3.29 SD above mean ($6.08, SD $42.50) → $133.58; groups 250 + 197 + 697 = 1144 vs abstract 447 + 619",
+   "recomputed": "6.08 + 3.29 × 42.50 = 145.91; 250 + 197 + 697 = 1144; 447 + 619 = 1066",
+   "contradicts": true,
+   "note": "the non-isolating group is 697 in the procedure and 619 in the abstract",
+   "quotes_found_in_input": {
+    "T3_D09_R1": {
+     "6.08 USD, SD = $42.50 USD": true,
+     "neither (n = 697)": true,
+     "or not (n = 619)": true,
+     "133.58": true
+    }
+   },
+   "verified": true,
+   "tasks": [
+    "T3_D09_R1"
+   ]
+  }
+ ],
+ "needs_human_image_check": [
+  {
+   "task": "D20_T1_Q01",
+   "claim": "A03 item scores do not add up to the Total column",
+   "why": "scores are only in the attachment page image; a person must read page 4 of A03"
+  }
+ ]
+}

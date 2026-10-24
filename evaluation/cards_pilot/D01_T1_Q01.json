@@ -1,0 +1,528 @@
+{
+ "task_id": "D01_T1_Q01",
+ "paper_id": "PeerJ:1604",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "83a63b8c61295af3105e855178971caebe355393451b8ae3f296cf641b6d25ed",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "结论把特定希望说成\"被IHS未涵盖的因素调节(moderated)\"，但研究既未提出也未检验任何调节/中介模型；这一核心结论超出了相关与一致性分析所能支持的范围。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "这是摘要和讨论的核心结论，直接依赖未做的分析。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Hypothesis. The authors should specify at the end of the introduction the hypothesis of mediation and moderation model."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "specific hopes of individuals are moderated by factors not captured by the IHS trait scale"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "indicates that specific hopes of individuals are moderated and perhaps even more strongly"
+    }
+   ],
+   "match_criteria": "指出\"moderated\"一类的结论没有对应的调节/中介检验（仅有相关和Kendall W），或要求先设定并检验相应模型。",
+   "acceptable_alternatives": [
+    "认为作者本意只是描述性的\"受其他因素影响\"、建议改写措辞而非补做调节分析，也算命中。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 40,
+    "from": "Y:P1",
+    "decision": "Y对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "研究目标虽在引言末尾提及，但没有明确的理论模型和可检验假设，结果部分也未按目标组织，读者难以判断两组比较、相关分析和因素排序各自检验什么。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "影响结果解释的框架，但不推翻描述性发现。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The hypothesis are not clear, authors are invited to add a section to describe the main goal of their paper."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "Authors should refer to a conceptual hope model, in describing their variables, to be able to design the hypotheses."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "it was the goal of our research to determine the"
+    }
+   ],
+   "match_criteria": "指出缺少理论框架或明确假设/研究问题，或指出结果与目标不对应。",
+   "acceptable_alternatives": [
+    "指出研究属于探索性描述研究、因而应明确写成研究问题而非假设，也算命中。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 40,
+    "from": "Y:P2",
+    "decision": "Y对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "原稿报告合并样本α=.869及四因素名称，但未报告各群体、各分量表的信度，也未检验四项改写后的结构。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "翻译和分量表解释影响核心测量有效性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Instruments. The authors should insert for each measures the factorial structure and internal consistency reliability that measures present in their study."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The English version of the IHS had been translated into Croatian by the authors and then back \n73\ntranslated by an independent language expert to confirm its validity. Four items were"
+    }
+   ],
+   "match_criteria": "指出合并α已有，缺口在分组/分量表及改写后结构；不宣称全无信度信息。",
+   "acceptable_alternatives": [
+    "可接受沿用原结构而不强制CFA，但须解释改写、分量表和跨组比较的测量边界。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 41,
+    "from": "X:P4",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R04",
+   "judgment": "原稿Questionnaire之后的Sampling已经叙述随机发卷顺序与调查程序，属于标题清晰度问题。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "影响方法可读性而非核心结果。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Procedures. Authors should insert procedure section after measures section."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Sampling\n87\nWe used two-stage convenience sampling of two different age groups of health professionals. \n88\nFirst, as a pilot study and with an assumption that the level of hope declared on the VAS or IHS \n89\ncould be influenced by the order by which examinees filled out these questionnaires, we \n90\nrandomized all first year students of health studies at the University of Split (who enrolled in \n91\ntheir first year of studies in 2011/2012) into two groups: the 1st group was given the IHS \n92\nquestionnaire followed by the VAS, while the 2nd group was first given the VAS followed by the \n93\nIHS. A simple random number generator was used for random allocation to the groups. As we \n94\nfound no evidence that the order of presenting questionnaires influenced either IHS or VAS \n95\nscores (Supplementary Table 1), in further analysis we treated both groups as one. As our joint \n96\nsample was age-homogeneous, in order to test the effect of age on IHS or VAS scores, we \n97\nrecruited working health professionals who attended the Education for lecturers of nursing \n98\ncourses in April 2012, Split. All of the working health professionals were given a questionnaire \n99\nin which the IHS questionnaire was printed first. Cronbach’s alpha"
+    }
+   ],
+   "match_criteria": "指明Questionnaire之后已有程序叙述；后稿核对标题及随机发卷步骤。",
+   "acceptable_alternatives": [
+    "指出这一要求不成立：程序本来存在，只需更清楚命名，不应据此判研究不可重复。"
+   ],
+   "status": "disputed",
+   "provenance": {
+    "sheet_row": 42,
+    "from": "X:P5",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R05",
+   "judgment": "表1–3可见，但题内没有指定APA规则，无法确认必须采用APA及具体违规项。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "属于呈现规范，不改变研究结论。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Table and Figures. Table and figures are not in line with APA style"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Table 1. Integrative hope subscale scores and levels of hope designated on visual-analog \n266\nscales (VAS) for students (n=161) and workers (n=88) of health professions \nVariable\nStudents \nMedian (IQR)\nWorkers\nMedian (IQR)\nP*\nIntegrative hope total score\n111.0 (105-118)\n115.0 (106-121)\n0.065\nIntegrative hope subscale\nTrust and confidence\n32.5 (31–36)\n36.0 (32–38)\n<0.001\nLack of perspective \n27.0 (24–30)\n26.0 (24–30)\n0.653\nPositive future orientation\n27.0 (25–29)\n27.0 (25–29)\n0.873\nSocial relations and personal value\n24.0 (22–26)\n26.5 (23–28)\n<0.001\nTotal hope score\nLevels of hope on VAS for \nFinishing studies in time \n90 (80–100)\n/\n/\nBeing healthy at the age of 60\n70 (60–80)\n85 (70–92)\n<0.001\nThe most hoped-for thing in life \n90 (76–100)\n95 (80–100)\n0.041\n267\n*Mann-Whitney U test"
+    }
+   ],
+   "match_criteria": "将表格格式要求与统计内容分开，不能把未指定的APA格式当实质错误。",
+   "acceptable_alternatives": [
+    "指出现有表格可读且未给定APA要求，因此不接受该要求作为扣分依据，可接受。"
+   ],
+   "status": "unresolved",
+   "provenance": {
+    "sheet_row": 42,
+    "from": "X:P8",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R06",
+   "judgment": "讨论从组间无显著差异推向特质稳定，理论定位与测量结果之间仍需更谨慎衔接。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "影响讨论与理论主张之间的对应。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Discussion. Authors are encouraged to review  discussion in line with theoretical model and revised theoretical framework."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Our study showed that there were no differences between total scores of trait hope between \n156\ntraining and working health professionals; and that trait hope is weakly to moderately correlated \n157\nwith health professionals’ specific personal hopes. Together these findings strengthen the \n158\nvalidity of hope as a human trait, and imply its stability in adult population, as demonstrated by"
+    }
+   ],
+   "match_criteria": "把讨论的具体推断与研究设计连接，不能仅以增加文献判已解决。",
+   "acceptable_alternatives": [
+    "若把本点限定为理论框架呈现，可判部分改善；稳定性证据另在对应参照点核对。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 43,
+    "from": "X:P7",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R07",
+   "judgment": "两个不同便利样本的横断面无显著差异，不能证明个体希望随时间稳定。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "直接影响希望作为稳定特质的主要结论。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 158 - could hope be viewed in terms of its stability or just persistent inclusion?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Together these findings strengthen the \n158\nvalidity of hope as a human trait, and imply its stability in adult population"
+    }
+   ],
+   "match_criteria": "指出横断面组间比较/相关与纵向稳定性之间的推断缺口，并定位讨论首段。",
+   "acceptable_alternatives": [
+    "可将稳定性写为与既有理论相容的解释或待检验假说，但不能写成本研究证实。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 43,
+    "from": "X:P12",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R08",
+   "judgment": "正文确有non-attempts of suicide措辞，但题内没有被引研究全文，不能确认与文献相矛盾。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "涉及背景引文的准确表述。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The use of hope in non-suicide attempts needs further exploration. It is incongruent with the rest of the literature. Line 56."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Hope has been positively correlated with \n55\nquality of life (Evangelista et al., 2003), self-care agency (Alberto and Joyner, 2008), caregiver \n56\nburden (Zink Jadaa, 2008), and non-attempts of suicide (Meadows et al., 2005)."
+    }
+   ],
+   "match_criteria": "定位引言的non-attempts，并说明无法从本题裁定外部文献相容性。",
+   "acceptable_alternatives": [
+    "可建议改为更清楚的风险保护表述，但不能声称已核实被引研究。"
+   ],
+   "status": "unresolved",
+   "provenance": {
+    "sheet_row": 44,
+    "from": "X:P9",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R09",
+   "judgment": "引言说明IHS整合常用量表，但未比较其对本研究具体事件希望问题的适切性。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "量表选择影响特质希望的操作化。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Identification of why this hope scale was chosen over others is required (line 72)"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "With \n63\nmore than 32 published instruments for the measurement of hope, Schrank et al., in 2011, have \n64\ndeveloped an Integrative Hope Scale (IHS) by combining properties of the most commonly used \n65\nhope scales in published research (Miller Hope Scale, Herth Hope Index, Snyder Hope Scale) \n66\n(Schrank et al., 2011)."
+    }
+   ],
+   "match_criteria": "承认整合量表这一已有理由，并具体指出它不足以证明优于所有替代工具。",
+   "acceptable_alternatives": [
+    "把常用量表整合视为探索研究可接受的务实理由，而不要求逐一比较全部量表，可接受。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 44,
+    "from": "X:P10",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R10",
+   "judgment": "引言已经提到宗教，但文化/宗教与量表差异的解释没有形成系统背景，且本研究没有测量宗教。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "影响宗教文化解释的背景铺垫。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "references to religiosity and hope (line 164 and beyond) need to be noted in the lit review section."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "It is the central tenet of religions, especially Christianity \n49\n(Benedict XVI, 2006, Titus 1:2, 2011)"
+    }
+   ],
+   "match_criteria": "区分已有宗教提及、文献组织建议与未测量宗教导致的解释限制。",
+   "acceptable_alternatives": [
+    "将补充宗教背景视为可选完善，保留宗教解释为推测而非实证结论，可接受。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 44,
+    "from": "X:P13",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R11",
+   "judgment": "让被试排序的四个\"正面\"因素（自信、雄心、乐观、社会支持）与IHS四个分量表并不一一对应，尤其用\"乐观\"代替\"缺乏前景\"分量表的反向；以此比较\"自选最重要因素\"与\"IHS最高分量表\"的一致性，构念对应存疑。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "\"因素排序一致性很低\"这一主要发现依赖该对应关系是否成立。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "line 83 notes 'aiming for positive factors' could this perception that hope is a positive, future oriented practice skew the results?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "best captures the inverse of the"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Following each of the VAS questions we also asked the respondents to"
+    }
+   ],
+   "match_criteria": "指出四个排序因素与IHS分量表的对应（特别是乐观↔缺乏前景）缺乏依据，或指出由此得出的一致性比较不可靠。",
+   "acceptable_alternatives": [
+    "从\"只给正面选项会引导回答\"角度批评，也算命中。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 45,
+    "from": "Y:P4",
+    "decision": "Y对"
+   }
+  },
+  {
+   "id": "R12",
+   "judgment": "结果同时报告χ²=2.632和P=.004，这一组合与通常正整数自由度的卡方检验不相容，且未给自由度供核验。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响四因素排序差异的统计解释。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(χ2=2.632, P=0.004 and χ2=6.438, \n145\nP=0.09, respectively)."
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(χ2=2.632, P=0.004 and χ2=6.438,"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "(Kendall's W from 0.024 to 0.117; Supplementary Table 2)"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "contributed to their levels (intensity) of hope for specific events (Kendall’s W from 0.002 to"
+    }
+   ],
+   "match_criteria": "指出χ²=2.632/P=.004这一具体组合或要求核对统计量、自由度和P值；不捏造正确值。",
+   "acceptable_alternatives": [
+    "可把它判为待澄清的报告错误，而不据此否定全部IHS–VAS相关。",
+    "统计报告前后不一致：χ2=2.632对应P=0.004不可能成立（任何常见自由度下P都远大于0.05），χ2=6.438、P=0.09不显著却被用来支持\"乐观最常被选择\"；Kendall W在结果中为0.024–0.117，在讨论中写成0.002–0.15。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 46,
+    "from": "X:P16",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R13",
+   "judgment": "原稿已报告四分量表的组间结果及IHS–VAS相关，但未清楚映射为两个研究问题。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "关系到比较与关联结果是否对应目标。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Authors should review the results in line with the hypothesis and in line with data analysis description\nDoes the first hypothesis analyze differences in the four subscale of IHS between students and workers they should report?\nWhat is the second one?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "There was no significant difference between the two groups in their IHS total score (Md=111, \n121\n95% CI 109-113 vs. Md=115, 95% CI 112-119; U=5353, P=0.065). However, workers had \n122\nhigher scores on the IHS’ ‘trust and confidence’ and ‘social relations and personal value’ \n123\nsubscale scores, as well as higher levels (designated on VAS) on being healthy at the age of 60 \n124\nand the things they most hoped for in life (Table 1). \n125\nSex differences were observed for the student population, with males reporting higher hopes for \n126\nbeing healthy at the age of 60 (U=1153.5, p=0.009). For both groups, trait hope (measured by the \n127\nIHS) showed a significant strength of correlation (r=0.18 to 0.48) with specific hopes measured \n128\nby the VAS (Table 2)."
+    }
+   ],
+   "match_criteria": "同时提及表1的四分量表比较与表2关联，避免把已报告内容说成缺失。",
+   "acceptable_alternatives": [
+    "认为研究目标与现有表1、表2已足够对应，并仅建议重排顺序，可接受。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 47,
+    "from": "X:P6",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R14",
+   "judgment": "结果称学生更常希望健康，但表3显示健康为学生46.50%、工作者70.51%，方向相反。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响群体差异的次要结论。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "with students hoping more for health, work and family, while \n135\nworkers for life contentment (Table 3)."
+    },
+    {
+     "input_field": "input/page_images",
+     "page": 18,
+     "observation": "表3 Health行：students 73 (46.50)，workers 55 (70.51)，P<0.001；工作者比例更高。"
+    }
+   ],
+   "match_criteria": "同时指出正文的学生更高与表3健康行的工作者更高，不把样本量差异误作百分比差异。",
+   "acceptable_alternatives": [
+    "可将其视为方向性文字笔误并要求更正，而不要求删除整个群体比较。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 50,
+    "from": "X:P17",
+    "decision": "X对"
+   }
+  }
+ ],
+ "neutral_points": [
+  {
+   "id": "N01",
+   "judgment": "Results未按比较、关联及排序设置子标题，可改善导航。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "仅影响结果的阅读组织。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The findings section might be better organised through use of sub-headings."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Results: A total of 161"
+    }
+   ],
+   "match_criteria": "具体指出Results子标题的缺失或新增位置。",
+   "acceptable_alternatives": [
+    "认为原顺序已经可读而不把子标题作为必要修改，可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 48,
+    "from": "X:P14",
+    "decision": "都不对"
+   }
+  },
+  {
+   "id": "N02",
+   "judgment": "结尾已提出确定具体希望影响因素和检验干预，不应称完全没有后续研究方向。",
+   "issue_type": "V8",
+   "importance": "low",
+   "importance_reason": "涉及未来研究建议的明确程度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The concluding statements need further exploration to strengthen the need for additional research in the field."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "further research should focus on determining the most influential factors \n205\nfor specific hopes and the effectiveness of interventions that aim to increase specific or \n206\ngeneralized hoping."
+    }
+   ],
+   "match_criteria": "定位结尾已有的因素与干预建议，并明确其推测性质。",
+   "acceptable_alternatives": [
+    "指出这一要求不成立也属合理判断：指出进一步扩展结尾是完善性建议，原稿已有清楚研究方向，这一强制要求不成立。"
+   ],
+   "status": "disputed",
+   "provenance": {
+    "sheet_row": 49,
+    "from": "X:P15",
+    "decision": "都不对"
+   }
+  }
+ ],
+ "label_reference": null,
+ "known_invalid_patterns": {
+  "X": [
+   "把要求中介/调节模型直接当成研究必须满足的设计。",
+   "声称原稿完全没有信度信息。",
+   "以外部Meadows论文未核实为由断言引文错误。",
+   "把作者声称已修改当作已完成验证。"
+  ],
+  "Y": [
+   "声称研究没有报告任何信度（文中报告了总分α=0.869）。",
+   "要求作者报告人口学常模——作者已说明不以建立常模为目标，且样本为方便样本。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 3
+}

@@ -1,0 +1,275 @@
+{
+ "task_id": "T3_D06_R1",
+ "paper_id": "ORE:4-24",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "dc99e564ef5a4c243e4626492067fe1bf7ec3391bf3a5dfe7f5913f7a3fd198f",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "partially_resolved：作者为\"用户不愿评论\"的解释辩护，认为与既有文献一致，修订稿中原句保留；该解释仍没有本研究数据支持。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "检验模型能否区分\"引用文献\"与\"本研究证据\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "As far as the paper is concerned, this correlation is now based on any evidence."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "These findings indicate that users may not be comfortable commenting on topics connected to sustainable construction"
+    }
+   ],
+   "match_criteria": "指出原句仍在、解释缺乏本研究数据，判部分解决或未解决。",
+   "acceptable_alternatives": [
+    "认为作者已以文献支持、属合理推测，判已解决，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 191,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "partially_resolved：后稿补受众/重叠限制和未来建议，未做分层；范围可合理限定为该机构账户表现，不能据此称一般平台优劣已确定。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "受众结构影响跨平台表现差异的外推。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "demographic data has not been used to evaluate"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "There is very little engagement with the literature."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "ulation, potentially limiting the generalizability of the\nfindings (Berkowitz & donnerstein, 1982). Knowing\nthe exact characteristics of our audience and understanding\n\nthe potential for audience overlap and relapse is a significant\nlimitation. With available analytical tools the audience was\nstudied on each social media channels, however these functions are limited and not all social media channels offer the\nsame kind of data. Comparability of the three social media\nchannels is an additional limitation (Kietzmann et al., 2011).\nThe number of followers is different on the three channels\nand there might be an overlap between followers. However, in\nthe analysis we did account for repeated measures of the\nsame post on different platform by including the unique post\nID as a source of random error. While it is likely there is\nsome duplication of individuals between platforms, we do\nnot have the information to determine if the same individuals\nresponded to the posts on multiple platforms. Despite\nthese limitations we believe the data provides valuable insights\ninto the performance of the posts between platforms, as our\nstudy revealed that regardless of the social media channel,\nposts containing an image with people, performed the best. We\nsuggest that future studies investigate about the characteristics\nof audience on different social media channels and its\neffects on post engagement to address these limitations more\ncomprehensively.\nMoreover, the fact that posts were shared from an institutional\naccount and not a physical person can influence the results.\nAppropriately interpret"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Knowing the exact characteristics of our audience and understanding the potential for audience overlap and relapse is a significant limitation."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "as our study revealed that regardless of the social media channel, posts containing an image with people, performed the best"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "For the analysis we applied Poisson regression as our data was count data of relatively low values"
+    }
+   ],
+   "match_criteria": "指出三平台受众/粉丝构成不同而未分层，限定为机构账户表现，不能据原始计数推出一般平台优劣。",
+   "acceptable_alternatives": [
+    "可以不增收用户资料，将结论限为该账户受众中的描述性比较，并把用户构成列为无法排除的解释。",
+    "resolved / partially_resolved：讨论部分补充了大量文献对照，局限部分扩充了受众特征、跨平台可比性和算法变化等说明。",
+    "unresolved（审稿人未提），且有所加重：修订稿新增\"无论哪个平台，带人物图片的帖子表现最好\"的表述，而样本仅30帖、类型与主题和时间混淆、来自单一机构。",
+    "unresolved（审稿人未提）：泊松回归的过度离散和重复测量问题未处理。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 192,
+    "from": "Y:P4",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "unresolved：阶段2同时换季并加入alt text，未显著不能分别证明两因素无效；格式按周循环、内容非随机，四次后追加type3重复内容仍混有时间和顺序，不能确认内容完全不影响。结果适合有限的格式关联描述。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "研究设计不能分离时序与处理因素，却给出排除式结论。",
+   "origin": "card_author",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "There is very little engagement with the literature."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "nce\nbetween the two phases, considering the time dimension\n(season) and the added alternative text. The alternative text\nwas added to posts in phase 2. It means that each social media\npost that contained an image had also the written alternative\ntext that is explaining what is on the image, enabling wider\naccessibility. It is usually used to describe elements, like photos\nand other types of data visualizations. The difference between\nthe two phases is not statistically significant when comparing\nnumber of likes, impressions and engagement. Number of\ncomments and shares was very low, so we did not include these\ntwo parameters in the analysis. Furthermore, number of likes on\nTwitter (X) is always lower compared to number of likes on\nLinkedIn and on Facebook, in all types of posts. On the other\nhand, number of likes on LinkedIn and Facebook is relatively\n\nsimilar in all types of posts and both phases (Figure 4).\nWe observed the same result in terms of impressions on\nTwitter (X) as it is always considerably lower (Figure 5).\nImpressions are higher on LinkedIn compared to Facebook,\nregardless of type and phase. Engagement is the lowest on\nFacebook (Figure 6), a bit higher on Twitter (X)"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": " goals other than\nprofessional.\nRegarding the third and fourth research questions we found\nthat the time dimension (season) and alternative text does not\ninfluence the engagement and other monitored parameters,\nas the analysis revealed there was no significant difference\nbetween posts of phase 1 and phase 2. Due to social media\nalgorithms constantly changing, it is difficult to forecast when\nis the optimum time to post (Post, 2021). The uncontrolled\nchanges of social media algorithms, which the account holders\ncannot influence, can also affect the reason why there is no\nsignificant difference between the two phases in relation to\nadding alternative text.\nFurthermore, we identified limitations of our study. First, the\naudience in this study "
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "t is also less direct, as found in past studies\n(Li & Xie, 2020).\nFinally, with the analysis of the additional weekly posts of\nonly type 3 we confirmed that the studied differences of\nengagement can be attributes to the studied factors. Namely, we\n\ndiscovered that if we share the same content in as different type,\nthe result is the same (e.g. the shared content does not affect our\nresults). On average, these additionally shared posts of type 3\nperformed better in terms of engagement, compared to the same\ncontent shared as type 1 and type 2.\n\nDiscussion\n\nIn our study we found that social media posts related to sustainable construction topics, shared on social media channels\nof a research institute, containing an image with people, performed the best on different social media channels. This is\nwhy, in relation to the first research question we discovered\nthat social media posts with an ima"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Knowing the exact characteristics of our audience and understanding the potential for audience overlap and relapse is a significant limitation."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "as our study revealed that regardless of the social media channel, posts containing an image with people, performed the best"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "For the analysis we applied Poisson regression as our data was count data of relatively low values"
+    }
+   ],
+   "match_criteria": "至少指出季节/替代文本完全混杂和非显著不等于无效，并识别追加验证不排除顺序的限制。",
+   "acceptable_alternatives": [
+    "可以保留30条帖子和四次补充中的type3较高观察，作为待随机/平衡重复验证的探索结果。",
+    "resolved / partially_resolved：讨论部分补充了大量文献对照，局限部分扩充了受众特征、跨平台可比性和算法变化等说明。",
+    "unresolved（审稿人未提），且有所加重：修订稿新增\"无论哪个平台，带人物图片的帖子表现最好\"的表述，而样本仅30帖、类型与主题和时间混淆、来自单一机构。",
+    "unresolved（审稿人未提）：泊松回归的过度离散和重复测量问题未处理。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 192,
+    "from": "Y:P7",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R04",
+   "judgment": "reviewer_request_not_warranted / declined：R1的结构建议（分开引言和理论背景、按假设组织）作者未采纳，理由是研究为探索性、以研究问题引导。这些是可选的写作建议，不采纳不构成实质缺陷。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "检验模型是否机械要求照办可选建议。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "My suggestion is to have different sections between Introduction and Theoretical Background (Literature Review)."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "different sections\nbetween Introduction and Theoretical Background"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "research\nquestions resemble specific and testable hypotheses."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "In our study we were guided by research questions as our research is exploratory"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": " studies. Conclusions can\nsupport research organizations in improving their science\ncommunication.\n\nIntroduction\n\nThe field of communication witnessed many changes over time.\nMany communication models exist that define communication\nand describe its various elements (Foulger, 2004). The communication models developed in the past have been adapted also\nto the field of science with the goal of efficient science communication (Burns et al., 2003). Communication and dissemination\nof research findings is common practice among scientists.\nOften, this is also a requirement from research funding bodies.\nWe can define it as a planned process that carefully considers\nthe intended audience and the contexts in which research\nfindings will be presented, with the goal of effectively communicate and engage with the target audience through various\ninteractions (Wilson et al., 2010).\nThere are several ways to disseminate and communicate about\nresearch. Science communication is about sharing findings,\nincreasing public appreciation, increasing knowledge, and understanding, influencing opinions, policy preferences and behaviours, and is about promoting diverse science perspectives\nfor comprehensive societal challenges (Medicine et al., 2017).\nAs the scientific topics related to environmental issues are complex and hard to understand for the general public (Moser, 2010),\nthe models of communication must be adopted and include\nnot only the transfer of information from the messenger to\nthe audience through a channel, but they must recognize also\nthe context and the meaning of the message (Jasano"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "er to follow the main objective of this study, we\nformulated the following research questions (RQ):\nRQ1: What are the effective types of messages to be shared\non social media channels (Facebook, Twitter (X), and\nLinkedIn) to increase engagement of the target audience\ntowardssustainable construction solutions?\nRQ2: Are there any differences among the three social media\nchannels used in terms of message effectiveness?\nRQ3: Are there any differences connected with time/season?\nRQ4: Are there any differences connected with the added\nalternative text to social media posts with an image?\n\nMaterials and methods\n\nFor this study the content and materials were prepared and\ncollected in English and posted on institutional social media\nchannels of the research institute InnoRenew CoE. InnoRenew\nCoE is a research institute dedicated to research and innovation in the field of renewable materials and healthy built\nenvironments. Two key research areas are wood modification and restorative environmental and ergonomic design\n(REED), which supports creating positive health impacts for\nbuilding users and the environment.\nBased on data obtained on April 17, 2023, InnoRenew CoE\nis active on Facebook with 1953 followers, Twitter (X) with\n1430 followers and LinkedIn with 2571 followers. The\ninstitute is posting only content in English on its social media\nchannels. Compared to other, similar, research institutions\nfrom Slovenia, for example the Slovenian National Building\nand Civil Engineering Institute, InnoRenew CoE has higher\nnumber of followers, while in comparison with bigger international res"
+    }
+   ],
+   "match_criteria": "不把未采纳结构建议判为实质未解决。",
+   "acceptable_alternatives": [
+    "unresolved：后稿仍保留合一引言，回应仅承诺未来考虑；该组织建议未落实，不构成核心结果失效。",
+    "resolved：后稿保留四RQ及对应结果/讨论；作者解释探索定位可合理不改成预设假设。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 193,
+    "from": "X:P3",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R05",
+   "judgment": "partially_resolved：后稿补平台/外部效度等引用，讨论基本论证仍相近；引用增多不等于现有数据验证了传播机制。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "科学传播文献连接决定机制讨论的理论依据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "realities of scientific communication\nthrough social media have not been explored."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "nels offering\nthe possibility of dialog and they became a crucial part of\ncommunication strategies.\nSocial media play an important role in science communication. The emergence of different social media channels has\nrevolutionized the manner in which the general public interacts\nwith scientists and scientific institutions. Social media means a\n\ntwo-way technology-facilitated dialogue, that is more interactive,\ncompared to traditional media (Kaplan & Haenlein, 2010).\nIt allows information to spread rapidly in a digital community (Darling et al., 2013). Users engage on social media channels with liking, commenting, and sharing posts (Hwong et al.,\n2017). Scientist are using social media to share their scientific results and the general public is using them to search for\ninformation (Van Noorden, 2014). Scientists are quickly adopting social media for disseminating their research results\nbecause science communication is becoming more and more\nimportant (Parsons et al., 2014). Science relies heavily on\nsocial interaction, and scientists require effective communication and creativity, since inability to convince fellow\nexperts of the significance of one’s work can result in being\ndisregarded and irrelevant (Insall, 2023).\nMany social media channels exist, like Twitter (X), Facebook,\nYouTube, Pinterest, Instagram, and different blogs. Three\nchannels dominate science communication, namely Twitter (X),\nFacebook, and LinkedIn (Collins et al., 2016). The surveyed\nscientists use Facebook for personal use and they share\nscientific results with colleagues, family and friends, and only\nfe"
+    }
+   ],
+   "match_criteria": "承认原有平台/图像/算法/科研传播文献，具体评价讨论衔接，不笼统称文献全无。",
+   "acceptable_alternatives": [],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 194,
+    "from": "Y:P3",
+    "decision": "Y对"
+   }
+  }
+ ],
+ "neutral_points": [
+  {
+   "id": "N01",
+   "judgment": "unresolved：Facebook的clicks不等同另两平台包含多种互动的engagement，reach也不等同可重复计次的impressions；不同粉丝规模下比较原始计数不足推出哪个平台更有效。需保留平台内格式比较并明确跨平台口径/曝光机会限制。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "影响主要跨平台效果排序的可比性。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "We monitored engagement on Twitter (X) and LinkedIn, which is measuring the\ntotal number of times a user has interacted with a message.\nWe compared it with the number of clicks on the post on Facebook. Engagement is an important metric revealing that the\ncontent is compelling, and it leads to discussion. Further, we\nmeasured impressions on Twitter (X) and LinkedIn, which\nare reflecting the number of times a message was seen, hence\nwe can compare it with the reach of a message on Facebook.\nImpressions are important to understand if the message is reaching a vast audience. Therefore, in the analysis we used the term\nengagement which includes engagement on Twitter (X) and\nLinkedIn and number of clicks on Facebook, and the term\nimpressions which includes impressions on Twitter (X) and\nLinkedIn, and reach on Facebook. Additionally, we collected\ndata about number of likes, comments, and shares received on"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "As stated above,\nwe compared parameters that are differently named on the\nsocial media channels but according to the definitions they\nmeasure the same thing.\nWith the Poisson mixed model, we modelled the data\npredictions based on the number of likes (Figure 7). We found\nout that each type is different and that the most likes are of\ntype 3 posts, across all social media channels. Effect of type is\nconsistent. We expect that on Facebook and LinkedIn, the\nnumber of likes is approximately the same, "
+    }
+   ],
+   "match_criteria": "具体区分两组被合并的指标及平台规模；不要求将所有平台本就相同的likes也判为不可比较。",
+   "acceptable_alternatives": [
+    "可报告各平台各自定义下的计数，避免将它们作为同一测量量尺或同等用户曝光率。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 195,
+    "from": "Y:P6",
+    "decision": "都不对"
+   }
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision",
+   "acceptable_under_rubric"
+  ],
+  "rationale": {
+   "X": "审稿人的关切多以局限说明处理；核心结论的推广在修订中被加强，统计与设计问题未处理。若只按审稿人关切衡量，判可接受也有依据。",
+   "Y": "新增受众限制有用，但指标口径合并、时间/替代文本不可分与用户动机推断仍保留，须缩小主要解释。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "因作者声称\"已用修订模式标注所有修改\"就判已解决。",
+   "要求作者采纳R1的结构建议。"
+  ],
+  "Y": [
+   "把探索性RQ必须改为假设当作方法硬标准。",
+   "由少评论推断用户不舒服或不愿建立关系。",
+   "说阶段不显著证明季节和alt text各自无影响。",
+   "将clicks/engagement和reach/impressions默认等价。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

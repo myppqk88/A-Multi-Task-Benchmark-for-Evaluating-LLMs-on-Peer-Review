@@ -1,0 +1,107 @@
+{
+ "task_id": "D09_T2_Q01",
+ "paper_id": "PeerJ:10705",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "779785e38bc81f53e0b5461cd563b49b74467dff0283dccbfe5b717d7cf9f6df",
+ "card_version": "pilot-1.0",
+ "status": "provisional_pending_second_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "回应明确将假设重排以对应结果/讨论，并相应调整量表呈现顺序，直接回答对齐/交叉参照的呈现要求，无需在回应中重贴所有假设。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "原要求是让确认性假设与结果容易对应。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "results does not adhere to the same order of hypotheses."
+    },
+    {
+     "report_id": "comment",
+     "exact_quote": "Either section could be re-organized"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "We thank the reviewer for raising this issue. We have now reordered our hypotheses to match the ordering of the results & discussion sections, as we believe this to be the most logical reporting structure. We have also altered the order in which we present the measures to more closely reflect the new ordering of the hypotheses."
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "We have now reordered our hypotheses to match the ordering of the results & discussion sections"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "as we believe this to be the most logical reporting structure"
+    }
+   ],
+   "match_criteria": "承认具体的重排动作及其目的；重排不等同重新预注册或变更假设内容，实际落实未核验。",
+   "acceptable_alternatives": [
+    "可建议再加原编号对照表以减少重排误读，但它是增强透明度的可选做法，不是原关切未回应。",
+    "回应调整了假设顺序（而非结果顺序）以与结果和讨论对应，并相应调整了测量部分的顺序。这满足了\"对齐\"的要求，审稿人也允许这种做法。",
+    "重排预注册假设的编号时，应保留与预注册文件的对应关系（如注明原编号），否则读者难以核对哪些分析是预注册的；回应没有提到这一点。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 14,
+    "from": "Y:P1",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "关切：结果部分的顺序与预注册假设的顺序不一致，要求二者对齐或至少交叉引用；审稿人允许调整任一部分。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "界定要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Either section could be re-organized but it would help the reader if they were aligned or at least cross-referenced."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "I found it confusing that the results does not adhere to the same order of hypotheses."
+    }
+   ],
+   "match_criteria": "准确复述要求：对齐或交叉引用，任选其一。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 15,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": {
+   "X": "直接满足了对齐要求；若重视与预注册编号的可追溯性，可判部分充分。",
+   "Y": "原关切允许重组任一节，回应给出具体对应动作，文字层面充分；revision_verification=not_assessed。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "因作者没有按编辑建议调整结果顺序就判不充分（审稿人允许任一方式）。"
+  ],
+  "Y": [
+   "用修订稿实际顺序来补证本题。",
+   "把重排顺序等同篡改假设而不给题内依据。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 1
+}

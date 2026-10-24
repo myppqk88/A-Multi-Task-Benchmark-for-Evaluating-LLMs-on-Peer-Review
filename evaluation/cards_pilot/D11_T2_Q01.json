@@ -1,0 +1,195 @@
+{
+ "task_id": "D11_T2_Q01",
+ "paper_id": "ORE:5-286",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "84ee72f9ee29c68b12982a07a001a4a7975ece2055646196e3876c9743d25336",
+ "card_version": "pilot-1.0",
+ "status": "provisional_pending_second_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "回应逐项对应：说明第3节区分一手与二手资料，第4节和表2加入了具体资料摘录，方法部分说明编码由第一作者完成、合作者复核编码结构与类别定义。三项要求都得到直接回应。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "决定回应的主要充分性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Who conducted the data analysis?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Section 4 and Table 2 now include concrete empirical excerpts"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "open, axial and selective coding were conducted by the first author and how the co-authors reviewed coding structures and category definitions"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "It now specifies how open, axial and selective coding were conducted by the first author and how the co-authors reviewed coding structures and category definitions to strengthen analytical robustness."
+    }
+   ],
+   "match_criteria": "识别出三项要求都得到回应。",
+   "acceptable_alternatives": [
+    "回应明确第一作者执行开放/轴心/选择编码，合作者审查结构与类别定义；直接回答谁分析及他人参与，但没有独立双编码或一致率。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 17,
+    "from": "X:P2",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "关切包含三项要求：说明一手资料（备忘录、田野笔记、会议观察）并在结果中实际引用；用直接引文或观察实例支撑主要发现；说明谁做了分析、是否有编码者间一致性的做法。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "界定三项要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Also, inter-coder reliability practices should be explained."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "The primary data sources must be clarified."
+    },
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "direct quotes from the interviews/ meetings or short illustrative examples"
+    }
+   ],
+   "match_criteria": "完整拆出三项要求。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 18,
+    "from": "X:P1",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "\"合作者复核编码结构\"并不等于编码者间一致性检验，回应却称这已回答了编码者间信度的问题；此外，回应的大部分篇幅讨论图3框架和政策含义，与本条关切无关，结尾还把审稿人写错了（\"Reviewer 1\"）。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "限制回应的严谨程度。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "This addresses the reviewer’s question regarding inter-coder reliability"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "directly addresses Reviewer 1’s concerns"
+    }
+   ],
+   "match_criteria": "指出合作者复核不等于编码者间信度，或回应夹杂无关内容。",
+   "acceptable_alternatives": [
+    "认为质性研究中协商式复核是可接受的替代做法、回应充分，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 19,
+    "from": "X:P3",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R04",
+   "judgment": "回应列出治理会议、工作组、培训中的备忘录/场记，并说明区分一手二手资料的位置，但实际如何生成、记录范围和实例未在回应中展示。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "本题要求来源、具体证据及编码责任三个层面。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "primary data sources must be clarified."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Section 3 distinguishes primary from secondary sources and indicates that memos and field notes from governance meetings, working groups and training events constitute core evidence supporting the findings."
+    }
+   ],
+   "match_criteria": "承认来源类型和位置具体化，不能将“已解释如何生成”当生成协议已提供。",
+   "acceptable_alternatives": [
+    "可认为来源场域/材料类型已具体回应要求，但不声称实际生成程序已经展示。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 20,
+    "from": "Y:P1",
+    "decision": "Y对"
+   }
+  },
+  {
+   "id": "R05",
+   "judgment": "回应指出表2/第4节新增讨论、评估反馈和解释张力摘录，方向相关，却未给出任何摘录或编码实例。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "本题要求来源、具体证据及编码责任三个层面。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "more evidence should be provided"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Section 4 and Table 2 now include concrete empirical excerpts that illustrate partners’ discussions, evaluation feedback and interpretive tensions, thereby making the connection between raw data and analytical categories more explicit."
+    }
+   ],
+   "match_criteria": "区分证据已添加的位置声明与本回应能看到的实际证据。",
+   "acceptable_alternatives": [
+    "可认为给出表2和第4节的具体修改位置足够回应呈现建议，仍不确认未展示摘录的实际内容。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 21,
+    "from": "Y:P2",
+    "decision": "Y对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": {
+   "X": "三项要求均有具体回应；把协商式复核等同于编码者间信度略有夸大，判部分充分也有依据。",
+   "Y": "分析责任回答具体，来源及表2位置也明确，但实际生成程序和摘录仍以“已增加”概括；若要求仅为说明修改位置而非重贴证据，sufficient可接受，必须保留未核验修订的边界。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "把回应所述的表2摘录当作已核实存在。",
+   "因没有报告kappa系数就判不充分（质性研究不一定需要）。"
+  ],
+  "Y": [
+   "用后稿实际表2替本回应补出引语。",
+   "声称已独立计算或看见κ。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

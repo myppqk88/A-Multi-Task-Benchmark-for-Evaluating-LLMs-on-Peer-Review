@@ -1,0 +1,314 @@
+{
+ "task_id": "T3_D12_R1",
+ "paper_id": "ORE:3-166",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "836202acdbcdf66cb0fa4f96fe3619d52537b6a0d58daec19bf3a3cf10e463bd",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "unresolved / declined：区位商仍以五国合并份额为基准；作者承认国家结构差异使比较困难，但以\"目标是直接比较欧洲区域\"为由保留，没有做国内基准的补充分析。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "核心指标的可比性问题未处理。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the authors should focus on within-country variation"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "authors should focus on within-country variation."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "the LQ index is calculated by dividing the regional shares by the aggregate transnational share of the five countries under study"
+    },
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "we went with the relative-to-transnational LQ as our main index"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "hare at the national level. Here, the LQ index is calculated by\ndividing the regional shares by the aggregate transnational share\nof the five countries under study; this serves in directly comparing skill mismatches between European regions. The LQ\nin the frame of this study shows the relative-to-transnational\n\nFigure 2a. Over/under-concentrations of highly educated workers in low skill-level occupations, relative regional concentrations\n2009. Source: Own elaboration based on Eurostat data.\n\nFigure 2b. Over/under concentration of highly educated employed persons in low skill occupations, relative regional\nconcentrations, 2021. Source: Own elaboration based on Eurostat data.\n\nconcentration of highly-educated employed persons in occupations requiring low [LQ(L)], medium [LQ(M)] and high\n[LQ(H)] skill levels, calculated through the following formulas\n(1.1, 1.2 and 1.3 respectively). This way, we find where each\ntype of skill (mis)match is mostly concentrated. In our analysis,\nvalues between 0.85 and 1.15 are treated as being close to the\naverage share, values above 1.15 indicate an over-concentration,\nwhile values below 0.85 show under-concentration.\nLQL =\n\nELR /ER\n\n(1.1)\n\nELN /EN\n\nwhere ELR is the number of employed persons with high educational attainment in low skill-level occupations in region R, ER\nis the total employed population in region R, ELN is the number\nof employed persons with high educational attainment in\n\nlow-skill level occupations in all study countries (N), a"
+    }
+   ],
+   "match_criteria": "指出跨国基准未改、国家结构差异问题仍在。",
+   "acceptable_alternatives": [
+    "partially_resolved：后稿解释共同基准和制度差异，未增国内基准敏感性分析；可保留跨国描述，但不能以相对高低直接比较匹配效率。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 220,
+    "from": "X:P1",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "partially_resolved：修订稿把LQ与区域和国家GDP、区域创新指数、人口密度、老龄化指数等做了关联，为五个决定因素提供了描述性证据；但这些是生态层面的相关，不能把因素与错配的关系解释为因果。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "决定因素的证据从无到有，但强度有限。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "there is no systematic characterisation of their variation shown with data"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "there is no systematic characterisation of their variation shown with data."
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "at least displaying the co-variation between the factors"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "stronger\nfocus on the geography of skill mismatches"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "risk that we simply\nmisjudged the level of skills needed in jobs"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "where in the economy do\nthe most important mismatches arise?"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "mismatches actually have consequences for regional growth"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "it links the LQL, LQM, and LQH with regional and national GDP"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "tiary\neducation), and low if it corresponds to ISCED levels 0 to 2\n(pre-school to lower secondary).\nRegarding the correlation analysis, the research at hand statistically associates the LQ values of the above analysis with crucial factors underlying the geographical allocation of skills as\nnoted in the relevant literature (e.g. Cedefop, 2010). Specifically,\nit links the LQL, LQM, and LQH with regional and national\nGDP (both total and per capita), the European Commission’s\nRegional Innovation Index, urbanization levels,2 the Ageing\nIndex,3 and the Dependency Index4 (see Table 1). All metrics\n\n2\n\ni.e., population density.\n\n3\n\nAgeing Index: (Population 65+) ∕ (Population 0-19)\n\n4\n\nDependency ratio: [(Population 65+) + (Population 0-19)] ∕ (Population\n20-64)\n\nwere retrieved from Eurostat and were calculated for the years\n2009 and 2021 at the regional level, except for the Regional\nInnovation Index, which was retrieved from the European\nCommission5 and is available only for 2021. The value of the\ncorrelation coefficient (Pearson’s r) between two variables\nranges from -1 to 1: a coefficient of +1 shows a perfectly\npositive linear correlation, while a coefficient of -1 shows a\nperfectly negative linear correlation. A value of 0 means that\nthere is no correlation between the two variables tested (Gialis\n& Taylor, 2016).\n\nAn analysis of highly educated workers per\noccupational skill level from a cross-regional\nperspective\nHighly educated workers in low skill-level occupations\n\nLQL sho"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "itiveness and investments in education\nare not returned into the economy (McGuinness et al., 2018).\nVarious factors shape the widely documented uneven geography of skills and their mismatches (Alamá-Sabater et al.,\n2024; Cedefop, 2010). Importantly, regional mismatches can\nbe greatly affected by the robustness (or lack thereof) of the\nbroader national economy. In underdeveloped countries, for\ninstance, talent is more starkly concentrated in spatial and\nsectoral terms, leading to greater cross-sectoral asymmetries in\nproductivity (Porzio, 2017). In contrast, in developed countries,\nwhich are characterized by more dynamic economies, talent\nis more optimally allocated; however, for this to occur\ninstitutional barriers have to be low (Allen et al., 2013). At the\nregional level, the dynamism of an economy is equally crucial.\nCapital- and technology-intensive activities tend to concentrate in already advanced regions, fueling new rounds of\n\nuneven development (Viñuela-Jiménez et al., 2010). As such,\nmetropolitan areas with a diverse economic base concentrate\nhuman capital, cutting-edge technology, and finance-related\nactivities, while economically backward and declining regions\nbecome even more disconnected from knowledge and innovation (Feldman et al., 2021). Similarly, developed industrial\nregions tend to attract new activities, workforce, and capital, as they further industrialise (Boudeville, 1968), although\nin many cases they also spill over positive effects to their\nsurroundi"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "evel if they correspond\nto ISCO level 9 (entry level manual and non-manual positions;\nsee Annex 1). The classification of skill levels was carried out\nat our request by Eurostat itself, to eliminate the risk of misjudging skill levels and to increase the reliability of the mismatch index. Also, as the focus of this paper is on the regional\nlevel, our analysis cannot include skill mismatches by sector\nand region, given that this would lead to extensive data fragmentation and therefore to issues of reliability and missing\nvalues.\nTo distinguish education levels, Eurostat follows UNESCO’s\n(2012) classification. Specifically, the education level is designated as high if it corresponds to ISCED levels 6 to 8 (tertiary\neducation: from bachelor’s degree to doctorate or equivalent),\nmedium if it corresponds to ISCED levels 3 to 5 (upper secondary to post-secondary education, including short tertiary\neducation), and low if it corresponds to ISCED levels 0 to 2\n(pre-school to lower secondary).\nRegarding the correlation analysis, the research at hand statistically associates the LQ values of the above analysis with crucial factors underlying the geographical allocation of skills as\nnoted in the relevant literature (e.g. Cedefop, 2010). Specifically,\nit links the LQL, LQM, and LQH with regional and national\nGDP (both total and per capita), the European Commission’s\nRegional Innovation Index, urbanization levels,2 the Ageing\nIndex,3 and the Dependency Index4 (see Table 1). All metrics\n\n2\n"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "e the reliability of the mismatch index. Also, as the focus of this paper is on the regional\nlevel, our analysis cannot include skill mismatches by sector\nand region, given that this would lead to extensive data fragmentation and therefore to issues of reliability and missing\nvalues.\nTo distinguish education levels, Eurostat follows UNESCO’s\n(2012) classification. Specifically, the education level is designated as high if it corresponds to ISCED levels 6 to 8 (tertiary\neducation: from bachelor’s degree to doctorate or equivalent),\nmedium if it corresponds to ISCED levels 3 to 5 (upper secondary to post-secondary education, including short tertiary\neducation), and low if it corresponds to ISCED levels 0 to 2\n(pre-school to lower secondary).\nRegarding the correlation analysis, the research at hand statistically associates the LQ values of the above analysis with crucial factors underlying the geographical allocation of skills as\nnoted in the relevant literature (e.g. Cedefop, 2010). Specifically,\nit links the LQL, LQM, and LQH with regional and national\nGDP (both total and per capita), the European Commission’s\nRegional Innovation Index, urbanization levels,2 the Ageing\nIndex,3 and the Dependency Index4 (see Table 1). All metrics\n\n2\n\ni.e., population density.\n\n3\n\nAgeing Index: (Population 65+) ∕ (Population 0-19)\n\n4\n\nDependency ratio: [(Population 65+) + (Population 0-19)] ∕ (Population\n20-64)\n\nwere retrieved from Eurostat and were calculated for the years\n2009 and 2021 at the "
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "period\n(2009–2021). Similar correlations, albeit mostly milder, are\nobserved between LQH scores and regional GDP per capita. In\ncontrast, correlations between LQH scores and national GDP\n(both total and per capita) cannot be regarded as significant.\nThe above findings indicate that perfect skill matching can\n\nmainly be observed in regions with robust economies, regardless\nif they are located in countries that are not as economically\ndynamic. A moderate positive correlation can also be observed\nbetween LQH scores (for both years under study) and population\ndensity in 2009. Although Pearson’s R values diminish when\nlooking into the respective correlation for 2021, the importance\nof urbanization levels in efficient skill matching is nevertheless highlighted. Conversely, a remarkable negative correlation between LQH scores and the ageing index is evident in\nTable 1. In fact, this link is consolidating over time, as it\nbecomes stronger for LQ and the Ageing Index’s values in\n2021. Another interesting observation is that ageing regions in\n2009 were not particularly bad or good in matching workers’\nskills with occupations, but they eventually proved pretty\nweak in this regard later on (in 2021). This marks that the age\nstructure at the regional level has become an indicator of skill\nmismatches, while in our study it appears to also be an indicator of future mismatches. Lastly, there also is a moderate\n\nFigure 3b. Over/under concentration of highly educated persons in middle skill oc"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "above 1.15 indicate an over-concentration,\nwhile values below 0.85 show under-concentration.\nLQL =\n\nELR /ER\n\n(1.1)\n\nELN /EN\n\nwhere ELR is the number of employed persons with high educational attainment in low skill-level occupations in region R, ER\nis the total employed population in region R, ELN is the number\nof employed persons with high educational attainment in\n\nlow-skill level occupations in all study countries (N), and EN is\nthe employed population in all study countries (N).\nLQM =\n\nEMR /ER\n\n(1.2)\n\nEMN /EN\n\nwhere EMR is the number of employed persons with high educational attainment in medium skill-level occupations in region\nR, ER is—as above—the total employed population in region\nR, EMN is the number of employed persons with high educational attainment in medium skill-level occupations in all\ncountries under study (N), and EN is as above the employed\npopulation in all countries under study (N).\nLQH =\n\nEHR /ER\n\n(1.3)\n\nEHN /EN\n\nwhere EHR is the number of employed persons with high educational attainment in high skill-level occupations in region\nR, ER is—as above—the total emp"
+    },
+    {
+     "input_field": "materials/manuscript_after/visual_pages",
+     "page": 18,
+     "observation": "后稿附录1（前稿表1）BG34在2021年三列13.86、58.55、26.53，合计98.94%，其他行也近100%；表说明未明确提供LQ分母所需全部就业者数量。"
+    }
+   ],
+   "match_criteria": "指出新增了相关性证据，同时指出其为描述性/生态相关。",
+   "acceptable_alternatives": [
+    "判为已解决也可接受。",
+    "partially_resolved：后稿表1新增GDP、创新、人口密度与年龄结构相关，回应了描述性要求；未直接测治理/GVC，简单双变量相关不能识别五机制因果效应。",
+    "partially_resolved：后稿重组为错配因素并补教育/就业制度文献，减少偏题；仍有广泛制度断言，应视为文献框架而非本研究实证结论。",
+    "partially_resolved：后稿说明Eurostat分类，却称由官方分类即可eliminate risk；官方来源不能消除该构念和时间可比性局限。",
+    "resolved：后稿明确地区部门碎片化会导致可靠性/缺失问题，改用文献示例；需承认部门机制未由本研究直接验证。",
+    "unresolved：后稿加入GDP相关及变化指标，却没有识别反向因果/混杂；不能由相关称增长受错配影响或国家经济决定错配。",
+    "unresolved：LQ公式分母写地区全部就业人口，但百分比表每地区低/中/高三列近乎合计100%，其标题与对象可能指另一种条件分布。需澄清这些份额究竟占全部就业者、高学历者还是职业组；分母不同会改变LQ含义和“错配规模”解释，不能擅自据表复算为真值。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 221,
+    "from": "X:P2",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R03",
+   "judgment": "partially_resolved：补充了样本覆盖（15岁以上全部就业者、两性）和缺失数据不做插补的理由；但是否含移民、全职/兼职、加权方式仍未说明，低技能组缺失数据的可靠性仍只是\"谨慎对待\"。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "样本与数据说明。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The paper omits critical details about the sample construction"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Eurostat’s sample covers all employed persons of both genders, aged 15 and above."
+    }
+   ],
+   "match_criteria": "判为部分解决，并指出仍缺的细节。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 222,
+    "from": "X:P3",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R04",
+   "judgment": "resolved：修订稿承认LQ是相对指标、其变化不代表绝对增减；删除了\"简单化、实证主义\"的表述和\"强有力的干预\"措辞。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "对应R2的若干关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "human capital theory is though dismissed as simplistic and positivist"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "It must be noted that the LQ is a relative index"
+    }
+   ],
+   "match_criteria": "指出已修订。",
+   "acceptable_alternatives": [
+    "指出承认相对性不等于报告了绝对规模，判部分解决，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 222,
+    "from": "X:P5",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R05",
+   "judgment": "declined：作者以篇幅和两个时点的历史意义为由，没有增加年份或做多年平均。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "稳健性检验未做。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the authors should use different years and average the results across 5 or 10 year intervals to reduce noise"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "we could add one or two years between 2009 and 2021. However, this could substantially add to the wordage of the manuscript."
+    }
+   ],
+   "match_criteria": "指出年份稳健性问题未处理；篇幅不是充分理由。",
+   "acceptable_alternatives": [
+    "认为两个时点有实质意义、理由可以接受，也可接受。"
+   ],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 223,
+    "from": "X:P4",
+    "decision": "X对"
+   }
+  },
+  {
+   "id": "R06",
+   "judgment": "unresolved：修订稿新增\"研究结果可为整个欧盟提供见解\"的表述，以体制覆盖替代代表性论证，推广过度。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "结论适用范围被放大。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "are the results a feature of the regions/countries that selected themselves into the university initiative?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "its findings can be contextualized more broadly and provide insight into the EU as a whole"
+    }
+   ],
+   "match_criteria": "指出新增的推广表述过强。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 223,
+    "from": "X:P6",
+    "decision": "X对"
+   }
+  }
+ ],
+ "neutral_points": [
+  {
+   "id": "N01",
+   "judgment": "partially_resolved：后稿称小样本地区会有LQ<1而被抑制，解释选择过程但未给抑制阈值或证据；小人数也可能来自小地区，不能由绝对样本少推相对LQ低。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "低技能数据缺失直接限制核心地图解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "fig. 1.1a and b."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": " educated workers being\nemployed in low skill-level occupations is inherently limited.\nAs a result, regions with a small number of such workers, which\nwould exhibit LQ scores below 1, have a non-statistically significant sample, thus data for them is missing. Conversely, the\navailable data allows for observing where highly educated workers are over-concentrated in low skill-level occupations. As such,\nin 2009, ove-rconcentration of this phenomenon was mostly\nobserved in Île-de-France (LQ=2.62) and in the southern regions\nof France, namely the agricultural regions of Midi-Pyrénées\n(LQ=3.42) and Auvergne (LQ=3.83), in the affluent region of\nRhone-Alpes (LQ=2.36), and in the touristic region of Provence-Alpes-Côte d’Azur (LQ=2.52). Similar trends can also be\nobserved in Thuringia (LQ=2.21), a region in Germany known\nfor its university, the Greek capital region of Attiki (LQ=1.97),\nand the capital region of Bulgaria Yugozapaden (LQ=1.81). For\n2021, we can see that in all French regions for which data are\navailable LQ values are particularly high (above 2.15). Other\nregions with even higher LQ values are Hovedstaden (LQ=3.30)\nand Midtjyllan (LQ=3.25) in Denmark.\n\nHighly educated workers in medium skill-level\noccupations\nLQM for 2009 shows that five German regions (Leipzig, Chemnitz, Brandenburg, Dresden, Mecklenburg-Vorpommern and\nDresden) stand out in terms of concentrating highly educated\nworkers in medium skill-level occupations, with LQ values\naround 1.30. Additionally, three "
+    }
+   ],
+   "match_criteria": "定位低技能地图缺失，指出绝对样本少不必意味着相对LQ<1，不能把未显示地区直接归类。",
+   "acceptable_alternatives": [],
+   "status": "supported",
+   "provenance": {
+    "sheet_row": 224,
+    "from": "Y:P11",
+    "decision": "都不对"
+   }
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision",
+   "acceptable_under_rubric"
+  ],
+  "rationale": {
+   "X": "核心指标的跨国基准问题和年份稳健性被拒绝处理，推广表述被加强；新增的相关性证据有所改善。若认为描述性研究可接受这些限制，判可接受也有依据。",
+   "Y": "后稿扩展制度框架与相关描述，但低样本/缺失推断、构念口径及新增相关符号冲突影响主要解释，仍需实质澄清并约束因果和效率语言。"
+  },
+  "rule": "both accepted: union of sets; primary agreed by both drafters, more critical first"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "因作者称\"已大幅修订\"就判已解决。",
+   "要求作者做区域因果推断。"
+  ],
+  "Y": [
+   "把LQ高于1解释为绝对错配率高或匹配效率已证明低。",
+   "认为Eurostat官方分类能消除所有测量误差。",
+   "把覆盖四类制度当全EU统计代表性。",
+   "把缺失地区自动当LQ<1。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 2
+}

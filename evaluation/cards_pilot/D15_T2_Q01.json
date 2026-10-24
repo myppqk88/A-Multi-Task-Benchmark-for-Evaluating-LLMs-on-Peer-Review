@@ -1,0 +1,110 @@
+{
+ "task_id": "D15_T2_Q01",
+ "paper_id": "F1000:134799",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "1d23a2898bc1097d3a4b2edf0459dccda3dabc87ecd70d0a2b16e1951f53565f",
+ "card_version": "pilot-1.0",
+ "status": "final_first_adjudication",
+ "reference_points": [
+  {
+   "id": "R01",
+   "judgment": "回应称N=212是在功效与可行性间平衡，但没有效应量、目标功效、公式或足够参数，属于理由概述，不能据此重现样本量。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "原关切要求具体说明为何212。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "solid justification for collecting only 212 responses"
+    },
+    {
+     "report_id": "comment",
+     "exact_quote": "It is recommended to provide a background for the population"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "The sample size of 212 participants, though modest, was calculated to achieve a balance between feasibility and statistical power."
+    },
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "Kindly provide a rationale."
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "was calculated to achieve a balance between feasibility and statistical power"
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "believe that the revisions made to the sample size justification adequately address the concerns raised"
+    }
+   ],
+   "match_criteria": "区分说“calculated”与给出计算依据。",
+   "acceptable_alternatives": [
+    "可接受探索性规模由可行性决定，但应坦承其性质而非声称已给充分功效依据。",
+    "关切：只收集212人的理由没有说明，要求提供总体背景和样本量的充分依据。审稿人认为方便抽样需要大样本来消除误差和偏差，这一前提有误：样本量能降低抽样误差，但不能消除选择偏差。",
+    "回应没有给出任何具体依据：只说样本\"经计算以平衡可行性与检验力\"，没有说明计算方法、效应量、α或检验力，也没有交代总体背景；大量篇幅是重复声称\"已充分回应\"。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 26,
+    "from": "Y:P1",
+    "decision": "都对"
+   }
+  },
+  {
+   "id": "R02",
+   "judgment": "回应承认初步性质和未来扩大/多样化样本，但未直接纠正扩大便利样本便能消除偏差的错误前提，人口背景也只被隐含提及。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "样本量与总体代表性是原要求的不同部分。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "number of responses needs to be quite high to eliminate the error and bias"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "This size allows for meaningful preliminary insights while acknowledging the need for future studies with larger and more diverse samples to enhance generalizability and validate our findings."
+    }
+   ],
+   "match_criteria": "既承认有限推广的回应，也指出未说明抽样偏差不能靠N自动消除。",
+   "acceptable_alternatives": [
+    "指出这一要求不成立：无需为消除便利取样偏差承诺一个足够大的N；合理限定结论也可回应推广关切。"
+   ],
+   "status": "partly_supported",
+   "provenance": {
+    "sheet_row": 27,
+    "from": "Y:P2",
+    "decision": "Y对"
+   }
+  }
+ ],
+ "neutral_points": [],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient"
+  ],
+  "rationale": "给出初步定位及可行性解释，但缺样本量具体依据与人口/抽样边界的直接阐明。",
+  "rule": "adjudicator chose Y"
+ },
+ "known_invalid_patterns": {
+  "X": [
+   "因回应称\"已充分回应\"就判充分。",
+   "要求作者通过扩大方便样本来消除偏差。"
+  ],
+  "Y": [
+   "把“calculated”当作功效计算已经展示。",
+   "引用后稿95%/10%来补本题回应。"
+  ]
+ },
+ "known_invalid_patterns_note": "起草者提出、未经裁决，仅供评分者参考。",
+ "recall_denominator_high": 0
+}
