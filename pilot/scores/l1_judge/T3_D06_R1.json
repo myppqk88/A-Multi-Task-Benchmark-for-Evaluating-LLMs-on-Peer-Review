@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D06_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "opus",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Type is confounded with topic and date (Table 2), and the four extra type 3 posts are unreported and affected by repetition. Supported, but it omits the season/alt-text confound that R03 requires."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Flags non-significant phase difference being read as no effect for RQ3/RQ4, plus overdispersion and an unreported model. Fits the R03 alternative; judged unresolved."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Separates clicks vs engagement and reach vs impressions across platforms. The side remark on the monitoring window is slightly wrong (48h exceeds LinkedIn's cited 30h), but this is peripheral."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The comment-reluctance claim is kept verbatim and is defended only by literature; judged unresolved, as the criteria allow."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Single institutional account, audience data not used, only a limitation sentence added, strong claims kept; partially_resolved."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Weekly cycling confounds type with topic and time, and the repost check has repetition/time issues with no statistics. Supported, but lacks the season/alt-text element of R03."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Notes no reported tests, overdispersion and the independence vs random-effect tension, and that non-significance is used to claim no season/alt-text effect. Fits the R03 alternative; unresolved."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Facebook clicks/reach vs engagement/impressions, and follower counts not normalised, undermining the LinkedIn-best claim."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The comment-reluctance sentence is kept and lacks evidence; judged unresolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Audience-data handling: limitation and future research added, no stratification; judged resolved, which the R02 alternatives accept."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The interpretation is retained and the reply only cites literature; unresolved. The claim that 'or that they' was newly added misreads the text, since that wording was already present, but this is minor."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Model specification and results are under-reported (no coefficients, CIs or p-values; regression vs mixed model wording). Supported by the material."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Phase is confounded with season and alt text, and the extra type 3 results are unreported yet described as 'confirmed'; unresolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Facebook clicks are grouped with engagement elsewhere and abstract wording is not narrowed; only a limitation was added."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Acknowledges added citations but notes the platform explanation remains unsupported assertion; partially resolved, a specific evaluation of the discussion."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Type is confounded with topic and date (Table 2), and the four extra type 3 posts are unreported and affected by repetition. Supported, but it omits the season/alt-text confound that R03 requires.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Flags non-significant phase difference being read as no effect for RQ3/RQ4, plus overdispersion and an unreported model. Fits the R03 alternative; judged unresolved.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Separates clicks vs engagement and reach vs impressions across platforms. The side remark on the monitoring window is slightly wrong (48h exceeds LinkedIn's cited 30h), but this is peripheral.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The comment-reluctance claim is kept verbatim and is defended only by literature; judged unresolved, as the criteria allow.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Single institutional account, audience data not used, only a limitation sentence added, strong claims kept; partially_resolved.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Weekly cycling confounds type with topic and time, and the repost check has repetition/time issues with no statistics. Supported, but lacks the season/alt-text element of R03.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Notes no reported tests, overdispersion and the independence vs random-effect tension, and that non-significance is used to claim no season/alt-text effect. Fits the R03 alternative; unresolved.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Facebook clicks/reach vs engagement/impressions, and follower counts not normalised, undermining the LinkedIn-best claim.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The comment-reluctance sentence is kept and lacks evidence; judged unresolved.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Audience-data handling: limitation and future research added, no stratification; judged resolved, which the R02 alternatives accept.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The interpretation is retained and the reply only cites literature; unresolved. The claim that 'or that they' was newly added misreads the text, since that wording was already present, but this is minor.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Model specification and results are under-reported (no coefficients, CIs or p-values; regression vs mixed model wording). Supported by the material.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Phase is confounded with season and alt text, and the extra type 3 results are unreported yet described as 'confirmed'; unresolved.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Facebook clicks are grouped with engagement elsewhere and abstract wording is not narrowed; only a limitation was added.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Acknowledges added citations but notes the platform explanation remains unsupported assertion; partially resolved, a specific evaluation of the discussion.\"}]}}"
+}

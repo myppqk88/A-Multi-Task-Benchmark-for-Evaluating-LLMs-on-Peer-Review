@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D09_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "haiku",
+  "B": "sonnet",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The manuscript gives no interaction F/p for the 2-way ANOVA, although the response claims one was tested. This is supported and substantive, but 'unresolved' disagrees with R04's partially_resolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Country confounding is not analysed and Table 1 has only age/gender, as the material shows. R09 judges this partially_resolved, so 'unresolved' does not match, but the point stands."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Correctly notes 'increased' became 'greater' while causal/inflate/coping language remains in the abstract and discussion. Partially_resolved agrees with R06."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Gives recomputable conflicts: n=619 vs 697, 3.29SD cutoff ≈145.9 vs 133.58, and IGDC d. Unresolved agrees with R08."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "The categorical/continuous explanation remains speculative and moderation wording is retained in H7. Partially_resolved agrees with R04."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R09",
+     "reason": "Covers subjective isolation, country confounding without analysis, and retained natural-experiment framing. Partially_resolved agrees with R09."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "The core finding rests on a correlation-difference test, the categorical test is null, and moderator language is retained. Partially_resolved agrees with R04."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The inflate/coping/increases claims lack a pre-pandemic baseline, which the text supports. 'Unresolved' conflicts with R06's partial judgement, so this does not match."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The wording was changed to the stronger 'clinically significant', which Ferguson's cut-offs cannot establish. This is supported, substantive, and not on the card."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The IGDC d=0.16 versus ≈0.06 and the absent interaction statistics are verifiable residual inconsistencies. Partially_resolved differs from R08's unresolved."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R09",
+     "reason": "Subjective, self-selected isolation and jurisdiction confounding remain, with the natural-experiment claim retained. Partially_resolved agrees with R09."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "The correlation-difference test is not a moderation model, interaction statistics are missing, and the explanation is post hoc. Partially_resolved agrees with R04."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Gives recomputable conflicts: IGDC d, Table 2 IGD p (Z=1.028 gives p≈.30, not .426), and n=619 vs 697. Unresolved agrees with R08."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Causal and inflation wording persists despite partial softening and an added limitation. Partially_resolved is consistent with R06."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "No analyses are labelled exploratory as the editor requested, and the hypothesis renumbering is not linked to the preregistration. This is supported and substantive."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The manuscript gives no interaction F/p for the 2-way ANOVA, although the response claims one was tested. This is supported and substantive, but 'unresolved' disagrees with R04's partially_resolved.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Country confounding is not analysed and Table 1 has only age/gender, as the material shows. R09 judges this partially_resolved, so 'unresolved' does not match, but the point stands.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Correctly notes 'increased' became 'greater' while causal/inflate/coping language remains in the abstract and discussion. Partially_resolved agrees with R06.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Gives recomputable conflicts: n=619 vs 697, 3.29SD cutoff ≈145.9 vs 133.58, and IGDC d. Unresolved agrees with R08.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"The categorical/continuous explanation remains speculative and moderation wording is retained in H7. Partially_resolved agrees with R04.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R09\",\"reason\":\"Covers subjective isolation, country confounding without analysis, and retained natural-experiment framing. Partially_resolved agrees with R09.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"The core finding rests on a correlation-difference test, the categorical test is null, and moderator language is retained. Partially_resolved agrees with R04.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The inflate/coping/increases claims lack a pre-pandemic baseline, which the text supports. 'Unresolved' conflicts with R06's partial judgement, so this does not match.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The wording was changed to the stronger 'clinically significant', which Ferguson's cut-offs cannot establish. This is supported, substantive, and not on the card.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The IGDC d=0.16 versus ≈0.06 and the absent interaction statistics are verifiable residual inconsistencies. Partially_resolved differs from R08's unresolved.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R09\",\"reason\":\"Subjective, self-selected isolation and jurisdiction confounding remain, with the natural-experiment claim retained. Partially_resolved agrees with R09.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"The correlation-difference test is not a moderation model, interaction statistics are missing, and the explanation is post hoc. Partially_resolved agrees with R04.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Gives recomputable conflicts: IGDC d, Table 2 IGD p (Z=1.028 gives p≈.30, not .426), and n=619 vs 697. Unresolved agrees with R08.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Causal and inflation wording persists despite partial softening and an added limitation. Partially_resolved is consistent with R06.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"No analyses are labelled exploratory as the editor requested, and the hypothesis renumbering is not linked to the preregistration. This is supported and substantive.\"}]}}"
+}

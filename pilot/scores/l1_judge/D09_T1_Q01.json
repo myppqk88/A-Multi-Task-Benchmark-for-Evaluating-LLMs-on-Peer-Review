@@ -1,0 +1,129 @@
+{
+ "task_id": "D09_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Correctly argues that self-reported, non-randomised isolation does not justify exogeneity from 'no theoretical reason'. Names plausible confounders such as country, employment and illness."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Notes the moderation claim rests on one correlation-difference test that the categorical analysis does not corroborate. Figure 1 observation is accurate."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Correctly argues cross-sectional data cannot support claims of increased buyers, coping, or inflated effect sizes."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R10",
+     "reason": "Valid reporting gaps: H7 contamination result is missing and the outlier rule is unjustified. However, it wrongly says H5 and H6 are unreported; both appear in Results."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies the single self-report isolation item that merges voluntary self-isolation with mandatory quarantine, plus measurement validity gaps."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Unassigned groups with possible confounders; the 'no theoretical reason' assertion does not establish exchangeability."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "The H4 categorical moderation is reported without a statistic and is not reconciled with the continuous correlation-difference result."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Inferences about more problem gamblers buying and inflated effect sizes exceed what the cross-sectional data can show."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Notes that the Padua subscale is a general OCD trait measure, not pandemic-specific concern, which undermines the coping interpretation."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Correctly identifies that the abstract's 447+619 does not sum to 1,144, whereas the Procedure's 697 does."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Self-selected isolation with no comparability checks; correctly rejects the 'no theoretical reason' justification."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Single Fisher Z comparison contradicted by the categorical H4 test; plausible variance and range artefacts noted."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Correct n mismatch and outlier cutoff arithmetic (≈145.9 vs 133.58). The duplicated Table 1 p-value is also accurate."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Claims about increases, coping and field-wide inflation are unsupported by cross-sectional data."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R10",
+     "reason": "Missing descriptives, the unreported H7 contamination result, and null results given as bare p-values are valid reporting gaps."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Correctly argues that self-reported, non-randomised isolation does not justify exogeneity from 'no theoretical reason'. Names plausible confounders such as country, employment and illness.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Notes the moderation claim rests on one correlation-difference test that the categorical analysis does not corroborate. Figure 1 observation is accurate.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Correctly argues cross-sectional data cannot support claims of increased buyers, coping, or inflated effect sizes.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R10\", \"reason\": \"Valid reporting gaps: H7 contamination result is missing and the outlier rule is unjustified. However, it wrongly says H5 and H6 are unreported; both appear in Results.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Identifies the single self-report isolation item that merges voluntary self-isolation with mandatory quarantine, plus measurement validity gaps.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Unassigned groups with possible confounders; the 'no theoretical reason' assertion does not establish exchangeability.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"The H4 categorical moderation is reported without a statistic and is not reconciled with the continuous correlation-difference result.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Inferences about more problem gamblers buying and inflated effect sizes exceed what the cross-sectional data can show.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R08\", \"reason\": \"Notes that the Padua subscale is a general OCD trait measure, not pandemic-specific concern, which undermines the coping interpretation.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Correctly identifies that the abstract's 447+619 does not sum to 1,144, whereas the Procedure's 697 does.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Self-selected isolation with no comparability checks; correctly rejects the 'no theoretical reason' justification.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Single Fisher Z comparison contradicted by the categorical H4 test; plausible variance and range artefacts noted.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Correct n mismatch and outlier cutoff arithmetic (≈145.9 vs 133.58). The duplicated Table 1 p-value is also accurate.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Claims about increases, coping and field-wide inflation are unsupported by cross-sectional data.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R10\", \"reason\": \"Missing descriptives, the unreported H7 contamination result, and null results given as bare p-values are valid reporting gaps.\"}]}}"
+}

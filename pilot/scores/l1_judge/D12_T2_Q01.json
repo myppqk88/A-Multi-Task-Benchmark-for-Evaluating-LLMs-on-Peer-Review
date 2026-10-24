@@ -1,0 +1,199 @@
+{
+ "task_id": "D12_T2_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct: the response does state that the findings can be considered more broadly. This only restates the stance and adds no substantive reasoning."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Recognises regime coverage across the four named regimes as an explicit, relevant sampling rationale."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct detail on why France and Germany are both kept. It is part of the R01 rationale, which another claim already matched."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Accurately notes the pointer to the Methods section and the 'implied' claim about the Introduction and Discussion. This is a procedural point."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Identifies that self-selection into the initiative is not directly addressed and that regime coverage is not the same as representativeness."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Valid point: country-level regime coverage does not establish NUTS-2 regional typicality, and the response is silent on within-country heterogeneity."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: each regime rests on one or two countries, and the unqualified claim of insight into the EU as a whole is too strong."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that limits are not stated and 'implied' is vague, but this largely overlaps the overclaim already identified."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "The response quotes the existing text, so its adequacy can be judged. Pointing to existing text is acceptable, and revisions are not assessed in this condition anyway."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Recognises the regime-coverage rationale as direct, specific and supported by the quoted Methods passage."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Admitting the ERUA focus and the ReERUA link does not address the self-selection concern. Calling it a partial answer overstates the response."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "A reasonable but redundant restatement of the regime-coverage rationale."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Correctly notes that self-selection is not addressed directly and that the response argues only regime representativeness."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "The reviewer asked only for an explanation. Requiring comparisons or sensitivity analyses goes beyond the request, since a reasoned explanation could suffice."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: the EU-wide claim exceeds what the sample supports, and no limitation is acknowledged."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Valid: one or two countries per regime and NUTS-2-level representativeness are not discussed."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that the 'implied' content in the Introduction and Discussion is not quoted. This is a minor point."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "An accurate restatement of the direct answer, with no added substance."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Recognises regime coverage and the France/Germany justification as a specific sampling rationale."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly notes the quoted Methods passage and its citations. This is a procedural point."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Identifies the unaddressed self-selection mechanism and notes the ReERUA concession."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Valid: covering every regime type does not show that the single sampled case is typical of its regime."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: the response does not say whether all NUTS-2 regions or only initiative regions are analysed, which bears on regional-level selection."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: the EU-wide claim is made without qualification or any acknowledgement of selection bias."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Fairly acknowledges that a reasoned refusal could be acceptable. The 'implied' point is minor and overlaps the earlier gaps."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct: the response does state that the findings can be considered more broadly. This only restates the stance and adds no substantive reasoning.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Recognises regime coverage across the four named regimes as an explicit, relevant sampling rationale.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct detail on why France and Germany are both kept. It is part of the R01 rationale, which another claim already matched.\"},{\"claim_index\":3,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Accurately notes the pointer to the Methods section and the 'implied' claim about the Introduction and Discussion. This is a procedural point.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Identifies that self-selection into the initiative is not directly addressed and that regime coverage is not the same as representativeness.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Valid point: country-level regime coverage does not establish NUTS-2 regional typicality, and the response is silent on within-country heterogeneity.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: each regime rests on one or two countries, and the unqualified claim of insight into the EU as a whole is too strong.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that limits are not stated and 'implied' is vague, but this largely overlaps the overclaim already identified.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"The response quotes the existing text, so its adequacy can be judged. Pointing to existing text is acceptable, and revisions are not assessed in this condition anyway.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Recognises the regime-coverage rationale as direct, specific and supported by the quoted Methods passage.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Admitting the ERUA focus and the ReERUA link does not address the self-selection concern. Calling it a partial answer overstates the response.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"A reasonable but redundant restatement of the regime-coverage rationale.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Correctly notes that self-selection is not addressed directly and that the response argues only regime representativeness.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"The reviewer asked only for an explanation. Requiring comparisons or sensitivity analyses goes beyond the request, since a reasoned explanation could suffice.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: the EU-wide claim exceeds what the sample supports, and no limitation is acknowledged.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Valid: one or two countries per regime and NUTS-2-level representativeness are not discussed.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that the 'implied' content in the Introduction and Discussion is not quoted. This is a minor point.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"An accurate restatement of the direct answer, with no added substance.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Recognises regime coverage and the France/Germany justification as a specific sampling rationale.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly notes the quoted Methods passage and its citations. This is a procedural point.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Identifies the unaddressed self-selection mechanism and notes the ReERUA concession.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Valid: covering every regime type does not show that the single sampled case is typical of its regime.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: the response does not say whether all NUTS-2 regions or only initiative regions are analysed, which bears on regional-level selection.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: the EU-wide claim is made without qualification or any acknowledgement of selection bias.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Fairly acknowledges that a reasoned refusal could be acceptable. The 'implied' point is minor and overlaps the earlier gaps.\"}]}}"
+}

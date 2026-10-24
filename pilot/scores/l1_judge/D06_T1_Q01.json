@@ -1,0 +1,129 @@
+{
+ "task_id": "D06_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "sonnet",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Identifies the confounding of post type with topic and date (Table 2), about 10 posts per type, and the unreported verification posts. The causal 'most effective' claim is therefore unsupported."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Model specification, coefficients, tests and overdispersion checks are unreported, and the Poisson regression vs mixed-model wording is inconsistent. The material supports this; it goes beyond the card points."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Correctly separates the two conflated pairs: Facebook clicks vs engagement, and reach vs impressions. Notes this undermines RQ2."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Season and alt text are fully confounded by phase, and non-significance is read as no effect. It does not discuss the ordering limit of the extra posts, so this is a partial but core match."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Raw counts are compared across platforms with different follower sizes and no normalisation, and evidence comes from a single institutional account. LinkedIn's lead may reflect audience size."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Non-randomised cycling, unbalanced topics by type (Table 2) and a weak four-post verification. The causal claim about people images is unsupported."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Clicks/reach vs interactions/impressions are not equivalent, and cross-platform pooling and the LinkedIn-best claim are invalid. Also notes differing exposure windows."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Under-specified Poisson model: no terms, offsets, overdispersion handling or test statistics. Supported by the text and figures."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Season and alt text are perfectly confounded with phase, and low power means the null finding does not support no effect. Partial: the ordering issue of the verification posts is not raised."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Overgeneralisation from one specialist account with very low counts to general and policy recommendations. Overlaps the generalisation aspect of R07, which is already matched by claim 0."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Figure 7 indeed shows overlapping Type 2/3 intervals with no reported contrasts. 'Each type is different' and 'most effective' are not demonstrated."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Clicks, interactions, reach and impressions are different constructs, and follower counts differ without normalisation. The RQ2 LinkedIn-best conclusion is invalid."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Sequential cycling confounds type with week, news and topic (Table 2), and the verification posts are unreported. The causal type attribution is not established."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Model terms, random effects, offsets, overdispersion handling and statistics are missing, and cross-platform dependence is unclear. Supported by the text."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "A null phase difference with 15 posts is read as no effect, while season and alt text are confounded with phase. Partial: the ordering limit of the extra posts is not raised."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Identifies the confounding of post type with topic and date (Table 2), about 10 posts per type, and the unreported verification posts. The causal 'most effective' claim is therefore unsupported.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Model specification, coefficients, tests and overdispersion checks are unreported, and the Poisson regression vs mixed-model wording is inconsistent. The material supports this; it goes beyond the card points.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Correctly separates the two conflated pairs: Facebook clicks vs engagement, and reach vs impressions. Notes this undermines RQ2.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Season and alt text are fully confounded by phase, and non-significance is read as no effect. It does not discuss the ordering limit of the extra posts, so this is a partial but core match.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Raw counts are compared across platforms with different follower sizes and no normalisation, and evidence comes from a single institutional account. LinkedIn's lead may reflect audience size.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Non-randomised cycling, unbalanced topics by type (Table 2) and a weak four-post verification. The causal claim about people images is unsupported.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Clicks/reach vs interactions/impressions are not equivalent, and cross-platform pooling and the LinkedIn-best claim are invalid. Also notes differing exposure windows.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Under-specified Poisson model: no terms, offsets, overdispersion handling or test statistics. Supported by the text and figures.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Season and alt text are perfectly confounded with phase, and low power means the null finding does not support no effect. Partial: the ordering issue of the verification posts is not raised.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Overgeneralisation from one specialist account with very low counts to general and policy recommendations. Overlaps the generalisation aspect of R07, which is already matched by claim 0.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Figure 7 indeed shows overlapping Type 2/3 intervals with no reported contrasts. 'Each type is different' and 'most effective' are not demonstrated.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Clicks, interactions, reach and impressions are different constructs, and follower counts differ without normalisation. The RQ2 LinkedIn-best conclusion is invalid.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R07\", \"reason\": \"Sequential cycling confounds type with week, news and topic (Table 2), and the verification posts are unreported. The causal type attribution is not established.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"Model terms, random effects, offsets, overdispersion handling and statistics are missing, and cross-platform dependence is unclear. Supported by the text.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"A null phase difference with 15 posts is read as no effect, while season and alt text are confounded with phase. Partial: the ordering limit of the extra posts is not raised.\"}]}}"
+}

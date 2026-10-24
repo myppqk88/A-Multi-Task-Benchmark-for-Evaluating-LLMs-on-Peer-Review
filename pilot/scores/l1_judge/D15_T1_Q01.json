@@ -1,0 +1,129 @@
+{
+ "task_id": "D15_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Correctly separates Levene 0.028 from t-test p=0.120 with a CI spanning zero, flags df=2 and p-values reported as t, and notes the sex differences may still stand."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Identifies that W=0.845 is not a p-value and that the variable is unspecified. Also correctly flags impossible minimum scores and the ANOVA F/p mismatch."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "The self-developed scale has only expert face validity and a 10-person pilot, with no reliability or structure evidence reported."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "All participants are users and Instagram use is never analysed, so causal 'affects' language is unsupported. It also notes unadjusted confounders."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Implications about exercise addiction and interventions exceed what was measured. The date and sampling-label inconsistencies are also supported by the text."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Precisely identifies that 0.028 is Levene's p and the t-test p is 0.120 with a CI including zero, so the fitness-page claim is unsupported."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "F(2,~209)=11.27 implies p<0.001, not 0.018. Error df and post hoc tests are missing. This is a genuine inconsistency not on the card."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Correctly shows the reported t values are actually p-values and df=2 is impossible. It acknowledges the tabulated p-values may still support the sex differences."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "The social comparison scale has only three-expert validation and a 10-person pilot, with no reliability or structure evidence."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The convenience friends-and-family sample contradicts the stated generalisability, which addresses the representativeness side of R01."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Identifies Levene 0.028 misread as the t-test result, p=0.120 with a CI including zero, and df=2 with mislabelled statistics."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "0.845 is a W statistic, not a p-value, and likely indicates non-normality at N=212. No per-variable checks were reported."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Weak validation of the new scale (experts plus a 10-person pilot) with no reliability evidence. Also makes valid points about EMI total scoring."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Instagram use is constant across participants, so causal and intervention conclusions are unsupported. It also notes the analyses are unadjusted."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Distinguishes a precision-based sample-size calculation from power and notes convenience sampling limits. Date inconsistencies are also supported by the text."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\": {\"A\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Correctly separates Levene 0.028 from t-test p=0.120 with a CI spanning zero, flags df=2 and p-values reported as t, and notes the sex differences may still stand.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"Identifies that W=0.845 is not a p-value and that the variable is unspecified. Also correctly flags impossible minimum scores and the ANOVA F/p mismatch.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"The self-developed scale has only expert face validity and a 10-person pilot, with no reliability or structure evidence reported.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"All participants are users and Instagram use is never analysed, so causal 'affects' language is unsupported. It also notes unadjusted confounders.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R03\", \"reason\": \"Implications about exercise addiction and interventions exceed what was measured. The date and sampling-label inconsistencies are also supported by the text.\"}], \"B\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Precisely identifies that 0.028 is Levene's p and the t-test p is 0.120 with a CI including zero, so the fitness-page claim is unsupported.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"valid_new\", \"point_id\": null, \"reason\": \"F(2,~209)=11.27 implies p<0.001, not 0.018. Error df and post hoc tests are missing. This is a genuine inconsistency not on the card.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Correctly shows the reported t values are actually p-values and df=2 is impossible. It acknowledges the tabulated p-values may still support the sex differences.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"The social comparison scale has only three-expert validation and a 10-person pilot, with no reliability or structure evidence.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"The convenience friends-and-family sample contradicts the stated generalisability, which addresses the representativeness side of R01.\"}], \"C\": [{\"claim_index\": 0, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R05\", \"reason\": \"Identifies Levene 0.028 misread as the t-test result, p=0.120 with a CI including zero, and df=2 with mislabelled statistics.\"}, {\"claim_index\": 1, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R02\", \"reason\": \"0.845 is a W statistic, not a p-value, and likely indicates non-normality at N=212. No per-variable checks were reported.\"}, {\"claim_index\": 2, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R06\", \"reason\": \"Weak validation of the new scale (experts plus a 10-person pilot) with no reliability evidence. Also makes valid points about EMI total scoring.\"}, {\"claim_index\": 3, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R04\", \"reason\": \"Instagram use is constant across participants, so causal and intervention conclusions are unsupported. It also notes the analyses are unadjusted.\"}, {\"claim_index\": 4, \"claim_field\": \"issues\", \"decision\": \"match\", \"point_id\": \"R01\", \"reason\": \"Distinguishes a precision-based sample-size calculation from power and notes convenience sampling limits. Date inconsistencies are also supported by the text.\"}]}}"
+}

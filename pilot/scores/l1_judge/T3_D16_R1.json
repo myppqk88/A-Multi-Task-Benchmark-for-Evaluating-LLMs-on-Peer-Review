@@ -1,0 +1,136 @@
+{
+ "task_id": "T3_D16_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "opus",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Says the design contradiction is unresolved: groups are non-randomised, baselines differ, and the control group is described inconsistently as the same course and a different programme. Resolution agrees with R07."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Shows t=2.05 and the ANOVA df are inconsistent with the table values and that the tables were kept unchanged. Unresolved, as in R06."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Says new measurement detail was added but headline tables are still academic scores and the scale is inconsistent. Partially resolved, which fits R08's alternative."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Says the cultural percentages lack denominators, comparison and an operationalised culture measure. Unresolved, as in R02."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R09",
+     "reason": "Notes the Figshare DOI was added while the restricted on-request statement remains. Partially resolved, as in R09."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Recomputes t≈21 versus the reported 2.05, flags the df mismatch, and notes tables are unchanged. Unresolved, as in R06."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Says the composite and scale were added but are never reported as results, Table 1 has no control data, and domains mismatch. Partially resolved, as in R08."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Says the 78/72/43% figures have no coding basis or comparison and cannot identify a cultural cause. Unresolved, as in R02."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The overclaiming ('establishes', 'strong support') and the reuse of p=0.042 are supported by the text. Overlaps R07 but disagrees with its resolution (partial vs unresolved), so not a match."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R09",
+     "reason": "Notes the Figshare/CC-BY statement coexists with 'not publicly available' and the deposit contents are unverified. Partially resolved, as in R09."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported by the tables: the control group also improved, baselines differ (3.8 vs 3.3), and there is no between-group gain test. Does not address the effect-size issue specific to R07."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Shows MS ratio ≈8.3 versus F=3.78, t inconsistent, df=263 versus 179 students. Unresolved, as in R06."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R08",
+     "reason": "Says instruments are described but results lack tests and still use the academic score. Partially resolved, as in R08."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Says the cultural percentages have no culture measure and the study is not cross-cultural. Unresolved, as in R02. Also notes citation mismatch."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Correct that H2 is called 'validated' with no inferential test, and that the chi-square and Likert enthusiasm analyses were removed. Rated unresolved, which differs from R08's partially resolved engagement alternative, so not a match."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The DOI plus restricted-access contradiction and the page mismatch in the author response are accurate. Rated not_verifiable versus R09's partially resolved, so not a match."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"Says the design contradiction is unresolved: groups are non-randomised, baselines differ, and the control group is described inconsistently as the same course and a different programme. Resolution agrees with R07.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Shows t=2.05 and the ANOVA df are inconsistent with the table values and that the tables were kept unchanged. Unresolved, as in R06.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Says new measurement detail was added but headline tables are still academic scores and the scale is inconsistent. Partially resolved, which fits R08's alternative.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Says the cultural percentages lack denominators, comparison and an operationalised culture measure. Unresolved, as in R02.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R09\",\"reason\":\"Notes the Figshare DOI was added while the restricted on-request statement remains. Partially resolved, as in R09.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Recomputes t≈21 versus the reported 2.05, flags the df mismatch, and notes tables are unchanged. Unresolved, as in R06.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Says the composite and scale were added but are never reported as results, Table 1 has no control data, and domains mismatch. Partially resolved, as in R08.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Says the 78/72/43% figures have no coding basis or comparison and cannot identify a cultural cause. Unresolved, as in R02.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The overclaiming ('establishes', 'strong support') and the reuse of p=0.042 are supported by the text. Overlaps R07 but disagrees with its resolution (partial vs unresolved), so not a match.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R09\",\"reason\":\"Notes the Figshare/CC-BY statement coexists with 'not publicly available' and the deposit contents are unverified. Partially resolved, as in R09.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported by the tables: the control group also improved, baselines differ (3.8 vs 3.3), and there is no between-group gain test. Does not address the effect-size issue specific to R07.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Shows MS ratio ≈8.3 versus F=3.78, t inconsistent, df=263 versus 179 students. Unresolved, as in R06.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R08\",\"reason\":\"Says instruments are described but results lack tests and still use the academic score. Partially resolved, as in R08.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Says the cultural percentages have no culture measure and the study is not cross-cultural. Unresolved, as in R02. Also notes citation mismatch.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Correct that H2 is called 'validated' with no inferential test, and that the chi-square and Likert enthusiasm analyses were removed. Rated unresolved, which differs from R08's partially resolved engagement alternative, so not a match.\"},{\"claim_index\":5,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The DOI plus restricted-access contradiction and the page mismatch in the author response are accurate. Rated not_verifiable versus R09's partially resolved, so not a match.\"}]}}"
+}

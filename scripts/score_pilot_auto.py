@@ -35,8 +35,10 @@ def field_text(inp, field):
 
 
 def contains(raw, quote):
+    """A quote copied with the manuscript's line numbers inside it still counts as verbatim."""
     q = norm(quote)
-    return bool(q) and (q in norm(raw) or q in norm(strip_line_numbers(raw)))
+    stripped = norm(strip_line_numbers('\n' + quote + '\n'))
+    return bool(q) and (q in norm(raw) or q in norm(strip_line_numbers(raw)) or stripped in norm(strip_line_numbers(raw)))
 
 
 def evidence_items(answer, task):

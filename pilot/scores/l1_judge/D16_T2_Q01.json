@@ -1,0 +1,185 @@
+{
+ "task_id": "D16_T2_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly says the response targets the enthusiasm/engagement measurement request. This only establishes direction and is not a substantive finding."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Accurate that the response links the additions to reproducibility. The point is trivial."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Separates the claimed definitions, indicators and protocols from the absence of any actual content (items, scales, coding), as R01 requires."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The response does give no manuscript location. True, but secondary to the missing content."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The reviewer stressed subjective measures. The response is silent on handling subjectivity (reliability, inter-rater agreement). This is a supported, substantive extension beyond R01."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that the effect-size and cultural paragraphs do not fill this gap. Card notes this as a subsidiary point."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Not a real deficiency, and the answer itself concedes this is acceptable. Harmless and non-substantive."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "A procedural statement that revisions cannot be verified. Correct but not a substantive gap."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly notes the response targets the measurement details. This establishes direction only."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Accurate that the response links to reproducibility. The point is trivial."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies that no definitions, indicators, scoring or procedures are actually given, only claims of them."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The unspecified protocol is a sub-instance of the R01 gap and is minor once R01 is matched."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The missing manuscript location is a correct observation but secondary."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "The reviewer's comment does not raise effect-size significance. Faulting missing statistics there misplaces the scope of adequacy for this comment."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Newton/Ho and the cultural evidence fall outside this comment. Their unverifiability is not a gap in addressing the measurement concern."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that off-topic content cannot substitute for measurement detail. Subsidiary to R01."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly recognises the response is directed at the measurement concern. This establishes direction only."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Accurate category-level coverage of the subjective-measure request. Not substantive."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Lists that only categories are named, with no actual definitions, indicators, instruments or timing. This matches R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Treatment of subjectivity (rater training, reliability) is unaddressed. This is supported by the reviewer's focus on subjective measures."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "No location and no codebook offered. Correct but secondary."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that the off-topic paragraphs add nothing to this comment. A subsidiary point."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "A procedural note that revisions cannot be verified. Correct but non-substantive."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly says the response targets the enthusiasm/engagement measurement request. This only establishes direction and is not a substantive finding.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Accurate that the response links the additions to reproducibility. The point is trivial.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Separates the claimed definitions, indicators and protocols from the absence of any actual content (items, scales, coding), as R01 requires.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The response does give no manuscript location. True, but secondary to the missing content.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The reviewer stressed subjective measures. The response is silent on handling subjectivity (reliability, inter-rater agreement). This is a supported, substantive extension beyond R01.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that the effect-size and cultural paragraphs do not fill this gap. Card notes this as a subsidiary point.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Not a real deficiency, and the answer itself concedes this is acceptable. Harmless and non-substantive.\"},{\"claim_index\":5,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"A procedural statement that revisions cannot be verified. Correct but not a substantive gap.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly notes the response targets the measurement details. This establishes direction only.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Accurate that the response links to reproducibility. The point is trivial.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies that no definitions, indicators, scoring or procedures are actually given, only claims of them.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The unspecified protocol is a sub-instance of the R01 gap and is minor once R01 is matched.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The missing manuscript location is a correct observation but secondary.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"The reviewer's comment does not raise effect-size significance. Faulting missing statistics there misplaces the scope of adequacy for this comment.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Newton/Ho and the cultural evidence fall outside this comment. Their unverifiability is not a gap in addressing the measurement concern.\"},{\"claim_index\":5,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that off-topic content cannot substitute for measurement detail. Subsidiary to R01.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly recognises the response is directed at the measurement concern. This establishes direction only.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Accurate category-level coverage of the subjective-measure request. Not substantive.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Lists that only categories are named, with no actual definitions, indicators, instruments or timing. This matches R01.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Treatment of subjectivity (rater training, reliability) is unaddressed. This is supported by the reviewer's focus on subjective measures.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"No location and no codebook offered. Correct but secondary.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that the off-topic paragraphs add nothing to this comment. A subsidiary point.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"A procedural note that revisions cannot be verified. Correct but non-substantive.\"}]}}"
+}

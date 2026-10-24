@@ -1,0 +1,231 @@
+{
+ "task_id": "T3_D09_R1",
+ "model_alias": "opus",
+ "model_init": "claude-opus-5-5",
+ "models_served": [
+  "claude-opus-5-5"
+ ],
+ "attempt": 1,
+ "seconds": 87.6,
+ "is_error": false,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 181188,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 8137,
+  "output_tokens_details": {
+   "thinking_tokens": 3210
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 181188,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 8137,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 181188,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 181188
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "stop_reason": "end_turn",
+ "raw_text": "```json\n{\n  \"overall_label\": \"needs_substantive_revision\",\n  \"rationale\": \"修订稿在报告层面有可见改进：补充了数据收集日期（2020年4月7–9日）与各辖区背景，新增按国家的人口学表（Table 1）、各组均值/SD、PGSI连续变量散点图（Figure 1），改正了K-10组差方向，修订了PGSI切分点说明，并增加state/trait局限段落。但核心主张（隔离者中PGSI—开箱支出相关更强，进而“疫情可能放大效应量”）的科学支撑仍不足，主要有四点。(1) 暴露变量是自报、主观且可能自选择的“隔离”。作者在回复中承认“captured subjective rather than objective isolation”，但正文仍称“natural experiment”并作因果式解读。审稿人提出的辖区混杂（NZ为Level 4全国封锁）没有任何分国家或调整分析，Table 1只给出年龄和性别。(2) 核心检验是两组Spearman相关的差异，不是调节模型。新增Figure 1两组拟合线斜率目测几乎相同，提示相关差异可能来自分布或离散度差异，不等于关系“增强/被放大”。类别模型的交互检验统计量至今未报告，作者对两种分析结果不一致的解释仍是事后推测。(3) 修订稿中仍有可核查的数值错误：IGDC d=0.16应约为0.06；Table 2中IGD的Z=1.028对应p≈.30而非.426；摘要中非隔离组n=619与正文697矛盾。这些错误削弱了作者“已核对数值”的说法。(4) 结论措辞仍超出横断面相关数据所能支持的范围，如“clinically significant contributor”、“inflate”、“coping”。上述问题均可通过补充分析与改写解决，不需要重新收集数据，但属于实质性修改。\",\n  \"issues\": [\n    {\n      \"issue\": \"暴露变量（自报隔离/隔离检疫）的效度与混杂：自报、主观、可能自选择，且与辖区（NZ全国Level 4封锁 vs 美澳州级差异）混杂。作者仍以“natural experiment”框定，并推断isolation“due to the pandemic”的作用。\",\n      \"response_claim\": \"作者承认测得的是主观隔离，增加了术语模糊和测量误差的说明，补充了数据收集日期与各国政策背景，并称“we believe our approach offers a valid way to investigate the effects of increased perceived isolation”。\",\n      \"observed_change\": \"Procedure部分新增日期、各国政策背景和测量误差讨论；新增Table 1（各国n、年龄、性别）。没有按国家报告隔离比例或结局，没有控制国家的敏感性分析；“no theoretical reason to believe…”的自然实验论述原样保留。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"reviews.R2\",\n          \"exact_quote\": \"is it possible that their independent variable (self-isolation Yes/No) simply reflects a cross-jurisdictional effect?\",\n          \"location_hint\": \"R2 Experimental design\"\n        },\n        {\n          \"input_field\": \"responses.combined\",\n          \"exact_quote\": \"We think we have indeed captured subjective rather than objective isolation with our variable.\",\n          \"location_hint\": \"对R2自变量问题的回复\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"There was no theoretical reason to believe that the pandemic had selectively isolated gamers or\",\n          \"location_hint\": \"Methods, Participants, line 142\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"been in stringent lock-downs (Level 4 under their COVID-19 Alert system)\",\n          \"location_hint\": \"Procedure, line 215\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 29,\n          \"observation\": \"修订稿Table 1仅含各国n、平均年龄和众数性别，无隔离状态或PGSI/支出的分国家分布，无法排除辖区混杂。\"\n        }\n      ],\n      \"issue_type\": \"V2\"\n    },\n    {\n      \"issue\": \"核心“调节”推断的统计基础：以两组Spearman相关差（Fisher Z）作为关系“更强”的证据，没有比较斜率，也没有交互回归。类别ANOVA的交互项统计量未报告，连续与类别结果的分歧仍以事后理由解释。\",\n      \"response_claim\": \"作者称已调整措辞以避免暗示调节分析；新增散点图作为Figure 1；用Orford et al. (2010)的连续谱观点解释两种分析不一致，归因于类别化导致的变异损失。\",\n      \"observed_change\": \"新增Figure 1散点图，Z值更新为2.825、p=.005。正文仍写“2-way ANOVA… no evidence that self-isolation or quarantine altered this relationship”，但未给出交互F/p。Figure 1两组趋势线斜率目测几乎一致（A组PGSI=23处约21美元，B组PGSI=24处约22美元），说明相关系数差异更可能反映散布或零支出比例差异，而非依赖关系增强。没有提供斜率差检验或含交互项的回归。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"reviews.R1\",\n          \"exact_quote\": \"Fourth, the study is all about moderation, but they haven’t really tested for moderation.\",\n          \"location_hint\": \"R1 Validity, 第四点\"\n        },\n        {\n          \"input_field\": \"reviews.R2\",\n          \"exact_quote\": \"It is more likely that this reflects either the thresholding of the PGSI\",\n          \"location_hint\": \"R2 Basic reporting\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"with a stronger association for participants who were self-isolated or quarantined, rs = .366\",\n          \"location_hint\": \"Results, lines 284-285\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"However, there was no evidence that self-isolation or quarantine altered this relationship.\",\n          \"location_hint\": \"Results, line 289（无交互统计量）\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 26,\n          \"observation\": \"Figure 1 A（Not Isolated）与B（Self-Isolated/Quarantined）的拟合直线斜率几乎相同，均从约0升至约20–22美元；大量点集中在0支出。图中为原始数据线性趋势线，而统计量为Spearman ρ。\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 27,\n          \"observation\": \"Figure 2中中风险组隔离者均值（约1美元）低于非隔离者（约4.4美元），问题赌博组则相反；图注只报告PGSI主效应F(3,1131)，没有交互项检验。\"\n        }\n      ],\n      \"issue_type\": \"V3\"\n    },\n    {\n      \"issue\": \"修订稿中的数值不一致：IGDC组差效应量、Table 2中IGD的Z检验p值、摘要中的组样本量。\",\n      \"response_claim\": \"作者称已发现并改正两处错误（K-10方向、未换算美元的支出），且“did not alter the significance or interpretation of any results”。\",\n      \"observed_change\": \"K-10方向和PGSI相关已更新，但仍有可直接核算的错误。(a) IGDC：M 7.94 vs 8.28，SD约5.57，t=0.97，对应d≈0.06，文中写d=0.16（与K-10的d相同，疑为复制）。(b) Table 2 IGD行：Z=1.028对应双尾p≈.30，表中p=.426，与前稿Loot Box行的p值相同，疑为复制。(c) 摘要写“not (n = 619)”，正文为697，且619恰为男性人数。\",\n      \"resolution\": \"unresolved\",\n      \"importance\": \"supporting\",\n      \"evidence\": [\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"t(1,142) = 0.97, p = .330, d = 0.16\",\n          \"location_hint\": \"Results, line 267\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 31,\n          \"observation\": \"Table 2 IGD行：.239 vs .297，“Z = 1.028, p = .426”；Z≈1.03对应双尾p≈.30，数值不一致。\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"isolating (n = 447) or not (n = 619)\",\n          \"location_hint\": \"Abstract, line 32\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"quarantine (n = 197), or neither (n = 697)\",\n          \"location_hint\": \"Procedure, line 211\"\n        },\n        {\n          \"input_field\": \"responses.combined\",\n          \"exact_quote\": \"Correcting these errors yielded slightly different numbers, but did not alter the significance or interpretation of any results.\",\n          \"location_hint\": \"对R2描述统计要求的回复\"\n        }\n      ],\n      \"issue_type\": \"V3\"\n    },\n    {\n      \"issue\": \"结论与证据不相称：横断面、相关性、主观隔离的数据被用于支持“疫情/隔离放大效应量”“污染担忧是临床显著的促成因素”“玩家以游戏应对疫情担忧”等带因果或机制意味的结论。\",\n      \"response_claim\": \"作者称已将“increased”改为“greater”；将“small but important”改为“clinically significant”；增加state/trait局限，并承认其解释是推测性的。\",\n      \"observed_change\": \"措辞有局部修改，并增加了局限段落，但“clinically significant contributor”在横断面r≈.25的基础上仍隐含因果与临床意义，强度未见降低。Discussion和Abstract仍保留“moderator… inflating the size of some previously observed relationships”及coping解释。“Inflate”一词需要与非疫情基线比较，而本研究没有这样的基线。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"moderator for other relationships in pathological gaming research, inflating the size of some previously\",\n          \"location_hint\": \"Discussion, line 335\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"concern may be a clinically significant contributor to excessive engagement with both gaming and\",\n          \"location_hint\": \"Results, line 278\"\n        },\n        {\n          \"input_field\": \"manuscript_after.text\",\n          \"exact_quote\": \"with video games to manage their contamination concerns about the COVID-19 pandemic\",\n          \"location_hint\": \"Discussion, line 307\"\n        },\n        {\n          \"input_field\": \"reviews.R2\",\n          \"exact_quote\": \"how do Ferguson’s criteria establish that a small effect size is important?\",\n          \"location_hint\": \"R2 Validity\"\n        }\n      ],\n      \"issue_type\": \"V8\"\n    },\n    {\n      \"issue\": \"预注册透明度与可复现性：编辑要求按预注册顺序呈现结果，并把额外分析标为exploratory；还要求提供同意书和数据字典。\",\n      \"response_claim\": \"作者称已重排假设以匹配结果顺序，已上传含数据字典的OSF数据，并说明同意采用隐含同意方式。\",\n      \"observed_change\": \"假设列表顺序被改为与结果一致，即改动的是假设的呈现顺序而非结果顺序，这偏离了预注册中的原始编号，正文也没有说明编号已改。结果中没有任何分析被标为exploratory，也没有逐条对照H1–H8的支持情况；新增的连续变量散点图和“coping”解释的地位不清。OSF数据字典和补充材料在本题材料中无法核实。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"supporting\",\n      \"evidence\": [\n        {\n          \"input_field\": \"editor_decision\",\n          \"exact_quote\": \"those analyses should simply be identified as exploratory\",\n          \"location_hint\": \"决定信\"\n        },\n        {\n          \"input_field\": \"responses.combined\",\n          \"exact_quote\": \"We have now reordered our hypotheses to match the ordering of the results & discussion sections\",\n          \"location_hint\": \"对R2假设顺序问题的回复\"\n        },\n        {\n          \"input_field\": \"responses.combined\",\n          \"exact_quote\": \"We have uploaded an updated dataset to OSF which contains (in a second data sheet) a data dictionary.\",\n          \"location_hint\": \"对R2数据readme的回复\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 8,\n          \"observation\": \"修订稿假设1改为原H7（组差），假设4–5改为原H1–H2，正文未注明与预注册编号的对应关系。\"\n        }\n      ],\n      \"issue_type\": \"V7\"\n    }\n  ],\n  \"evidence_limits\": [\n    \"未提供原始数据、OSF预注册文本、数据字典或补充材料（含lockdown分析），无法核实预注册原始假设顺序、隔离题目的具体措辞、按国家的隔离分布，也无法复算相关和检验。\",\n    \"数值核查仅基于正文报告的均值、SD、n和Z值做近似复算（如d≈t·√(1/n1+1/n2)、Fisher z的标准误），结论限于内部一致性。\",\n    \"Figure 1斜率比较基于页面图像目测，未获取精确回归系数。\",\n    \"同意书文件为保密上传，本题材料中不可见；按补充材料政策，不据此推断作者未提供。\"\n  ],\n  \"process_consistency_auxiliary\": \"作者对两位审稿人的大部分意见作出了可见回应，编辑关于报告与描述统计的要求基本落实。但编辑要求的“exploratory”标注未落实，R1的调节检验问题与R2的辖区混杂问题只获得文字承认，没有新增分析。作者称“未改变任何结果解释”，但修订稿中仍有新的或残留的数值不一致。\"\n}\n```",
+ "answer": {
+  "overall_label": "needs_substantive_revision",
+  "rationale": "修订稿在报告层面有可见改进：补充了数据收集日期（2020年4月7–9日）与各辖区背景，新增按国家的人口学表（Table 1）、各组均值/SD、PGSI连续变量散点图（Figure 1），改正了K-10组差方向，修订了PGSI切分点说明，并增加state/trait局限段落。但核心主张（隔离者中PGSI—开箱支出相关更强，进而“疫情可能放大效应量”）的科学支撑仍不足，主要有四点。(1) 暴露变量是自报、主观且可能自选择的“隔离”。作者在回复中承认“captured subjective rather than objective isolation”，但正文仍称“natural experiment”并作因果式解读。审稿人提出的辖区混杂（NZ为Level 4全国封锁）没有任何分国家或调整分析，Table 1只给出年龄和性别。(2) 核心检验是两组Spearman相关的差异，不是调节模型。新增Figure 1两组拟合线斜率目测几乎相同，提示相关差异可能来自分布或离散度差异，不等于关系“增强/被放大”。类别模型的交互检验统计量至今未报告，作者对两种分析结果不一致的解释仍是事后推测。(3) 修订稿中仍有可核查的数值错误：IGDC d=0.16应约为0.06；Table 2中IGD的Z=1.028对应p≈.30而非.426；摘要中非隔离组n=619与正文697矛盾。这些错误削弱了作者“已核对数值”的说法。(4) 结论措辞仍超出横断面相关数据所能支持的范围，如“clinically significant contributor”、“inflate”、“coping”。上述问题均可通过补充分析与改写解决，不需要重新收集数据，但属于实质性修改。",
+  "issues": [
+   {
+    "issue": "暴露变量（自报隔离/隔离检疫）的效度与混杂：自报、主观、可能自选择，且与辖区（NZ全国Level 4封锁 vs 美澳州级差异）混杂。作者仍以“natural experiment”框定，并推断isolation“due to the pandemic”的作用。",
+    "response_claim": "作者承认测得的是主观隔离，增加了术语模糊和测量误差的说明，补充了数据收集日期与各国政策背景，并称“we believe our approach offers a valid way to investigate the effects of increased perceived isolation”。",
+    "observed_change": "Procedure部分新增日期、各国政策背景和测量误差讨论；新增Table 1（各国n、年龄、性别）。没有按国家报告隔离比例或结局，没有控制国家的敏感性分析；“no theoretical reason to believe…”的自然实验论述原样保留。",
+    "resolution": "partially_resolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "reviews.R2",
+      "exact_quote": "is it possible that their independent variable (self-isolation Yes/No) simply reflects a cross-jurisdictional effect?",
+      "location_hint": "R2 Experimental design"
+     },
+     {
+      "input_field": "responses.combined",
+      "exact_quote": "We think we have indeed captured subjective rather than objective isolation with our variable.",
+      "location_hint": "对R2自变量问题的回复"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "There was no theoretical reason to believe that the pandemic had selectively isolated gamers or",
+      "location_hint": "Methods, Participants, line 142"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "been in stringent lock-downs (Level 4 under their COVID-19 Alert system)",
+      "location_hint": "Procedure, line 215"
+     },
+     {
+      "input_field": "page_images",
+      "page": 29,
+      "observation": "修订稿Table 1仅含各国n、平均年龄和众数性别，无隔离状态或PGSI/支出的分国家分布，无法排除辖区混杂。"
+     }
+    ],
+    "issue_type": "V2"
+   },
+   {
+    "issue": "核心“调节”推断的统计基础：以两组Spearman相关差（Fisher Z）作为关系“更强”的证据，没有比较斜率，也没有交互回归。类别ANOVA的交互项统计量未报告，连续与类别结果的分歧仍以事后理由解释。",
+    "response_claim": "作者称已调整措辞以避免暗示调节分析；新增散点图作为Figure 1；用Orford et al. (2010)的连续谱观点解释两种分析不一致，归因于类别化导致的变异损失。",
+    "observed_change": "新增Figure 1散点图，Z值更新为2.825、p=.005。正文仍写“2-way ANOVA… no evidence that self-isolation or quarantine altered this relationship”，但未给出交互F/p。Figure 1两组趋势线斜率目测几乎一致（A组PGSI=23处约21美元，B组PGSI=24处约22美元），说明相关系数差异更可能反映散布或零支出比例差异，而非依赖关系增强。没有提供斜率差检验或含交互项的回归。",
+    "resolution": "partially_resolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "reviews.R1",
+      "exact_quote": "Fourth, the study is all about moderation, but they haven’t really tested for moderation.",
+      "location_hint": "R1 Validity, 第四点"
+     },
+     {
+      "input_field": "reviews.R2",
+      "exact_quote": "It is more likely that this reflects either the thresholding of the PGSI",
+      "location_hint": "R2 Basic reporting"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "with a stronger association for participants who were self-isolated or quarantined, rs = .366",
+      "location_hint": "Results, lines 284-285"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "However, there was no evidence that self-isolation or quarantine altered this relationship.",
+      "location_hint": "Results, line 289（无交互统计量）"
+     },
+     {
+      "input_field": "page_images",
+      "page": 26,
+      "observation": "Figure 1 A（Not Isolated）与B（Self-Isolated/Quarantined）的拟合直线斜率几乎相同，均从约0升至约20–22美元；大量点集中在0支出。图中为原始数据线性趋势线，而统计量为Spearman ρ。"
+     },
+     {
+      "input_field": "page_images",
+      "page": 27,
+      "observation": "Figure 2中中风险组隔离者均值（约1美元）低于非隔离者（约4.4美元），问题赌博组则相反；图注只报告PGSI主效应F(3,1131)，没有交互项检验。"
+     }
+    ],
+    "issue_type": "V3"
+   },
+   {
+    "issue": "修订稿中的数值不一致：IGDC组差效应量、Table 2中IGD的Z检验p值、摘要中的组样本量。",
+    "response_claim": "作者称已发现并改正两处错误（K-10方向、未换算美元的支出），且“did not alter the significance or interpretation of any results”。",
+    "observed_change": "K-10方向和PGSI相关已更新，但仍有可直接核算的错误。(a) IGDC：M 7.94 vs 8.28，SD约5.57，t=0.97，对应d≈0.06，文中写d=0.16（与K-10的d相同，疑为复制）。(b) Table 2 IGD行：Z=1.028对应双尾p≈.30，表中p=.426，与前稿Loot Box行的p值相同，疑为复制。(c) 摘要写“not (n = 619)”，正文为697，且619恰为男性人数。",
+    "resolution": "unresolved",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "t(1,142) = 0.97, p = .330, d = 0.16",
+      "location_hint": "Results, line 267"
+     },
+     {
+      "input_field": "page_images",
+      "page": 31,
+      "observation": "Table 2 IGD行：.239 vs .297，“Z = 1.028, p = .426”；Z≈1.03对应双尾p≈.30，数值不一致。"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "isolating (n = 447) or not (n = 619)",
+      "location_hint": "Abstract, line 32"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "quarantine (n = 197), or neither (n = 697)",
+      "location_hint": "Procedure, line 211"
+     },
+     {
+      "input_field": "responses.combined",
+      "exact_quote": "Correcting these errors yielded slightly different numbers, but did not alter the significance or interpretation of any results.",
+      "location_hint": "对R2描述统计要求的回复"
+     }
+    ],
+    "issue_type": "V3"
+   },
+   {
+    "issue": "结论与证据不相称：横断面、相关性、主观隔离的数据被用于支持“疫情/隔离放大效应量”“污染担忧是临床显著的促成因素”“玩家以游戏应对疫情担忧”等带因果或机制意味的结论。",
+    "response_claim": "作者称已将“increased”改为“greater”；将“small but important”改为“clinically significant”；增加state/trait局限，并承认其解释是推测性的。",
+    "observed_change": "措辞有局部修改，并增加了局限段落，但“clinically significant contributor”在横断面r≈.25的基础上仍隐含因果与临床意义，强度未见降低。Discussion和Abstract仍保留“moderator… inflating the size of some previously observed relationships”及coping解释。“Inflate”一词需要与非疫情基线比较，而本研究没有这样的基线。",
+    "resolution": "partially_resolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "moderator for other relationships in pathological gaming research, inflating the size of some previously",
+      "location_hint": "Discussion, line 335"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "concern may be a clinically significant contributor to excessive engagement with both gaming and",
+      "location_hint": "Results, line 278"
+     },
+     {
+      "input_field": "manuscript_after.text",
+      "exact_quote": "with video games to manage their contamination concerns about the COVID-19 pandemic",
+      "location_hint": "Discussion, line 307"
+     },
+     {
+      "input_field": "reviews.R2",
+      "exact_quote": "how do Ferguson’s criteria establish that a small effect size is important?",
+      "location_hint": "R2 Validity"
+     }
+    ],
+    "issue_type": "V8"
+   },
+   {
+    "issue": "预注册透明度与可复现性：编辑要求按预注册顺序呈现结果，并把额外分析标为exploratory；还要求提供同意书和数据字典。",
+    "response_claim": "作者称已重排假设以匹配结果顺序，已上传含数据字典的OSF数据，并说明同意采用隐含同意方式。",
+    "observed_change": "假设列表顺序被改为与结果一致，即改动的是假设的呈现顺序而非结果顺序，这偏离了预注册中的原始编号，正文也没有说明编号已改。结果中没有任何分析被标为exploratory，也没有逐条对照H1–H8的支持情况；新增的连续变量散点图和“coping”解释的地位不清。OSF数据字典和补充材料在本题材料中无法核实。",
+    "resolution": "partially_resolved",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "editor_decision",
+      "exact_quote": "those analyses should simply be identified as exploratory",
+      "location_hint": "决定信"
+     },
+     {
+      "input_field": "responses.combined",
+      "exact_quote": "We have now reordered our hypotheses to match the ordering of the results & discussion sections",
+      "location_hint": "对R2假设顺序问题的回复"
+     },
+     {
+      "input_field": "responses.combined",
+      "exact_quote": "We have uploaded an updated dataset to OSF which contains (in a second data sheet) a data dictionary.",
+      "location_hint": "对R2数据readme的回复"
+     },
+     {
+      "input_field": "page_images",
+      "page": 8,
+      "observation": "修订稿假设1改为原H7（组差），假设4–5改为原H1–H2，正文未注明与预注册编号的对应关系。"
+     }
+    ],
+    "issue_type": "V7"
+   }
+  ],
+  "evidence_limits": [
+   "未提供原始数据、OSF预注册文本、数据字典或补充材料（含lockdown分析），无法核实预注册原始假设顺序、隔离题目的具体措辞、按国家的隔离分布，也无法复算相关和检验。",
+   "数值核查仅基于正文报告的均值、SD、n和Z值做近似复算（如d≈t·√(1/n1+1/n2)、Fisher z的标准误），结论限于内部一致性。",
+   "Figure 1斜率比较基于页面图像目测，未获取精确回归系数。",
+   "同意书文件为保密上传，本题材料中不可见；按补充材料政策，不据此推断作者未提供。"
+  ],
+  "process_consistency_auxiliary": "作者对两位审稿人的大部分意见作出了可见回应，编辑关于报告与描述统计的要求基本落实。但编辑要求的“exploratory”标注未落实，R1的调节检验问题与R2的辖区混杂问题只获得文字承认，没有新增分析。作者称“未改变任何结果解释”，但修订稿中仍有新的或残留的数值不一致。"
+ },
+ "parse_error": null
+}

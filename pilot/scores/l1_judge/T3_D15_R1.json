@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D15_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Shows the precision formula is not a power calculation and that non-probability sampling is unaddressed; partially_resolved agrees with the card."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Flags sex treated as a normal variable, the unlabelled W/p result and N=211 vs 212; partially_resolved is correct."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Retained df=2, p values in the t slot and p=0.05 called significant, plus the fitness-page CI crossing zero; unresolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Self-developed scale has only expert face validity and no reliability or structure evidence; unresolved matches."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "New SDT and implication sections are visible but untested and overreaching; partially_resolved agrees."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Fitness-page significance contradicted by two-tailed p=0.120 and CI crossing zero; unresolved, and the Abstract claim is noted."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "No effect size, alpha or power is given; the 'unresolved' judgement is an acceptable alternative on the card."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "Identifies df=2 for the t tests, p=0.05 used in place of actual values, and ANOVA F/p inconsistency; unresolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Notes sex treated as normal and the body-image mean 73.25 not matching the group means; partially_resolved. Minor misattribution of the W=0.968 result."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Wrong minimum scores, no reliability in this sample, and weak validity of the new scale; unresolved."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Explicitly separates Levene's Sig 0.028 from the t-test p=0.120 and notes the Abstract claim persists; unresolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Normal-distributed sex variable, the unnamed p<0.001 result and N=211 inconsistency; partially_resolved."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "No power analysis is given and the sample is convenience-based; separates precision from representativeness; partially_resolved."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Face validity only, no reliability reported, and wrong minimum scores; unresolved."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Added SDT implications extrapolate beyond data that never measured the mechanism; partially_resolved."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Shows the precision formula is not a power calculation and that non-probability sampling is unaddressed; partially_resolved agrees with the card.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Flags sex treated as a normal variable, the unlabelled W/p result and N=211 vs 212; partially_resolved is correct.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"Retained df=2, p values in the t slot and p=0.05 called significant, plus the fitness-page CI crossing zero; unresolved.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Self-developed scale has only expert face validity and no reliability or structure evidence; unresolved matches.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"New SDT and implication sections are visible but untested and overreaching; partially_resolved agrees.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Fitness-page significance contradicted by two-tailed p=0.120 and CI crossing zero; unresolved, and the Abstract claim is noted.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"No effect size, alpha or power is given; the 'unresolved' judgement is an acceptable alternative on the card.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"Identifies df=2 for the t tests, p=0.05 used in place of actual values, and ANOVA F/p inconsistency; unresolved.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Notes sex treated as normal and the body-image mean 73.25 not matching the group means; partially_resolved. Minor misattribution of the W=0.968 result.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Wrong minimum scores, no reliability in this sample, and weak validity of the new scale; unresolved.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Explicitly separates Levene's Sig 0.028 from the t-test p=0.120 and notes the Abstract claim persists; unresolved.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Normal-distributed sex variable, the unnamed p<0.001 result and N=211 inconsistency; partially_resolved.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"No power analysis is given and the sample is convenience-based; separates precision from representativeness; partially_resolved.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Face validity only, no reliability reported, and wrong minimum scores; unresolved.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Added SDT implications extrapolate beyond data that never measured the mechanism; partially_resolved.\"}]}}"
+}

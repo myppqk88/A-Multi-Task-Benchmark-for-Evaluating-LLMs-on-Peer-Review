@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D12_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "haiku",
+  "B": "opus",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Shows the low-skill missingness is selective, so unobserved regions cannot simply be classed LQ<1; this is the neutral point on truncation inference."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Notes the added Table 1 correlations and their limits (no N, no tests); partially_resolved agrees with R02."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Well supported overreach point: governance was admitted unmeasured and the conclusions use causal ageing language; R02 is already used by claim 1."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Pooled five-country benchmark kept, no within-country sensitivity analysis; partially_resolved is an accepted alternative."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Sample details only partly added (full/part-time, migrants, weighting still missing); partial agrees with R03."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "New correlations noted; criticises the ecological/national-level structure and causal wording; partially_resolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Cross-country benchmark retained, no domestic analysis; unresolved matches R01."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Eliminative inference on missing LQ_L is unsupported, since small cells do not imply LQ<1; corresponds to N01."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Only gender and age added; full/part-time, migrants and weighting missing; partial matches R03."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "'Decisive' factor claims despite the unmeasured governance indicator; supported. Partial judgement on EU generalisation conflicts with R06's unresolved."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Bivariate correlations added without n or tests, still used as 'determinants'; partially_resolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Pooled benchmark confounds country structure, no within-country analysis added; unresolved."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N01",
+     "reason": "Missing low-skill data and the unverified elimination inference correspond to N01; the ISCO-category criticism is consistent with the material."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Institutions/GVC unmeasured yet concluded; growth-pole 'refute' claim from correlations; supported overreach."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Sample description partly added, weighting and migrant details still absent; partial agrees with R03."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Shows the low-skill missingness is selective, so unobserved regions cannot simply be classed LQ<1; this is the neutral point on truncation inference.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Notes the added Table 1 correlations and their limits (no N, no tests); partially_resolved agrees with R02.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Well supported overreach point: governance was admitted unmeasured and the conclusions use causal ageing language; R02 is already used by claim 1.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Pooled five-country benchmark kept, no within-country sensitivity analysis; partially_resolved is an accepted alternative.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Sample details only partly added (full/part-time, migrants, weighting still missing); partial agrees with R03.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"New correlations noted; criticises the ecological/national-level structure and causal wording; partially_resolved.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Cross-country benchmark retained, no domestic analysis; unresolved matches R01.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Eliminative inference on missing LQ_L is unsupported, since small cells do not imply LQ<1; corresponds to N01.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Only gender and age added; full/part-time, migrants and weighting missing; partial matches R03.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"'Decisive' factor claims despite the unmeasured governance indicator; supported. Partial judgement on EU generalisation conflicts with R06's unresolved.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Bivariate correlations added without n or tests, still used as 'determinants'; partially_resolved.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Pooled benchmark confounds country structure, no within-country analysis added; unresolved.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N01\",\"reason\":\"Missing low-skill data and the unverified elimination inference correspond to N01; the ISCO-category criticism is consistent with the material.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Institutions/GVC unmeasured yet concluded; growth-pole 'refute' claim from correlations; supported overreach.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Sample description partly added, weighting and migrant details still absent; partial agrees with R03.\"}]}}"
+}

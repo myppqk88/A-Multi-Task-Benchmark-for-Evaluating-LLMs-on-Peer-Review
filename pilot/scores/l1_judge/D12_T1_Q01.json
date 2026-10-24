@@ -1,0 +1,129 @@
+{
+ "task_id": "D12_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Correctly flags the total-employment denominator and the pooled transnational benchmark. Both confound national education composition with mismatch, which fits R01's denominator/benchmark alternative."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Verified: the text gives Hovedstaden LQ=3.30 and LQ=0.82, makes claims about German regions that Fig 1.1b shows as no data, and lists Dresden twice. These are substantive internal inconsistencies not on the card."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Missing low-skill data, unreported reliability, and a non-random set of mapped regions undermine the low-skill conclusions."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "The five determinants and the spillover refutation are never tested with regional covariates. They are only literature-based narrative."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The 'ISCO 4 and 8' wording leaves groups 5–7 unclear, the Table 1 denominator is unstated, and the 2008–2021 data statement is inconsistent with the analysis. These are genuine reproducibility gaps."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Verified: Fig 1.1b shows Germany, including Freiburg, as no data, yet the text claims low or average values. This text–figure contradiction is not on the card."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The stated mapping (1–3, 4 and 8, 9) omits ISCO 5–7, yet Table 1 rows sum to about 100. This substantive classification inconsistency is supported by the material."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "No model or covariate links the five determinants to the LQs, so the claimed determinants lack empirical support."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "The low-skill results are interpreted despite many missing values. Possible selection bias and the lack of any sensitivity check are noted."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "LQ measures relative concentration, not matching efficiency or mismatch incidence. This fits R04's alternative."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "The occupation-tier indicator plus the denominator do not measure overskilling, and field-specificity is ignored. The occupational indicator is insufficient to define mismatch."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Sparse low-skill data with no reliability or uncertainty reporting make the periphery claims unsupported."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Determinants are asserted from literature and never measured or tested. The spillover refutation is unsupported."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Explicitly notes that a national-reference LQ is not used and that the transnational denominator mixes country compositional differences, which meets R01's criteria."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Weights, sample sizes and missing-cell handling are undocumented, which matches R06. Some side remarks are wrong: Attica is in the table as EL30, and six regions in five countries is not an inconsistency."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Correctly flags the total-employment denominator and the pooled transnational benchmark. Both confound national education composition with mismatch, which fits R01's denominator/benchmark alternative.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Verified: the text gives Hovedstaden LQ=3.30 and LQ=0.82, makes claims about German regions that Fig 1.1b shows as no data, and lists Dresden twice. These are substantive internal inconsistencies not on the card.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Missing low-skill data, unreported reliability, and a non-random set of mapped regions undermine the low-skill conclusions.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"The five determinants and the spillover refutation are never tested with regional covariates. They are only literature-based narrative.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The 'ISCO 4 and 8' wording leaves groups 5–7 unclear, the Table 1 denominator is unstated, and the 2008–2021 data statement is inconsistent with the analysis. These are genuine reproducibility gaps.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Verified: Fig 1.1b shows Germany, including Freiburg, as no data, yet the text claims low or average values. This text–figure contradiction is not on the card.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The stated mapping (1–3, 4 and 8, 9) omits ISCO 5–7, yet Table 1 rows sum to about 100. This substantive classification inconsistency is supported by the material.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"No model or covariate links the five determinants to the LQs, so the claimed determinants lack empirical support.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"The low-skill results are interpreted despite many missing values. Possible selection bias and the lack of any sensitivity check are noted.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"LQ measures relative concentration, not matching efficiency or mismatch incidence. This fits R04's alternative.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"The occupation-tier indicator plus the denominator do not measure overskilling, and field-specificity is ignored. The occupational indicator is insufficient to define mismatch.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Sparse low-skill data with no reliability or uncertainty reporting make the periphery claims unsupported.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Determinants are asserted from literature and never measured or tested. The spillover refutation is unsupported.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Explicitly notes that a national-reference LQ is not used and that the transnational denominator mixes country compositional differences, which meets R01's criteria.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Weights, sample sizes and missing-cell handling are undocumented, which matches R06. Some side remarks are wrong: Attica is in the table as EL30, and six regions in five countries is not an inconsistency.\"}]}}"
+}

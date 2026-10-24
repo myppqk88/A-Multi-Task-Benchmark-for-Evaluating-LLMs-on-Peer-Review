@@ -1,0 +1,199 @@
+{
+ "task_id": "D11_T2_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "haiku",
+  "B": "sonnet",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Recognizes that Section 3 and the named source types and locations directly address data-source clarification. It does not claim generation procedures were shown."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Separates the claim that excerpts were added in Section 4/Table 2 from the absence of any excerpt in the response."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Correctly notes the response directly answers who did the analysis: first author coded, co-authors reviewed."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "States that co-author review of category definitions is not inter-coder reliability, though the response claims it is."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Fair point that the review process lacks detail, but it largely elaborates the ICR gap. Minor."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Notes that the scope, quantity and coverage of memos and field notes are not shown, so only source types and locations are given."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly states the revision-verification boundary. This is procedural, not a substantive gap."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Identifies that the framework, Figure 3 and policy content are irrelevant to this comment."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Recognizes that source types and locations named in Section 3 address data-source clarification."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies the excerpts requirement as answered via Section 4/Table 2."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Correctly notes the who-coded question is answered directly."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Notes the response asserts memos are core evidence but does not show how they are referenced in the findings."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Partly correct that interviews are not mentioned. However, meeting notes do cover observations, so the point is weak and minor."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "States that co-author review is peer checking, not inter-coder reliability, despite the response's claim."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Lack of detail on disagreement resolution is an elaboration of the ICR gap. Minor."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Flags the irrelevant framework, discussion and policy content and the overstated closing claim."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Recognizes the data-source clarification as a direct but general response."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Notes the excerpts are claimed in Section 4/Table 2 but no examples are given."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Correctly identifies the direct answer on who conducted the analysis."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "States that co-author review is not an ICR procedure and that the response overclaims it."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Notes the response does not show how memos and notes are referenced in the findings."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Notes the excerpts lack source type, examples or counts, so only a location claim is available."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The unclear role of archival documentation and interviews is a fair but minor completeness point."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "Identifies the irrelevant framework, Figure 3 and policy content."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "A correct verification-boundary statement, not a substantive gap."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Recognizes that Section 3 and the named source types and locations directly address data-source clarification. It does not claim generation procedures were shown.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Separates the claim that excerpts were added in Section 4/Table 2 from the absence of any excerpt in the response.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Correctly notes the response directly answers who did the analysis: first author coded, co-authors reviewed.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"States that co-author review of category definitions is not inter-coder reliability, though the response claims it is.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Fair point that the review process lacks detail, but it largely elaborates the ICR gap. Minor.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Notes that the scope, quantity and coverage of memos and field notes are not shown, so only source types and locations are given.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly states the revision-verification boundary. This is procedural, not a substantive gap.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Identifies that the framework, Figure 3 and policy content are irrelevant to this comment.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Recognizes that source types and locations named in Section 3 address data-source clarification.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies the excerpts requirement as answered via Section 4/Table 2.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Correctly notes the who-coded question is answered directly.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Notes the response asserts memos are core evidence but does not show how they are referenced in the findings.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Partly correct that interviews are not mentioned. However, meeting notes do cover observations, so the point is weak and minor.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"States that co-author review is peer checking, not inter-coder reliability, despite the response's claim.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Lack of detail on disagreement resolution is an elaboration of the ICR gap. Minor.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Flags the irrelevant framework, discussion and policy content and the overstated closing claim.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Recognizes the data-source clarification as a direct but general response.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Notes the excerpts are claimed in Section 4/Table 2 but no examples are given.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Correctly identifies the direct answer on who conducted the analysis.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"States that co-author review is not an ICR procedure and that the response overclaims it.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Notes the response does not show how memos and notes are referenced in the findings.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Notes the excerpts lack source type, examples or counts, so only a location claim is available.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The unclear role of archival documentation and interviews is a fair but minor completeness point.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"Identifies the irrelevant framework, Figure 3 and policy content.\"},{\"claim_index\":5,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"A correct verification-boundary statement, not a substantive gap.\"}]}}"
+}

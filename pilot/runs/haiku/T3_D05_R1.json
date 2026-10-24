@@ -1,0 +1,198 @@
+{
+ "task_id": "T3_D05_R1",
+ "model_alias": "haiku",
+ "model_init": "claude-haiku-5-5",
+ "models_served": [
+  "claude-haiku-5-5"
+ ],
+ "attempt": 1,
+ "seconds": 68.7,
+ "is_error": false,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 152839,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 13705,
+  "output_tokens_details": {
+   "thinking_tokens": 8895
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 152839,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 13705,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 152839,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 152839
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "stop_reason": "end_turn",
+ "raw_text": "```json\n{\n  \"overall_label\": \"needs_substantive_revision\",\n  \"rationale\": \"修订稿完成了若干可见的、与审稿意见直接对应的改动：5G 在摘要中已定义（materials/manuscript_after.text 摘要 Background 中的 \\\"the fifth generation technology standard 5G\\\"）；新增 5G 频段（FR1 3.3–3.8 GHz、FR2 26–28 GHz）；新增 Conclusion 小节；引言与“Communication of precautionary information”段落区分了法定限值与自愿预防行为。这些是真实的文本修改，但都属于 R2、R3 的格式或补充性请求，以及 R1 的部分表述问题。\\n\\n对核心科学主张的检查显示几处未解决的问题。第一，Table 9 的假设决策与报告的检验结果不一致：H3a（Germany）在 Table 9 中仍为 \\\"Keep H0\\\"，但 Results 中报告 \\\"the interaction thematic relevance*text group (t = 2.13, p = .03)\\\"，Discussion 亦承认该交互显著；H1c 行写作 \\\"CR2 precaution = CR2 precaution\\\" 且两国均标 \\\"Reject H0\\\"，而 Table 6 中 CR2 的文本效应在两国均不显著（p = .58、.24）。这些错误直接影响假设结论汇总，修订未触及。第二，R1 指出的“预防建议与限值混同”问题只部分解决：摘要 Background 原句 \\\"authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure\\\" 未修改，引言和讨论中的区分只在部分段落出现。第三，R2 的 Greece 暴露问题，作者回复称文献显示实际暴露 \\\"usually much lower than the limits\\\"，而正文仅写 \\\"typically not fully utilized\\\"，回复与正文表述不一致；所引文献不在本题材料内，无法核实。第四，相对性的 relevance 配额设计（\\\"each of the seven scale points was represented with 91 to 110 participants\\\"）使“Greece 相关性更高”的推断部分依赖于配额难填程度，这一点未被讨论或修正。第五，Greece 信任与自我效能的解释在 Discussion 中被作为机制支持（\\\"support this possible explanation\\\"），但该信任效应仅在加入相关性协变量后显著（Table 8 \\\"0.2 (0.09) .047*\\\"，而 Table 6 中为 p = .06），机制未经检验。\\n\\n此外，Table 1 德国列的“Sum of planned exclusions 1335 (735 left)”与各分项之和（35+981+65+71+76+108=1336）不符，但 735 与最终 727 的推算一致，属小的算术错误。多重检验未作校正，H3 的 p = .03 交互应谨慎解释。综合看，这些问题多数可通过重报与改写修正，不需要新数据，但修正尚未完成，因此标为需要实质修改。\",\n  \"issues\": [\n    {\n      \"issue\": \"Table 9 的假设决策汇总与正文报告的检验结果不一致：H3a（德国）标为 Keep H0，但文中报告了显著的 thematic relevance × text 交互；H1c 行标题写作 'CR2 precaution = CR2 precaution' 且两国均为 Reject H0，与 Table 6 中 CR2 文本效应不显著的结果不符。\",\n      \"response_claim\": \"R1、R2、R3 的回复均未针对 Table 9 提出修改；作者在 Discussion 中承认“the one analysis where we did see an effect, the effect was countervailing”。\",\n      \"observed_change\": \"Table 9 在修订稿中未改动，仍保留 'Keep H0' 与 'Reject H0' 的原有标注及 CR2 行的标题错误；Results 与 Discussion 的交互描述也未与 Table 9 对齐。\",\n      \"resolution\": \"unresolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"H3 a Relevance is moderator for affective RP Keep H0\",\n          \"location_hint\": \"Table 9（after 稿约第14页），H3 a 行，Germany 列\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"the interaction thematic relevance*text group (t = 2.13, p = .03)\",\n          \"location_hint\": \"Results，Hypothesis 3 段（after 稿约第12页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"c CR2 precaution = CR2 precaution\",\n          \"location_hint\": \"Table 9，H1 c 行（after 稿约第14页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"0.06 (0.1)\",\n          \"location_hint\": \"Table 6，Germany CR2 列 Text 行，p 为 .58（after 稿约第12页）\"\n        }\n      ],\n      \"issue_type\": \"V7\"\n    },\n    {\n      \"issue\": \"R1 指出论文把法定 EMF 限值与超出限值的预防建议混为一谈，认为预防建议本身就是限值；修订需要明确两者区分。\",\n      \"response_claim\": \"作者回复称已“revised the relevant passages to more clearly distinguish between legally enforced limits and voluntary precautionary behavior”。\",\n      \"observed_change\": \"引言中新增 \\\"usually by legally enforcing limit values\\\"，“Communication”段新增 \\\"Besides informing about legally enforced limits, this information refers to voluntary precautionary behavior\\\"；但摘要 Background 原句基本未改，仍写 \\\"authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure\\\"，即 R1 明确提到的位置。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure\",\n          \"location_hint\": \"Abstract，Background 段（修订稿摘要）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"usually by legally enforcing limit values\",\n          \"location_hint\": \"Introduction 第一段（after 稿约第4页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"Besides informing about legally enforced limits, this information refers to voluntary precautionary behavior\",\n          \"location_hint\": \"Communication of precautionary information to the public 段（after 稿约第5页）\"\n        },\n        {\n          \"input_field\": \"reviews.R1\",\n          \"exact_quote\": \"In several parts of the text (e.g., in the background of the Abstract), the authors say that there is precautionary advice to do something more than stay within the limits of EMF exposure.\",\n          \"location_hint\": \"R1 第一段\"\n        }\n      ],\n      \"issue_type\": \"V6\"\n    },\n    {\n      \"issue\": \"R2 关于 Greece 实际暴露与限值差距的问题。作者回复和修订版摘要声称实际暴露 \\\"much lower\\\" 或 \\\"usually much lower\\\" than the limits，而正文仅写限值 \\\"typically not fully utilized\\\"，二者强度不同；所引文献不在本题材料中，无法核实其数值。\",\n      \"response_claim\": \"回复称已加入文献，表明 \\\"in Greece (where risk perception was higher) the actual exposure is usually much lower than the limits recommended for health protection\\\"。\",\n      \"observed_change\": \"正文新增 \\\"These limits are typically not fully utilized, for example in Greece (Christopoulou et al., 2024; Manassas et al., 2025)\\\"；修订说明页写 \\\"the actual exposure is much lower than the limits\\\"。两处措辞强度与回复不一致，且该论断未附任何具体测量数值。\",\n      \"resolution\": \"not_verifiable\",\n      \"importance\": \"supporting\",\n      \"evidence\": [\n        {\n          \"input_field\": \"responses.R2\",\n          \"exact_quote\": \"the actual exposure is usually much lower than the limits recommended for health protection\",\n          \"location_hint\": \"R2 回复第三段\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"These limits are typically not fully utilized, for example in Greece\",\n          \"location_hint\": \"The case of 5G, RF-EMF and health 段（after 稿约第4-5页）\"\n        },\n        {\n          \"input_field\": \"page_images\",\n          \"page\": 4,\n          \"observation\": \"修订说明框（Amendments from Version 1）写道 \\\"the actual exposure is much lower than the limits recommended for health protection\\\"，与正文 \\\"typically not fully utilized\\\" 的强度不同。\"\n        }\n      ],\n      \"issue_type\": \"V8\"\n    },\n    {\n      \"issue\": \"个体相关性（practical 与 thematic relevance）的测量与配额设计对推断的影响未被处理：relevance 按七个等级配额抽样，样本中的 relevance 分布是人为平衡的；国家间 relevance 差异又被解释为配额填充难易程度的指示，并作为“Greece 相关性更高”的依据。practical relevance 的有效性也仅被承认“It is too early to tell”。\",\n      \"response_claim\": \"作者未回应 relevance 配额设计如何影响国家比较与 moderation 推断；修订稿对此无实质改动。\",\n      \"observed_change\": \"Methods 段保留原有配额描述与解释；Discussion 仍写 \\\"It is too early to tell if our approach to use general interest in the topic as a proxy for personal relevance is helpful\\\"，并未补充可检验的效度证据或对配额设计的限制性讨论。\",\n      \"resolution\": \"unresolved\",\n      \"importance\": \"central\",\n      \"evidence\": [\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"The quota was used to ensure that the distribution of relevance is roughly balanced\",\n          \"location_hint\": \"Methods，Sample 段（after 稿约第7页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"which was an indication that relevance of the topic is higher in Greece compared to Germany\",\n          \"location_hint\": \"Methods，Sample 段（after 稿约第7页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"It is too early to tell if our approach to use general interest in the topic as a proxy for personal relevance is helpful\",\n          \"location_hint\": \"Discussion，Practical relevance 段（after 稿约第16页）\"\n        }\n      ],\n      \"issue_type\": \"V1\"\n    },\n    {\n      \"issue\": \"Greece 信任与自我效能的解释超出证据：Greece 信任的文本效应仅在加入相关性协变量后显著（p = .047），在仅含文本与性别的模型中为 p = .06，且未检验中介；Discussion 却将其作为“更有信心控制暴露”机制的支持。在多个检验未做校正的背景下，该解释应被降级。\",\n      \"response_claim\": \"作者在讨论中写道 \\\"trust in Greece was higher in the precaution group (though only if including relevance in the analysis) support this possible explanation\\\"，并以自我效能提高作为机制证据。\",\n      \"observed_change\": \"修订稿保留了相同表述，仅在括号内加入“only if including relevance”的限定；未新增中介分析或对多重比较的讨论；Conclusion 也未引用该机制。\",\n      \"resolution\": \"partially_resolved\",\n      \"importance\": \"supporting\",\n      \"evidence\": [\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"support this possible explanation\",\n          \"location_hint\": \"Discussion，Interpretation 段第二部分（after 稿约第15页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"they may feel less helpless and more confident in their ability to control their own exposure to RF-EMF\",\n          \"location_hint\": \"Discussion，Interpretation 段（after 稿约第15页）\"\n        },\n        {\n          \"input_field\": \"materials/manuscript_after.text\",\n          \"exact_quote\": \"0.2 (0.09) .047*\",\n          \"location_hint\": \"Table 8，Greece Trust 列 Text 行（after 稿约第13页）\"\n        }\n      ],\n      \"issue_type\": \"V8\"\n    }\n  ],\n  \"evidence_limits\": [\n    \"本题仅提供文本与页图，无原始数据，不能独立重算所有统计量；仅依据材料中的表格与正文做一致性检查（如 t 值与 B/SE 的近似吻合）。\",\n    \"所引外部文献（Christopoulou et al., 2024；Manassas et al., 2025 等）及 R2 的 Greece 暴露数据未在材料中提供，无法核实其内容。\",\n    \"修订版中新增的 Conclusion 与引言修改已可见，但未检查 OSF 上的实验材料、JASP 文件或预注册文件，无法核实实验刺激或分析代码是否已同步更新。\",\n    \"多重检验校正未在材料中出现；H3 的单个交互（p = .03）及若干显著结果的稳健性无法从本题材料完全判断。\",\n    \"Table 1 德国列的“1335”与分项之和 1336 不一致，但最终样本数 727 与其余推算一致，本评议将其视为小的报告错误，未据此推断数据问题。\",\n    \"R1 自述非该领域专家，其关于伪科学的评论不构成对研究设计的实质要求；R2 关于公众意识项目的问题超出本研究测量范围，回复的拒绝理由合理但无法由数据检验。\"\n  ],\n  \"process_consistency_auxiliary\": null\n}\n```",
+ "answer": {
+  "overall_label": "needs_substantive_revision",
+  "rationale": "修订稿完成了若干可见的、与审稿意见直接对应的改动：5G 在摘要中已定义（materials/manuscript_after.text 摘要 Background 中的 \"the fifth generation technology standard 5G\"）；新增 5G 频段（FR1 3.3–3.8 GHz、FR2 26–28 GHz）；新增 Conclusion 小节；引言与“Communication of precautionary information”段落区分了法定限值与自愿预防行为。这些是真实的文本修改，但都属于 R2、R3 的格式或补充性请求，以及 R1 的部分表述问题。\n\n对核心科学主张的检查显示几处未解决的问题。第一，Table 9 的假设决策与报告的检验结果不一致：H3a（Germany）在 Table 9 中仍为 \"Keep H0\"，但 Results 中报告 \"the interaction thematic relevance*text group (t = 2.13, p = .03)\"，Discussion 亦承认该交互显著；H1c 行写作 \"CR2 precaution = CR2 precaution\" 且两国均标 \"Reject H0\"，而 Table 6 中 CR2 的文本效应在两国均不显著（p = .58、.24）。这些错误直接影响假设结论汇总，修订未触及。第二，R1 指出的“预防建议与限值混同”问题只部分解决：摘要 Background 原句 \"authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure\" 未修改，引言和讨论中的区分只在部分段落出现。第三，R2 的 Greece 暴露问题，作者回复称文献显示实际暴露 \"usually much lower than the limits\"，而正文仅写 \"typically not fully utilized\"，回复与正文表述不一致；所引文献不在本题材料内，无法核实。第四，相对性的 relevance 配额设计（\"each of the seven scale points was represented with 91 to 110 participants\"）使“Greece 相关性更高”的推断部分依赖于配额难填程度，这一点未被讨论或修正。第五，Greece 信任与自我效能的解释在 Discussion 中被作为机制支持（\"support this possible explanation\"），但该信任效应仅在加入相关性协变量后显著（Table 8 \"0.2 (0.09) .047*\"，而 Table 6 中为 p = .06），机制未经检验。\n\n此外，Table 1 德国列的“Sum of planned exclusions 1335 (735 left)”与各分项之和（35+981+65+71+76+108=1336）不符，但 735 与最终 727 的推算一致，属小的算术错误。多重检验未作校正，H3 的 p = .03 交互应谨慎解释。综合看，这些问题多数可通过重报与改写修正，不需要新数据，但修正尚未完成，因此标为需要实质修改。",
+  "issues": [
+   {
+    "issue": "Table 9 的假设决策汇总与正文报告的检验结果不一致：H3a（德国）标为 Keep H0，但文中报告了显著的 thematic relevance × text 交互；H1c 行标题写作 'CR2 precaution = CR2 precaution' 且两国均为 Reject H0，与 Table 6 中 CR2 文本效应不显著的结果不符。",
+    "response_claim": "R1、R2、R3 的回复均未针对 Table 9 提出修改；作者在 Discussion 中承认“the one analysis where we did see an effect, the effect was countervailing”。",
+    "observed_change": "Table 9 在修订稿中未改动，仍保留 'Keep H0' 与 'Reject H0' 的原有标注及 CR2 行的标题错误；Results 与 Discussion 的交互描述也未与 Table 9 对齐。",
+    "resolution": "unresolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "H3 a Relevance is moderator for affective RP Keep H0",
+      "location_hint": "Table 9（after 稿约第14页），H3 a 行，Germany 列"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "the interaction thematic relevance*text group (t = 2.13, p = .03)",
+      "location_hint": "Results，Hypothesis 3 段（after 稿约第12页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "c CR2 precaution = CR2 precaution",
+      "location_hint": "Table 9，H1 c 行（after 稿约第14页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "0.06 (0.1)",
+      "location_hint": "Table 6，Germany CR2 列 Text 行，p 为 .58（after 稿约第12页）"
+     }
+    ],
+    "issue_type": "V7"
+   },
+   {
+    "issue": "R1 指出论文把法定 EMF 限值与超出限值的预防建议混为一谈，认为预防建议本身就是限值；修订需要明确两者区分。",
+    "response_claim": "作者回复称已“revised the relevant passages to more clearly distinguish between legally enforced limits and voluntary precautionary behavior”。",
+    "observed_change": "引言中新增 \"usually by legally enforcing limit values\"，“Communication”段新增 \"Besides informing about legally enforced limits, this information refers to voluntary precautionary behavior\"；但摘要 Background 原句基本未改，仍写 \"authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure\"，即 R1 明确提到的位置。",
+    "resolution": "partially_resolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure",
+      "location_hint": "Abstract，Background 段（修订稿摘要）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "usually by legally enforcing limit values",
+      "location_hint": "Introduction 第一段（after 稿约第4页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "Besides informing about legally enforced limits, this information refers to voluntary precautionary behavior",
+      "location_hint": "Communication of precautionary information to the public 段（after 稿约第5页）"
+     },
+     {
+      "input_field": "reviews.R1",
+      "exact_quote": "In several parts of the text (e.g., in the background of the Abstract), the authors say that there is precautionary advice to do something more than stay within the limits of EMF exposure.",
+      "location_hint": "R1 第一段"
+     }
+    ],
+    "issue_type": "V6"
+   },
+   {
+    "issue": "R2 关于 Greece 实际暴露与限值差距的问题。作者回复和修订版摘要声称实际暴露 \"much lower\" 或 \"usually much lower\" than the limits，而正文仅写限值 \"typically not fully utilized\"，二者强度不同；所引文献不在本题材料中，无法核实其数值。",
+    "response_claim": "回复称已加入文献，表明 \"in Greece (where risk perception was higher) the actual exposure is usually much lower than the limits recommended for health protection\"。",
+    "observed_change": "正文新增 \"These limits are typically not fully utilized, for example in Greece (Christopoulou et al., 2024; Manassas et al., 2025)\"；修订说明页写 \"the actual exposure is much lower than the limits\"。两处措辞强度与回复不一致，且该论断未附任何具体测量数值。",
+    "resolution": "not_verifiable",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "responses.R2",
+      "exact_quote": "the actual exposure is usually much lower than the limits recommended for health protection",
+      "location_hint": "R2 回复第三段"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "These limits are typically not fully utilized, for example in Greece",
+      "location_hint": "The case of 5G, RF-EMF and health 段（after 稿约第4-5页）"
+     },
+     {
+      "input_field": "page_images",
+      "page": 4,
+      "observation": "修订说明框（Amendments from Version 1）写道 \"the actual exposure is much lower than the limits recommended for health protection\"，与正文 \"typically not fully utilized\" 的强度不同。"
+     }
+    ],
+    "issue_type": "V8"
+   },
+   {
+    "issue": "个体相关性（practical 与 thematic relevance）的测量与配额设计对推断的影响未被处理：relevance 按七个等级配额抽样，样本中的 relevance 分布是人为平衡的；国家间 relevance 差异又被解释为配额填充难易程度的指示，并作为“Greece 相关性更高”的依据。practical relevance 的有效性也仅被承认“It is too early to tell”。",
+    "response_claim": "作者未回应 relevance 配额设计如何影响国家比较与 moderation 推断；修订稿对此无实质改动。",
+    "observed_change": "Methods 段保留原有配额描述与解释；Discussion 仍写 \"It is too early to tell if our approach to use general interest in the topic as a proxy for personal relevance is helpful\"，并未补充可检验的效度证据或对配额设计的限制性讨论。",
+    "resolution": "unresolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "The quota was used to ensure that the distribution of relevance is roughly balanced",
+      "location_hint": "Methods，Sample 段（after 稿约第7页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "which was an indication that relevance of the topic is higher in Greece compared to Germany",
+      "location_hint": "Methods，Sample 段（after 稿约第7页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "It is too early to tell if our approach to use general interest in the topic as a proxy for personal relevance is helpful",
+      "location_hint": "Discussion，Practical relevance 段（after 稿约第16页）"
+     }
+    ],
+    "issue_type": "V1"
+   },
+   {
+    "issue": "Greece 信任与自我效能的解释超出证据：Greece 信任的文本效应仅在加入相关性协变量后显著（p = .047），在仅含文本与性别的模型中为 p = .06，且未检验中介；Discussion 却将其作为“更有信心控制暴露”机制的支持。在多个检验未做校正的背景下，该解释应被降级。",
+    "response_claim": "作者在讨论中写道 \"trust in Greece was higher in the precaution group (though only if including relevance in the analysis) support this possible explanation\"，并以自我效能提高作为机制证据。",
+    "observed_change": "修订稿保留了相同表述，仅在括号内加入“only if including relevance”的限定；未新增中介分析或对多重比较的讨论；Conclusion 也未引用该机制。",
+    "resolution": "partially_resolved",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "support this possible explanation",
+      "location_hint": "Discussion，Interpretation 段第二部分（after 稿约第15页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "they may feel less helpless and more confident in their ability to control their own exposure to RF-EMF",
+      "location_hint": "Discussion，Interpretation 段（after 稿约第15页）"
+     },
+     {
+      "input_field": "materials/manuscript_after.text",
+      "exact_quote": "0.2 (0.09) .047*",
+      "location_hint": "Table 8，Greece Trust 列 Text 行（after 稿约第13页）"
+     }
+    ],
+    "issue_type": "V8"
+   }
+  ],
+  "evidence_limits": [
+   "本题仅提供文本与页图，无原始数据，不能独立重算所有统计量；仅依据材料中的表格与正文做一致性检查（如 t 值与 B/SE 的近似吻合）。",
+   "所引外部文献（Christopoulou et al., 2024；Manassas et al., 2025 等）及 R2 的 Greece 暴露数据未在材料中提供，无法核实其内容。",
+   "修订版中新增的 Conclusion 与引言修改已可见，但未检查 OSF 上的实验材料、JASP 文件或预注册文件，无法核实实验刺激或分析代码是否已同步更新。",
+   "多重检验校正未在材料中出现；H3 的单个交互（p = .03）及若干显著结果的稳健性无法从本题材料完全判断。",
+   "Table 1 德国列的“1335”与分项之和 1336 不一致，但最终样本数 727 与其余推算一致，本评议将其视为小的报告错误，未据此推断数据问题。",
+   "R1 自述非该领域专家，其关于伪科学的评论不构成对研究设计的实质要求；R2 关于公众意识项目的问题超出本研究测量范围，回复的拒绝理由合理但无法由数据检验。"
+  ],
+  "process_consistency_auxiliary": null
+ },
+ "parse_error": null
+}

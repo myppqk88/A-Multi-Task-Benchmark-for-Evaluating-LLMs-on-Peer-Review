@@ -1,0 +1,129 @@
+{
+ "task_id": "T3_D11_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "The answer flags first-author insider coding and the absence of an independent check. Its partially_resolved judgement fits the card's acceptable alternative."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "The answer compares the 'any type of public sector network' claim with the single-case evidence. Its unresolved judgement is close to the card's partial judgement, because the universal wording is retained unchanged."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The answer says expanded Table 2 improves traceability but derivation stays only partly shown. This matches R01's partially_resolved judgement."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The categorical 'never modified within a funding period' claim has no systematic cross-period evidence. This is a substantive problem supported by the material and not on the card."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "The answer notes the added rationale for omitting interviews and treats the exploratory RQ as defensible. Partially_resolved is an acceptable alternative for R02."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "The answer cites 'regardless of policy domain' against single-case evidence. Universal claims are retained, so this matches R07."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The answer judges the bridging sentence and Figure 3 arrows partially resolved and asks for clearer phase-by-phase linking. This matches R01's alternative on transitions."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "The answer identifies insider memos and single-coder analysis with no independent check. Partially_resolved is an acceptable alternative for R03."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The 'never modified' regularity lacks indicator-by-period evidence, and indicator dictionaries are mentioned but not listed in Table 1. This is substantive and supported."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Table 2 says '2011 call (1.3)' although Table 1 lists 1.3 as the 2021 call. The same 2.3 quote is also reused across two trigger categories. Both are verified traceability flaws."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "The answer judges Table 2 partially resolved and documents verifiable source-code mismatches (3.2/3.3 called Calls; '2011 call'). This matches R01."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R03",
+     "reason": "The answer identifies single insider coding where co-author review is not independent. Partially_resolved is an acceptable alternative for R03."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The 'never modified' claim lacks cross-period evidence and is in tension with Section 2's 'continuous adjustment' wording. This is substantive and supported."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R07",
+     "reason": "The 'any type' and 'regardless of policy domain' claims rest on a single CESEAND node with unchanged limitations. This matches R07."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Phase 5 still says 'quality ratios', which is correct but mainly a terminology inconsistency. The 13 KPIs versus KPI1–4 likely refers to different periods, so it is not clearly a construct flaw."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"The answer flags first-author insider coding and the absence of an independent check. Its partially_resolved judgement fits the card's acceptable alternative.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"The answer compares the 'any type of public sector network' claim with the single-case evidence. Its unresolved judgement is close to the card's partial judgement, because the universal wording is retained unchanged.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The answer says expanded Table 2 improves traceability but derivation stays only partly shown. This matches R01's partially_resolved judgement.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The categorical 'never modified within a funding period' claim has no systematic cross-period evidence. This is a substantive problem supported by the material and not on the card.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"The answer notes the added rationale for omitting interviews and treats the exploratory RQ as defensible. Partially_resolved is an acceptable alternative for R02.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"The answer cites 'regardless of policy domain' against single-case evidence. Universal claims are retained, so this matches R07.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The answer judges the bridging sentence and Figure 3 arrows partially resolved and asks for clearer phase-by-phase linking. This matches R01's alternative on transitions.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"The answer identifies insider memos and single-coder analysis with no independent check. Partially_resolved is an acceptable alternative for R03.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The 'never modified' regularity lacks indicator-by-period evidence, and indicator dictionaries are mentioned but not listed in Table 1. This is substantive and supported.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Table 2 says '2011 call (1.3)' although Table 1 lists 1.3 as the 2021 call. The same 2.3 quote is also reused across two trigger categories. Both are verified traceability flaws.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"The answer judges Table 2 partially resolved and documents verifiable source-code mismatches (3.2/3.3 called Calls; '2011 call'). This matches R01.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R03\",\"reason\":\"The answer identifies single insider coding where co-author review is not independent. Partially_resolved is an acceptable alternative for R03.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The 'never modified' claim lacks cross-period evidence and is in tension with Section 2's 'continuous adjustment' wording. This is substantive and supported.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R07\",\"reason\":\"The 'any type' and 'regardless of policy domain' claims rest on a single CESEAND node with unchanged limitations. This matches R07.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Phase 5 still says 'quality ratios', which is correct but mainly a terminology inconsistency. The 13 KPIs versus KPI1–4 likely refers to different periods, so it is not clearly a construct flaw.\"}]}}"
+}

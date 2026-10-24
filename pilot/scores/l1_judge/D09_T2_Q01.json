@@ -1,0 +1,157 @@
+{
+ "task_id": "D09_T2_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "sonnet",
+  "B": "haiku",
+  "C": "opus"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Identifies the concrete reordering of hypotheses to match results/discussion. Notes this is one of the options the reviewer allowed."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly notes the brief 'most logical' justification. This is a minor point."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The measures reordering is correctly noted. R01 is already used by claim 0, so this supporting detail counts as minor."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Correctly restates that cross-referencing was only an alternative to alignment ('either/or'). This matches the requirement framing in R02."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Traceability to the pre-registered order is a substantive transparency suggestion. The card lists it as an acceptable optional enhancement, and the claim correctly says it was not required."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Missing locations and the inability to verify are correct observations but non-substantive at the text level."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Accurately states the align-or-cross-reference requirement. Recognizes the explicit reordering as satisfying alignment."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correctly notes the justification is present but generic. This is a minor point."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The measures reordering is correctly noted. It is a supporting detail, and R01 is already used."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The pre-registration traceability and disclosure concern is supported as optional transparency. It is hedged ('可能'), and the card permits it as the basis for partially_sufficient."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Lack of manuscript locations is correct but non-substantive."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The comment on vague wording is correct but minor. It does not undermine the alignment action."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The reviewer allowed either option, so not discussing cross-referencing is trivial. The claim itself concedes it has no impact."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "remaining_gaps",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Reordering presentation cannot change statistical results. The concern is speculative and not supported by the material."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "addressed_requirements",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Restates the either/or request accurately. Identifies the concrete reordering of hypotheses to match results/discussion."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The brief justification is correctly noted. This is a minor point."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "addressed_requirements",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "The measures reordering is correctly noted as a supporting detail. R01 is already used."
+    },
+    {
+     "claim_index": 0,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The note on pre-registration transparency (only order changed, order differs from the pre-reg) is a substantive optional enhancement. It is correctly framed as not required."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "remaining_gaps",
+     "decision": "valid_minor",
+     "point_id": null,
+     "reason": "Correct that no revision is available for verification, but this is non-substantive at the text level."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Identifies the concrete reordering of hypotheses to match results/discussion. Notes this is one of the options the reviewer allowed.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly notes the brief 'most logical' justification. This is a minor point.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The measures reordering is correctly noted. R01 is already used by claim 0, so this supporting detail counts as minor.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Correctly restates that cross-referencing was only an alternative to alignment ('either/or'). This matches the requirement framing in R02.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Traceability to the pre-registered order is a substantive transparency suggestion. The card lists it as an acceptable optional enhancement, and the claim correctly says it was not required.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Missing locations and the inability to verify are correct observations but non-substantive at the text level.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Accurately states the align-or-cross-reference requirement. Recognizes the explicit reordering as satisfying alignment.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correctly notes the justification is present but generic. This is a minor point.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The measures reordering is correctly noted. It is a supporting detail, and R01 is already used.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The pre-registration traceability and disclosure concern is supported as optional transparency. It is hedged ('可能'), and the card permits it as the basis for partially_sufficient.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Lack of manuscript locations is correct but non-substantive.\"},{\"claim_index\":2,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The comment on vague wording is correct but minor. It does not undermine the alignment action.\"},{\"claim_index\":3,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The reviewer allowed either option, so not discussing cross-referencing is trivial. The claim itself concedes it has no impact.\"},{\"claim_index\":4,\"claim_field\":\"remaining_gaps\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Reordering presentation cannot change statistical results. The concern is speculative and not supported by the material.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"addressed_requirements\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Restates the either/or request accurately. Identifies the concrete reordering of hypotheses to match results/discussion.\"},{\"claim_index\":1,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The brief justification is correctly noted. This is a minor point.\"},{\"claim_index\":2,\"claim_field\":\"addressed_requirements\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"The measures reordering is correctly noted as a supporting detail. R01 is already used.\"},{\"claim_index\":0,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The note on pre-registration transparency (only order changed, order differs from the pre-reg) is a substantive optional enhancement. It is correctly framed as not required.\"},{\"claim_index\":1,\"claim_field\":\"remaining_gaps\",\"decision\":\"valid_minor\",\"point_id\":null,\"reason\":\"Correct that no revision is available for verification, but this is non-substantive at the text level.\"}]}}"
+}
