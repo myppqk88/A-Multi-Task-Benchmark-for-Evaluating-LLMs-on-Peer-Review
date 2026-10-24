@@ -1,0 +1,673 @@
+{
+ "summary": {
+  "haiku": {
+   "runs": 9,
+   "parsed": 9,
+   "schema_valid": 8,
+   "quotes": 70,
+   "fabricated_quote_rate": 0.014,
+   "wrong_field_rate": 0.0,
+   "page_refs": 14,
+   "page_refs_valid": 14,
+   "mean_items": 5.11,
+   "label_accuracy": "6/6",
+   "label_primary_match": "6/6"
+  },
+  "haiku|T1": {
+   "runs": 3,
+   "parsed": 3,
+   "schema_valid": 3,
+   "quotes": 21,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 10,
+   "page_refs_valid": 10,
+   "mean_items": 5.0
+  },
+  "haiku|T2": {
+   "runs": 4,
+   "parsed": 4,
+   "schema_valid": 4,
+   "quotes": 17,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "mean_items": 5.0,
+   "label_accuracy": "4/4",
+   "label_primary_match": "4/4"
+  },
+  "haiku|T3": {
+   "runs": 2,
+   "parsed": 2,
+   "schema_valid": 1,
+   "quotes": 32,
+   "fabricated_quote_rate": 0.031,
+   "wrong_field_rate": 0.0,
+   "page_refs": 4,
+   "page_refs_valid": 4,
+   "mean_items": 5.5,
+   "label_accuracy": "2/2",
+   "label_primary_match": "2/2"
+  },
+  "opus": {
+   "runs": 7,
+   "parsed": 7,
+   "schema_valid": 6,
+   "quotes": 63,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 12,
+   "page_refs_valid": 12,
+   "mean_items": 5.0,
+   "label_accuracy": "3/4",
+   "label_primary_match": "3/4"
+  },
+  "opus|T1": {
+   "runs": 3,
+   "parsed": 3,
+   "schema_valid": 2,
+   "quotes": 34,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 10,
+   "page_refs_valid": 10,
+   "mean_items": 5.0
+  },
+  "opus|T2": {
+   "runs": 3,
+   "parsed": 3,
+   "schema_valid": 3,
+   "quotes": 15,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "mean_items": 5.0,
+   "label_accuracy": "2/3",
+   "label_primary_match": "2/3"
+  },
+  "opus|T3": {
+   "runs": 1,
+   "parsed": 1,
+   "schema_valid": 1,
+   "quotes": 14,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "mean_items": 5.0,
+   "label_accuracy": "1/1",
+   "label_primary_match": "1/1"
+  },
+  "sonnet": {
+   "runs": 8,
+   "parsed": 8,
+   "schema_valid": 8,
+   "quotes": 56,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 10,
+   "page_refs_valid": 10,
+   "mean_items": 5.5,
+   "label_accuracy": "4/5",
+   "label_primary_match": "4/5"
+  },
+  "sonnet|T1": {
+   "runs": 3,
+   "parsed": 3,
+   "schema_valid": 3,
+   "quotes": 24,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 5,
+   "page_refs_valid": 5,
+   "mean_items": 5.0
+  },
+  "sonnet|T2": {
+   "runs": 3,
+   "parsed": 3,
+   "schema_valid": 3,
+   "quotes": 12,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "mean_items": 6.33,
+   "label_accuracy": "2/3",
+   "label_primary_match": "2/3"
+  },
+  "sonnet|T3": {
+   "runs": 2,
+   "parsed": 2,
+   "schema_valid": 2,
+   "quotes": 20,
+   "fabricated_quote_rate": 0.0,
+   "wrong_field_rate": 0.0,
+   "page_refs": 5,
+   "page_refs_valid": 5,
+   "mean_items": 5.0,
+   "label_accuracy": "2/2",
+   "label_primary_match": "2/2"
+  }
+ },
+ "runs": [
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D01_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 3,
+   "quotes_in_named_field": 3,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 4,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D12_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 8,
+   "quotes_in_named_field": 8,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 3,
+   "page_refs_valid": 3,
+   "n_issues": 5
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D12_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 5,
+   "quotes_in_named_field": 5,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D15_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 6,
+   "quotes_in_named_field": 6,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 4,
+   "page_refs_valid": 4,
+   "n_issues": 5
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D15_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 4,
+   "quotes_in_named_field": 4,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D16_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 7,
+   "quotes_in_named_field": 7,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 3,
+   "page_refs_valid": 3,
+   "n_issues": 5
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "D16_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 5,
+   "quotes_in_named_field": 5,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 6,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "T3_D15_R1",
+   "task": "T3",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 17,
+   "quotes_in_named_field": 17,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5,
+   "label": "needs_substantive_revision",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "haiku",
+   "model_served": [
+    "claude-haiku-5-5"
+   ],
+   "task_id": "T3_D16_R1",
+   "task": "T3",
+   "parsed": true,
+   "schema_valid": false,
+   "schema_errors": [
+    "[{'issue': 'Causal inference for the main claim: the experimental-group gain is not shown to differ from the control-group gain, and baseline groups were not sh"
+   ],
+   "quotes": 15,
+   "quotes_in_named_field": 14,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 1,
+   "not_found_examples": [
+    "Statistically significant (p < 0.05) strategic thinking improvements in the Abstract Findings: 'Students who participate"
+   ],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 6,
+   "label": "needs_substantive_revision",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D12_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 12,
+   "quotes_in_named_field": 12,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 4,
+   "page_refs_valid": 4,
+   "n_issues": 5
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D12_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 4,
+   "quotes_in_named_field": 4,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D15_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": false,
+   "schema_errors": [
+    "Additional properties are not allowed ('_note' was unexpected)"
+   ],
+   "quotes": 12,
+   "quotes_in_named_field": 12,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D15_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 6,
+   "quotes_in_named_field": 6,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "insufficient",
+   "label_in_acceptable_set": false,
+   "label_is_primary": false
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D16_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 10,
+   "quotes_in_named_field": 10,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 4,
+   "page_refs_valid": 4,
+   "n_issues": 5
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "D16_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 5,
+   "quotes_in_named_field": 5,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "opus",
+   "model_served": [
+    "claude-opus-5-5"
+   ],
+   "task_id": "T3_D15_R1",
+   "task": "T3",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 14,
+   "quotes_in_named_field": 14,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5,
+   "label": "needs_substantive_revision",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D12_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 9,
+   "quotes_in_named_field": 9,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D12_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 4,
+   "quotes_in_named_field": 4,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 5,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D15_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 8,
+   "quotes_in_named_field": 8,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 1,
+   "page_refs_valid": 1,
+   "n_issues": 5
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D15_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 4,
+   "quotes_in_named_field": 4,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 8,
+   "overreach": false,
+   "label": "insufficient",
+   "label_in_acceptable_set": false,
+   "label_is_primary": false
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D16_T1_Q01",
+   "task": "T1",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 7,
+   "quotes_in_named_field": 7,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "D16_T2_Q01",
+   "task": "T2",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 4,
+   "quotes_in_named_field": 4,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 0,
+   "page_refs_valid": 0,
+   "n_issues": 6,
+   "overreach": false,
+   "label": "partially_sufficient",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "T3_D15_R1",
+   "task": "T3",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 11,
+   "quotes_in_named_field": 11,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 3,
+   "page_refs_valid": 3,
+   "n_issues": 5,
+   "label": "needs_substantive_revision",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  },
+  {
+   "model": "sonnet",
+   "model_served": [
+    "claude-sonnet-5-5"
+   ],
+   "task_id": "T3_D16_R1",
+   "task": "T3",
+   "parsed": true,
+   "schema_valid": true,
+   "schema_errors": [],
+   "quotes": 9,
+   "quotes_in_named_field": 9,
+   "quotes_in_other_field": 0,
+   "quotes_not_found": 0,
+   "not_found_examples": [],
+   "page_refs": 2,
+   "page_refs_valid": 2,
+   "n_issues": 5,
+   "label": "needs_substantive_revision",
+   "label_in_acceptable_set": true,
+   "label_is_primary": true
+  }
+ ]
+}

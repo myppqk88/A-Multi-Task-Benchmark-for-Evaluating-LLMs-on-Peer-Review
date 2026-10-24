@@ -1,0 +1,208 @@
+{
+ "task_id": "T3_D16_R1",
+ "model_alias": "haiku",
+ "model_init": "claude-haiku-5-5",
+ "models_served": [
+  "claude-haiku-5-5"
+ ],
+ "attempt": 1,
+ "seconds": 48.4,
+ "is_error": false,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 111505,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 9828,
+  "output_tokens_details": {
+   "thinking_tokens": 5128
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 111505,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 9828,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 111505,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 111505
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "stop_reason": "end_turn",
+ "raw_text": "{\"overall_label\":\"needs_substantive_revision\",\"rationale\":\"The revision adds methods text (behavioural coding, 25-item questionnaire, kappa, reliability, scoring weights, a data link) and removes some earlier unsupported passages. However, the central claim that Chinese checkers improve strategic thinking is still not supported by the reported evidence. Four problems remain. (1) The outcome is course academic performance, not a validated strategic-thinking measure, and the design has no difference-in-differences test, although the control group also improved significantly. (2) The reported statistics are internally inconsistent: the independent-samples t from the stated means and SDs is far larger than 2.05, and the ANOVA mean-square ratio does not give F = 3.78. (3) The hypothesis 2 engagement claim is supported only by percentages with no test statistic. (4) Several new quantitative claims and citations (cultural percentages, 127-study and 450-student figures, and the de la Puente 2024 'Strategic Competency Framework') are not supported by the cited sources or by any reported analysis. The author responses claim fixes that are only partly visible in the revised text. Descriptive methods expansion is real, but the science is not yet adequate.\",\"issues\":[{\"issue\":\"Causal inference for the main claim: the experimental-group gain is not shown to differ from the control-group gain, and baseline groups were not shown to be equivalent (pre-test 3.8 vs 3.3).\",\"response_claim\":\"responses.R2 says the revised methods 'ensure clear differentiation between academic performance and strategic thinking development'; responses.R1 says the revision provides 'a more nuanced interpretation of the statistical findings'.\",\"observed_change\":\"The revised text still reports within-group tests for both groups and then states the experimental group shows 'stronger performance gains' without any between-group change test. Table 2 (page 10 image) shows control 3.3 to 3.9 with p = 0.023, and the pre-test means differ (3.8 vs 3.3).\",\"resolution\":\"unresolved\",\"importance\":\"central\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"The analysis showed significant improvements in both experimental (p = 0.017) and control groups (p = 0.023), with the experimental group demonstrating stronger performance gains in strategic thinking assessments.\",\"location_hint\":\"Methods, 'Statistical analysis' paragraph, after manuscript p07 text\"},{\"input_field\":\"page_images\",\"page\":10,\"observation\":\"Table 2 (paired-samples): control group pre 3.3, post 3.7, second post 3.9, p = 0.023, same structure as experimental group; no between-group change test appears.\"}],\"issue_type\":\"V2\"},{\"issue\":\"Numerical inconsistency in the reported statistics. The independent-samples t implied by the reported means, SDs and sample sizes is far larger than 2.05. The ANOVA mean-square ratio does not give F = 3.78, and the ANOVA degrees of freedom are not consistent with two groups or with 179 participants.\",\"response_claim\":\"responses.R2 states that 'clear statistical validation through multiple measures (paired t-tests, independent t-tests, and ANOVA)' is now provided.\",\"observed_change\":\"Table 3 (page 10 image) still reports t = 2.05, p = 0.042 with M = 4.38 (SD 0.18, n = 93) vs M = 3.87 (SD 0.13, n = 86). Table 4 reports between-groups SS 2.12, df 2, MS 1.06; within-groups SS 33.34, df 261, MS 0.128, F = 3.78. The ratio 1.06/0.128 ≈ 8.3, not 3.78. Total df 263 implies 264 observations, versus 93 + 86 = 179 students. The text calls the F-test 'between experimental and control groups' while df = 2 implies three groups.\",\"resolution\":\"unresolved\",\"importance\":\"central\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"The analysis yielded an F-Value of 3.78 (p = 0.026), indicating significant variation between experimental and control groups\",\"location_hint\":\"Results, ANOVA paragraph, after manuscript p09 text and p10 Table 4\"},{\"input_field\":\"page_images\",\"page\":10,\"observation\":\"Table 3 independent-samples: experimental n=93, mean 4.38, SD 0.18; control n=86, mean 3.87, SD 0.13; t = 2.05, p = 0.042. Table 4 ANOVA: Between Groups SS 2.12, df 2, MS 1.06, F 3.78; Within Groups SS 33.34, df 261, MS 0.128; Total df 263.\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"Results demonstrated significantly higher performance in the experimental group compared to the control group (p = 0.042).\",\"location_hint\":\"Methods, independent-samples paragraph, after manuscript p07 text\"}],\"issue_type\":\"V3\"},{\"issue\":\"Construct validity and measurement of strategic thinking. The revision describes many instruments (25-item Likert scale, five-level observation matrix, composite score with weights, rubrics, focus groups), but the only outcome statistics are descriptive means for Table 1 with no tests, CIs or control comparison, and the effect sizes are not explained. The academic score is still presented as the strategic-thinking outcome.\",\"response_claim\":\"responses.R2 says 'strategic thinking capabilities were operationalized through composite scoring systems combining game performance metrics (30%), scenario analysis tasks (40%), and diplomatic simulation outcomes (30%).' responses.R1 says 'we have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols'.\",\"observed_change\":\"The methods section now defines these instruments in detail, which partly answers the reviewers' request for operationalisation. Reliability is stated (Cronbach's α = 0.89, KMO = 0.84, kappa 0.85, 87% agreement) but no reliability or validity data are shown beyond these numbers, and the questionnaire items are not supplied. Results claim 'significant improvements in the experimental group across all domains' with no test. The abstract states strategic thinking improved at 'p < 0.05', yet the only tested p-values concern academic score.\",\"resolution\":\"partially_resolved\",\"importance\":\"central\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"Post-intervention responses showed significant improvements in the experimental group across all domains\",\"location_hint\":\"Results paragraph, after manuscript p09 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"Validation involved expert review by five international relations scholars and pilot testing with 45 graduate students\",\"location_hint\":\"Methods, questionnaire paragraph, after manuscript p08 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"Statistically significant (p < 0.05) strategic thinking improvements in the Abstract Findings: 'Students who participated in Chinese checkers demonstrated statistically significant improvements in strategic thinking (p < 0.05)'\",\"location_hint\":\"Abstract, Findings, after manuscript p01 text\"}],\"issue_type\":\"V1\"},{\"issue\":\"Unsupported quantitative and cultural claims with citation mismatch in the literature review and discussion, including the new cultural claims that the reviewers asked to remove.\",\"response_claim\":\"responses.R1 says 'The revised version also provides more robust evidence for cultural influences on strategic thinking by incorporating additional quantitative data and theoretical frameworks from Newton (2014) and Ho (2020).'\",\"observed_change\":\"The cultural claims are still present and are now quantified: '78% of participants demonstrating culturally-mediated strategic thinking patterns' and '43% higher tendency to form collaborative alliances'. The study is not cross-cultural and no culture measure is reported. The cited review 'Guan et al. (2024)' is described as a 'systematic review of 127 game-based learning implementations' with a 42% effect, but the reference list entry is 'Applying game-based learning in primary education: A systematic review of journal publications from 2010 to 2020'. The '(de la Puente et al., 2024)' framework is cited as a 'Strategic Competency Framework', but the listed 2024 reference is 'Effectiveness of online and blended teaching methods in developing professional engineering cross-curricular skills'.\",\"resolution\":\"unresolved\",\"importance\":\"central\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"with 78% of participants demonstrating culturally-mediated strategic thinking patterns\",\"location_hint\":\"Literature review, Confucian values paragraph, after manuscript p04 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"Their systematic review of 127 game-based learning implementations demonstrated that students who engaged in regular gameplay showed a 42% improvement\",\"location_hint\":\"Literature review, Guan et al. paragraph, after manuscript p04 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"The questionnaire design followed de la Puente’s et al. (2024) Strategic Competency Framework\",\"location_hint\":\"Methods, questionnaire paragraph, after manuscript p08 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"de la Puente Pacheco MA, Rios Mahecha JD, Maury Campo M, et al.: Effectiveness of online and blended teaching methods in developing professional engineering cross-curricular skills\",\"location_hint\":\"References, after manuscript p15\"}],\"issue_type\":\"V8\"},{\"issue\":\"Hypothesis 2 (engagement) is claimed as 'validated', but no test statistic, effect or comparison is reported for engagement. Measurement reliability is also reported inconsistently.\",\"response_claim\":\"responses.R1 says the revision includes 'detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility' for engagement and enthusiasm.\",\"observed_change\":\"The engagement section now defines behavioural frequencies and a 7-point emotional-engagement scale, but its results are only percentages from focus groups and observation (for example 82% and 78%), with no comparison group test. The text says 'Focus group data revealed 82% of participants developed multi-move strategic sequences'. Inter-rater agreement is given as 'kappa 0.85' in one place and '87% agreement' in another, with no described sampling or number of observers. The earlier chi-square and Likert enthusiasm analyses have been removed, so the engagement hypothesis has no inferential test in the revised manuscript.\",\"resolution\":\"unresolved\",\"importance\":\"supporting\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"The second hypothesis, examining student engagement enhancement, found validation through both quantitative and qualitative measures.\",\"location_hint\":\"Discussion, after manuscript p12 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"achieving a minimum Cohen’s kappa coefficient of 0.85 before proceeding with independent observations\",\"location_hint\":\"Methods, inter-rater paragraph, after manuscript p06 text\"},{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"with two independent observers achieving 87% agreement in their assessments\",\"location_hint\":\"Discussion, engagement measurement paragraph, after manuscript p12 text\"}],\"issue_type\":\"V7\"},{\"issue\":\"Data and reproducibility. The revision now gives a Figshare DOI but also keeps 'available on request' language, and the response's page references do not match the revised manuscript.\",\"response_claim\":\"responses.R2 says 'The results section (pages 16-22)' and 'The discussion section (pages 23-25)' were revised; the manuscript's own data statement says data 'available on request'.\",\"observed_change\":\"A Figshare DOI (10.6084/m9.figshare.28138928) is now given in Ethical approval and Extended data, but the Data availability section still says data are restricted and available on request. The contents of the Figshare deposit are not part of this bundle and were not checked. The page numbers in the author response (pages 16–27) do not match the revised manuscript, which runs to about 15 pages.\",\"resolution\":\"not_verifiable\",\"importance\":\"supporting\",\"evidence\":[{\"input_field\":\"materials/manuscript_after/text\",\"exact_quote\":\"The data is available in the following link 10.6084/m9.figshare.28138928 through Figshare or by requesting it to the corresponding author\",\"location_hint\":\"Ethical approval and consent, after manuscript p13 text\"},{\"input_field\":\"responses.R2\",\"exact_quote\":\"The results section (pages 16-22) underwent significant restructuring\",\"location_hint\":\"Author response R2, paragraph 3\"}],\"issue_type\":\"V7\"}],\"evidence_limits\":[\"No raw data, Figshare deposit or statistical output files were supplied, so the reported statistics could only be checked against the stated means, SDs and sample sizes, not against the source data.\",\"The full 25-item questionnaire, observation coding sheets, rubrics and focus-group guides are described in the text but not supplied; their content is not verifiable.\",\"Extended data and the Figshare record are cited but not included in the materials.\",\"The cited external sources were not provided, so claims about their findings (e.g. Guan et al. 2024, de la Puente et al. 2024) could only be checked against reference titles.\",\"Only the manuscript_after text and pages 4–15 and the reviewer and response fields are available; a title page and the abstract's full formatting were not supplied.\",\"Materials show the revision and responses but not the editorial decision or later reviewer reports, so the judgment is limited to this revision cycle.\"],\"process_consistency_auxiliary\":null}",
+ "answer": {
+  "overall_label": "needs_substantive_revision",
+  "rationale": "The revision adds methods text (behavioural coding, 25-item questionnaire, kappa, reliability, scoring weights, a data link) and removes some earlier unsupported passages. However, the central claim that Chinese checkers improve strategic thinking is still not supported by the reported evidence. Four problems remain. (1) The outcome is course academic performance, not a validated strategic-thinking measure, and the design has no difference-in-differences test, although the control group also improved significantly. (2) The reported statistics are internally inconsistent: the independent-samples t from the stated means and SDs is far larger than 2.05, and the ANOVA mean-square ratio does not give F = 3.78. (3) The hypothesis 2 engagement claim is supported only by percentages with no test statistic. (4) Several new quantitative claims and citations (cultural percentages, 127-study and 450-student figures, and the de la Puente 2024 'Strategic Competency Framework') are not supported by the cited sources or by any reported analysis. The author responses claim fixes that are only partly visible in the revised text. Descriptive methods expansion is real, but the science is not yet adequate.",
+  "issues": [
+   {
+    "issue": "Causal inference for the main claim: the experimental-group gain is not shown to differ from the control-group gain, and baseline groups were not shown to be equivalent (pre-test 3.8 vs 3.3).",
+    "response_claim": "responses.R2 says the revised methods 'ensure clear differentiation between academic performance and strategic thinking development'; responses.R1 says the revision provides 'a more nuanced interpretation of the statistical findings'.",
+    "observed_change": "The revised text still reports within-group tests for both groups and then states the experimental group shows 'stronger performance gains' without any between-group change test. Table 2 (page 10 image) shows control 3.3 to 3.9 with p = 0.023, and the pre-test means differ (3.8 vs 3.3).",
+    "resolution": "unresolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "The analysis showed significant improvements in both experimental (p = 0.017) and control groups (p = 0.023), with the experimental group demonstrating stronger performance gains in strategic thinking assessments.",
+      "location_hint": "Methods, 'Statistical analysis' paragraph, after manuscript p07 text"
+     },
+     {
+      "input_field": "page_images",
+      "page": 10,
+      "observation": "Table 2 (paired-samples): control group pre 3.3, post 3.7, second post 3.9, p = 0.023, same structure as experimental group; no between-group change test appears."
+     }
+    ],
+    "issue_type": "V2"
+   },
+   {
+    "issue": "Numerical inconsistency in the reported statistics. The independent-samples t implied by the reported means, SDs and sample sizes is far larger than 2.05. The ANOVA mean-square ratio does not give F = 3.78, and the ANOVA degrees of freedom are not consistent with two groups or with 179 participants.",
+    "response_claim": "responses.R2 states that 'clear statistical validation through multiple measures (paired t-tests, independent t-tests, and ANOVA)' is now provided.",
+    "observed_change": "Table 3 (page 10 image) still reports t = 2.05, p = 0.042 with M = 4.38 (SD 0.18, n = 93) vs M = 3.87 (SD 0.13, n = 86). Table 4 reports between-groups SS 2.12, df 2, MS 1.06; within-groups SS 33.34, df 261, MS 0.128, F = 3.78. The ratio 1.06/0.128 ≈ 8.3, not 3.78. Total df 263 implies 264 observations, versus 93 + 86 = 179 students. The text calls the F-test 'between experimental and control groups' while df = 2 implies three groups.",
+    "resolution": "unresolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "The analysis yielded an F-Value of 3.78 (p = 0.026), indicating significant variation between experimental and control groups",
+      "location_hint": "Results, ANOVA paragraph, after manuscript p09 text and p10 Table 4"
+     },
+     {
+      "input_field": "page_images",
+      "page": 10,
+      "observation": "Table 3 independent-samples: experimental n=93, mean 4.38, SD 0.18; control n=86, mean 3.87, SD 0.13; t = 2.05, p = 0.042. Table 4 ANOVA: Between Groups SS 2.12, df 2, MS 1.06, F 3.78; Within Groups SS 33.34, df 261, MS 0.128; Total df 263."
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Results demonstrated significantly higher performance in the experimental group compared to the control group (p = 0.042).",
+      "location_hint": "Methods, independent-samples paragraph, after manuscript p07 text"
+     }
+    ],
+    "issue_type": "V3"
+   },
+   {
+    "issue": "Construct validity and measurement of strategic thinking. The revision describes many instruments (25-item Likert scale, five-level observation matrix, composite score with weights, rubrics, focus groups), but the only outcome statistics are descriptive means for Table 1 with no tests, CIs or control comparison, and the effect sizes are not explained. The academic score is still presented as the strategic-thinking outcome.",
+    "response_claim": "responses.R2 says 'strategic thinking capabilities were operationalized through composite scoring systems combining game performance metrics (30%), scenario analysis tasks (40%), and diplomatic simulation outcomes (30%).' responses.R1 says 'we have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols'.",
+    "observed_change": "The methods section now defines these instruments in detail, which partly answers the reviewers' request for operationalisation. Reliability is stated (Cronbach's α = 0.89, KMO = 0.84, kappa 0.85, 87% agreement) but no reliability or validity data are shown beyond these numbers, and the questionnaire items are not supplied. Results claim 'significant improvements in the experimental group across all domains' with no test. The abstract states strategic thinking improved at 'p < 0.05', yet the only tested p-values concern academic score.",
+    "resolution": "partially_resolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Post-intervention responses showed significant improvements in the experimental group across all domains",
+      "location_hint": "Results paragraph, after manuscript p09 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Validation involved expert review by five international relations scholars and pilot testing with 45 graduate students",
+      "location_hint": "Methods, questionnaire paragraph, after manuscript p08 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Statistically significant (p < 0.05) strategic thinking improvements in the Abstract Findings: 'Students who participated in Chinese checkers demonstrated statistically significant improvements in strategic thinking (p < 0.05)'",
+      "location_hint": "Abstract, Findings, after manuscript p01 text"
+     }
+    ],
+    "issue_type": "V1"
+   },
+   {
+    "issue": "Unsupported quantitative and cultural claims with citation mismatch in the literature review and discussion, including the new cultural claims that the reviewers asked to remove.",
+    "response_claim": "responses.R1 says 'The revised version also provides more robust evidence for cultural influences on strategic thinking by incorporating additional quantitative data and theoretical frameworks from Newton (2014) and Ho (2020).'",
+    "observed_change": "The cultural claims are still present and are now quantified: '78% of participants demonstrating culturally-mediated strategic thinking patterns' and '43% higher tendency to form collaborative alliances'. The study is not cross-cultural and no culture measure is reported. The cited review 'Guan et al. (2024)' is described as a 'systematic review of 127 game-based learning implementations' with a 42% effect, but the reference list entry is 'Applying game-based learning in primary education: A systematic review of journal publications from 2010 to 2020'. The '(de la Puente et al., 2024)' framework is cited as a 'Strategic Competency Framework', but the listed 2024 reference is 'Effectiveness of online and blended teaching methods in developing professional engineering cross-curricular skills'.",
+    "resolution": "unresolved",
+    "importance": "central",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "with 78% of participants demonstrating culturally-mediated strategic thinking patterns",
+      "location_hint": "Literature review, Confucian values paragraph, after manuscript p04 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "Their systematic review of 127 game-based learning implementations demonstrated that students who engaged in regular gameplay showed a 42% improvement",
+      "location_hint": "Literature review, Guan et al. paragraph, after manuscript p04 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "The questionnaire design followed de la Puente’s et al. (2024) Strategic Competency Framework",
+      "location_hint": "Methods, questionnaire paragraph, after manuscript p08 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "de la Puente Pacheco MA, Rios Mahecha JD, Maury Campo M, et al.: Effectiveness of online and blended teaching methods in developing professional engineering cross-curricular skills",
+      "location_hint": "References, after manuscript p15"
+     }
+    ],
+    "issue_type": "V8"
+   },
+   {
+    "issue": "Hypothesis 2 (engagement) is claimed as 'validated', but no test statistic, effect or comparison is reported for engagement. Measurement reliability is also reported inconsistently.",
+    "response_claim": "responses.R1 says the revision includes 'detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility' for engagement and enthusiasm.",
+    "observed_change": "The engagement section now defines behavioural frequencies and a 7-point emotional-engagement scale, but its results are only percentages from focus groups and observation (for example 82% and 78%), with no comparison group test. The text says 'Focus group data revealed 82% of participants developed multi-move strategic sequences'. Inter-rater agreement is given as 'kappa 0.85' in one place and '87% agreement' in another, with no described sampling or number of observers. The earlier chi-square and Likert enthusiasm analyses have been removed, so the engagement hypothesis has no inferential test in the revised manuscript.",
+    "resolution": "unresolved",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "The second hypothesis, examining student engagement enhancement, found validation through both quantitative and qualitative measures.",
+      "location_hint": "Discussion, after manuscript p12 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "achieving a minimum Cohen’s kappa coefficient of 0.85 before proceeding with independent observations",
+      "location_hint": "Methods, inter-rater paragraph, after manuscript p06 text"
+     },
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "with two independent observers achieving 87% agreement in their assessments",
+      "location_hint": "Discussion, engagement measurement paragraph, after manuscript p12 text"
+     }
+    ],
+    "issue_type": "V7"
+   },
+   {
+    "issue": "Data and reproducibility. The revision now gives a Figshare DOI but also keeps 'available on request' language, and the response's page references do not match the revised manuscript.",
+    "response_claim": "responses.R2 says 'The results section (pages 16-22)' and 'The discussion section (pages 23-25)' were revised; the manuscript's own data statement says data 'available on request'.",
+    "observed_change": "A Figshare DOI (10.6084/m9.figshare.28138928) is now given in Ethical approval and Extended data, but the Data availability section still says data are restricted and available on request. The contents of the Figshare deposit are not part of this bundle and were not checked. The page numbers in the author response (pages 16–27) do not match the revised manuscript, which runs to about 15 pages.",
+    "resolution": "not_verifiable",
+    "importance": "supporting",
+    "evidence": [
+     {
+      "input_field": "materials/manuscript_after/text",
+      "exact_quote": "The data is available in the following link 10.6084/m9.figshare.28138928 through Figshare or by requesting it to the corresponding author",
+      "location_hint": "Ethical approval and consent, after manuscript p13 text"
+     },
+     {
+      "input_field": "responses.R2",
+      "exact_quote": "The results section (pages 16-22) underwent significant restructuring",
+      "location_hint": "Author response R2, paragraph 3"
+     }
+    ],
+    "issue_type": "V7"
+   }
+  ],
+  "evidence_limits": [
+   "No raw data, Figshare deposit or statistical output files were supplied, so the reported statistics could only be checked against the stated means, SDs and sample sizes, not against the source data.",
+   "The full 25-item questionnaire, observation coding sheets, rubrics and focus-group guides are described in the text but not supplied; their content is not verifiable.",
+   "Extended data and the Figshare record are cited but not included in the materials.",
+   "The cited external sources were not provided, so claims about their findings (e.g. Guan et al. 2024, de la Puente et al. 2024) could only be checked against reference titles.",
+   "Only the manuscript_after text and pages 4–15 and the reviewer and response fields are available; a title page and the abstract's full formatting were not supplied.",
+   "Materials show the revision and responses but not the editorial decision or later reviewer reports, so the judgment is limited to this revision cycle."
+  ],
+  "process_consistency_auxiliary": null
+ },
+ "parse_error": null
+}
