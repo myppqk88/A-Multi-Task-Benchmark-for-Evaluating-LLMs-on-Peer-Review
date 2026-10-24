@@ -21,7 +21,13 @@
       "public_date": "2026-04-15",
       "url": "https://f1000research.com/articles/14-1291/v2",
       "sha256": "4627d406322bee2b2b7b27138bbbec6111228693b3c500ef3f6af8886d69eea0",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "source_pages/v2.html",
+        "selector": ".update-box-wrapper.article-updated-box > h2及其直属div.f1r-article-desk",
+        "extraction": "BeautifulSoup.get_text；仅去除移动版重复显示和界面控件"
+      }
     }
   ],
   "reviews": [
@@ -34,7 +40,23 @@
       "file": "reviews/R1_v1.html",
       "url": "https://doi.org/10.5256/f1000research.186083.r449277",
       "publisher_report_id": "449277",
-      "text_file": "reviews/R1_v1.txt"
+      "text_file": "reviews/R1_v1.txt",
+      "has_response": true
+    },
+    {
+      "id": "R2_v1",
+      "on_version": "v1",
+      "reviewer": "Nadia Asandimitra Haryono",
+      "recommendation": "approved",
+      "date": "2026-01-06",
+      "file": "reviews/R2_v1.html",
+      "url": "https://doi.org/10.5256/f1000research.186083.r436134",
+      "publisher_report_id": "436134",
+      "text_file": "reviews/R2_v1.txt",
+      "has_response": true,
+      "date_source": "原始PDF Reviewer Report日期与官方归档HTML报告完成日期逐项一致",
+      "version_source": "原始PDF Version 1分组与官方归档HTML的报告所属版本逐项一致",
+      "original_format_note": "官方归档页面中对应data-reportid的HTML区块原字节切片；TXT机械提取完整报告并去除回帖和界面重复文本。"
     }
   ],
   "responses": [
@@ -51,6 +73,21 @@
       "pdf_printed_dates": [
         "2026-03-11"
       ]
+    },
+    {
+      "id": "R2_v1_response",
+      "answers": [
+        "R2_v1"
+      ],
+      "date": "2026-01-10",
+      "file": "responses/R2_v1_response.html",
+      "url": "https://f1000research.com/articles/14-1291/v1#article-comment-15203",
+      "text_file": "responses/R2_v1_response.txt",
+      "date_source": "官方HTML Author Response日期；父级data-reportid确认答复对象",
+      "pdf_printed_dates": [
+        "2026-01-06"
+      ],
+      "original_format_note": "官方回帖HTML原字节切片；TXT机械提取未截断的full-comment-original正文。"
     }
   ],
   "notes": [
@@ -59,6 +96,25 @@
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
     "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
-    "报告 449277 的回应：当前官方HTML显示日期 2026-04-15；本地原始PDF显示 2026-03-11。两种原件均保留；date字段登记当前公开页日期，未改动原文。"
-  ]
+    "报告 449277 的回应：当前官方HTML显示日期 2026-04-15；本地原始PDF显示 2026-03-11。两种原件均保留；date字段登记当前公开页日期，未改动原文。",
+    "补件002：报告 436134 的作者回应，官方HTML日期 2026-01-10；原始PDF所列日期 2026-01-06。日期字段取官方HTML，保留原PDF，不改动原文。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Research Article",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".article-type.article-display"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "436134",
+      "449277"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [],
+    "not_collected_reports": []
+  }
 }

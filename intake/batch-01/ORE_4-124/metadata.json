@@ -21,7 +21,12 @@
       "public_date": "2024-10-14",
       "url": "https://ore.eu/ore/article/view/647/version/1136",
       "sha256": "e236204f80f737a4fff697f2b256fed216a33c2795ac4b72ce7050726ecbf2f4",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "versions/v2.pdf",
+        "extraction": "pdftotext（默认阅读顺序）；从原Amendments标题至该节末尾出版社固定提示句的连续原样切片"
+      }
     },
     {
       "label": "v3",
@@ -29,7 +34,12 @@
       "public_date": "2025-01-14",
       "url": "https://ore.eu/ore/article/view/647/version/1137",
       "sha256": "d166d48584e320223078b8090ad2064349a3894adeffdcf98c0ccab52db8e4cd",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v3_amendments.txt",
+      "amendments_source": {
+        "file": "versions/v3.pdf",
+        "extraction": "pdftotext（默认阅读顺序）；从原Amendments标题至该节末尾出版社固定提示句的连续原样切片"
+      }
     }
   ],
   "reviews": [
@@ -47,7 +57,27 @@
         21
       ],
       "text_file": "reviews/R1_v1.txt",
-      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。"
+      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。",
+      "has_response": true
+    },
+    {
+      "id": "R2_v1",
+      "on_version": "v1",
+      "reviewer": "Alessio Livio Spera",
+      "recommendation": "approved",
+      "date": "2024-07-25",
+      "file": "reviews/R2_v1.pdf",
+      "url": "https://doi.org/10.21956/openreseurope.18843.r41742",
+      "publisher_report_id": "41742",
+      "text_file": "reviews/R2_v1.txt",
+      "has_response": true,
+      "date_source": "原始PDF Reviewer Report日期与官方归档HTML报告完成日期逐项一致",
+      "version_source": "原始PDF Version 1分组与官方归档HTML的报告所属版本逐项一致",
+      "pdf_pages": [
+        23,
+        24
+      ],
+      "original_format_note": "保留整份出版社原始PDF字节；报告位于pdf_pages，同名TXT为该报告区块的pdftotext -layout原样提取。"
     }
   ],
   "responses": [
@@ -66,6 +96,23 @@
       ],
       "date_source": "原始PDF Author Response日期；对应关系为该PDF中报告下的作者回应区块",
       "original_format_note": "保留完整出版社PDF原字节，未生成摘页；同名txt是完整回应区块原样提取。"
+    },
+    {
+      "id": "R2_v1_response",
+      "answers": [
+        "R2_v1"
+      ],
+      "date": "2024-09-20",
+      "file": "responses/R2_v1_response.pdf",
+      "url": "https://ore.eu/ore/article/view/647/version/1135",
+      "text_file": "responses/R2_v1_response.txt",
+      "pdf_pages": [
+        24,
+        25
+      ],
+      "date_source": "原始PDF所列作者回帖日期；该回帖直接位于对应报告下方",
+      "publisher_post_type": "Author Response",
+      "original_format_note": "完整出版社PDF原字节；TXT为对应回帖区块的pdftotext -layout原样提取。"
     }
   ],
   "notes": [
@@ -73,6 +120,44 @@
     "学科字段是本次按OECD第5大类登记的来源范围，不是论文质量标签。recommendation仅逐字保留平台原始建议。",
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
-    "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。"
-  ]
+    "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
+    "补件002未收录以下其他版本或晚于v2的报告：45161@2024-11-08（v2，报告不针对v1）；45160@2024-10-21（v2，报告不针对v1）；49741@2025-01-20（v3，报告不针对v1）。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Research Article",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".breadcrumb-item[aria-current=\"page\"]"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "41742",
+      "41748"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [],
+    "not_collected_reports": [
+      {
+        "publisher_report_id": "45161",
+        "on_version": "v2",
+        "date": "2024-11-08",
+        "reason": "报告不针对v1"
+      },
+      {
+        "publisher_report_id": "45160",
+        "on_version": "v2",
+        "date": "2024-10-21",
+        "reason": "报告不针对v1"
+      },
+      {
+        "publisher_report_id": "49741",
+        "on_version": "v3",
+        "date": "2025-01-20",
+        "reason": "报告不针对v1"
+      }
+    ]
+  }
 }

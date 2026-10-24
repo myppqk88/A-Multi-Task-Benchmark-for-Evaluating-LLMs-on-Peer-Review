@@ -21,7 +21,13 @@
       "public_date": "2025-05-01",
       "url": "https://f1000research.com/articles/14-113/v2",
       "sha256": "d6100eec30ddf7b572ecef935ceadfe4c5562f40ef90df57f53d87e8da08686b",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "source_pages/v2.html",
+        "selector": ".update-box-wrapper.article-updated-box > h2及其直属div.f1r-article-desk",
+        "extraction": "BeautifulSoup.get_text；仅去除移动版重复显示和界面控件"
+      }
     },
     {
       "label": "v3",
@@ -29,7 +35,13 @@
       "public_date": "2025-08-28",
       "url": "https://f1000research.com/articles/14-113/v3",
       "sha256": "18d61750f720c1df2cee4c4d460675cbe42ead682d29f3510c32a01b468cb569",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v3_amendments.txt",
+      "amendments_source": {
+        "file": "source_pages/v3.html",
+        "selector": ".update-box-wrapper.article-updated-box > h2及其直属div.f1r-article-desk",
+        "extraction": "BeautifulSoup.get_text；仅去除移动版重复显示和界面控件"
+      }
     }
   ],
   "reviews": [
@@ -42,7 +54,8 @@
       "file": "reviews/R1_v1.html",
       "url": "https://doi.org/10.5256/f1000research.174764.r364298",
       "publisher_report_id": "364298",
-      "text_file": "reviews/R1_v1.txt"
+      "text_file": "reviews/R1_v1.txt",
+      "has_response": true
     }
   ],
   "responses": [
@@ -67,6 +80,43 @@
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
     "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
-    "报告 364298 的回应：当前官方HTML显示日期 2025-05-01；本地原始PDF显示 2025-04-02。两种原件均保留；date字段登记当前公开页日期，未改动原文。"
-  ]
+    "报告 364298 的回应：当前官方HTML显示日期 2025-05-01；本地原始PDF显示 2025-04-02。两种原件均保留；date字段登记当前公开页日期，未改动原文。",
+    "补件002未收录以下其他版本或晚于v2的报告：382499@2025-05-28（v2，报告不针对v1）；382496@2025-05-28（v2，报告不针对v1）；409697@2025-09-04（v3，报告不针对v1）。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Systematic Review",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".article-type.article-display"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "364298"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [],
+    "not_collected_reports": [
+      {
+        "publisher_report_id": "382499",
+        "on_version": "v2",
+        "date": "2025-05-28",
+        "reason": "报告不针对v1"
+      },
+      {
+        "publisher_report_id": "382496",
+        "on_version": "v2",
+        "date": "2025-05-28",
+        "reason": "报告不针对v1"
+      },
+      {
+        "publisher_report_id": "409697",
+        "on_version": "v3",
+        "date": "2025-09-04",
+        "reason": "报告不针对v1"
+      }
+    ]
+  }
 }

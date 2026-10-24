@@ -21,7 +21,12 @@
       "public_date": "2021-07-23",
       "url": "https://ore.eu/ore/article/view/28/version/52",
       "sha256": "a0b717caa9e7d1b48349b911fcf8b65065cc170a0ce6cdf5965a5b3daa36a536",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "versions/v2.pdf",
+        "extraction": "pdftotext（默认阅读顺序）；从原Amendments标题至该节末尾出版社固定提示句的连续原样切片"
+      }
     }
   ],
   "reviews": [
@@ -39,7 +44,8 @@
         28
       ],
       "text_file": "reviews/R1_v1.txt",
-      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。"
+      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。",
+      "has_response": true
     },
     {
       "id": "R2_v1",
@@ -55,7 +61,8 @@
         34
       ],
       "text_file": "reviews/R2_v1.txt",
-      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。"
+      "original_format_note": "整份出版社原始PDF，未拆页、未改写。报告完整原文位于所列页码；同名txt是对应报告区块的pdftotext -layout原样提取。",
+      "has_response": true
     }
   ],
   "responses": [
@@ -98,6 +105,32 @@
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
     "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
-    "学科登记保留不确定性：本篇为跨学科理论研究，暂按5.1登记；未把该登记视为学科专家确认。"
-  ]
+    "学科登记保留不确定性：本篇为跨学科理论研究，暂按5.1登记；未把该登记视为学科专家确认。",
+    "补件002未收录以下其他版本或晚于v2的报告：27290@2021-08-04（v2，报告不针对v1）。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Research Article",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".breadcrumb-item[aria-current=\"page\"]"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "26663",
+      "26732"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [],
+    "not_collected_reports": [
+      {
+        "publisher_report_id": "27290",
+        "on_version": "v2",
+        "date": "2021-08-04",
+        "reason": "报告不针对v1"
+      }
+    ]
+  }
 }

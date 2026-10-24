@@ -21,7 +21,13 @@
       "public_date": "2026-01-24",
       "url": "https://f1000research.com/articles/14-937/v2",
       "sha256": "1c1be97df472ac87b023a070eb1cc3afcabcce1f32767ac7be7d2bf11e11cd81",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "source_pages/v2.html",
+        "selector": ".update-box-wrapper.article-updated-box > h2及其直属div.f1r-article-desk",
+        "extraction": "BeautifulSoup.get_text；仅去除移动版重复显示和界面控件"
+      }
     }
   ],
   "reviews": [
@@ -34,7 +40,38 @@
       "file": "reviews/R1_v1.html",
       "url": "https://doi.org/10.5256/f1000research.185701.r423293",
       "publisher_report_id": "423293",
-      "text_file": "reviews/R1_v1.txt"
+      "text_file": "reviews/R1_v1.txt",
+      "has_response": true
+    },
+    {
+      "id": "R2_v1",
+      "on_version": "v1",
+      "reviewer": "Emmi Vuorio",
+      "recommendation": "not approved",
+      "date": "2025-10-27",
+      "file": "reviews/R2_v1.html",
+      "url": "https://doi.org/10.5256/f1000research.185701.r419992",
+      "publisher_report_id": "419992",
+      "text_file": "reviews/R2_v1.txt",
+      "has_response": true,
+      "date_source": "原始PDF Reviewer Report日期与官方归档HTML报告完成日期逐项一致",
+      "version_source": "原始PDF Version 1分组与官方归档HTML的报告所属版本逐项一致",
+      "original_format_note": "官方归档页面中对应data-reportid的HTML区块原字节切片；TXT机械提取完整报告并去除回帖和界面重复文本。"
+    },
+    {
+      "id": "R3_v1",
+      "on_version": "v1",
+      "reviewer": "Miles Weaver",
+      "recommendation": "approved with reservations",
+      "date": "2025-11-13",
+      "file": "reviews/R3_v1.html",
+      "url": "https://doi.org/10.5256/f1000research.185701.r423289",
+      "publisher_report_id": "423289",
+      "text_file": "reviews/R3_v1.txt",
+      "has_response": true,
+      "date_source": "原始PDF Reviewer Report日期与官方归档HTML报告完成日期逐项一致",
+      "version_source": "原始PDF Version 1分组与官方归档HTML的报告所属版本逐项一致",
+      "original_format_note": "官方归档页面中对应data-reportid的HTML区块原字节切片；TXT机械提取完整报告并去除回帖和界面重复文本。"
     }
   ],
   "responses": [
@@ -51,6 +88,53 @@
       "pdf_printed_dates": [
         "2026-01-01"
       ]
+    },
+    {
+      "id": "R2_v1_response",
+      "answers": [
+        "R2_v1"
+      ],
+      "date": "2026-01-24",
+      "file": "responses/R2_v1_response.html",
+      "url": "https://f1000research.com/articles/14-937/v1#article-comment-15048",
+      "text_file": "responses/R2_v1_response.txt",
+      "date_source": "官方HTML Author Response日期；父级data-reportid确认答复对象",
+      "pdf_printed_dates": [
+        "2025-12-10"
+      ],
+      "original_format_note": "官方回帖HTML原字节切片；TXT机械提取未截断的full-comment-original正文。"
+    },
+    {
+      "id": "R3_v1_response",
+      "answers": [
+        "R3_v1"
+      ],
+      "date": "2026-01-24",
+      "file": "responses/R3_v1_response.html",
+      "url": "https://f1000research.com/articles/14-937/v1#article-comment-15162",
+      "text_file": "responses/R3_v1_response.txt",
+      "date_source": "官方HTML Author Response日期；父级data-reportid确认答复对象",
+      "pdf_printed_dates": [
+        "2026-01-01",
+        "2026-02-18"
+      ],
+      "original_format_note": "官方回帖HTML原字节切片；TXT机械提取未截断的full-comment-original正文。"
+    },
+    {
+      "id": "R3_v1_response_2",
+      "answers": [
+        "R3_v1"
+      ],
+      "date": "2026-02-19",
+      "file": "responses/R3_v1_response_2.html",
+      "url": "https://f1000research.com/articles/14-937/v1#article-comment-15484",
+      "text_file": "responses/R3_v1_response_2.txt",
+      "date_source": "官方HTML Author Response日期；父级data-reportid确认答复对象",
+      "pdf_printed_dates": [
+        "2026-01-01",
+        "2026-02-18"
+      ],
+      "original_format_note": "官方回帖HTML原字节切片；TXT机械提取未截断的full-comment-original正文。"
     }
   ],
   "notes": [
@@ -59,6 +143,43 @@
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
     "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
-    "报告 423293 的回应：当前官方HTML显示日期 2026-01-24；本地原始PDF显示 2026-01-01。两种原件均保留；date字段登记当前公开页日期，未改动原文。"
-  ]
+    "报告 423293 的回应：当前官方HTML显示日期 2026-01-24；本地原始PDF显示 2026-01-01。两种原件均保留；date字段登记当前公开页日期，未改动原文。",
+    "补件002：报告 419992 的作者回应，官方HTML日期 2026-01-24；原始PDF所列日期 2025-12-10。日期字段取官方HTML，保留原PDF，不改动原文。",
+    "补件002：报告 423289 的作者回应，官方HTML日期 2026-01-24；原始PDF所列日期 2026-01-01, 2026-02-18。日期字段取官方HTML，保留原PDF，不改动原文。",
+    "补件002：报告 423289 的作者回应，官方HTML日期 2026-02-19；原始PDF所列日期 2026-01-01, 2026-02-18。日期字段取官方HTML，保留原PDF，不改动原文。",
+    "补件002未收录以下其他版本或晚于v2的报告：453679@2026-02-16（v2，报告不针对v1）；452926@2026-01-29（v2，报告不针对v1）。",
+    "补件002作者回应晚于v2公开日期：423289 回应 2026-02-19，v2 2026-01-24。只确认其实际答复对象与公开日期，不将其视为v2发表前回应。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Review",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".article-type.article-display"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "419992",
+      "423289",
+      "423293"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [],
+    "not_collected_reports": [
+      {
+        "publisher_report_id": "453679",
+        "on_version": "v2",
+        "date": "2026-02-16",
+        "reason": "报告不针对v1"
+      },
+      {
+        "publisher_report_id": "452926",
+        "on_version": "v2",
+        "date": "2026-01-29",
+        "reason": "报告不针对v1"
+      }
+    ]
+  }
 }

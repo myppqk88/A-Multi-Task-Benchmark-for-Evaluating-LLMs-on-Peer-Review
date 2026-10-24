@@ -1,0 +1,175 @@
+intake/batch-01 补件002交付记录
+范围：原有88篇候选论文；不新增论文，不修改fill_目录。
+原稿、报告、回应和Amendments均复制原件或确定性提取原文；没有模型生成、改写、翻译或总结这些内容。
+原有文件字节保持不变；metadata.json保留全部原字段值和数组条目，只追加字段、记录和notes。manifest保留旧路径和原二进制分卷归属，仅更新追加后的metadata哈希并追加新文件。
+
+补收独立v1报告：51份；ORE 32份，F1000 19份；其中有可对应作者回应33份，共35条回帖。
+新增报告全部核实为v1，完成日期不晚于v2公开日期。
+全部88篇原始PDF与官方归档HTML交叉比对，v1报告共197份；审计清单51个遗漏编号全部补收，未发现清单之外的v1遗漏。
+作者回应缺失：18份报告，没有补配其他报告或轮次级合并回帖。
+Amendments：88篇，113个版本（v2 88、v3 23、v4 2）；每个对应版本均登记amendments_file和原件位置。
+文章类型article_type：88篇均按官方HTML原始标注登记。
+
+作者回应日期：按原件保留。F1000当前HTML日期与PDF印刷日期不同时，两种日期均记录，不改动原文。
+以下6条回应晚于v2，已保存并明确记录实际日期，不视为v2发表前的回应：
+ORE_5-124 报告54541 回应2025-07-22；v2 2025-07-14
+F1000_172015 报告435305 回应2026-04-16；v2 2026-01-28
+F1000_168515 报告423289 回应2026-02-19；v2 2026-01-24
+F1000_168970 报告414340 回应2025-11-24；v2 2025-11-18
+F1000_160920 报告384599 回应2025-10-28；v2 2025-10-20
+F1000_155420 报告369763 回应2025-10-28；v2 2025-10-21
+
+仍然缺失的作者回应（paper_dir / publisher_report_id）：
+ORE_5-387 / 68453
+ORE_5-333 / 63341
+ORE_5-124 / 54542
+ORE_4-85 / 40484
+ORE_4-64 / 40150
+ORE_4-64 / 40153
+ORE_4-45 / 39845
+ORE_3-39 / 30911
+ORE_2-78 / 32440
+ORE_2-28 / 28677
+ORE_1-14 / 26586
+F1000_176261 / 460975
+F1000_176456 / 451007
+F1000_171289 / 435273
+F1000_170339 / 428954
+F1000_164232 / 414255
+F1000_159551 / 394215
+F1000_161993 / 368692
+
+仍然缺失的附件：ORE_1-31 报告26723正文链接的批注PDF（原链接返回HTTP 403，未取得原件）。该报告正文与作者Reader Comment回帖已保存。
+https://s3-eu-west-1.amazonaws.com/openreseurope/linked/183040.Papaevangelou_2021_%28commented_by_Magalhaes%29.pdf
+
+审计CSV中date?共7份，均已核实：
+F1000_155420 / 369763 / 2025-03-21
+F1000_159551 / 394215 / 2025-06-30
+F1000_160920 / 384599 / 2025-05-29
+F1000_165866 / 428084 / 2025-11-10
+F1000_168515 / 419992 / 2025-10-27
+F1000_168866 / 436134 / 2026-01-06
+F1000_171289 / 435273 / 2025-12-27
+
+审计CSV与原报告完成日期不同共12份（按原页与PDF一致日期登记，仅新增条目，未改旧条目）：
+paper_dir / report_id / 审计CSV日期 / 原报告完成日期
+F1000_159551 / 394216 / 2025-03-31 / 2025-07-28
+F1000_161993 / 368692 / 2025-02-25 / 2025-02-28
+F1000_163068 / 377020 / 2025-04-07 / 2025-06-27
+F1000_164232 / 414255 / 2026-02-25 / 2025-09-18
+F1000_167364 / 407498 / 2025-08-06 / 2025-09-05
+F1000_168515 / 423289 / 2025-09-18 / 2025-11-13
+F1000_168970 / 414340 / 2025-09-12 / 2025-10-15
+F1000_170339 / 428954 / 2025-10-17 / 2025-12-04
+F1000_170698 / 446299 / 2025-10-10 / 2026-01-27
+F1000_172015 / 435305 / 2025-11-05 / 2025-12-30
+F1000_176261 / 460975 / 2026-01-20 / 2026-02-28
+F1000_176456 / 451007 / 2026-01-09 / 2026-03-13
+
+原始类型分布：
+Brief Report：3
+Case Study：4
+Essay：8
+Method Article：2
+Open Letter：4
+Opinion Article：1
+Research Article：51
+Review：3
+Study Protocol：1
+Systematic Review：11
+
+未收录的其他版本报告共201份，逐项编号、版本、日期及原因见各篇metadata.json的intake_supplement_002.not_collected_reports与新增notes。审计CSV所列51份中没有因版本或日期不符合而排除的报告。
+
+归档：新增PDF和HTML只进入intake-batch-01-assets-002.tar.gz；001不变。Git只新增TXT并对88份metadata.json和manifest.csv作授权的追加更新。
+恢复：检出intake/batch-01分支，在仓库根目录先解压001，再解压002；按最新manifest逐项核对字节数与SHA256。旧Release标签保持原提交，补件以分支的新提交为准。
+manifest不包含自身，避免自哈希；归档SHA256及本次分支提交号记录于同一Release说明。
+
+逐篇补件清单（原文内容不在此报告中复述）：
+F1000_155420 | 新增报告 369763@2025-03-21 has_response=true | Amendments v2, v3 | article_type=Research Article
+F1000_155832 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_157763 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_159085 | 新增报告  | Amendments v2, v3 | article_type=Systematic Review
+F1000_159117 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_159551 | 新增报告 394215@2025-06-30 has_response=false, 394216@2025-07-28 has_response=true | Amendments v2 | article_type=Systematic Review
+F1000_160104 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_160666 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_160829 | 新增报告  | Amendments v2, v3 | article_type=Systematic Review
+F1000_160920 | 新增报告 384599@2025-05-29 has_response=true | Amendments v2 | article_type=Method Article
+F1000_161090 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_161993 | 新增报告 368692@2025-02-28 has_response=false | Amendments v2 | article_type=Research Article
+F1000_163068 | 新增报告 377020@2025-06-27 has_response=true | Amendments v2 | article_type=Study Protocol
+F1000_163427 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_164019 | 新增报告  | Amendments v2, v3 | article_type=Systematic Review
+F1000_164151 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_164232 | 新增报告 414255@2025-09-18 has_response=false | Amendments v2 | article_type=Systematic Review
+F1000_165428 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_165866 | 新增报告 428084@2025-11-10 has_response=true | Amendments v2 | article_type=Research Article
+F1000_166667 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_167364 | 新增报告 407498@2025-09-05 has_response=true | Amendments v2, v3 | article_type=Systematic Review
+F1000_167498 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_167834 | 新增报告  | Amendments v2, v3, v4 | article_type=Research Article
+F1000_168515 | 新增报告 419992@2025-10-27 has_response=true, 423289@2025-11-13 has_response=true | Amendments v2 | article_type=Review
+F1000_168866 | 新增报告 436134@2026-01-06 has_response=true | Amendments v2 | article_type=Research Article
+F1000_168958 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+F1000_168970 | 新增报告 414340@2025-10-15 has_response=true | Amendments v2, v3, v4 | article_type=Research Article
+F1000_169639 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_170252 | 新增报告  | Amendments v2 | article_type=Systematic Review
+F1000_170279 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_170339 | 新增报告 428954@2025-12-04 has_response=false | Amendments v2 | article_type=Research Article
+F1000_170388 | 新增报告  | Amendments v2 | article_type=Systematic Review
+F1000_170698 | 新增报告 446299@2026-01-27 has_response=true | Amendments v2 | article_type=Systematic Review
+F1000_171289 | 新增报告 435273@2025-12-27 has_response=false | Amendments v2 | article_type=Research Article
+F1000_171456 | 新增报告  | Amendments v2 | article_type=Research Article
+F1000_172015 | 新增报告 435305@2025-12-30 has_response=true | Amendments v2, v3 | article_type=Research Article
+F1000_173462 | 新增报告  | Amendments v2 | article_type=Systematic Review
+F1000_176261 | 新增报告 460975@2026-02-28 has_response=false | Amendments v2 | article_type=Research Article
+F1000_176456 | 新增报告 451007@2026-03-13 has_response=false | Amendments v2 | article_type=Review
+F1000_176844 | 新增报告  | Amendments v2 | article_type=Opinion Article
+F1000_178134 | 新增报告  | Amendments v2 | article_type=Systematic Review
+ORE_1-14 | 新增报告 26586@2021-04-07 has_response=false | Amendments v2 | article_type=Research Article
+ORE_1-151 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+ORE_1-153 | 新增报告 28194@2022-01-20 has_response=true | Amendments v2 | article_type=Case Study
+ORE_1-28 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_1-31 | 新增报告 26723@2021-05-12 has_response=true | Amendments v2 | article_type=Research Article
+ORE_1-41 | 新增报告 26786@2021-05-11 has_response=true, 26790@2021-05-17 has_response=true, 26789@2021-05-21 has_response=true | Amendments v2 | article_type=Brief Report
+ORE_1-42 | 新增报告 27179@2021-07-28 has_response=true | Amendments v2 | article_type=Research Article
+ORE_1-57 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+ORE_1-63 | 新增报告 27064@2021-06-23 has_response=true | Amendments v2 | article_type=Research Article
+ORE_1-71 | 新增报告  | Amendments v2, v3 | article_type=Research Article
+ORE_2-27 | 新增报告  | Amendments v2 | article_type=Open Letter
+ORE_2-28 | 新增报告 28677@2022-03-28 has_response=false | Amendments v2 | article_type=Essay
+ORE_2-47 | 新增报告  | Amendments v2 | article_type=Essay
+ORE_2-60 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_2-76 | 新增报告  | Amendments v2 | article_type=Essay
+ORE_2-78 | 新增报告 32440@2023-06-22 has_response=false | Amendments v2 | article_type=Research Article
+ORE_3-137 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_3-142 | 新增报告  | Amendments v2 | article_type=Essay
+ORE_3-205 | 新增报告  | Amendments v2, v3 | article_type=Case Study
+ORE_3-216 | 新增报告 37139@2024-02-16 has_response=true, 37144@2024-02-16 has_response=true | Amendments v2 | article_type=Brief Report
+ORE_3-22 | 新增报告 30777@2023-02-02 has_response=true | Amendments v2 | article_type=Method Article
+ORE_3-34 | 新增报告 30875@2023-05-16 has_response=true | Amendments v2, v3 | article_type=Brief Report
+ORE_3-39 | 新增报告 30911@2023-04-13 has_response=false | Amendments v2 | article_type=Case Study
+ORE_3-96 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_4-12 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_4-124 | 新增报告 41742@2024-07-25 has_response=true | Amendments v2, v3 | article_type=Research Article
+ORE_4-179 | 新增报告  | Amendments v2 | article_type=Case Study
+ORE_4-197 | 新增报告 44461@2024-10-24 has_response=true | Amendments v2 | article_type=Open Letter
+ORE_4-252 | 新增报告  | Amendments v2, v3 | article_type=Essay
+ORE_4-45 | 新增报告 39845@2024-05-13 has_response=false | Amendments v2 | article_type=Open Letter
+ORE_4-64 | 新增报告 40150@2024-06-11 has_response=false, 40153@2024-06-14 has_response=false | Amendments v2, v3 | article_type=Essay
+ORE_4-85 | 新增报告 40484@2024-06-04 has_response=false | Amendments v2 | article_type=Research Article
+ORE_5-104 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_5-121 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_5-124 | 新增报告 54542@2025-06-14 has_response=false, 54541@2025-07-08 has_response=true | Amendments v2 | article_type=Research Article
+ORE_5-128 | 新增报告 60199@2025-09-29 has_response=true | Amendments v2, v3 | article_type=Research Article
+ORE_5-168 | 新增报告  | Amendments v2 | article_type=Open Letter
+ORE_5-178 | 新增报告 56742@2025-08-25 has_response=true | Amendments v2 | article_type=Research Article
+ORE_5-180 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_5-21 | 新增报告 50902@2025-02-25 has_response=true, 51234@2025-03-03 has_response=true | Amendments v2 | article_type=Essay
+ORE_5-283 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_5-325 | 新增报告  | Amendments v2 | article_type=Research Article
+ORE_5-333 | 新增报告 63341@2025-12-10 has_response=false | Amendments v2 | article_type=Research Article
+ORE_5-387 | 新增报告 68453@2026-02-03 has_response=false | Amendments v2 | article_type=Essay
+ORE_5-397 | 新增报告 66996@2026-01-16 has_response=true | Amendments v2 | article_type=Research Article
+ORE_5-56 | 新增报告 51871@2025-03-25 has_response=true, 51872@2025-04-07 has_response=true | Amendments v2 | article_type=Research Article
+ORE_6-5 | 新增报告  | Amendments v2 | article_type=Review

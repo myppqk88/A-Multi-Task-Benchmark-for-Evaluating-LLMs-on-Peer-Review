@@ -21,7 +21,13 @@
       "public_date": "2026-03-19",
       "url": "https://f1000research.com/articles/15-34/v2",
       "sha256": "64c21c6ced5a962eb6830aeb0d8f4884ef7d5c00fde19b374762322c21868ff4",
-      "public_date_source": "出版社原始PDF封面版本记录"
+      "public_date_source": "出版社原始PDF封面版本记录",
+      "amendments_file": "versions/v2_amendments.txt",
+      "amendments_source": {
+        "file": "source_pages/v2.html",
+        "selector": ".update-box-wrapper.article-updated-box > h2及其直属div.f1r-article-desk",
+        "extraction": "BeautifulSoup.get_text；仅去除移动版重复显示和界面控件"
+      }
     }
   ],
   "reviews": [
@@ -34,7 +40,8 @@
       "file": "reviews/R1_v1.html",
       "url": "https://doi.org/10.5256/f1000research.194512.r454319",
       "publisher_report_id": "454319",
-      "text_file": "reviews/R1_v1.txt"
+      "text_file": "reviews/R1_v1.txt",
+      "has_response": true
     },
     {
       "id": "R2_v1",
@@ -45,7 +52,23 @@
       "file": "reviews/R2_v1.html",
       "url": "https://doi.org/10.5256/f1000research.194512.r454320",
       "publisher_report_id": "454320",
-      "text_file": "reviews/R2_v1.txt"
+      "text_file": "reviews/R2_v1.txt",
+      "has_response": true
+    },
+    {
+      "id": "R3_v1",
+      "on_version": "v1",
+      "reviewer": "Irmak Ertör",
+      "recommendation": "approved with reservations",
+      "date": "2026-03-13",
+      "file": "reviews/R3_v1.html",
+      "url": "https://doi.org/10.5256/f1000research.194512.r451007",
+      "publisher_report_id": "451007",
+      "text_file": "reviews/R3_v1.txt",
+      "has_response": false,
+      "date_source": "原始PDF Reviewer Report日期与官方归档HTML报告完成日期逐项一致",
+      "version_source": "原始PDF Version 1分组与官方归档HTML的报告所属版本逐项一致",
+      "original_format_note": "官方归档页面中对应data-reportid的HTML区块原字节切片；TXT机械提取完整报告并去除回帖和界面重复文本。"
     }
   ],
   "responses": [
@@ -84,6 +107,27 @@
     "仅将已确认日期、版本和对应回应的报告列入reviews；原始整页/整份PDF中可能还有未列入的其他报告。",
     "公开日期通常精确到日；同日记录不推断日内先后。",
     "supplements仅收录本地论文目录中可核为正式附件的原件；不镜像外部个人层面的底层数据。",
-    "报告 454319 的回应：当前官方HTML显示日期 2026-02-24；本地原始PDF显示 2026-02-19。两种原件均保留；date字段登记当前公开页日期，未改动原文。"
-  ]
+    "报告 454319 的回应：当前官方HTML显示日期 2026-02-24；本地原始PDF显示 2026-02-19。两种原件均保留；date字段登记当前公开页日期，未改动原文。",
+    "补件002核对全部v1报告；新增报告不以作者是否回应作为收录条件。原条目、原文件及原日期保留；has_response仅表示已保存可对应的作者原始回帖，不表示对其内容的评价。"
+  ],
+  "article_type": "Review",
+  "article_type_source": {
+    "file": "source_pages/v1.html",
+    "selector": ".article-type.article-display"
+  },
+  "intake_supplement_002": {
+    "audit_source_branch": "claude/upbeat-maxwell-lx1sxw",
+    "audit_source_file": "docs/intake_audit/batch-01_papers.csv",
+    "audit_source_sha256": "56f18e66cd194c30c2dc5608715438ae44e9a434a2a4fd419554b0b7b264ea4c",
+    "verified_v1_report_ids": [
+      "451007",
+      "454319",
+      "454320"
+    ],
+    "additional_v1_report_ids_beyond_audit": [],
+    "missing_response_report_ids": [
+      "451007"
+    ],
+    "not_collected_reports": []
+  }
 }
