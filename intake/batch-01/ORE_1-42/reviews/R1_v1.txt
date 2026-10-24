@@ -1,0 +1,167 @@
+ Reviewer Report 25 August 2021
+
+https://doi.org/10.21956/openreseurope.14412.r27181
+
+ © 2021 Mietchen D. This is an open access peer review report distributed under the terms of the Creative
+ Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium,
+ provided the original work is properly cited.
+
+
+
+       Daniel Mietchen
+       School of Data Science, University of Virginia, Charlottesville, VA, USA
+
+       General comments
+       This study provides a useful introduction to practical aspects of Data Management Plans (DMPs) in
+       the context of Horizon 2020-funded projects and presents an analysis of associated trends with
+       respect to data management more broadly, particularly in the context of Horizon Europe. While
+       the overall conceptualization is solid, the description of the methodology would benefit from
+       greater detail (e.g. sharing of the code involved), as would the discussion of policy implications for
+       key stakeholders like projects, research fields, institutions or the European Commission.
+
+       I read the reviews by Ron Dekker[1] and by Daniela Adele Hausen & Giacomo Lanza[2], who
+       expressed much of what my comments would be. In the following, I will thus concentrate on
+       aspects of the paper that they did not discuss in detail, or where I would put another emphasis.
+
+       The present work uses references only scarcely but would benefit from better contextualization,
+       since many aspects of it overlap with work on making DMPs better in general[3], on integrating
+       them with a broader FAIR ecosystem[4] and on making them machine actionable[5].
+
+       Specific comments
+       The study is based on two datasets (cited as references 8 and 11) that have been created and
+       shared in the framework of the project. For the dataset in ref. 11, some methodological details are
+       missing, e.g. the precise source of the DMPs (e.g. a query URL) or the set of instructions (e.g. an
+       API call) used to retrieve and filter the DMPs represented in the collection. Likewise, no version
+       information or URI was given for the H2020 DMP templates (of the European Commission or
+       European Research Council) being discussed.
+
+       Given the "[u]sefulness of the DMP, beyond it being an EC requirement", it would have been
+       instructive to read the DMP for the DMP Use Case Project itself.
+
+       As stated in footnote b, following the four-eyes principle would indeed have been a good choice.
+       There are other quality control mechanisms that could have been considered, e.g. the study
+
+
+                                                                                                               Page 12 of 22
+Open Research Europe                                          Open Research Europe 2021, 1:42 Last updated: 13 NOV 2024
+
+
+
+
+    explicitly focused on beneficiaries of funded proposals, whereas inclusion of DMP-related
+    comments by grant reviewers or by applicants whose proposals were rejected might have added
+    some new insights.
+
+    The filtering of non-ERC DMPs by simple mention of the string "copyright" seems very crude, both
+    because of the overlap with Creative Commons licenses (as alluded to in the discussion), of which
+    some would be compatible with the kind of aggregation and sharing described here, and because
+    some DMPs might express their copyright status using other means (e.g. the copyright sign) or
+    not at all. Because of this, the goal of the filtering - "ensure that only those DMPs which are not IP
+    protected are published" - was likely not achieved with much precision.
+
+    The discussion of these copyright issues (and the uncertainty around the copyright status of ERC
+    DMPs) does highlight the need for stating the copyright and licensing terms in a FAIR manner (for
+    DMPs and other documents, ERC or not), but policy implications like this are only occasionally
+    being touched upon in the present work, even though they would be a useful addition.
+
+    Licensing-related confusion also surfaced in other areas of the text, e.g. in the comment "One
+    project primarily used pre-existing open data. There was therefore no problem in using an open
+    license – however, the business partners in the project were somewhat critical and saw open data
+    more as an obstacle, rather than as an opportunity." Without further context, this is ambiguous at
+    best and needs unpacking - if they "used pre-existing open data", it is hard to understand how
+    they could "[see] open data more as an obstacle, rather than as an opportunity".
+
+    As pointed out by Ron Dekker, some descriptive statistics of the DMP corpus would have been
+    useful. In addition, the presentation of the statistics that are given merits some brushing - is the
+    number of significant digits in the tables really appropriate?
+
+    The need for better contextualization was already pointed out in the general comments, and while
+    this happens on occasion (e.g. the mention of "OpenAIRE/FAIR Data Expert Group report on the
+    Horizon 2020 template"), here are some more specific examples: the section "Publication of the
+    DMP" could point to the "Exposing Data Management Plans WG" of the Research Data Alliance,
+    whose "Active Data Management Plans IG" would also be relevant for considerations regarding
+    the "Availability of more than one project specific DMP".
+
+    The section "What kind of support is needed and who should provide it?" is focused very much on
+    the DMPs as an end in and of themselves, but misses thoughts regarding how data management
+    plans can actually be leveraged for improved data management, and how the documents
+    containing such plans can be made more readily reusable.
+
+    Hausen and Lanza wrote: "It would be helpful for the reading flow to put the ethical
+    considerations in footnote". I agree that the reading flow is interrupted by having the "Ethical
+    considerations" section between the "Qualitative dimension" and "Quantitative dimension"
+    sections but think the footnotes - at least as implemented in the journal - interrupt the flow even
+    more, and a simple reordering of the sections would suffice.
+
+    Personally, I would like the ethical considerations to be expressed in a more explicit and more
+    FAIR way (e.g. as per https://doi.org/10.5281/zenodo.2559998), but that is clearly beyond the
+    scope of the present paper.
+
+
+
+                                                                                                          Page 13 of 22
+Open Research Europe                                       Open Research Europe 2021, 1:42 Last updated: 13 NOV 2024
+
+
+
+
+    Linguistic matters
+       ○  There are a number of typos and other issues that need copyediting, e.g. "six cases studies"
+          and "the DMP been dealt with"
+       ○  "with was established" (in Ref. 11)
+       ○   "creative commons" should be capitalized
+
+
+
+    References
+    1. Dekker R: Peer Review Report For: Data Management Plans in Horizon 2020: what beneficiaries
+    think and what we can learn from their experience [version 1; peer review: 2 approved]. Open
+    Research Europe. 2021; 1. Publisher Full Text
+    2. Hausen DA, Lanza G: Peer Review Report For: Data Management Plans in Horizon 2020: what
+    beneficiaries think and what we can learn from their experience [version 1; peer review: 2
+    approved]. Open Research Europe. 2021; 1. Publisher Full Text
+    3. Michener WK: Ten Simple Rules for Creating a Good Data Management Plan.PLoS Comput Biol.
+    2015; 11 (10): e1004525 PubMed Abstract | Publisher Full Text
+    4. Turning FAIR into reality. Final report and action plan from the European Commission expert
+    group on FAIR data. 2018. Publisher Full Text
+    5. Miksa T, Simms S, Mietchen D, Jones S: Ten principles for machine-actionable data management
+    plans.PLoS Comput Biol. 15 (3): e1006750 PubMed Abstract | Publisher Full Text
+
+    Is the work clearly and accurately presented and does it engage with the current literature?
+    Partly
+
+    Is the study design appropriate and is the work technically sound?
+    Yes
+
+    Are sufficient details of methods and analysis provided to allow replication by others?
+    Partly
+
+    Are all the source data and materials underlying the results available?
+    Partly
+
+    If applicable, is the statistical analysis and its interpretation appropriate?
+    Partly
+
+    Are the conclusions drawn adequately supported by the results?
+    Yes
+
+    Competing Interests: No competing interests were disclosed.
+
+    Reviewer Expertise: My focus is on the integration between web-based research workflows and
+    research policy, particularly around open science, data management and FAIR data.
+
+    I confirm that I have read this submission and believe that I have an appropriate level of
+
+
+
+
+                                                                                                       Page 14 of 22
+Open Research Europe                                             Open Research Europe 2021, 1:42 Last updated: 13 NOV 2024
+
+
+
+
+      expertise to confirm that it is of an acceptable scientific standard, however I have
+      significant reservations, as outlined above.
+
+
