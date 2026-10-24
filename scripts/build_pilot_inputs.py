@@ -111,9 +111,29 @@ def docx_text(path):
     return '\n'.join(parts)
 
 
+SUPPLEMENT_FOOTER = re.compile(r'doi\.org|\bDOI:?\s*10\.\d{4}|CC BY 4\.0\s*\|')
+PEERJ_SECTIONS = ('Basic reporting', 'Experimental design', 'Validity of the findings', 'Additional comments',
+                  'Comments for the Author', 'Comments for the author')
+
+
+def clean_peerj_review(text):
+    """Drop the reviewer-name/permalink header and the 'Cite this review as' block (title and DOI)."""
+    starts = [text.find(h) for h in PEERJ_SECTIONS if h in text]
+    start = min(starts) if starts else 0
+    end = text.find('Cite this review as')
+    return text[start:end if end != -1 else None].strip()
+
+
 def pdf_supplement(pdf, dest_dir, key):
+    """Text and page images of a supplement, with DOI/attribution footer lines redacted in both."""
     doc = pymupdf.open(pdf)
     text, pages = [], []
+    for page in doc:
+        for block in page.get_text('dict')['blocks']:
+            block_text = ' '.join(span['text'] for line in block.get('lines', []) for span in line['spans'])
+            if SUPPLEMENT_FOOTER.search(block_text) and len(block_text) < 200:
+                page.add_redact_annot(block['bbox'], fill=(1, 1, 1))
+        page.apply_redactions()
     for i, page in enumerate(doc):
         text.append(f'\n[Source attachment page {i + 1}]\n' + page.get_text())
         name = f'assets/supplement_{key}/page_{i + 1:03d}.png'
@@ -223,7 +243,7 @@ def build_t3_existing(task_id, src, intake_fill):
             key = f'A{n:02d}'
             text, pages = pdf_supplement(intake_fill / entry['file'], task_dir, key)
             sup[key] = {'text': text, 'visual_pages': pages, 'applies_to': ['manuscript_after'],
-                        'description': f"作者在后稿中指向的外部正式附件：{Path(entry['file']).name}；"
+                        'description': f"作者在后稿中指向的外部正式附件；DOI 与署名页脚已遮盖；"
                                        f"许可 {entry.get('license')}；来源 intake batch-01"}
             lineage['changes'].append(f"supplement {key} from intake batch-01 {entry['file']} sha256={entry['sha256']}")
         obj['supplement_policy'] = (obj.get('supplement_policy', '') +
@@ -240,7 +260,7 @@ def build_t3_peerj(sample, pid, ledger, intake_fill):
     before_text, before_pages, before_src = peerj_pdf(ROOT / ledger['前稿原件'], task_dir, 'assets/manuscript_before')
     after_text, after_pages, after_src = peerj_pdf(ROOT / ledger['修改稿原件'], task_dir, 'assets/manuscript_after')
     meta = json.loads((intake_fill / 'metadata.json').read_text())
-    reviews = {r['id'].split('_')[0]: (intake_fill / r['text_file']).read_text(encoding='utf-8')
+    reviews = {r['id'].split('_')[0]: clean_peerj_review((intake_fill / r['text_file']).read_text(encoding='utf-8'))
                for r in meta['reviews'] if r['on_version'] == 'v1'}
     responses, response_src = {}, []
     for r in meta['responses']:
@@ -267,7 +287,8 @@ def build_t3_peerj(sample, pid, ledger, intake_fill):
                      'reviews': [{'id': r['id'], 'text_file': f"intake/batch-01/{intake_fill.name}/{r['text_file']}",
                                   'date': r['date']} for r in meta['reviews'] if r['on_version'] == 'v1'],
                      'responses': response_src, 'editor_decision': str(decision[0].relative_to(ROOT)) if decision else None,
-                     'editor_name_line_removed': bool(editor)}
+                     'editor_name_line_removed': bool(editor),
+                     'review_cleaning': 'reviewer name/permalink header and citation block (title, DOI) removed'}
 
 
 def main():
