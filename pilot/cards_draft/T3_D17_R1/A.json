@@ -1,0 +1,207 @@
+{
+ "task_id": "T3_D17_R1",
+ "paper_id": "PeerJ:5414",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "a294bf8bb32add6ed43b8e14aad41976be88ba6dd4a0bacaf1f49342a140ec27",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "partially_resolved：方法部分新增了以ASMR清单评分核实ASMR身份的说明，并给出不做视频核实的理由；但核实仍是自我报告，两组筛查不对称没有写入局限。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "分组效度问题只得到部分缓解。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "To gain confidence that individuals recruited to the"
+    }
+   ],
+   "match_criteria": "判为部分解决，并指出仍依赖自报或筛查不对称。",
+   "acceptable_alternatives": [
+    "认为说明已足够、判为已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "unresolved（声称已改但未改）：作者回应称已修改p=.059\"边缘显著\"的表述，但修订稿中这句话仍原样保留。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "直接检验模型是否核对修订稿，而非轻信回应。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The results of correlational analysis reported on p.13 line 305 are in fact non-significant rather than marginally significant"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "although this result was only marginally significant."
+    },
+    {
+     "input_field": "materials/responses/combined",
+     "exact_quote": "We have fixed this line in our manuscript."
+    }
+   ],
+   "match_criteria": "指出修订稿仍写\"marginally significant\"，与回应声称不符。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "partially_resolved / unresolved：方法部分新增了\"探索性研究、未做检验力分析\"的说明，但讨论仍称研究\"strongly supports\"假设，结论强度与新增的探索性定位相互矛盾。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "核心结论强度未下调。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Explicitly state (a) this is an exploratory study, and require ongoing verification"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Given the exploratory nature of this study, an a priori power"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The current study strongly supports the hypothesis that ASMR is related to mindfulness."
+    }
+   ],
+   "match_criteria": "指出新增探索性声明与\"strongly supports\"并存，结论强度未调整。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "unresolved：具身情绪量表仍在方法中列出，结果中仍未报告，修订稿也未说明这些数据将另文报告；回应中的解释没有写进稿件。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "选择性报告问题未在稿件层面处理。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Is the Embodied Emotion scale absent?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Embodied Emotion Scale, a self-created ASMR Checklist (Fredborg et al., 2017), and a set of"
+    }
+   ],
+   "match_criteria": "指出量表仍测而未报、稿件未说明去向。",
+   "acceptable_alternatives": [
+    "认为另文发表的理由可以接受、但应在稿件中写明，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "resolved：MAAS与好奇心分量表的相关已按组分别报告；各分析的样本量已在表注中说明（N=284或N=173）。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "对应R3的两项统计报告关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "The correlation between Tcur and MAAS is reported for the whole sample"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "when analyzed by group (with the total sample of participants per group)"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "For all other correlations, N = 173 ASMR participants with scores for all checklist items"
+    }
+   ],
+   "match_criteria": "判为已解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "partially_resolved：对招募来源差异，作者只补充了\"两组都是常上网的人\"，这并不能消除社区自选样本与商业样本库之间的系统差异。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "检验模型能否识别弱化的缓解论证。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "I did wonder about the potential for sampling bias because different methods were used to recruit ASMR and non-ASMR participants"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "increasing the likelihood that both ASMR and control participants were regular internet users"
+    }
+   ],
+   "match_criteria": "指出新增说明不足以消除选择偏差。",
+   "acceptable_alternatives": [
+    "认为审稿人只要求\"注明\"，作者已注明、判已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "resolved：性别差异的机制推测已删除；\"consistently\"改为\"frequently\"；伦理委员会名称已更正；补充了Janik McErlean文献和16项减为14项的说明。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "对应多项次要关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Could the authors elaborate on what is meant by ‘attentional mechanisms’ and ‘more cognitive processes’"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "University of Winnipeg Department"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "“watching others sweep” and “watching others refill fountain pens”"
+    }
+   ],
+   "match_criteria": "判为已解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "acceptable_under_rubric",
+  "acceptable_set": [
+   "acceptable_under_rubric",
+   "needs_substantive_revision"
+  ],
+  "rationale": "多数关切已修订；残留问题（结论强度、未改的\"边缘显著\"、未报告的量表、分组核实）中，若把结论过度作为实质问题，可判仍需实质修改。"
+ },
+ "known_invalid_patterns": [
+  "因回应称\"已修改\"就把\"边缘显著\"判为已解决。",
+  "依据回应中贴出的具身情绪量表结果作判断（该结果不在稿件中）。"
+ ],
+ "draft_notes": "作者回信的Word文档把逐条回应放在表格中，构建时顺序错乱且残留作者署名，见已知输入问题记录；引文内容不受影响。"
+}

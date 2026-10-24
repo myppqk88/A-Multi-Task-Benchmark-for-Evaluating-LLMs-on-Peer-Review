@@ -1,0 +1,309 @@
+{
+ "task_id": "D17_T1_Q01",
+ "paper_id": "PeerJ:5414",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "648423fcc74954c05d85e38c25a44f4d165b1f432af0042793243ff47512950c",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "ASMR组身份未经核实：ASMR组来自Reddit论坛的自我认定，没有像对照组那样做任何筛查；而对照组要看视频确认没有刺痛感。两组的入组标准不对称，ASMR组可能混入只是爱看ASMR视频、但并无刺痛反应的人。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "分组效度是所有组间比较的前提。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "it isn’t clear how it was established that the participants in the ASMR group did indeed experience ASMR"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Recruitment of participants with ASMR was conducted via an advertisement for the study"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "control participants viewed two popular ASMR-eliciting videos and were asked whether the"
+    }
+   ],
+   "match_criteria": "指出ASMR组未经验证/仅凭自我认定，或指出两组筛查不对称。",
+   "acceptable_alternatives": [
+    "认为ASMR清单中的刺痛强度与潜伏期评分可作为间接核实、只需在文中说明，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "两组招募来源不同（ASMR组来自Reddit社区，对照组来自Qualtrics商业样本库），组间差异可能部分反映样本来源而非ASMR本身，如社区参与度、动机或对研究主题的兴趣。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "影响组间差异的因果解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "I did wonder about the potential for sampling bias because different methods were used to recruit ASMR and non-ASMR participants"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Age- and sex-matched control participants were recruited by the participant recruitment"
+    }
+   ],
+   "match_criteria": "指出招募来源不同带来的选择偏差。",
+   "acceptable_alternatives": [
+    "认为年龄性别匹配部分缓解了这一问题、但仍需写入局限，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "结论强度过高：讨论称研究\"强有力地支持\"ASMR与正念相关，但组间差异效应量很小（MAAS的ηp²=0.027），相关系数多在.11–.24，研究又是探索性、未做检验力分析的横断面比较。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "核心结论的强度与证据不相称。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Explicitly state (a) this is an exploratory study, and require ongoing verification"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The current study strongly supports the hypothesis that ASMR is related to mindfulness."
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "MSE = .963, p < 0.001, ηp2 = 0.027"
+    }
+   ],
+   "match_criteria": "指出\"strongly supports\"与小效应量/探索性设计不相称，或要求声明探索性质。",
+   "acceptable_alternatives": [
+    "只指出应声明为探索性研究、未做检验力分析，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "样本量与缺失数据报告不清：ASMR组N=284，但部分相关分析报告r(173)，另一些报告r(284)，文中没有交代哪些分析剔除了多少人及原因；r(284)的自由度写法也与N=284不符（应为N−2）。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "影响结果的可核查性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Include an explicit statement of adjusted n's for each calculation."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "r(173) = .200, p = .008"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "r(284) = .160, p = .007"
+    }
+   ],
+   "match_criteria": "指出各分析的样本量不一致而未说明，或指出缺失数据处理未报告。",
+   "acceptable_alternatives": [
+    "只指出自由度写法有误，也算部分命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "MAAS与TMS好奇心分量表的相关（r=.234）是把ASMR组和对照组合并计算的；两组在两个变量上均值不同，合并相关会混入组间差异，应分组报告。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "合并相关可能高估变量间关系。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "The correlation between Tcur and MAAS is reported for the whole sample"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "MAAS and the TMS Curiosity subscale were modestly positively correlated, r(563) = .234, p <"
+    }
+   ],
+   "match_criteria": "指出相关是合并两组计算的，应分组报告。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "p=.059和p=.055被表述为\"边缘显著\"并用于支持解释；按预设α=.05这些是不显著结果。同时表2包含大量相关，没有做多重比较校正，几个p≈.04的结果也可能是偶然的。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响次要发现的可信度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The results of correlational analysis reported on p.13 line 305 are in fact non-significant rather than marginally significant"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "although this result was only marginally significant."
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "r(173)= .153, p =.044"
+    }
+   ],
+   "match_criteria": "指出\"边缘显著\"表述不当，或指出多重相关未校正。",
+   "acceptable_alternatives": [
+    "只提出多重比较问题而未提\"边缘显著\"，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "对好奇心分量表性别差异的解释（男性用\"注意机制\"、女性用\"更认知的过程\"引发刺痛）是没有数据支持的推测，概念含糊。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "无依据的机制解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Could the authors elaborate on what is meant by ‘attentional mechanisms’ and ‘more cognitive processes’"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "attentional mechanisms to initiate ASMR tingles and females using a more cognitive process to"
+    }
+   ],
+   "match_criteria": "指出该机制解释缺乏依据或含义不清。",
+   "acceptable_alternatives": [
+    "建议删除该推测，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "测量了自编的\"具身情绪量表\"，在方法中列出，却在结果中完全没有报告，属于选择性报告。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "透明度问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Is the Embodied Emotion scale absent?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "a self-created Embodied Emotion Scale"
+    }
+   ],
+   "match_criteria": "指出该量表测而未报。",
+   "acceptable_alternatives": [
+    "认为可另文发表、但应在文中说明去向，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "引言称ASMR刺激\"consistently\"引发刺痛，这一一致性尚无研究证实。",
+   "issue_type": "V8",
+   "importance": "low",
+   "importance_reason": "表述过度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "I don’t think that consistency of ASMR tingles to specific triggers has been examined and established so far."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "which specific audiovisual stimuli consistently elicit tingling sensations on the scalp and"
+    }
+   ],
+   "match_criteria": "指出\"consistently\"缺乏依据。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P10",
+   "judgment": "报告与格式：缺少均值和标准差或对应表格的指引；伦理委员会名称写法有误（HREB）；表1中\"ASMR (M)\"含义不明；建议把五个因子的冗长列举改为表格；可补充Janik McErlean等人的相关文献。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "非实质问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "Means and SDs should either be stated in the results section or a reference to the table containing this information should be provided."
+    },
+    {
+     "report_id": "R3",
+     "exact_quote": "On Table 1, what does ASMR (M) denote?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Research Ethics Committee (HREB)."
+    }
+   ],
+   "match_criteria": "提到上述任一报告或格式问题。",
+   "acceptable_alternatives": [
+    "认为五因子列举不必改为表格，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P11",
+   "judgment": "原始数据相关的问题（缺少某些清单题目、第一位参与者无任何反应、平均值列与原始列不符、STIM值为空）依据的是审稿人看到的数据文件，本题不提供数据，无法在稿件中核实。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "模型不应基于不可见数据下结论。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The raw data set doesn’t include answers to all questions listed in ASMR checklist."
+    },
+    {
+     "report_id": "R3",
+     "exact_quote": "The first participant in the questionnaire in the ASMR group does not appear to show any symptoms of ASMR in response to any trigger."
+    }
+   ],
+   "manuscript_evidence": [],
+   "match_criteria": "若提及，应说明需要数据才能核实；不得声称已在数据中发现问题。",
+   "acceptable_alternatives": [],
+   "status": "unresolved"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "声称在原始数据中发现了缺失或异常（本题不提供数据）。",
+  "把p=.059当作显著结果。"
+ ],
+ "draft_notes": "三份PeerJ第一轮报告；R2、R3涉及作者已发表的同一样本论文（Fredborg et al., 2017），本题稿件只报告正念部分。"
+}

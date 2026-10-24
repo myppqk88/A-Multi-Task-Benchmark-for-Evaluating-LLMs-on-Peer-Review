@@ -1,0 +1,101 @@
+{
+ "task_id": "D17_T2_Q01",
+ "paper_id": "PeerJ:5414",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "72ef2b59848adaa463045c1561dcea5b9dac1d2106e6e0bd5b936afe14188193",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切：ASMR组只凭在Reddit上的自我认定入组，没有像对照组那样核实是否真的体验刺痛；仅看视频观看频率无法区分体验者与单纯爱看视频的人。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "界定要求：说明如何确认ASMR组成员确实体验ASMR。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Were they asked explicitly whether they experience ASMR (as were the controls)?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "there is no way of knowing whether they indeed experience ASMR"
+    }
+   ],
+   "match_criteria": "准确复述关切的核心（ASMR身份核实与组间不对称）。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应解释了不用视频核实的理由（预先诱发刺痛可能影响情绪相关题目），这一设计理由合理；并以ASMR清单中对14种刺激的刺痛强度和潜伏期评分作为间接证据，在方法中加入了说明。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "回应的主要内容。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "There are questions related to how often they watch ASMR videos etc. on the ASMR checklist"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "Inducing ASMR, which is emotionally positive in nature, may have altered participants’ results."
+    },
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "rated both on the intensity of tingling sensations experienced, as well as how many seconds after stimulus onset"
+    }
+   ],
+   "match_criteria": "识别回应给出了不做视频核实的理由，以及以清单评分作为间接核实的论证。",
+   "acceptable_alternatives": [
+    "认为这一论证足以回应关切、判充分，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "回应的间接核实仍是自我报告，且\"若不体验就不会报告刺痛\"的推论假定受访者如实作答；两组筛查方式不对称的问题没有作为局限承认。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "限制回应的充分程度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "many people enjoy watching such videos without experiencing the sensory response"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "if an individual did not experience ASMR, then he or she would not have indicated experiencing tingles"
+    }
+   ],
+   "match_criteria": "指出间接核实仍依赖自报、或未承认筛查不对称。",
+   "acceptable_alternatives": [
+    "只指出\"所有参与者都报告了触发刺激\"的说法无法在本题核实，也算部分命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "sufficient"
+  ],
+  "rationale": "回应给出了合理的设计理由和间接核实依据，并修改了方法说明；但核实仍依赖自我报告，筛查不对称未作为局限承认。"
+ },
+ "known_invalid_patterns": [
+  "把回应引用的新增文字当作已核实出现在修订稿中。",
+  "要求作者事后补做视频核实（数据已收集完毕）。"
+ ],
+ "draft_notes": ""
+}
