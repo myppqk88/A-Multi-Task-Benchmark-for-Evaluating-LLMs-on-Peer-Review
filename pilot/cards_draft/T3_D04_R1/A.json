@@ -1,0 +1,255 @@
+{
+ "task_id": "T3_D04_R1",
+ "paper_id": "ORE:5-107",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "5564411538b6ac941da3fdb07ea688c746eac4de998580e9c2757ffc7d5247aa",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "partially_resolved：修订稿增加了轴心编码步骤，说明阶段由受访者的时间叙述归纳而来；但\"项目导向/用户导向\"两种路径如何从编码中得出仍未说明。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "核心类型学的分析依据只解决了一半。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Did you stop at this stage or have further steps of integration, like axial or selective coding, been employed?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Drawing on principles of axial coding (Saldaña, 2021), we examined relationships among the codes"
+    }
+   ],
+   "match_criteria": "承认轴心编码已补充，同时指出两种路径的推导仍不清，判部分解决。",
+   "acceptable_alternatives": [
+    "认为补充后已足够、判为已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "resolved：作者补充说明饱和是针对工具开发过程的结构、动机和挑战等主题评估的，而非跨部门或技术类型；修订稿中有对应句子。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "用于检验模型是否核对修订稿。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Can you explain how saturation was assessed across such a diverse sample?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "saturation was assessed in relation to these themes rather than across sectoral or technological dimensions"
+    }
+   ],
+   "match_criteria": "判为已解决或基本解决，并能指出修订稿中的对应说明。",
+   "acceptable_alternatives": [
+    "认为说明了标准但未提供证据（如饱和曲线），判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "resolved：方法部分新增了推广限制的说明，指出样本以农食项目为主、结论未必适用于其他主题领域。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "对应R2的推广性关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "You briefly mention generalisability in the limitations, but I suggest introducing this question earlier"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "fully generalisable to all thematic areas of Horizon Europe R&I landscape and may need to be further validated"
+    }
+   ],
+   "match_criteria": "指出方法部分已加入推广限制，判为已解决。",
+   "acceptable_alternatives": [
+    "指出摘要中\"反映更广泛项目管理\"的表述是否仍保留需要核对，也属合理关注。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "resolved：讨论新增说明两种路径并不互斥，同一项目在不同阶段可由不同路径主导。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "对应R2的二分法关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Could you expand your framework to reflect a spectrum or continuum rather than a binary?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "these two approaches are not exclusive, but rather serve to explain the predominant rationales at the different stages of a project process"
+    }
+   ],
+   "match_criteria": "判为已解决，并能指出新增的非互斥说明。",
+   "acceptable_alternatives": [
+    "认为只加了一段说明、表3仍是二分，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "resolved：访谈提纲与完整编码树作为附件补充（本题附件A03访谈提纲、A04编码树），方法部分也指向这些附件。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "透明度关切的解决需核对附件确实存在。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Some information on the rough topics of the interview questions would help to make data collection more transparent"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The interview guide used by the authors has been included in Appendix 2."
+    },
+    {
+     "input_field": "materials/supplements/A03/text",
+     "exact_quote": "Interview guide"
+    }
+   ],
+   "match_criteria": "指出访谈提纲和编码树已作为附件提供，判为已解决。",
+   "acceptable_alternatives": [
+    "指出编码树附件为图像、文字层不可读，需看页面图像核对，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "resolved / reviewer_request_not_warranted：作者澄清\"codes\"指质性编码、未使用机器学习；不公开程序代码是合理的，因为不存在程序代码。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "检验模型是否识别审稿人误读。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The authors refer to the fact that they used lines of code."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "not lines of programming code"
+    }
+   ],
+   "match_criteria": "不把\"未公开代码\"判为未解决；指出审稿人误读并认可作者的澄清。",
+   "acceptable_alternatives": [],
+   "status": "disputed"
+  },
+  {
+   "id": "P7",
+   "judgment": "resolved：引言新增明确的研究问题，理论部分补充了Freeman等利益相关者文献，表1增加了各项目的目标利益相关者。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "对应R1的结构与概念关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "In the introduction, the research question should be expressed"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "How are engagement tools developed in R&I projects and what are the underlying logics of these processes?"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "(cf. Freeman, 2010)"
+    }
+   ],
+   "match_criteria": "指出研究问题和利益相关者文献已补充。",
+   "acceptable_alternatives": [
+    "认为作者有理由不按R1要求加入企业利益相关者管理理论，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "partially_resolved：项目后延续部分补充了具体案例（CLEVERFOOD、AgroBridges、FOX、ECO-READY），但这些多为\"正在探索\"或\"申请新项目\"，仍无法说明哪些策略实际奏效；商业化案例以保密为由未报告。",
+   "issue_type": "V8",
+   "importance": "low",
+   "importance_reason": "检验模型区分\"补充例子\"与\"证明有效\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Which ones have actually worked?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "the CLEVERFOOD project originated from the earlier FIT4FOOD project"
+    },
+    {
+     "input_field": "materials/responses/R2",
+     "exact_quote": "these efforts were at a preliminary or confidential stage at the time of the interviews"
+    }
+   ],
+   "match_criteria": "指出新增案例多为意向或探索，不能证明策略有效，判部分解决。",
+   "acceptable_alternatives": [
+    "认为作者如实说明了资料限制、判为已解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "unresolved（审稿人未提）：受访者全部是项目工作人员，用户导向路径的结论只依据项目方自述；修订稿的局限部分仍未讨论这一点。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "影响结论的可信度，修订周期未处理。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Firstly, due to the scope of the study, the focus was solely on the tool development process"
+    }
+   ],
+   "match_criteria": "指出缺少被参与者视角或自评偏差仍未讨论。",
+   "acceptable_alternatives": [
+    "认为研究问题限于项目内开发过程、项目方视角合适，但应写入局限，也算命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "acceptable_under_rubric",
+  "acceptable_set": [
+   "acceptable_under_rubric",
+   "needs_substantive_revision"
+  ],
+  "rationale": "多数关切得到了可核查的修订，附件已补；残留问题（两种路径的推导、项目方单一视角）可判为仍需实质修改，两种判断都有依据。"
+ },
+ "known_invalid_patterns": [
+  "因作者未公开\"代码\"判为未解决。",
+  "只依据回应信声明而不核对修订稿就判已解决。",
+  "因审稿人全部\"Approved\"而判可接受（平台状态不是证据）。"
+ ],
+ "draft_notes": "三份报告与三份回应均针对v1；附件A03/A04由intake batch-01补入。"
+}

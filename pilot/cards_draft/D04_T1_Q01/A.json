@@ -1,0 +1,316 @@
+{
+ "task_id": "D04_T1_Q01",
+ "paper_id": "ORE:5-107",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "b8591c558b3cb54f2a4fa3479cdf724c99e375b4d5cfa2586dc1336b3201b5ea",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "从46个开放编码到\"四阶段模型\"和\"项目导向/用户导向两种路径\"的推导过程没有交代：文中只描述了开放编码和编码合并，没有说明类别如何形成、两种路径依据什么划分。",
+   "issue_type": "V5",
+   "importance": "high",
+   "importance_reason": "两项核心理论贡献的分析依据不透明。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Did you stop at this stage or have further steps of integration, like axial or selective coding, been employed?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The first step of our analysis was open coding (Saldaña, 2021)."
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "This resulted in 46 codes assigned to 257 pieces of text."
+    }
+   ],
+   "match_criteria": "指出缺少从编码到阶段/两种路径的整合步骤（如轴心编码、类别构建）说明，或指出核心类型学的分析依据不清。",
+   "acceptable_alternatives": [
+    "从\"类型学是理论预设还是数据归纳不清楚\"的角度提出，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "饱和判断的依据不清：样本跨农食、生物经济和跨领域项目，且中途按理论抽样扩展到新领域，文中只说两位编码者分别在第10、11次访谈达到\"无新编码\"，未说明饱和针对哪些主题、是否跨部门成立。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "影响对样本充分性的判断。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Can you explain how saturation was assessed across such a diverse sample?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Data saturation was reached at 10 interviews for the first author and 11 interviews for the second author"
+    }
+   ],
+   "match_criteria": "质疑饱和在异质样本中如何评估，或指出饱和标准未说明。",
+   "acceptable_alternatives": [
+    "认为扩展抽样本身就是检验饱和的合理做法、只需补充说明，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "推广范围：14个项目中9个为农食、4个为生物经济，摘要却称两种路径\"可能反映欧洲研究与创新项目更广泛的管理工作\"；局限部分虽承认主题聚焦，但摘要和讨论的表述超出了样本范围。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "影响结论的适用范围。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Could some of your conclusions be sector-specific?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "indicative of broader project management work in European R&I"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "nine projects focus on food and agricultural systems, four on the bioeconomy"
+    }
+   ],
+   "match_criteria": "指出结论向整个Horizon Europe推广缺乏依据，或指出部门特殊性问题。",
+   "acceptable_alternatives": [
+    "认为局限部分已充分说明、只需把讨论前移，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "两种路径被写成二分类型，但材料显示同一项目在不同阶段兼有两种做法；二分法可能过于刚性，宜表述为连续谱或主导逻辑。",
+   "issue_type": "V6",
+   "importance": "medium",
+   "importance_reason": "影响核心类型学的有效性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "I find the boundary between these categories occasionally too rigid."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Table 3. The two approaches to developing engagement tools."
+    }
+   ],
+   "match_criteria": "指出项目导向/用户导向的划分过于二元或忽视混合情形。",
+   "acceptable_alternatives": [
+    "认为理想类型本来就允许混合、只需说明其理想类型性质，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "访谈信息不透明：没有报告访谈提纲或主要话题、访谈时长等基本特征，读者无法评估资料收集。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "影响质性研究的可核查性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Some information on the rough topics of the interview questions would help to make data collection more transparent"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "However, the essential characteristics of these interviews are not reported."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "we conducted semi-structured interviews with"
+    }
+   ],
+   "match_criteria": "指出缺少访谈提纲/话题或访谈基本特征。",
+   "acceptable_alternatives": [
+    "要求提供编码树或编码示例以提高透明度，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "\"利益相关者\"概念未界定：文中把公民、生产者、研究者等统称为利益相关者，但没有说明采用哪一理论传统，表1也未列出各项目的目标利益相关者。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "概念清晰度问题，不改变主要发现。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "In table 1, it is necessary to add a column indicating the stakeholders most involved in the proposed research project."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "However, in the proposed literature there is no reference to Robert Edward Freeman who invented the very idea of stakeholder theory."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Table 1. Overview of included projects and tools."
+    }
+   ],
+   "match_criteria": "指出利益相关者概念或其理论来源未界定，或建议表1标明目标群体。",
+   "acceptable_alternatives": [
+    "认为本文沿用RRI文献的宽泛用法、不需要引入企业管理中的利益相关者理论，也是合理判断。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "R1把\"codes\"理解为程序代码，并询问是否用了机器学习、建议公开\"代码行\"；文中\"codes\"指质性编码，Atlas.ti只用于辅助人工编码，这些要求的前提不成立。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "检验模型是否机械服从审稿人的误读。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The authors refer to the fact that they used lines of code."
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "Whether or not they used machine learning and in what way."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "assigned codes describing insights identified in the data"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Qualitative data analysis software Atlas.ti was used for analysing the interview transcripts."
+    }
+   ],
+   "match_criteria": "不要求公开程序代码或说明机器学习；若提及，应指出\"codes\"是质性编码。",
+   "acceptable_alternatives": [
+    "建议作者在方法中更明确地说明编码是人工的、以免误解，也合理。"
+   ],
+   "status": "disputed"
+  },
+  {
+   "id": "P8",
+   "judgment": "\"参与工具\"的定义较空泛（\"可操作的指南与实践流程\"），结果部分缺少具体工具类型的例子；部分\"目的\"阶段的活动可能属于申请阶段而非项目本身。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "影响读者理解，不改变主要发现。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "The definition of engagement tools in the introduction is quite vague"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "actionable guidelines and practical processes"
+    }
+   ],
+   "match_criteria": "指出工具定义空泛、缺少具体例子，或指出申请阶段与项目阶段的界限不清。",
+   "acceptable_alternatives": [
+    "认为定义宽泛是为了覆盖多样工具、只需补充例子，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "项目后延续部分只列出了策略，没有说明哪些策略实际奏效；对商业化与开放科学/包容性之间的张力缺乏讨论。",
+   "issue_type": "V8",
+   "importance": "low",
+   "importance_reason": "影响实践建议的依据强度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Which ones have actually worked?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "some projects pursued potential commercialisation opportunities by transforming tools into marketable products or services"
+    }
+   ],
+   "match_criteria": "指出缺少延续策略实际效果的证据，或指出商业化与开放获取的张力未讨论。",
+   "acceptable_alternatives": [
+    "认为访谈时多数项目尚未结束、无法评估效果，这一限制应写明即可，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P10",
+   "judgment": "R2建议摘要写明项目数和访谈数，但v1摘要已写明\"22名参与者、14个项目\"，这一要求前提不成立。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "检验模型是否核对原文。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The Abstract could specify the number of projects and interviews for clarity."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "22 participants representing 14 Horizon"
+    }
+   ],
+   "match_criteria": "不把\"摘要缺少样本数\"列为问题。",
+   "acceptable_alternatives": [
+    "指出摘要已有样本数、该意见不成立。"
+   ],
+   "status": "disputed"
+  },
+  {
+   "id": "P11",
+   "judgment": "所有受访者都是项目工作人员，关于\"用户导向\"参与质量的结论只依据项目方的自我陈述，没有被参与的利益相关者视角；局限部分未讨论这一自评偏差。",
+   "issue_type": "V5",
+   "importance": "medium",
+   "importance_reason": "影响对\"用户导向路径\"有效性的判断。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Between one and three project staff members were interviewed"
+    }
+   ],
+   "match_criteria": "指出样本只有项目方、缺少用户/利益相关者视角，或指出自我报告偏差。",
+   "acceptable_alternatives": [
+    "认为研究问题本身关注项目内的工具开发过程、项目方视角是合适的，但应作为局限说明，也算命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "要求公开程序代码或说明机器学习方法。",
+  "指出摘要缺少样本量（摘要已写明）。",
+  "要求做统计检验或量化编码频次作为质性研究的必要条件。"
+ ],
+ "draft_notes": "三份报告均为v1报告。R3报告开头含作者姓氏（旧题包遗留），不影响判断。"
+}
