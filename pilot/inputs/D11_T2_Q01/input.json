@@ -1,0 +1,79 @@
+{
+  "task_id": "D11_T2_Q01",
+  "condition": "T2_response_only",
+  "instruction": "评价作者回应在文字层面是否充分处理原关切。先拆解要求，再核每项回应是否直接、完整、具体且有适当理由。采用sufficient / partially_sufficient / insufficient / insufficient_evidence。合理拒绝或解释资料无法补收可以充分；接受建议、礼貌用语或字数本身不加分。不要机械认同评审的错误前提。只提供回应，不提供修订稿；不可声称实际修改已验证。revision_verification必须为not_assessed。不得联网寻找原论文或参考答案。引证只能使用本题输入中的精确文字。",
+  "input": {
+    "comment_text": "Data sources:\nThe primary data sources must be clarified. The authors claim to use memos, field notes and observations in various meetings. However, this type of data is not sufficiently referenced or used to support the findings.\n-\nQualitative data analysis\n: Data analysis is explained regarding the coding exercise, but more evidence should be provided to support the key findings. For example, direct quotes from the interviews/ meetings or short illustrative examples from direct observations can be used to provide further evidence for the findings. Also, inter-coder reliability practices should be explained. Who conducted the data analysis? Only one researcher? Or multiple researchers?",
+    "response_text": "The revised manuscript now clarifies and strengthens the primary data foundations of the study by explaining more explicitly how researcher memos and archival documentation were generated and used.\nSection 3 distinguishes primary from secondary sources and indicates that memos and field notes from governance meetings, working groups and training events constitute core evidence supporting the findings.\nSection 4 and Table 2 now include concrete empirical excerpts that illustrate partners’ discussions, evaluation feedback and interpretive tensions, thereby making the connection between raw data and analytical categories more explicit.\nThe methodological section has been expanded to explain the qualitative analysis more clearly. It now specifies how open, axial and selective coding were conducted by the first author and how the co-authors reviewed coding structures and category definitions to strengthen analytical robustness.\nThis addresses the reviewer’s question regarding inter-coder reliability and the role of multiple researchers. The generic framework has been refined to present more convincingly the links between contextual triggers, the PMS lifecycle and the building blocks.\nFigure 3 itself has been refined to depict these three layers and their interrelations more clearly, with arrows indicating how external triggers feed into lifecycle phases and how these phases reshape the building blocks over successive cycles.\nThe Discussion section articulates more explicitly how this framework answers the research question. Finally, the implications for policy and management have been substantially expanded. The revised manuscript discusses how policymakers can use PMS design to steer network behaviour, how governance arenas support learning and coordination, and how managers can foster appropriation and balanced efficiency across consortia.\nOverall, the revised paper offers clearer methodological transparency, stronger empirical grounding and a more fully developed contribution that directly addresses Reviewer 1’s concerns.",
+    "necessary_context": "公共部门网络绩效系统的纵向质性案例研究；回应为作者整体方法及框架修订说明。"
+  },
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "adequacy_label": {
+        "type": "string",
+        "enum": [
+          "sufficient",
+          "partially_sufficient",
+          "insufficient",
+          "insufficient_evidence"
+        ]
+      },
+      "addressed_requirements": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "remaining_gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_refs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "input_field": {
+              "type": "string"
+            },
+            "exact_quote": {
+              "type": "string"
+            },
+            "location_hint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "revision_verification": {
+        "const": "not_assessed"
+      }
+    },
+    "required": [
+      "adequacy_label",
+      "addressed_requirements",
+      "remaining_gaps",
+      "evidence_refs",
+      "rationale",
+      "revision_verification"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "T2_response"
+  }
+}
