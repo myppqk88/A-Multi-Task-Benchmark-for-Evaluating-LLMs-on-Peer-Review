@@ -1,0 +1,136 @@
+{
+ "task_id": "T3_D20_R1",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "haiku",
+  "C": "sonnet"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Correctly flags the n=4 no-control overclaiming as unresolved. Also notes the Limitations paragraph already existed in the before-version."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially resolved: an item-format sentence and the A05 instrument were added, but there is no validation and R1 got no point-by-point reply."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N03",
+     "reason": "Cites the specific conflict between item-level scores and the post-test Total column in A05."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: 11 of 13 items share an identical rating pattern, and Aiken's V assesses kit relevance, not learning effect or test validity."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: the April observation was an animals lesson, the quote under evaluation processes is about curriculum adaptation, and Stage 3 confidence/participation claims have no data."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "The 'significantly improved' and 'substantial' wording persists for an n=4 single-group design; judged unresolved."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N02",
+     "reason": "Causal-link claim from a single-group pre/post design. Minor misquote: S4's pre-test is 5, not 4."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N03",
+     "reason": "Correctly identifies Q4 and Q5 post-test totals of 0 while all four students scored 1."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "invalid",
+     "point_id": null,
+     "reason": "Misreads the method: 4 categories equals the 4-point scale. The A02 table gives .78 (p=.05) for n=6, c=4, which matches the stated critical value."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially resolved: item formats added, but no adaptation details or validation, and R1 got only a thank-you."
+    },
+    {
+     "claim_index": 5,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "Partially resolved fits the accepted alternative: NVivo and quotes were added, but coding decisions are not reported."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R05",
+     "reason": "Overclaiming judged unresolved. Wrongly says the Limitations paragraph was added; it already existed."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R01",
+     "reason": "Partially resolved: a format sentence was added; no validation, scoring procedure, or adaptation described for R1."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "neutral",
+     "point_id": "N03",
+     "reason": "Gives the specific post-test Total conflicts for items 2/4/5/7. Item-level details check out."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Main point holds: uniform rating patterns and relevance-only judgment. Minor misreading: '4 categories vs 6 aspects' conflates the scale with aspects."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Supported: Stage 3 confidence/participation claims lack data, the observed lesson was about animals, and themes are not traceable to coding."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Correctly flags the n=4 no-control overclaiming as unresolved. Also notes the Limitations paragraph already existed in the before-version.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Partially resolved: an item-format sentence and the A05 instrument were added, but there is no validation and R1 got no point-by-point reply.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N03\",\"reason\":\"Cites the specific conflict between item-level scores and the post-test Total column in A05.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: 11 of 13 items share an identical rating pattern, and Aiken's V assesses kit relevance, not learning effect or test validity.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: the April observation was an animals lesson, the quote under evaluation processes is about curriculum adaptation, and Stage 3 confidence/participation claims have no data.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"The 'significantly improved' and 'substantial' wording persists for an n=4 single-group design; judged unresolved.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N02\",\"reason\":\"Causal-link claim from a single-group pre/post design. Minor misquote: S4's pre-test is 5, not 4.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N03\",\"reason\":\"Correctly identifies Q4 and Q5 post-test totals of 0 while all four students scored 1.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"invalid\",\"point_id\":null,\"reason\":\"Misreads the method: 4 categories equals the 4-point scale. The A02 table gives .78 (p=.05) for n=6, c=4, which matches the stated critical value.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Partially resolved: item formats added, but no adaptation details or validation, and R1 got only a thank-you.\"},{\"claim_index\":5,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"Partially resolved fits the accepted alternative: NVivo and quotes were added, but coding decisions are not reported.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R05\",\"reason\":\"Overclaiming judged unresolved. Wrongly says the Limitations paragraph was added; it already existed.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R01\",\"reason\":\"Partially resolved: a format sentence was added; no validation, scoring procedure, or adaptation described for R1.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"neutral\",\"point_id\":\"N03\",\"reason\":\"Gives the specific post-test Total conflicts for items 2/4/5/7. Item-level details check out.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Main point holds: uniform rating patterns and relevance-only judgment. Minor misreading: '4 categories vs 6 aspects' conflates the scale with aspects.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Supported: Stage 3 confidence/participation claims lack data, the observed lesson was about animals, and themes are not traceable to coding.\"}]}}"
+}

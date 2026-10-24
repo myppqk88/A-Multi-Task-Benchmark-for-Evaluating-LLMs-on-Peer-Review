@@ -1,0 +1,129 @@
+{
+ "task_id": "D04_T1_Q01",
+ "judge": "opus",
+ "judge_served": [
+  "claude-opus-5-5"
+ ],
+ "label_key": {
+  "A": "opus",
+  "B": "sonnet",
+  "C": "haiku"
+ },
+ "judgement": {
+  "answers": {
+   "A": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "Notes there is no project-level mapping or traceable basis for classifying projects into the two approaches, and that projects mix both approaches."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Questions per-coder saturation at 10–11 interviews while theoretical sampling continued into non-food projects; also flags the missing guide."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R11",
+     "reason": "Identifies the missing interview guide or questions and how it may have shaped the chronological four-phase structure."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "'Proven effective', 'growing interest' and robustness claims exceed staff self-report data; Limitations concede usability and impact were not examined."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R12",
+     "reason": "Challenges generalisation from a narrow agri-food/bioeconomy sample and the unsupported 'did not diverge' claim to broader EU R&I."
+    }
+   ],
+   "B": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "No project classification or per-project evidence for the typology or its prevalence claims."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R10",
+     "reason": "Argues the dichotomy is undermined by admitted mixing and may be an ideal type that should be framed as such."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R04",
+     "reason": "Questions saturation at 10–11 of 22 interviews alongside the claimed theoretical sampling."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "The robustness and structural-causation claims are not supported, since usability and impact were not examined, as Limitations concede."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R12",
+     "reason": "Sample scope and the unsupported non-divergence claim limit generalisation to wider European R&I."
+    }
+   ],
+   "C": [
+    {
+     "claim_index": 0,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R14",
+     "reason": "Prevalence claims cannot be traced because no project is assigned to either approach."
+    },
+    {
+     "claim_index": 1,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Tool robustness was never measured, and the Figure 1 transition model is not empirically grounded."
+    },
+    {
+     "claim_index": 2,
+     "claim_field": "issues",
+     "decision": "valid_new",
+     "point_id": null,
+     "reason": "Causal wording about structural and project influence exceeds cross-sectional staff accounts; alternative explanations are not considered."
+    },
+    {
+     "claim_index": 3,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R06",
+     "reason": "Distinguishes staff-only accounts from the actual experiences of citizens and marginalised groups."
+    },
+    {
+     "claim_index": 4,
+     "claim_field": "issues",
+     "decision": "match",
+     "point_id": "R02",
+     "reason": "No codebook or code list is provided, so the coding is not auditable; respects the limits on external resources."
+    }
+   ]
+  }
+ },
+ "parse_error": null,
+ "raw_text": "{\"answers\":{\"A\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R14\",\"reason\":\"Notes there is no project-level mapping or traceable basis for classifying projects into the two approaches, and that projects mix both approaches.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Questions per-coder saturation at 10–11 interviews while theoretical sampling continued into non-food projects; also flags the missing guide.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R11\",\"reason\":\"Identifies the missing interview guide or questions and how it may have shaped the chronological four-phase structure.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"'Proven effective', 'growing interest' and robustness claims exceed staff self-report data; Limitations concede usability and impact were not examined.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R12\",\"reason\":\"Challenges generalisation from a narrow agri-food/bioeconomy sample and the unsupported 'did not diverge' claim to broader EU R&I.\"}],\"B\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R14\",\"reason\":\"No project classification or per-project evidence for the typology or its prevalence claims.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R10\",\"reason\":\"Argues the dichotomy is undermined by admitted mixing and may be an ideal type that should be framed as such.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R04\",\"reason\":\"Questions saturation at 10–11 of 22 interviews alongside the claimed theoretical sampling.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"The robustness and structural-causation claims are not supported, since usability and impact were not examined, as Limitations concede.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R12\",\"reason\":\"Sample scope and the unsupported non-divergence claim limit generalisation to wider European R&I.\"}],\"C\":[{\"claim_index\":0,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R14\",\"reason\":\"Prevalence claims cannot be traced because no project is assigned to either approach.\"},{\"claim_index\":1,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Tool robustness was never measured, and the Figure 1 transition model is not empirically grounded.\"},{\"claim_index\":2,\"claim_field\":\"issues\",\"decision\":\"valid_new\",\"point_id\":null,\"reason\":\"Causal wording about structural and project influence exceeds cross-sectional staff accounts; alternative explanations are not considered.\"},{\"claim_index\":3,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R06\",\"reason\":\"Distinguishes staff-only accounts from the actual experiences of citizens and marginalised groups.\"},{\"claim_index\":4,\"claim_field\":\"issues\",\"decision\":\"match\",\"point_id\":\"R02\",\"reason\":\"No codebook or code list is provided, so the coding is not auditable; respects the limits on external resources.\"}]}}"
+}
