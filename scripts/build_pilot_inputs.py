@@ -30,6 +30,8 @@ OUT = ROOT / 'pilot/inputs'
 SCHEMAS = json.loads((ROOT / 'evaluation/schemas/output_v0.2.json').read_text())
 CATALOG = json.loads((ROOT / 'evaluation/source_catalog.json').read_text())
 DPI = 160
+PEERJ_CROP_TOP = 36
+PEERJ_CROP_BOTTOM = 40
 
 ISSUE_TYPES = ('V1 construct and measurement validity; V2 internal validity and causal inference; '
                'V3 statistical conclusion validity (analysis choice, numerical consistency, power); '
@@ -89,17 +91,20 @@ def copy_asset(src, dest_dir, name):
 def peerj_pdf(pdf, dest_dir, prefix):
     """Sanitised text and page images of a PeerJ submission PDF, following the v0.1 convention."""
     doc = pymupdf.open(pdf)
-    start = next(i for i, page in enumerate(doc) if re.search(r'^\s*Abstract\b', page.get_text(), re.M | re.I))
-    text = ''.join(doc[i].get_text() for i in range(start, len(doc)))
+    # Crop the PeerJ running header (logo, 'Manuscript to be reviewed') and footer ('PeerJ reviewing PDF | id').
+    clip = lambda page: pymupdf.Rect(0, PEERJ_CROP_TOP, page.rect.width, page.rect.height - PEERJ_CROP_BOTTOM)
+    start = next(i for i, page in enumerate(doc)
+                 if re.search(r'^\s*Abstract\b', page.get_text(clip=clip(page)), re.M | re.I))
+    text = ''.join(doc[i].get_text(clip=clip(doc[i])) for i in range(start, len(doc)))
     pages = []
     for i in range(start + 1, len(doc)):
         name = f'{prefix}_p{i + 1:03d}.png'
         target = dest_dir / name
         target.parent.mkdir(parents=True, exist_ok=True)
-        doc[i].get_pixmap(dpi=DPI).save(target)
+        doc[i].get_pixmap(dpi=DPI, clip=clip(doc[i])).save(target)
         pages.append({'path': name, 'page_label': f'p{i + 1:03d}'})
     return text, pages, {'source_pdf': str(Path(pdf).relative_to(ROOT)), 'source_sha256': sha(pdf),
-                         'text_from_pdf_page': start + 1, 'imaged_pages': [p['page_label'] for p in pages], 'dpi': DPI}
+                         'text_from_pdf_page': start + 1, 'crop_points': [PEERJ_CROP_TOP, PEERJ_CROP_BOTTOM], 'imaged_pages': [p['page_label'] for p in pages], 'dpi': DPI}
 
 
 def docx_text(path):
