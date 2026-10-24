@@ -1,0 +1,223 @@
+{
+ "task_id": "D16_T1_Q01",
+ "paper_id": "F1000:151777",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "eade25cd30c6b220f05201c6989d6c9d33113df2ed383cbb1b759e4a5dd31ea4",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "\"策略思维\"如何测量没有交代：假设检验使用的是\"学业成绩\"（前后测与组间比较），但文中没有说明成绩来源、量表如何把策略思维转换为分数，却据此推论游戏提升了策略思维。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "核心结论的测量基础缺失。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "It is unclear how statistical thinking is measured"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "This is not a valid inference. The above scores refer to academic performance, not strategic thinking specifically."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "which proposed that students’ participation in strategic gameplay using Chinese checkers would lead to a statistically significant enhancement in their academic scores"
+    }
+   ],
+   "match_criteria": "指出策略思维未被测量或成绩不能代表策略思维。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "方法部分声称使用了问卷、访谈、游戏指标、焦点小组等多种工具，但工具内容、实施与分析都没有说明，结果中也看不到这些数据；\"十项发现\"等质性结论缺乏任何可追溯的资料来源。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "研究过程的可核查性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The study also claims to use various methods such as interviews and questionnaires, which are not adequately described or evidenced, and the results of which appear to be missing."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Ten key findings were derived from this analysis"
+    }
+   ],
+   "match_criteria": "指出声称的方法缺乏描述或结果缺失。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "文化（儒家价值观）影响策略思维的论断没有数据支持；研究并非跨文化比较。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "结论超出数据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The claim that Confucian values influence strategic thinking among Chinese students is interesting but requires more robust data."
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "It doesn’t say anything about Confucian principles or Chinese culture because it isn’t a cross-cultural study."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Chinese students may inherently possess a predilection for strategic thinking"
+    }
+   ],
+   "match_criteria": "指出文化论断缺乏证据。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "R1把F=3.78当作\"效应量\"并据此判断实际效果有限；F值不是效应量，效应量需要另行计算（如η²、Cohen's d）。文中自己也把F称为效应量，属于同样的误解。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "检验模型是否沿用审稿人与作者共同的统计误解。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the small effect sizes reported (e.g., F = 3.78) suggest that the practical impact of the intervention is modest"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "While the effect size, as represented by the F-Value (F = 3.78), may not be deemed substantial"
+    }
+   ],
+   "match_criteria": "指出F值不是效应量，或要求报告真正的效应量。",
+   "acceptable_alternatives": [
+    "只要求讨论实际意义而未指出F不是效应量，属部分命中。"
+   ],
+   "status": "disputed"
+  },
+  {
+   "id": "P5",
+   "judgment": "缺少与其他教学方法（角色扮演、外交模拟）的比较，\"热情\"\"参与度\"等主观指标的操作化不清；数据仅\"应要求提供\"。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "次要问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "more specific details on the measures of “enthusiasm” and “engagement” could enhance reproducibility"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "The article does not provide the source data underlying the results"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "These surveys featured pre-and post-course enthusiasm ratings"
+    }
+   ],
+   "match_criteria": "提到上述任一问题。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "写作与结构：语言华丽空泛、像机器生成并经同义词替换；方法中夹杂结果，内容重复；\"谈判技能\"在标题中出现，正文几乎没有讨论。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "非实质问题，但严重影响可读性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "The language is overly florid and often inaccurate"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "you might remove ‘negotiation’ from your title as it receives very little discussion"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Ten key findings were derived from this analysis"
+    }
+   ],
+   "match_criteria": "提到语言、结构或标题与内容不符。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "表格数值内部不一致：表2中两组均值差0.51、标准差0.18和0.13、样本量93和86，按独立样本t检验应得t约为21.9，而非报告的2.05；表3中组内均方0.128、组间均方1.06，F应约为8.3，而非3.78。所报统计量无法由表中数据得出。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "主要结果的统计报告不可信。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Experimental Group 93 4.38 0.18 2.05 0.042 Control Group 86 3.87 0.13"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Between Groups 2.12 2 1.06 3.78 0.026 Within Groups 33.34 261 0.128"
+    }
+   ],
+   "match_criteria": "指出t值或F值与表中均值、标准差、均方不一致。",
+   "acceptable_alternatives": [
+    "只指出其中一张表不一致，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "设计自相矛盾：对照组被描述为\"未接触跳棋\"，配对检验部分却称对照组\"在各自接触跳棋之后\"成绩提高；方差分析的总自由度263意味着264人、三组，而两组样本合计只有179人；分组方式（是否随机）也未说明。",
+   "issue_type": "V2",
+   "importance": "high",
+   "importance_reason": "研究设计的基本事实不清。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "the control group (p = 0.023) following their respective encounters with Chinese checkers"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "consisting of those who had not encountered the game in their learning experience"
+    }
+   ],
+   "match_criteria": "指出对照组描述矛盾、自由度与样本量不符，或分组方式未说明。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "把F=3.78当作效应量来讨论实际意义。",
+  "声称已在表中找到问卷或访谈结果（文中没有）。"
+ ],
+ "draft_notes": "起草者A在起草规则制定之前（本次会话早期）读过旧版复核记录，其中提到本篇表格的算术不一致；本卡的算术核对由起草者A依据v1表格数值独立重算，但独立性不完全，裁决时应注意。"
+}

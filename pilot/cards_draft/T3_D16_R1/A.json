@@ -1,0 +1,143 @@
+{
+ "task_id": "T3_D16_R1",
+ "paper_id": "F1000:151777",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "579ff12cd82db84d3a84ecb407f89e0f62f2fce915ee42e7911e02c4a8718be4",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "unresolved：表2、表3的统计量与表中数据不一致的问题原样保留（t=2.05、F=3.78），修订稿仍据此宣称干预有效。",
+   "issue_type": "V3",
+   "importance": "high",
+   "importance_reason": "主要结果的可信度未改善。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Experimental Group 93 4.38 0.18 2.05 0.042 Statistically Significant (p < 0.05) Control Group 86 3.87 0.13"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Between Groups 2.12 2 1.06 3.78 0.026 Within Groups 33.34 261 0.128"
+    }
+   ],
+   "match_criteria": "指出修订稿中统计量仍与表中数据不符。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "partially_resolved，但可信度存疑：修订稿新增了策略思维的综合评分（游戏表现30%、情境分析40%、外交模拟30%）和观察者一致性（kappa≥0.85）等方法细节；这些在v1中完全没有，而结果表格未变，无法判断这些测量是否真实用于产生所报分数。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "检验模型能否识别\"方法事后补写、结果未变\"的风险。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Focus on how strategic thinking is to be measured and evidence how you converted this measurement into scores for comparison."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "These competencies were measured through a composite score combining game performance metrics (30%), scenario analysis tasks (40%), and diplomatic simulation outcomes (30%)."
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "achieving a minimum Cohen’s kappa coefficient of 0.85"
+    }
+   ],
+   "match_criteria": "指出新增测量描述与未变的结果表格之间缺乏对应，或指出事后补写的风险。",
+   "acceptable_alternatives": [
+    "认为方法描述已补充、判部分解决，但指出结果未更新，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "unresolved：文化论断增加了文献和\"78%的参与者表现出文化中介的策略思维模式\"之类的数字，但没有说明这一数字如何测得；研究仍非跨文化设计。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "新增数字缺乏方法来源。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "It doesn’t say anything about Confucian principles or Chinese culture because it isn’t a cross-cultural study."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "with 78% of participants demonstrating culturally-mediated strategic thinking patterns"
+    }
+   ],
+   "match_criteria": "指出新增文化证据缺乏方法依据。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "unresolved：修订稿仍把F值当作支持干预有效的主要证据，没有报告真正的效应量；对照组描述与自由度的矛盾也未处理。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "统计与设计问题未修正。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the small effect sizes reported (e.g., F = 3.78) suggest that the practical impact of the intervention is modest"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The analysis yielded an F-Value of 3.78 (p = 0.026), indicating significant variation between experimental and control groups"
+    }
+   ],
+   "match_criteria": "指出效应量与设计矛盾仍未处理。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "partially_resolved：修订稿给出了Figshare数据链接（同时仍写\"应要求提供\"），观察记录\"热情/参与度\"改为行为频率记录。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "数据与次要测量。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The article does not provide the source data underlying the results"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "The data is available in the following link 10.6084/m9.figshare.28138928 through Figshare"
+    }
+   ],
+   "match_criteria": "指出数据链接已提供。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision"
+  ],
+  "rationale": "核心统计结果内部不一致的问题未修正，新增测量描述与结果缺乏对应，文化论断仍无依据。"
+ },
+ "known_invalid_patterns": [
+  "依据回应信的笼统声称判定方法问题已解决。",
+  "把新增的kappa和百分比当作已核实的证据。"
+ ],
+ "draft_notes": "起草者A在起草规则制定之前（本次会话早期）读过旧版复核记录，其中提到本篇表格的算术不一致；本卡的算术核对由起草者A依据v1表格数值独立重算，但独立性不完全，裁决时应注意。 修订稿数据可得性部分含通讯作者姓名（旧题包遗留），已记入已知输入问题。"
+}

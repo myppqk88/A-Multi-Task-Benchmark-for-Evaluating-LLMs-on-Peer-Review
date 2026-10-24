@@ -1,0 +1,69 @@
+{
+ "task_id": "D16_T2_Q01",
+ "paper_id": "F1000:151777",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "3bf46f27d0a37f9f4237c1bd18c456c65c2efb84a3b24dd98a66bb0a2e38c45f",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "关切：需要更具体地说明\"热情\"和\"参与度\"的测量方式，以提高可复现性。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "界定要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "more specific details on the measures of “enthusiasm” and “engagement” could enhance reproducibility"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "certain subjective measurements (e.g., student enthusiasm) require further clarification"
+    }
+   ],
+   "match_criteria": "准确复述要求。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "回应只笼统声称已加入\"详细的操作定义、具体行为指标和标准化评估规程\"，没有给出任何一个指标、量表或规程的具体内容；回应的大部分篇幅讨论与本条关切无关的内容（效应量、文化证据、方法比较）。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "决定回应的充分程度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "require further clarification to ensure reproducibility by others"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "We have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility."
+    }
+   ],
+   "match_criteria": "指出回应缺少具体内容、只是笼统声称。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "partially_sufficient",
+  "acceptable_set": [
+   "partially_sufficient",
+   "insufficient"
+  ],
+  "rationale": "回应明确对准了这条关切并声称做了修改，但没有提供任何可检验的具体内容；若认为空泛声明不构成回应，可判不充分。"
+ },
+ "known_invalid_patterns": [
+  "因回应声称\"详细\"就判充分。"
+ ],
+ "draft_notes": ""
+}
