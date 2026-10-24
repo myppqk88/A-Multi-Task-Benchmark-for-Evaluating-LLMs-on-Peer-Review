@@ -111,10 +111,10 @@ def main():
             chain = 'complete_T3_built'
         elif t3:
             chain = 'complete_T3_deferred_supplements_filled' if fill else 'T3_deferred'
-        elif fill and v1_reports and ledger['本地修改稿'].startswith('已定位至少两份'):
-            chain = 'complete_after_fill_T3_not_built'
         elif ledger['主要缺环类型'].startswith('回复缺失'):
             chain = 'partial_responses_missing'
+        elif fill and v1_reports and ledger['本地修改稿'].startswith('已定位至少两份'):
+            chain = 'complete_after_fill_T3_not_built'
         else:
             chain = 'incomplete'
         kind, kind_src = old_type(pid, ledger)

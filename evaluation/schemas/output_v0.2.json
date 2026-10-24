@@ -1,0 +1,361 @@
+{
+ "version": "0.2-draft",
+ "status": "Decided by team 2026-10-24: T1 becomes structured; T3 adds issue_type; T2 unchanged. Not yet applied to any input.json.",
+ "issue_types": {
+  "V1": "构念与测量效度",
+  "V2": "内部效度与因果推断",
+  "V3": "统计结论效度",
+  "V4": "外部效度与推广",
+  "V5": "质性研究可信度",
+  "V6": "理论与论证",
+  "V7": "报告透明与可复现",
+  "V8": "结论与证据相称",
+  "V9": "非实质性（语言/格式/体例）"
+ },
+ "L0_checks": {
+  "exact_quote": "after whitespace/quote-mark normalisation, must occur verbatim in the model-visible field named by input_field",
+  "page_images": "page must be one of the page images supplied to the model; observation is not string-checked",
+  "schema": "output must validate against the task schema; enum values must be legal"
+ },
+ "schemas": {
+  "T1": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "T1_review_v0.2",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "summary",
+    "issues",
+    "overall_assessment"
+   ],
+   "properties": {
+    "summary": {
+     "type": "string",
+     "description": "<=150 words: the manuscript's central claims and overall appraisal"
+    },
+    "issues": {
+     "type": "array",
+     "minItems": 0,
+     "maxItems": 5,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "claim",
+       "issue_type",
+       "status",
+       "severity",
+       "evidence",
+       "reasoning"
+      ],
+      "properties": {
+       "claim": {
+        "type": "string"
+       },
+       "issue_type": {
+        "enum": [
+         "V1",
+         "V2",
+         "V3",
+         "V4",
+         "V5",
+         "V6",
+         "V7",
+         "V8",
+         "V9"
+        ]
+       },
+       "status": {
+        "enum": [
+         "confirmed_error",
+         "missing_information",
+         "suggestion"
+        ]
+       },
+       "severity": {
+        "enum": [
+         "major",
+         "minor"
+        ]
+       },
+       "evidence": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "oneOf": [
+          {
+           "type": "object",
+           "additionalProperties": false,
+           "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+           ],
+           "properties": {
+            "input_field": {
+             "type": "string"
+            },
+            "exact_quote": {
+             "type": "string",
+             "minLength": 1
+            },
+            "location_hint": {
+             "type": "string"
+            }
+           }
+          },
+          {
+           "type": "object",
+           "additionalProperties": false,
+           "required": [
+            "input_field",
+            "page",
+            "observation"
+           ],
+           "properties": {
+            "input_field": {
+             "const": "page_images"
+            },
+            "page": {
+             "type": "integer",
+             "minimum": 1
+            },
+            "observation": {
+             "type": "string",
+             "minLength": 1
+            }
+           }
+          }
+         ]
+        }
+       },
+       "reasoning": {
+        "type": "string",
+        "description": "why this is a problem and which conclusion it affects"
+       }
+      }
+     }
+    },
+    "overall_assessment": {
+     "type": "string",
+     "description": "<=150 words"
+    }
+   }
+  },
+  "T2": {
+   "type": "object",
+   "properties": {
+    "adequacy_label": {
+     "type": "string",
+     "enum": [
+      "sufficient",
+      "partially_sufficient",
+      "insufficient",
+      "insufficient_evidence"
+     ]
+    },
+    "addressed_requirements": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "remaining_gaps": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "evidence_refs": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "input_field": {
+        "type": "string"
+       },
+       "exact_quote": {
+        "type": "string"
+       },
+       "location_hint": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "input_field",
+       "exact_quote",
+       "location_hint"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "rationale": {
+     "type": "string"
+    },
+    "revision_verification": {
+     "const": "not_assessed"
+    }
+   },
+   "required": [
+    "adequacy_label",
+    "addressed_requirements",
+    "remaining_gaps",
+    "evidence_refs",
+    "rationale",
+    "revision_verification"
+   ],
+   "additionalProperties": false,
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "T2_response_v0.2 (unchanged from v0.1)"
+  },
+  "T3": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "overall_label",
+    "rationale",
+    "issues",
+    "evidence_limits"
+   ],
+   "properties": {
+    "overall_label": {
+     "type": "string",
+     "enum": [
+      "acceptable_under_rubric",
+      "needs_substantive_revision",
+      "insufficient_evidence"
+     ]
+    },
+    "rationale": {
+     "type": "string"
+    },
+    "issues": {
+     "type": "array",
+     "maxItems": 5,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "issue",
+       "response_claim",
+       "observed_change",
+       "resolution",
+       "importance",
+       "evidence",
+       "issue_type"
+      ],
+      "properties": {
+       "issue": {
+        "type": "string"
+       },
+       "response_claim": {
+        "type": "string"
+       },
+       "observed_change": {
+        "type": "string"
+       },
+       "resolution": {
+        "type": "string",
+        "enum": [
+         "resolved",
+         "partially_resolved",
+         "unresolved",
+         "not_verifiable",
+         "reviewer_request_not_warranted"
+        ]
+       },
+       "importance": {
+        "type": "string",
+        "enum": [
+         "central",
+         "supporting",
+         "minor"
+        ]
+       },
+       "evidence": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "oneOf": [
+          {
+           "type": "object",
+           "additionalProperties": false,
+           "required": [
+            "input_field",
+            "exact_quote",
+            "location_hint"
+           ],
+           "properties": {
+            "input_field": {
+             "type": "string"
+            },
+            "exact_quote": {
+             "type": "string"
+            },
+            "location_hint": {
+             "type": "string"
+            }
+           }
+          },
+          {
+           "type": "object",
+           "additionalProperties": false,
+           "required": [
+            "input_field",
+            "page",
+            "observation"
+           ],
+           "properties": {
+            "input_field": {
+             "const": "page_images"
+            },
+            "page": {
+             "type": "integer",
+             "minimum": 1
+            },
+            "observation": {
+             "type": "string",
+             "minLength": 1
+            }
+           }
+          }
+         ]
+        }
+       },
+       "issue_type": {
+        "enum": [
+         "V1",
+         "V2",
+         "V3",
+         "V4",
+         "V5",
+         "V6",
+         "V7",
+         "V8",
+         "V9"
+        ]
+       }
+      }
+     }
+    },
+    "evidence_limits": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "process_consistency_auxiliary": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   },
+   "title": "T3_revision_v0.2"
+  }
+ }
+}
