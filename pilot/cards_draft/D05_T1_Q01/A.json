@@ -1,0 +1,196 @@
+{
+ "task_id": "D05_T1_Q01",
+ "paper_id": "ORE:5-13",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "b57fd4dd915612784083117b66f705eee5039773fddc3794ff7a3168003e5078",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "对\"预防性信息\"的界定与技术规范的关系表述不清：摘要和背景把预防性建议写成在暴露限值之外的额外措施，而审稿人（技术专家）认为限值本身就是预防措施；需要区分法定限值与机构鼓励的自愿性降低暴露行为。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "实验操纵的核心概念需要准确界定。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "there seems to be a misunderstanding in the authors' approach to the EMF limits."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "authorities responsible for risk communication provide precautionary advice to help citizens reduce personal exposure"
+    }
+   ],
+   "match_criteria": "指出需要区分法定暴露限值与自愿性预防建议，或指出\"预防性信息\"的定义不够清楚。",
+   "acceptable_alternatives": [
+    "认为作者的表述本身没有错（德国BfS确实在限值之外提供自愿建议），只需措辞更清楚，也是合理判断。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "两国风险感知差异（希腊高于德国）只作探索性报告，没有考虑两国实际暴露水平、5G部署或公众宣传等背景因素，国家差异的解释依据不足。",
+   "issue_type": "V4",
+   "importance": "low",
+   "importance_reason": "影响探索性国家比较的解释，不影响预注册假设。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Is the radiation exposure in one country higher than the other?"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Exploratory findings revealed higher risk perception among females compared to males and in Greece compared to Germany."
+    }
+   ],
+   "match_criteria": "指出国家差异可能受暴露水平、宣传或背景知识等未测因素影响，或建议谨慎解释国家比较。",
+   "acceptable_alternatives": [
+    "认为研究本来不以解释国家差异为目标、只需说明为探索性结果，也合理。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "未说明两国5G使用的频段，也未说明公众对暴露相关知识的了解程度。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "背景信息补充。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "What are the frequencies for 5G signals in respective countries?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Technological advancements, such as the introduction of 5G, offer"
+    }
+   ],
+   "match_criteria": "提到缺少5G频段或公众知识背景。",
+   "acceptable_alternatives": [
+    "认为频段信息与本研究的心理学问题关系不大，也合理。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "形式问题：5G缩写首次出现未定义；正文缺少单独的结论小节。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "非实质问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Concern: 5G should be defined before the use as an acronym."
+    },
+    {
+     "report_id": "R3",
+     "exact_quote": "Conclusion section (summarising the research) is missing."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "such as the introduction of 5G"
+    }
+   ],
+   "match_criteria": "提到缩写定义或缺少结论小节。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "多重比较未校正：H1–H3在两国分别对3个因变量各做一次回归，只有德国的一个风险感知指标显著，却作为\"预防性信息增加风险感知\"的证据报告；在多次检验下，这一孤立效应可能是偶然结果。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "影响唯一阳性结果的可信度。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "analyses were conducted separately for each DV"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Contrary to expectations, precautionary information increased just one risk perception measure and only in Germany."
+    }
+   ],
+   "match_criteria": "指出多个因变量和两国分开检验而未做多重比较校正，或指出唯一显著结果需谨慎解释。",
+   "acceptable_alternatives": [
+    "认为作者已把该结果表述为有限证据，只需补充校正或敏感性分析，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "没有操纵检验：只有通用注意力检查，无法确认实验组确实阅读并理解了预防性信息；在主要结果为\"无效应\"的情况下，这使\"预防性信息基本无影响\"的结论难以和\"操纵未生效\"区分。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "直接影响对零结果的解释。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "attention check items and survey completion time were our only way to control if people paid attention to the questions"
+    }
+   ],
+   "match_criteria": "指出缺少针对信息内容的操纵检验，或指出零结果可能源于操纵强度不足。",
+   "acceptable_alternatives": [
+    "从\"信息文本差异过小、操纵强度弱\"的角度提出，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "审稿人提出的\"伪科学干扰公众判断\"属于未来研究方向，与本研究的问题无关，不构成稿件缺陷。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "检验模型是否把超出范围的建议当作缺陷。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the problem of pseudo-science obfuscates strongly the debate"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Different measures for risk perception and trust"
+    }
+   ],
+   "match_criteria": "不把\"未讨论伪科学\"列为实质问题；若提及，应作为可选的未来研究方向。",
+   "acceptable_alternatives": [
+    "明确认为这超出了本研究范围。"
+   ],
+   "status": "disputed"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "把设计当作非实验的相关研究（实际为随机分组的组间实验，摘要称\"cross-sectional\"可能误导，但分组是随机的）。",
+  "要求进行暴露测量——这超出风险传播研究的范围。"
+ ],
+ "draft_notes": "三份报告都较简短，R1、R2来自技术背景审稿人，社会科学方法方面的关切很少；P5、P6为起草者自行发现。预注册偏离已在表3报告。"
+}

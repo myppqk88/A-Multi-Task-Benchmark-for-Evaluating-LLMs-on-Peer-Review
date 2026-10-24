@@ -1,0 +1,168 @@
+{
+ "task_id": "T3_D05_R1",
+ "paper_id": "ORE:5-13",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "5ac086c50aafe1a9ceba49278402d878b80ff1f7840be3671a6a8fe6af00b954",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "resolved：修订稿区分了法定限值（\"legally enforcing limit values\"）与可自愿采取的预防措施，澄清了R1指出的概念混淆。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "对应R1的主要实质关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "there seems to be a misunderstanding in the authors' approach to the EMF limits."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "usually by legally enforcing limit values, and they can also be shared with the public, giving individuals the option to adopt them voluntarily"
+    }
+   ],
+   "match_criteria": "判为已解决，并指出修订稿中对法定限值与自愿措施的区分。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "resolved / reviewer_request_not_warranted：与宣传活动的关联分析需要未收集的数据，作者拒绝并说明理由是合理的。",
+   "issue_type": "V4",
+   "importance": "low",
+   "importance_reason": "检验模型是否机械要求补做不可能的分析。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R2",
+     "exact_quote": "we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey"
+    }
+   ],
+   "match_criteria": "不把这一点判为未解决。",
+   "acceptable_alternatives": [
+    "认为应写入局限，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "resolved：修订稿补充了5G频段（FR1、FR2）以及希腊实际暴露远低于限值的文献；两国暴露比较的研究不存在，作者说明了这一点。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "对应R2的背景信息要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "What are the frequencies for 5G signals in respective countries?"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "Is the radiation exposure in one country higher than the other?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "two frequency bands are assigned to 5G technology"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "These limits are typically not fully utilized, for example in Greece"
+    }
+   ],
+   "match_criteria": "指出频段与希腊暴露信息已补充。",
+   "acceptable_alternatives": [
+    "指出补充的频段是通用频段、并非分国家说明，或未能定位\"公众知识\"的新增句子，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "resolved：摘要中定义了5G，正文末尾新增了Conclusion小节。",
+   "issue_type": "V9",
+   "importance": "low",
+   "importance_reason": "形式问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R3",
+     "exact_quote": "Conclusion section (summarising the research) is missing."
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "fifth generation technology standard 5G"
+    },
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "This study investigated the impact of precautionary information on risk perception and trust"
+    }
+   ],
+   "match_criteria": "指出已解决。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "unresolved（审稿人未提）：多重比较问题未处理，唯一显著效应（德国一个指标）仍作为预防性信息效应报告。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "修订周期中未被发现的统计问题。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Contrary to expectations, precautionary information increased just one risk perception measure and only in Germany."
+    }
+   ],
+   "match_criteria": "指出修订稿仍未校正多重比较。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "unresolved（审稿人未提）：仍无针对信息内容的操纵检验，零结果难以和\"操纵未生效\"区分。",
+   "issue_type": "V2",
+   "importance": "medium",
+   "importance_reason": "影响主要零结果的解释。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "attention check items and survey completion time were our only way to control if people paid attention to the questions"
+    }
+   ],
+   "match_criteria": "指出缺少操纵检验，零结果的解释受限。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "acceptable_under_rubric",
+  "acceptable_set": [
+   "acceptable_under_rubric",
+   "needs_substantive_revision"
+  ],
+  "rationale": "审稿人的关切均已处理；残留的多重比较与操纵检验问题属于方法局限，可判为仍需实质修改，但研究已预注册、结论表述克制，判可接受也有依据。"
+ },
+ "known_invalid_patterns": [
+  "因审稿人只提了形式问题就认定没有任何科学问题。",
+  "要求补做暴露测量或宣传关联分析。"
+ ],
+ "draft_notes": "未能在修订稿中逐字定位R2回应所说的\"公众对暴露知识了解很少\"的新增句子，可能措辞不同，需人工核对。"
+}

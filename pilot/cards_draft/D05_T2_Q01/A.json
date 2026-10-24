@@ -1,0 +1,72 @@
+{
+ "task_id": "D05_T2_Q01",
+ "paper_id": "ORE:5-13",
+ "task": "T2",
+ "unit": "single_concern",
+ "input_sha256": "c07deca57087597fb3776128cce6eb80cb000367dcf292364399d80288fdedee",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "审稿人希望把结果与各国的宣传活动关联起来，看宣传暴露是否影响风险感知。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "界定要求。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/comment_text",
+     "exact_quote": "Can the results be correlated with any awareness programs in each country?"
+    }
+   ],
+   "match_criteria": "准确复述要求：把感知结果与各国宣传活动相关联。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "作者以\"调查未测量宣传接触、无法做这种相关\"为由拒绝，并把它列为未来研究方向。这一拒绝有事实依据：这项分析需要研究中没有收集的数据，审稿人的要求超出了研究设计。",
+   "issue_type": "V4",
+   "importance": "high",
+   "importance_reason": "决定\"有理由的拒绝\"是否成立。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "comment",
+     "exact_quote": "which may affect the perception results"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/response_text",
+     "exact_quote": "we didn’t ask for knowledge about media content, institutions, or awareness campaigns in the survey"
+    }
+   ],
+   "match_criteria": "认可这是有依据的拒绝，并指出所需数据不存在。",
+   "acceptable_alternatives": [
+    "认为作者至少应在局限中说明国家层面宣传差异可能影响国家比较，因而判部分充分，也可接受。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "sufficient",
+  "acceptable_set": [
+   "sufficient",
+   "partially_sufficient"
+  ],
+  "rationale": "要求依赖未收集的数据，作者给出了具体理由；若期待作者把这一点写入局限，可判部分充分。"
+ },
+ "known_invalid_patterns": [
+  "因作者没有补做分析就判不充分。",
+  "声称作者已在稿件中加入了局限说明（回应未这样说）。"
+ ],
+ "draft_notes": ""
+}
