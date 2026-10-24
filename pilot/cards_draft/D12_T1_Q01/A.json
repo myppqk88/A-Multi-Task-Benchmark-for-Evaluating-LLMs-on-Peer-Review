@@ -1,0 +1,266 @@
+{
+ "task_id": "D12_T1_Q01",
+ "paper_id": "ORE:3-166",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "799f48b8563d383cdabd5a31513efa354446fb72ce41eeb6a98622d9e6e642bb",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "区位商以五国合并份额为基准，等于假定各国应有相同的人力资本配置结构，忽视了教育体制（如德国职业教育替代部分大学学历）和发展水平的差异；区域\"错配\"可能主要反映国家结构差异，宜比较国内区域差异。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "核心指标的可比性决定了全部区域比较的解释。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The authors' construction of the quotient index assumes that all countries should have similar relative shares of human capital allocation"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "the LQ index is calculated by dividing the regional shares by the aggregate transnational share of the five countries under study"
+    }
+   ],
+   "match_criteria": "指出跨国基准忽视国家间教育/产业结构差异，或建议用国内基准。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "\"纵向错配\"只按职业层级（高学历者从事ISCO 1–3以外的职业）界定，这种分布也可能来自偏向中等技能职业的产业结构，未必是错配；需要用教育回报率、地方失业率、岗位流动等指标佐证，也要讨论指标本身的可靠性。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "核心构念的效度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "such allocation could arise due to a particular industry structure which favours middle-skilled occupations"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "it would be great if the authors could comment on the reliability of the mismatch indicator"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "occupations are classified as high-skill if they correspond to ISCO occupational groups 1 to 3"
+    }
+   ],
+   "match_criteria": "指出职业层级指标不足以界定错配，或指出需要其他指标佐证。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "讨论提出的五个决定因素（经济活力、产业专业化、城市化、制度能力、人口结构）没有用数据系统呈现，只是解释性推测；至少应展示这些因素与错配的共变关系。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "结论的证据基础。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "there is no systematic characterisation of their variation shown with data"
+    },
+    {
+     "report_id": "R2",
+     "exact_quote": "I would recommend the authors to provide empirical evidence"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "we point to five interconnected determinants of human capital allocation"
+    }
+   ],
+   "match_criteria": "指出决定因素缺乏实证支持。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "样本构建细节缺失：年龄范围、全职/兼职、性别、是否含移民、国家均值是否加权、缺失数据如何处理都未说明。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "可复现性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The paper omits critical details about the sample construction"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The data were taken from the Eurostat Labour Force Survey upon request in July 2022."
+    }
+   ],
+   "match_criteria": "指出样本构建或缺失数据处理未说明。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "只比较2009和2021两个年份，二者都处于不均衡冲击时期；分析并不依赖时间变化，宜用多年平均降低噪声。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "结果对年份选择的敏感性。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "I am concerned about specific years chosen for the analysis (2009, 2021)"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The aforementioned analysis is conducted for two years (2009 and 2021)"
+    }
+   ],
+   "match_criteria": "指出年份选择受冲击影响或建议多年平均。",
+   "acceptable_alternatives": [
+    "认为两个时点有实质意义（危机起点与近期），但应做稳健性检验，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "高学历者从事低技能职业的数据缺失很多，作者只提示\"谨慎对待\"，却仍据此作出解释；这部分结果是否可靠没有说清。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "部分结果的可信度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "It is hard what to make of this – is this part of the analysis reliable or not?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "results extracted in that part of the analysis must be approached with caution"
+    }
+   ],
+   "match_criteria": "指出缺失数据部分的可靠性未交代。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P7",
+   "judgment": "区位商只反映相对集中程度，不反映错配的绝对规模；需要报告错配的绝对水平。",
+   "issue_type": "V1",
+   "importance": "medium",
+   "importance_reason": "结果解释的尺度。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "we should always keep in mind that the LQs illustrate the spatial variation of a phenomenon (relative), and not how important the phenomenon itself is (absolute)"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "values above 1.15 indicate an overconcentration"
+    }
+   ],
+   "match_criteria": "指出LQ只是相对指标、缺少绝对规模。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P8",
+   "judgment": "研究区域因参与ERUA大学联盟而选定，结果能否推广到其他地区不清楚。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "结论适用范围。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "are the results a feature of the regions/countries that selected themselves into the university initiative?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "putting particular emphasis on the regions that are associated with the countries of the European Reform University Alliance"
+    }
+   ],
+   "match_criteria": "指出样本选择（大学联盟）限制推广。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P9",
+   "judgment": "政策建议（\"强有力的干预\"等）与本文结果关联很弱，多数建议并非由分析直接得出。",
+   "issue_type": "V8",
+   "importance": "medium",
+   "importance_reason": "建议的依据。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "the interventions that they mention seem to be only vaguely related to the findings of this paper"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "To break this pattern, strong interventions are required."
+    }
+   ],
+   "match_criteria": "指出政策建议与发现脱节。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P10",
+   "judgment": "理论框架与写作：把人力资本理论贬为\"简单化、实证主义\"，规范性陈述与实证陈述混杂；引言和文献综述偏离\"错配的地理分布\"这一核心问题；只报告了高学历组。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "论证与聚焦问题。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "human capital theory is though dismissed as simplistic and positivist"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "The paper does not separate normative from positive statements in a clear way"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "such simplistic and positivist accounts"
+    }
+   ],
+   "match_criteria": "提到上述任一框架或聚焦问题。",
+   "acceptable_alternatives": [
+    "认为批判性政治经济学视角本身合理、只需措辞更审慎，也合理。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "要求因果识别（如工具变量）作为描述性区域研究的必要条件，而不说明其可行性。"
+ ],
+ "draft_notes": "两份v1报告都较详尽，未添加起草者自行发现的问题。"
+}

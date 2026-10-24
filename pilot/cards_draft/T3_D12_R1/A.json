@@ -1,0 +1,172 @@
+{
+ "task_id": "T3_D12_R1",
+ "paper_id": "ORE:3-166",
+ "task": "T3",
+ "unit": "revision_cycle",
+ "input_sha256": "836202acdbcdf66cb0fa4f96fe3619d52537b6a0d58daec19bf3a3cf10e463bd",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "unresolved / declined：区位商仍以五国合并份额为基准；作者承认国家结构差异使比较困难，但以\"目标是直接比较欧洲区域\"为由保留，没有做国内基准的补充分析。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "核心指标的可比性问题未处理。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the authors should focus on within-country variation"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "the LQ index is calculated by dividing the regional shares by the aggregate transnational share of the five countries under study"
+    },
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "we went with the relative-to-transnational LQ as our main index"
+    }
+   ],
+   "match_criteria": "指出跨国基准未改、国家结构差异问题仍在。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "partially_resolved：修订稿把LQ与区域和国家GDP、区域创新指数、人口密度、老龄化指数等做了关联，为五个决定因素提供了描述性证据；但这些是生态层面的相关，不能把因素与错配的关系解释为因果。",
+   "issue_type": "V8",
+   "importance": "high",
+   "importance_reason": "决定因素的证据从无到有，但强度有限。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "there is no systematic characterisation of their variation shown with data"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "it links the LQL, LQM, and LQH with regional and national GDP"
+    }
+   ],
+   "match_criteria": "指出新增了相关性证据，同时指出其为描述性/生态相关。",
+   "acceptable_alternatives": [
+    "判为已解决也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "partially_resolved：补充了样本覆盖（15岁以上全部就业者、两性）和缺失数据不做插补的理由；但是否含移民、全职/兼职、加权方式仍未说明，低技能组缺失数据的可靠性仍只是\"谨慎对待\"。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "样本与数据说明。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "The paper omits critical details about the sample construction"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "Eurostat’s sample covers all employed persons of both genders, aged 15 and above."
+    }
+   ],
+   "match_criteria": "判为部分解决，并指出仍缺的细节。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "declined：作者以篇幅和两个时点的历史意义为由，没有增加年份或做多年平均。",
+   "issue_type": "V3",
+   "importance": "medium",
+   "importance_reason": "稳健性检验未做。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "the authors should use different years and average the results across 5 or 10 year intervals to reduce noise"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/responses/R1",
+     "exact_quote": "we could add one or two years between 2009 and 2021. However, this could substantially add to the wordage of the manuscript."
+    }
+   ],
+   "match_criteria": "指出年份稳健性问题未处理；篇幅不是充分理由。",
+   "acceptable_alternatives": [
+    "认为两个时点有实质意义、理由可以接受，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "resolved：修订稿承认LQ是相对指标、其变化不代表绝对增减；删除了\"简单化、实证主义\"的表述和\"强有力的干预\"措辞。",
+   "issue_type": "V6",
+   "importance": "low",
+   "importance_reason": "对应R2的若干关切。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "human capital theory is though dismissed as simplistic and positivist"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "It must be noted that the LQ is a relative index"
+    }
+   ],
+   "match_criteria": "指出已修订。",
+   "acceptable_alternatives": [
+    "指出承认相对性不等于报告了绝对规模，判部分解决，也可接受。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P6",
+   "judgment": "unresolved：修订稿新增\"研究结果可为整个欧盟提供见解\"的表述，以体制覆盖替代代表性论证，推广过度。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "结论适用范围被放大。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R2",
+     "exact_quote": "are the results a feature of the regions/countries that selected themselves into the university initiative?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "materials/manuscript_after/text",
+     "exact_quote": "its findings can be contextualized more broadly and provide insight into the EU as a whole"
+    }
+   ],
+   "match_criteria": "指出新增的推广表述过强。",
+   "acceptable_alternatives": [],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "needs_substantive_revision",
+  "acceptable_set": [
+   "needs_substantive_revision",
+   "acceptable_under_rubric"
+  ],
+  "rationale": "核心指标的跨国基准问题和年份稳健性被拒绝处理，推广表述被加强；新增的相关性证据有所改善。若认为描述性研究可接受这些限制，判可接受也有依据。"
+ },
+ "known_invalid_patterns": [
+  "因作者称\"已大幅修订\"就判已解决。",
+  "要求作者做区域因果推断。"
+ ],
+ "draft_notes": "两份回应都很长，大量引用修订稿新增文字。"
+}
