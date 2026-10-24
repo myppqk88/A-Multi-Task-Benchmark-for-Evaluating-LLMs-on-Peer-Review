@@ -23,6 +23,14 @@ LABELS = {'T2': {'sufficient', 'partially_sufficient', 'insufficient', 'insuffic
           'T3': {'acceptable_under_rubric', 'needs_substantive_revision', 'insufficient_evidence'}}
 
 
+LINE_NUMBER_LINE = re.compile(r'\n[ \t]*\d{1,4}[ \t]*(?=\n)')
+
+
+def strip_line_numbers(text):
+    """Remove manuscript line-number lines (PeerJ review PDFs print one between every text line)."""
+    return LINE_NUMBER_LINE.sub('\n', text)
+
+
 def norm(text):
     text = text.replace('­', '').replace('’', "'").replace('‘', "'").replace('“', '"').replace('”', '"')
     return re.sub(r'\s+', ' ', text).strip()
@@ -118,7 +126,7 @@ def check(task_id, drafter, manifest):
                 except (KeyError, IndexError, ValueError, TypeError):
                     errors.append(f"{pid}: unknown input_field {ev['input_field']!r}")
                     continue
-                hay = norm(' '.join(strings(field)))
+                hay = norm(strip_line_numbers(' '.join(strings(field))))
                 if norm(ev['exact_quote']) not in hay:
                     errors.append(f"{pid}: quote not found in {ev['input_field']}: {ev['exact_quote'][:60]!r}")
             elif 'page' in ev:
