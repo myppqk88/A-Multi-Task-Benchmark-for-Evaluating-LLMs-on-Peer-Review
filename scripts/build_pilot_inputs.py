@@ -322,10 +322,11 @@ def main():
     args = parser.parse_args()
     pilot = [r for r in csv.DictReader((ROOT / 'docs/master_table/pilot_v0.1.csv').open(encoding='utf-8'))
              if r['pilot_role'] != 'unused']
+    # Task index only (task_id, paper_id, input path); card contents are never opened, so drafters
+    # who must not read the v0.1 cards can run this script.
     all_cards = {}
-    for f in (ROOT / 'evaluation/cards').glob('*.json'):
-        c = json.loads(f.read_text())
-        all_cards.setdefault(c['paper_id'], {})[(c['task'], c['task_id'])] = c['input_path']
+    for r in csv.DictReader((ROOT / 'evaluation/逐题评分参照目录.csv').open(encoding='utf-8')):
+        all_cards.setdefault(r['paper_id'], {})[(r['task'], r['task_id'])] = r['input_path']
     manifest = []
     for row in pilot:
         pid = row['paper_id']
