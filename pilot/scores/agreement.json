@@ -1,0 +1,741 @@
+{
+ "human_vs_judge": {
+  "n": 74,
+  "percent_agreement": 0.73,
+  "kappa": 0.582,
+  "human_counts": {
+   "valid_minor": 20,
+   "unverifiable": 1,
+   "match": 36,
+   "valid_new": 17
+  },
+  "judge_counts": {
+   "valid_minor": 12,
+   "invalid": 6,
+   "match": 39,
+   "valid_new": 17
+  },
+  "confusion": {
+   "unverifiable->invalid": 1,
+   "match->valid_minor": 3,
+   "valid_minor->invalid": 3,
+   "valid_new->invalid": 2,
+   "valid_minor->match": 3,
+   "valid_minor->valid_new": 5,
+   "valid_new->match": 3
+  },
+  "same_point_when_both_match": "32/33",
+  "by_model": {
+   "opus": {
+    "n": 23,
+    "agree": 0.739
+   },
+   "sonnet": {
+    "n": 26,
+    "agree": 0.692
+   },
+   "haiku": {
+    "n": 25,
+    "agree": 0.76
+   }
+  },
+  "rows": [
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "unverifiable",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "valid_minor",
+    "human_point": "R01",
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "valid_minor",
+    "human_point": "R01",
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "opus",
+    "human": "valid_new",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "invalid",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D05_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "valid_minor",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R03",
+    "judge_point": "R03",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R03",
+    "judge_point": "R03",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "valid_minor",
+    "judge": "valid_minor",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R03",
+    "judge_point": "R03",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R01",
+    "human_note": null
+   },
+   {
+    "task_id": "D17_T2_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "valid_minor",
+    "human_point": "R01",
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "haiku",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "haiku",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R12",
+    "judge_point": "R12",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R01",
+    "judge_point": "R07",
+    "human_note": "亦覆盖R07的稳定性问题"
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R11",
+    "judge_point": "R11",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R12",
+    "judge_point": "R12",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R14",
+    "judge_point": "R14",
+    "human_note": "另含年龄相关CI不对称等附加数值问题"
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R11",
+    "judge_point": "R11",
+    "human_note": "亦涉及R01；W范围前后不一致为新点"
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R07",
+    "judge_point": "R07",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "opus",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R12",
+    "judge_point": "R12",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R07",
+    "judge_point": "R07",
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R11",
+    "judge_point": "R11",
+    "human_note": "亦对上R03（仅报告合并α）"
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D01_T1_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R06",
+    "judge_point": "R06",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R09",
+    "judge_point": "R09",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "haiku",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "haiku",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R02",
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "haiku",
+    "human": "valid_new",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R08",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R06",
+    "judge_point": "R06",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "opus",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R02",
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "opus",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "opus",
+    "human": "valid_new",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R08",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "opus",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R06",
+    "judge_point": "R06",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "sonnet",
+    "human": "match",
+    "judge": "match",
+    "human_point": "R02",
+    "judge_point": "R02",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "match",
+    "human_point": null,
+    "judge_point": "R08",
+    "human_note": null
+   },
+   {
+    "task_id": "D20_T1_Q01",
+    "model": "sonnet",
+    "human": "valid_new",
+    "judge": "valid_new",
+    "human_point": null,
+    "judge_point": null,
+    "human_note": null
+   }
+  ]
+ },
+ "first_vs_second_adjudicator": {
+  "n": 78,
+  "unmatched_rows": 0,
+  "percent_agreement": 0.667,
+  "kappa": 0.514,
+  "first_counts": {
+   "都对": 23,
+   "X对": 16,
+   "Y对": 31,
+   "都不对": 8
+  },
+  "second_counts": {
+   "都对": 34,
+   "X对": 14,
+   "Y对": 29,
+   "都不对": 1
+  },
+  "confusion": {
+   "都对->Y对": 1,
+   "Y对->都对": 9,
+   "X对->都对": 4,
+   "X对->Y对": 1,
+   "都不对->Y对": 6,
+   "X对->都不对": 1,
+   "Y对->X对": 1,
+   "都不对->X对": 2,
+   "都对->X对": 1
+  },
+  "accept_reject_agreement": 0.885
+ }
+}
