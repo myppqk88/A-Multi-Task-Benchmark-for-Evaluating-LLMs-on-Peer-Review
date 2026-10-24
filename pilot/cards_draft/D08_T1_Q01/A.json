@@ -1,0 +1,152 @@
+{
+ "task_id": "D08_T1_Q01",
+ "paper_id": "ORE:5-203",
+ "task": "T1",
+ "unit": "original_manuscript",
+ "input_sha256": "7ca65a9630d752626e402cf5aaa506289b31424a7d2b58667c25c872703abc7c",
+ "card_version": "0.2",
+ "drafter": "A",
+ "reference_points": [
+  {
+   "id": "P1",
+   "judgment": "共创工作坊的组织方式和参与者信息不足：未报告各机构参与者人数、角色构成、招募方式和工作坊的具体流程，以及跨机构如何综合成36条学习结果；读者无法评估共创阶段的可信度与可复现性。",
+   "issue_type": "V7",
+   "importance": "high",
+   "importance_reason": "框架的第一阶段是全部学习结果的来源。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "how were the workshops organized"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "the method does not show the process in sufficient detail to make it credible or reproducible"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "including educators from formal higher education contexts, trainers from non-formal education settings, and learners representing diverse disciplinary backgrounds"
+    }
+   ],
+   "match_criteria": "指出工作坊参与者数量、招募或综合过程未报告。",
+   "acceptable_alternatives": [
+    "只指出\"从多机构建议合并为36条的过程不清\"，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P2",
+   "judgment": "专家小组的人口学信息与遴选程序不够具体：只说明12名专家的大致资格和机构类型，没有遴选流程、性别/地域分布等。",
+   "issue_type": "V7",
+   "importance": "medium",
+   "importance_reason": "影响专家验证的可信度与\"欧洲代表性\"。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "who were the experts (as demographics) and how were they selected"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Our expert panel comprised 12 specialists selected based on demonstrated expertise in sustainability education"
+    }
+   ],
+   "match_criteria": "指出专家遴选程序或人口学/地域构成未报告。",
+   "acceptable_alternatives": [
+    "认为资格标准已给出、仅缺地域信息，判为次要问题，也合理。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P3",
+   "judgment": "验证和覆盖分析的步骤：v1已描述了验证表（四项标准、二元判断、四周异步）和覆盖分析的三步矩阵法，因此R1\"未说明如何验证、覆盖分析是什么\"的意见只部分成立；但覆盖分析的目的与判定规则（何为\"覆盖不足\"）仍不明确。",
+   "issue_type": "V7",
+   "importance": "low",
+   "importance_reason": "检验模型是否核对原文已有内容。",
+   "origin": "human_review",
+   "human_sources": [
+    {
+     "report_id": "R1",
+     "exact_quote": "how was the validation conducted"
+    },
+    {
+     "report_id": "R1",
+     "exact_quote": "coverage analysis (for example), what did that entail?"
+    }
+   ],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Experts evaluated each outcome against four criteria"
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "Step 1: Matrix development."
+    }
+   ],
+   "match_criteria": "若提出验证/覆盖分析问题，应承认文中已有步骤描述，只针对仍缺的判定规则。",
+   "acceptable_alternatives": [
+    "指出覆盖分析判定\"覆盖不足\"的标准缺失。"
+   ],
+   "status": "partly_supported"
+  },
+  {
+   "id": "P4",
+   "judgment": "\"验证\"的含义被夸大：所谓修正德尔菲只有一轮匿名评审加一轮针对修改条目的反馈，没有共识阈值或多轮收敛；更重要的是，学习结果是否\"可测量、可评估\"只依据专家判断，没有用学习者或评估者做任何试测（如评估一致性、可操作性），却在摘要中称其可观察、可测量、可评估。",
+   "issue_type": "V1",
+   "importance": "high",
+   "importance_reason": "\"可测量、可评估\"是框架的主要主张，但缺乏实证检验。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "These outcomes were formulated to be observable, measurable, and assessable."
+    },
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "The expert validation phase employed a modified Delphi approach"
+    }
+   ],
+   "match_criteria": "指出缺乏对学习结果可测量性/可评估性的实证检验，或指出\"德尔菲\"缺少共识标准和多轮收敛。",
+   "acceptable_alternatives": [
+    "认为专家内容效度对框架开发阶段已经足够、但应把\"验证\"限定为内容效度并写明局限，也算命中。"
+   ],
+   "status": "supported"
+  },
+  {
+   "id": "P5",
+   "judgment": "样本与适用范围：共创只在4所联盟机构进行，专家来自少数欧盟项目，却主张学习结果适用于正式、非正式和非正规等各种情境；v1没有局限部分讨论这种推广范围。",
+   "issue_type": "V4",
+   "importance": "medium",
+   "importance_reason": "影响框架普适性主张。",
+   "origin": "card_author",
+   "human_sources": [],
+   "manuscript_evidence": [
+    {
+     "input_field": "input/manuscript_text",
+     "exact_quote": "supports the integration of sustainability education across formal, non-formal, and informal learning contexts"
+    }
+   ],
+   "match_criteria": "指出参与机构和专家范围有限，与\"各类情境普适\"的主张不相称，或指出缺少局限讨论。",
+   "acceptable_alternatives": [
+    "只指出缺少局限部分，也算部分命中。"
+   ],
+   "status": "supported"
+  }
+ ],
+ "label_reference": {
+  "primary": "",
+  "acceptable_set": [],
+  "rationale": ""
+ },
+ "known_invalid_patterns": [
+  "声称文中完全没有描述验证标准（v1已列出四项标准）。",
+  "要求做大样本统计验证作为框架论文的必要条件，而不说明为何需要。"
+ ],
+ "draft_notes": "只有一份第一轮报告。P4、P5为起草者自行发现。"
+}
