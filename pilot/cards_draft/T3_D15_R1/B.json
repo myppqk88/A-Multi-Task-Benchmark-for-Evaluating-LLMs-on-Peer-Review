@@ -1,0 +1,178 @@
+{
+  "task_id": "T3_D15_R1",
+  "paper_id": "F1000:134799",
+  "task": "T3",
+  "unit": "revision_cycle",
+  "input_sha256": "a2c8b234b42945a9b2d693b0738423cf05a9ba5075f80331ffdcb56221252d14",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "partially_resolved：后稿增加可行性/功效平衡和性别均衡的解释，但没有目标效应、功效或推算步骤，不能据此证明N=212充分；原稿已有95%置信水平和10%误差声明，但没有足够参数重现计算；便利样本扩大并不能消除选择偏差，均衡男女也不等于代表总体。",
+      "issue_type": "V4",
+      "importance": "high",
+      "importance_reason": "影响性别比较精度及对印度年轻Instagram用户的推广。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "solid\njustification for collecting only 212 responses"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "he study flow as per STROBE guidelines is depicted in the extended data (Vasudha &\nNimiya, 2023).\n\n\nA sample size of 212 was calculated, considering a confidence level of 95%, with margin of error of 10%.\nThus, 212 participants (males = 106, females = 106) aged between 20 and 30 years with an active Instagram account\n(Male; M = 22.76, SD = 1.84), (Female; M = 23.05, SD = 2.21) were recruited from different states across India to\nparticipate in the study. Participants without an active Instagram account as well as those with a history of physical/\nmental illness were excluded from the study. This computation was used to maintain a balance between statistical power\nand feasibility. The sample size was judged suitable for detecting moderate effect sizes in our comparisons. The selected\nsample size was sufficient for preliminary insights into sex differences in body image, exercise motivation, and social\ncomparison among Instagram users aged 20-30 in India. We ensured that there was an equ"
+        }
+      ],
+      "match_criteria": "区分样本量/精度依据与便利取样代表性，不照单接受扩大N即可消除偏差。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：较大便利样本无法自动消除偏差；可接受探索性定位但需如实给样本量依据与不确定性。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "partially_resolved：后稿逐项给出检验与图形说明，但把sex称为均值3.43的正态变量、把0.845直接与.05比较，且出现N=211与全样本212不一致；body image均值73.25也与等量两性68.84/73.61合并值约71.23不符。需澄清检验对象和数值，不能一概判正态已验证。",
+      "issue_type": "V3",
+      "importance": "high",
+      "importance_reason": "参数推断的假设与数值报告决定统计结论能否解释。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "normality\nneeds to be checked for all three variables."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "cquired data (IBM Corp., 2017). We used the necessary tables to express our results as proportions. In our study, the\nnormality of the variables was assessed. Shapiro-Wilk statistic, Q-Q plots, histograms were used to evaluate the normality\nof the variables. In this study, Sex and Instagram use are the independent variables; body image, motivation to exercise,\nand social comparison are the dependent variables. The data for the independent variable sex showed a normal\ndistribution with a mean (M) of 3.43, a standard deviation (SD) of 1.50, and a Shapiro-Wilk score of 0.845 (>0.05).\nThe Shapiro-Wilk test result (p = 0.091) for the dependent variable body image indicates that the data is normally\ndistributed. This is corroborated by descriptive statistics (mean = 73.25, median = 73.00), and also visual inspections\nusing Q-Q plots and histograms. In terms of another study variable social comparison, the Q-Q plot displays data points\nthat are nearly aligned with the diagonal, and the descriptive statistics (mean = 24.96, median = 25.00), skewness =\n-0.063, kurtosis = -0.382, and Shapiro-Wilk test result (p = 0.184) reveal a normal distribution. The Shapiro-Wilk test (W\n= 0.968, p < 0.001) suggested a significant deviation from normalcy, but the Kolmogorov-Smirnov test (D = 0.0853, p =\n0.093) did not show a significant deviation; visual inspections revealed minor deviations, but the assumption of normalcy\nis deemed met because of the bigger sample size (N = 211) and the near-normal appearance in visual inspections. Overall,\nit was determined that parametric tests may be appropriately applied to the data in this study due to these findings and the\nsizable sample size.\nBased on this normality test, parametric tools were used for the analysis. In order to find the difference between two\ngroups with respect to the sociodemographic and dependent variables, independent sample t-test was used to find the Sex\ndifferences in body image, exercise motivation and social comparison. Univariate analysis of variance (ANOVA) was\nused to test the difference between two or more groups with respect to the sociodemographic and the dependent variables\nsuch as between body image and people"
+        }
+      ],
+      "match_criteria": "识别W与p的区别，并检查后稿新增说明是否逻辑及数值一致；二元sex无需服从正态分布。",
+      "acceptable_alternatives": [
+        "可在组内样本较大且无严重偏态/异常值时论证t检验稳健，不能用“所有变量必须正态”或任一非显著检验替代。"
+      ],
+      "status": "supported",
+      "id": "P2"
+    },
+    {
+      "judgment": "partially_resolved：后稿加入SDT和媒介素养/身体积极性建议，回应了深度要求；但没有测量或检验SDT机制，干预建议应为待验证推论。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "决定经验发现对理论和实践的真实贡献。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "specific\ntheoretical and practical implications are missing."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "\ncharacteristics that might have played a role in producing these results.\nTheoretical implications\nAccording to Self-Determination Theory (SDT), motivation is divided into intrinsic and extrinsic. According to SDT,\nintrinsic motivation generally leads to more sustained involvement in behaviours such as exercise. There is strong\nevidence, supporting SDT's usefulness to understanding exercise motivation according to Teixeira et al. (2012). They\nconducted a systematic study that found strong evidence supporting SDT's usefulness to understanding exercise\nmotivation. Key findings show that autonomous types of motivation, whether driven by intrinsic motivation (enjoyment,\npersonal challenge) or recognized regulation (valuing health benefits), are consistently associated with higher levels\nof physical activity. This review particularly focuses on sex differences in exercise motivation. According to the\nreview, increased exercise motivation in men is primarily driven by intrinsic attributes such as strength and endurance,\nemphasizing the necessity of improving intrinsic motivation in exercise promotion tactics. On the other hand, for women,\nbody dissatisfaction appears to be a strong motivation for exercise. In women, exercise motivation is frequently linked\nto extrinsic reasons such as attractiveness objectives. This emphasizes the need for gender-specific approaches to\nencouraging exercise. The current study implication also emphasizes on considering sex difference for encouraging the\nexercise. For example, addressing body image issues and fostering a supportive environment that shifts the focus away\nfrom beauty and toward overall well-being may be beneficial for women. On the other hand, strategies that increase\nintrinsic motivations, such enjoyment of oneself and skill dev"
+        }
+      ],
+      "match_criteria": "承认已有启示及后稿新增内容，区分讨论理论与实证检验理论。",
+      "acceptable_alternatives": [
+        "可接受探索性实践建议，但不能说本研究证实了性别专属干预的疗效。"
+      ],
+      "status": "partly_supported",
+      "id": "P3"
+    },
+    {
+      "judgment": "unresolved：后稿没有增加其他变量分析，限制中保留残余混杂与横断面界限，回应把自尊等列为未来研究；这是可合理延期的拓展，但不能宣称已排除混杂或识别Instagram的因果作用。",
+      "issue_type": "V2",
+      "importance": "medium",
+      "importance_reason": "额外变量的解释范围关系因果与关联的界限。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "further analysis on the influence of other\nvariables could enrich the discussion."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "nnection between the variables. Finally, it is impossible to completely rule out the possibility of residual\nconfounding such as simultaneous use of other SNS platforms and social desirability bias in self-reported data. There was\nno supplemental information collected from other potential sources, such as relatives or peers.\nGiven these limitations, future research can focus on exploring individuals with a larger range of ages, given that older\nand middle-aged people engage in social media, although in a smaller amount than younger people. All future studies\nshould be proactive to recruit culturally diverse samples as often as possible to be able to draw conclusions about the\npotentially differential effects as well as to make comparisons across individuals from diverse backgrounds. Future\nresearch can also delve deeper into the sociodemographic factors explored in the study to better understand how it can\nplay a role in Sex difference in these variables with large samples. Also, exper"
+        }
+      ],
+      "match_criteria": "识别这是宽泛拓展建议及已有因果限制，不凭未测变量就认定组间差异无效。",
+      "acceptable_alternatives": [
+        "可以接受合理延期额外变量分析，只须保留非因果、未排混杂的结论范围。"
+      ],
+      "status": "partly_supported",
+      "id": "P4"
+    },
+    {
+      "judgment": "unresolved：表4的t=1.560、双侧p=.120、95%CI[-.84,7.22]不支持正文“关注健身页者身像问题显著更高”；正文采用的.028来自Levene方差齐性检验。表3/正文还混用t、p及df=2，须修复统计量身份与解释。",
+      "issue_type": "V3",
+      "importance": "high",
+      "importance_reason": "直接影响摘要和正文的显著性结论。",
+      "origin": "card_author",
+      "human_sources": [],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "e difference in body image across people who followed fitness\nrelated pages with those who did not. As displayed in Table 4, there was significant difference in body image (t(2) = 0.028,\np = 0.05) with mean score for people who follow fitness related pages (M = 72.63, SD = 13.44), which was found to be\nhigher than people who did not follow fitness related pages on Instagram (M = 69.44, SD = 16.21). The magnitude of the\ndifferences in the means (mean difference = 3.19, 95% CI: -0.84 to 7.22). Thus, there was a significant difference in body\nimage between people who followed fitness related pages on Instagram and those who did not, with mean body image\nhigher among people who followed fitness related pages on Instagram.\nDifference in body image between people who exercised regularly and those who did not.\nTable 5 represents the difference between people who exercise regularly and body image in males and females in the age\ngroup 20-30. One way ANOVA test enumerated in the table revealed a"
+        },
+        {
+          "input_field": "materials/manuscript_after/visual_pages",
+          "page": 9,
+          "observation": "横排表4区分Levene F=4.899, Sig=.028，与均值差t检验t=1.560、Sig.(2 tailed)=.120、95%CI[-.84,7.22]；表3df列均写2。"
+        }
+      ],
+      "match_criteria": "必须区分方差检验与均值检验，指出错误的具体结论；不能将全部性别差异一概判为不存在。",
+      "acceptable_alternatives": [
+        "可判断主要身像/动机性别差异仍可能由表3的.019/.005支持，但关注健身页的显著性主张须撤回或重算。"
+      ],
+      "status": "supported",
+      "id": "P5"
+    },
+    {
+      "judgment": "unresolved：自编社交比较量表目前只有三专家表面评价和10人可行性试测，缺内部结构/可靠性依据；三个量表最低总分均写5也与所述27项1–5、51项0–5及10项五级累加不符，需明确实际计分，避免混淆量表均分、总分和构念。",
+      "issue_type": "V1",
+      "importance": "high",
+      "importance_reason": "身像/动机/比较的组间结论依赖可解释的测量。",
+      "origin": "card_author",
+      "human_sources": [],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "e and 50 being the maximum score;\nthe higher the score, greater the magnitude of social comparison. The questionnaire was validated by three experts from\nthe field. The name of the scale was changed from ‘Social Comparison and Instagram Use scale’ to ‘Instagram as a tool for\nSocial Comparison’ as per experts’ suggestion. Certain other modifications were suggested, and these suggestions were\ntaken into consideration and the modified questionnaire was used for data collection (Bessenoff, 2006).\nProcedure\nThe author’s Institutional Ethics Committee approved this study (Protocol No: IEC KMC MLR 04-2022/127).\nThe population of this study were males and females in the age group 20-30 residing in different states across India.\nThe independent and dependent variables in the study are Instagram usa"
+        },
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "lf, 3 = About Halfway True of Myself, 4 = Mostly True of Myself, and 5 = Completely True of Myself. With\n5 being the lowest possible score and 135 being the maximum score, the higher the score, the greater the body image\nconcerns. All nine sub-scales show adequate internal consistencies, as demonstrated by Cronbach alphas ranging from\n0.68 to 0.92 (Rowe, 2005).\nExercise Motivation Inventory-2 (EMI-2)\nThe Exercise Motivations Inventory-2 (EMI-2) is a 51-item scale developed by Markland and Ingled"
+        },
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": " according to how strongly the person feels that it reflects\nwhy he/she exercise or might exercise. With 5 being the lowest possible score and 255 being the maximum score, higher\nthe score, greater the exercise motivation. All fourteen sub-scales show adequate internal consistencies, as demonstrated\nby Cronbach alphas ranging from 0.69 to 0.92 (Markland & Hardy, 1993).\nInstagram as a tool for Soci"
+        }
+      ],
+      "match_criteria": "指出实际提供的验证层次和明确的计分范围不一致，不要求把探索量表伪装成熟标准化工具。",
+      "acceptable_alternatives": [
+        "可把最低分视为报告笔误，但必须澄清实际计分及初步测量限制，不能因专家意见就宣称完整构念效度成立。"
+      ],
+      "status": "supported",
+      "id": "P6"
+    }
+  ],
+  "label_reference": {
+    "primary": "needs_substantive_revision",
+    "acceptable_set": [
+      "needs_substantive_revision"
+    ],
+    "rationale": "虽增加正态性说明与启示，主要统计量身份、表4显著性解释、测量计分仍存在具体冲突，须先澄清再接受结论。"
+  },
+  "known_invalid_patterns": [
+    "认为扩大便利样本可消除选择偏差。",
+    "把Levene的.028当作表4均值差异p值。",
+    "把W=.845大于.05当正态性已证。",
+    "将讨论SDT当成验证了该机制。"
+  ],
+  "draft_notes": "已读两份报告与回应、前后主文全部文字和全部页图；T1与前稿文本相同。数据声明中的外部量表/数据并未纳入本题附件，未联网获取，不声称已验证原始数据。"
+}

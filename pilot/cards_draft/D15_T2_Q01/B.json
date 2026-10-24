@@ -1,0 +1,73 @@
+{
+  "task_id": "D15_T2_Q01",
+  "paper_id": "F1000:134799",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "1d23a2898bc1097d3a4b2edf0459dccda3dabc87ecd70d0a2b16e1951f53565f",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应称N=212是在功效与可行性间平衡，但没有效应量、目标功效、公式或足够参数，属于理由概述，不能据此重现样本量。",
+      "issue_type": "V3",
+      "importance": "high",
+      "importance_reason": "原关切要求具体说明为何212。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "solid justification for collecting only 212 responses"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "The sample size of 212 participants, though modest, was calculated to achieve a balance between feasibility and statistical power."
+        }
+      ],
+      "match_criteria": "区分说“calculated”与给出计算依据。",
+      "acceptable_alternatives": [
+        "可接受探索性规模由可行性决定，但应坦承其性质而非声称已给充分功效依据。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "回应承认初步性质和未来扩大/多样化样本，但未直接纠正扩大便利样本便能消除偏差的错误前提，人口背景也只被隐含提及。",
+      "issue_type": "V4",
+      "importance": "medium",
+      "importance_reason": "样本量与总体代表性是原要求的不同部分。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "number of responses needs to be quite high to eliminate the error and bias"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "This size allows for meaningful preliminary insights while acknowledging the need for future studies with larger and more diverse samples to enhance generalizability and validate our findings."
+        }
+      ],
+      "match_criteria": "既承认有限推广的回应，也指出未说明抽样偏差不能靠N自动消除。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：无需为消除便利取样偏差承诺一个足够大的N；合理限定结论也可回应推广关切。"
+      ],
+      "status": "partly_supported",
+      "id": "P2"
+    }
+  ],
+  "label_reference": {
+    "primary": "partially_sufficient",
+    "acceptable_set": [
+      "partially_sufficient"
+    ],
+    "rationale": "给出初步定位及可行性解释，但缺样本量具体依据与人口/抽样边界的直接阐明。"
+  },
+  "known_invalid_patterns": [
+    "把“calculated”当作功效计算已经展示。",
+    "引用后稿95%/10%来补本题回应。"
+  ],
+  "draft_notes": "只用本题文本；revision_verification=not_assessed。"
+}

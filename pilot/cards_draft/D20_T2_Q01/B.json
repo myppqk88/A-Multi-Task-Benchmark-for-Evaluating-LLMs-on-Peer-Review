@@ -1,0 +1,173 @@
+{
+  "task_id": "D20_T2_Q01",
+  "paper_id": "F1000:171534",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "955b3858eb6866efc372ba9f2c9edc75253d73be26d52870cfef10f94c10e0b2",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应说明补充了工具、Aiken验证及分析类别，但未直接给出各阶段如何评分、编码或计算的具体规则。",
+      "issue_type": "V7",
+      "importance": "high",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Add a minimally detailed explanation of the instrument and data analysis."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "A clearer and more detailed explanation of the research instruments and data analysis procedures has been added to the\nProcedure\nsection. This includes explicit descriptions of the assessment instruments, expert validation using Aiken’s V, and the quantitative and qualitative analysis approaches applied at each stage of the ADDIE framework."
+        }
+      ],
+      "match_criteria": "须承认说明的范围，同时指出“已增加说明”仍主要是位置声明。",
+      "acceptable_alternatives": [
+        "可把Aiken’s V方法名视为部分具体回答，但不能据此称全部分析细节已充分。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "回应列出成绩、观察量规和专家表并指向Data Availability，但没有在回应里给具体标识或呈现材料，实际可用性不能验证。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Ensure source data is available (grades, rubric, Aiken's V table, etc.)."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "All relevant source data, including student scores, observation rubrics, expert validation results, and the Aiken’s V table, are now made available in the\nData Availability\nsection at the end of the article, in line with the journal’s open data policy."
+        }
+      ],
+      "match_criteria": "须区分共享内容列表与实际文件可用性；不能引用其他题附件验证。",
+      "acceptable_alternatives": [
+        "可以认为文字已覆盖共享要求的类别，保留可用性未核验。"
+      ],
+      "status": "partly_supported",
+      "id": "P2"
+    },
+    {
+      "judgment": "回应具体列出样本、情境、主题与设计约束，足以说明限制段拟覆盖的内容。",
+      "issue_type": "V4",
+      "importance": "medium",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Add a limitations paragraph."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "A dedicated\nLimitations\nsection has been included after the conclusion, explicitly discussing the sample size, research context, topic scope, and design constraints of the study."
+        }
+      ],
+      "match_criteria": "识别四类具体限制，实际修改标记未评估。",
+      "acceptable_alternatives": [
+        "若要求更具体指出四人单校和无对照，可认为细节仍可增强，而非完全未回应。"
+      ],
+      "status": "partly_supported",
+      "id": "P3"
+    },
+    {
+      "judgment": "引用一致性只得到笼统“已检查”的声明，没有可定位修正示例。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Improve consistency of citations and references."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "The manuscript has been carefully reviewed to ensure consistency and accuracy of citations and references throughout the text, following the journal’s referencing guidelines."
+        }
+      ],
+      "match_criteria": "指出这项回应欠具体，不凭礼貌或宣称全部检查就判独立验证完成。",
+      "acceptable_alternatives": [
+        "原关切也未给具体错处，可以把回应视为编辑性承诺足够，同时保持未验证。"
+      ],
+      "status": "supported",
+      "id": "P4"
+    },
+    {
+      "judgment": "回应明确给出图1和ADDIE阶段图，可直接覆盖流程图建议，尚未验证图的实际内容。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Add an ADDIE flowchart"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "An ADDIE-based research flowchart has been included as\nFigure 1\n, visually summarizing the research stages and strengthening the methodological presentation."
+        }
+      ],
+      "match_criteria": "识别Figure 1的具体位置和用途。",
+      "acceptable_alternatives": [
+        "不要求在回应中重贴图，只需说明已加入的位置即可。"
+      ],
+      "status": "supported",
+      "id": "P5"
+    },
+    {
+      "judgment": "回应列出教师与学生引语并指向Stage 1，但没有直接提供一条引语，证据与主题的联系仍未在回应中展示。",
+      "issue_type": "V5",
+      "importance": "medium",
+      "importance_reason": "本题要求逐项评价六项修改回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Add sample interview quotes"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Representative interview excerpts from teachers and students have been incorporated into the\nFindings (Stage 1 Analysis)\nsection. These quotations directly support the thematic analysis and enrich the qualitative interpretation of the results."
+        }
+      ],
+      "match_criteria": "区分具体改动位置与实际引语证据缺席。",
+      "acceptable_alternatives": [
+        "可认为位置说明足以回应呈现建议，但不能声称已核对引语忠实性。"
+      ],
+      "status": "partly_supported",
+      "id": "P6"
+    }
+  ],
+  "label_reference": {
+    "primary": "partially_sufficient",
+    "acceptable_set": [
+      "partially_sufficient"
+    ],
+    "rationale": "六项要求均被对应，限制和流程图有具体位置；工具/分析规则、来源可用性和引语仍多为“已补”的声明，引用一致性也缺示例，故文字覆盖但充分性有限。回应不是完全无关，也不能据它确认实际修改。"
+  },
+  "known_invalid_patterns": [
+    "把逐条声称已改等同于每项实质充分。",
+    "调用T1/T3附件补齐本题回应证据。"
+  ],
+  "draft_notes": "仅依据本题关切和去重后的完整答复，revision_verification=not_assessed。"
+}

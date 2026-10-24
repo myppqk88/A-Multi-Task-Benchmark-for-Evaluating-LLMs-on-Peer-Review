@@ -1,0 +1,53 @@
+{
+  "task_id": "D01_T2_Q01",
+  "paper_id": "PeerJ:1604",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "068d7a439545da62f7b50407d8fe61272950c3d0129dc4686815fb50523b7794",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应直接解释不在引言新增中介/调节假设的研究范围理由：研究的是主观因素重要性，而非机制模型。",
+      "issue_type": "V2",
+      "importance": "high",
+      "importance_reason": "决定是否错误惩罚合理拒绝。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Hypothesis. The authors should specify at the end of the introduction the hypothesis\nof mediation and moderation model."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/comment_text",
+          "exact_quote": "Hypothesis. The authors should specify at the end of the introduction the hypothesis\nof mediation and moderation model."
+        },
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Answer: We thank the reviewer for this comment, and have mentioned the possible mediators and moderators in the revised discussion, but not in the introduction, as our goal was not to determine possible mediators of specific hopes, but rather the perceived importance participants give to the factors constituting the IHS scale on their hoping for specific events."
+        }
+      ],
+      "match_criteria": "须说明拒绝的具体理由及研究目的，不以未照做直接判不足。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立也属合理判断：若认为回应没有明确处理讨论中机制措辞的风险，可在说明该局限后判partially_sufficient。"
+      ],
+      "status": "disputed",
+      "id": "P1"
+    }
+  ],
+  "label_reference": {
+    "primary": "sufficient",
+    "acceptable_set": [
+      "sufficient",
+      "partially_sufficient"
+    ],
+    "rationale": "合理说明研究目标可充分回应不合范围的建模要求；若严格关注“在讨论提到中介”仍含混，可接受部分充分。不能据本题验证引言或讨论实际改动。"
+  },
+  "known_invalid_patterns": [
+    "只因没有补模型而判insufficient。",
+    "引用修订稿断言修改已核验。"
+  ],
+  "draft_notes": "只使用本题comment、response及necessary_context；revision_verification应为not_assessed。"
+}

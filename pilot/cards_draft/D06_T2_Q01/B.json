@@ -1,0 +1,49 @@
+{
+  "task_id": "D06_T2_Q01",
+  "paper_id": "ORE:4-24",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "0c73e5686caf00ba1c6b434bb9d55757b8d08ad671470329277552057e8e412e",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应说明受众分层不属于本研究目标，承认受众特征影响参与，并提出在讨论中列为限制和未来方向；对拓展性分析要求可合理限定范围，而非必须新增分析。",
+      "issue_type": "V4",
+      "importance": "high",
+      "importance_reason": "原要求是将已有受众特征用于平台参与比较，可由合理范围解释回应。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "demographic data has not been used"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Answer 2: This was not the goal of our study, however we provided a description of the audience at the InnoRenew CoE social media channels, since we are aware that the characteristics of the audience is important for the engagement. We rewrote the Discussion section in order to enhance this aspect as a limitation of our study, and added the recommendation for future studies."
+        }
+      ],
+      "match_criteria": "识别合理不采纳的范围说明和限制承认，不能因没有新增分析自动判无回应，也不能声称已经验证后稿。",
+      "acceptable_alternatives": [
+        "可判partially_sufficient：理由主要是“不属目标”，未解释为何现有比较无需分层或资料能否支持；须具体指出这层解释不足。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    }
+  ],
+  "label_reference": {
+    "primary": "sufficient",
+    "acceptable_set": [
+      "sufficient",
+      "partially_sufficient"
+    ],
+    "rationale": "在探索性机构账户比较范围内，明确解释不作分层、承认局限并给未来方向可充分；若坚持需说明未控制如何影响结论，则部分充分亦合理。"
+  },
+  "known_invalid_patterns": [
+    "把不采纳建议自动等同insufficient。",
+    "用T3新增限制验证本题实际修订。"
+  ],
+  "draft_notes": "只用本题文字；revision_verification=not_assessed。"
+}

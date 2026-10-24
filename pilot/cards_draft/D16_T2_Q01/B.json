@@ -1,0 +1,49 @@
+{
+  "task_id": "D16_T2_Q01",
+  "paper_id": "F1000:151777",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "3bf46f27d0a37f9f4237c1bd18c456c65c2efb84a3b24dd98a66bb0a2e38c45f",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应直接承认热情/参与测量需清楚，但仅宣称新增操作定义、行为指标和标准协议，没有实际列举一个指标、记录窗口、计分或量表内容；其他效应量/文化段落不补这一缺口。",
+      "issue_type": "V1",
+      "importance": "high",
+      "importance_reason": "原关切要求足以复制的具体主观构念测量。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "more specific details on the measures of “enthusiasm” and “engagement”"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Special attention has been given to strengthening the methodology section, especially regarding the measurement of student engagement and enthusiasm. We have included detailed operational definitions, specific behavioral indicators, and standardized assessment protocols to enhance reproducibility."
+        }
+      ],
+      "match_criteria": "区分“已补详细定义”的承诺与回应实际给出的操作规则，不能调用后稿核验或补证。",
+      "acceptable_alternatives": [
+        "可认为回应相关且覆盖要求方向，但若给予partially_sufficient仍需指出没有可复制测量细节。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    }
+  ],
+  "label_reference": {
+    "primary": "partially_sufficient",
+    "acceptable_set": [
+      "partially_sufficient",
+      "insufficient"
+    ],
+    "rationale": "承认问题并声称修改但缺具体内容，文字层面至多部分充分；若将可复制细节视为最低条件，insufficient可接受。"
+  },
+  "known_invalid_patterns": [
+    "将修改声明当作具体指标已经展示。",
+    "用T3后稿30分钟/30秒等细节替作者回应补充。"
+  ],
+  "draft_notes": "只用该题关切与整体回复，revision_verification=not_assessed。"
+}

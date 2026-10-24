@@ -1,0 +1,99 @@
+{
+  "task_id": "D11_T2_Q01",
+  "paper_id": "ORE:5-286",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "84ee72f9ee29c68b12982a07a001a4a7975ece2055646196e3876c9743d25336",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应列出治理会议、工作组、培训中的备忘录/场记，并说明区分一手二手资料的位置，但实际如何生成、记录范围和实例未在回应中展示。",
+      "issue_type": "V5",
+      "importance": "high",
+      "importance_reason": "本题要求来源、具体证据及编码责任三个层面。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "primary data sources must be clarified."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Section 3 distinguishes primary from secondary sources and indicates that memos and field notes from governance meetings, working groups and training events constitute core evidence supporting the findings."
+        }
+      ],
+      "match_criteria": "承认来源类型和位置具体化，不能将“已解释如何生成”当生成协议已提供。",
+      "acceptable_alternatives": [
+        "可认为来源场域/材料类型已具体回应要求，但不声称实际生成程序已经展示。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "回应指出表2/第4节新增讨论、评估反馈和解释张力摘录，方向相关，却未给出任何摘录或编码实例。",
+      "issue_type": "V5",
+      "importance": "high",
+      "importance_reason": "本题要求来源、具体证据及编码责任三个层面。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "more evidence should be provided"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Section 4 and Table 2 now include concrete empirical excerpts that illustrate partners’ discussions, evaluation feedback and interpretive tensions, thereby making the connection between raw data and analytical categories more explicit."
+        }
+      ],
+      "match_criteria": "区分证据已添加的位置声明与本回应能看到的实际证据。",
+      "acceptable_alternatives": [
+        "可认为给出表2和第4节的具体修改位置足够回应呈现建议，仍不确认未展示摘录的实际内容。"
+      ],
+      "status": "partly_supported",
+      "id": "P2"
+    },
+    {
+      "judgment": "回应明确第一作者执行开放/轴心/选择编码，合作者审查结构与类别定义；直接回答谁分析及他人参与，但没有独立双编码或一致率。",
+      "issue_type": "V5",
+      "importance": "high",
+      "importance_reason": "本题要求来源、具体证据及编码责任三个层面。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Who conducted the data analysis?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "It now specifies how open, axial and selective coding were conducted by the first author and how the co-authors reviewed coding structures and category definitions to strengthen analytical robustness."
+        }
+      ],
+      "match_criteria": "不凭未报κ否定单人编码+审查，也不虚构双人独立编码。",
+      "acceptable_alternatives": [
+        "可接受单人编码加合作者审查作为稳健性实践，不额外强求独立双编码或数值一致率。"
+      ],
+      "status": "partly_supported",
+      "id": "P3"
+    }
+  ],
+  "label_reference": {
+    "primary": "partially_sufficient",
+    "acceptable_set": [
+      "partially_sufficient",
+      "sufficient"
+    ],
+    "rationale": "分析责任回答具体，来源及表2位置也明确，但实际生成程序和摘录仍以“已增加”概括；若要求仅为说明修改位置而非重贴证据，sufficient可接受，必须保留未核验修订的边界。"
+  },
+  "known_invalid_patterns": [
+    "用后稿实际表2替本回应补出引语。",
+    "声称已独立计算或看见κ。"
+  ],
+  "draft_notes": "仅使用本题输入，revision_verification=not_assessed。"
+}

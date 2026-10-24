@@ -1,0 +1,78 @@
+{
+  "task_id": "D08_T2_Q01",
+  "paper_id": "ORE:5-203",
+  "task": "T2",
+  "unit": "single_concern_response",
+  "input_sha256": "4a9d71e301c4563815f1d3b79d8a632a018bee3382973688fea67bde706e8e53",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "回应给出≥5年实践和/或≥5项相关同行评议产出的客观资格门槛，直接覆盖专家选择客观化要求。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "关系到专家遴选标准是否明确。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Expert Panel Selection:\nThe criteria are good, but stating the\nnumber\nof publications or years of experience would add objectivity. The gender balance (8 women, 4 men) is noted, but a brief mention of geographical distribution (beyond \"diverse institutional contexts\") would strengthen the claim of European representativeness."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "≥5 years of relevant practice and/or ≥5 relevant peer-reviewed outputs"
+        }
+      ],
+      "match_criteria": "识别具体阈值及and/or关系，不误说必须同时达到两项。",
+      "acceptable_alternatives": [
+        "可以指出这是可操作的资格门槛，而不是每位专家实际资历的逐人核验。"
+      ],
+      "status": "supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "回应列出六个工作国家并承认南/西欧偏向，充分回答地理透明度及代表性边界。",
+      "issue_type": "V4",
+      "importance": "medium",
+      "importance_reason": "决定是否把地理多样性误称全欧洲代表性。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "comment",
+          "exact_quote": "Expert Panel Selection:\nThe criteria are good, but stating the\nnumber\nof publications or years of experience would add objectivity. The gender balance (8 women, 4 men) is noted, but a brief mention of geographical distribution (beyond \"diverse institutional contexts\") would strengthen the claim of European representativeness."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "Sweden, Greece, Portugal, Spain, Italy, and North Macedonia"
+        },
+        {
+          "input_field": "input/response_text",
+          "exact_quote": "this distribution skews toward Southern and Western Europe"
+        }
+      ],
+      "match_criteria": "须同时提国家信息与地区偏向，不能只凭六国就断言统计代表欧洲。",
+      "acceptable_alternatives": [
+        "可以认为仍需未来扩展地区，但回应已清楚承认局限，不能因此自动判不充分。"
+      ],
+      "status": "supported",
+      "id": "P2"
+    }
+  ],
+  "label_reference": {
+    "primary": "sufficient",
+    "acceptable_set": [
+      "sufficient"
+    ],
+    "rationale": "客观阈值、地理分布、偏向说明和拟修改位置均具体覆盖要求；文字充分不等于实际修改已验证。"
+  },
+  "known_invalid_patterns": [
+    "将and/or误读为两个阈值必须同时满足。",
+    "声称六国名单证明欧洲代表性。",
+    "利用其他题稿件核验实际修改。"
+  ],
+  "draft_notes": "仅评价本题回应；revision_verification=not_assessed。"
+}

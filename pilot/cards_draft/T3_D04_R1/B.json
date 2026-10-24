@@ -1,0 +1,609 @@
+{
+  "task_id": "T3_D04_R1",
+  "paper_id": "ORE:5-107",
+  "task": "T3",
+  "unit": "revision_cycle",
+  "input_sha256": "5564411538b6ac941da3fdb07ea688c746eac4de998580e9c2757ffc7d5247aa",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "resolved：后稿增加访谈主题及提纲指向，A01/A03可见完整问题；访谈规模等信息原本已存在。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "需要说明收集了什么资料，但不能将已有样本信息误报为缺失。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "the essential characteristics of these interviews are not reported."
+        },
+        {
+          "report_id": "R3",
+          "exact_quote": "Some information on the rough topics of the interview"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "cluded from the analysis\ndue to the tools not being sufficiently focused on stakeholder\nengagement. The full interview guide is available and listed\nin references (Gudek et al., 2025a).\nWe selected interviewees through a theoretical sampling strategy (Glaser & Strauss, 2017). As per Glaser and Strauss, while\napplying this strategy, the process of data collection is controlled by the emerging theory. The initial decisions pertaining to data collection are based on the general problem area\nand not on a preconceived theoretical framework. Data were\ncollected, coded, and analysed concurrently and the emerging results guided which group or sub-group to turn to next\n(Glaser & Strauss, 2017). As a result of this, although we\nstarted with projects with a strong focus on agri-food systems,\nmidway t"
+        },
+        {
+          "input_field": "materials/supplements/A01/text",
+          "exact_quote": "re interested in how toolkits are designed to respond to the needs\nof par*cipants\nToolkit design\n1) How do you define a tool. What was the aim of your Counter probe (based on\ntoolkit, why did you develop it? response)\nWhy, what context was this\naim developed in?\n2) What were the needs it was addressing? -How did you get from the\n3) How did you iden*fy these needs? needs to the specific tools?\n-How did the development\nprocess look like?\n-Do you feel like those\nneeds were addressed?\n-Were there any challenges\nhere?\n2) Was there a pilo*ng phase? Who was involved? How -Were there any challenges\nwas it organized? here?\n3) What is the role of user interac*on in the toolkit? Is -Why did you take that\nit important that users can contribute to/adjust the approach? What are the\ntools or are they fin"
+        }
+      ],
+      "match_criteria": "在Data collection识别22人/14项目与在线英语访谈等已有信息，指出问题主题/提纲未呈现；T3应定位新增提纲。",
+      "acceptable_alternatives": [],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "resolved：原有人工编码说明保留，后稿进一步说明轴心归类；无需为不存在的机器学习流程补技术参数。",
+      "issue_type": "V5",
+      "importance": "medium",
+      "importance_reason": "软件名称不能决定分析范式，应以报告的人工过程判断。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "it\nis not clear what type of qualitative methodology they used."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "\nfirst step of our analysis was open coding (Saldaña, 2021). The\nfirst and second authors undertook independent, line-by-line\nanalysis of the text and assigned codes describing insights identified in the data. This was an iterative process and involved\nconstant comparison between various pieces of text within\nthe same transcript as well as with text in other interview\ntranscripts. The researchers referred to the video recordings\nof the interviews from time to time during this stage of\nanalysis to ensure that data were coded in relation to the\ncontexts in which they were shared. Data saturation was reached\n\nat 10 interviews for the first author and 11 interviews for the\nsecond author, indicating that no new codes could be assigned\nto the data. As our analytical focus was on recurring patter"
+        }
+      ],
+      "match_criteria": "在Data analysis引用两作者人工逐行编码与常比较，说明Atlas不自动意味着机器学习或词频分析。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：原稿明确两作者独立逐行开放编码、常比较与人工讨论，不能因使用Atlas而假定采用机器学习或词频量化。；允许提出不依赖该错误前提的有限澄清建议。"
+      ],
+      "status": "disputed",
+      "id": "P2"
+    },
+    {
+      "judgment": "resolved：原有开放编码语境足以澄清codes含义，后稿另给编码树，不能把它称为源程序发布。",
+      "issue_type": "V7",
+      "importance": "low",
+      "importance_reason": "此误读若不纠正会把不适用要求强加于作者。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "make these\nlines of code public"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "milar codes were discussed, and most were eventually\nintegrated into the analysis. This resulted in 46 codes assigned\nto 257 pieces of text. The full coding tree is available and\nlisted in references (Gudek et al., 2025b).\nSubsequent to open coding, we engaged in a second cycle of\nanalysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we\nexamined relationships among the codes, explored underlying patterns, and grouped them into higher-order categories.\n\nThrough this process, it became evident that participants\nconsistently described their activities in chronological sequences,\nstructuring their accounts around distinct stages of tool development and dissemination. Based on this, we identified\nfour phases of the tool developm"
+        }
+      ],
+      "match_criteria": "依据46 codes/开放编码语境解释codes是质性标签，不是软件源码；不要求不存在的程序公开。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：这里的codes是质性分析标签，非计算机程序；要求公开程序代码建立在误读之上。；允许提出不依赖该错误前提的有限澄清建议。"
+      ],
+      "status": "disputed",
+      "id": "P3"
+    },
+    {
+      "judgment": "resolved：后稿加入Freeman、技术评估及RRI背景，合理保留公共参与研究的理论范围。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "理论定位应适合研究问题，特定作者引用不是效度门槛。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "no reference to Robert Edward Freeman"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "f stakeholder engagement\ngained salience in the 1980s in domains such as Business\nOrganisation (cf. Freeman, 2010), Constructive Technology\nAssessment (Rip, 2018), and Participatory Technology Development (within agricultural development domain). More\nrecently, in 2010s, the increased incorporation of engagement\n\napproaches into EU R&I has been a result of the Responsible\nResearch and Innovation concept, which builds on previous\nresearch on stakeholder engagement, emphasising inclusion,\nanticipation, responsiveness and reflexivity in innovation processes (Burget et al., 2017). Within the European R&I projects,\nthe institutionalisation of RRItook place through the development of methods to engage with the public, as well as making\nthose freely available (Owen et al., 2021). Within RRI, thos"
+        }
+      ],
+      "match_criteria": "说明公共R&I参与与企业利益相关者理论的适用边界，判断新增背景或合理拒绝的范围。",
+      "acceptable_alternatives": [],
+      "status": "partly_supported",
+      "id": "P4"
+    },
+    {
+      "judgment": "resolved：后稿明确研究问题并调整理论论述；属于定位和组织改进。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "改善读者理解研究定位。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "The introduction is too long"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": " tools in European\nR&I projects and their relation to the broader European R&I\ntrends. To this end, the study tackles the question: How are\nengagement tools developed in R&I projects and what are\nthe underlying logics of these processes? The paper proceeds\nwith an overview of the development of the current European\nR&I system and the role of food systems R&I within it. This\nis followed by an empirical analysis of tool development\nprocesses within R&I projects focusing mostly, but not exclusively, on engagement in food system transformation. Finally,\ntwo distinct approaches to development of these tools are\noutlined.\n\nEuropean R&I for food system transformation\n\nEver since the beginning of the European Community, Europe\nhas had a role in coordinating and stimulating R&I activities.\nThis rol"
+        }
+      ],
+      "match_criteria": "定位已有研究目的/理论部分，区分明确研究问题与单纯拆章节的编辑建议。",
+      "acceptable_alternatives": [
+        "研究目的存在，但引言中的问题与缺口可更明确，已有后续理论部分不宜称完全未分开。 可接受现有足够清晰的表述或等效呈现，不强求逐字落实该编辑建议。"
+      ],
+      "status": "partly_supported",
+      "id": "P5"
+    },
+    {
+      "judgment": "resolved：后稿表1列出各项目目标群体，方法解释广义社会行动者；无需限缩为企业内部主体。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "不同群体关系影响参与工具及样本解释。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "add a column indicating the stakeholders most involved"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "ors. Table 1 presents an overview of the\nincluded projects, the tools developed by them, as well as which\nstakeholders they tried to engage. As the projects attempt to\nengage diverse societal actors, such as policy makers, food\nproducers, researchers, businesses, we refer to these collectively\nas stakeholders taking part in stakeholder engagement processes. When appropriate, we refer to specific stakeholder groups.\nInitially, interviews were conducted with representatives of 17\n\nTable 1. Overview of included projects and tools.\nProject\n\nEngagement tool(s)\n\nAgri-food projects\nAGROBRIDGES\n\nNet: An online platform that brings together local agri-food actors to cooperate and share resources\nand infrastructure to create stronger short food supply chains.\nSmart delivery: An online space to creat"
+        }
+      ],
+      "match_criteria": "核表1参与对象是否逐项目明确，并说明公共R&I可以把公民包括在广义相关者内。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P6"
+    },
+    {
+      "judgment": "resolved：后稿说明CLEVERFOOD合作网络形成主题取样入口，较早定位范围并保留跨部门推广限制；并未新增跨部门验证。",
+      "issue_type": "V4",
+      "importance": "high",
+      "importance_reason": "决定结论覆盖的项目总体。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "Can you clarify why the study focuses primarily on agri-food and bioeconomy projects?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "ng the analysis of all\nongoing and recently concluded Horizon Europe food and\nagriculture projects. This thematic subset of projects is a result\nof the authors’ work on the CLEVERFOOD project which\nengages broadly with food system related projects. Projects\nwebsites were scanned for engagement tools. Subsequently,\ncoordinators of all projects that had developed or were in the\nprocess of developing such tools were contacted by the first\nand the second authors. Table 1 presents an overview of the\nincluded projects, the tools developed by them, as well as which\nstakeholders they tried to engage. As the projects attempt to\nengage diverse societal actors, such as policy makers, food\nproducers, researchers, businesses, we refer to these collectively\nas stakeholders taking part in stakeholder eng"
+        }
+      ],
+      "match_criteria": "指出九农食/四生物经济/一跨领域的取样范围及CLEVERFOOD入口，结论不能无条件覆盖所有部门。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P7"
+    },
+    {
+      "judgment": "resolved：后稿强调不同阶段可呈现不同取向，两类是解释性理想类型；不强求每项目单一标签。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "避免将连续混合实践错误二分。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "Could you expand your framework to reflect a spectrum or continuum rather than a binary?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "pproach characteristics such as limiting the feedback options.\nHowever, the results also point that these approaches are not\nalways isolated from each other. Project managers may for\nexample organise an inclusive tool co-creation session, while\nlater in the project be restrained (regarding time, budget, and\nstaff capacity) in how they approach dissemination. Therefore,\nthe two approaches are distinct in their logics across development phases – with the project-focused approach prioritising\npredefined structures and objectives, and the user-focused\napproach emphasising adaptability and iterative development\nbased on user input. However, this does not necessarily mean\nthat the different approaches predetermine a development path\nof a tool.\n\nTransitioning towards socially robust engagement to"
+        }
+      ],
+      "match_criteria": "引用两类路径不总分离的已有说明，识别理想类型/混合实践与互斥项目分类的区别。",
+      "acceptable_alternatives": [],
+      "status": "partly_supported",
+      "id": "P8"
+    },
+    {
+      "judgment": "partially_resolved：后稿明确饱和针对过程、动机与挑战，而非部门或技术维度；主题判断仍缺逐次编码或反例轨迹。",
+      "issue_type": "V5",
+      "importance": "high",
+      "importance_reason": "饱和度界限决定质性覆盖与可信度。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "how saturation was assessed across such a diverse sample?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "ool development process was structured, participants’\nmotivations, and responses to key challenges, saturation was\nassessed in relation to these themes rather than across sectoral\nor technological dimensions. After this, the first and second\nauthors compared their codes and combined similar codes.\nDissimilar codes were discussed, and most were eventually\nintegrated into the analysis. This resulted in 46 codes assigned\nto 257 pieces of text. The full coding tree is available and\nlisted in references (Gudek et al., 2025b).\nSubsequent to open coding, we engaged in a second cycle of\nanalysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we\nexamined relationships among the codes, explored underlying patterns, and grouped them int"
+        }
+      ],
+      "match_criteria": "在Data analysis定位10/11访谈不再新增代码，明确这是过程主题饱和而非各部门/工具分别饱和。",
+      "acceptable_alternatives": [
+        "可在明确限于跨案例过程主题的前提下接受所报告饱和，不能推为部门或工具类型分别饱和。"
+      ],
+      "status": "supported",
+      "id": "P9"
+    },
+    {
+      "judgment": "partially_resolved：表1增加参与对象，未提供逐项目的类型矩阵；可接受不作互斥归类，仍应限定框架为解释性综合。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "可核对性需要与研究实际分析单位匹配。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "A brief matrix or summary of project types, tools, and their assigned approach"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "or were in the\nprocess of developing such tools were contacted by the first\nand the second authors. Table 1 presents an overview of the\nincluded projects, the tools developed by them, as well as which\nstakeholders they tried to engage. As the projects attempt to\nengage diverse societal actors, such as policy makers, food\nproducers, researchers, businesses, we refer to these collectively\nas stakeholders taking part in stakeholder engagement processes. When appropriate, we refer to specific stakeholder groups.\nInitially, interviews were conducted with representatives of 17\n\nTable 1. Overview of included projects and tools.\nProject\n\nEngagement tool(s)\n\nAgri-food projects\nAGROBRIDGES\n\nNet: An online platform that brings together local agri-food actors to cooperate and share resources\nand infra"
+        }
+      ],
+      "match_criteria": "区分表1项目/工具信息和逐项目路径矩阵；若不互斥归类，可用混合例证代替强制单标签。",
+      "acceptable_alternatives": [
+        "若作者不做逐项目互斥归类，可用混合实践实例和清晰定义替代单标签矩阵。"
+      ],
+      "status": "partly_supported",
+      "id": "P10"
+    },
+    {
+      "judgment": "partially_resolved：后稿扩展不平等、参与疲劳及制度逻辑讨论，但并未新增被排除群体访谈，不能称后果已实证确认。",
+      "issue_type": "V5",
+      "importance": "medium",
+      "importance_reason": "关系到参与性主张与未被代表者的可信度。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "When certain groups are excluded from co-creation, what are the\nconsequences?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": " 2025).\nFailing to meaningfully engage with actors in these processes\ncan have consequences such as stakeholder fatigue when\nstakeholders are engaged in extractive ways rather than seeking their input at all stages of projects (Bracken et al., 2015).\nAdditionally, empirical research shows that bureaucratic and\npolitical resistance to participative processes regularly means\nthat engagement does not translate to policy action (Wesselink\net al., 2011). In R&I processes, the input of stakeholders\nis often not evaluated equally, with citizens’ voices frequently\nbeing undervalued. Furthermore, even when meaningful\nparticipation processes are designed, the political nature of\nmissions might reinforce tensions and polarisation around\ncertain societal issues (Janssen et al., 2021). This makes it\nim"
+        }
+      ],
+      "match_criteria": "将协调者访谈与被排除群体实际经历区分，参与疲劳/制度收编只能在相应证据范围内解释。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P11"
+    },
+    {
+      "judgment": "partially_resolved：后稿补CLEVERFOOD承接FIT4FOOD等具体说明，但市政/JRC洽谈和新提案仍是可能性，不能把所有路径概括为已证明有效。",
+      "issue_type": "V8",
+      "importance": "high",
+      "importance_reason": "持续性是主要贡献，方案存在不等于实际成效。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "Which ones have actually worked?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "models, licensing fees,\nor consultancy services, to support the tools’ maintenance and\ndevelopment. Commercialisation not only ensures the tool’s\nsurvival but also its continuous improvement and adaptation to\nmarket needs. Some projects explored hybrid approaches,\ncombining elements from all three categories to maximise\ntheir chances of sustainability. For example, they might integrate their tool into new projects while simultaneously seeking\npartnerships and exploring commercial opportunities. This\napproach also requires a critical perspective to a tool development\nto create a tool perceived as useful by potential users.\nOverall, the insights shared by the participants allowed us to\nidentify best practices and challenges associated with all phases\n\nof the tool development process. Table 2"
+        }
+      ],
+      "match_criteria": "在Post-project continuity区分实际延续、正在洽谈和拟申请资助，不能把接管意向当已奏效。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P12"
+    },
+    {
+      "judgment": "partially_resolved：后稿提出商业化与可及性的未来问题，仍保留Commercialisation not only ensures的强表述，缺实际成效及分配后果证据。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "影响持续性论证的条件与价值冲突。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "tension between open science ideals and\ncommercialisation logic"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "models, licensing fees,\nor consultancy services, to support the tools’ maintenance and\ndevelopment. Commercialisation not only ensures the tool’s\nsurvival but also its continuous improvement and adaptation to\nmarket needs. Some projects explored hybrid approaches,\ncombining elements from all three categories to maximise\ntheir chances of sustainability. For example, they might integrate their tool into new projects while simultaneously seeking\npartnerships and exploring commercial opportunities. This\napproach also requires a critical perspective to a tool development\nto create a tool perceived as useful by potential users.\nOverall, the insights shared by the participants allowed us to\nidentify best practices and challenges associated with all phases\n\nof the tool development process. Table 2"
+        }
+      ],
+      "match_criteria": "定位Commercialisation not only ensures语句，指出生存/改进保证与开放可及性之间缺乏条件论证。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P13"
+    },
+    {
+      "judgment": "partially_resolved：A02/A04图可见标签—中层组—四大类，改善可追溯性，但没有逐码定义或编码片段；原始访谈受限可合理解释。",
+      "issue_type": "V7",
+      "importance": "high",
+      "importance_reason": "连接原始资料与研究框架的分析轨迹。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "full coding tree, code definitions, or a sample coded excerpt"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "milar codes were discussed, and most were eventually\nintegrated into the analysis. This resulted in 46 codes assigned\nto 257 pieces of text. The full coding tree is available and\nlisted in references (Gudek et al., 2025b).\nSubsequent to open coding, we engaged in a second cycle of\nanalysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we\nexamined relationships among the codes, explored underlying patterns, and grouped them into higher-order categories.\n\nThrough this process, it became evident that participants\nconsistently described their activities in chronological sequences,\nstructuring their accounts around distinct stages of tool development and dissemination. Based on this, we identified\nfour phases of the tool developm"
+        },
+        {
+          "input_field": "materials/supplements/A02/visual_pages",
+          "page": 1,
+          "observation": "编码树将具体标签归为12个中层组，并归入Purpose、Process、Praxis、Post-project legacy四大类；图没有逐码定义或编码文本示例。"
+        }
+      ],
+      "match_criteria": "检查46码—类别的可追溯性；T3须承认编码树已提供，同时区分树、代码定义和编码片段。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P14"
+    },
+    {
+      "judgment": "resolved：后稿保留同一规模信息，不是由无到有补充。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "防止机械认同错误前提。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "The Abstract could specify the number of projects and interviews"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "s.\nMethods\nThis study adopts a qualitative approach, with conducting semistructured interviews with 22 participants representing 14 Horizon\nEurope projects on topics of agri-food, bioeconomy, and\nsustainability. Data were collected, coded, and analysed concurrently\nand the emerging results guided which group was approached next.\nResults\nTools developed within projects take up shape within distinct phases,\ndenominated as Purpose, Prototyping, Praxis, and Post-project\ncontinuity. Each of these phases comes with distinct challenges and\nopportunities. The way projects approach these challenges and\n\nO\n\nopportunities showcases two distinct approaches that might be\nindicative of broader project management work in European R&I\nprojects. These are the Project-focused approach and the Userfocused ap"
+        }
+      ],
+      "match_criteria": "定位摘要原已列22位参与者与14项目，不能将保持该信息当成新增纠错。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：摘要已报告22位参与者与14项目，不能将重复建议当成原稿缺失。；允许提出不依赖该错误前提的有限澄清建议。"
+      ],
+      "status": "disputed",
+      "id": "P15"
+    },
+    {
+      "judgment": "resolved：后稿保留阶段表述与表2/3，合理解释不再添加重复图即可；无须要求每项低层建议按字面执行。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "信息可读性可有多种充分呈现形式。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "A schematic diagram illustrating the two approaches across the four phases"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": " in every stage as well as the challenges\nthey faced and strategies they employed to overcome them.\nTable 2 at the end of this section provides an overview of\nthe results.\n\nTable 2. Overview of the four phases of tool development.\n\nPurpose\nThis stage refers to the\nconceptualisation of engagement\ntools and understanding their target\ngroup.\nPrototyping\nThe prototyping stage is about the\ndevelopment of the tools as well as\nthe negotiations with stakeholders\nand funding requirements.\n\nPraxis\nThe praxis refers to the stage where\nthe tools are publicised, translated\nand disseminated, and their impact\nmonitored.\n\nPost-project continuity\nPost-project stage is about ensuring\nthe tools remain available and\nmaintained after the project that\ndeveloped them runs out.\n\nIdentified challenges\n\nStrategies "
+        }
+      ],
+      "match_criteria": "检查表2/3已有四阶段/两类路径映射，允许用等效表述替代额外示意图。",
+      "acceptable_alternatives": [
+        "原稿表2/3已呈现四阶段两种逻辑，另加图是可选呈现建议，非分析有效性条件。 可接受现有足够清晰的表述或等效呈现，不强求逐字落实该编辑建议。"
+      ],
+      "status": "partly_supported",
+      "id": "P16"
+    },
+    {
+      "judgment": "partially_resolved：后稿解释行政要求占用协调者能力，但未具体列出规则实例，适合保留为受访者/理论层面的机制推论。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "区分经验材料与政策制度因果归因。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "Are there procedural or reporting rules that especially limit co-creative"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": " in some cases, signal a need for greater skill development among project consortia. Conversely, if administrative\nrequirements of project implementation take up capacities\nof project coordinators, there are less resources dedicated to\nensuring the tools have genuine impact\nAs Tenhunen-Lunkka and Honkanen (2024) suggest, the\ncapacity to navigate project structures effectively – balancing\ncompliance with flexibility – may be an area where additional\ntraining and institutional support could facilitate a more integrated approach. Rather than viewing engagement and structured\nproject management as opposing forces, a more nuanced\nperspective might recognise the potential for their coexistence,\n\nleveraging the strengths of both approaches to enhance the\nimpact and sustainability of R&I efforts.\n"
+        }
+      ],
+      "match_criteria": "区分一般行政负担/期限机制与可指认的政策规则，不凭空补造欧盟报告制度实例。",
+      "acceptable_alternatives": [],
+      "status": "partly_supported",
+      "id": "P17"
+    },
+    {
+      "judgment": "resolved：后稿理论部分新增对RRI实施及排除/资源差异的批判，改善政策框架与后文分析的连接。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "避免把政策规范性承诺当成实际参与成功。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "I miss a more critical perspective on EU\nambitions for stakeholder engagement."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": ". These efforts have included increased\nco-creation and inclusion with society under the concept\nof Responsible Research and Innovation (RRI) (Burget et al.,\n2017) and Open Science (Armeni et al., 2021), and more\n1\n\nIn this paper, Europe is referred to broadly as a geographical area, EU as\nthe political community including all its legislative branches, and to the\nEC as the executive body managing the EU’s R&I policy.\n\nrecently a focus on aligning various societal actors around\nmeasurable innovation targets in Mission-Oriented Innovation\nPolicy (MOIP) (Robinson et al., 2021). Prioritisation of these\nengagement instruments in R&I could support innovation\nefforts in various ways, including ensuring the relevance, longevity, and application of R&I processes (Mazzucato, 2019).\nAt the same time,"
+        }
+      ],
+      "match_criteria": "定位理论部分已有项目化批判与RRI论述，判断新增权力/排除批判是否连接后文。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P18"
+    },
+    {
+      "judgment": "resolved：后稿在定义后增加工作坊脚本、共享平台及网络应用例子，工具异质性仍应限定跨案例推论。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "明确研究对象和分析单位。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "The definition of engagement tools in the introduction is quite\nvague"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "cal processes\non how to engage with various stakeholders on a specific topic\nin the context of R&I. Practically, these tools can take shape as\nscripts for multi-stakeholder workshops, digital data sharing\nplatforms, or networking apps. While recent research has\nexplored the overall success factors of European R&I projects\n(e.g. Tenhunen-Lunkka & Honkanen, 2024), no studies specifically focus on the tools developed and deployed within these\nprojects, despite their importance for enhancing stakeholder\nengagement. Investigating this gap is particularly important\nas recent research points to the failures of the wide collection of engagement tools to support the implementation of\nRRI in Horizon 2020 (Tabarés et al., 2022).\nTherefore, this study aims to explore factors that influence the\ndevelop"
+        }
+      ],
+      "match_criteria": "在工具定义后查找工作坊脚本、平台或应用实例，不能称原表1完全没有工具例子。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P19"
+    },
+    {
+      "judgment": "partially_resolved：后稿增加工具形式和项目例证，仍以匿名协调者综合归纳为主，不能据此获得逐工具比较效果。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "例证帮助理解跨案例归纳所指对象。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "provide\nmore concrete examples of engagement tools in the results section."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "context of R&I. Practically, these tools can take shape as\nscripts for multi-stakeholder workshops, digital data sharing\nplatforms, or networking apps. While recent research has\nexplored the overall success factors of European R&I projects\n(e.g. Tenhunen-Lunkka & Honkanen, 2024), no studies specifically focus on the tools developed and deployed within these\nprojects, despite their importance for enhancing stakeholder\nengagement. Investigating this gap is particularly important\nas recent research points to the failures of the wide collection of engagement tools to support the implementation of\nRRI in Horizon 2020 (Tabarés et al., 2022).\nTherefore, this study aims to explore factors that influence the\ndevelopment of stakeholder engagement tools in European\nR&I projects and their relation to "
+        }
+      ],
+      "match_criteria": "把结果段的归纳与具体工具形式连接，说明工作坊和数字平台的实施问题不能无差别概括。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P20"
+    },
+    {
+      "judgment": "resolved：后稿明确第二轮轴心编码、检查关系和模式、归入高阶类别，再将46码分配到一个或多个阶段；编码树补充组织结构。",
+      "issue_type": "V5",
+      "importance": "high",
+      "importance_reason": "直接支撑四阶段框架如何从材料形成。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "Did you stop at this stage or have further steps of integration, like\naxial or selective coding, been employed?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "7 pieces of text. The full coding tree is available and\nlisted in references (Gudek et al., 2025b).\nSubsequent to open coding, we engaged in a second cycle of\nanalysis to group these codes into broader conceptual categories. Drawing on principles of axial coding (Saldaña, 2021), we\nexamined relationships among the codes, explored underlying patterns, and grouped them into higher-order categories.\n\nThrough this process, it became evident that participants\nconsistently described their activities in chronological sequences,\nstructuring their accounts around distinct stages of tool development and dissemination. Based on this, we identified\nfour phases of the tool development and dissemination process,\nas described in the consequent section of this paper. The 46\ncodes that were created during "
+        }
+      ],
+      "match_criteria": "说明开放码如何通过关系/模式归类进入四阶段；T3应识别轴心编码第二轮和46码可多归属。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P21"
+    },
+    {
+      "judgment": "resolved：后稿明确一般构想在提案期而关键细化在项目早期，澄清Purpose阶段跨越提案与执行。",
+      "issue_type": "V7",
+      "importance": "medium",
+      "importance_reason": "影响生命周期阶段解释与时间归属。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "aren’t many activities you refer to in proposal phases not the project as such?"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "ities take place through a\nproject-based approach. This is achieved by publishing calls\nfor project proposals, aiming to build international consortia\naround a certain topic, with a specific scope and envisaged\noutcomes (European Commission - REA, 2024). Within Horizon\nEurope, food systems are an important focus. Food systems\nbring together a wide array of actors, from small-scale\nfarmers and food processors to policymakers, consumers, and\nmultinational corporations and face a wide variety of urgent\ncomplex environmental, social and health challenges. In 2016,\nFood 2030 was launched as a “research and innovation\npolicy framework supporting the transition towards sustainable,\nhealthy and inclusive food systems, that respect planetary\nboundaries” (European Commission - DG R&I, 2024c). This\nf"
+        }
+      ],
+      "match_criteria": "区分提案期一般构想与执行期关键细化，判断Purpose是否跨越两段而非全部发生在资助期。",
+      "acceptable_alternatives": [],
+      "status": "supported",
+      "id": "P22"
+    },
+    {
+      "judgment": "resolved：后稿摘要移除此概括，围绕参与机制与项目结构定位贡献。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "贡献表述应与所研究对象一致。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "it is not clear why the term sustainability is prominently referred to"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "work in European R&I\nprojects. These are the Project-focused approach and the Userfocused approach.\nConclusions\nThis study contributes to the broader discourse on innovation by\nproviding empirical insights into the mechanisms and dynamics of\nstakeholder engagement tools in R&I projects. It underscores the\nimportance of balancing structural R&I frameworks with flexible,\nparticipatory approaches to innovation. The findings offer actionable\nrecommendations for policymakers, project coordinators, and funders\nto support the development of robust and inclusive stakeholder\nengagement tools that mobilise diverse actors and facilitate systemic\nchange aligned with the EU’s sustainability goals.\nPlain Language Summary\nResearch funded by the European Union often takes place through\ncollaborative proje"
+        }
+      ],
+      "match_criteria": "核摘要sustainability innovation是否有对应的研究焦点，T3定位其移除。",
+      "acceptable_alternatives": [
+        "摘要将可持续创新置为贡献可能宽于研究的参与工具过程范围。 可接受现有足够清晰的表述或等效呈现，不强求逐字落实该编辑建议。"
+      ],
+      "status": "supported",
+      "id": "P23"
+    },
+    {
+      "judgment": "resolved：后稿改为并列列举地缘、气候与生物多样性等挑战，减轻误读。",
+      "issue_type": "V9",
+      "importance": "low",
+      "importance_reason": "属于句意澄清。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R3",
+          "exact_quote": "reads as if the Eu would tackle these only to maintain competitiveness"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "materials/manuscript_after/text",
+          "exact_quote": "ral challenges,\nincluding geopolitical crises, the climatecrisis and biodiversity\nloss, maintaining global competitiveness, and others. These\ngrand challenges encompass both environmental and societal\naspects and addressing them requires directing societal transitions through ambitious innovation policy (Mazzucato, 2016). To\nachieve this, the European Union (EU) employs wide-ranging\nResearch and Innovation (R&I) activities, increasingly turning to models of innovation such as Transformative Innovation\nPolicy and Mission-oriented Innovation Policy which explicitly attempt to turn ambitions of resolving these challenges\ninto actionable policy agendas (Bergek et al., 2023). However,\ngiven the elusive nature of societal transitions, the EU must\nadopt a distinctly novel and reflexive approach t"
+        }
+      ],
+      "match_criteria": "解释ranging from...to本是范围列举而非唯一竞争力动机，评价并列改写的澄清作用。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：原稿ranging from...to列举多种挑战，并未明说唯有竞争力驱动；可调整歧义而非认定理论错误。；允许提出不依赖该错误前提的有限澄清建议。"
+      ],
+      "status": "disputed",
+      "id": "P24"
+    }
+  ],
+  "label_reference": {
+    "primary": "acceptable_under_rubric",
+    "acceptable_set": [
+      "acceptable_under_rubric",
+      "needs_substantive_revision"
+    ],
+    "rationale": "后稿补足提纲、编码整合、项目参与对象与范围限定，支持描述性过程框架。可接受须把类型当理想型、饱和限于过程主题、持续运营视为混合的实际案例与计划；若认为保留的商业化保证式语言仍是核心结论，则needs_substantive_revision亦可，但须指出具体保留表述与证据缺口。"
+  },
+  "known_invalid_patterns": [
+    "把codes理解成程序代码，要求公开算法源码。",
+    "把两类理想型当互斥项目标签。",
+    "将意向接管、筹资提案都当作已实现的持续运营。",
+    "说原稿没有报告22位参与者与14个项目。"
+  ],
+  "draft_notes": "已完整阅读三份报告/回应、前后主文与全部所列补充文本/页图。T1只用前稿材料；访谈提纲与编码树为后稿附件，不倒灌到T1。未访问外部共享链接或验证未提供的原始访谈。A02/A04树标签Process和Post-project legacy与主文Prototyping/Post-project continuity略有差别，视为结构提示，不声称逐码定义已提供。"
+}

@@ -1,0 +1,176 @@
+{
+  "task_id": "D15_T1_Q01",
+  "paper_id": "F1000:134799",
+  "task": "T1",
+  "unit": "original_manuscript",
+  "input_sha256": "c1138e5e7929eca92433e13fdb64dcdb06a82b608f8f1eba7b72614e4a103ad5",
+  "card_version": "0.2",
+  "drafter": "B",
+  "reference_points": [
+    {
+      "judgment": "原稿已有95%置信水平和10%误差声明，但没有足够参数重现计算；便利样本扩大并不能消除选择偏差，均衡男女也不等于代表总体。",
+      "issue_type": "V4",
+      "importance": "high",
+      "importance_reason": "影响性别比较精度及对印度年轻Instagram用户的推广。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "solid\njustification for collecting only 212 responses"
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": " The study flow as per STROBE guidelines is depicted in the extended data (Vasudha &\nNimiya, 2023).\nA sample size of 212 was calculated, considering a confidence level of 95%, with margin of error of 10%.\nThus, 212 participants (males = 106, females = 106) aged between 20 and 30 years with an active Instagram account\n(Male; M = 22.76, SD = 1.84), (Female; M = 23.05, SD = 2.21) were recruited from different states across India to\nparticipate in the study. Participants without an active Instagram account as well as those with a history of physical/mental\nillness were excluded from the study. Participants were recruited via various social media platforms to take part in the\nstudy. Participation was voluntary. This age range was chosen not only for convenience, but because individuals of the\nprescribed age range are the heaviest users of Instagram (Kemp S. Digital 2023: Global Overview Report [Internet],\n2023).\nDesign\nThe research design employed in the study was quantitative comparative c"
+        }
+      ],
+      "match_criteria": "区分样本量/精度依据与便利取样代表性，不照单接受扩大N即可消除偏差。",
+      "acceptable_alternatives": [
+        "指出这一要求不成立：较大便利样本无法自动消除偏差；可接受探索性定位但需如实给样本量依据与不确定性。"
+      ],
+      "status": "partly_supported",
+      "id": "P1"
+    },
+    {
+      "judgment": "只有一个Shapiro-Wilk值0.845与.05比较，未区分W和p，也没有分别说明三个结局、各性别组的分布及t检验稳健性。",
+      "issue_type": "V3",
+      "importance": "high",
+      "importance_reason": "参数推断的假设与数值报告决定统计结论能否解释。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "normality\nneeds to be checked for all three variables."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "d standard deviation\nSD = 1.84 and mean age of females, M = 23.05 and standard deviation SD = 2.21. The data was normally distributed with\nShapiro-Wilk statistic being 0.845 (>0.05) and mean M = 3.43 and standard deviation SD = 1.50.\n\n\nTable 1. Mean and standard deviation of Instagram usage characteristics of the sample.\nSocio-demographics\n\nMean\n\nStandard Deviation\n\nTime spent on Instagram (Hours)\n\n2.03\n\n0.81\n\nNumber of celebrities followed on Instagram\n\n8.4\n\n2.33\n\nDuration of exercise (Hours)\n\n1.21\n\n0.64\n\nNumber of fitness related pages followed on Instagram\n\n2.18\n\n1.74\n\nN = 212 (Males = 106, Females = 106).\n\nTable 2. Mean and standard deviation of the variables Body Image, Exercise Motivation and Social\nComparison in males and females in the age group 20-30years.\nVariable\nBody Image\n\nExercise Motivation\n\nSocial Comparison\n\nMean\n\nSD\n\nMale\n\n68.84\n\n15.58\n\nFemale\n\n73.61\n\n13.66\n\nMale\n\n156.36\n\n43.32\n\nFemale\n\n136.38\n\n56.93\n\nMale\n\n24.33\n\n7.39\n\nFemale\n\n25.60\n\n6.24\n\nInstagram use\nAll the participants of the study were active Instagram users. Table 1 describes the Mean and standard deviation of\nInstagram usage characteristics of the sample. Their median use of Instagram was one hour per day. They reported\nfollowing a median number of more than five celebrities and a median number of one-five fitness related pages. The\nparticipants also reported how frequently they watched fitness related images and videos and how frequently they posted\nfitness related images and videos. 15.4% of the participants reported watching fitness related posts daily, 29.2% (weekly),\n17% (monthly) and 38.3% never watched fitness related posts. Similarly, 82.6% of the participants reported that they\nnever posted pictures/videos related to fitness, 10.7% (monthly), 3.2% (weekly) and 3.6% (daily).\nAs can be seen in Table 2, mean scores for both Body Image (M = 73.61.84, SD = 13.66) and Social Comparison\n(M = 25.60, SD = 6.24) were found to be higher among females. In contrast, mean scores for Exercise Motivation was\nfound to be higher among males (M = 156.36, SD = 43.32).\nInferential statistics\nSex differences in body image\nIndependent samples t test was conducted to compare the Sex differences in bo"
+        }
+      ],
+      "match_criteria": "识别W与p的区别，并检查后稿新增说明是否逻辑及数值一致；二元sex无需服从正态分布。",
+      "acceptable_alternatives": [
+        "可在组内样本较大且无严重偏态/异常值时论证t检验稳健，不能用“所有变量必须正态”或任一非显著检验替代。"
+      ],
+      "status": "supported",
+      "id": "P2"
+    },
+    {
+      "judgment": "理论与实践启示较泛，需联系本研究的性别比较结果，同时限制因果机制与干预有效性主张。",
+      "issue_type": "V6",
+      "importance": "medium",
+      "importance_reason": "决定经验发现对理论和实践的真实贡献。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R1",
+          "exact_quote": "specific\ntheoretical and practical implications are missing."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "le size, sociodemographic\ncharacteristics that might have played a role in producing these results.\nImplications\nThe present study contributes to the literature on social media and body image, exercise motivation and social\ncomparison, considering the importance of increased use of SNS such as Instagram over the recent years. This study\nrevealed that body image concerns were higher among women. This finding suggests that women should be educated\nabout the harmful effects of body image distortions and resulting lowered self-esteem and body dissatisfaction.\n\n\nThe finding that drive for exercise was higher among males provides a foundation for understanding the motivators for\nmale exercise behaviours including the genetic, psychological, social and cultural factors. This information can aid in\nplanning interventions for mitigating the potential negative effects of exercise behaviours such as exercise addiction,\nhowever more in depth research is needed.\nStrengths, limitations and future research\nIt was a strength of the current study that it collected a sample that gave disparate information about the participants’\nInstagram activity including the duration of use, celebrities followed, fitness related pages followed, and frequency of\nsharing posts/videos related to fitness which gave a clearer picture of how these factors could be a contributing factor to\nthe Sex differences in the variables studied.\nDespite these strengths, there were a few limitations that ought to be mentioned and which may help to direct future study.\nFirst, the study’s use of a purposive sampling method poses a significant restriction. The representativeness of Indian\nInstagram users may still be overestimated even if the sample comprises of 212 respondents chosen from various online\nplatforms. The stu"
+        }
+      ],
+      "match_criteria": "承认已有启示及后稿新增内容，区分讨论理论与实证检验理论。",
+      "acceptable_alternatives": [
+        "可接受探索性实践建议，但不能说本研究证实了性别专属干预的疗效。"
+      ],
+      "status": "partly_supported",
+      "id": "P3"
+    },
+    {
+      "judgment": "报告建议考虑其他变量，尚未指明必须检验的具体混杂路径；现有横断面便利调查只能支持样本中的组间关联，不能确认Instagram导致身像差异。",
+      "issue_type": "V2",
+      "importance": "medium",
+      "importance_reason": "额外变量的解释范围关系因果与关联的界限。",
+      "origin": "human_review",
+      "human_sources": [
+        {
+          "report_id": "R2",
+          "exact_quote": "further analysis on the influence of other\nvariables could enrich the discussion."
+        }
+      ],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "nnection between the variables. Finally, it is impossible to completely rule out the possibility of residual\nconfounding such as simultaneous use of other SNS platforms and social desirability bias in self-reported data. There was\nno supplemental information collected from other potential sources, such as relatives or peers.\nGiven these limitations, future research can focus on exploring individuals with a larger range of ages, given that older\nand middle-aged people engage in social media, although in a smaller amount than younger people. All future studies\nshould be proactive to recruit culturally diverse samples as often as possible to be able to draw conclusions about the\npotentially differential effects as well as to make comparisons across individuals from diverse backgrounds. Future\nresearch can also delve deeper into the sociodemographic factors explored in the study to better understand how it can\nplay a role in Sex difference in these variables with large samples. Also, exper"
+        }
+      ],
+      "match_criteria": "识别这是宽泛拓展建议及已有因果限制，不凭未测变量就认定组间差异无效。",
+      "acceptable_alternatives": [
+        "可以接受合理延期额外变量分析，只须保留非因果、未排混杂的结论范围。"
+      ],
+      "status": "partly_supported",
+      "id": "P4"
+    },
+    {
+      "judgment": "表4的t=1.560、双侧p=.120、95%CI[-.84,7.22]不支持正文“关注健身页者身像问题显著更高”；正文采用的.028来自Levene方差齐性检验。表3/正文还混用t、p及df=2，须修复统计量身份与解释。",
+      "issue_type": "V3",
+      "importance": "high",
+      "importance_reason": "直接影响摘要和正文的显著性结论。",
+      "origin": "card_author",
+      "human_sources": [],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "e difference in body image across people who followed fitness\nrelated pages with those who did not. As displayed in Table 4, there was significant difference in body image (t(2) = 0.028,\np = 0.05) with mean score for people who follow fitness related pages (M = 72.63, SD = 13.44), which was found to be\nhigher than people who did not follow fitness related pages on Instagram (M = 69.44, SD = 16.21). The magnitude of the\ndifferences in the means (mean difference = 3.19, 95% CI: -0.84 to 7.22). Thus, there was a significant difference in body\nimage between people who followed fitness related pages on Instagram and those who did not, with mean body image\nhigher among people who followed fitness related pages on Instagram.\nDifference in body image between people who exercised regularly and those who did not\nTable 5 represents the difference between people who exercise regularly and body image in males and females in the age\ngroup 20-30. One way ANOVA test enumerated in the table revealed a "
+        },
+        {
+          "input_field": "input/page_images",
+          "page": 8,
+          "observation": "横排表4区分Levene F=4.899, Sig=.028，与均值差t检验t=1.560、Sig.(2 tailed)=.120、95%CI[-.84,7.22]；表3df列均写2。"
+        }
+      ],
+      "match_criteria": "必须区分方差检验与均值检验，指出错误的具体结论；不能将全部性别差异一概判为不存在。",
+      "acceptable_alternatives": [
+        "可判断主要身像/动机性别差异仍可能由表3的.019/.005支持，但关注健身页的显著性主张须撤回或重算。"
+      ],
+      "status": "supported",
+      "id": "P5"
+    },
+    {
+      "judgment": "自编社交比较量表目前只有三专家表面评价和10人可行性试测，缺内部结构/可靠性依据；三个量表最低总分均写5也与所述27项1–5、51项0–5及10项五级累加不符，需明确实际计分，避免混淆量表均分、总分和构念。",
+      "issue_type": "V1",
+      "importance": "high",
+      "importance_reason": "身像/动机/比较的组间结论依赖可解释的测量。",
+      "origin": "card_author",
+      "human_sources": [],
+      "manuscript_evidence": [
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "e and 50 being the maximum score;\nthe higher the score, greater the magnitude of social comparison. The questionnaire was validated by three experts from\nthe field. The name of the scale was changed from ‘Social Comparison and Instagram Use scale’ to ‘Instagram as a tool for\nSocial Comparison’ as per experts’ suggestion. Certain other modifications were suggested, and these suggestions were\ntaken into consideration and the modified questionnaire was used for data collection (Bessenoff, 2006).\nProcedure\nThe author’s Institutional Ethics Committee approved this study (Protocol No: IEC KMC MLR 04-2022/127).\nThe population of this study were males and females in the age group 20-30 residing in different states across India.\nThe independent and dependent variables in the study are Instagram usa"
+        },
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": "lf, 3 = About Halfway True of Myself, 4 = Mostly True of Myself, and 5 = Completely True of Myself. With\n5 being the lowest possible score and 135 being the maximum score, the higher the score, the greater the body image\nconcerns. All nine sub-scales show adequate internal consistencies, as demonstrated by Cronbach alphas ranging from\n0.68 to 0.92 (Rowe, 2005).\nExercise Motivation Inventory-2 (EMI-2)\nThe Exercise Motivations Inventory-2 (EMI-2) is a 51-item scale developed by Markland and Ingled"
+        },
+        {
+          "input_field": "input/manuscript_text",
+          "exact_quote": " according to how strongly the person feels that it reflects\nwhy he/she exercise or might exercise. With 5 being the lowest possible score and 255 being the maximum score, higher\nthe score, greater the exercise motivation. All fourteen sub-scales show adequate internal consistencies, as demonstrated\nby Cronbach alphas ranging from 0.69 to 0.92 (Markland & Hardy, 1993).\nInstagram as a tool for Soci"
+        }
+      ],
+      "match_criteria": "指出实际提供的验证层次和明确的计分范围不一致，不要求把探索量表伪装成熟标准化工具。",
+      "acceptable_alternatives": [
+        "可把最低分视为报告笔误，但必须澄清实际计分及初步测量限制，不能因专家意见就宣称完整构念效度成立。"
+      ],
+      "status": "supported",
+      "id": "P6"
+    }
+  ],
+  "label_reference": {
+    "primary": "",
+    "acceptable_set": [],
+    "rationale": ""
+  },
+  "known_invalid_patterns": [
+    "认为扩大便利样本可消除选择偏差。",
+    "把Levene的.028当作表4均值差异p值。",
+    "把W=.845大于.05当正态性已证。",
+    "将讨论SDT当成验证了该机制。"
+  ],
+  "draft_notes": "已读两份报告与回应、前后主文全部文字和全部页图；T1与前稿文本相同。数据声明中的外部量表/数据并未纳入本题附件，未联网获取，不声称已验证原始数据。"
+}
